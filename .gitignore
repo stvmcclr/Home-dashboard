@@ -1,2 +1,23 @@
-# Local Netlify folder
-.netlify
+# Sensitive config — credentials live in GitHub Secrets, not the repo
+config.json
+
+# Local SQLite database (data lives in Supabase now)
+*.db
+*.sqlite
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Certs (sensitive)
+certs/
+
+# Netlify local state
+.netlify/
