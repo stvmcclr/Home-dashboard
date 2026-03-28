@@ -9,6 +9,8 @@ jobs:
   poll-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write   # allow git push back to repo
 
     steps:
       - name: Checkout repo

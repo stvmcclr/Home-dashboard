@@ -331,6 +331,83 @@
     max-width: 1400px;
   }
 
+  /* ── Password Gate ── */
+  #gate-overlay {
+    position: fixed; inset: 0;
+    background: var(--bg);
+    z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #gate-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px; width: 360px; text-align: center;
+  }
+  #gate-box h2 { font-size: 22px; margin-bottom: 8px; }
+  #gate-box p { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+  #gate-input {
+    width: 100%; background: var(--surface2);
+    border: 1px solid var(--border); color: var(--text);
+    padding: 10px 14px; border-radius: 8px; font-size: 15px;
+    text-align: center; outline: none; margin-bottom: 12px;
+    font-family: inherit;
+  }
+  #gate-input:focus { border-color: var(--accent); }
+  #gate-btn {
+    width: 100%; background: var(--accent); color: var(--bg);
+    border: none; padding: 10px; border-radius: 8px;
+    font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit;
+  }
+  #gate-btn:hover { opacity: 0.9; }
+  #gate-error { color: var(--red); font-size: 13px; margin-top: 10px; display: none; }
+
+  /* ── Rate Plan Bar ── */
+  .rate-plan-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .rate-plan-header {
+    display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px;
+  }
+  .rate-plan-name { font-size: 15px; font-weight: 600; color: var(--accent); }
+  .rate-plan-sub  { font-size: 12px; color: var(--muted); }
+  .rate-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 600px) { .rate-tiers { grid-template-columns: 1fr; } }
+  .rate-tier {
+    background: var(--surface2); border-radius: 8px;
+    padding: 10px 12px; border: 1px solid var(--border);
+  }
+  .rate-tier-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .rate-tier-value { font-size: 20px; font-weight: 700; margin: 4px 0; }
+  .rate-tier-hours { font-size: 11px; color: var(--muted); }
+  .rate-tier-note  { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+  .tier-offpeak { color: var(--green); }
+  .tier-partial { color: var(--yellow); }
+  .tier-peak    { color: var(--red); }
+  .rate-insight {
+    margin-top: 12px; font-size: 12px; color: var(--muted);
+    background: var(--surface2); border-radius: 6px; padding: 8px 12px;
+    border-left: 3px solid var(--accent);
+  }
+
+  /* ── Appliance items ── */
+  .category-header {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.8px;
+    text-transform: uppercase; color: var(--muted);
+    padding: 6px 0 4px; margin-top: 4px;
+  }
+  .appliance-year {
+    font-size: 11px; color: var(--purple); margin-top: 2px;
+  }
+
   /* ── Modal ── */
   #modal-overlay {
     display: none;
@@ -502,6 +579,18 @@
 </head>
 <body>
 
+<!-- ── Password Gate ── -->
+<div id="gate-overlay">
+  <div id="gate-box">
+    <div style="font-size:40px;margin-bottom:14px">🏠</div>
+    <h2>Home Monitor</h2>
+    <p>1950 Eucalyptus · San Carlos</p>
+    <input type="password" id="gate-input" placeholder="Password" autocomplete="current-password">
+    <button id="gate-btn">Unlock →</button>
+    <div id="gate-error">Incorrect password</div>
+  </div>
+</div>
+
 <!-- ── Modal overlay ── -->
 <div id="modal-overlay" onclick="closeModal()">
   <div id="modal-box" onclick="event.stopPropagation()">
@@ -519,6 +608,7 @@
     </div>
   </div>
   <div class="header-right">
+    <a href="home_energy_intelligence.html" target="_blank" style="color:var(--accent);font-size:12px;text-decoration:none;opacity:0.85;white-space:nowrap;" title="Open Energy Intelligence Report">⚡ Energy Report</a>
     <span class="updated" id="updated-ts">Loading…</span>
     <div class="status-dot" id="status-dot"></div>
     <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
@@ -823,30 +913,86 @@ function renderMaintenance(items) {
   if (!items || items.length === 0) {
     return `<div class="card"><div class="card-title">Maintenance</div><div style="color:var(--muted);font-size:13px">No maintenance items.</div></div>`;
   }
-  const rows = items.map(m => {
+
+  const hvacItems      = items.filter(m => m.category === 'HVAC');
+  const applianceItems = items.filter(m => m.category === 'Appliance');
+  const otherItems     = items.filter(m => m.category !== 'HVAC' && m.category !== 'Appliance');
+
+  function maint_row(m) {
     const days = m.days_until_due;
     const cls  = statusClass(days);
     const dueLabel = m.is_overdue
       ? `Overdue by ${Math.abs(days)}d`
       : days === 0 ? 'Due today'
       : days != null ? `Due in ${days}d`
-      : `Due ${fmt.date(m.next_due)}`;
+      : m.next_due ? `Due ${fmt.date(m.next_due)}` : '—';
     const inv = m.inventory_count != null
       ? `${m.inventory_count} ${m.inventory_unit || ''} in stock`
       : '';
+
+    // For appliances, extract purchase year from notes
+    const yearMatch = m.notes && m.notes.match(/(?:Installed|New|installed)\s+(\d{4})/);
+    const yearBadge = yearMatch && m.category === 'Appliance'
+      ? `<div class="appliance-year">Since ${yearMatch[1]}</div>` : '';
+
     return `
       <div class="maint-item clickable" onclick='openMaintenanceModal(${JSON.stringify(m).replace(/'/g,"&#39;")})'>
         <div class="maint-left">
           <div class="maint-name">${m.name}</div>
-          <div class="maint-sub">${m.category} · every ${m.frequency_days}d</div>
+          ${yearBadge}
+          <div class="maint-sub">${m.category}${m.frequency_days ? ` · check every ${m.frequency_days}d` : ''}</div>
         </div>
         <div class="maint-right">
           <div class="maint-due ${cls}">${dueLabel}</div>
           ${inv ? `<div class="maint-inv">${inv}</div>` : ''}
         </div>
       </div>`;
-  }).join('');
-  return `<div class="card"><div class="card-title">Maintenance</div><div class="maintenance-grid">${rows}</div></div>`;
+  }
+
+  let rows = '';
+  if (hvacItems.length)      rows += `<div class="category-header">HVAC Filters</div>` + hvacItems.map(maint_row).join('');
+  if (applianceItems.length) rows += `<div class="category-header">Appliances</div>` + applianceItems.map(maint_row).join('');
+  if (otherItems.length)     rows += `<div class="category-header">Other</div>` + otherItems.map(maint_row).join('');
+
+  return `<div class="card"><div class="card-title">Maintenance & Appliances</div><div class="maintenance-grid">${rows}</div></div>`;
+}
+
+// ── EV2-A Rate Plan card ───────────────────────────────────────────────────
+function renderRatePlan() {
+  const isWinter = (() => { const m = new Date().getMonth()+1; return m >= 10 || m <= 5; })();
+  const peakRate    = isWinter ? '$0.41' : '$0.54';
+  const partialRate = isWinter ? '$0.39' : '$0.43';
+  const season = isWinter ? 'Winter (Oct–May)' : 'Summer (Jun–Sep)';
+  return `
+    <div class="rate-plan-card">
+      <div class="rate-plan-header">
+        <span class="rate-plan-name">EV2-A · Home Charging</span>
+        <span class="rate-plan-sub">${season} rates · All days same schedule</span>
+      </div>
+      <div class="rate-tiers">
+        <div class="rate-tier">
+          <div class="rate-tier-label">Off-Peak</div>
+          <div class="rate-tier-value tier-offpeak">$0.23<span style="font-size:12px;font-weight:400">/kWh</span></div>
+          <div class="rate-tier-hours">Midnight – 3:00 PM</div>
+          <div class="rate-tier-note">EV charging + solar production window</div>
+        </div>
+        <div class="rate-tier">
+          <div class="rate-tier-label">Partial-Peak</div>
+          <div class="rate-tier-value tier-partial">${partialRate}<span style="font-size:12px;font-weight:400">/kWh</span></div>
+          <div class="rate-tier-hours">3–4 PM · 9 PM–Midnight</div>
+          <div class="rate-tier-note">Solar production tails off</div>
+        </div>
+        <div class="rate-tier">
+          <div class="rate-tier-label">Peak</div>
+          <div class="rate-tier-value tier-peak">${peakRate}<span style="font-size:12px;font-weight:400">/kWh</span></div>
+          <div class="rate-tier-hours">4:00 – 9:00 PM</div>
+          <div class="rate-tier-note">Avoid high loads — run EV after 9 PM</div>
+        </div>
+      </div>
+      <div class="rate-insight">
+        💡 Battery arbitrage spread: $0.23 → ${peakRate} = <strong style="color:var(--green)">${isWinter?'$0.18':'$0.31'}/kWh</strong> · Powerwall potential: ~${isWinter?'$440':'$770'}/season · Solar self-consumption value: ~$0.26/kWh (daytime off-peak)
+      </div>
+    </div>`;
 }
 
 // ── Needs attention ────────────────────────────────────────────────────────
@@ -933,7 +1079,7 @@ function initCharts(energy) {
 
   // Electric
   const elecLabels = monthly_electric.map(r => fmt.monthLabel(r.month));
-  const elecKwh    = monthly_electric.map(r => r.kwh);
+  const elecKwh    = monthly_electric.map(r => r.kwh_used);
   const elecCtx    = document.getElementById('chartElec');
   if (elecCtx) {
     chartElec = new Chart(elecCtx, {
@@ -968,7 +1114,7 @@ function initCharts(energy) {
 
   // Gas
   const gasLabels = monthly_gas.map(r => fmt.monthLabel(r.month));
-  const gasTherms = monthly_gas.map(r => r.therms);
+  const gasTherms = monthly_gas.map(r => r.therms_used);
   const gasCtx    = document.getElementById('chartGas');
   if (gasCtx) {
     chartGas = new Chart(gasCtx, {
@@ -1146,6 +1292,7 @@ function render(data) {
     </div>
 
     <p class="section-title">Energy — Mar 2025 to Mar 2026</p>
+    ${renderRatePlan()}
     ${renderEnergy(data.energy)}
 
     <p class="section-title">Projects</p>
@@ -1157,7 +1304,7 @@ function render(data) {
   `;
 
   document.getElementById('main-content').innerHTML = html;
-  document.getElementById('footer').textContent = `Data as of ${data.generated_at} · Nest polls every 15 min · Open at localhost:8080`;
+  document.getElementById('footer').textContent = `Data as of ${data.generated_at} · Updated every 15 min via GitHub Actions`;
 
   initCharts(data.energy);
   initThermoCharts(data.thermostat.history);
@@ -1184,9 +1331,37 @@ async function loadData() {
   }
 }
 
+// ── Password Gate ──────────────────────────────────────────────────────────
+const PASS_KEY = 'eucalyptus_auth_v1';
+const PASS     = 'eucalyptus2026'; // Change this to your preferred password
+
+function checkPassword() {
+  const val = document.getElementById('gate-input').value;
+  if (val === PASS) {
+    sessionStorage.setItem(PASS_KEY, '1');
+    document.getElementById('gate-overlay').style.display = 'none';
+    loadData();
+    setInterval(loadData, 5 * 60 * 1000);
+  } else {
+    document.getElementById('gate-error').style.display = 'block';
+    document.getElementById('gate-input').value = '';
+    document.getElementById('gate-input').focus();
+  }
+}
+
+document.getElementById('gate-btn').addEventListener('click', checkPassword);
+document.getElementById('gate-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') checkPassword();
+  document.getElementById('gate-error').style.display = 'none';
+});
+
 // ── Auto-refresh every 5 minutes ──────────────────────────────────────────
-loadData();
-setInterval(loadData, 5 * 60 * 1000);
+if (sessionStorage.getItem(PASS_KEY) === '1') {
+  document.getElementById('gate-overlay').style.display = 'none';
+  loadData();
+  setInterval(loadData, 5 * 60 * 1000);
+}
+// If not yet authenticated, wait for gate unlock.
 </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Energy Intelligence — 1950 Eucalyptus</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -144,7 +144,8 @@
         }
 
         #energyChart {
-            max-height: 450px;
+            width: 100% !important;
+            height: 100% !important;
         }
 
         /* INSIGHT CARDS */
@@ -273,7 +274,8 @@
         }
 
         #costChart {
-            max-height: 300px;
+            width: 100% !important;
+            height: 100% !important;
         }
 
         @media (max-width: 1024px) {
@@ -420,8 +422,8 @@
         }
 
         #solarChart {
-            max-height: 350px;
-            margin-bottom: 30px;
+            width: 100% !important;
+            height: 100% !important;
         }
 
         /* WHAT'S NEXT */
@@ -678,19 +680,19 @@
 
             <div class="metrics-grid">
                 <div class="metric">
-                    <div class="metric-value">$<span id="systemCost">15,900</span></div>
+                    <div class="metric-value">$<span id="systemCost">8,143</span></div>
                     <div class="metric-label">System Cost (After 30% ITC)</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value"><span id="annualProduction">13,180</span> kWh</div>
+                    <div class="metric-value"><span id="annualProduction">4,537</span> kWh</div>
                     <div class="metric-label">Year 1 Production</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">$<span id="year1Savings">5,536</span></div>
-                    <div class="metric-label">Year 1 Savings</div>
+                    <div class="metric-value">$<span id="year1Savings">1,180</span></div>
+                    <div class="metric-label">Year 1 Savings (EV2-A adj.)</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value"><span id="paybackYears">2.9</span> yrs</div>
+                    <div class="metric-value"><span id="paybackYears">6.9</span> yrs</div>
                     <div class="metric-label">Payback Period</div>
                 </div>
             </div>
@@ -700,7 +702,7 @@
             </div>
 
             <div class="solar-note">
-                <strong>Note:</strong> These numbers reflect your actual garage roof (south face, 20×12 ft). System sized for your specific constraint. Assumes 85% system efficiency, 5.2 peak sun hours daily, and a 4% discount rate for NPV calculations.
+                <strong>EV2-A Adjusted:</strong> Your rate plan charges $0.23/kWh off-peak (midnight–3pm) — when most solar is produced. The savings rate is corrected from the flat $0.42 average to ~$0.26/kWh (solar-only) or ~$0.38/kWh (with battery, capturing the $0.31 peak-offpeak spread via arbitrage). Assumes 85% system efficiency, 5.2 peak sun hours, south-facing garage roof (20×12 ft).
             </div>
         </div>
 
@@ -786,6 +788,7 @@
                         order: 2
                     },
                     {
+                        type: 'line',
                         label: 'Avg Temperature (°F)',
                         data: monthlyTemp,
                         borderColor: '#bc8cff',
@@ -898,7 +901,7 @@
                         padding: 12,
                         callbacks: {
                             label: function(context) {
-                                return context.label + ': $' + context.parsed.y.toLocaleString();
+                                return context.label + ': $' + context.parsed.toLocaleString();
                             }
                         }
                     }
@@ -929,7 +932,11 @@
             const totalCost = systemCostAfterITC + (hasBattery ? 9500 : 0);
 
             const annualProduction = size * 5.2 * 365 * 0.85;
-            const year1Savings = annualProduction * 0.42;
+            // EV2-A corrected: solar produces mainly during off-peak (midnight–3pm, $0.23/kWh)
+            // with ~15% production in partial-peak (3–5pm, ~$0.41/kWh). Blended: ~$0.26/kWh.
+            // Battery arbitrage adds ~$0.31/kWh spread (off-peak→peak) on top.
+            const effectiveRate = hasBattery ? 0.38 : 0.26;
+            const year1Savings = annualProduction * effectiveRate;
             const paybackYears = totalCost / year1Savings;
 
             // Update metric displays
