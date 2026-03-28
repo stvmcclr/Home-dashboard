@@ -1,0 +1,60 @@
+name: Home Monitor
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes, 24/7
+  workflow_dispatch:           # allow manual trigger from GitHub UI
+
+jobs:
+  poll-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Write config.json
+        env:
+          NEST_CLIENT_ID:     ${{ secrets.NEST_CLIENT_ID }}
+          NEST_CLIENT_SECRET: ${{ secrets.NEST_CLIENT_SECRET }}
+          NEST_REFRESH_TOKEN: ${{ secrets.NEST_REFRESH_TOKEN }}
+          NEST_PROJECT_ID:    ${{ secrets.NEST_PROJECT_ID }}
+          SUPABASE_URL:       ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY:  ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          cat > config.json <<EOF
+          {
+            "nest": {
+              "client_id":     "$NEST_CLIENT_ID",
+              "client_secret": "$NEST_CLIENT_SECRET",
+              "refresh_token": "$NEST_REFRESH_TOKEN",
+              "project_id":    "$NEST_PROJECT_ID"
+            },
+            "supabase": {
+              "url":      "$SUPABASE_URL",
+              "anon_key": "$SUPABASE_ANON_KEY"
+            },
+            "poll_interval_minutes": 15,
+            "netlify": { "enabled": false }
+          }
+          EOF
+
+      - name: Poll Nest & save to Supabase
+        run: python3 scripts/nest_monitor.py
+
+      - name: Regenerate dashboard_data.json
+        run: python3 scripts/generate_dashboard_data.py
+
+      - name: Commit updated dashboard data
+        run: |
+          git config user.name  "Home Monitor Bot"
+          git config user.email "bot@home-monitor"
+          git add dashboard_data.json
+          git diff --cached --quiet || git commit -m "chore: update dashboard data $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push

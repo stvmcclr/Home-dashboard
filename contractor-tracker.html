@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contractor Correspondence Tracker</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f4f5f7;
+    color: #1a1a2e;
+    padding: 32px 24px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a1a2e;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 28px;
+  }
+
+  /* Summary chips */
+  .summary {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .chip .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+  .dot-sent      { background: #6366f1; }
+  .dot-replied   { background: #10b981; }
+  .dot-pending   { background: #f59e0b; }
+  .dot-none      { background: #d1d5db; }
+
+  /* Cards grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .card-header {
+    padding: 16px 20px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111827;
+  }
+  .card-recipient {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 2px;
+    word-break: break-all;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 3px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .badge-sent    { background: #ede9fe; color: #6d28d9; }
+  .badge-replied { background: #d1fae5; color: #065f46; }
+  .badge-pending { background: #fef3c7; color: #92400e; }
+  .badge-none    { background: #f3f4f6; color: #6b7280; }
+
+  .card-body { padding: 16px 20px; }
+
+  .field { margin-bottom: 12px; }
+  .field:last-child { margin-bottom: 0; }
+  .field-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #9ca3af;
+    margin-bottom: 3px;
+  }
+  .field-value {
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.45;
+  }
+  .field-value a {
+    color: #6366f1;
+    text-decoration: none;
+  }
+  .field-value a:hover { text-decoration: underline; }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .event {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 12.5px;
+    color: #4b5563;
+  }
+  .event-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    margin-top: 4px; flex-shrink: 0;
+  }
+  .event-dot-out  { background: #6366f1; }
+  .event-dot-in   { background: #10b981; }
+  .event-dot-wait { background: #d1d5db; border: 1px dashed #9ca3af; }
+
+  .notes-box {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 12.5px;
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 32px;
+    font-size: 11.5px;
+    color: #9ca3af;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>🏠 Contractor Correspondence</h1>
+<p class="subtitle">1950 Eucalyptus Ave, San Carlos, CA &nbsp;·&nbsp; Updated Mar 24, 2026</p>
+
+<div class="summary">
+  <div class="chip"><span class="dot dot-sent"></span> 2 Sent</div>
+  <div class="chip"><span class="dot dot-pending"></span> 1 Not yet sent</div>
+  <div class="chip"><span class="dot dot-replied"></span> 0 Replies received</div>
+</div>
+
+<div class="grid">
+
+  <!-- WINDOWS -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🪟 Window Washing</div>
+        <div class="card-recipient">Gary's Cleaning &nbsp;·&nbsp; garyscleaning@gmail.com</div>
+      </div>
+      <span class="badge badge-sent">Sent</span>
+    </div>
+    <div class="card-body">
+      <div class="field">
+        <div class="field-label">Subject</div>
+        <div class="field-value">
+          <a href="https://mail.google.com/mail/u/0/#all/19d22c4e8484ba07" target="_blank">
+            Window Washing Quote — San Carlos, CA Residence
+          </a>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field-label">Ask</div>
+        <div class="field-value">Quote for exterior window washing (interior optional) on a single-family home. Requested email/phone estimate without a site visit.</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Timeline</div>
+        <div class="timeline">
+          <div class="event">
+            <span class="event-dot event-dot-out"></span>
+            <span><strong>Mar 24 7:13 pm</strong> — Initial outreach sent</span>
+          </div>
+          <div class="event">
+            <span class="event-dot event-dot-wait"></span>
+            <span>Awaiting reply…</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PEST -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🐛 Pest Inspection</div>
+        <div class="card-recipient">Omega Home Services &nbsp;·&nbsp; office@omega-homeservices.com</div>
+      </div>
+      <span class="badge badge-sent">Sent</span>
+    </div>
+    <div class="card-body">
+      <div class="field">
+        <div class="field-label">Subject</div>
+        <div class="field-value">
+          <a href="https://mail.google.com/mail/u/0/#all/19d22c4a9c1ce60c" target="_blank">
+            Home Pest Inspection Request — San Carlos, CA
+          </a>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field-label">Ask</div>
+        <div class="field-value">Comprehensive inspection (rodents, ants, other pests — not just termites). Asked for availability, scope, duration, and pricing. Targeting this month.</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Timeline</div>
+        <div class="timeline">
+          <div class="event">
+            <span class="event-dot event-dot-out"></span>
+            <span><strong>Mar 24 7:13 pm</strong> — Initial outreach sent</span>
+          </div>
+          <div class="event">
+            <span class="event-dot event-dot-wait"></span>
+            <span>Awaiting reply…</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROOF -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">🏗️ Roof</div>
+        <div class="card-recipient">Contractor TBD</div>
+      </div>
+      <span class="badge badge-none">Not Sent Yet</span>
+    </div>
+    <div class="card-body">
+      <div class="field">
+        <div class="field-label">Status</div>
+        <div class="field-value">Email not yet found in sent mail — may still be in progress.</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Notes</div>
+        <div class="notes-box">Will update once email is confirmed sent and recipient info is available.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="footer">Auto-generated · Steve's home project tracker · stvmcclr@gmail.com</p>
+
+</body>
+</html>

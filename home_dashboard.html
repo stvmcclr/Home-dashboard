@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏠 Home Monitor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:        #0f172a;
+    --surface:   #1e293b;
+    --surface2:  #273449;
+    --border:    #334155;
+    --text:      #e2e8f0;
+    --muted:     #94a3b8;
+    --accent:    #38bdf8;
+    --green:     #4ade80;
+    --yellow:    #facc15;
+    --orange:    #fb923c;
+    --red:       #f87171;
+    --purple:    #c084fc;
+    --teal:      #2dd4bf;
+    --elec:      #facc15;
+    --gas:       #fb923c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .header-left h1 { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+  .header-left .subtitle { color: var(--muted); font-size: 13px; }
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  .updated { color: var(--muted); font-size: 12px; }
+  .refresh-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.15s;
+  }
+  .refresh-btn:hover { background: var(--border); }
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 6px var(--green);
+  }
+  .status-dot.stale { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
+  .status-dot.error { background: var(--red); box-shadow: 0 0 6px var(--red); }
+
+  /* ── Layout ── */
+  main { padding: 20px 24px; max-width: 1400px; margin: 0 auto; }
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .card-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  /* ── Thermostat section ── */
+  .thermo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .thermo-card { position: relative; overflow: hidden; }
+  .thermo-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--teal);
+  }
+  .thermo-location {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .thermo-temp {
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--text);
+    letter-spacing: -2px;
+  }
+  .thermo-temp sup { font-size: 20px; vertical-align: super; }
+  .thermo-meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .thermo-stat { display: flex; flex-direction: column; }
+  .thermo-stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .thermo-stat-value { font-size: 15px; font-weight: 500; }
+  .hvac-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 12px;
+  }
+  .hvac-HEATING  { background: rgba(251,146,60,0.15); color: var(--orange); border: 1px solid rgba(251,146,60,0.3); }
+  .hvac-COOLING  { background: rgba(56,189,248,0.15); color: var(--accent);  border: 1px solid rgba(56,189,248,0.3); }
+  .hvac-OFF      { background: rgba(148,163,184,0.1); color: var(--muted);   border: 1px solid var(--border); }
+  .hvac-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .no-thermo { color: var(--muted); font-size: 13px; text-align: center; padding: 30px 0; }
+
+  /* ── Maintenance ── */
+  .maintenance-grid { display: grid; gap: 10px; }
+  .maint-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    background: var(--surface2);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    gap: 10px;
+  }
+  .maint-left { flex: 1; min-width: 0; }
+  .maint-name { font-weight: 500; font-size: 14px; }
+  .maint-sub  { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .maint-right { text-align: right; flex-shrink: 0; }
+  .maint-due   { font-size: 13px; font-weight: 600; }
+  .maint-inv   { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .due-ok      { color: var(--green); }
+  .due-soon    { color: var(--yellow); }
+  .due-overdue { color: var(--red); }
+
+  /* ── Needs attention ── */
+  .attention-list { display: grid; gap: 8px; }
+  .attention-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: rgba(248,113,113,0.08);
+    border: 1px solid rgba(248,113,113,0.25);
+    border-radius: 8px;
+  }
+  .attention-item .proj-name { color: var(--muted); font-size: 12px; }
+  .attention-item .task-name { font-size: 13px; font-weight: 500; }
+  .nothing-waiting { color: var(--muted); font-size: 13px; padding: 8px 0; }
+
+  /* ── Top row grid ── */
+  .top-row {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 14px;
+    align-items: start;
+  }
+  .top-left { display: grid; gap: 14px; }
+  @media (max-width: 900px) {
+    .top-row { grid-template-columns: 1fr; }
+  }
+
+  /* ── Energy ── */
+  .energy-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  @media (max-width: 700px) { .energy-summary { grid-template-columns: repeat(2, 1fr); } }
+  .energy-stat {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .energy-stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .energy-stat-value { font-size: 22px; font-weight: 600; margin-top: 4px; }
+  .energy-stat-sub   { font-size: 12px; color: var(--muted); }
+  .energy-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 700px) { .energy-charts { grid-template-columns: 1fr; } }
+  .chart-wrap { position: relative; height: 220px; }
+
+  /* ── Projects ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+  .project-card { cursor: pointer; }
+  .project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .project-name { font-size: 15px; font-weight: 600; }
+  .project-badge {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  .badge-planning { background: rgba(148,163,184,0.15); color: var(--muted); border: 1px solid var(--border); }
+  .badge-active   { background: rgba(56,189,248,0.15); color: var(--accent); border: 1px solid rgba(56,189,248,0.3); }
+  .badge-done     { background: rgba(74,222,128,0.15); color: var(--green);  border: 1px solid rgba(74,222,128,0.3); }
+  .badge-on-hold  { background: rgba(192,132,252,0.15); color: var(--purple); border: 1px solid rgba(192,132,252,0.3); }
+  .progress-bar-bg {
+    background: var(--surface2);
+    border-radius: 4px;
+    height: 6px;
+    margin-bottom: 8px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: var(--accent);
+    transition: width 0.4s ease;
+  }
+  .progress-label { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
+  .task-list { display: grid; gap: 6px; }
+  .task-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  .task-item:hover { background: var(--surface2); }
+  .task-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .dot-todo            { background: var(--border); }
+  .dot-in_progress     { background: var(--accent); }
+  .dot-waiting_on_steve  { background: var(--red); }
+  .dot-waiting_on_vendor { background: var(--yellow); }
+  .dot-done            { background: var(--green); }
+  .task-done-text { text-decoration: line-through; color: var(--muted); }
+  .task-waiting-steve { color: var(--red); }
+  .show-more { font-size: 12px; color: var(--muted); padding: 4px 8px; cursor: pointer; }
+  .show-more:hover { color: var(--text); }
+
+  .quotes-section { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 12px; }
+  .quote-row { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 4px 0; }
+  .quote-vendor { color: var(--muted); }
+  .quote-amount { font-weight: 600; }
+  .quote-status {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    margin-left: 6px;
+  }
+  .qs-received { background: rgba(56,189,248,0.15); color: var(--accent); }
+  .qs-accepted { background: rgba(74,222,128,0.15); color: var(--green); }
+  .qs-rejected { background: rgba(248,113,113,0.15); color: var(--red); }
+
+  /* ── Loading / error ── */
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .error-banner {
+    background: rgba(248,113,113,0.1);
+    border: 1px solid rgba(248,113,113,0.3);
+    color: var(--red);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  /* footer */
+  footer {
+    margin: 40px 24px 20px;
+    color: var(--muted);
+    font-size: 11px;
+    text-align: center;
+    max-width: 1400px;
+  }
+
+  /* ── Modal ── */
+  #modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 500;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 16px 40px;
+    overflow-y: auto;
+  }
+  #modal-overlay.open { display: flex; }
+  #modal-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 680px;
+    padding: 28px;
+    position: relative;
+    margin: auto;
+  }
+  #modal-close {
+    position: absolute;
+    top: 16px; right: 18px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    transition: color 0.15s, background 0.15s;
+  }
+  #modal-close:hover { color: var(--text); background: var(--border); }
+  .modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding-right: 36px;
+  }
+  .modal-section {
+    margin-top: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .modal-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .modal-desc {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .modal-notes {
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--surface2);
+    border-left: 3px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    line-height: 1.6;
+  }
+  .modal-task {
+    display: flex;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    flex-direction: column;
+  }
+  .modal-task:nth-child(odd) { background: var(--surface2); }
+  .modal-task-top { display: flex; align-items: center; gap: 8px; }
+  .modal-task-notes {
+    font-size: 11px;
+    color: var(--muted);
+    padding-left: 15px;
+    line-height: 1.5;
+  }
+  .modal-quote {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .modal-quote-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    gap: 8px;
+  }
+  .modal-quote-vendor { font-weight: 600; font-size: 14px; }
+  .modal-quote-contact { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .modal-quote-notes { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+
+  /* ── Clickable items ── */
+  .clickable { cursor: pointer; transition: border-color 0.15s; }
+  .clickable:hover { border-color: var(--accent) !important; }
+  .maint-item.clickable:hover { border-color: var(--accent); }
+
+  /* ── Open Quotes section ── */
+  .quotes-grid { display: grid; gap: 10px; }
+  .oq-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    background: var(--surface2);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .oq-left { flex: 1; min-width: 0; }
+  .oq-vendor { font-weight: 500; font-size: 14px; }
+  .oq-project { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .oq-contact { font-size: 12px; color: var(--accent); margin-top: 2px; }
+  .oq-right { text-align: right; flex-shrink: 0; }
+  .oq-status {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  .oqs-pending  { background: rgba(250,204,21,0.12); color: var(--yellow); border: 1px solid rgba(250,204,21,0.3); }
+  .oqs-received { background: rgba(56,189,248,0.12); color: var(--accent); border: 1px solid rgba(56,189,248,0.3); }
+  .oqs-accepted { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.3); }
+  .oqs-rejected { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.3); }
+  .oq-days { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  /* ── Recent communications ── */
+  .comms-feed { display: grid; gap: 8px; }
+  .comm-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 12px;
+    background: var(--surface2);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .comm-dir {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .comm-in  { background: rgba(74,222,128,0.15); color: var(--green); }
+  .comm-out { background: rgba(56,189,248,0.15); color: var(--accent); }
+  .comm-body { flex: 1; min-width: 0; }
+  .comm-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .comm-who { font-size: 13px; font-weight: 500; }
+  .comm-project { font-size: 11px; color: var(--muted); }
+  .comm-date { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+  .comm-subject { font-size: 12px; color: var(--muted); margin-top: 1px; font-style: italic; }
+  .comm-summary { font-size: 12px; color: var(--text); margin-top: 3px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- ── Modal overlay ── -->
+<div id="modal-overlay" onclick="closeModal()">
+  <div id="modal-box" onclick="event.stopPropagation()">
+    <button id="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<header>
+  <div class="header-left">
+    <span style="font-size:24px">🏠</span>
+    <div>
+      <h1>Home Monitor</h1>
+      <div class="subtitle">San Carlos</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="updated" id="updated-ts">Loading…</span>
+    <div class="status-dot" id="status-dot"></div>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="loading">Loading dashboard data…</div>
+</main>
+
+<footer id="footer"></footer>
+
+<script>
+// ── Modal ─────────────────────────────────────────────────────────────────
+let _modalData = null; // store last loaded data for modal re-use
+
+function openModal(html) {
+  document.getElementById('modal-content').innerHTML = html;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function openProjectModal(p) {
+  const badgeMap = { planning: 'badge-planning', active: 'badge-active', done: 'badge-done', 'on-hold': 'badge-on-hold' };
+  const badgeCls = badgeMap[p.status] || 'badge-planning';
+  const tc = p.task_counts;
+  const pct = tc.total ? Math.round(tc.done / tc.total * 100) : 0;
+
+  const descHTML = p.description
+    ? `<div class="modal-section"><div class="modal-section-label">Description</div><div class="modal-desc">${p.description}</div></div>`
+    : '';
+
+  const notesHTML = p.notes
+    ? `<div class="modal-section"><div class="modal-section-label">Notes</div><div class="modal-notes">${p.notes}</div></div>`
+    : '';
+
+  const tasksHTML = p.tasks && p.tasks.length
+    ? `<div class="modal-section">
+        <div class="modal-section-label">Tasks (${tc.done}/${tc.total} done)</div>
+        ${p.tasks.map(t => {
+          const extraCls = t.status === 'done' ? 'task-done-text' : t.status === 'waiting_on_steve' ? 'task-waiting-steve' : '';
+          const statusLabel = { todo: 'To do', in_progress: 'In progress', waiting_on_steve: 'Waiting on you', waiting_on_vendor: 'Waiting on vendor', done: 'Done' }[t.status] || t.status;
+          return `<div class="modal-task">
+            <div class="modal-task-top">${taskStatusDot(t.status)}<span class="${extraCls}">${t.title}</span></div>
+            ${t.notes ? `<div class="modal-task-notes">↳ ${t.notes}</div>` : ''}
+          </div>`;
+        }).join('')}
+      </div>`
+    : '';
+
+  const quotesHTML = p.quotes && p.quotes.length
+    ? `<div class="modal-section">
+        <div class="modal-section-label">Quotes</div>
+        ${p.quotes.map(q => {
+          const qStatusCls = { pending: 'oqs-pending', received: 'oqs-received', accepted: 'oqs-accepted', rejected: 'oqs-rejected' }[q.status] || 'oqs-pending';
+          return `<div class="modal-quote">
+            <div class="modal-quote-top">
+              <div>
+                <div class="modal-quote-vendor">${q.vendor_name || 'Unknown vendor'}</div>
+                ${q.contact ? `<div class="modal-quote-contact">${q.contact}</div>` : ''}
+              </div>
+              <div style="text-align:right">
+                <div class="oq-status ${qStatusCls}">${q.status}</div>
+                ${q.amount ? `<div style="font-size:15px;font-weight:700;margin-top:4px">$${(+q.amount).toLocaleString()}</div>` : ''}
+              </div>
+            </div>
+            ${q.sent_date ? `<div style="font-size:11px;color:var(--muted)">Sent ${fmt.date(q.sent_date)}${q.received_date ? ` · Received ${fmt.date(q.received_date)}` : ''}</div>` : ''}
+            ${q.notes ? `<div class="modal-quote-notes">${q.notes}</div>` : ''}
+          </div>`;
+        }).join('')}
+      </div>`
+    : '';
+
+  openModal(`
+    <div class="modal-title">${p.name}</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
+      <div class="project-badge ${badgeCls}">${p.status}</div>
+      ${p.priority ? `<span style="font-size:12px;color:var(--muted)">Priority: ${p.priority}</span>` : ''}
+      ${p.target_date ? `<span style="font-size:12px;color:var(--muted)">Target: ${fmt.date(p.target_date)}</span>` : ''}
+    </div>
+    <div style="margin-top:12px">
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+      <div class="progress-label">${tc.done} of ${tc.total} tasks complete</div>
+    </div>
+    ${descHTML}
+    ${notesHTML}
+    ${tasksHTML}
+    ${quotesHTML}
+  `);
+}
+
+function openMaintenanceModal(m) {
+  openModal(`
+    <div class="modal-title">${m.name}</div>
+    <div style="margin-top:8px;display:flex;gap:16px;flex-wrap:wrap">
+      <span style="font-size:12px;color:var(--muted)">Category: <strong style="color:var(--text)">${m.category}</strong></span>
+      <span style="font-size:12px;color:var(--muted)">Every: <strong style="color:var(--text)">${m.frequency_days} days</strong></span>
+    </div>
+    <div class="modal-section">
+      <div class="modal-section-label">Schedule</div>
+      <div style="display:grid;gap:8px">
+        <div style="font-size:13px">Last completed: <strong>${m.last_completed ? fmt.date(m.last_completed) : 'Never'}</strong></div>
+        <div style="font-size:13px">Next due: <strong class="${statusClass(m.days_until_due)}">${m.next_due ? fmt.date(m.next_due) : '—'}${m.days_until_due != null ? ` (${m.is_overdue ? 'overdue by ' + Math.abs(m.days_until_due) + 'd' : 'in ' + m.days_until_due + 'd'})` : ''}</strong></div>
+        ${m.inventory_count != null ? `<div style="font-size:13px">Inventory: <strong>${m.inventory_count} ${m.inventory_unit || ''}</strong></div>` : ''}
+      </div>
+    </div>
+    ${m.notes ? `<div class="modal-section"><div class="modal-section-label">Notes</div><div class="modal-notes">${m.notes}</div></div>` : ''}
+  `);
+}
+
+// ── Chart instances (so we can destroy/recreate on refresh) ──────────────
+let chartElec = null, chartGas = null;
+let chartThermoHistory = {}; // keyed by location
+
+// ── Helpers ───────────────────────────────────────────────────────────────
+const fmt = {
+  temp:   v => v != null ? `${v}°F` : '—',
+  pct:    v => v != null ? `${Math.round(v)}%` : '—',
+  kwh:    v => v != null ? `${(+v).toLocaleString()} kWh` : '—',
+  dollar: v => v != null ? `$${(+v).toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0})}` : '—',
+  therms: v => v != null ? `${(+v).toFixed(0)} therms` : '—',
+  date:   s => s ? new Date(s + 'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '—',
+  monthLabel: s => { // "2025-04" → "Apr '25"
+    const [y, m] = s.split('-');
+    return new Date(+y, +m-1).toLocaleDateString('en-US',{month:'short', year:'2-digit'});
+  },
+  minutesAgo: ts => {
+    const diff = (Date.now() - new Date(ts).getTime()) / 60000;
+    if (diff < 1)   return 'just now';
+    if (diff < 60)  return `${Math.round(diff)}m ago`;
+    if (diff < 1440) return `${Math.round(diff/60)}h ago`;
+    return `${Math.round(diff/1440)}d ago`;
+  },
+};
+
+function statusClass(days) {
+  if (days === null || days === undefined) return 'due-ok';
+  if (days < 0)  return 'due-overdue';
+  if (days <= 14) return 'due-soon';
+  return 'due-ok';
+}
+
+function hvacLabel(status) {
+  if (!status) return 'OFF';
+  return status.toUpperCase();
+}
+
+// ── Thermostat history chart ───────────────────────────────────────────────
+function initThermoCharts(history) {
+  // Destroy old charts
+  Object.values(chartThermoHistory).forEach(c => c.destroy());
+  chartThermoHistory = {};
+
+  if (!history || history.length === 0) return;
+
+  // Group by location
+  const byLocation = {};
+  history.forEach(r => {
+    if (!byLocation[r.location]) byLocation[r.location] = [];
+    byLocation[r.location].push(r);
+  });
+
+  Object.entries(byLocation).forEach(([loc, readings]) => {
+    const canvasId = `chart-thermo-${loc.replace(/\s+/g,'_').toLowerCase()}`;
+    const canvas   = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    const labels  = readings.map(r => {
+      const d = new Date(r.timestamp);
+      return d.toLocaleTimeString('en-US', { hour: 'numeric', hour12: true });
+    });
+    const temps   = readings.map(r => r.temp_f);
+    const humids  = readings.map(r => r.humidity_pct);
+
+    chartThermoHistory[loc] = new Chart(canvas, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Temp (°F)',
+            data: temps,
+            borderColor: 'rgba(45,212,191,0.9)',
+            backgroundColor: 'rgba(45,212,191,0.08)',
+            fill: true,
+            tension: 0.4,
+            pointRadius: 0,
+            yAxisID: 'yTemp',
+          },
+          {
+            label: 'Humidity (%)',
+            data: humids,
+            borderColor: 'rgba(148,163,184,0.5)',
+            backgroundColor: 'transparent',
+            fill: false,
+            tension: 0.4,
+            pointRadius: 0,
+            borderDash: [4, 3],
+            yAxisID: 'yHumid',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => ctx.datasetIndex === 0
+                ? ` ${ctx.raw}°F`
+                : ` ${ctx.raw}% RH`
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#64748b', font: { size: 10 }, maxTicksLimit: 8 },
+            grid:  { color: 'rgba(255,255,255,0.04)' }
+          },
+          yTemp: {
+            position: 'left',
+            ticks: { color: '#2dd4bf', font: { size: 10 }, callback: v => `${v}°` },
+            grid:  { color: 'rgba(255,255,255,0.06)' }
+          },
+          yHumid: {
+            position: 'right',
+            ticks: { color: '#64748b', font: { size: 10 }, callback: v => `${v}%` },
+            grid:  { display: false }
+          }
+        }
+      }
+    });
+  });
+}
+
+// ── Thermostat section ─────────────────────────────────────────────────────
+function renderThermostats(latest, history) {
+  if (!latest || latest.length === 0) {
+    return `
+      <div class="card">
+        <div class="card-title">Thermostats</div>
+        <div class="no-thermo">No readings yet — Nest polling hasn't run.<br>
+        Run <code style="color:var(--accent)">python3 scripts/nest_monitor.py</code> to start.</div>
+      </div>`;
+  }
+
+  const cards = latest.map(t => {
+    const hvac = hvacLabel(t.hvac_status);
+    const hvacClass = `hvac-${hvac}`;
+    const setpointHTML = t.heat_setpoint_f
+      ? `<div class="thermo-stat"><div class="thermo-stat-label">Set</div><div class="thermo-stat-value" style="color:var(--orange)">${fmt.temp(t.heat_setpoint_f)}</div></div>`
+      : t.cool_setpoint_f
+      ? `<div class="thermo-stat"><div class="thermo-stat-label">Set</div><div class="thermo-stat-value" style="color:var(--accent)">${fmt.temp(t.cool_setpoint_f)}</div></div>`
+      : '';
+
+    const locKey    = (t.location || 'thermostat').replace(/\s+/g,'_').toLowerCase();
+    const hasHistory = history && history.some(r => r.location === t.location);
+    const historyHTML = hasHistory
+      ? `<div style="margin-top:14px; border-top:1px solid var(--border); padding-top:12px;">
+           <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Last 24h</div>
+           <div style="position:relative;height:90px"><canvas id="chart-thermo-${locKey}"></canvas></div>
+         </div>`
+      : '';
+
+    return `
+      <div class="card thermo-card">
+        <div class="thermo-location">${t.location || 'Thermostat'}</div>
+        <div class="thermo-temp">${t.temp_f != null ? Math.round(t.temp_f) : '—'}<sup>°F</sup></div>
+        <div class="thermo-meta">
+          <div class="thermo-stat">
+            <div class="thermo-stat-label">Humidity</div>
+            <div class="thermo-stat-value">${fmt.pct(t.humidity_pct)}</div>
+          </div>
+          <div class="thermo-stat">
+            <div class="thermo-stat-label">Mode</div>
+            <div class="thermo-stat-value">${t.mode || '—'}</div>
+          </div>
+          ${setpointHTML}
+        </div>
+        <div class="hvac-badge ${hvacClass}">
+          <div class="hvac-dot"></div>${hvac}
+        </div>
+        <div style="margin-top:10px; font-size:11px; color:var(--muted)">${t.timestamp ? fmt.minutesAgo(t.timestamp) : ''}</div>
+        ${historyHTML}
+      </div>`;
+  }).join('');
+
+  return `<div class="thermo-grid">${cards}</div>`;
+}
+
+// ── Maintenance section ────────────────────────────────────────────────────
+function renderMaintenance(items) {
+  if (!items || items.length === 0) {
+    return `<div class="card"><div class="card-title">Maintenance</div><div style="color:var(--muted);font-size:13px">No maintenance items.</div></div>`;
+  }
+  const rows = items.map(m => {
+    const days = m.days_until_due;
+    const cls  = statusClass(days);
+    const dueLabel = m.is_overdue
+      ? `Overdue by ${Math.abs(days)}d`
+      : days === 0 ? 'Due today'
+      : days != null ? `Due in ${days}d`
+      : `Due ${fmt.date(m.next_due)}`;
+    const inv = m.inventory_count != null
+      ? `${m.inventory_count} ${m.inventory_unit || ''} in stock`
+      : '';
+    return `
+      <div class="maint-item clickable" onclick='openMaintenanceModal(${JSON.stringify(m).replace(/'/g,"&#39;")})'>
+        <div class="maint-left">
+          <div class="maint-name">${m.name}</div>
+          <div class="maint-sub">${m.category} · every ${m.frequency_days}d</div>
+        </div>
+        <div class="maint-right">
+          <div class="maint-due ${cls}">${dueLabel}</div>
+          ${inv ? `<div class="maint-inv">${inv}</div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+  return `<div class="card"><div class="card-title">Maintenance</div><div class="maintenance-grid">${rows}</div></div>`;
+}
+
+// ── Needs attention ────────────────────────────────────────────────────────
+function renderAttention(tasks) {
+  const inner = tasks.length === 0
+    ? `<div class="nothing-waiting">✓ Nothing waiting on you</div>`
+    : tasks.map(t => `
+        <div class="attention-item">
+          <span style="color:var(--red);font-size:16px">⚠</span>
+          <div>
+            <div class="proj-name">${t.project_name}</div>
+            <div class="task-name">${t.title}</div>
+          </div>
+        </div>`).join('');
+  return `<div class="card"><div class="card-title">Needs Your Attention</div><div class="attention-list">${inner}</div></div>`;
+}
+
+// ── Energy charts ──────────────────────────────────────────────────────────
+function renderEnergy(energy) {
+  const { monthly_electric, monthly_gas, totals } = energy;
+
+  const summaryHTML = `
+    <div class="energy-summary">
+      <div class="energy-stat">
+        <div class="energy-stat-label">Annual Electric</div>
+        <div class="energy-stat-value" style="color:var(--elec)">${fmt.kwh(totals.electric_kwh)}</div>
+        <div class="energy-stat-sub">${fmt.dollar(totals.electric_cost)}</div>
+      </div>
+      <div class="energy-stat">
+        <div class="energy-stat-label">Avg Monthly Electric</div>
+        <div class="energy-stat-value" style="color:var(--elec)">${monthly_electric.length ? fmt.kwh((totals.electric_kwh / monthly_electric.length).toFixed(0)) : '—'}</div>
+        <div class="energy-stat-sub">${monthly_electric.length ? fmt.dollar((totals.electric_cost / monthly_electric.length).toFixed(0)) + '/mo' : ''}</div>
+      </div>
+      <div class="energy-stat">
+        <div class="energy-stat-label">Annual Gas</div>
+        <div class="energy-stat-value" style="color:var(--gas)">${fmt.therms(totals.gas_therms)}</div>
+        <div class="energy-stat-sub">${fmt.dollar(totals.gas_cost)}</div>
+      </div>
+      <div class="energy-stat">
+        <div class="energy-stat-label">Total Utility Cost</div>
+        <div class="energy-stat-value">${fmt.dollar((totals.electric_cost||0) + (totals.gas_cost||0))}</div>
+        <div class="energy-stat-sub">Mar 2025 – Mar 2026</div>
+      </div>
+    </div>`;
+
+  const chartsHTML = `
+    <div class="energy-charts">
+      <div class="card">
+        <div class="card-title">Electric — Monthly kWh</div>
+        <div class="chart-wrap"><canvas id="chartElec"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Gas — Monthly Therms</div>
+        <div class="chart-wrap"><canvas id="chartGas"></canvas></div>
+      </div>
+    </div>`;
+
+  return summaryHTML + chartsHTML;
+}
+
+function initCharts(energy) {
+  const { monthly_electric, monthly_gas } = energy;
+  const chartDefaults = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: {} }
+    },
+    scales: {
+      x: {
+        ticks: { color: '#64748b', font: { size: 10 } },
+        grid:  { color: 'rgba(255,255,255,0.05)' }
+      },
+      y: {
+        ticks: { color: '#64748b', font: { size: 10 } },
+        grid:  { color: 'rgba(255,255,255,0.05)' }
+      }
+    }
+  };
+
+  if (chartElec) { chartElec.destroy(); chartElec = null; }
+  if (chartGas)  { chartGas.destroy();  chartGas  = null; }
+
+  // Electric
+  const elecLabels = monthly_electric.map(r => fmt.monthLabel(r.month));
+  const elecKwh    = monthly_electric.map(r => r.kwh);
+  const elecCtx    = document.getElementById('chartElec');
+  if (elecCtx) {
+    chartElec = new Chart(elecCtx, {
+      type: 'bar',
+      data: {
+        labels: elecLabels,
+        datasets: [{
+          data: elecKwh,
+          backgroundColor: 'rgba(250,204,21,0.6)',
+          borderColor:     'rgba(250,204,21,0.9)',
+          borderWidth: 1,
+          borderRadius: 3,
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        plugins: {
+          ...chartDefaults.plugins,
+          tooltip: {
+            callbacks: {
+              label: ctx => ` ${ctx.raw.toLocaleString()} kWh`
+            }
+          }
+        },
+        scales: {
+          ...chartDefaults.scales,
+          y: { ...chartDefaults.scales.y, ticks: { ...chartDefaults.scales.y.ticks, callback: v => `${v.toLocaleString()}` } }
+        }
+      }
+    });
+  }
+
+  // Gas
+  const gasLabels = monthly_gas.map(r => fmt.monthLabel(r.month));
+  const gasTherms = monthly_gas.map(r => r.therms);
+  const gasCtx    = document.getElementById('chartGas');
+  if (gasCtx) {
+    chartGas = new Chart(gasCtx, {
+      type: 'bar',
+      data: {
+        labels: gasLabels,
+        datasets: [{
+          data: gasTherms,
+          backgroundColor: 'rgba(251,146,60,0.6)',
+          borderColor:     'rgba(251,146,60,0.9)',
+          borderWidth: 1,
+          borderRadius: 3,
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        plugins: {
+          ...chartDefaults.plugins,
+          tooltip: {
+            callbacks: {
+              label: ctx => ` ${ctx.raw.toFixed(1)} therms`
+            }
+          }
+        }
+      }
+    });
+  }
+}
+
+// ── Projects section ───────────────────────────────────────────────────────
+function taskStatusDot(s) {
+  const cls = { todo: 'dot-todo', in_progress: 'dot-in_progress', waiting_on_steve: 'dot-waiting_on_steve', waiting_on_vendor: 'dot-waiting_on_vendor', done: 'dot-done' };
+  return `<div class="task-dot ${cls[s] || 'dot-todo'}"></div>`;
+}
+
+function renderProjects(projects) {
+  if (!projects || projects.length === 0) {
+    return `<div style="color:var(--muted)">No projects yet.</div>`;
+  }
+
+  const cards = projects.map(p => {
+    const tc  = p.task_counts;
+    const pct = tc.total ? Math.round(tc.done / tc.total * 100) : 0;
+
+    const badgeMap = { planning: 'badge-planning', active: 'badge-active', done: 'badge-done', 'on-hold': 'badge-on-hold' };
+    const badgeCls = badgeMap[p.status] || 'badge-planning';
+
+    // Show up to 5 tasks; show more toggle handled via inline show/hide
+    const visibleTasks = p.tasks.slice(0, 5);
+    const hiddenTasks  = p.tasks.slice(5);
+
+    const taskHTML = visibleTasks.map(t => {
+      const extraCls = t.status === 'done' ? 'task-done-text' : t.status === 'waiting_on_steve' ? 'task-waiting-steve' : '';
+      return `<div class="task-item">${taskStatusDot(t.status)}<span class="${extraCls}">${t.title}</span></div>`;
+    }).join('');
+
+    const hiddenHTML = hiddenTasks.length
+      ? `<details><summary class="show-more">+ ${hiddenTasks.length} more tasks</summary>${hiddenTasks.map(t => `<div class="task-item">${taskStatusDot(t.status)}<span class="${t.status==='done'?'task-done-text':''}">${t.title}</span></div>`).join('')}</details>`
+      : '';
+
+    const quotesHTML = p.quotes && p.quotes.length
+      ? `<div class="quotes-section"><div style="font-size:11px;color:var(--muted);margin-bottom:6px">QUOTES</div>${
+          p.quotes.map(q => `
+            <div class="quote-row">
+              <span class="quote-vendor">${q.vendor_name || 'Unknown vendor'}</span>
+              <span>${q.amount ? `<span class="quote-amount">$${(+q.amount).toLocaleString()}</span>` : 'TBD'}
+              <span class="quote-status qs-${q.status}">${q.status}</span></span>
+            </div>`).join('')
+        }</div>`
+      : '';
+
+    return `
+      <div class="card project-card clickable" onclick='openProjectModal(${JSON.stringify(p).replace(/'/g,"&#39;")})'>
+        <div style="font-size:10px;color:var(--muted);text-align:right;margin-bottom:4px">click for details ›</div>
+        <div class="project-header">
+          <div class="project-name">${p.name}</div>
+          <div class="project-badge ${badgeCls}">${p.status}</div>
+        </div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+        <div class="progress-label">${tc.done} of ${tc.total} tasks complete</div>
+        <div class="task-list">${taskHTML}</div>
+        ${hiddenHTML}
+        ${quotesHTML}
+      </div>`;
+  }).join('');
+
+  return `<div class="projects-grid">${cards}</div>`;
+}
+
+// ── Open Quotes section ────────────────────────────────────────────────────
+function renderOpenQuotes(quotes) {
+  if (!quotes || quotes.length === 0) return '';
+  const pending = quotes.filter(q => q.status === 'pending' || q.status === 'received');
+  if (pending.length === 0) return '';
+
+  const rows = pending.map(q => {
+    const statusCls = { pending: 'oqs-pending', received: 'oqs-received', accepted: 'oqs-accepted', rejected: 'oqs-rejected' }[q.status] || 'oqs-pending';
+    const sentAgo = q.sent_date ? Math.floor((Date.now() - new Date(q.sent_date + 'T00:00:00').getTime()) / 86400000) : null;
+    return `
+      <div class="oq-item">
+        <div class="oq-left">
+          <div class="oq-vendor">${q.vendor_name}</div>
+          <div class="oq-project">${q.project_name}</div>
+          ${q.contact ? `<div class="oq-contact">${q.contact}</div>` : ''}
+        </div>
+        <div class="oq-right">
+          <div class="oq-status ${statusCls}">${q.status}</div>
+          ${sentAgo !== null ? `<div class="oq-days">${sentAgo}d since sent</div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+
+  return `
+    <p class="section-title">Open Quotes (${pending.length})</p>
+    <div class="card"><div class="quotes-grid">${rows}</div></div>`;
+}
+
+// ── Recent Communications ──────────────────────────────────────────────────
+function renderRecentComms(comms) {
+  if (!comms || comms.length === 0) return '';
+
+  // Show most recent first, cap at 15
+  const sorted = [...comms].sort((a, b) => {
+    const da = a.date + 'T' + (a.time || '00:00');
+    const db = b.date + 'T' + (b.time || '00:00');
+    return db.localeCompare(da);
+  }).slice(0, 15);
+
+  const rows = sorted.map(c => {
+    const isIn = c.direction === 'inbound';
+    const dirIcon = isIn ? '↓' : '↑';
+    const dirCls  = isIn ? 'comm-in' : 'comm-out';
+    const dateStr = c.date ? new Date(c.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '';
+    return `
+      <div class="comm-item">
+        <div class="comm-dir ${dirCls}">${dirIcon}</div>
+        <div class="comm-body">
+          <div class="comm-top">
+            <span class="comm-who">${c.vendor_name}</span>
+            <span class="comm-project">${c.project_name}</span>
+            <span class="comm-date">${dateStr}${c.time ? ' ' + c.time : ''}</span>
+          </div>
+          ${c.subject ? `<div class="comm-subject">${c.subject}</div>` : ''}
+          ${c.summary ? `<div class="comm-summary">${c.summary}</div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+
+  return `
+    <p class="section-title">Recent Communications</p>
+    <div class="card"><div class="comms-feed">${rows}</div></div>`;
+}
+
+// ── Main render ────────────────────────────────────────────────────────────
+function render(data) {
+  const dot = document.getElementById('status-dot');
+  const ts  = document.getElementById('updated-ts');
+
+  // Staleness check (> 20 min = stale)
+  const genAt    = new Date(data.generated_at);
+  const diffMins = (Date.now() - genAt.getTime()) / 60000;
+  ts.textContent = `Updated ${fmt.minutesAgo(data.generated_at)}`;
+  dot.className  = 'status-dot' + (diffMins > 20 ? ' stale' : '');
+
+  const html = `
+    <p class="section-title">Climate</p>
+    <div class="top-row">
+      <div class="top-left">
+        ${renderThermostats(data.thermostat.latest, data.thermostat.history)}
+      </div>
+      <div class="top-right">
+        ${renderMaintenance(data.maintenance)}
+        <div style="margin-top:14px">${renderAttention(data.needs_attention)}</div>
+      </div>
+    </div>
+
+    <p class="section-title">Energy — Mar 2025 to Mar 2026</p>
+    ${renderEnergy(data.energy)}
+
+    <p class="section-title">Projects</p>
+    ${renderProjects(data.projects)}
+
+    ${renderOpenQuotes(data.open_quotes)}
+
+    ${renderRecentComms(data.recent_communications)}
+  `;
+
+  document.getElementById('main-content').innerHTML = html;
+  document.getElementById('footer').textContent = `Data as of ${data.generated_at} · Nest polls every 15 min · Open at localhost:8080`;
+
+  initCharts(data.energy);
+  initThermoCharts(data.thermostat.history);
+}
+
+// ── Load data ──────────────────────────────────────────────────────────────
+async function loadData() {
+  const dot = document.getElementById('status-dot');
+  dot.className = 'status-dot stale';
+
+  try {
+    const res = await fetch(`dashboard_data.json?_=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    document.getElementById('main-content').innerHTML = `
+      <div class="error-banner">
+        Could not load dashboard_data.json: ${err.message}<br>
+        <small>Make sure you're accessing this page via <strong>http://localhost:8080</strong> and the HTTP server is running.</small>
+      </div>`;
+    document.getElementById('status-dot').className = 'status-dot error';
+    document.getElementById('updated-ts').textContent = 'Load failed';
+  }
+}
+
+// ── Auto-refresh every 5 minutes ──────────────────────────────────────────
+loadData();
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
