@@ -1,374 +1,217 @@
 {
-  "generated_at": "2026-03-27 13:03:31",
+  "generated_at": "2026-03-27 23:16:13",
   "as_of": "2026-03-27",
   "projects": [
     {
-      "id": 6,
-      "name": "Window Washing",
-      "category": "maintenance",
-      "status": "active",
-      "priority": "medium",
-      "description": "Get exterior window washing done. Interior optional. Quote requested before scheduling site visit.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
-      "notes": "Quote received from Gary's Cleaning on Mar 26 (.docx attachment). ~2-3 hours, can do interior first then exterior. ~26 windows/doors total.",
-      "tasks": [
-        {
-          "id": 17,
-          "project_id": 6,
-          "title": "Get quote from Gary's Cleaning",
-          "status": "done",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": "Quote received Mar 26 \u2014 .docx attachment in email"
-        },
-        {
-          "id": 18,
-          "project_id": 6,
-          "title": "Review quote and schedule window washing",
-          "status": "waiting_on_steve",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": "~2-3 hrs. Can do interior first (good for dogs). garyscleaning@gmail.com / 650-591-6037"
-        }
-      ],
-      "task_counts": {
-        "total": 2,
-        "done": 1,
-        "in_progress": 0,
-        "waiting_on_steve": 1,
-        "waiting_on_vendor": 0,
-        "todo": 0
-      },
-      "quotes": [
-        {
-          "id": 5,
-          "project_id": 6,
-          "vendor_id": 5,
-          "amount": null,
-          "date_received": "2026-03-26",
-          "sent_date": "2026-03-24",
-          "valid_until": null,
-          "status": "received",
-          "drive_file_url": null,
-          "notes": "Quote in .docx attachment. ~2-3 hrs, interior first option. 650-591-6037",
-          "contact": "garyscleaning@gmail.com",
-          "vendor_name": "Gary's Cleaning"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Front Yard Fence Replacement",
-      "category": "fence",
-      "status": "planning",
+      "category": "exterior",
+      "status": "active",
       "priority": "high",
-      "description": "Replace front yard fence. Need to get 3+ quotes. Determine material (wood vs vinyl vs metal). Check HOA requirements.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
+      "description": "Replace front yard fence. San Carlos 4ft max height. HOA status unconfirmed.",
       "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
       "tasks": [
         {
           "id": 1,
           "project_id": 1,
-          "title": "Research HOA fence requirements",
-          "status": "todo",
-          "assigned_to": null,
+          "title": "Get quotes from fence contractors",
+          "description": null,
+          "status": "in_progress",
+          "owner": "claude",
           "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": "Outreach drafted for 8 vendors",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 2,
           "project_id": 1,
-          "title": "Get 3+ quotes from local fence contractors",
-          "status": "todo",
-          "assigned_to": null,
+          "title": "Verify HOA status for 1950 Eucalyptus Ave",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
           "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": "Call (650) 802-4210 San Carlos Community Development",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 3,
           "project_id": 1,
-          "title": "Select material and style",
-          "status": "todo",
-          "assigned_to": null,
+          "title": "Confirm fence height and material preference",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
           "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": "City max 4ft front yard",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 4,
+          "project_id": 1,
+          "title": "Review quotes and select contractor",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 5,
+          "project_id": 1,
+          "title": "Schedule installation",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         }
       ],
       "task_counts": {
-        "total": 3,
+        "total": 5,
         "done": 0,
-        "in_progress": 0,
+        "in_progress": 1,
         "waiting_on_steve": 0,
         "waiting_on_vendor": 0,
-        "todo": 3
+        "todo": 0
       },
       "quotes": []
     },
     {
       "id": 2,
       "name": "Roof Replacement",
-      "category": "roof",
+      "category": "exterior",
       "status": "active",
       "priority": "high",
-      "description": "Get quotes on full roof replacement. Document current roof age/condition. Check if insurance claim applicable.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
-      "notes": "William (Signature) quote promised EOD Mar 27. Garage confirmed included. Steve noted granule loss into gutters as trigger for inspection; may be normal wear. Solar on garage is downstream motivation. Cal-Pac no reply yet.",
+      "description": "Full roof replacement. Built 2008, likely plywood deck, 2 layers.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
       "tasks": [
-        {
-          "id": 4,
-          "project_id": 2,
-          "title": "Document current roof condition with photos",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
-        },
-        {
-          "id": 5,
-          "project_id": 2,
-          "title": "Check homeowner insurance for coverage",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
-        },
         {
           "id": 6,
           "project_id": 2,
-          "title": "Get 3+ quotes from local roofers",
-          "status": "waiting_on_vendor",
-          "assigned_to": null,
+          "title": "Research and contact roofing contractors",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
           "due_date": null,
-          "notes": "Emailed Signature Roofing and Cal-Pac Roofing on Mar 24"
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 7,
           "project_id": 2,
-          "title": "Research financing options",
-          "status": "todo",
-          "assigned_to": null,
+          "title": "Reply to William at Signature Roofing with address",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
           "due_date": null,
-          "notes": null
-        }
-      ],
-      "task_counts": {
-        "total": 4,
-        "done": 0,
-        "in_progress": 0,
-        "waiting_on_steve": 0,
-        "waiting_on_vendor": 1,
-        "todo": 3
-      },
-      "quotes": [
-        {
-          "id": 1,
-          "project_id": 2,
-          "vendor_id": 1,
-          "amount": null,
-          "date_received": null,
-          "sent_date": "2026-03-24",
-          "valid_until": null,
-          "status": "pending",
-          "drive_file_url": null,
-          "notes": "Active thread. William reviewed on Google Maps. CertainTeed Presidential shingle (2008). Rough quote promised EOD Mar 27. Open Q: include detached garage? Attached drive-by list of local Signature roofs.",
-          "contact": "william@signatureroofing.com",
-          "vendor_name": "Signature Roofing (William)"
+          "completed_at": null,
+          "notes": "Address sent: 1950 Eucalyptus Ave San Carlos CA 94070",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
-          "id": 2,
-          "project_id": 2,
-          "vendor_id": 2,
-          "amount": null,
-          "date_received": null,
-          "sent_date": "2026-03-24",
-          "valid_until": null,
-          "status": "pending",
-          "drive_file_url": null,
-          "notes": "Requested quote without site visit. Subject: Full Roof Replacement Quote \u2014 San Carlos, CA",
-          "contact": "calpacroofing@sbcglobal.net",
-          "vendor_name": "Cal-Pac Roofing"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Solar + Energy Storage on Garage",
-      "category": "solar",
-      "status": "planning",
-      "priority": "high",
-      "description": "Get quotes on solar panel installation on garage roof plus battery storage. Research PG&E NEM tariff, incentives, rebates.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
-      "notes": null,
-      "tasks": [
-        {
           "id": 8,
-          "project_id": 3,
-          "title": "Research PG&E NEM 3.0 tariff and interconnection process",
-          "status": "todo",
-          "assigned_to": null,
+          "project_id": 2,
+          "title": "Get 2 additional quotes",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
           "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 9,
-          "project_id": 3,
-          "title": "Research federal/state solar incentives and rebates",
-          "status": "todo",
-          "assigned_to": null,
+          "project_id": 2,
+          "title": "Review all quotes and material recommendations",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
           "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 10,
-          "project_id": 3,
-          "title": "Get 3+ quotes from solar installers",
-          "status": "todo",
-          "assigned_to": null,
+          "project_id": 2,
+          "title": "Schedule roof inspection",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
           "due_date": null,
-          "notes": null
-        },
-        {
-          "id": 11,
-          "project_id": 3,
-          "title": "Evaluate battery storage options (Powerwall, Enphase, etc.)",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         }
       ],
       "task_counts": {
-        "total": 4,
+        "total": 5,
         "done": 0,
         "in_progress": 0,
         "waiting_on_steve": 0,
         "waiting_on_vendor": 0,
-        "todo": 4
+        "todo": 0
       },
       "quotes": []
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Pest Inspection",
-      "category": "pest",
+      "category": "maintenance",
       "status": "active",
       "priority": "high",
-      "description": "Schedule pest inspection. Document findings. Get quotes on any treatment needed.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
-      "notes": "Mike Amdal disqualified \u2014 replied 'we dont do termites'. Omega Home Services no reply yet. Need 1-2 more leads.",
+      "description": "Annual pest inspection needed.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
       "tasks": [
         {
-          "id": 12,
-          "project_id": 4,
-          "title": "Schedule pest inspection with 2-3 companies",
-          "status": "waiting_on_vendor",
-          "assigned_to": null,
+          "id": 11,
+          "project_id": 3,
+          "title": "Contact pest control vendors",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
           "due_date": null,
-          "notes": "Emailed Omega Home Services and Mike Amdal on Mar 24"
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 12,
+          "project_id": 3,
+          "title": "Schedule inspection",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         },
         {
           "id": 13,
-          "project_id": 4,
-          "title": "Compare inspection findings and quotes",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
-        }
-      ],
-      "task_counts": {
-        "total": 2,
-        "done": 0,
-        "in_progress": 0,
-        "waiting_on_steve": 0,
-        "waiting_on_vendor": 1,
-        "todo": 1
-      },
-      "quotes": [
-        {
-          "id": 4,
-          "project_id": 4,
-          "vendor_id": 4,
-          "amount": null,
-          "date_received": "2026-03-26",
-          "sent_date": "2026-03-24",
-          "valid_until": null,
-          "status": "rejected",
-          "drive_file_url": null,
-          "notes": "Disqualified \u2014 replied 'we dont do termites'",
-          "contact": "mikeamdal@gmail.com",
-          "vendor_name": "Mike Amdal"
-        },
-        {
-          "id": 3,
-          "project_id": 4,
-          "vendor_id": 3,
-          "amount": null,
-          "date_received": null,
-          "sent_date": "2026-03-24",
-          "valid_until": null,
+          "project_id": 3,
+          "title": "Review inspection findings",
+          "description": null,
           "status": "pending",
-          "drive_file_url": null,
-          "notes": "Comprehensive inspection \u2014 rodents, ants, termites, other pests. Targeting this month.",
-          "contact": "office@omega-homeservices.com",
-          "vendor_name": "Omega Home Services"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Air Filter Maintenance",
-      "category": "maintenance",
-      "status": "planning",
-      "priority": "high",
-      "description": "Regular air filter replacement tracking.",
-      "estimated_cost": null,
-      "actual_cost": null,
-      "created_date": "2026-03-24",
-      "target_date": null,
-      "notes": null,
-      "tasks": [
-        {
-          "id": 14,
-          "project_id": 5,
-          "title": "Confirm filter size(s) for all units",
-          "status": "todo",
-          "assigned_to": null,
+          "owner": "steve",
           "due_date": null,
-          "notes": null
-        },
-        {
-          "id": 15,
-          "project_id": 5,
-          "title": "Order backup inventory (suggest 4-6 filters)",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
-        },
-        {
-          "id": 16,
-          "project_id": 5,
-          "title": "Set up auto-delivery if desired",
-          "status": "todo",
-          "assigned_to": null,
-          "due_date": null,
-          "notes": null
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
         }
       ],
       "task_counts": {
@@ -377,21 +220,696 @@
         "in_progress": 0,
         "waiting_on_steve": 0,
         "waiting_on_vendor": 0,
-        "todo": 3
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 4,
+      "name": "Window Washing",
+      "category": "maintenance",
+      "status": "active",
+      "priority": "medium",
+      "description": "Full exterior window washing.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 14,
+          "project_id": 4,
+          "title": "Contact Gary's Window Washing",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 15,
+          "project_id": 4,
+          "title": "Reply to Gary's with address",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Address sent",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 16,
+          "project_id": 4,
+          "title": "Confirm scheduling",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 3,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 6,
+      "name": "Electricity Monitoring",
+      "category": "utilities",
+      "status": "planning",
+      "priority": "medium",
+      "description": "PG&E Green Button / Share My Data 2.0 API integration.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 20,
+          "project_id": 6,
+          "title": "Research PG&E Share My Data 2.0 API",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 21,
+          "project_id": 6,
+          "title": "Authorize PG&E Share My Data OAuth",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 22,
+          "project_id": 6,
+          "title": "Build PG&E API connector",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 23,
+          "project_id": 6,
+          "title": "Import historical PG&E CSV data",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 4,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 7,
+      "name": "Water Monitoring",
+      "category": "utilities",
+      "status": "planning",
+      "priority": "low",
+      "description": "Cal Water monitoring. No public API \u2014 manual monthly entry.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 24,
+          "project_id": 7,
+          "title": "Set up manual Cal Water monthly entry",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 25,
+          "project_id": 7,
+          "title": "Log monthly water usage",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Manual \u2014 no Cal Water API",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 2,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 8,
+      "name": "Nest Thermostat Integration",
+      "category": "smart-home",
+      "status": "planning",
+      "priority": "medium",
+      "description": "Google SDM API. Upstairs (heat+AC), downstairs (heat only). $5 fee.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 26,
+          "project_id": 8,
+          "title": "Pay $5 SDM fee and set up project",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 27,
+          "project_id": 8,
+          "title": "Grant Claude SDM access credentials",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 28,
+          "project_id": 8,
+          "title": "Build Nest SDM API connector",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 3,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 9,
+      "name": "Home Assistant Hub",
+      "category": "smart-home",
+      "status": "planning",
+      "priority": "medium",
+      "description": "Home Assistant on Mac Mini via Docker. Lutron, Aqara, Nest.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 29,
+          "project_id": 9,
+          "title": "Install Home Assistant on Mac Mini via Docker",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 30,
+          "project_id": 9,
+          "title": "Connect Lutron and Aqara to Home Assistant",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 31,
+          "project_id": 9,
+          "title": "Build HA to home.db sync connector",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 3,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 10,
+      "name": "Air Filter Replacement",
+      "category": "maintenance",
+      "status": "active",
+      "priority": "medium",
+      "description": "Regular air filter replacement. Filter size unknown.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 32,
+          "project_id": 10,
+          "title": "Check filter size at home",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 33,
+          "project_id": 10,
+          "title": "Order replacement filters",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 34,
+          "project_id": 10,
+          "title": "Set up calendar reminders",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 3,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 11,
+      "name": "Smoke Detector Maintenance",
+      "category": "safety",
+      "status": "active",
+      "priority": "low",
+      "description": "First Alert hardwired, 10yr battery. All replaced 2025.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 35,
+          "project_id": 11,
+          "title": "Annual check reminder set for 2026",
+          "description": null,
+          "status": "completed",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "All units replaced 2025",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 36,
+          "project_id": 11,
+          "title": "Annual test 2026",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 2,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 12,
+      "name": "HVAC Maintenance",
+      "category": "maintenance",
+      "status": "active",
+      "priority": "medium",
+      "description": "Annual HVAC service \u2014 upstairs heat+AC, downstairs heat only.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 37,
+          "project_id": 12,
+          "title": "Schedule annual HVAC service",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 38,
+          "project_id": 12,
+          "title": "Coordinate with Nest integration",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "After Nest setup",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 2,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 13,
+      "name": "Gutter Cleaning",
+      "category": "maintenance",
+      "status": "active",
+      "priority": "medium",
+      "description": "Semi-annual gutter cleaning.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 39,
+          "project_id": 13,
+          "title": "Schedule spring gutter cleaning",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 40,
+          "project_id": 13,
+          "title": "Schedule fall gutter cleaning",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 2,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 14,
+      "name": "PG&E Data Import",
+      "category": "utilities",
+      "status": "active",
+      "priority": "high",
+      "description": "Import PG&E Green Button CSV. Drive fetch failed \u2014 manual import needed.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 41,
+          "project_id": 14,
+          "title": "Share PG&E CSV or convert to Google Sheets",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Drive fetch failed",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 42,
+          "project_id": 14,
+          "title": "Import PG&E electricity data to energy_log",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 43,
+          "project_id": 14,
+          "title": "Import PG&E gas data to energy_log",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 3,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 15,
+      "name": "Lutron / Aqara Integration",
+      "category": "smart-home",
+      "status": "planning",
+      "priority": "low",
+      "description": "Monitor via Home Assistant. Bridge type unknown.",
+      "notes": null,
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-26T23:02:39.195617+00:00",
+      "tasks": [
+        {
+          "id": 44,
+          "project_id": 15,
+          "title": "Identify Lutron bridge type when home",
+          "description": null,
+          "status": "pending",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 45,
+          "project_id": 15,
+          "title": "Build via Home Assistant when HA is set up",
+          "description": null,
+          "status": "pending",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": null,
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 2,
+        "done": 0,
+        "in_progress": 0,
+        "waiting_on_steve": 0,
+        "waiting_on_vendor": 0,
+        "todo": 0
+      },
+      "quotes": []
+    },
+    {
+      "id": 5,
+      "name": "Solar + Energy Storage on Garage",
+      "category": "energy",
+      "status": "planning",
+      "priority": "medium",
+      "description": "Install 5-7 solar panels on south-facing garage roof face (20x12 ft, ~2-2.8 kW) plus battery storage. Solar = standalone ROI investment (~5yr payback at $0.42/kWh). Battery = generator alternative (no lot space for generator). 30% federal ITC applies to both when paired.",
+      "notes": "DESIGN: South garage face only. 5 portrait panels = 2.0 kW; 7 mixed = 2.8 kW. ~3,200-4,500 kWh/yr production (20-26% offset). All-in after ITC: solar ~$9-10k, battery ~$9-10k. VENDORS: Sunergy (sunergy.com) \u2014 EnergySage 2026 CA Installer of Year, Enphase Platinum, no door-to-door. NRG Clean Power (nrgcleanpower.com) \u2014 Diamond Certified, 35yr, San Mateo County, 40yr warranty. Tesla Energy (tesla.com/energy) \u2014 online only. AVOID: Sunrun.",
+      "created_at": "2026-03-26T23:02:39.195617+00:00",
+      "updated_at": "2026-03-28T06:15:46.884955+00:00",
+      "tasks": [
+        {
+          "id": 17,
+          "project_id": 5,
+          "title": "Analyze energy usage and size system",
+          "description": null,
+          "status": "done",
+          "owner": "steve",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "17,178 kWh/yr at $0.42/kWh avg. Target: 5-7 panels south garage face (20x12 ft) = 2-2.8 kW. ~5yr payback after ITC.",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 18,
+          "project_id": 5,
+          "title": "Research and shortlist solar installers",
+          "description": null,
+          "status": "done",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Shortlist: Sunergy (sunergy.com, Enphase Platinum, no door-to-door), NRG Clean Power (nrgcleanpower.com, Diamond Certified, San Mateo County), Tesla Energy (tesla.com/energy, online only). Avoid Sunrun.",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 19,
+          "project_id": 5,
+          "title": "Contact installers for quotes",
+          "description": null,
+          "status": "waiting_on_steve",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Spec: south garage face (20x12 ft, 5-7 panels, ~2-2.8 kW), paired battery (Enphase IQ or Powerwall 3), detached garage sub-panel interconnect. Ask each for: $/W, panel brand, inverter type, battery spec, warranty, timeline, ITC total. Request free shade/LIDAR analysis.",
+          "created_at": "2026-03-26T23:04:22.672155+00:00"
+        },
+        {
+          "id": 47,
+          "project_id": 5,
+          "title": "Compare quotes and select installer",
+          "description": null,
+          "status": "todo",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "Prefer Enphase microinverters over string inverter. Compare $/W, battery spec, warranty, timeline. 30% ITC on full system incl. battery.",
+          "created_at": "2026-03-28T06:15:47.499069+00:00"
+        },
+        {
+          "id": 48,
+          "project_id": 5,
+          "title": "Confirm ITC timing \u2014 credit files in year PTO is granted",
+          "description": null,
+          "status": "todo",
+          "owner": "claude",
+          "due_date": null,
+          "completed_at": null,
+          "notes": "30% federal ITC on Form 5695. Claimed in tax year Permission to Operate granted by PG&E. Battery qualifies only when solar-paired. Plan install timing accordingly.",
+          "created_at": "2026-03-28T06:15:47.499069+00:00"
+        }
+      ],
+      "task_counts": {
+        "total": 5,
+        "done": 2,
+        "in_progress": 0,
+        "waiting_on_steve": 1,
+        "waiting_on_vendor": 0,
+        "todo": 2
       },
       "quotes": []
     }
   ],
   "needs_attention": [
     {
-      "id": 18,
-      "project_id": 6,
-      "title": "Review quote and schedule window washing",
+      "id": 19,
+      "project_id": 5,
+      "title": "Contact installers for quotes",
+      "description": null,
       "status": "waiting_on_steve",
-      "assigned_to": null,
+      "owner": "claude",
       "due_date": null,
-      "notes": "~2-3 hrs. Can do interior first (good for dogs). garyscleaning@gmail.com / 650-591-6037",
-      "project_name": "Window Washing"
+      "completed_at": null,
+      "notes": "Spec: south garage face (20x12 ft, 5-7 panels, ~2-2.8 kW), paired battery (Enphase IQ or Powerwall 3), detached garage sub-panel interconnect. Ask each for: $/W, panel brand, inverter type, battery spec, warranty, timeline, ITC total. Request free shade/LIDAR analysis.",
+      "created_at": "2026-03-26T23:04:22.672155+00:00",
+      "project_name": "Solar + Energy Storage on Garage"
     }
   ],
   "maintenance": [
@@ -405,290 +923,38 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size unknown - update when confirmed. Reminder set in Google Calendar.",
-      "is_overdue": 0,
-      "days_until_due": 28
+      "days_until_due": 28,
+      "is_overdue": 0
     }
   ],
-  "open_quotes": [
-    {
-      "id": 5,
-      "project_id": 6,
-      "vendor_id": 5,
-      "amount": null,
-      "date_received": "2026-03-26",
-      "sent_date": "2026-03-24",
-      "valid_until": null,
-      "status": "received",
-      "drive_file_url": null,
-      "notes": "Quote in .docx attachment. ~2-3 hrs, interior first option. 650-591-6037",
-      "contact": "garyscleaning@gmail.com",
-      "project_name": "Window Washing",
-      "vendor_name": "Gary's Cleaning"
-    },
-    {
-      "id": 1,
-      "project_id": 2,
-      "vendor_id": 1,
-      "amount": null,
-      "date_received": null,
-      "sent_date": "2026-03-24",
-      "valid_until": null,
-      "status": "pending",
-      "drive_file_url": null,
-      "notes": "Active thread. William reviewed on Google Maps. CertainTeed Presidential shingle (2008). Rough quote promised EOD Mar 27. Open Q: include detached garage? Attached drive-by list of local Signature roofs.",
-      "contact": "william@signatureroofing.com",
-      "project_name": "Roof Replacement",
-      "vendor_name": "Signature Roofing (William)"
-    },
-    {
-      "id": 2,
-      "project_id": 2,
-      "vendor_id": 2,
-      "amount": null,
-      "date_received": null,
-      "sent_date": "2026-03-24",
-      "valid_until": null,
-      "status": "pending",
-      "drive_file_url": null,
-      "notes": "Requested quote without site visit. Subject: Full Roof Replacement Quote \u2014 San Carlos, CA",
-      "contact": "calpacroofing@sbcglobal.net",
-      "project_name": "Roof Replacement",
-      "vendor_name": "Cal-Pac Roofing"
-    },
-    {
-      "id": 3,
-      "project_id": 4,
-      "vendor_id": 3,
-      "amount": null,
-      "date_received": null,
-      "sent_date": "2026-03-24",
-      "valid_until": null,
-      "status": "pending",
-      "drive_file_url": null,
-      "notes": "Comprehensive inspection \u2014 rodents, ants, termites, other pests. Targeting this month.",
-      "contact": "office@omega-homeservices.com",
-      "project_name": "Pest Inspection",
-      "vendor_name": "Omega Home Services"
-    }
-  ],
-  "recent_communications": [
-    {
-      "id": 12,
-      "project_id": 4,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Re: Home Pest Inspection Request \u2014 San Carlos, CA",
-      "summary": "Declined \u2014 'we dont do termites'. Disqualified.",
-      "date": "2026-03-26",
-      "time": "10:00",
-      "vendor_name": "Mike Amdal",
-      "contact": "mikeamdal@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2b17c4e089734",
-      "thread_id": "19d22be912ccc7d5",
-      "project_name": "Pest Inspection"
-    },
-    {
-      "id": 13,
-      "project_id": 6,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Estimate For Window Washing at 1950 Eucalyptus Avenue",
-      "summary": "Sent formal quote as .docx attachment after drive-by.",
-      "date": "2026-03-26",
-      "time": "13:05",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2bc10c58c552b",
-      "thread_id": "19d2bc10c58c552b",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 14,
-      "project_id": 6,
-      "type": "email",
-      "direction": "outbound",
-      "subject": "Re: Estimate For Window Washing at 1950 Eucalyptus Avenue",
-      "summary": "Asked about duration and process \u2014 have two dogs to keep out of the way.",
-      "date": "2026-03-26",
-      "time": "13:58",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2bf108ec5d527",
-      "thread_id": "19d2bc10c58c552b",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 15,
-      "project_id": 2,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Re: Full Roof Replacement Quote \u2014 San Carlos, CA",
-      "summary": "Reviewed on Google Maps. Roof is CertainTeed Presidential (2008) \u2014 notes it may have 25+ years of life left and questions the need to replace. Promises rough quote by EOD Mar 27. Asks if detached garage should be included. Trees block satellite view so in-person may be needed for accuracy. Attached drive-by list of local Signature roofs.",
-      "date": "2026-03-26",
-      "time": "13:31",
-      "vendor_name": "Signature Roofing (William)",
-      "contact": "william@signatureroofing.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2bd8a084883b1",
-      "thread_id": "19d22bea034ad047",
-      "project_name": "Roof Replacement"
-    },
-    {
-      "id": 16,
-      "project_id": 6,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Re: Estimate For Window Washing at 1950 Eucalyptus Avenue",
-      "summary": "Job takes about 2-3 hours. Can start on interior first, then exterior \u2014 good for managing the dogs.",
-      "date": "2026-03-26",
-      "time": "14:56",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2c269140b5676",
-      "thread_id": "19d2bc10c58c552b",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 17,
-      "project_id": 2,
-      "type": "email",
-      "direction": "outbound",
-      "subject": "Re: Full Roof Replacement Quote \u2014 San Carlos, CA",
-      "summary": "Yes, include the detached garage. Context: noticed granule/sand loss into gutters over the past few years \u2014 thought it meant the roof was on its way out. Solar on garage is a downstream goal; wanted roof replaced first if needed. Open to being wrong about the roof condition.",
-      "date": "2026-03-26",
-      "time": "16:36",
-      "vendor_name": "Signature Roofing (William)",
-      "contact": "william@signatureroofing.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2c820230dbbfc",
-      "thread_id": "19d22bea034ad047",
-      "project_name": "Roof Replacement"
-    },
-    {
-      "id": 6,
-      "project_id": 6,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Re: Window Washing Quote \u2014 San Carlos, CA Residence",
-      "summary": "Asked for address to look up house on Google Earth.",
-      "date": "2026-03-25",
-      "time": "09:27",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d25d2bfc4b7f22",
-      "thread_id": "19d22beb434438c7",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 7,
-      "project_id": 6,
-      "type": "email",
-      "direction": "outbound",
-      "subject": "Re: Window Washing Quote \u2014 San Carlos, CA Residence",
-      "summary": "Provided address: 1950 Eucalyptus Ave, San Carlos, CA 94070.",
-      "date": "2026-03-25",
-      "time": "15:05",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d27082d887ea28",
-      "thread_id": "19d22beb434438c7",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 8,
-      "project_id": 6,
-      "type": "email",
-      "direction": "inbound",
-      "subject": "Re: Window Washing Quote \u2014 San Carlos, CA Residence",
-      "summary": "Couldn't see house due to tree cover. Will drop by in person in the next few days to assess.",
-      "date": "2026-03-25",
-      "time": "15:59",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2739a6518c3b2",
-      "thread_id": "19d22beb434438c7",
-      "project_name": "Window Washing"
-    },
-    {
-      "id": 9,
-      "project_id": 6,
-      "type": "email",
-      "direction": "outbound",
-      "subject": "Re: Window Washing Quote \u2014 San Carlos, CA Residence",
-      "summary": "Provided window count: ~15 windows/doors on first floor, ~11 on second story.",
-      "date": "2026-03-25",
-      "time": "17:22",
-      "vendor_name": "Gary's Cleaning",
-      "contact": "garyscleaning@gmail.com",
-      "contact_name": null,
-      "follow_up_needed": 0,
-      "follow_up_date": null,
-      "notes": null,
-      "gmail_id": "19d2785df7e49206",
-      "thread_id": "19d22beb434438c7",
-      "project_name": "Window Washing"
-    }
-  ],
+  "open_quotes": [],
+  "recent_communications": [],
   "thermostat": {
     "latest": [
       {
-        "id": 7,
-        "timestamp": "2026-03-27 13:03:31",
-        "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 44.0,
-        "mode": "HEAT",
+        "id": 28,
+        "timestamp": "2026-03-28T05:43:25+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.5,
+        "humidity_pct": 47,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 8,
-        "timestamp": "2026-03-27 13:03:31",
-        "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46.0,
-        "mode": "HEATCOOL",
+        "id": 27,
+        "timestamp": "2026-03-28T05:43:25+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.3,
+        "humidity_pct": 41,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.0,
-        "cool_setpoint_f": 78.0,
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -696,113 +962,57 @@
     ],
     "history": [
       {
-        "id": 1,
-        "timestamp": "2026-03-27 12:47:38",
+        "id": 25,
+        "timestamp": "2026-03-28T04:39:42+00:00",
         "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 44.0,
+        "temp_f": 73.3,
+        "humidity_pct": 41,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
+        "heat_setpoint_f": 66.8,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 2,
-        "timestamp": "2026-03-27 12:47:38",
+        "id": 26,
+        "timestamp": "2026-03-28T04:39:42+00:00",
         "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46.0,
+        "temp_f": 68.4,
+        "humidity_pct": 45,
         "mode": "HEATCOOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.0,
-        "cool_setpoint_f": 78.0,
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 3,
-        "timestamp": "2026-03-27 12:56:41",
+        "id": 27,
+        "timestamp": "2026-03-28T05:43:25+00:00",
         "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 44.0,
+        "temp_f": 72.3,
+        "humidity_pct": 41,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
+        "heat_setpoint_f": 55.2,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 4,
-        "timestamp": "2026-03-27 12:56:41",
+        "id": 28,
+        "timestamp": "2026-03-28T05:43:25+00:00",
         "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46.0,
+        "temp_f": 67.5,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.0,
-        "cool_setpoint_f": 78.0,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 5,
-        "timestamp": "2026-03-27 12:57:30",
-        "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 44.0,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 6,
-        "timestamp": "2026-03-27 12:57:30",
-        "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46.0,
-        "mode": "HEATCOOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.0,
-        "cool_setpoint_f": 78.0,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 7,
-        "timestamp": "2026-03-27 13:03:31",
-        "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 44.0,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 8,
-        "timestamp": "2026-03-27 13:03:31",
-        "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46.0,
-        "mode": "HEATCOOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.0,
-        "cool_setpoint_f": 78.0,
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -813,134 +1023,134 @@
     "monthly_electric": [
       {
         "month": "2025-03",
-        "kwh": 194.7,
+        "kwh_used": 194.72,
         "cost": 87.19
       },
       {
         "month": "2025-04",
-        "kwh": 1066.4,
+        "kwh_used": 1066.42,
         "cost": 477.28
       },
       {
         "month": "2025-05",
-        "kwh": 1374.0,
+        "kwh_used": 1373.98,
         "cost": 614.37
       },
       {
         "month": "2025-06",
-        "kwh": 1506.2,
+        "kwh_used": 1506.16,
         "cost": 676.69
       },
       {
         "month": "2025-07",
-        "kwh": 1699.8,
+        "kwh_used": 1699.81,
         "cost": 768.41
       },
       {
         "month": "2025-08",
-        "kwh": 1772.5,
+        "kwh_used": 1772.46,
         "cost": 802.71
       },
       {
         "month": "2025-09",
-        "kwh": 1696.7,
+        "kwh_used": 1696.73,
         "cost": 750.32
       },
       {
         "month": "2025-10",
-        "kwh": 1366.5,
+        "kwh_used": 1366.55,
         "cost": 572.0
       },
       {
         "month": "2025-11",
-        "kwh": 1236.0,
+        "kwh_used": 1235.99,
         "cost": 472.55
       },
       {
         "month": "2025-12",
-        "kwh": 1685.9,
+        "kwh_used": 1685.86,
         "cost": 656.97
       },
       {
         "month": "2026-01",
-        "kwh": 1223.7,
+        "kwh_used": 1223.66,
         "cost": 442.67
       },
       {
         "month": "2026-02",
-        "kwh": 1119.0,
+        "kwh_used": 1119.03,
         "cost": 404.68
       },
       {
         "month": "2026-03",
-        "kwh": 1039.2,
+        "kwh_used": 1039.2,
         "cost": 323.02
       }
     ],
     "monthly_gas": [
       {
         "month": "2025-03",
-        "therms": 10.48,
+        "therms_used": 10.48,
         "cost": 27.29
       },
       {
         "month": "2025-04",
-        "therms": 35.19,
+        "therms_used": 35.19,
         "cost": 98.9
       },
       {
         "month": "2025-05",
-        "therms": 30.27,
+        "therms_used": 30.27,
         "cost": 84.98
       },
       {
         "month": "2025-06",
-        "therms": 18.76,
+        "therms_used": 18.76,
         "cost": 51.05
       },
       {
         "month": "2025-07",
-        "therms": 18.98,
+        "therms_used": 18.98,
         "cost": 51.46
       },
       {
         "month": "2025-08",
-        "therms": 15.65,
+        "therms_used": 15.65,
         "cost": 41.33
       },
       {
         "month": "2025-09",
-        "therms": 16.72,
+        "therms_used": 16.72,
         "cost": 45.09
       },
       {
         "month": "2025-10",
-        "therms": 30.28,
+        "therms_used": 30.28,
         "cost": 88.32
       },
       {
         "month": "2025-11",
-        "therms": 39.38,
+        "therms_used": 39.38,
         "cost": 112.94
       },
       {
         "month": "2025-12",
-        "therms": 79.76,
+        "therms_used": 79.76,
         "cost": 254.19
       },
       {
         "month": "2026-01",
-        "therms": 64.33,
+        "therms_used": 64.33,
         "cost": 187.14
       },
       {
         "month": "2026-02",
-        "therms": 55.81,
+        "therms_used": 55.81,
         "cost": 148.7
       },
       {
         "month": "2026-03",
-        "therms": 22.93,
+        "therms_used": 22.93,
         "cost": 56.19
       }
     ],
@@ -952,14 +1162,15 @@
     }
   },
   "stats": {
-    "total_projects": 6,
+    "total_projects": 15,
     "by_status": {
-      "active": 3,
-      "planning": 3
+      "active": 9,
+      "planning": 6
     },
     "by_priority": {
-      "medium": 1,
-      "high": 5
+      "high": 4,
+      "medium": 8,
+      "low": 3
     },
     "estimated_total": 0.0,
     "actual_total": 0.0

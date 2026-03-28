@@ -18,7 +18,9 @@ def _load_config():
     config_path = os.path.join(project_dir, "config.json")
     with open(config_path) as f:
         cfg = json.load(f)
-    return cfg["supabase"]["url"], cfg["supabase"]["anon_key"]
+    sb = cfg["supabase"]
+    key = sb.get("service_role_key") or sb["anon_key"]
+    return sb["url"], key
 
 
 class SupabaseClient:

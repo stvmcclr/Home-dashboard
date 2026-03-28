@@ -29,7 +29,7 @@ def build_data():
     now   = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # ── Projects ─────────────────────────────────────────────────────────────
-    projects = sb.select("projects", order="created_date.asc")
+    projects = sb.select("projects", order="created_at.asc")
 
     for p in projects:
         tasks  = sb.select("tasks", filters={"project_id": f"eq.{p['id']}"}, order="id.asc")
@@ -46,7 +46,7 @@ def build_data():
             "quotes",
             query="*, vendors(name)",
             filters={"project_id": f"eq.{p['id']}"},
-            order="date_received.desc.nullslast"
+            order="id.desc"
         )
         # Flatten vendor name
         for q in quotes:
@@ -83,7 +83,7 @@ def build_data():
         "quotes",
         query="*, projects(name), vendors(name)",
         filters={"status": "in.(pending,received)"},
-        order="date_received.desc.nullslast"
+        order="id.desc"
     )
     open_quotes = []
     for q in open_quotes_raw:
@@ -99,7 +99,7 @@ def build_data():
     comms_raw = sb.select(
         "communications",
         query="*, projects(name)",
-        order="date.desc.nullslast",
+        order="id.desc",
         limit=15
     )
     recent_comms = []
