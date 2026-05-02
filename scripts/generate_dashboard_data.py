@@ -165,6 +165,45 @@ def build_data():
         stats["estimated_total"] += p.get("estimated_cost") or 0.0
         stats["actual_total"]    += p.get("actual_cost")    or 0.0
 
+    # ── Home Intelligence ──────────────────────────────────────────────────
+    intelligence = {"observations": [], "insights": [], "state": {}}
+    try:
+        # Last 20 observations
+        obs_rows = sb.select(
+            "home_observations",
+            order="timestamp.desc",
+            limit=20
+        )
+        intelligence["observations"] = obs_rows
+
+        # Open insights (last 10)
+        insight_rows = sb.select(
+            "home_insights",
+            filters={"acted_on_at": "is.null"},
+            order="timestamp.desc",
+            limit=10
+        )
+        intelligence["insights"] = insight_rows
+
+        # Current home state
+        state_rows = sb.select(
+            "home_state",
+            filters={"id": "eq.current"},
+            limit=1
+        )
+        if state_rows:
+            state = state_rows[0]
+            # Parse JSON strings back to lists/dicts if needed
+            for key in ("who_is_home", "active_rooms", "lights_on", "music_playing", "last_motion"):
+                if isinstance(state.get(key), str):
+                    try:
+                        state[key] = json.loads(state[key])
+                    except Exception:
+                        pass
+            intelligence["state"] = state
+    except Exception as e:
+        intelligence["_error"] = str(e)
+
     return {
         "generated_at":          now,
         "as_of":                  today,
@@ -187,7 +226,8 @@ def build_data():
                 "gas_cost":      round(gas_cost, 2),
             }
         },
-        "stats": stats,
+        "stats":        stats,
+        "intelligence": intelligence,
     }
 
 
@@ -199,7 +239,9 @@ def main():
     n_projects    = len(data["projects"])
     n_therm       = len(data["thermostat"]["latest"])
     n_elec_months = len(data["energy"]["monthly_electric"])
-    print(f"✓ dashboard_data.json written  ({n_projects} projects, {n_therm} thermostats, {n_elec_months} months energy)")
+    n_obs         = len(data["intelligence"]["observations"])
+    n_insights    = len(data["intelligence"]["insights"])
+    print(f"✓ dashboard_data.json written  ({n_projects} projects, {n_therm} thermostats, {n_elec_months} months energy, {n_obs} observations, {n_insights} insights)")
 
 
 if __name__ == "__main__":

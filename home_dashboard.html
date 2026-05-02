@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Home Monitor</title>
+<title>🏠 1950 Eucalyptus — Home HUD</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   :root {
-    --bg:        #0f172a;
-    --surface:   #1e293b;
-    --surface2:  #273449;
-    --border:    #334155;
-    --text:      #e2e8f0;
-    --muted:     #94a3b8;
-    --accent:    #38bdf8;
-    --green:     #4ade80;
-    --yellow:    #facc15;
-    --orange:    #fb923c;
-    --red:       #f87171;
-    --purple:    #c084fc;
-    --teal:      #2dd4bf;
-    --elec:      #facc15;
-    --gas:       #fb923c;
+    --bg:       #0f1117;
+    --surface:  #1a1d27;
+    --surface2: #22263a;
+    --border:   #2e3350;
+    --text:     #e2e8f0;
+    --muted:    #7c849e;
+    --accent:   #3b82f6;
+    --green:    #22c55e;
+    --yellow:   #eab308;
+    --orange:   #f97316;
+    --red:      #ef4444;
+    --purple:   #a855f7;
+    --teal:     #14b8a6;
+    --amber:    #f59e0b;
+    --blue:     #3b82f6;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -32,1336 +32,1132 @@
     line-height: 1.5;
     min-height: 100vh;
   }
+  a { color: inherit; text-decoration: none; }
 
   /* ── Header ── */
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
-    padding: 16px 24px;
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 200;
+    gap: 16px;
   }
-  .header-left { display: flex; align-items: center; gap: 12px; }
-  .header-left h1 { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
-  .header-left .subtitle { color: var(--muted); font-size: 13px; }
-  .header-right { display: flex; align-items: center; gap: 16px; }
-  .updated { color: var(--muted); font-size: 12px; }
-  .refresh-btn {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 6px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 13px;
-    transition: background 0.15s;
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .header-logo { font-size: 22px; }
+  .header-address { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; }
+  .header-sub { color: var(--muted); font-size: 12px; margin-top: 1px; }
+  .header-right { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+  .weather-pill {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 20px; padding: 4px 12px; font-size: 13px;
   }
-  .refresh-btn:hover { background: var(--border); }
+  .weather-pill .temp { font-weight: 600; }
+  .updated-meta { font-size: 11px; color: var(--muted); text-align: right; }
   .status-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--green);
-    box-shadow: 0 0 6px var(--green);
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green); box-shadow: 0 0 6px var(--green);
+    display: inline-block; margin-right: 4px;
   }
   .status-dot.stale { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
   .status-dot.error { background: var(--red); box-shadow: 0 0 6px var(--red); }
-
-  /* ── Layout ── */
-  main { padding: 20px 24px; max-width: 1400px; margin: 0 auto; }
-  .section-title {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 12px;
-    margin-top: 28px;
+  .refresh-btn {
+    background: var(--surface2); border: 1px solid var(--border);
+    color: var(--text); padding: 5px 12px; border-radius: 6px;
+    cursor: pointer; font-size: 12px; transition: background 0.15s;
   }
-  .section-title:first-child { margin-top: 0; }
+  .refresh-btn:hover { background: var(--border); }
+
+  /* ── Home State Strip ── */
+  .state-strip {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 24px;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .state-strip::-webkit-scrollbar { display: none; }
+  .state-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    min-width: 140px;
+  }
+  .state-card-icon { font-size: 18px; line-height: 1; }
+  .state-card-body { flex: 1; min-width: 0; }
+  .state-card-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--muted); font-weight: 600; }
+  .state-card-value { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .state-card-value.home  { color: var(--green); }
+  .state-card-value.away  { color: var(--muted); }
+  .state-card-value.on    { color: var(--amber); }
+  .state-card-value.off   { color: var(--muted); }
+  .state-card-value.heat  { color: var(--orange); }
+  .state-card-value.cool  { color: #38bdf8; }
+  .state-card-value.alert { color: var(--red); }
+
+  /* ── Main layout ── */
+  .hud-main {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 16px;
+    padding: 16px 24px;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  @media (max-width: 1100px) {
+    .hud-main { grid-template-columns: 1fr; }
+  }
 
   /* ── Cards ── */
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 18px;
+    overflow: hidden;
+  }
+  .card-header {
+    padding: 12px 16px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
   }
   .card-title {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 14px;
   }
-
-  /* ── Thermostat section ── */
-  .thermo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-  }
-  .thermo-card { position: relative; overflow: hidden; }
-  .thermo-card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--teal);
-  }
-  .thermo-location {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 10px;
-  }
-  .thermo-temp {
-    font-size: 52px;
-    font-weight: 300;
-    line-height: 1;
-    color: var(--text);
-    letter-spacing: -2px;
-  }
-  .thermo-temp sup { font-size: 20px; vertical-align: super; }
-  .thermo-meta {
-    display: flex;
-    gap: 16px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  .thermo-stat { display: flex; flex-direction: column; }
-  .thermo-stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-  .thermo-stat-value { font-size: 15px; font-weight: 500; }
-  .hvac-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 3px 9px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    margin-top: 12px;
-  }
-  .hvac-HEATING  { background: rgba(251,146,60,0.15); color: var(--orange); border: 1px solid rgba(251,146,60,0.3); }
-  .hvac-COOLING  { background: rgba(56,189,248,0.15); color: var(--accent);  border: 1px solid rgba(56,189,248,0.3); }
-  .hvac-OFF      { background: rgba(148,163,184,0.1); color: var(--muted);   border: 1px solid var(--border); }
-  .hvac-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-  .no-thermo { color: var(--muted); font-size: 13px; text-align: center; padding: 30px 0; }
-
-  /* ── Maintenance ── */
-  .maintenance-grid { display: grid; gap: 10px; }
-  .maint-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 14px;
-    background: var(--surface2);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    gap: 10px;
-  }
-  .maint-left { flex: 1; min-width: 0; }
-  .maint-name { font-weight: 500; font-size: 14px; }
-  .maint-sub  { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .maint-right { text-align: right; flex-shrink: 0; }
-  .maint-due   { font-size: 13px; font-weight: 600; }
-  .maint-inv   { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .due-ok      { color: var(--green); }
-  .due-soon    { color: var(--yellow); }
-  .due-overdue { color: var(--red); }
-
-  /* ── Needs attention ── */
-  .attention-list { display: grid; gap: 8px; }
-  .attention-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 12px;
-    background: rgba(248,113,113,0.08);
-    border: 1px solid rgba(248,113,113,0.25);
-    border-radius: 8px;
-  }
-  .attention-item .proj-name { color: var(--muted); font-size: 12px; }
-  .attention-item .task-name { font-size: 13px; font-weight: 500; }
-  .nothing-waiting { color: var(--muted); font-size: 13px; padding: 8px 0; }
-
-  /* ── Top row grid ── */
-  .top-row {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 14px;
-    align-items: start;
-  }
-  .top-left { display: grid; gap: 14px; }
-  @media (max-width: 900px) {
-    .top-row { grid-template-columns: 1fr; }
-  }
-
-  /* ── Energy ── */
-  .energy-summary {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 18px;
-  }
-  @media (max-width: 700px) { .energy-summary { grid-template-columns: repeat(2, 1fr); } }
-  .energy-stat {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px 14px;
-  }
-  .energy-stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-  .energy-stat-value { font-size: 22px; font-weight: 600; margin-top: 4px; }
-  .energy-stat-sub   { font-size: 12px; color: var(--muted); }
-  .energy-charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  @media (max-width: 700px) { .energy-charts { grid-template-columns: 1fr; } }
-  .chart-wrap { position: relative; height: 220px; }
-
-  /* ── Projects ── */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 14px;
-  }
-  .project-card { cursor: pointer; }
-  .project-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-  .project-name { font-size: 15px; font-weight: 600; }
-  .project-badge {
-    flex-shrink: 0;
+  .card-badge {
     font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    padding: 2px 8px;
-    border-radius: 20px;
-    text-transform: uppercase;
-  }
-  .badge-planning { background: rgba(148,163,184,0.15); color: var(--muted); border: 1px solid var(--border); }
-  .badge-active   { background: rgba(56,189,248,0.15); color: var(--accent); border: 1px solid rgba(56,189,248,0.3); }
-  .badge-done     { background: rgba(74,222,128,0.15); color: var(--green);  border: 1px solid rgba(74,222,128,0.3); }
-  .badge-on-hold  { background: rgba(192,132,252,0.15); color: var(--purple); border: 1px solid rgba(192,132,252,0.3); }
-  .progress-bar-bg {
-    background: var(--surface2);
-    border-radius: 4px;
-    height: 6px;
-    margin-bottom: 8px;
-  }
-  .progress-bar-fill {
-    height: 100%;
-    border-radius: 4px;
-    background: var(--accent);
-    transition: width 0.4s ease;
-  }
-  .progress-label { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
-  .task-list { display: grid; gap: 6px; }
-  .task-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 8px;
-    border-radius: 6px;
-    font-size: 13px;
-  }
-  .task-item:hover { background: var(--surface2); }
-  .task-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-  .dot-todo            { background: var(--border); }
-  .dot-in_progress     { background: var(--accent); }
-  .dot-waiting_on_steve  { background: var(--red); }
-  .dot-waiting_on_vendor { background: var(--yellow); }
-  .dot-done            { background: var(--green); }
-  .task-done-text { text-decoration: line-through; color: var(--muted); }
-  .task-waiting-steve { color: var(--red); }
-  .show-more { font-size: 12px; color: var(--muted); padding: 4px 8px; cursor: pointer; }
-  .show-more:hover { color: var(--text); }
-
-  .quotes-section { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 12px; }
-  .quote-row { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 4px 0; }
-  .quote-vendor { color: var(--muted); }
-  .quote-amount { font-weight: 600; }
-  .quote-status {
-    font-size: 10px;
-    padding: 1px 6px;
+    padding: 1px 7px;
     border-radius: 10px;
-    margin-left: 6px;
+    font-weight: 600;
   }
-  .qs-received { background: rgba(56,189,248,0.15); color: var(--accent); }
-  .qs-accepted { background: rgba(74,222,128,0.15); color: var(--green); }
-  .qs-rejected { background: rgba(248,113,113,0.15); color: var(--red); }
+  .badge-red    { background: rgba(239,68,68,0.15); color: var(--red); border: 1px solid rgba(239,68,68,0.3); }
+  .badge-blue   { background: rgba(59,130,246,0.15); color: var(--blue); border: 1px solid rgba(59,130,246,0.3); }
+  .badge-green  { background: rgba(34,197,94,0.15); color: var(--green); border: 1px solid rgba(34,197,94,0.3); }
+  .badge-amber  { background: rgba(245,158,11,0.15); color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }
+  .badge-muted  { background: rgba(124,132,158,0.1); color: var(--muted); border: 1px solid var(--border); }
 
-  /* ── Loading / error ── */
-  .loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    color: var(--muted);
-    font-size: 15px;
-  }
-  .error-banner {
-    background: rgba(248,113,113,0.1);
-    border: 1px solid rgba(248,113,113,0.3);
-    color: var(--red);
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    font-size: 13px;
-  }
-
-  /* footer */
-  footer {
-    margin: 40px 24px 20px;
-    color: var(--muted);
-    font-size: 11px;
-    text-align: center;
-    max-width: 1400px;
-  }
-
-  /* ── Password Gate ── */
-  #gate-overlay {
-    position: fixed; inset: 0;
-    background: var(--bg);
-    z-index: 9999;
-    display: flex; align-items: center; justify-content: center;
-  }
-  #gate-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 40px; width: 360px; text-align: center;
-  }
-  #gate-box h2 { font-size: 22px; margin-bottom: 8px; }
-  #gate-box p { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
-  #gate-input {
-    width: 100%; background: var(--surface2);
-    border: 1px solid var(--border); color: var(--text);
-    padding: 10px 14px; border-radius: 8px; font-size: 15px;
-    text-align: center; outline: none; margin-bottom: 12px;
-    font-family: inherit;
-  }
-  #gate-input:focus { border-color: var(--accent); }
-  #gate-btn {
-    width: 100%; background: var(--accent); color: var(--bg);
-    border: none; padding: 10px; border-radius: 8px;
-    font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit;
-  }
-  #gate-btn:hover { opacity: 0.9; }
-  #gate-error { color: var(--red); font-size: 13px; margin-top: 10px; display: none; }
-
-  /* ── Rate Plan Bar ── */
-  .rate-plan-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 18px;
-    margin-bottom: 14px;
-  }
-  .rate-plan-header {
-    display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px;
-  }
-  .rate-plan-name { font-size: 15px; font-weight: 600; color: var(--accent); }
-  .rate-plan-sub  { font-size: 12px; color: var(--muted); }
-  .rate-tiers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  @media (max-width: 600px) { .rate-tiers { grid-template-columns: 1fr; } }
-  .rate-tier {
-    background: var(--surface2); border-radius: 8px;
-    padding: 10px 12px; border: 1px solid var(--border);
-  }
-  .rate-tier-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-  .rate-tier-value { font-size: 20px; font-weight: 700; margin: 4px 0; }
-  .rate-tier-hours { font-size: 11px; color: var(--muted); }
-  .rate-tier-note  { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
-  .tier-offpeak { color: var(--green); }
-  .tier-partial { color: var(--yellow); }
-  .tier-peak    { color: var(--red); }
-  .rate-insight {
-    margin-top: 12px; font-size: 12px; color: var(--muted);
-    background: var(--surface2); border-radius: 6px; padding: 8px 12px;
-    border-left: 3px solid var(--accent);
-  }
-
-  /* ── Appliance items ── */
-  .category-header {
-    font-size: 10px; font-weight: 600; letter-spacing: 0.8px;
-    text-transform: uppercase; color: var(--muted);
-    padding: 6px 0 4px; margin-top: 4px;
-  }
-  .appliance-year {
-    font-size: 11px; color: var(--purple); margin-top: 2px;
-  }
-
-  /* ── Modal ── */
-  #modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 500;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 40px 16px 40px;
+  /* ── Activity Feed ── */
+  .feed-wrap {
+    padding: 10px 0;
+    max-height: calc(100vh - 220px);
+    min-height: 400px;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
   }
-  #modal-overlay.open { display: flex; }
-  #modal-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    width: 100%;
-    max-width: 680px;
-    padding: 28px;
-    position: relative;
-    margin: auto;
+  .feed-wrap::-webkit-scrollbar { width: 4px; }
+  .feed-wrap::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .feed-insight {
+    display: flex;
+    gap: 10px;
+    padding: 9px 16px;
+    border-left: 3px solid var(--red);
+    background: rgba(239,68,68,0.05);
+    margin-bottom: 1px;
   }
-  #modal-close {
-    position: absolute;
-    top: 16px; right: 18px;
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex; align-items: center; justify-content: center;
-    transition: color 0.15s, background 0.15s;
+  .feed-insight.medium { border-left-color: var(--orange); background: rgba(249,115,22,0.05); }
+  .feed-insight.low    { border-left-color: var(--yellow); background: rgba(234,179,8,0.05); }
+  .feed-item {
+    display: flex;
+    gap: 10px;
+    padding: 8px 16px;
+    border-left: 3px solid transparent;
+    transition: background 0.1s;
   }
-  #modal-close:hover { color: var(--text); background: var(--border); }
-  .modal-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    padding-right: 36px;
+  .feed-item:hover { background: rgba(255,255,255,0.03); }
+  .feed-item.person   { border-left-color: var(--blue); }
+  .feed-item.dog      { border-left-color: var(--amber); }
+  .feed-item.vehicle  { border-left-color: var(--purple); }
+  .feed-item.motion   { border-left-color: var(--border); }
+  .feed-item.audio    { border-left-color: var(--teal); }
+  .feed-item.presence { border-left-color: var(--green); }
+
+  .feed-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; line-height: 1.3; }
+  .feed-body { flex: 1; min-width: 0; }
+  .feed-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap; }
+  .feed-time { font-size: 10px; color: var(--muted); flex-shrink: 0; }
+  .feed-loc  {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.4px;
+    padding: 0 5px; border-radius: 4px;
+    background: var(--surface2); color: var(--muted);
   }
-  .modal-section {
-    margin-top: 20px;
-    border-top: 1px solid var(--border);
-    padding-top: 14px;
-  }
-  .modal-section-label {
-    font-size: 10px;
-    font-weight: 700;
+  .feed-summary { font-size: 12px; color: var(--text); line-height: 1.4; }
+  .feed-divider {
+    padding: 4px 16px;
+    font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     color: var(--muted);
-    margin-bottom: 10px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
   }
-  .modal-desc {
-    font-size: 13px;
-    color: var(--text);
-    line-height: 1.6;
+  .feed-empty { padding: 24px 16px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  /* ── Right column ── */
+  .right-col { display: flex; flex-direction: column; gap: 16px; }
+
+  /* ── Thermostat / Energy ── */
+  .thermo-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    padding: 12px 16px;
   }
-  .modal-notes {
-    font-size: 12px;
-    color: var(--muted);
+  .thermo-unit {
     background: var(--surface2);
-    border-left: 3px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .thermo-unit::before {
+    content: ""; position: absolute;
+    top: 0; left: 0; right: 0; height: 2px;
+    background: var(--teal);
+  }
+  .thermo-unit.heating::before { background: var(--orange); }
+  .thermo-unit.cooling::before { background: #38bdf8; }
+  .thermo-name { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; }
+  .thermo-temp {
+    font-size: 38px; font-weight: 300; line-height: 1;
+    color: var(--text); letter-spacing: -2px; margin: 4px 0;
+  }
+  .thermo-temp sup { font-size: 16px; vertical-align: super; }
+  .thermo-details { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+  .thermo-detail { font-size: 11px; color: var(--muted); }
+  .thermo-detail strong { color: var(--text); }
+  .hvac-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 2px 7px; border-radius: 10px;
+    font-size: 10px; font-weight: 600; margin-top: 6px;
+  }
+  .hvac-HEATING { background: rgba(249,115,22,0.15); color: var(--orange); border: 1px solid rgba(249,115,22,0.3); }
+  .hvac-COOLING { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); }
+  .hvac-OFF     { background: rgba(124,132,158,0.1); color: var(--muted); border: 1px solid var(--border); }
+  .hvac-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+  .energy-section { padding: 12px 16px; }
+  .energy-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  @media (max-width: 700px) { .energy-row { grid-template-columns: repeat(2, 1fr); } }
+  .energy-stat {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px;
+  }
+  .energy-stat-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+  .energy-stat-value { font-size: 18px; font-weight: 700; margin-top: 2px; }
+  .energy-stat-sub { font-size: 10px; color: var(--muted); margin-top: 1px; }
+  .chart-wrap { position: relative; height: 160px; }
+
+  /* ── Projects ── */
+  .projects-section { padding: 10px 16px; }
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+  }
+  .proj-card {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px; cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    position: relative;
+  }
+  .proj-card:hover { border-color: var(--accent); background: rgba(59,130,246,0.04); }
+  .proj-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+  .proj-name { font-size: 13px; font-weight: 600; line-height: 1.3; }
+  .proj-status-badge {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.3px;
+    padding: 2px 7px; border-radius: 8px; flex-shrink: 0; text-transform: uppercase;
+  }
+  .s-planning { background: rgba(124,132,158,0.15); color: var(--muted); border: 1px solid var(--border); }
+  .s-active   { background: rgba(59,130,246,0.15); color: var(--blue); border: 1px solid rgba(59,130,246,0.3); }
+  .s-done     { background: rgba(34,197,94,0.15); color: var(--green); border: 1px solid rgba(34,197,94,0.3); }
+  .s-on-hold  { background: rgba(168,85,247,0.15); color: var(--purple); border: 1px solid rgba(168,85,247,0.3); }
+  .proj-progress-bg { background: var(--border); border-radius: 3px; height: 4px; margin-bottom: 6px; }
+  .proj-progress-fill { height: 100%; border-radius: 3px; background: var(--accent); transition: width 0.4s; }
+  .proj-meta { font-size: 11px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+  .proj-alert { color: var(--red); font-weight: 600; }
+  .proj-warn  { color: var(--yellow); font-weight: 600; }
+
+  .attention-banner {
+    background: rgba(239,68,68,0.07);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 8px; padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+  .attention-banner-title { font-size: 10px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+  .attn-item { font-size: 12px; padding: 3px 0; display: flex; gap: 6px; align-items: baseline; }
+  .attn-proj { color: var(--muted); font-size: 11px; flex-shrink: 0; }
+
+  /* ── Camera Grid ── */
+  .cameras-section {
+    padding: 16px 24px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .cameras-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .cameras-title {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.9px;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .network-badge {
+    font-size: 10px; padding: 2px 8px; border-radius: 10px;
+  }
+  .network-local { background: rgba(34,197,94,0.1); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+  .network-ext   { background: rgba(124,132,158,0.1); color: var(--muted); border: 1px solid var(--border); }
+  .cam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .cam-tile {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .cam-tile:hover { border-color: var(--accent); }
+  .cam-img-wrap { position: relative; aspect-ratio: 16/9; background: #0a0c14; overflow: hidden; }
+  .cam-img {
+    width: 100%; height: 100%; object-fit: cover;
+    display: block; transition: opacity 0.3s;
+  }
+  .cam-img.loading { opacity: 0.3; }
+  .cam-placeholder {
+    width: 100%; height: 100%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: var(--muted); gap: 6px;
+    font-size: 12px;
+  }
+  .cam-placeholder-icon { font-size: 28px; }
+  .cam-footer {
     padding: 8px 12px;
-    border-radius: 0 6px 6px 0;
-    line-height: 1.6;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .cam-name { font-size: 12px; font-weight: 600; text-transform: capitalize; }
+  .cam-time { font-size: 10px; color: var(--muted); }
+  .cam-motion-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green); box-shadow: 0 0 5px var(--green);
+    margin-right: 4px; display: inline-block;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .cam-ext-notice {
+    padding: 20px; text-align: center; color: var(--muted); font-size: 12px;
+  }
+
+  /* ── Modal ── */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.65); z-index: 1000;
+    align-items: center; justify-content: center; padding: 24px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 24px; max-width: 640px; width: 100%;
+    max-height: 80vh; overflow-y: auto;
+    scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+  }
+  .modal-close {
+    float: right; background: none; border: none; color: var(--muted);
+    font-size: 20px; cursor: pointer; line-height: 1;
+    padding: 0; margin: -4px -4px 0 0;
+  }
+  .modal-close:hover { color: var(--text); }
+  .modal-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .modal-section { margin-top: 16px; }
+  .modal-section-label {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.7px;
+    color: var(--muted); font-weight: 700; margin-bottom: 8px;
   }
   .modal-task {
-    display: flex;
-    gap: 10px;
-    padding: 8px 10px;
-    border-radius: 6px;
-    font-size: 13px;
-    flex-direction: column;
+    display: flex; align-items: center; gap: 8px; padding: 6px 0;
+    border-bottom: 1px solid var(--border); font-size: 13px;
   }
-  .modal-task:nth-child(odd) { background: var(--surface2); }
-  .modal-task-top { display: flex; align-items: center; gap: 8px; }
-  .modal-task-notes {
-    font-size: 11px;
-    color: var(--muted);
-    padding-left: 15px;
-    line-height: 1.5;
+  .task-status {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.3px;
+    padding: 2px 6px; border-radius: 6px; flex-shrink: 0; text-transform: uppercase;
   }
+  .ts-done        { background: rgba(34,197,94,0.15); color: var(--green); }
+  .ts-in_progress { background: rgba(59,130,246,0.15); color: var(--blue); }
+  .ts-waiting_on_steve  { background: rgba(239,68,68,0.15); color: var(--red); }
+  .ts-waiting_on_vendor { background: rgba(249,115,22,0.15); color: var(--orange); }
+  .ts-todo        { background: rgba(124,132,158,0.1); color: var(--muted); }
   .modal-quote {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px 14px;
-    margin-bottom: 10px;
+    padding: 8px 10px; background: var(--surface2); border-radius: 8px;
+    border: 1px solid var(--border); margin-bottom: 6px; font-size: 13px;
   }
-  .modal-quote-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
-    gap: 8px;
+  .modal-notes {
+    font-size: 13px; color: var(--muted); white-space: pre-wrap;
+    background: var(--surface2); border-radius: 8px; padding: 10px 12px;
   }
-  .modal-quote-vendor { font-weight: 600; font-size: 14px; }
-  .modal-quote-contact { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .modal-quote-notes { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
 
-  /* ── Clickable items ── */
-  .clickable { cursor: pointer; transition: border-color 0.15s; }
-  .clickable:hover { border-color: var(--accent) !important; }
-  .maint-item.clickable:hover { border-color: var(--accent); }
-
-  /* ── Open Quotes section ── */
-  .quotes-grid { display: grid; gap: 10px; }
-  .oq-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 14px;
-    background: var(--surface2);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    gap: 10px;
-    flex-wrap: wrap;
+  /* ── Utility ── */
+  .section-gap { margin-bottom: 16px; }
+  .label-pill {
+    display: inline-block; font-size: 9px; font-weight: 700;
+    padding: 2px 7px; border-radius: 8px; text-transform: uppercase;
+    letter-spacing: 0.4px;
   }
-  .oq-left { flex: 1; min-width: 0; }
-  .oq-vendor { font-weight: 500; font-size: 14px; }
-  .oq-project { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .oq-contact { font-size: 12px; color: var(--accent); margin-top: 2px; }
-  .oq-right { text-align: right; flex-shrink: 0; }
-  .oq-status {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 20px;
-    text-transform: uppercase;
-  }
-  .oqs-pending  { background: rgba(250,204,21,0.12); color: var(--yellow); border: 1px solid rgba(250,204,21,0.3); }
-  .oqs-received { background: rgba(56,189,248,0.12); color: var(--accent); border: 1px solid rgba(56,189,248,0.3); }
-  .oqs-accepted { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.3); }
-  .oqs-rejected { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.3); }
-  .oq-days { font-size: 12px; color: var(--muted); margin-top: 4px; }
-
-  /* ── Recent communications ── */
-  .comms-feed { display: grid; gap: 8px; }
-  .comm-item {
-    display: flex;
-    gap: 12px;
-    padding: 10px 12px;
-    background: var(--surface2);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
-  .comm-dir {
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 11px;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-  .comm-in  { background: rgba(74,222,128,0.15); color: var(--green); }
-  .comm-out { background: rgba(56,189,248,0.15); color: var(--accent); }
-  .comm-body { flex: 1; min-width: 0; }
-  .comm-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-  .comm-who { font-size: 13px; font-weight: 500; }
-  .comm-project { font-size: 11px; color: var(--muted); }
-  .comm-date { font-size: 11px; color: var(--muted); flex-shrink: 0; }
-  .comm-subject { font-size: 12px; color: var(--muted); margin-top: 1px; font-style: italic; }
-  .comm-summary { font-size: 12px; color: var(--text); margin-top: 3px; line-height: 1.5; }
+  .empty-msg { padding: 20px; text-align: center; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
 
-<!-- ── Password Gate ── -->
-<div id="gate-overlay">
-  <div id="gate-box">
-    <div style="font-size:40px;margin-bottom:14px">🏠</div>
-    <h2>Home Monitor</h2>
-    <p>1950 Eucalyptus · San Carlos</p>
-    <input type="password" id="gate-input" placeholder="Password" autocomplete="current-password">
-    <button id="gate-btn">Unlock →</button>
-    <div id="gate-error">Incorrect password</div>
+<!-- ══ Header ══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="header-left">
+    <div class="header-logo">🏠</div>
+    <div>
+      <div class="header-address">1950 Eucalyptus · San Carlos</div>
+      <div class="header-sub" id="header-sub">Loading…</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="weather-pill" id="weather-pill">
+      <span id="weather-icon">⛅</span>
+      <span class="temp" id="weather-temp">—°F</span>
+      <span id="weather-desc" style="color:var(--muted);font-size:11px"></span>
+    </div>
+    <div class="updated-meta">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="updated-text">—</span><br>
+      <span style="font-size:10px;color:var(--muted)">Auto-refresh: 60s</span>
+    </div>
+    <button class="refresh-btn" onclick="loadDashboard()">⟳ Refresh</button>
+  </div>
+</header>
+
+<!-- ══ Home State Strip ═════════════════════════════════════════════════════ -->
+<div class="state-strip" id="state-strip">
+  <div class="state-card">
+    <div class="state-card-icon">👤</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Who's Home</div>
+      <div class="state-card-value" id="strip-who">Loading…</div>
+    </div>
+  </div>
+  <div class="state-card">
+    <div class="state-card-icon">💡</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Lights On</div>
+      <div class="state-card-value" id="strip-lights">—</div>
+    </div>
+  </div>
+  <div class="state-card">
+    <div class="state-card-icon">🎵</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Audio</div>
+      <div class="state-card-value" id="strip-audio">—</div>
+    </div>
+  </div>
+  <div class="state-card">
+    <div class="state-card-icon">🏠</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Active Rooms</div>
+      <div class="state-card-value" id="strip-rooms">—</div>
+    </div>
+  </div>
+  <div class="state-card" id="strip-thermo-1">
+    <div class="state-card-icon">🌡️</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Downstairs</div>
+      <div class="state-card-value" id="strip-thermo-1-val">—</div>
+    </div>
+  </div>
+  <div class="state-card" id="strip-thermo-2">
+    <div class="state-card-icon">🌡️</div>
+    <div class="state-card-body">
+      <div class="state-card-label">Upstairs</div>
+      <div class="state-card-value" id="strip-thermo-2-val">—</div>
+    </div>
   </div>
 </div>
 
-<!-- ── Modal overlay ── -->
-<div id="modal-overlay" onclick="closeModal()">
-  <div id="modal-box" onclick="event.stopPropagation()">
-    <button id="modal-close" onclick="closeModal()">✕</button>
+<!-- ══ Main HUD ═════════════════════════════════════════════════════════════ -->
+<div class="hud-main">
+
+  <!-- Left: Activity Feed -->
+  <div class="card" style="height:fit-content">
+    <div class="card-header">
+      <span class="card-title">Live Activity</span>
+      <span class="card-badge badge-blue" id="feed-count">0</span>
+    </div>
+    <div class="feed-wrap" id="feed-wrap">
+      <div class="feed-empty">Loading…</div>
+    </div>
+  </div>
+
+  <!-- Right column -->
+  <div class="right-col">
+
+    <!-- Energy + Thermostat -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Energy & Climate</span>
+        <span class="card-badge badge-muted" id="energy-month-label">—</span>
+      </div>
+      <div class="thermo-row" id="thermo-row">
+        <div class="thermo-unit">
+          <div class="thermo-name">No data</div>
+          <div class="thermo-temp">—<sup>°F</sup></div>
+        </div>
+      </div>
+      <div class="energy-section">
+        <div class="energy-row" id="energy-stats">
+          <div class="energy-stat">
+            <div class="energy-stat-label">Electric</div>
+            <div class="energy-stat-value" id="es-kwh">—</div>
+            <div class="energy-stat-sub">kWh total</div>
+          </div>
+          <div class="energy-stat">
+            <div class="energy-stat-label">Elec cost</div>
+            <div class="energy-stat-value" id="es-ecost">—</div>
+            <div class="energy-stat-sub">total</div>
+          </div>
+          <div class="energy-stat">
+            <div class="energy-stat-label">Gas</div>
+            <div class="energy-stat-value" id="es-therms">—</div>
+            <div class="energy-stat-sub">therms total</div>
+          </div>
+          <div class="energy-stat">
+            <div class="energy-stat-label">Gas cost</div>
+            <div class="energy-stat-value" id="es-gcost">—</div>
+            <div class="energy-stat-sub">total</div>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="chart-energy"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Home Projects</span>
+        <div style="display:flex;gap:6px">
+          <span class="card-badge badge-red" id="badge-attention" style="display:none">0 need action</span>
+          <span class="card-badge badge-amber" id="badge-quotes" style="display:none">0 open quotes</span>
+          <span class="card-badge badge-muted" id="badge-proj-count">0</span>
+        </div>
+      </div>
+      <div class="projects-section" id="projects-section">
+        <div class="empty-msg">Loading…</div>
+      </div>
+    </div>
+
+  </div><!-- end right-col -->
+</div><!-- end hud-main -->
+
+<!-- ══ Camera Grid ══════════════════════════════════════════════════════════ -->
+<div class="cameras-section">
+  <div class="cameras-header">
+    <span class="cameras-title">📷 Camera Feeds</span>
+    <span class="network-badge" id="network-badge">Checking network…</span>
+  </div>
+  <div id="cam-grid-container">
+    <div class="empty-msg">Checking local network…</div>
+  </div>
+</div>
+
+<!-- ══ Modal ════════════════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal-body">
+    <button class="modal-close" onclick="closeModal()">✕</button>
     <div id="modal-content"></div>
   </div>
 </div>
 
-<header>
-  <div class="header-left">
-    <span style="font-size:24px">🏠</span>
-    <div>
-      <h1>Home Monitor</h1>
-      <div class="subtitle">San Carlos</div>
-    </div>
-  </div>
-  <div class="header-right">
-    <a href="home_energy_intelligence.html" target="_blank" style="color:var(--accent);font-size:12px;text-decoration:none;opacity:0.85;white-space:nowrap;" title="Open Energy Intelligence Report">⚡ Energy Report</a>
-    <span class="updated" id="updated-ts">Loading…</span>
-    <div class="status-dot" id="status-dot"></div>
-    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
-  </div>
-</header>
-
-<main id="main-content">
-  <div class="loading">Loading dashboard data…</div>
-</main>
-
-<footer id="footer"></footer>
-
 <script>
-// ── Modal ─────────────────────────────────────────────────────────────────
-let _modalData = null; // store last loaded data for modal re-use
+// ── Config ────────────────────────────────────────────────────────────────
+const DATA_URL   = 'dashboard_data.json';
+const FRIGATE    = 'http://localhost:5001';
+const CAMERAS    = ['backyard','doorbell','camera2','living_room','dog_run','entryway'];
+const CAM_LABELS = {
+  backyard: 'Backyard', doorbell: 'Front Door', camera2: 'Side Gate',
+  living_room: 'Living Room', dog_run: 'Dog Run', entryway: 'Entryway'
+};
 
-function openModal(html) {
-  document.getElementById('modal-content').innerHTML = html;
-  document.getElementById('modal-overlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-  document.getElementById('modal-overlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-function openProjectModal(p) {
-  const badgeMap = { planning: 'badge-planning', active: 'badge-active', done: 'badge-done', 'on-hold': 'badge-on-hold' };
-  const badgeCls = badgeMap[p.status] || 'badge-planning';
-  const tc = p.task_counts;
-  const pct = tc.total ? Math.round(tc.done / tc.total * 100) : 0;
-
-  const descHTML = p.description
-    ? `<div class="modal-section"><div class="modal-section-label">Description</div><div class="modal-desc">${p.description}</div></div>`
-    : '';
-
-  const notesHTML = p.notes
-    ? `<div class="modal-section"><div class="modal-section-label">Notes</div><div class="modal-notes">${p.notes}</div></div>`
-    : '';
-
-  const tasksHTML = p.tasks && p.tasks.length
-    ? `<div class="modal-section">
-        <div class="modal-section-label">Tasks (${tc.done}/${tc.total} done)</div>
-        ${p.tasks.map(t => {
-          const extraCls = t.status === 'done' ? 'task-done-text' : t.status === 'waiting_on_steve' ? 'task-waiting-steve' : '';
-          const statusLabel = { todo: 'To do', in_progress: 'In progress', waiting_on_steve: 'Waiting on you', waiting_on_vendor: 'Waiting on vendor', done: 'Done' }[t.status] || t.status;
-          return `<div class="modal-task">
-            <div class="modal-task-top">${taskStatusDot(t.status)}<span class="${extraCls}">${t.title}</span></div>
-            ${t.notes ? `<div class="modal-task-notes">↳ ${t.notes}</div>` : ''}
-          </div>`;
-        }).join('')}
-      </div>`
-    : '';
-
-  const quotesHTML = p.quotes && p.quotes.length
-    ? `<div class="modal-section">
-        <div class="modal-section-label">Quotes</div>
-        ${p.quotes.map(q => {
-          const qStatusCls = { pending: 'oqs-pending', received: 'oqs-received', accepted: 'oqs-accepted', rejected: 'oqs-rejected' }[q.status] || 'oqs-pending';
-          return `<div class="modal-quote">
-            <div class="modal-quote-top">
-              <div>
-                <div class="modal-quote-vendor">${q.vendor_name || 'Unknown vendor'}</div>
-                ${q.contact ? `<div class="modal-quote-contact">${q.contact}</div>` : ''}
-              </div>
-              <div style="text-align:right">
-                <div class="oq-status ${qStatusCls}">${q.status}</div>
-                ${q.amount ? `<div style="font-size:15px;font-weight:700;margin-top:4px">$${(+q.amount).toLocaleString()}</div>` : ''}
-              </div>
-            </div>
-            ${q.sent_date ? `<div style="font-size:11px;color:var(--muted)">Sent ${fmt.date(q.sent_date)}${q.received_date ? ` · Received ${fmt.date(q.received_date)}` : ''}</div>` : ''}
-            ${q.notes ? `<div class="modal-quote-notes">${q.notes}</div>` : ''}
-          </div>`;
-        }).join('')}
-      </div>`
-    : '';
-
-  openModal(`
-    <div class="modal-title">${p.name}</div>
-    <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
-      <div class="project-badge ${badgeCls}">${p.status}</div>
-      ${p.priority ? `<span style="font-size:12px;color:var(--muted)">Priority: ${p.priority}</span>` : ''}
-      ${p.target_date ? `<span style="font-size:12px;color:var(--muted)">Target: ${fmt.date(p.target_date)}</span>` : ''}
-    </div>
-    <div style="margin-top:12px">
-      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
-      <div class="progress-label">${tc.done} of ${tc.total} tasks complete</div>
-    </div>
-    ${descHTML}
-    ${notesHTML}
-    ${tasksHTML}
-    ${quotesHTML}
-  `);
-}
-
-function openMaintenanceModal(m) {
-  openModal(`
-    <div class="modal-title">${m.name}</div>
-    <div style="margin-top:8px;display:flex;gap:16px;flex-wrap:wrap">
-      <span style="font-size:12px;color:var(--muted)">Category: <strong style="color:var(--text)">${m.category}</strong></span>
-      <span style="font-size:12px;color:var(--muted)">Every: <strong style="color:var(--text)">${m.frequency_days} days</strong></span>
-    </div>
-    <div class="modal-section">
-      <div class="modal-section-label">Schedule</div>
-      <div style="display:grid;gap:8px">
-        <div style="font-size:13px">Last completed: <strong>${m.last_completed ? fmt.date(m.last_completed) : 'Never'}</strong></div>
-        <div style="font-size:13px">Next due: <strong class="${statusClass(m.days_until_due)}">${m.next_due ? fmt.date(m.next_due) : '—'}${m.days_until_due != null ? ` (${m.is_overdue ? 'overdue by ' + Math.abs(m.days_until_due) + 'd' : 'in ' + m.days_until_due + 'd'})` : ''}</strong></div>
-        ${m.inventory_count != null ? `<div style="font-size:13px">Inventory: <strong>${m.inventory_count} ${m.inventory_unit || ''}</strong></div>` : ''}
-      </div>
-    </div>
-    ${m.notes ? `<div class="modal-section"><div class="modal-section-label">Notes</div><div class="modal-notes">${m.notes}</div></div>` : ''}
-  `);
-}
-
-// ── Chart instances (so we can destroy/recreate on refresh) ──────────────
-let chartElec = null, chartGas = null;
-let chartThermoHistory = {}; // keyed by location
+let D = null;           // current data snapshot
+let chartEnergy = null;
+let isLocalNetwork = false;
 
 // ── Helpers ───────────────────────────────────────────────────────────────
 const fmt = {
-  temp:   v => v != null ? `${v}°F` : '—',
+  temp:   v => v != null ? `${Math.round(v)}°F` : '—',
   pct:    v => v != null ? `${Math.round(v)}%` : '—',
   kwh:    v => v != null ? `${(+v).toLocaleString()} kWh` : '—',
   dollar: v => v != null ? `$${(+v).toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0})}` : '—',
   therms: v => v != null ? `${(+v).toFixed(0)} therms` : '—',
-  date:   s => s ? new Date(s + 'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '—',
-  monthLabel: s => { // "2025-04" → "Apr '25"
+  monthLabel: s => {
+    if (!s) return '—';
     const [y, m] = s.split('-');
-    return new Date(+y, +m-1).toLocaleDateString('en-US',{month:'short', year:'2-digit'});
+    return new Date(+y, +m-1).toLocaleDateString('en-US',{month:'short',year:'2-digit'});
   },
-  minutesAgo: ts => {
-    const diff = (Date.now() - new Date(ts).getTime()) / 60000;
-    if (diff < 1)   return 'just now';
-    if (diff < 60)  return `${Math.round(diff)}m ago`;
-    if (diff < 1440) return `${Math.round(diff/60)}h ago`;
-    return `${Math.round(diff/1440)}d ago`;
+  relTime: ts => {
+    if (!ts) return '—';
+    const d = typeof ts === 'number' ? ts * 1000 : new Date(ts).getTime();
+    const diff = (Date.now() - d) / 1000;
+    if (diff < 60)    return 'just now';
+    if (diff < 3600)  return `${Math.round(diff/60)}m ago`;
+    if (diff < 86400) return `${Math.round(diff/3600)}h ago`;
+    return `${Math.round(diff/86400)}d ago`;
   },
+  date: s => s ? new Date(s + 'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '—',
 };
 
-function statusClass(days) {
-  if (days === null || days === undefined) return 'due-ok';
-  if (days < 0)  return 'due-overdue';
-  if (days <= 14) return 'due-soon';
-  return 'due-ok';
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function hvacLabel(status) {
-  if (!status) return 'OFF';
-  return status.toUpperCase();
+// ── Network detection ─────────────────────────────────────────────────────
+async function detectLocalNetwork() {
+  try {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 2000);
+    const r = await fetch(`${FRIGATE}/api/version`, { signal: ctrl.signal });
+    isLocalNetwork = r.ok;
+  } catch {
+    isLocalNetwork = false;
+  }
+  const badge = document.getElementById('network-badge');
+  if (isLocalNetwork) {
+    badge.textContent = '🟢 Local Network — Live feeds';
+    badge.className = 'network-badge network-local';
+  } else {
+    badge.textContent = '🔒 External — Camera feeds unavailable';
+    badge.className = 'network-badge network-ext';
+  }
+  renderCameras();
 }
 
-// ── Thermostat history chart ───────────────────────────────────────────────
-function initThermoCharts(history) {
-  // Destroy old charts
-  Object.values(chartThermoHistory).forEach(c => c.destroy());
-  chartThermoHistory = {};
-
-  if (!history || history.length === 0) return;
-
-  // Group by location
-  const byLocation = {};
-  history.forEach(r => {
-    if (!byLocation[r.location]) byLocation[r.location] = [];
-    byLocation[r.location].push(r);
-  });
-
-  Object.entries(byLocation).forEach(([loc, readings]) => {
-    const canvasId = `chart-thermo-${loc.replace(/\s+/g,'_').toLowerCase()}`;
-    const canvas   = document.getElementById(canvasId);
-    if (!canvas) return;
-
-    const labels  = readings.map(r => {
-      const d = new Date(r.timestamp);
-      return d.toLocaleTimeString('en-US', { hour: 'numeric', hour12: true });
-    });
-    const temps   = readings.map(r => r.temp_f);
-    const humids  = readings.map(r => r.humidity_pct);
-
-    chartThermoHistory[loc] = new Chart(canvas, {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'Temp (°F)',
-            data: temps,
-            borderColor: 'rgba(45,212,191,0.9)',
-            backgroundColor: 'rgba(45,212,191,0.08)',
-            fill: true,
-            tension: 0.4,
-            pointRadius: 0,
-            yAxisID: 'yTemp',
-          },
-          {
-            label: 'Humidity (%)',
-            data: humids,
-            borderColor: 'rgba(148,163,184,0.5)',
-            backgroundColor: 'transparent',
-            fill: false,
-            tension: 0.4,
-            pointRadius: 0,
-            borderDash: [4, 3],
-            yAxisID: 'yHumid',
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        interaction: { mode: 'index', intersect: false },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: ctx => ctx.datasetIndex === 0
-                ? ` ${ctx.raw}°F`
-                : ` ${ctx.raw}% RH`
-            }
-          }
-        },
-        scales: {
-          x: {
-            ticks: { color: '#64748b', font: { size: 10 }, maxTicksLimit: 8 },
-            grid:  { color: 'rgba(255,255,255,0.04)' }
-          },
-          yTemp: {
-            position: 'left',
-            ticks: { color: '#2dd4bf', font: { size: 10 }, callback: v => `${v}°` },
-            grid:  { color: 'rgba(255,255,255,0.06)' }
-          },
-          yHumid: {
-            position: 'right',
-            ticks: { color: '#64748b', font: { size: 10 }, callback: v => `${v}%` },
-            grid:  { display: false }
-          }
-        }
-      }
-    });
-  });
+// ── Weather (wttr.in free API) ─────────────────────────────────────────────
+async function loadWeather() {
+  try {
+    const r = await fetch('https://wttr.in/San+Carlos,CA?format=j1');
+    if (!r.ok) throw new Error();
+    const j = await r.json();
+    const cur = j.current_condition?.[0];
+    if (cur) {
+      const tempF   = cur.temp_F;
+      const desc    = cur.weatherDesc?.[0]?.value || '';
+      const icons   = {
+        '113':'☀️','116':'⛅','119':'☁️','122':'☁️','143':'🌫️',
+        '176':'🌦️','179':'🌨️','182':'🌧️','185':'🌧️','200':'⛈️',
+        '227':'❄️','230':'❄️','248':'🌫️','260':'🌫️',
+        '263':'🌦️','266':'🌦️','281':'🌧️','284':'🌧️','293':'🌧️',
+        '296':'🌧️','299':'🌧️','302':'🌧️','305':'🌧️','308':'🌧️',
+        '311':'🌧️','314':'🌧️','317':'🌨️','320':'🌨️','323':'🌨️',
+        '326':'🌨️','329':'❄️','332':'❄️','335':'❄️','338':'❄️',
+        '350':'🌧️','353':'🌦️','356':'🌧️','359':'🌧️','362':'🌨️',
+        '365':'🌨️','368':'🌨️','371':'❄️','374':'🌧️','377':'🌧️',
+        '386':'⛈️','389':'⛈️','392':'⛈️','395':'❄️'
+      };
+      const code = cur.weatherCode;
+      const icon = icons[code] || '🌤️';
+      document.getElementById('weather-icon').textContent = icon;
+      document.getElementById('weather-temp').textContent = `${tempF}°F`;
+      document.getElementById('weather-desc').textContent = desc;
+    }
+  } catch { /* silent */ }
 }
 
-// ── Thermostat section ─────────────────────────────────────────────────────
-function renderThermostats(latest, history) {
-  if (!latest || latest.length === 0) {
-    return `
-      <div class="card">
-        <div class="card-title">Thermostats</div>
-        <div class="no-thermo">No readings yet — Nest polling hasn't run.<br>
-        Run <code style="color:var(--accent)">python3 scripts/nest_monitor.py</code> to start.</div>
-      </div>`;
+// ── State strip ───────────────────────────────────────────────────────────
+function renderStateStrip(data) {
+  const state   = data.intelligence?.state || {};
+  const thermo  = data.thermostat?.latest  || [];
+
+  // Who's home
+  const whoEl = document.getElementById('strip-who');
+  const who = Array.isArray(state.who_is_home) ? state.who_is_home : [];
+  if (who.length > 0) {
+    whoEl.textContent = who.join(', ');
+    whoEl.className = 'state-card-value home';
+  } else {
+    whoEl.textContent = 'Nobody home';
+    whoEl.className = 'state-card-value away';
   }
 
-  const cards = latest.map(t => {
-    const hvac = hvacLabel(t.hvac_status);
-    const hvacClass = `hvac-${hvac}`;
-    const setpointHTML = t.heat_setpoint_f
-      ? `<div class="thermo-stat"><div class="thermo-stat-label">Set</div><div class="thermo-stat-value" style="color:var(--orange)">${fmt.temp(t.heat_setpoint_f)}</div></div>`
-      : t.cool_setpoint_f
-      ? `<div class="thermo-stat"><div class="thermo-stat-label">Set</div><div class="thermo-stat-value" style="color:var(--accent)">${fmt.temp(t.cool_setpoint_f)}</div></div>`
-      : '';
+  // Lights
+  const lightsEl = document.getElementById('strip-lights');
+  const lights = Array.isArray(state.lights_on) ? state.lights_on : [];
+  if (lights.length > 0) {
+    lightsEl.textContent = lights.slice(0, 3).join(', ') + (lights.length > 3 ? ` +${lights.length-3}` : '');
+    lightsEl.className = 'state-card-value on';
+  } else {
+    lightsEl.textContent = 'All off';
+    lightsEl.className = 'state-card-value off';
+  }
 
-    const locKey    = (t.location || 'thermostat').replace(/\s+/g,'_').toLowerCase();
-    const hasHistory = history && history.some(r => r.location === t.location);
-    const historyHTML = hasHistory
-      ? `<div style="margin-top:14px; border-top:1px solid var(--border); padding-top:12px;">
-           <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Last 24h</div>
-           <div style="position:relative;height:90px"><canvas id="chart-thermo-${locKey}"></canvas></div>
-         </div>`
-      : '';
+  // Audio
+  const audioEl = document.getElementById('strip-audio');
+  const music = Array.isArray(state.music_playing) ? state.music_playing : [];
+  if (music.length > 0) {
+    audioEl.textContent = 'Playing';
+    audioEl.className = 'state-card-value on';
+  } else {
+    audioEl.textContent = 'Paused';
+    audioEl.className = 'state-card-value off';
+  }
 
+  // Active rooms
+  const roomsEl = document.getElementById('strip-rooms');
+  const rooms = Array.isArray(state.active_rooms) ? state.active_rooms : [];
+  if (rooms.length > 0) {
+    roomsEl.textContent = rooms.slice(0, 3).map(r => r.replace(/_/g,' ')).join(', ');
+    roomsEl.className = 'state-card-value on';
+  } else {
+    roomsEl.textContent = 'None active';
+    roomsEl.className = 'state-card-value off';
+  }
+
+  // Thermostats (top 2 by location name sort)
+  const thermoSlots = ['strip-thermo-1', 'strip-thermo-2'];
+  const thermoVals  = ['strip-thermo-1-val', 'strip-thermo-2-val'];
+  const thermoLabels = [
+    document.getElementById('strip-thermo-1').querySelector('.state-card-label'),
+    document.getElementById('strip-thermo-2').querySelector('.state-card-label'),
+  ];
+  thermo.slice(0, 2).forEach((t, i) => {
+    thermoLabels[i].textContent = t.location || `Thermostat ${i+1}`;
+    const v = document.getElementById(thermoVals[i]);
+    v.textContent = fmt.temp(t.temp_f);
+    const mode = (t.hvac_status || 'off').toUpperCase();
+    v.className = 'state-card-value ' + (mode === 'HEATING' ? 'heat' : mode === 'COOLING' ? 'cool' : '');
+  });
+}
+
+// ── Activity feed ─────────────────────────────────────────────────────────
+function classifyObservation(obs) {
+  const src  = (obs.source || '').toLowerCase();
+  const sum  = (obs.summary || '').toLowerCase();
+  const stype = (obs.source_type || '').toLowerCase();
+  if (stype === 'presence' || src.includes('presence')) {
+    if (sum.includes('person') || sum.includes('home:') || src.includes('unifi')) return 'presence';
+  }
+  if (stype === 'audio' || src.includes('audio')) return 'audio';
+  if (stype === 'vision') {
+    if (sum.includes('dog') || sum.includes('animal') || sum.includes('pet')) return 'dog';
+    if (sum.includes('car') || sum.includes('vehicle') || sum.includes('truck')) return 'vehicle';
+    if (sum.includes('person') || sum.includes('people') || sum.includes('figure')) return 'person';
+    return 'motion';
+  }
+  return 'motion';
+}
+
+const FEED_ICONS = {
+  person:   '🧑',
+  dog:      '🐕',
+  vehicle:  '🚗',
+  motion:   '👁️',
+  audio:    '🎵',
+  presence: '🏠',
+  insight:  '⚠️',
+};
+
+function formatLocation(loc) {
+  if (!loc || loc === 'home' || loc === 'unknown') return '';
+  return loc.replace(/_/g,' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function renderFeed(data) {
+  const wrap     = document.getElementById('feed-wrap');
+  const insights = data.intelligence?.insights  || [];
+  const obs      = data.intelligence?.observations || [];
+  const countEl  = document.getElementById('feed-count');
+
+  let html = '';
+
+  // Insights at top
+  if (insights.length > 0) {
+    html += `<div class="feed-divider">🔔 Open Alerts (${insights.length})</div>`;
+    insights.forEach(ins => {
+      const sev = (ins.severity || 'medium').toLowerCase();
+      html += `
+        <div class="feed-insight ${sev}">
+          <div class="feed-icon">${FEED_ICONS.insight}</div>
+          <div class="feed-body">
+            <div class="feed-meta">
+              <span class="feed-time">${fmt.relTime(ins.timestamp)}</span>
+              <span class="feed-loc" style="background:rgba(239,68,68,0.15);color:var(--red)">${esc(ins.insight_type || 'alert')}</span>
+            </div>
+            <div class="feed-summary">${esc(ins.summary)}</div>
+          </div>
+        </div>`;
+    });
+  }
+
+  // Observations
+  if (obs.length > 0) {
+    html += `<div class="feed-divider">Recent Activity (${obs.length})</div>`;
+    obs.forEach(o => {
+      const type = classifyObservation(o);
+      const loc  = formatLocation(o.location);
+      html += `
+        <div class="feed-item ${type}">
+          <div class="feed-icon">${FEED_ICONS[type] || '👁️'}</div>
+          <div class="feed-body">
+            <div class="feed-meta">
+              <span class="feed-time">${fmt.relTime(o.timestamp)}</span>
+              ${loc ? `<span class="feed-loc">${esc(loc)}</span>` : ''}
+            </div>
+            <div class="feed-summary">${esc(o.summary)}</div>
+          </div>
+        </div>`;
+    });
+  }
+
+  if (!html) {
+    html = `<div class="feed-empty">No recent activity.<br><small style="color:var(--muted)">Run sync_home_intelligence.py to populate.</small></div>`;
+  }
+
+  wrap.innerHTML = html;
+  countEl.textContent = insights.length + obs.length;
+}
+
+// ── Thermostats ───────────────────────────────────────────────────────────
+function renderThermostats(latest) {
+  const row = document.getElementById('thermo-row');
+  if (!latest || latest.length === 0) {
+    row.innerHTML = `<div class="thermo-unit"><div class="thermo-name">No data</div><div class="thermo-temp">—<sup>°F</sup></div></div>`;
+    return;
+  }
+
+  row.innerHTML = latest.map(t => {
+    const hvac  = (t.hvac_status || 'off').toUpperCase();
+    const cls   = hvac === 'HEATING' ? 'heating' : hvac === 'COOLING' ? 'cooling' : '';
+    const spt   = t.heat_setpoint_f ?? t.cool_setpoint_f;
     return `
-      <div class="card thermo-card">
-        <div class="thermo-location">${t.location || 'Thermostat'}</div>
+      <div class="thermo-unit ${cls}">
+        <div class="thermo-name">${esc(t.location || 'Thermostat')}</div>
         <div class="thermo-temp">${t.temp_f != null ? Math.round(t.temp_f) : '—'}<sup>°F</sup></div>
-        <div class="thermo-meta">
-          <div class="thermo-stat">
-            <div class="thermo-stat-label">Humidity</div>
-            <div class="thermo-stat-value">${fmt.pct(t.humidity_pct)}</div>
-          </div>
-          <div class="thermo-stat">
-            <div class="thermo-stat-label">Mode</div>
-            <div class="thermo-stat-value">${t.mode || '—'}</div>
-          </div>
-          ${setpointHTML}
+        <div class="thermo-details">
+          <div class="thermo-detail">RH: <strong>${fmt.pct(t.humidity_pct)}</strong></div>
+          ${spt != null ? `<div class="thermo-detail">Set: <strong>${fmt.temp(spt)}</strong></div>` : ''}
+          ${t.mode ? `<div class="thermo-detail">Mode: <strong>${esc(t.mode)}</strong></div>` : ''}
         </div>
-        <div class="hvac-badge ${hvacClass}">
-          <div class="hvac-dot"></div>${hvac}
-        </div>
-        <div style="margin-top:10px; font-size:11px; color:var(--muted)">${t.timestamp ? fmt.minutesAgo(t.timestamp) : ''}</div>
-        ${historyHTML}
+        <div class="hvac-badge hvac-${hvac}"><span class="hvac-dot"></span>${hvac}</div>
       </div>`;
   }).join('');
-
-  return `<div class="thermo-grid">${cards}</div>`;
 }
 
-// ── Maintenance section ────────────────────────────────────────────────────
-function renderMaintenance(items) {
-  if (!items || items.length === 0) {
-    return `<div class="card"><div class="card-title">Maintenance</div><div style="color:var(--muted);font-size:13px">No maintenance items.</div></div>`;
-  }
-
-  const hvacItems      = items.filter(m => m.category === 'HVAC');
-  const applianceItems = items.filter(m => m.category === 'Appliance');
-  const otherItems     = items.filter(m => m.category !== 'HVAC' && m.category !== 'Appliance');
-
-  function maint_row(m) {
-    const days = m.days_until_due;
-    const cls  = statusClass(days);
-    const dueLabel = m.is_overdue
-      ? `Overdue by ${Math.abs(days)}d`
-      : days === 0 ? 'Due today'
-      : days != null ? `Due in ${days}d`
-      : m.next_due ? `Due ${fmt.date(m.next_due)}` : '—';
-    const inv = m.inventory_count != null
-      ? `${m.inventory_count} ${m.inventory_unit || ''} in stock`
-      : '';
-
-    // For appliances, extract purchase year from notes
-    const yearMatch = m.notes && m.notes.match(/(?:Installed|New|installed)\s+(\d{4})/);
-    const yearBadge = yearMatch && m.category === 'Appliance'
-      ? `<div class="appliance-year">Since ${yearMatch[1]}</div>` : '';
-
-    return `
-      <div class="maint-item clickable" onclick='openMaintenanceModal(${JSON.stringify(m).replace(/'/g,"&#39;")})'>
-        <div class="maint-left">
-          <div class="maint-name">${m.name}</div>
-          ${yearBadge}
-          <div class="maint-sub">${m.category}${m.frequency_days ? ` · check every ${m.frequency_days}d` : ''}</div>
-        </div>
-        <div class="maint-right">
-          <div class="maint-due ${cls}">${dueLabel}</div>
-          ${inv ? `<div class="maint-inv">${inv}</div>` : ''}
-        </div>
-      </div>`;
-  }
-
-  let rows = '';
-  if (hvacItems.length)      rows += `<div class="category-header">HVAC Filters</div>` + hvacItems.map(maint_row).join('');
-  if (applianceItems.length) rows += `<div class="category-header">Appliances</div>` + applianceItems.map(maint_row).join('');
-  if (otherItems.length)     rows += `<div class="category-header">Other</div>` + otherItems.map(maint_row).join('');
-
-  return `<div class="card"><div class="card-title">Maintenance & Appliances</div><div class="maintenance-grid">${rows}</div></div>`;
-}
-
-// ── EV2-A Rate Plan card ───────────────────────────────────────────────────
-function renderRatePlan() {
-  const isWinter = (() => { const m = new Date().getMonth()+1; return m >= 10 || m <= 5; })();
-  const peakRate    = isWinter ? '$0.41' : '$0.54';
-  const partialRate = isWinter ? '$0.39' : '$0.43';
-  const season = isWinter ? 'Winter (Oct–May)' : 'Summer (Jun–Sep)';
-  return `
-    <div class="rate-plan-card">
-      <div class="rate-plan-header">
-        <span class="rate-plan-name">EV2-A · Home Charging</span>
-        <span class="rate-plan-sub">${season} rates · All days same schedule</span>
-      </div>
-      <div class="rate-tiers">
-        <div class="rate-tier">
-          <div class="rate-tier-label">Off-Peak</div>
-          <div class="rate-tier-value tier-offpeak">$0.23<span style="font-size:12px;font-weight:400">/kWh</span></div>
-          <div class="rate-tier-hours">Midnight – 3:00 PM</div>
-          <div class="rate-tier-note">EV charging + solar production window</div>
-        </div>
-        <div class="rate-tier">
-          <div class="rate-tier-label">Partial-Peak</div>
-          <div class="rate-tier-value tier-partial">${partialRate}<span style="font-size:12px;font-weight:400">/kWh</span></div>
-          <div class="rate-tier-hours">3–4 PM · 9 PM–Midnight</div>
-          <div class="rate-tier-note">Solar production tails off</div>
-        </div>
-        <div class="rate-tier">
-          <div class="rate-tier-label">Peak</div>
-          <div class="rate-tier-value tier-peak">${peakRate}<span style="font-size:12px;font-weight:400">/kWh</span></div>
-          <div class="rate-tier-hours">4:00 – 9:00 PM</div>
-          <div class="rate-tier-note">Avoid high loads — run EV after 9 PM</div>
-        </div>
-      </div>
-      <div class="rate-insight">
-        💡 Battery arbitrage spread: $0.23 → ${peakRate} = <strong style="color:var(--green)">${isWinter?'$0.18':'$0.31'}/kWh</strong> · Powerwall potential: ~${isWinter?'$440':'$770'}/season · Solar self-consumption value: ~$0.26/kWh (daytime off-peak)
-      </div>
-    </div>`;
-}
-
-// ── Needs attention ────────────────────────────────────────────────────────
-function renderAttention(tasks) {
-  const inner = tasks.length === 0
-    ? `<div class="nothing-waiting">✓ Nothing waiting on you</div>`
-    : tasks.map(t => `
-        <div class="attention-item">
-          <span style="color:var(--red);font-size:16px">⚠</span>
-          <div>
-            <div class="proj-name">${t.project_name}</div>
-            <div class="task-name">${t.title}</div>
-          </div>
-        </div>`).join('');
-  return `<div class="card"><div class="card-title">Needs Your Attention</div><div class="attention-list">${inner}</div></div>`;
-}
-
-// ── Energy charts ──────────────────────────────────────────────────────────
+// ── Energy chart ──────────────────────────────────────────────────────────
 function renderEnergy(energy) {
-  const { monthly_electric, monthly_gas, totals } = energy;
+  const t = energy?.totals || {};
+  document.getElementById('es-kwh').textContent    = t.electric_kwh  ? (+t.electric_kwh).toLocaleString() : '—';
+  document.getElementById('es-ecost').textContent  = t.electric_cost ? `$${(+t.electric_cost).toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0})}` : '—';
+  document.getElementById('es-therms').textContent = t.gas_therms    ? (+t.gas_therms).toFixed(0) : '—';
+  document.getElementById('es-gcost').textContent  = t.gas_cost      ? `$${(+t.gas_cost).toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0})}` : '—';
 
-  const summaryHTML = `
-    <div class="energy-summary">
-      <div class="energy-stat">
-        <div class="energy-stat-label">Annual Electric</div>
-        <div class="energy-stat-value" style="color:var(--elec)">${fmt.kwh(totals.electric_kwh)}</div>
-        <div class="energy-stat-sub">${fmt.dollar(totals.electric_cost)}</div>
-      </div>
-      <div class="energy-stat">
-        <div class="energy-stat-label">Avg Monthly Electric</div>
-        <div class="energy-stat-value" style="color:var(--elec)">${monthly_electric.length ? fmt.kwh((totals.electric_kwh / monthly_electric.length).toFixed(0)) : '—'}</div>
-        <div class="energy-stat-sub">${monthly_electric.length ? fmt.dollar((totals.electric_cost / monthly_electric.length).toFixed(0)) + '/mo' : ''}</div>
-      </div>
-      <div class="energy-stat">
-        <div class="energy-stat-label">Annual Gas</div>
-        <div class="energy-stat-value" style="color:var(--gas)">${fmt.therms(totals.gas_therms)}</div>
-        <div class="energy-stat-sub">${fmt.dollar(totals.gas_cost)}</div>
-      </div>
-      <div class="energy-stat">
-        <div class="energy-stat-label">Total Utility Cost</div>
-        <div class="energy-stat-value">${fmt.dollar((totals.electric_cost||0) + (totals.gas_cost||0))}</div>
-        <div class="energy-stat-sub">Mar 2025 – Mar 2026</div>
-      </div>
-    </div>`;
+  const monthly = energy?.monthly_electric || [];
+  const last7   = monthly.slice(-7);
 
-  const chartsHTML = `
-    <div class="energy-charts">
-      <div class="card">
-        <div class="card-title">Electric — Monthly kWh</div>
-        <div class="chart-wrap"><canvas id="chartElec"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Gas — Monthly Therms</div>
-        <div class="chart-wrap"><canvas id="chartGas"></canvas></div>
-      </div>
-    </div>`;
+  document.getElementById('energy-month-label').textContent =
+    last7.length ? `Last ${last7.length} months` : '—';
 
-  return summaryHTML + chartsHTML;
-}
+  if (chartEnergy) chartEnergy.destroy();
+  if (!last7.length) return;
 
-function initCharts(energy) {
-  const { monthly_electric, monthly_gas } = energy;
-  const chartDefaults = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { display: false },
-      tooltip: { callbacks: {} }
+  chartEnergy = new Chart(document.getElementById('chart-energy'), {
+    type: 'bar',
+    data: {
+      labels:   last7.map(r => fmt.monthLabel(r.month)),
+      datasets: [{
+        label:           'kWh',
+        data:            last7.map(r => r.kwh_used),
+        backgroundColor: 'rgba(59,130,246,0.6)',
+        borderColor:     'rgba(59,130,246,0.9)',
+        borderWidth:     1,
+        borderRadius:    4,
+      }]
     },
-    scales: {
-      x: {
-        ticks: { color: '#64748b', font: { size: 10 } },
-        grid:  { color: 'rgba(255,255,255,0.05)' }
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.raw.toLocaleString()} kWh  ·  $${last7[ctx.dataIndex]?.cost?.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0}) || '—'}`
+          }
+        }
       },
-      y: {
-        ticks: { color: '#64748b', font: { size: 10 } },
-        grid:  { color: 'rgba(255,255,255,0.05)' }
+      scales: {
+        x: { ticks: { color: '#7c849e', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+        y: { ticks: { color: '#7c849e', font: { size: 10 }, callback: v => v.toLocaleString() }, grid: { color: 'rgba(255,255,255,0.06)' } }
       }
     }
-  };
-
-  if (chartElec) { chartElec.destroy(); chartElec = null; }
-  if (chartGas)  { chartGas.destroy();  chartGas  = null; }
-
-  // Electric
-  const elecLabels = monthly_electric.map(r => fmt.monthLabel(r.month));
-  const elecKwh    = monthly_electric.map(r => r.kwh_used);
-  const elecCtx    = document.getElementById('chartElec');
-  if (elecCtx) {
-    chartElec = new Chart(elecCtx, {
-      type: 'bar',
-      data: {
-        labels: elecLabels,
-        datasets: [{
-          data: elecKwh,
-          backgroundColor: 'rgba(250,204,21,0.6)',
-          borderColor:     'rgba(250,204,21,0.9)',
-          borderWidth: 1,
-          borderRadius: 3,
-        }]
-      },
-      options: {
-        ...chartDefaults,
-        plugins: {
-          ...chartDefaults.plugins,
-          tooltip: {
-            callbacks: {
-              label: ctx => ` ${ctx.raw.toLocaleString()} kWh`
-            }
-          }
-        },
-        scales: {
-          ...chartDefaults.scales,
-          y: { ...chartDefaults.scales.y, ticks: { ...chartDefaults.scales.y.ticks, callback: v => `${v.toLocaleString()}` } }
-        }
-      }
-    });
-  }
-
-  // Gas
-  const gasLabels = monthly_gas.map(r => fmt.monthLabel(r.month));
-  const gasTherms = monthly_gas.map(r => r.therms_used);
-  const gasCtx    = document.getElementById('chartGas');
-  if (gasCtx) {
-    chartGas = new Chart(gasCtx, {
-      type: 'bar',
-      data: {
-        labels: gasLabels,
-        datasets: [{
-          data: gasTherms,
-          backgroundColor: 'rgba(251,146,60,0.6)',
-          borderColor:     'rgba(251,146,60,0.9)',
-          borderWidth: 1,
-          borderRadius: 3,
-        }]
-      },
-      options: {
-        ...chartDefaults,
-        plugins: {
-          ...chartDefaults.plugins,
-          tooltip: {
-            callbacks: {
-              label: ctx => ` ${ctx.raw.toFixed(1)} therms`
-            }
-          }
-        }
-      }
-    });
-  }
+  });
 }
 
-// ── Projects section ───────────────────────────────────────────────────────
-function taskStatusDot(s) {
-  const cls = { todo: 'dot-todo', in_progress: 'dot-in_progress', waiting_on_steve: 'dot-waiting_on_steve', waiting_on_vendor: 'dot-waiting_on_vendor', done: 'dot-done' };
-  return `<div class="task-dot ${cls[s] || 'dot-todo'}"></div>`;
-}
+// ── Projects ──────────────────────────────────────────────────────────────
+function renderProjects(data) {
+  const sec      = document.getElementById('projects-section');
+  const projects = data.projects || [];
+  const attn     = data.needs_attention || [];
+  const quotes   = data.open_quotes     || [];
 
-function renderProjects(projects) {
-  if (!projects || projects.length === 0) {
-    return `<div style="color:var(--muted)">No projects yet.</div>`;
+  // Badges
+  const attnBadge  = document.getElementById('badge-attention');
+  const quotesBadge = document.getElementById('badge-quotes');
+  const projBadge  = document.getElementById('badge-proj-count');
+
+  projBadge.textContent = `${projects.length} projects`;
+  if (attn.length > 0) {
+    attnBadge.style.display = '';
+    attnBadge.textContent = `${attn.length} need action`;
+  }
+  if (quotes.length > 0) {
+    quotesBadge.style.display = '';
+    quotesBadge.textContent = `${quotes.length} open quotes`;
   }
 
-  const cards = projects.map(p => {
-    const tc  = p.task_counts;
-    const pct = tc.total ? Math.round(tc.done / tc.total * 100) : 0;
+  let html = '';
 
-    const badgeMap = { planning: 'badge-planning', active: 'badge-active', done: 'badge-done', 'on-hold': 'badge-on-hold' };
-    const badgeCls = badgeMap[p.status] || 'badge-planning';
-
-    // Show up to 5 tasks; show more toggle handled via inline show/hide
-    const visibleTasks = p.tasks.slice(0, 5);
-    const hiddenTasks  = p.tasks.slice(5);
-
-    const taskHTML = visibleTasks.map(t => {
-      const extraCls = t.status === 'done' ? 'task-done-text' : t.status === 'waiting_on_steve' ? 'task-waiting-steve' : '';
-      return `<div class="task-item">${taskStatusDot(t.status)}<span class="${extraCls}">${t.title}</span></div>`;
-    }).join('');
-
-    const hiddenHTML = hiddenTasks.length
-      ? `<details><summary class="show-more">+ ${hiddenTasks.length} more tasks</summary>${hiddenTasks.map(t => `<div class="task-item">${taskStatusDot(t.status)}<span class="${t.status==='done'?'task-done-text':''}">${t.title}</span></div>`).join('')}</details>`
-      : '';
-
-    const quotesHTML = p.quotes && p.quotes.length
-      ? `<div class="quotes-section"><div style="font-size:11px;color:var(--muted);margin-bottom:6px">QUOTES</div>${
-          p.quotes.map(q => `
-            <div class="quote-row">
-              <span class="quote-vendor">${q.vendor_name || 'Unknown vendor'}</span>
-              <span>${q.amount ? `<span class="quote-amount">$${(+q.amount).toLocaleString()}</span>` : 'TBD'}
-              <span class="quote-status qs-${q.status}">${q.status}</span></span>
-            </div>`).join('')
-        }</div>`
-      : '';
-
-    return `
-      <div class="card project-card clickable" onclick='openProjectModal(${JSON.stringify(p).replace(/'/g,"&#39;")})'>
-        <div style="font-size:10px;color:var(--muted);text-align:right;margin-bottom:4px">click for details ›</div>
-        <div class="project-header">
-          <div class="project-name">${p.name}</div>
-          <div class="project-badge ${badgeCls}">${p.status}</div>
-        </div>
-        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
-        <div class="progress-label">${tc.done} of ${tc.total} tasks complete</div>
-        <div class="task-list">${taskHTML}</div>
-        ${hiddenHTML}
-        ${quotesHTML}
+  // Attention banner
+  if (attn.length > 0) {
+    html += `<div class="attention-banner">
+      <div class="attention-banner-title">⚠️ Waiting on Steve (${attn.length})</div>`;
+    attn.slice(0, 5).forEach(t => {
+      html += `<div class="attn-item">
+        <span class="attn-proj">${esc(t.project_name || '—')}</span>
+        <span>${esc(t.title || t.name || 'Task')}</span>
       </div>`;
-  }).join('');
+    });
+    html += `</div>`;
+  }
 
-  return `<div class="projects-grid">${cards}</div>`;
-}
+  // Project cards
+  if (!projects.length) {
+    html += `<div class="empty-msg">No projects yet.</div>`;
+  } else {
+    html += `<div class="proj-grid">`;
+    projects.filter(p => p.status !== 'done').forEach(p => {
+      const tc  = p.task_counts || {};
+      const pct = tc.total > 0 ? Math.round((tc.done / tc.total) * 100) : 0;
+      const statusCls = `s-${(p.status || 'planning').replace(/\s+/g, '-')}`;
+      const hasWaiting = (tc.waiting_on_steve || 0) > 0;
+      const hasQuotes  = (p.quotes || []).filter(q => ['pending','received'].includes(q.status)).length > 0;
 
-// ── Open Quotes section ────────────────────────────────────────────────────
-function renderOpenQuotes(quotes) {
-  if (!quotes || quotes.length === 0) return '';
-  const pending = quotes.filter(q => q.status === 'pending' || q.status === 'received');
-  if (pending.length === 0) return '';
-
-  const rows = pending.map(q => {
-    const statusCls = { pending: 'oqs-pending', received: 'oqs-received', accepted: 'oqs-accepted', rejected: 'oqs-rejected' }[q.status] || 'oqs-pending';
-    const sentAgo = q.sent_date ? Math.floor((Date.now() - new Date(q.sent_date + 'T00:00:00').getTime()) / 86400000) : null;
-    return `
-      <div class="oq-item">
-        <div class="oq-left">
-          <div class="oq-vendor">${q.vendor_name}</div>
-          <div class="oq-project">${q.project_name}</div>
-          ${q.contact ? `<div class="oq-contact">${q.contact}</div>` : ''}
-        </div>
-        <div class="oq-right">
-          <div class="oq-status ${statusCls}">${q.status}</div>
-          ${sentAgo !== null ? `<div class="oq-days">${sentAgo}d since sent</div>` : ''}
-        </div>
-      </div>`;
-  }).join('');
-
-  return `
-    <p class="section-title">Open Quotes (${pending.length})</p>
-    <div class="card"><div class="quotes-grid">${rows}</div></div>`;
-}
-
-// ── Recent Communications ──────────────────────────────────────────────────
-function renderRecentComms(comms) {
-  if (!comms || comms.length === 0) return '';
-
-  // Show most recent first, cap at 15
-  const sorted = [...comms].sort((a, b) => {
-    const da = a.date + 'T' + (a.time || '00:00');
-    const db = b.date + 'T' + (b.time || '00:00');
-    return db.localeCompare(da);
-  }).slice(0, 15);
-
-  const rows = sorted.map(c => {
-    const isIn = c.direction === 'inbound';
-    const dirIcon = isIn ? '↓' : '↑';
-    const dirCls  = isIn ? 'comm-in' : 'comm-out';
-    const dateStr = c.date ? new Date(c.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '';
-    return `
-      <div class="comm-item">
-        <div class="comm-dir ${dirCls}">${dirIcon}</div>
-        <div class="comm-body">
-          <div class="comm-top">
-            <span class="comm-who">${c.vendor_name}</span>
-            <span class="comm-project">${c.project_name}</span>
-            <span class="comm-date">${dateStr}${c.time ? ' ' + c.time : ''}</span>
+      html += `
+        <div class="proj-card" onclick="openProjectModal(${p.id})">
+          <div class="proj-card-top">
+            <div class="proj-name">${esc(p.name)}</div>
+            <span class="proj-status-badge ${statusCls}">${esc(p.status || 'planning')}</span>
           </div>
-          ${c.subject ? `<div class="comm-subject">${c.subject}</div>` : ''}
-          ${c.summary ? `<div class="comm-summary">${c.summary}</div>` : ''}
+          <div class="proj-progress-bg">
+            <div class="proj-progress-fill" style="width:${pct}%"></div>
+          </div>
+          <div class="proj-meta">
+            <span>${pct}% done</span>
+            ${hasWaiting ? `<span class="proj-alert">⚡ ${tc.waiting_on_steve} waiting</span>` : ''}
+            ${hasQuotes  ? `<span class="proj-warn">💬 quotes pending</span>` : ''}
+            ${tc.in_progress ? `<span>${tc.in_progress} in progress</span>` : ''}
+            ${tc.todo ? `<span style="color:var(--muted)">${tc.todo} todo</span>` : ''}
+          </div>
+        </div>`;
+    });
+    html += `</div>`;
+  }
+
+  sec.innerHTML = html;
+}
+
+// ── Project modal ─────────────────────────────────────────────────────────
+let _projects = [];
+function openProjectModal(id) {
+  const p = _projects.find(x => x.id === id);
+  if (!p) return;
+  const tc = p.task_counts || {};
+  const tasks  = p.tasks  || [];
+  const quotes = p.quotes || [];
+
+  const pct = tc.total > 0 ? Math.round((tc.done / tc.total) * 100) : 0;
+  const statusCls = `s-${(p.status || 'planning').replace(/\s+/g, '-')}`;
+
+  const tasksHTML = tasks.length ? `
+    <div class="modal-section">
+      <div class="modal-section-label">Tasks (${tc.done}/${tc.total})</div>
+      ${tasks.map(t => `
+        <div class="modal-task">
+          <span class="task-status ts-${t.status}">${t.status.replace(/_/g,' ')}</span>
+          <span>${esc(t.title || t.name)}</span>
+        </div>`).join('')}
+    </div>` : '';
+
+  const quotesHTML = quotes.length ? `
+    <div class="modal-section">
+      <div class="modal-section-label">Quotes</div>
+      ${quotes.map(q => `
+        <div class="modal-quote">
+          <strong>${esc(q.vendor_name || '—')}</strong>
+          ${q.amount ? ` · $${(+q.amount).toLocaleString()}` : ''}
+          <span style="color:var(--muted);font-size:11px;margin-left:6px">${esc(q.status || '')}</span>
+          ${q.notes ? `<div style="color:var(--muted);font-size:11px;margin-top:3px">${esc(q.notes)}</div>` : ''}
+        </div>`).join('')}
+    </div>` : '';
+
+  document.getElementById('modal-content').innerHTML = `
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:12px">
+      <div class="modal-title">${esc(p.name)}</div>
+      <span class="proj-status-badge ${statusCls}" style="flex-shrink:0">${esc(p.status)}</span>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:14px">
+      ${p.priority ? `<span>Priority: <strong style="color:var(--text)">${esc(p.priority)}</strong></span>` : ''}
+      ${p.estimated_cost ? `<span>Est: <strong style="color:var(--text)">$${(+p.estimated_cost).toLocaleString()}</strong></span>` : ''}
+      ${p.actual_cost ? `<span>Actual: <strong style="color:var(--text)">$${(+p.actual_cost).toLocaleString()}</strong></span>` : ''}
+    </div>
+    <div style="margin-bottom:12px">
+      <div style="background:var(--surface2);border-radius:4px;height:6px;">
+        <div style="width:${pct}%;height:100%;border-radius:4px;background:var(--accent)"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">${tc.done} of ${tc.total} tasks complete</div>
+    </div>
+    ${p.description ? `<div class="modal-section"><div class="modal-section-label">Description</div><div class="modal-notes">${esc(p.description)}</div></div>` : ''}
+    ${tasksHTML}
+    ${quotesHTML}
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function closeModal(e) {
+  if (!e || e.target === document.getElementById('modal-overlay') || e.target.classList.contains('modal-close')) {
+    document.getElementById('modal-overlay').classList.remove('open');
+  }
+}
+
+// ── Camera grid ───────────────────────────────────────────────────────────
+function renderCameras() {
+  const container = document.getElementById('cam-grid-container');
+  const state     = D?.intelligence?.state;
+  const lastMotion = (state && state.last_motion) ? state.last_motion : {};
+
+  if (!isLocalNetwork) {
+    container.innerHTML = `
+      <div class="cam-ext-notice">
+        <div style="font-size:28px;margin-bottom:8px">📷</div>
+        <div style="font-weight:600;margin-bottom:4px">Camera feeds require local network access</div>
+        <div style="font-size:12px;color:var(--muted)">Connect to the home Wi-Fi to view live thumbnails from Frigate</div>
+      </div>`;
+    return;
+  }
+
+  const grid = CAMERAS.map(cam => {
+    const label = CAM_LABELS[cam] || cam;
+    const mot   = lastMotion[cam];
+    const motHTML = mot
+      ? `<span class="cam-motion-dot"></span><span class="cam-time">${fmt.relTime(mot)}</span>`
+      : `<span class="cam-time">No recent motion</span>`;
+
+    return `
+      <div class="cam-tile">
+        <div class="cam-img-wrap">
+          <img
+            class="cam-img"
+            src="${FRIGATE}/api/${cam}/latest.jpg?h=240&ts=${Date.now()}"
+            alt="${label}"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            onload="this.classList.remove('loading')"
+          />
+          <div class="cam-placeholder" style="display:none">
+            <div class="cam-placeholder-icon">📷</div>
+            <div>${label}</div>
+            <div style="font-size:10px;color:var(--muted)">No feed</div>
+          </div>
+        </div>
+        <div class="cam-footer">
+          <span class="cam-name">${label}</span>
+          <span>${motHTML}</span>
         </div>
       </div>`;
   }).join('');
 
-  return `
-    <p class="section-title">Recent Communications</p>
-    <div class="card"><div class="comms-feed">${rows}</div></div>`;
+  container.innerHTML = `<div class="cam-grid">${grid}</div>`;
 }
 
-// ── Main render ────────────────────────────────────────────────────────────
-function render(data) {
-  const dot = document.getElementById('status-dot');
-  const ts  = document.getElementById('updated-ts');
-
-  // Staleness check (> 20 min = stale)
-  const genAt    = new Date(data.generated_at);
-  const diffMins = (Date.now() - genAt.getTime()) / 60000;
-  ts.textContent = `Updated ${fmt.minutesAgo(data.generated_at)}`;
-  dot.className  = 'status-dot' + (diffMins > 20 ? ' stale' : '');
-
-  const html = `
-    <p class="section-title">Climate</p>
-    <div class="top-row">
-      <div class="top-left">
-        ${renderThermostats(data.thermostat.latest, data.thermostat.history)}
-      </div>
-      <div class="top-right">
-        ${renderMaintenance(data.maintenance)}
-        <div style="margin-top:14px">${renderAttention(data.needs_attention)}</div>
-      </div>
-    </div>
-
-    <p class="section-title">Energy — Mar 2025 to Mar 2026</p>
-    ${renderRatePlan()}
-    ${renderEnergy(data.energy)}
-
-    <p class="section-title">Projects</p>
-    ${renderProjects(data.projects)}
-
-    ${renderOpenQuotes(data.open_quotes)}
-
-    ${renderRecentComms(data.recent_communications)}
-  `;
-
-  document.getElementById('main-content').innerHTML = html;
-  document.getElementById('footer').textContent = `Data as of ${data.generated_at} · Updated every 15 min via GitHub Actions`;
-
-  initCharts(data.energy);
-  initThermoCharts(data.thermostat.history);
-}
-
-// ── Load data ──────────────────────────────────────────────────────────────
-async function loadData() {
-  const dot = document.getElementById('status-dot');
-  dot.className = 'status-dot stale';
+// ── Main load ─────────────────────────────────────────────────────────────
+async function loadDashboard() {
+  const dot     = document.getElementById('status-dot');
+  const updText = document.getElementById('updated-text');
+  const sub     = document.getElementById('header-sub');
 
   try {
-    const res = await fetch(`https://raw.githubusercontent.com/stvmcclr/Home-dashboard/main/dashboard_data.json?_=${Date.now()}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    render(data);
+    const r = await fetch(`${DATA_URL}?_=${Date.now()}`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    D = await r.json();
+
+    _projects = D.projects || [];
+
+    // Header
+    const genAt  = D.generated_at ? new Date(D.generated_at) : null;
+    const minsAgo = genAt ? Math.round((Date.now() - genAt.getTime()) / 60000) : null;
+    updText.textContent = minsAgo != null ? `Updated ${minsAgo}m ago` : 'Data loaded';
+    dot.className = minsAgo != null && minsAgo > 10 ? 'status-dot stale' : 'status-dot';
+    sub.textContent = `Last data: ${D.generated_at ? D.generated_at.slice(0,16) : '—'}`;
+
+    // Render all sections
+    renderStateStrip(D);
+    renderFeed(D);
+    renderThermostats(D.thermostat?.latest || []);
+    renderEnergy(D.energy || {});
+    renderProjects(D);
+    if (isLocalNetwork) renderCameras();
+
   } catch (err) {
-    document.getElementById('main-content').innerHTML = `
-      <div class="error-banner">
-        Could not load dashboard_data.json: ${err.message}<br>
-        <small>Make sure you're accessing this page via <strong>http://localhost:8080</strong> and the HTTP server is running.</small>
-      </div>`;
-    document.getElementById('status-dot').className = 'status-dot error';
-    document.getElementById('updated-ts').textContent = 'Load failed';
+    dot.className = 'status-dot error';
+    updText.textContent = 'Error loading data';
+    sub.textContent = String(err);
+    console.error('Dashboard load error:', err);
   }
 }
 
-// ── Password Gate ──────────────────────────────────────────────────────────
-const PASS_KEY = 'eucalyptus_auth_v1';
-const PASS     = 'eucalyptus2026'; // Change this to your preferred password
+// ── Init ──────────────────────────────────────────────────────────────────
+loadDashboard();
+loadWeather();
+detectLocalNetwork();
 
-function checkPassword() {
-  const val = document.getElementById('gate-input').value;
-  if (val === PASS) {
-    sessionStorage.setItem(PASS_KEY, '1');
-    document.getElementById('gate-overlay').style.display = 'none';
-    loadData();
-    setInterval(loadData, 5 * 60 * 1000);
-  } else {
-    document.getElementById('gate-error').style.display = 'block';
-    document.getElementById('gate-input').value = '';
-    document.getElementById('gate-input').focus();
-  }
-}
+// Auto-refresh every 60s
+setInterval(loadDashboard, 60000);
+setInterval(loadWeather, 600000); // weather every 10 min
+// Re-check cameras and reload images every 60s if local
+setInterval(() => { if (isLocalNetwork && D) renderCameras(); }, 60000);
 
-document.getElementById('gate-btn').addEventListener('click', checkPassword);
-document.getElementById('gate-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') checkPassword();
-  document.getElementById('gate-error').style.display = 'none';
-});
-
-// ── Auto-refresh every 5 minutes ──────────────────────────────────────────
-if (sessionStorage.getItem(PASS_KEY) === '1') {
-  document.getElementById('gate-overlay').style.display = 'none';
-  loadData();
-  setInterval(loadData, 5 * 60 * 1000);
-}
-// If not yet authenticated, wait for gate unlock.
+// Keyboard close modal
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
