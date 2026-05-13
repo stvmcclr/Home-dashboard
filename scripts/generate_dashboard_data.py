@@ -202,7 +202,47 @@ def build_data():
                         pass
             intelligence["state"] = state
     except Exception as e:
-        intelligence["_error"] = str(e)
+        # Supabase tables missing or unreachable — fall back to local SQLite
+        intelligence["_supabase_error"] = str(e)
+        try:
+            import sqlite3, time as _time
+            _db_path = os.path.expanduser("~/.openclaw/home_intelligence.db")
+            if os.path.exists(_db_path):
+                _db = sqlite3.connect(_db_path)
+                _db.row_factory = sqlite3.Row
+                # Observations
+                _obs = _db.execute("""
+                    SELECT id, datetime(timestamp,'unixepoch','localtime') as timestamp,
+                           source, source_type, location, summary, confidence, model_version
+                    FROM observations ORDER BY timestamp DESC LIMIT 20
+                """).fetchall()
+                intelligence["observations"] = [dict(r) for r in _obs]
+                # Open insights
+                _ins = _db.execute("""
+                    SELECT id, datetime(timestamp,'unixepoch','localtime') as timestamp,
+                           insight_type, severity, summary
+                    FROM insights WHERE acted_on_at IS NULL
+                    ORDER BY timestamp DESC LIMIT 10
+                """).fetchall()
+                intelligence["insights"] = [dict(r) for r in _ins]
+                # Home state
+                _cutoff = int(_time.time()) - 1800
+                _who = _db.execute(
+                    "SELECT summary FROM observations WHERE source='unifi:presence' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
+                    (_cutoff,)).fetchone()
+                _lights = _db.execute(
+                    "SELECT summary FROM observations WHERE source='ha:lights' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
+                    (_cutoff,)).fetchone()
+                intelligence["state"] = {
+                    "source": "sqlite_fallback",
+                    "who_is_home": (_who["summary"] if _who else ""),
+                    "lights_on": (_lights["summary"] if _lights else ""),
+                    "last_updated": datetime.now(timezone.utc).isoformat(),
+                }
+                _db.close()
+                intelligence["_source"] = "sqlite_fallback"
+        except Exception as e2:
+            intelligence["_error"] = str(e2)
 
     return {
         "generated_at":          now,
