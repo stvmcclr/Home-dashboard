@@ -273,6 +273,18 @@
   .energy-stat-sub { font-size: 10px; color: var(--muted); margin-top: 1px; }
   .chart-wrap { position: relative; height: 160px; }
 
+  /* PGE live section */
+  .pge-section { border-top: 1px solid rgba(255,255,255,0.07); padding: 10px 16px 12px; }
+  .pge-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .pge-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--accent); }
+  .pge-through { font-size:9px; color:var(--muted); }
+  .pge-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:10px; }
+  @media (max-width:700px) { .pge-stats { grid-template-columns:repeat(2,1fr); } }
+  .pge-stat-label { font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:0.6px; }
+  .pge-stat-value { font-size:17px; font-weight:700; margin-top:2px; }
+  .pge-stat-sub   { font-size:9px; color:var(--muted); margin-top:1px; }
+  .pge-chart-wrap { position:relative; height:120px; }
+
   /* ── Projects ── */
   .projects-section { padding: 10px 16px; }
   .proj-grid {
@@ -536,6 +548,39 @@
           <div class="thermo-temp">—<sup>°F</sup></div>
         </div>
       </div>
+      <!-- PGE Live -->
+      <div class="pge-section" id="pge-section" style="display:none">
+        <div class="pge-header">
+          <span class="pge-label">⚡ Live PGE</span>
+          <span class="pge-through" id="pge-through"></span>
+        </div>
+        <div class="pge-stats">
+          <div>
+            <div class="pge-stat-label">Last Hour</div>
+            <div class="pge-stat-value" id="pge-latest">—</div>
+            <div class="pge-stat-sub">kWh</div>
+          </div>
+          <div>
+            <div class="pge-stat-label">48h Avg</div>
+            <div class="pge-stat-value" id="pge-avg">—</div>
+            <div class="pge-stat-sub">kWh/hr</div>
+          </div>
+          <div>
+            <div class="pge-stat-label">Eve Peak</div>
+            <div class="pge-stat-value" id="pge-peak">—</div>
+            <div class="pge-stat-sub">kWh 5–11pm</div>
+          </div>
+          <div>
+            <div class="pge-stat-label">Est. Daily</div>
+            <div class="pge-stat-value" id="pge-cost">—</div>
+            <div class="pge-stat-sub">@ $0.35/kWh</div>
+          </div>
+        </div>
+        <div class="pge-chart-wrap">
+          <canvas id="chart-pge"></canvas>
+        </div>
+      </div>
+
       <div class="energy-section">
         <div class="energy-row" id="energy-stats">
           <div class="energy-stat">
@@ -614,6 +659,7 @@ const CAM_LABELS = {
 
 let D = null;           // current data snapshot
 let chartEnergy = null;
+let chartPGE    = null;
 let isLocalNetwork = false;
 
 // ── Helpers ───────────────────────────────────────────────────────────────
@@ -924,6 +970,91 @@ function renderEnergy(energy) {
   });
 }
 
+// ── PGE live chart ───────────────────────────────────────────────────────
+function renderPGE(pge) {
+  const hourly = pge?.hourly || [];
+  if (!hourly.length) return;
+
+  document.getElementById('pge-section').style.display = '';
+
+  const latest = pge.latest_kwh;
+  const avg    = pge.avg_per_hour;
+  const peak   = pge.evening_peak_kwh;
+  const cost   = avg != null ? `$${(avg * 24 * 0.35).toFixed(2)}` : '—';
+
+  document.getElementById('pge-latest').textContent = latest != null ? `${latest}` : '—';
+  document.getElementById('pge-avg').textContent    = avg    != null ? `${avg}`    : '—';
+  document.getElementById('pge-peak').textContent   = peak   != null ? `${peak}`   : '—';
+  document.getElementById('pge-cost').textContent   = cost;
+
+  if (pge.data_through) {
+    const dt = new Date(pge.data_through + ':00-07:00');
+    document.getElementById('pge-through').textContent =
+      `data through ${dt.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',hour12:true})}`;
+  }
+
+  // Color bars: orange for evening (17-22h), dimmer blue otherwise
+  const colors = hourly.map(r => {
+    const h = parseInt(r.ts.slice(11, 13), 10);
+    if (h >= 17 && h <= 22) return 'rgba(251,146,60,0.85)';  // orange = evening
+    if (h >= 23 || h < 6)  return 'rgba(99,102,241,0.5)';   // indigo = overnight
+    return 'rgba(59,130,246,0.6)';                            // blue = daytime
+  });
+
+  // X-axis labels: show time every 6h
+  const labels = hourly.map(r => {
+    const h = parseInt(r.ts.slice(11, 13), 10);
+    if (h % 6 === 0) {
+      const d = new Date(r.ts + ':00-07:00');
+      return d.toLocaleString('en-US', {month:'short', day:'numeric', hour:'numeric', hour12:true});
+    }
+    return '';
+  });
+
+  if (chartPGE) chartPGE.destroy();
+  chartPGE = new Chart(document.getElementById('chart-pge'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'kWh',
+        data: hourly.map(r => r.kwh),
+        backgroundColor: colors,
+        borderWidth: 0,
+        borderRadius: 2,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => {
+              const r = hourly[items[0].dataIndex];
+              const d = new Date(r.ts + ':00-07:00');
+              return d.toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',hour12:true});
+            },
+            label: ctx => ` ${ctx.raw.toFixed(2)} kWh  (~$${(ctx.raw * 0.35).toFixed(2)})`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#7c849e', font: { size: 9 }, maxRotation: 0,
+                   callback: (_, i) => labels[i] },
+          grid: { color: 'rgba(255,255,255,0.03)' }
+        },
+        y: {
+          ticks: { color: '#7c849e', font: { size: 9 },
+                   callback: v => `${v}` },
+          grid: { color: 'rgba(255,255,255,0.05)' }
+        }
+      }
+    }
+  });
+}
+
 // ── Projects ──────────────────────────────────────────────────────────────
 function renderProjects(data) {
   const sec      = document.getElementById('projects-section');
@@ -1134,6 +1265,7 @@ async function loadDashboard() {
     renderFeed(D);
     renderThermostats(D.thermostat?.latest || []);
     renderEnergy(D.energy || {});
+    renderPGE(D.pge || {});
     renderProjects(D);
     if (isLocalNetwork) renderCameras();
 

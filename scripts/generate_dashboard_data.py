@@ -268,7 +268,69 @@ def build_data():
         },
         "stats":        stats,
         "intelligence": intelligence,
+        "pge":          _build_pge_section(),
     }
+
+
+def _build_pge_section() -> dict:
+    """Read PGE hourly data directly from local SQLite and return structured dict."""
+    result = {"hourly": [], "daily": [], "latest_kwh": None,
+              "avg_per_hour": None, "evening_peak_kwh": None, "data_through": None}
+    try:
+        import sqlite3 as _sq
+        _db_path = os.path.expanduser("~/.openclaw/home_intelligence.db")
+        if not os.path.exists(_db_path):
+            return result
+        _db = _sq.connect(_db_path)
+        _db.row_factory = _sq.Row
+
+        # Hourly readings: last 72h converted to local PDT (UTC-7)
+        _rows = _db.execute("""
+            SELECT
+              strftime('%Y-%m-%dT%H:00', datetime(interval_ts, '-7 hours')) as ts,
+              kwh
+            FROM pge_energy
+            WHERE kwh > 0 AND duration_s = 3600
+              AND interval_ts >= datetime('now', '-79 hours')
+            GROUP BY ts
+            ORDER BY ts ASC
+        """).fetchall()
+        result["hourly"] = [{"ts": r["ts"], "kwh": round(r["kwh"], 3)} for r in _rows]
+
+        # Daily totals: last 7 days
+        _daily = _db.execute("""
+            SELECT
+              date(datetime(interval_ts, '-7 hours')) as local_date,
+              SUM(kwh)  as total_kwh,
+              MAX(kwh)  as peak_kwh,
+              COUNT(*)  as hours
+            FROM pge_energy
+            WHERE kwh > 0 AND duration_s = 3600
+            GROUP BY local_date
+            ORDER BY local_date DESC
+            LIMIT 7
+        """).fetchall()
+        result["daily"] = [
+            {"date": r["local_date"], "total_kwh": round(r["total_kwh"], 2),
+             "peak_kwh": round(r["peak_kwh"], 3), "hours": r["hours"]}
+            for r in _daily
+        ]
+
+        _db.close()
+
+        # Summary stats
+        if result["hourly"]:
+            result["latest_kwh"]      = result["hourly"][-1]["kwh"]
+            result["data_through"]    = result["hourly"][-1]["ts"]
+            all_kwh = [r["kwh"] for r in result["hourly"]]
+            result["avg_per_hour"]    = round(sum(all_kwh) / len(all_kwh), 2)
+            evening = [r["kwh"] for r in result["hourly"]
+                       if 17 <= int(r["ts"][11:13]) <= 22]
+            if evening:
+                result["evening_peak_kwh"] = round(max(evening), 2)
+    except Exception as _e:
+        result["_error"] = str(_e)
+    return result
 
 
 def main():
