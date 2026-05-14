@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14 21:49:41",
+  "generated_at": "2026-05-14 22:48:55",
   "as_of": "2026-05-14",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1412,
-        "timestamp": "2026-05-14T21:49:30+00:00",
+        "id": 1414,
+        "timestamp": "2026-05-14T22:48:48+00:00",
         "location": "Upstairs",
-        "temp_f": 70.5,
+        "temp_f": 71.5,
         "humidity_pct": 55,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1036,10 +1036,10 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1411,
-        "timestamp": "2026-05-14T21:49:30+00:00",
+        "id": 1413,
+        "timestamp": "2026-05-14T22:48:48+00:00",
         "location": "Downstairs",
-        "temp_f": 70.6,
+        "temp_f": 72.6,
         "humidity_pct": 54,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1330,6 +1330,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1413,
+        "timestamp": "2026-05-14T22:48:48+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1414,
+        "timestamp": "2026-05-14T22:48:48+00:00",
+        "location": "Upstairs",
+        "temp_f": 71.5,
+        "humidity_pct": 55,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1497,63 +1525,41 @@
   "intelligence": {
     "observations": [
       {
-        "id": 13789,
-        "timestamp": "2026-05-14T21:49:03+00:00",
-        "source": "camera:living_room",
+        "id": 13824,
+        "timestamp": "2026-05-14T22:44:52+00:00",
+        "source": "camera:doorbell",
         "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely continuing her work session or taking a break as noted in recent activity. The living room remains quiet and unoccupied.",
+        "location": "front_door",
+        "summary": "Roxanne is on the front porch on a Thursday afternoon, appearing to be occupied with something in her hands. This is consistent with her being seen on the porch about half an hour ago.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"lights off\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
       },
       {
-        "id": 13788,
-        "timestamp": "2026-05-14T21:47:30+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely taking a break from her work session as she has been moving around the kitchen recently.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 13787,
-        "timestamp": "2026-05-14T21:45:35+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is moving through the kitchen area, likely taking a break from her long work session at the island.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 13784,
-        "timestamp": "2026-05-14T21:43:36+00:00",
+        "id": 13821,
+        "timestamp": "2026-05-14T22:43:41+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13785,
-        "timestamp": "2026-05-14T21:43:36+00:00",
+        "id": 13822,
+        "timestamp": "2026-05-14T22:43:41+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Audio paused in 3 rooms",
+        "summary": "Music in kitchen: Alex Warren - Carry You Home (feat. Ella Henderson)",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13786,
-        "timestamp": "2026-05-14T21:43:36+00:00",
+        "id": 13823,
+        "timestamp": "2026-05-14T22:43:41+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1563,74 +1569,107 @@
         "entities": "[]"
       },
       {
-        "id": 13783,
-        "timestamp": "2026-05-14T21:43:24+00:00",
+        "id": 13820,
+        "timestamp": "2026-05-14T22:42:30+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is moving through the kitchen area, likely taking a break from her long work session at the kitchen island.",
+        "summary": "It's Thursday afternoon and Roxanne is moving through the kitchen area, likely taking another short break from her work session. The music 'Move On' by Kevin Powers is playing in the background as she navigates the kitchen.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"music\", \"entity_state\": \"playing\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13782,
-        "timestamp": "2026-05-14T21:41:46+00:00",
-        "source": "camera:living_room",
+        "id": 13819,
+        "timestamp": "2026-05-14T22:39:41+00:00",
+        "source": "camera:backyard",
         "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is moving through the kitchen area, likely taking a break from her long work session at the island. The scene remains calm and consistent with her recent activity of transitioning between tasks.",
+        "location": "backyard",
+        "summary": "It's a typical Thursday afternoon, and Penelope is actively playing on the trampoline, jumping with a ball. The gate remains closed, keeping the backyard area secure while she plays.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"coffee table\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13781,
-        "timestamp": "2026-05-14T21:36:49+00:00",
+        "id": 13818,
+        "timestamp": "2026-05-14T22:38:40+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in kitchen: Kevin Powers - Move On",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 13817,
+        "timestamp": "2026-05-14T22:37:15+00:00",
+        "source": "camera:backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "It's a typical Thursday afternoon and Miller and Penelope are playing on the trampoline in the backyard. The gate is closed, keeping the kids safely within the yard while they enjoy the afternoon.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 13816,
+        "timestamp": "2026-05-14T22:34:48+00:00",
+        "source": "camera:backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "Penelope is playing on the trampoline in the backyard on a Thursday afternoon. The scene is active and typical for this time of day, with no unusual activity or visitors present.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"unknown\", \"confidence\": 0.5}]"
+      },
+      {
+        "id": 13815,
+        "timestamp": "2026-05-14T22:33:40+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in kitchen: Matt Hansen - COMPASS",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 13814,
+        "timestamp": "2026-05-14T22:31:42+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is moving through the kitchen area, likely taking a break from her long work session at the kitchen island.",
+        "summary": "It's Thursday afternoon and Roxanne is moving through the living room area, likely taking another short break from her work session. The music is playing in the kitchen, consistent with her recent pattern of taking breaks throughout the afternoon.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"coffee table\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 13813,
+        "timestamp": "2026-05-14T22:29:46+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely taking a short break from her work as she sits at the counter. The house is calm with music playing in the background, consistent with her recent pattern of frequent breaks.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
       },
       {
-        "id": 13780,
-        "timestamp": "2026-05-14T21:35:16+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, continuing her work session as she has been throughout the midday. The house remains calm and quiet.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13779,
-        "timestamp": "2026-05-14T21:33:35+00:00",
+        "id": 13812,
+        "timestamp": "2026-05-14T22:28:39+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Audio paused in 3 rooms",
+        "summary": "Music in kitchen: Benson Boone - Death Wish Love (From Twisters: The Album)",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13778,
-        "timestamp": "2026-05-14T21:28:34+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: Alex Warren - Ordinary",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13777,
-        "timestamp": "2026-05-14T21:28:11+00:00",
+        "id": 13811,
+        "timestamp": "2026-05-14T22:28:24+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -1640,84 +1679,89 @@
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13776,
-        "timestamp": "2026-05-14T21:23:33+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: Marshmello - Happier",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "id": 13810,
+        "timestamp": "2026-05-14T22:26:27+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely taking a break from her work session as the family gathers in the common area.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"present\", \"confidence\": 0.7}]"
       },
       {
-        "id": 13775,
-        "timestamp": "2026-05-14T21:18:33+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: Jason Mraz - Have It All",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "id": 13809,
+        "timestamp": "2026-05-14T22:24:28+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and the family is gathered in the kitchen area; Roxanne appears to be taking another break from her work session as she is seen with Penelope and Steve.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
       },
       {
-        "id": 13772,
-        "timestamp": "2026-05-14T21:13:33+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: none",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "id": 13808,
+        "timestamp": "2026-05-14T22:21:03+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely continuing her pattern of taking short breaks from her work session, accompanied by Miller.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"present\", \"confidence\": 0.7}]"
       },
       {
-        "id": 13773,
-        "timestamp": "2026-05-14T21:13:33+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: Benson Boone - NIGHTS LIKE THESE",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "id": 13807,
+        "timestamp": "2026-05-14T22:18:50+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, continuing her pattern of taking short breaks from her work session.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13774,
-        "timestamp": "2026-05-14T21:13:33+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "LEAK DETECTED. Flow: 0.0 gal/min.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v1",
-        "entities": "[]"
+        "id": 13806,
+        "timestamp": "2026-05-14T22:17:22+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, continuing her pattern of taking short breaks from her work session. Steve is also in the kitchen area, likely getting something from the refrigerator.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
       },
       {
-        "id": 13771,
-        "timestamp": "2026-05-14T21:08:32+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: Mark Ambor - Belong Together",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13770,
-        "timestamp": "2026-05-14T21:03:32+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bathroom: fun. - Some Nights",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "id": 13805,
+        "timestamp": "2026-05-14T22:14:58+00:00",
+        "source": "camera:entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "It's Thursday afternoon and Roxanne is standing by the open front door, looking outside. The house is quiet and no other people or unusual activity are visible.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"front door\", \"entity_state\": \"open\", \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 1394,
+        "timestamp": "2026-05-14T22:34:21+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The system is generating multiple 'LEAK DETECTED' alerts (14:43, 15:08, 15:13) with zero measurable flow, suggesting a persistent false positive or a minor, non-critical plumbing anomaly. This pattern should be investigated by maintenance to prevent alert fatigue and ensure sensor reliability.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1393,
+        "timestamp": "2026-05-14T22:32:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 22 observations vs typical 1 for weekday 15:00",
+        "acted_on_at": null
+      },
       {
         "id": 1392,
         "timestamp": "2026-05-14T21:32:49+00:00",
@@ -1781,22 +1825,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 14 observations vs typical 1 for weekday 09:00",
         "acted_on_at": null
-      },
-      {
-        "id": 1384,
-        "timestamp": "2026-05-14T15:28:26+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 21 observations vs typical 1 for weekday 08:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1383,
-        "timestamp": "2026-05-14T14:28:03+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 18 observations vs typical 1 for weekday 07:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -1807,19 +1835,21 @@
         "Roxanne"
       ],
       "active_rooms": [
+        "backyard",
+        "front_door",
         "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-14T17:31:23+00:00",
+        "backyard": "2026-05-14T22:39:41+00:00",
         "dog_run": "2026-05-14T18:17:34+00:00",
-        "entryway": "2026-05-14T15:17:16+00:00",
-        "front_door": "2026-05-14T17:48:36+00:00",
-        "living_room": "2026-05-14T21:49:03+00:00",
+        "entryway": "2026-05-14T22:14:58+00:00",
+        "front_door": "2026-05-14T22:44:52+00:00",
+        "living_room": "2026-05-14T22:42:30+00:00",
         "side_yard": "2026-05-11T02:02:56+00:00"
       },
-      "last_updated": "2026-05-14T21:49:44.951372+00:00"
+      "last_updated": "2026-05-14T22:47:13.955756+00:00"
     }
   },
   "pge": {
