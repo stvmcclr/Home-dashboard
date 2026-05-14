@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14 19:04:24",
+  "generated_at": "2026-05-14 20:42:55",
   "as_of": "2026-05-14",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1407,
-        "timestamp": "2026-05-14T19:04:13+00:00",
+        "id": 1409,
+        "timestamp": "2026-05-14T20:42:43+00:00",
         "location": "Downstairs",
-        "temp_f": 69.5,
+        "temp_f": 70.6,
         "humidity_pct": 54,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1036,10 +1036,10 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1408,
-        "timestamp": "2026-05-14T19:04:13+00:00",
+        "id": 1410,
+        "timestamp": "2026-05-14T20:42:43+00:00",
         "location": "Upstairs",
-        "temp_f": 68.6,
+        "temp_f": 69.5,
         "humidity_pct": 55,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1274,6 +1274,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1409,
+        "timestamp": "2026-05-14T20:42:43+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.6,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1410,
+        "timestamp": "2026-05-14T20:42:43+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 55,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1441,30 +1469,63 @@
   "intelligence": {
     "observations": [
       {
-        "id": 13719,
-        "timestamp": "2026-05-14T19:03:22+00:00",
+        "id": 13760,
+        "timestamp": "2026-05-14T20:38:30+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - The Vow",
+        "summary": "Music in main_bathroom: Myles Smith - Nice To Meet You",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13718,
-        "timestamp": "2026-05-14T18:58:21+00:00",
+        "id": 13758,
+        "timestamp": "2026-05-14T20:33:30+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - Barcelona",
+        "summary": "Music in main_bathroom: Ed Sheeran - Sandman",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13717,
-        "timestamp": "2026-05-14T18:57:41+00:00",
+        "id": 13759,
+        "timestamp": "2026-05-14T20:33:30+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Water flowing at 1.92 gal/min. Daily total: 211.0 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 13756,
+        "timestamp": "2026-05-14T20:28:29+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in main_bathroom: Ed Sheeran - Hearts Don't Break Around Here",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 13757,
+        "timestamp": "2026-05-14T20:28:29+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Water flowing at 3.25 gal/min. Daily total: 174.4 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 13755,
+        "timestamp": "2026-05-14T20:27:59+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -1474,52 +1535,74 @@
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13716,
-        "timestamp": "2026-05-14T18:53:21+00:00",
+        "id": 13753,
+        "timestamp": "2026-05-14T20:23:28+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - I'm a Mess",
+        "summary": "Music in main_bathroom: Ed Sheeran - Stop The Rain",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13715,
-        "timestamp": "2026-05-14T18:48:21+00:00",
+        "id": 13754,
+        "timestamp": "2026-05-14T20:23:28+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Water flowing at 1.75 gal/min. Daily total: 133.0 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 13752,
+        "timestamp": "2026-05-14T20:18:28+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - Salt Water",
+        "summary": "Music in main_bathroom: Ed Sheeran - New Man",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bathroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13712,
-        "timestamp": "2026-05-14T18:43:20+00:00",
+        "id": 13751,
+        "timestamp": "2026-05-14T20:18:05+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's Thursday afternoon and Roxanne is in the kitchen area, likely continuing her work session as she has been for the past hour. The atmosphere remains calm with Ed Sheeran playing in the background.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"coffee table\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 13748,
+        "timestamp": "2026-05-14T20:13:28+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13713,
-        "timestamp": "2026-05-14T18:43:20+00:00",
+        "id": 13749,
+        "timestamp": "2026-05-14T20:13:28+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - How Would You Feel (Paean)",
+        "summary": "Music in kitchen: Ed Sheeran - Tides",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13714,
-        "timestamp": "2026-05-14T18:43:20+00:00",
+        "id": 13750,
+        "timestamp": "2026-05-14T20:13:28+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1529,74 +1612,52 @@
         "entities": "[]"
       },
       {
-        "id": 13711,
-        "timestamp": "2026-05-14T18:41:49+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is in the kitchen area, continuing her activities while Ed Sheeran plays in the background, consistent with her recent movement towards the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13710,
-        "timestamp": "2026-05-14T18:38:20+00:00",
+        "id": 13747,
+        "timestamp": "2026-05-14T20:08:27+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - Dusty",
+        "summary": "Music in kitchen: Ed Sheeran - Castle on the Hill - Recorded at Spotify Studios New York City",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13709,
-        "timestamp": "2026-05-14T18:33:19+00:00",
+        "id": 13746,
+        "timestamp": "2026-05-14T20:03:27+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - The Joker And The Queen (feat. Taylor Swift)",
+        "summary": "Music in kitchen: Ed Sheeran - Regrets",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13708,
-        "timestamp": "2026-05-14T18:30:34+00:00",
+        "id": 13745,
+        "timestamp": "2026-05-14T19:59:43+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is in the kitchen area while Ed Sheeran plays in the background, following her recent movement through the living room.",
+        "summary": "It's Thursday midday and Roxanne is continuing to work on her laptop at the kitchen island, consistent with her activity over the last hour. The house is calm with Ed Sheeran playing in the background.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"music playing\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13707,
-        "timestamp": "2026-05-14T18:28:26+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is moving through the living room towards the kitchen area while Ed Sheeran plays in the background, consistent with her recent activity.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"Ed Sheeran - Kiss Me\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13706,
-        "timestamp": "2026-05-14T18:28:19+00:00",
+        "id": 13744,
+        "timestamp": "2026-05-14T19:58:26+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - Dive",
+        "summary": "Music in kitchen: Ed Sheeran - Leave Your Life",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13705,
-        "timestamp": "2026-05-14T18:27:34+00:00",
+        "id": 13743,
+        "timestamp": "2026-05-14T19:57:53+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -1606,62 +1667,53 @@
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13704,
-        "timestamp": "2026-05-14T18:26:20+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is in the living room near the kitchen while Ed Sheeran plays in the background. She appears to be occupied near the dining area.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13703,
-        "timestamp": "2026-05-14T18:24:48+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is in the living room near the kitchen while Ed Sheeran plays in the background, consistent with her recent movement towards the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13702,
-        "timestamp": "2026-05-14T18:23:18+00:00",
+        "id": 13742,
+        "timestamp": "2026-05-14T19:53:26+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Ed Sheeran - Kiss Me",
+        "summary": "Music in kitchen: Ed Sheeran - Toughest - Bonus Track",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13701,
-        "timestamp": "2026-05-14T18:21:03+00:00",
+        "id": 13741,
+        "timestamp": "2026-05-14T19:48:29+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is walking through the living room towards the kitchen while Ed Sheeran plays in the background. This movement follows her recent activity of heading towards the kitchen recorded just a minute ago.",
+        "summary": "It's Thursday midday and Roxanne is continuing to work on her laptop at the kitchen island. The scene is calm, with Ed Sheeran playing in the background as she has been for the past hour.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"Ed Sheeran - Life Goes On\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13700,
-        "timestamp": "2026-05-14T18:19:14+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday morning and Roxanne is walking through the living room towards the kitchen while Ed Sheeran plays in the background. This movement aligns with recent activity indicating she was likely already in the kitchen area.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 1391,
+        "timestamp": "2026-05-14T20:32:14+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The system registered a 'LEAK DETECTED' alert at 13:13 (0.0 gal/min), but this was immediately followed by measurable water flow increases (1.75 gal/min at 13:23 and 3.25 gal/min at 13:28). This pattern suggests the initial alert was likely a false positive or a minor transient drip, as the subsequent flow rates indicate normal, active household water usage rather than a persistent leak.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1390,
+        "timestamp": "2026-05-14T20:05:05+00:00",
+        "insight_type": "trend",
+        "severity": "medium",
+        "summary": "Consistent evening energy spike: avg peak 3.83 kWh/hr typically around 19:00 PDT across 3 days. Likely AC/HVAC cooling cycle. At $0.35/kWh this peak window costs ~$8.05/evening.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1389,
+        "timestamp": "2026-05-14T19:31:37+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The combination of the unknown worker's presence earlier (10:48) and the subsequent 'LEAK DETECTED' alert (12:13) suggests that the maintenance worker may be responsible for the plumbing issue, even though the flow rate is zero. Steve should follow up with the service provider regarding the source of the leak.",
+        "acted_on_at": null
+      },
       {
         "id": 1388,
         "timestamp": "2026-05-14T18:30:27+00:00",
@@ -1717,30 +1769,6 @@
         "severity": "low",
         "summary": "High-activity pattern: living_room averaging 171 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 1381,
-        "timestamp": "2026-05-14T13:05:39+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Energy synthesis (May 14): 1. The overnight baseline (12 AM\u20136 AM) averages approximately **1.34 kWh/hr**. This load is likely driven by \"vampire loads\" (standby electronics, routers, chargers), the refrigerator, and essential security/network infrastructure.\n\n2. The evening spike (7 PM\u20139 PM) averages **3.70 kWh/hr**, represen",
-        "acted_on_at": null
-      },
-      {
-        "id": 1380,
-        "timestamp": "2026-05-14T12:27:38+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The system has logged a highly consistent, repeating white noise routine and presence checks for Miller, Penelope, and Roxanne right up to 5:25 AM. This suggests the sleep routine is running significantly longer than expected for a typical wake-up time, which may indicate the family is still deeply asleep or that the routine needs to be manually adjusted.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1379,
-        "timestamp": "2026-05-14T10:26:56+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent white noise schedule and repeated presence checks confirm that the children and Roxanne are successfully maintaining a deep sleep routine. This stability is particularly important given the flagged deviation regarding Roxanne's insufficient sleep last night.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -1760,10 +1788,10 @@
         "dog_run": "2026-05-14T18:17:34+00:00",
         "entryway": "2026-05-14T15:17:16+00:00",
         "front_door": "2026-05-14T17:48:36+00:00",
-        "living_room": "2026-05-14T18:41:49+00:00",
+        "living_room": "2026-05-14T20:18:05+00:00",
         "side_yard": "2026-05-11T02:02:56+00:00"
       },
-      "last_updated": "2026-05-14T19:03:28.955737+00:00"
+      "last_updated": "2026-05-14T20:40:14.816655+00:00"
     }
   },
   "pge": {
