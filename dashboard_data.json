@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 18:54:15",
+  "generated_at": "2026-05-15 20:09:59",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1431,
-        "timestamp": "2026-05-15T18:54:07+00:00",
+        "id": 1433,
+        "timestamp": "2026-05-15T20:09:48+00:00",
         "location": "Downstairs",
-        "temp_f": 69.5,
+        "temp_f": 70.5,
         "humidity_pct": 52,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1036,10 +1036,10 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1432,
-        "timestamp": "2026-05-15T18:54:07+00:00",
+        "id": 1434,
+        "timestamp": "2026-05-15T20:09:48+00:00",
         "location": "Upstairs",
-        "temp_f": 68.7,
+        "temp_f": 69.5,
         "humidity_pct": 54,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1274,6 +1274,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1433,
+        "timestamp": "2026-05-15T20:09:48+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1434,
+        "timestamp": "2026-05-15T20:09:48+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1441,305 +1469,305 @@
   "intelligence": {
     "observations": [
       {
-        "id": 14597,
-        "timestamp": "2026-05-15T18:53:15+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "unclassified audio at whole_home",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v1",
+        "id": 14735,
+        "timestamp": "2026-05-15T20:08:39+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is currently empty, with no people or animals visible in the frame. Music is playing in the dining room, but there is no movement in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
         "entities": "[]"
       },
       {
-        "id": 14596,
-        "timestamp": "2026-05-15T18:53:15+00:00",
-        "source": "audio:pi",
+        "id": 14734,
+        "timestamp": "2026-05-15T20:05:24+00:00",
+        "source": "ha:audio",
         "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "location": "home",
+        "summary": "Music in dining_room: SUPER-Hi - Following the Sun",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14595,
-        "timestamp": "2026-05-15T18:53:12+00:00",
+        "id": 14733,
+        "timestamp": "2026-05-15T20:04:33+00:00",
         "source": "living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "Roxanne is walking through the living room and kitchen area. An alarm/alert sound is sounding and a dog is barking elsewhere in the house.",
+        "summary": "The living room is empty, with no people or pets visible in the frame. Music is playing in the adjacent dining room.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"walking\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14594,
-        "timestamp": "2026-05-15T18:53:05+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
         "entities": "[]"
       },
       {
-        "id": 14593,
-        "timestamp": "2026-05-15T18:53:05+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14732,
+        "timestamp": "2026-05-15T20:04:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14592,
-        "timestamp": "2026-05-15T18:52:55+00:00",
-        "source": "audio:pi",
+        "id": 14731,
+        "timestamp": "2026-05-15T20:00:23+00:00",
+        "source": "ha:audio",
         "source_type": "audio",
-        "location": "whole_home",
-        "summary": "doorbell at whole_home",
-        "confidence": 0.65,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "location": "home",
+        "summary": "Music in dining_room: Daisy the Great - Record Player",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14591,
-        "timestamp": "2026-05-15T18:52:55+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14590,
-        "timestamp": "2026-05-15T18:52:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14589,
-        "timestamp": "2026-05-15T18:52:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14588,
-        "timestamp": "2026-05-15T18:52:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14587,
-        "timestamp": "2026-05-15T18:52:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "alarm/alert sound",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14586,
-        "timestamp": "2026-05-15T18:52:27+00:00",
+        "id": 14730,
+        "timestamp": "2026-05-15T20:00:21+00:00",
         "source": "camera2",
         "source_type": "vision",
         "location": "side_yard",
-        "summary": "The side yard is empty of people and animals, with several vehicles parked in the driveway. Despite the quiet visual, audio indicates that dogs are barking loudly throughout the home.",
+        "summary": "The side yard and street area are currently empty of people and animals. Several vehicles, including a dark SUV and a white pickup truck, are parked along the curb.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.8}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white pickup truck\", \"entity_state\": null, \"confidence\": 0.9}]"
       },
       {
-        "id": 14585,
-        "timestamp": "2026-05-15T18:52:25+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "alarm/alert sound at whole_home",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v1",
+        "id": 14729,
+        "timestamp": "2026-05-15T19:57:59+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet. No people or dogs are visible in the side yard area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
         "entities": "[]"
       },
       {
-        "id": 14584,
-        "timestamp": "2026-05-15T18:52:25+00:00",
-        "source": "audio:pi",
+        "id": 14728,
+        "timestamp": "2026-05-15T19:55:59+00:00",
+        "source": "camera2",
+        "source_type": "vision",
+        "location": "side_yard",
+        "summary": "The side yard and street area are currently empty of people and animals. Several vehicles, including a dark SUV and a white pickup truck, are parked along the curb and in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white pickup truck\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 14727,
+        "timestamp": "2026-05-15T19:55:22+00:00",
+        "source": "ha:audio",
         "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
+        "location": "home",
+        "summary": "Music in dining_room: Ed Sheeran - Sapphire",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14726,
+        "timestamp": "2026-05-15T19:50:22+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in dining_room: Post Malone - I Had Some Help (Feat. Morgan Wallen)",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14725,
+        "timestamp": "2026-05-15T19:47:03+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14722,
+        "timestamp": "2026-05-15T19:45:22+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: none",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14723,
+        "timestamp": "2026-05-15T19:45:22+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in dining_room: Justin Bieber - DAISIES",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14724,
+        "timestamp": "2026-05-15T19:45:22+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "LEAK DETECTED. Flow: 0.0 gal/min.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
         "entities": "[]"
       },
       {
-        "id": 14583,
-        "timestamp": "2026-05-15T18:52:15+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14721,
+        "timestamp": "2026-05-15T19:45:03+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home. Cameras recently show: Roxanne.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14582,
-        "timestamp": "2026-05-15T18:52:14+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14720,
+        "timestamp": "2026-05-15T19:43:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14581,
-        "timestamp": "2026-05-15T18:52:04+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14719,
+        "timestamp": "2026-05-15T19:42:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14580,
-        "timestamp": "2026-05-15T18:52:04+00:00",
-        "source": "audio:pi",
+        "id": 14718,
+        "timestamp": "2026-05-15T19:40:21+00:00",
+        "source": "ha:audio",
         "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "location": "home",
+        "summary": "Music in dining_room: Myles Smith - Stargazing",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14579,
-        "timestamp": "2026-05-15T18:51:44+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking at whole_home",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14717,
+        "timestamp": "2026-05-15T19:40:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "9 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14578,
-        "timestamp": "2026-05-15T18:51:44+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v1",
-        "entities": "[]"
+        "id": 14716,
+        "timestamp": "2026-05-15T19:39:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
       {
-        "id": 1443,
-        "timestamp": "2026-05-15T18:53:12+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] An alarm/alert sound is sounding and a dog is barking.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1442,
-        "timestamp": "2026-05-15T18:52:27+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[camera2] Dogs are barking loudly throughout the home, which is a departure from the recent quiet state.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1441,
-        "timestamp": "2026-05-15T18:50:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] Dog barking heard but no dog is visible in the area.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1440,
-        "timestamp": "2026-05-15T18:49:27+00:00",
-        "insight_type": "correlation",
+        "id": 1459,
+        "timestamp": "2026-05-15T20:05:05+00:00",
+        "insight_type": "trend",
         "severity": "medium",
-        "summary": "The dogs have been exhibiting persistent and escalating barking since 11:24 AM, even though the house appears empty and the family members are not visible. This strong, repeated audio signal suggests an external stimulus\u2014such as a delivery, a neighbor, or a visitor\u2014is causing the dogs distress or excitement, and it is worth checking the perimeter for the source.",
+        "summary": "Consistent evening energy spike: avg peak 3.76 kWh/hr typically around 19:00 PDT across 4 days. Likely AC/HVAC cooling cycle. At $0.35/kWh this peak window costs ~$7.89/evening.",
         "acted_on_at": null
       },
       {
-        "id": 1437,
-        "timestamp": "2026-05-15T18:48:58+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 4 observations vs typical 1 for weekday 11:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1438,
-        "timestamp": "2026-05-15T18:48:58+00:00",
-        "insight_type": "deviation",
+        "id": 1460,
+        "timestamp": "2026-05-15T20:05:05+00:00",
+        "insight_type": "trend",
         "severity": "low",
-        "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 212 for weekday 11:00",
+        "summary": "Energy consumption trending up 21%: recent avg 49.4 kWh/day vs earlier 40.8 kWh/day. This covers 4 days of data.",
         "acted_on_at": null
       },
       {
-        "id": 1439,
-        "timestamp": "2026-05-15T18:48:58+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 11:24AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 1436,
-        "timestamp": "2026-05-15T18:48:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Dogs are barking, which may indicate something is happening inside or near the property.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1435,
-        "timestamp": "2026-05-15T18:33:20+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Dog barking detected via audio, but no dog is visible in the living room.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1434,
-        "timestamp": "2026-05-15T17:48:58+00:00",
+        "id": 1458,
+        "timestamp": "2026-05-15T19:49:56+00:00",
         "insight_type": "correlation",
         "severity": "high",
-        "summary": "A significant drop in mobile device presence (from 14 to 11) occurred at 10:46 AM, immediately following a leak detection alert at 10:45 AM. This suggests that the household members reacted to the leak by leaving the monitored area or the house, which is a critical safety event that requires immediate attention.",
+        "summary": "A water leak was detected at 12:45, which coincides with a significant drop in household presence (from 8 to 7 devices, and only Roxanne visible on camera). This suggests the leak may be related to recent activity, movement, or the family's transition/departure, requiring immediate investigation to determine the source.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1450,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 5 observations vs typical 1 for weekday 12:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 1451,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 89 for weekday 12:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 1452,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (4x since 11:24AM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1453,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at front door (3x since 11:48AM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1454,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at backyard (2x since 11:50AM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1455,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (4x since 12:26PM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1456,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (3x since 12:27PM).",
         "acted_on_at": null
       }
     ],
@@ -1747,24 +1775,22 @@
       "id": "current",
       "who_is_home": [],
       "active_rooms": [
-        "backyard",
         "dog_run",
         "entryway",
-        "front_door",
         "living_room",
         "side_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-15T18:50:30+00:00",
-        "dog_run": "2026-05-15T18:34:43+00:00",
-        "entryway": "2026-05-15T18:36:06+00:00",
-        "front_door": "2026-05-15T18:48:41+00:00",
-        "living_room": "2026-05-15T18:53:12+00:00",
-        "side_yard": "2026-05-15T18:52:27+00:00"
+        "backyard": "2026-05-15T19:31:36+00:00",
+        "dog_run": "2026-05-15T19:57:59+00:00",
+        "entryway": "2026-05-15T20:08:39+00:00",
+        "front_door": "2026-05-15T19:30:02+00:00",
+        "living_room": "2026-05-15T20:04:33+00:00",
+        "side_yard": "2026-05-15T20:00:21+00:00"
       },
-      "last_updated": "2026-05-15T18:53:21.224179+00:00"
+      "last_updated": "2026-05-15T20:08:53.920931+00:00"
     }
   },
   "pge": {
