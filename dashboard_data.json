@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 17:14:05",
+  "generated_at": "2026-05-15 18:54:15",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,22 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1430,
-        "timestamp": "2026-05-15T17:13:55+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.3,
-        "humidity_pct": 54,
-        "mode": "HEATCOOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 65.3,
-        "cool_setpoint_f": 77.9,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 1429,
-        "timestamp": "2026-05-15T17:13:55+00:00",
+        "id": 1431,
+        "timestamp": "2026-05-15T18:54:07+00:00",
         "location": "Downstairs",
         "temp_f": 69.5,
         "humidity_pct": 52,
@@ -1045,6 +1031,20 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 62.2,
         "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1432,
+        "timestamp": "2026-05-15T18:54:07+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.7,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1246,6 +1246,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1431,
+        "timestamp": "2026-05-15T18:54:07+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1432,
+        "timestamp": "2026-05-15T18:54:07+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.7,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1413,305 +1441,305 @@
   "intelligence": {
     "observations": [
       {
-        "id": 14298,
-        "timestamp": "2026-05-15T17:11:18+00:00",
-        "source": "camera:living_room",
+        "id": 14597,
+        "timestamp": "2026-05-15T18:53:15+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14596,
+        "timestamp": "2026-05-15T18:53:15+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14595,
+        "timestamp": "2026-05-15T18:53:12+00:00",
+        "source": "living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen, likely continuing her work on her laptop as she has been for the last several minutes, while music plays in the background. The living room remains calm and undisturbed.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14297,
-        "timestamp": "2026-05-15T17:10:06+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: The Chainsmokers - Something Just Like This",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14296,
-        "timestamp": "2026-05-15T17:09:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "summary": "Roxanne is walking through the living room and kitchen area. An alarm/alert sound is sounding and a dog is barking elsewhere in the house.",
         "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"walking\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14295,
-        "timestamp": "2026-05-15T17:06:15+00:00",
-        "source": "camera:living_room",
+        "id": 14594,
+        "timestamp": "2026-05-15T18:53:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14593,
+        "timestamp": "2026-05-15T18:53:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14592,
+        "timestamp": "2026-05-15T18:52:55+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "doorbell at whole_home",
+        "confidence": 0.65,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14591,
+        "timestamp": "2026-05-15T18:52:55+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14590,
+        "timestamp": "2026-05-15T18:52:45+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14589,
+        "timestamp": "2026-05-15T18:52:45+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14588,
+        "timestamp": "2026-05-15T18:52:35+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14587,
+        "timestamp": "2026-05-15T18:52:35+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "alarm/alert sound",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14586,
+        "timestamp": "2026-05-15T18:52:27+00:00",
+        "source": "camera2",
         "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen working on her laptop while music plays in the background, continuing her routine from earlier this morning.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14294,
-        "timestamp": "2026-05-15T17:05:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Penelope, Roxanne, Steve.",
+        "location": "side_yard",
+        "summary": "The side yard is empty of people and animals, with several vehicles parked in the driveway. Despite the quiet visual, audio indicates that dogs are barking loudly throughout the home.",
         "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14293,
-        "timestamp": "2026-05-15T17:05:06+00:00",
-        "source": "ha:audio",
+        "id": 14585,
+        "timestamp": "2026-05-15T18:52:25+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Anson Seabra - Peter Pan Was Right",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "location": "whole_home",
+        "summary": "alarm/alert sound at whole_home",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14292,
-        "timestamp": "2026-05-15T17:03:19+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen working on her laptop while music plays in the background. This follows her recent movement through the living room and into the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14291,
-        "timestamp": "2026-05-15T17:03:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Penelope, Roxanne, Steve, unknown child.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14290,
-        "timestamp": "2026-05-15T17:00:10+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen, likely attending to tasks or checking a device while music plays. The living room remains peaceful following her movement through the area a few minutes ago.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"music\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14289,
-        "timestamp": "2026-05-15T17:00:05+00:00",
-        "source": "ha:audio",
+        "id": 14584,
+        "timestamp": "2026-05-15T18:52:25+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Gracie Abrams - That\u2019s So True",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14288,
-        "timestamp": "2026-05-15T16:58:33+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway with Posey resting peacefully on the floor. Roxanne is visible through the glass doors in the adjacent room, maintaining the calm atmosphere observed over the last few minutes.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14287,
-        "timestamp": "2026-05-15T16:57:57+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Roxanne is moving through the living room while Posey continues her peaceful routine of resting on the couch. The music is playing in the kitchen as the household begins its day.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14286,
-        "timestamp": "2026-05-15T16:55:51+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway with Posey resting on the floor. Roxanne is visible through the glass doors in the adjacent room, consistent with recent activity.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 14285,
-        "timestamp": "2026-05-15T16:55:23+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, sleeping soundly on the living room couch while music plays in the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14284,
-        "timestamp": "2026-05-15T16:55:05+00:00",
-        "source": "ha:audio",
+        "id": 14583,
+        "timestamp": "2026-05-15T18:52:15+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Anne-Marie - 2002",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14283,
-        "timestamp": "2026-05-15T16:53:50+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway with Posey resting peacefully on the floor. Roxanne is visible through the glass doors in the adjacent room while music plays from the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14282,
-        "timestamp": "2026-05-15T16:53:20+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, sleeping soundly on the living room couch while music plays in the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14281,
-        "timestamp": "2026-05-15T16:51:41+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway, with Posey resting peacefully on the floor while music plays from the kitchen. The house remains calm with no new activity or people visible in the foyer.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14280,
-        "timestamp": "2026-05-15T16:51:12+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, resting on the living room couch while music plays in the kitchen.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14279,
-        "timestamp": "2026-05-15T16:50:05+00:00",
-        "source": "ha:audio",
+        "id": 14582,
+        "timestamp": "2026-05-15T18:52:14+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Justin Bieber - Ghost",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14581,
+        "timestamp": "2026-05-15T18:52:04+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14580,
+        "timestamp": "2026-05-15T18:52:04+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14579,
+        "timestamp": "2026-05-15T18:51:44+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking at whole_home",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14578,
+        "timestamp": "2026-05-15T18:51:44+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       }
     ],
     "insights": [
       {
-        "id": 1431,
-        "timestamp": "2026-05-15T16:47:11+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 16 observations vs typical 1 for weekday 09:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1430,
-        "timestamp": "2026-05-15T15:47:11+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained high presence count (12-13 devices) combined with the lights remaining on in the playroom and kitchen at 08:44 suggests the family is still actively occupying the house and the morning routine has not concluded, despite the camera observations showing movement winding down and Roxanne moving upstairs. This confirms sustained occupancy for security and energy management purposes.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1428,
-        "timestamp": "2026-05-15T15:45:48+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 10 observations vs typical 1 for weekday 08:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1429,
-        "timestamp": "2026-05-15T15:45:48+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at entryway this hour: 7 observations vs typical 1 for weekday 08:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1427,
-        "timestamp": "2026-05-15T15:00:32+00:00",
+        "id": 1443,
+        "timestamp": "2026-05-15T18:53:12+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "The 'side_yard' camera is currently experiencing severe technical errors, making it impossible to verify activity in the driveway or street.",
+        "summary": "[living_room] An alarm/alert sound is sounding and a dog is barking.",
         "acted_on_at": null
       },
       {
-        "id": 1426,
-        "timestamp": "2026-05-15T14:28:10+00:00",
+        "id": 1442,
+        "timestamp": "2026-05-15T18:52:27+00:00",
         "insight_type": "camera_event",
-        "severity": "medium",
-        "summary": "The 'side_yard' camera is experiencing a significant stream failure with heavy visual artifacts, which prevents reliable monitoring of the driveway and street.",
+        "severity": "high",
+        "summary": "[camera2] Dogs are barking loudly throughout the home, which is a departure from the recent quiet state.",
         "acted_on_at": null
       },
       {
-        "id": 1425,
-        "timestamp": "2026-05-15T13:44:52+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a highly regular, repeating 30-minute cycle (White Noise, Leak Detected, Lights Off) that persists throughout the morning (05:44, 06:14), even though the family is awake and Miller is observed outside. This suggests a scheduled, non-human routine (e.g., a faulty timer or system test) that needs investigation, as it is occurring independently of the household's activity.",
+        "id": 1441,
+        "timestamp": "2026-05-15T18:50:30+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] Dog barking heard but no dog is visible in the area.",
         "acted_on_at": null
       },
       {
-        "id": 1424,
-        "timestamp": "2026-05-15T13:05:49+00:00",
+        "id": 1440,
+        "timestamp": "2026-05-15T18:49:27+00:00",
         "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The dogs have been exhibiting persistent and escalating barking since 11:24 AM, even though the house appears empty and the family members are not visible. This strong, repeated audio signal suggests an external stimulus\u2014such as a delivery, a neighbor, or a visitor\u2014is causing the dogs distress or excitement, and it is worth checking the perimeter for the source.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1437,
+        "timestamp": "2026-05-15T18:48:58+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 4 observations vs typical 1 for weekday 11:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 1438,
+        "timestamp": "2026-05-15T18:48:58+00:00",
+        "insight_type": "deviation",
         "severity": "low",
-        "summary": "Energy synthesis (May 15): 1. **Overnight Baseline:** The baseline load fluctuates between 1.01 kWh and 1.72 kWh, averaging approximately 1.5 kWh/hr during the 12 AM\u20135 AM window. This is likely driven by \"always-on\" loads: the refrigerator, Wi-Fi routers, security systems, and standby power from electronics.\n\n2. **Evening Spi",
+        "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 212 for weekday 11:00",
         "acted_on_at": null
       },
       {
-        "id": 1423,
-        "timestamp": "2026-05-15T12:44:25+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a highly regular, repeating 30-minute cycle (04:14, 04:44, 05:14) involving white noise activation and a detected leak (0.0 gal/min). This suggests an automated, scheduled routine that may be running regardless of household activity and should be checked to ensure the leak detection is not a false positive or a necessary system check.",
+        "id": 1439,
+        "timestamp": "2026-05-15T18:48:58+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (2x since 11:24AM).",
         "acted_on_at": null
       },
       {
-        "id": 1422,
-        "timestamp": "2026-05-15T12:30:03+00:00",
+        "id": 1436,
+        "timestamp": "2026-05-15T18:48:41+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "Miller is active on the street at 5:28 AM.",
+        "summary": "[doorbell] Dogs are barking, which may indicate something is happening inside or near the property.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1435,
+        "timestamp": "2026-05-15T18:33:20+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Dog barking detected via audio, but no dog is visible in the living room.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1434,
+        "timestamp": "2026-05-15T17:48:58+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "A significant drop in mobile device presence (from 14 to 11) occurred at 10:46 AM, immediately following a leak detection alert at 10:45 AM. This suggests that the household members reacted to the leak by leaving the monitored area or the house, which is a critical safety event that requires immediate attention.",
         "acted_on_at": null
       }
     ],
@@ -1719,23 +1747,24 @@
       "id": "current",
       "who_is_home": [],
       "active_rooms": [
+        "backyard",
+        "dog_run",
         "entryway",
+        "front_door",
         "living_room",
-        "playroom"
+        "side_yard"
       ],
-      "lights_on": [
-        "playroom"
-      ],
+      "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-15T14:57:28+00:00",
-        "dog_run": "2026-05-14T18:17:34+00:00",
-        "entryway": "2026-05-15T16:58:33+00:00",
-        "front_door": "2026-05-14T22:44:52+00:00",
-        "living_room": "2026-05-15T17:11:18+00:00",
-        "side_yard": "2026-05-15T15:00:31+00:00"
+        "backyard": "2026-05-15T18:50:30+00:00",
+        "dog_run": "2026-05-15T18:34:43+00:00",
+        "entryway": "2026-05-15T18:36:06+00:00",
+        "front_door": "2026-05-15T18:48:41+00:00",
+        "living_room": "2026-05-15T18:53:12+00:00",
+        "side_yard": "2026-05-15T18:52:27+00:00"
       },
-      "last_updated": "2026-05-15T17:13:28.839588+00:00"
+      "last_updated": "2026-05-15T18:53:21.224179+00:00"
     }
   },
   "pge": {
