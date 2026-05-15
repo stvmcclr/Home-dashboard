@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 09:23:03",
+  "generated_at": "2026-05-15 11:32:06",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1421,
-        "timestamp": "2026-05-15T09:22:56+00:00",
-        "location": "Downstairs",
-        "temp_f": 71.4,
-        "humidity_pct": 48,
-        "mode": "HEAT",
+        "id": 1424,
+        "timestamp": "2026-05-15T11:31:56+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.5,
+        "humidity_pct": 49,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 55.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1422,
-        "timestamp": "2026-05-15T09:22:56+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.6,
-        "humidity_pct": 49,
-        "mode": "HEATCOOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": 57.9,
-        "cool_setpoint_f": 67.7,
+        "id": 1423,
+        "timestamp": "2026-05-15T11:31:56+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.4,
+        "humidity_pct": 48,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1129,6 +1129,34 @@
         "humidity_pct": 49,
         "mode": "HEATCOOL",
         "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1423,
+        "timestamp": "2026-05-15T11:31:56+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.4,
+        "humidity_pct": 48,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1424,
+        "timestamp": "2026-05-15T11:31:56+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.5,
+        "humidity_pct": 49,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.7,
         "eco_mode": "OFF",
@@ -1301,19 +1329,41 @@
   "intelligence": {
     "observations": [
       {
-        "id": 14096,
-        "timestamp": "2026-05-15T09:14:31+00:00",
+        "id": 14117,
+        "timestamp": "2026-05-15T11:31:41+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14116,
+        "timestamp": "2026-05-15T11:21:38+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14113,
+        "timestamp": "2026-05-15T11:14:38+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14097,
-        "timestamp": "2026-05-15T09:14:31+00:00",
+        "id": 14114,
+        "timestamp": "2026-05-15T11:14:38+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
@@ -1323,8 +1373,8 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14098,
-        "timestamp": "2026-05-15T09:14:31+00:00",
+        "id": 14115,
+        "timestamp": "2026-05-15T11:14:38+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1334,8 +1384,19 @@
         "entities": "[]"
       },
       {
-        "id": 14095,
-        "timestamp": "2026-05-15T09:03:06+00:00",
+        "id": 14112,
+        "timestamp": "2026-05-15T11:08:53+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 2.31h. HR 66bpm. HRV 181ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-a24641bd",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14111,
+        "timestamp": "2026-05-15T11:01:33+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -1345,30 +1406,19 @@
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14094,
-        "timestamp": "2026-05-15T09:01:05+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14091,
-        "timestamp": "2026-05-15T08:44:29+00:00",
+        "id": 14108,
+        "timestamp": "2026-05-15T10:44:36+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14092,
-        "timestamp": "2026-05-15T08:44:29+00:00",
+        "id": 14109,
+        "timestamp": "2026-05-15T10:44:36+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
@@ -1378,8 +1428,8 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14093,
-        "timestamp": "2026-05-15T08:44:29+00:00",
+        "id": 14110,
+        "timestamp": "2026-05-15T10:44:36+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1389,30 +1439,19 @@
         "entities": "[]"
       },
       {
-        "id": 14090,
-        "timestamp": "2026-05-15T08:30:59+00:00",
+        "id": 14107,
+        "timestamp": "2026-05-15T10:31:26+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
-        "summary": "13 mobile devices home.",
+        "summary": "14 mobile devices home.",
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14087,
-        "timestamp": "2026-05-15T08:14:27+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: none",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14088,
-        "timestamp": "2026-05-15T08:14:27+00:00",
+        "id": 14105,
+        "timestamp": "2026-05-15T10:14:35+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
@@ -1422,8 +1461,8 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14089,
-        "timestamp": "2026-05-15T08:14:27+00:00",
+        "id": 14106,
+        "timestamp": "2026-05-15T10:14:35+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1433,41 +1472,30 @@
         "entities": "[]"
       },
       {
-        "id": 14086,
-        "timestamp": "2026-05-15T08:00:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14085,
-        "timestamp": "2026-05-15T07:47:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14082,
-        "timestamp": "2026-05-15T07:44:25+00:00",
+        "id": 14104,
+        "timestamp": "2026-05-15T10:14:35+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14083,
-        "timestamp": "2026-05-15T07:44:25+00:00",
+        "id": 14103,
+        "timestamp": "2026-05-15T10:01:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14101,
+        "timestamp": "2026-05-15T09:44:33+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
@@ -1477,8 +1505,8 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14084,
-        "timestamp": "2026-05-15T07:44:25+00:00",
+        "id": 14102,
+        "timestamp": "2026-05-15T09:44:33+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1488,40 +1516,64 @@
         "entities": "[]"
       },
       {
-        "id": 14081,
-        "timestamp": "2026-05-15T07:33:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14080,
-        "timestamp": "2026-05-15T07:30:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Roxanne, Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14077,
-        "timestamp": "2026-05-15T07:14:23+00:00",
+        "id": 14100,
+        "timestamp": "2026-05-15T09:44:33+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14099,
+        "timestamp": "2026-05-15T09:31:13+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14096,
+        "timestamp": "2026-05-15T09:14:31+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: none",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 1420,
+        "timestamp": "2026-05-15T11:08:53+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Steve slept only 2.31h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1419,
+        "timestamp": "2026-05-15T10:42:53+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a highly regular, repeating pattern every 30 minutes (02:14, 02:44, 03:14) involving the activation of white noise and minor leak detections. This suggests a scheduled 'Sleep Optimization' or 'Good Night' routine is running repeatedly, which may be unnecessary or could be adjusted to save energy.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1418,
+        "timestamp": "2026-05-15T09:42:27+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "At 02:03 AM, the presence signal increased from 13 to 14 mobile devices, indicating a single device became active or connected during the established deep sleep cycle. This suggests a brief, late-night activity or device wake-up that deviates from the expected quiet state.",
+        "acted_on_at": null
+      },
       {
         "id": 1417,
         "timestamp": "2026-05-15T08:42:00+00:00",
@@ -1577,30 +1629,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 25 observations vs typical 1 for weekday 22:00",
         "acted_on_at": null
-      },
-      {
-        "id": 1408,
-        "timestamp": "2026-05-15T05:39:36+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:33PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1409,
-        "timestamp": "2026-05-15T05:39:36+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:34PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1410,
-        "timestamp": "2026-05-15T05:39:36+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:36PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -1617,7 +1645,7 @@
         "living_room": "2026-05-15T05:47:22+00:00",
         "side_yard": "2026-05-15T04:15:32+00:00"
       },
-      "last_updated": "2026-05-15T09:22:01.508479+00:00"
+      "last_updated": "2026-05-15T11:31:55.907876+00:00"
     }
   },
   "pge": {
