@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 02:11:12",
+  "generated_at": "2026-05-15 06:03:16",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1418,
-        "timestamp": "2026-05-15T02:11:01+00:00",
-        "location": "Upstairs",
-        "temp_f": 73.6,
-        "humidity_pct": 49,
-        "mode": "HEATCOOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": 57.9,
-        "cool_setpoint_f": 67.7,
+        "id": 1419,
+        "timestamp": "2026-05-15T06:03:07+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.3,
+        "humidity_pct": 46,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1417,
-        "timestamp": "2026-05-15T02:11:01+00:00",
-        "location": "Downstairs",
-        "temp_f": 72.6,
-        "humidity_pct": 46,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
-        "cool_setpoint_f": null,
+        "id": 1420,
+        "timestamp": "2026-05-15T06:03:07+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.3,
+        "humidity_pct": 47,
+        "mode": "HEATCOOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1071,6 +1071,34 @@
         "location": "Upstairs",
         "temp_f": 73.6,
         "humidity_pct": 49,
+        "mode": "HEATCOOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1419,
+        "timestamp": "2026-05-15T06:03:07+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.3,
+        "humidity_pct": 46,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1420,
+        "timestamp": "2026-05-15T06:03:07+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.3,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "COOLING",
         "heat_setpoint_f": 57.9,
@@ -1245,151 +1273,30 @@
   "intelligence": {
     "observations": [
       {
-        "id": 13921,
-        "timestamp": "2026-05-15T02:09:39+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's Thursday evening and Steve is visible in the family room as a dog moves through the entryway, consistent with the family being home for the night.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.7}]"
-      },
-      {
-        "id": 13920,
-        "timestamp": "2026-05-15T02:09:02+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch as she has been for the past hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13919,
-        "timestamp": "2026-05-15T02:08:59+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: family_room, upstairs_hallway, playroom, kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13918,
-        "timestamp": "2026-05-15T02:07:38+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch, continuing her quiet routine of unwinding for the night.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13917,
-        "timestamp": "2026-05-15T02:06:10+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch, continuing the quiet routine she has been maintaining for the past hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13916,
-        "timestamp": "2026-05-15T02:03:19+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch with Posey, continuing her quiet routine as observed over the last hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13915,
-        "timestamp": "2026-05-15T02:00:02+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch with Posey, continuing her quiet routine as observed over the last hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 13914,
-        "timestamp": "2026-05-15T01:59:09+00:00",
+        "id": 14064,
+        "timestamp": "2026-05-15T06:00:26+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
-        "summary": "Home: Miller, Penelope, Roxanne.",
-        "confidence": 0.95,
-        "model_version": "unifi-presence-v1",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.95}]"
+        "summary": "12 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       },
       {
-        "id": 13913,
-        "timestamp": "2026-05-15T01:57:52+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch with Posey, continuing her quiet routine as observed over the last hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13912,
-        "timestamp": "2026-05-15T01:56:22+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch with Posey, as she has been for the past hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13911,
-        "timestamp": "2026-05-15T01:54:14+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch with Posey, consistent with her activity over the last hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13910,
-        "timestamp": "2026-05-15T01:50:09+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch with Posey as she has been for the past hour.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 13908,
-        "timestamp": "2026-05-15T01:43:57+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
+        "id": 14063,
+        "timestamp": "2026-05-15T05:54:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
         "location": "home",
-        "summary": "Audio paused in 3 rooms",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[]"
+        "summary": "12 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       },
       {
-        "id": 13909,
-        "timestamp": "2026-05-15T01:43:57+00:00",
+        "id": 14062,
+        "timestamp": "2026-05-15T05:54:18+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
@@ -1399,185 +1306,292 @@
         "entities": "[]"
       },
       {
-        "id": 13907,
-        "timestamp": "2026-05-15T01:43:57+00:00",
+        "id": 14059,
+        "timestamp": "2026-05-15T05:49:17+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
-        "summary": "Lights on: upstairs_hallway",
+        "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 13906,
-        "timestamp": "2026-05-15T01:40:53+00:00",
+        "id": 14060,
+        "timestamp": "2026-05-15T05:49:17+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in main_bedroom: White Noise",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14061,
+        "timestamp": "2026-05-15T05:49:17+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Water flowing at 0.34 gal/min. Daily total: 561.2 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14058,
+        "timestamp": "2026-05-15T05:47:22+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday evening and Roxanne is in the kitchen, likely preparing for dinner or tidying up, while the living area remains quiet. The dog, likely Posey, is resting near the couch, continuing the calm evening routine observed recently.",
+        "summary": "It's late Thursday night and Steve is in the kitchen continuing his work on his laptop, having recently moved from the couch. He appears focused on his task under the kitchen lights, following his established routine for winding down.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.7}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
       },
       {
-        "id": 13905,
-        "timestamp": "2026-05-15T01:38:01+00:00",
+        "id": 14057,
+        "timestamp": "2026-05-15T05:45:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14056,
+        "timestamp": "2026-05-15T05:45:04+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is relaxing on the couch, continuing her quiet routine as observed over the last hour.",
+        "summary": "It's late Thursday night and Steve has moved from the couch to the kitchen to continue working on his laptop, following his recent movement from the living area.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13904,
-        "timestamp": "2026-05-15T01:35:35+00:00",
+        "id": 14055,
+        "timestamp": "2026-05-15T05:44:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14053,
+        "timestamp": "2026-05-15T05:44:17+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Audio paused in 3 rooms",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14054,
+        "timestamp": "2026-05-15T05:44:17+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "LEAK DETECTED. Flow: 0.0 gal/min.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 14052,
+        "timestamp": "2026-05-15T05:44:17+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: stairs, kitchen",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14051,
+        "timestamp": "2026-05-15T05:42:45+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch as she has been for the past hour.",
+        "summary": "It's late Thursday night and Steve is continuing his routine of winding down, having moved from the couch to the kitchen counter to work, while Harlee remains relaxed on the couch.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13903,
-        "timestamp": "2026-05-15T01:33:39+00:00",
+        "id": 14050,
+        "timestamp": "2026-05-15T05:40:20+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home. Cameras recently show: Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14049,
+        "timestamp": "2026-05-15T05:39:55+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch with Posey as she has been for the past hour.",
+        "summary": "It's late Thursday night and Steve is winding down on the couch with Harlee, continuing his usual routine of relaxing. The scene is calm and consistent with the recent activity of the household settling in for the night.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 13902,
-        "timestamp": "2026-05-15T01:31:42+00:00",
+        "id": 14048,
+        "timestamp": "2026-05-15T05:38:14+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Thursday evening and Penelope is continuing her quiet routine, relaxing on the couch with Posey as she has been for the past hour.",
+        "summary": "It's late Thursday night and Steve is winding down on the couch with Harlee, continuing his routine of relaxing. The scene is calm and consistent with the recent activity of him settling in for the night.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14047,
+        "timestamp": "2026-05-15T05:36:31+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's late Thursday night and Steve is winding down on the couch with Harlee, continuing his routine of relaxing with his device. This matches the recent activity of him settling in for the night.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14046,
+        "timestamp": "2026-05-15T05:34:57+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's late Thursday night and Steve is winding down on the couch with Harlee, focused on his laptop. This matches the recent pattern of the household relaxing in the living area.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14045,
+        "timestamp": "2026-05-15T05:34:16+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: family_room, stairs, kitchen",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
       {
-        "id": 1398,
-        "timestamp": "2026-05-15T01:36:54+00:00",
+        "id": 1412,
+        "timestamp": "2026-05-15T05:40:42+00:00",
         "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The system has successfully transitioned from a high-activity, work-focused period (Roxanne's work session, music playing) to a stable, low-activity family routine. The consistent camera observations of Penelope relaxing with the dogs, coupled with the audio pausing and the confirmed presence of all family members, indicate a predictable and peaceful evening wind-down period.",
+        "severity": "medium",
+        "summary": "Despite the family appearing settled and engaged in a routine winding-down period, there is a persistent pattern of sporadic 'LEAK DETECTED' alerts throughout the evening (21:34, 21:44, 22:14). This suggests a minor, intermittent plumbing issue that needs investigation before the family goes to sleep, as the current low flow rate may mask a worsening problem.",
         "acted_on_at": null
       },
       {
-        "id": 1397,
-        "timestamp": "2026-05-15T01:36:02+00:00",
+        "id": 1407,
+        "timestamp": "2026-05-15T05:39:36+00:00",
         "insight_type": "deviation",
         "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 16 observations vs typical 1 for weekday 18:00",
+        "summary": "Unusually high activity at living_room this hour: 25 observations vs typical 1 for weekday 22:00",
         "acted_on_at": null
       },
       {
-        "id": 1396,
-        "timestamp": "2026-05-15T00:36:02+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The system is repeatedly generating 'LEAK DETECTED' alerts (e.g., 17:13) with zero measurable flow (0.0 gal/min). This indicates a persistent sensor or connectivity glitch that is generating false positives and should be investigated by maintenance, as it is currently masking the system's ability to detect a genuine leak.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1395,
-        "timestamp": "2026-05-15T00:35:25+00:00",
+        "id": 1408,
+        "timestamp": "2026-05-15T05:39:36+00:00",
         "insight_type": "deviation",
         "severity": "medium",
-        "summary": "Unusually high activity at entryway this hour: 9 observations vs typical 1 for weekday 17:00",
+        "summary": "Harlee spotted in living room at 10:33PM \u2014 unusual hour.",
         "acted_on_at": null
       },
       {
-        "id": 1394,
-        "timestamp": "2026-05-14T22:34:21+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The system is generating multiple 'LEAK DETECTED' alerts (14:43, 15:08, 15:13) with zero measurable flow, suggesting a persistent false positive or a minor, non-critical plumbing anomaly. This pattern should be investigated by maintenance to prevent alert fatigue and ensure sensor reliability.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1393,
-        "timestamp": "2026-05-14T22:32:50+00:00",
+        "id": 1409,
+        "timestamp": "2026-05-15T05:39:36+00:00",
         "insight_type": "deviation",
         "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 22 observations vs typical 1 for weekday 15:00",
+        "summary": "Harlee spotted in living room at 10:34PM \u2014 unusual hour.",
         "acted_on_at": null
       },
       {
-        "id": 1392,
-        "timestamp": "2026-05-14T21:32:49+00:00",
+        "id": 1410,
+        "timestamp": "2026-05-15T05:39:36+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:36PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1411,
+        "timestamp": "2026-05-15T05:39:36+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:38PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1406,
+        "timestamp": "2026-05-15T04:39:36+00:00",
         "insight_type": "correlation",
         "severity": "medium",
-        "summary": "The system registered two 'LEAK DETECTED' alerts (13:53 and 14:13) with zero flow, occurring during the afternoon when the family is confirmed present and active. While the leak may be minor, the repeated alerts suggest a potential plumbing issue that needs investigation, especially since the alerts are occurring while the house is occupied.",
+        "summary": "The combination of multiple, sporadic leak alerts (including a measurable flow of 0.26 gal/min at 21:29) occurring during the period when the household is winding down suggests a potential plumbing issue that needs immediate investigation, regardless of the zero-flow status of the previous alerts.",
         "acted_on_at": null
       },
       {
-        "id": 1391,
-        "timestamp": "2026-05-14T20:32:14+00:00",
+        "id": 1405,
+        "timestamp": "2026-05-15T04:38:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at entryway this hour: 6 observations vs typical 1 for weekday 21:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 1404,
+        "timestamp": "2026-05-15T04:15:33+00:00",
+        "insight_type": "camera_event",
+        "severity": "medium",
+        "summary": "The side yard camera has stopped receiving frames, which may indicate a network or power issue with the camera.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1403,
+        "timestamp": "2026-05-15T03:38:50+00:00",
         "insight_type": "correlation",
         "severity": "medium",
-        "summary": "The system registered a 'LEAK DETECTED' alert at 13:13 (0.0 gal/min), but this was immediately followed by measurable water flow increases (1.75 gal/min at 13:23 and 3.25 gal/min at 13:28). This pattern suggests the initial alert was likely a false positive or a minor transient drip, as the subsequent flow rates indicate normal, active household water usage rather than a persistent leak.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1390,
-        "timestamp": "2026-05-14T20:05:05+00:00",
-        "insight_type": "trend",
-        "severity": "medium",
-        "summary": "Consistent evening energy spike: avg peak 3.83 kWh/hr typically around 19:00 PDT across 3 days. Likely AC/HVAC cooling cycle. At $0.35/kWh this peak window costs ~$8.05/evening.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1389,
-        "timestamp": "2026-05-14T19:31:37+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of the unknown worker's presence earlier (10:48) and the subsequent 'LEAK DETECTED' alert (12:13) suggests that the maintenance worker may be responsible for the plumbing issue, even though the flow rate is zero. Steve should follow up with the service provider regarding the source of the leak.",
+        "summary": "A zero-flow 'LEAK DETECTED' alert occurred at 19:59, which is highly suspicious and likely a sensor glitch, as no measurable flow was detected and subsequent water usage patterns returned to normal. The system should flag this specific alert for calibration or maintenance review, as it is causing unnecessary alerts during a period of normal, high-volume evening activity.",
         "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Miller",
-        "Penelope",
-        "Roxanne"
-      ],
+      "who_is_home": [],
       "active_rooms": [
-        "entryway",
-        "family_room",
-        "kitchen",
-        "living_room",
-        "playroom",
-        "upstairs_hallway"
+        "living_room"
       ],
-      "lights_on": [
-        "family_room",
-        "upstairs_hallway",
-        "playroom",
-        "kitchen"
-      ],
+      "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-14T22:39:41+00:00",
         "dog_run": "2026-05-14T18:17:34+00:00",
-        "entryway": "2026-05-15T02:09:39+00:00",
+        "entryway": "2026-05-15T04:18:12+00:00",
         "front_door": "2026-05-14T22:44:52+00:00",
-        "living_room": "2026-05-15T02:09:02+00:00",
-        "side_yard": "2026-05-11T02:02:56+00:00"
+        "living_room": "2026-05-15T05:47:22+00:00",
+        "side_yard": "2026-05-15T04:15:32+00:00"
       },
-      "last_updated": "2026-05-15T02:09:45.150507+00:00"
+      "last_updated": "2026-05-15T06:02:32.204931+00:00"
     }
   },
   "pge": {
