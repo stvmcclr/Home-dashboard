@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 20:09:59",
+  "generated_at": "2026-05-15 21:17:09",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1433,
-        "timestamp": "2026-05-15T20:09:48+00:00",
-        "location": "Downstairs",
-        "temp_f": 70.5,
-        "humidity_pct": 52,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 1434,
-        "timestamp": "2026-05-15T20:09:48+00:00",
+        "id": 1436,
+        "timestamp": "2026-05-15T21:17:02+00:00",
         "location": "Upstairs",
-        "temp_f": 69.5,
+        "temp_f": 70.6,
         "humidity_pct": 54,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 65.3,
         "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1435,
+        "timestamp": "2026-05-15T21:17:02+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.5,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1302,6 +1302,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1435,
+        "timestamp": "2026-05-15T21:17:02+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.5,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1436,
+        "timestamp": "2026-05-15T21:17:02+00:00",
+        "location": "Upstairs",
+        "temp_f": 70.6,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1469,227 +1497,259 @@
   "intelligence": {
     "observations": [
       {
-        "id": 14735,
-        "timestamp": "2026-05-15T20:08:39+00:00",
-        "source": "entryway",
+        "id": 15026,
+        "timestamp": "2026-05-15T21:14:55+00:00",
+        "source": "doorbell",
         "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is currently empty, with no people or animals visible in the frame. Music is playing in the dining room, but there is no movement in the foyer.",
+        "location": "front_door",
+        "summary": "Roxanne is walking across the front porch, carrying what appears to be a package or a bag. The scene is bright and sunny.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 15025,
+        "timestamp": "2026-05-15T21:13:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "9 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 15024,
+        "timestamp": "2026-05-15T21:13:10+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
         "entities": "[]"
       },
       {
-        "id": 14734,
-        "timestamp": "2026-05-15T20:05:24+00:00",
-        "source": "ha:audio",
+        "id": 15023,
+        "timestamp": "2026-05-15T21:13:00+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in dining_room: SUPER-Hi - Following the Sun",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14733,
-        "timestamp": "2026-05-15T20:04:33+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is empty, with no people or pets visible in the frame. Music is playing in the adjacent dining room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
         "entities": "[]"
       },
       {
-        "id": 14732,
-        "timestamp": "2026-05-15T20:04:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "7 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14731,
-        "timestamp": "2026-05-15T20:00:23+00:00",
-        "source": "ha:audio",
+        "id": 15022,
+        "timestamp": "2026-05-15T21:12:50+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in dining_room: Daisy the Great - Record Player",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14730,
-        "timestamp": "2026-05-15T20:00:21+00:00",
-        "source": "camera2",
-        "source_type": "vision",
-        "location": "side_yard",
-        "summary": "The side yard and street area are currently empty of people and animals. Several vehicles, including a dark SUV and a white pickup truck, are parked along the curb.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white pickup truck\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 14729,
-        "timestamp": "2026-05-15T19:57:59+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet. No people or dogs are visible in the side yard area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
         "entities": "[]"
       },
       {
-        "id": 14728,
-        "timestamp": "2026-05-15T19:55:59+00:00",
-        "source": "camera2",
-        "source_type": "vision",
-        "location": "side_yard",
-        "summary": "The side yard and street area are currently empty of people and animals. Several vehicles, including a dark SUV and a white pickup truck, are parked along the curb and in the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white pickup truck\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 14727,
-        "timestamp": "2026-05-15T19:55:22+00:00",
-        "source": "ha:audio",
+        "id": 15021,
+        "timestamp": "2026-05-15T21:12:40+00:00",
+        "source": "audio:pi",
         "source_type": "audio",
-        "location": "home",
-        "summary": "Music in dining_room: Ed Sheeran - Sapphire",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14726,
-        "timestamp": "2026-05-15T19:50:22+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in dining_room: Post Malone - I Had Some Help (Feat. Morgan Wallen)",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14725,
-        "timestamp": "2026-05-15T19:47:03+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "7 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14722,
-        "timestamp": "2026-05-15T19:45:22+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: none",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14723,
-        "timestamp": "2026-05-15T19:45:22+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in dining_room: Justin Bieber - DAISIES",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14724,
-        "timestamp": "2026-05-15T19:45:22+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "LEAK DETECTED. Flow: 0.0 gal/min.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v1",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
         "entities": "[]"
       },
       {
-        "id": 14721,
-        "timestamp": "2026-05-15T19:45:03+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "7 mobile devices home. Cameras recently show: Roxanne.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+        "id": 15020,
+        "timestamp": "2026-05-15T21:12:30+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14720,
-        "timestamp": "2026-05-15T19:43:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "7 mobile devices home. Cameras recently show: Roxanne, Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+        "id": 15019,
+        "timestamp": "2026-05-15T21:12:20+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14719,
-        "timestamp": "2026-05-15T19:42:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home. Cameras recently show: Roxanne, Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+        "id": 15018,
+        "timestamp": "2026-05-15T21:12:10+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       },
       {
-        "id": 14718,
-        "timestamp": "2026-05-15T19:40:21+00:00",
+        "id": 15017,
+        "timestamp": "2026-05-15T21:12:00+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15016,
+        "timestamp": "2026-05-15T21:11:50+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15015,
+        "timestamp": "2026-05-15T21:11:40+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15014,
+        "timestamp": "2026-05-15T21:11:30+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15013,
+        "timestamp": "2026-05-15T21:11:19+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15012,
+        "timestamp": "2026-05-15T21:11:09+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15011,
+        "timestamp": "2026-05-15T21:10:59+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15010,
+        "timestamp": "2026-05-15T21:10:49+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15009,
+        "timestamp": "2026-05-15T21:10:39+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 15008,
+        "timestamp": "2026-05-15T21:10:30+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in dining_room: Myles Smith - Stargazing",
+        "summary": "Music in dining_room: OneRepublic - I Lived",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14717,
-        "timestamp": "2026-05-15T19:40:01+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home. Cameras recently show: Roxanne, Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 14716,
-        "timestamp": "2026-05-15T19:39:01+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home. Cameras recently show: Roxanne, Steve.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+        "id": 15007,
+        "timestamp": "2026-05-15T21:10:29+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "outdoor ambient sounds",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v1",
+        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 1464,
+        "timestamp": "2026-05-15T20:58:16+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[camera2] A person is walking past the house while a dog is barking.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1463,
+        "timestamp": "2026-05-15T20:50:20+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The combination of multiple parked vehicles in the side yard, the dogs' earlier restlessness, and the current unclassified audio signals, all occurring while the household members are not visible on camera, suggests a recent or ongoing external interaction (e.g., a visitor or delivery) that has temporarily removed the family or is happening just out of camera view.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1461,
+        "timestamp": "2026-05-15T20:49:57+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at side_yard this hour: 5 observations vs typical 1 for weekday 13:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 1462,
+        "timestamp": "2026-05-15T20:49:57+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 118 for weekday 13:00",
+        "acted_on_at": null
+      },
       {
         "id": 1459,
         "timestamp": "2026-05-15T20:05:05+00:00",
@@ -1715,59 +1775,27 @@
         "acted_on_at": null
       },
       {
-        "id": 1450,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 5 observations vs typical 1 for weekday 12:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1451,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 89 for weekday 12:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 1452,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (4x since 11:24AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 1453,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at front door (3x since 11:48AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 1454,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at backyard (2x since 11:50AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 1455,
-        "timestamp": "2026-05-15T19:49:28+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (4x since 12:26PM).",
-        "acted_on_at": null
-      },
-      {
         "id": 1456,
         "timestamp": "2026-05-15T19:49:28+00:00",
         "insight_type": "deviation",
         "severity": "low",
         "summary": "Dogs barking repeatedly at living room (3x since 12:27PM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1457,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (2x since 12:29PM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 1450,
+        "timestamp": "2026-05-15T19:49:28+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 5 observations vs typical 1 for weekday 12:00",
         "acted_on_at": null
       }
     ],
@@ -1775,22 +1803,24 @@
       "id": "current",
       "who_is_home": [],
       "active_rooms": [
+        "backyard",
         "dog_run",
         "entryway",
+        "front_door",
         "living_room",
         "side_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-15T19:31:36+00:00",
-        "dog_run": "2026-05-15T19:57:59+00:00",
-        "entryway": "2026-05-15T20:08:39+00:00",
-        "front_door": "2026-05-15T19:30:02+00:00",
-        "living_room": "2026-05-15T20:04:33+00:00",
-        "side_yard": "2026-05-15T20:00:21+00:00"
+        "backyard": "2026-05-15T20:57:30+00:00",
+        "dog_run": "2026-05-15T20:59:23+00:00",
+        "entryway": "2026-05-15T20:56:10+00:00",
+        "front_door": "2026-05-15T21:14:55+00:00",
+        "living_room": "2026-05-15T20:50:16+00:00",
+        "side_yard": "2026-05-15T20:58:16+00:00"
       },
-      "last_updated": "2026-05-15T20:08:53.920931+00:00"
+      "last_updated": "2026-05-15T21:15:28.705017+00:00"
     }
   },
   "pge": {
