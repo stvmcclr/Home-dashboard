@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15 09:25:12",
+  "generated_at": "2026-05-15 17:14:05",
   "as_of": "2026-05-15",
   "projects": [
     {
@@ -1022,22 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1427,
-        "timestamp": "2026-05-15T15:33:26+00:00",
-        "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 52,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 1428,
-        "timestamp": "2026-05-15T15:33:26+00:00",
+        "id": 1430,
+        "timestamp": "2026-05-15T17:13:55+00:00",
         "location": "Upstairs",
         "temp_f": 67.3,
         "humidity_pct": 54,
@@ -1045,6 +1031,20 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 65.3,
         "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1429,
+        "timestamp": "2026-05-15T17:13:55+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1208,6 +1208,34 @@
       {
         "id": 1428,
         "timestamp": "2026-05-15T15:33:26+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.3,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1429,
+        "timestamp": "2026-05-15T17:13:55+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1430,
+        "timestamp": "2026-05-15T17:13:55+00:00",
         "location": "Upstairs",
         "temp_f": 67.3,
         "humidity_pct": 54,
@@ -1385,227 +1413,235 @@
   "intelligence": {
     "observations": [
       {
-        "id": 14261,
-        "timestamp": "2026-05-15T16:25:01+00:00",
+        "id": 14298,
+        "timestamp": "2026-05-15T17:11:18+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen, likely continuing her work on her laptop as she has been for the last several minutes, while music plays in the background. The living room remains calm and undisturbed.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14297,
+        "timestamp": "2026-05-15T17:10:06+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Christina Perri - a thousand years",
+        "summary": "Music in kitchen: The Chainsmokers - Something Just Like This",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14260,
-        "timestamp": "2026-05-15T16:23:22+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway, with Posey resting peacefully on the floor. The house remains calm with music playing from the kitchen and no movement detected in the foyer.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"Music in kitchen\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14259,
-        "timestamp": "2026-05-15T16:21:44+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway, with Posey resting on the floor while music plays from the kitchen. No movement is detected in the foyer, consistent with Roxanne being in another part of the house.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14258,
-        "timestamp": "2026-05-15T16:20:08+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's a quiet Friday morning in the entryway, with Posey resting on the floor while music plays from the kitchen. Roxanne is likely nearby in the kitchen or playroom, as indicated by the active lights and music, following her morning routine.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.7}]"
-      },
-      {
-        "id": 14257,
-        "timestamp": "2026-05-15T16:20:01+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Benson Boone - Beautiful Things - Acapella",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14256,
-        "timestamp": "2026-05-15T16:15:46+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Friday morning and Posey is continuing her quiet routine, resting peacefully on the couch while music plays in the kitchen. The household remains calm and quiet as the morning progresses.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14253,
-        "timestamp": "2026-05-15T16:15:01+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: playroom, kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14254,
-        "timestamp": "2026-05-15T16:15:01+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Myles Smith - Stargazing - Moonlight Version",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14255,
-        "timestamp": "2026-05-15T16:15:01+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "LEAK DETECTED. Flow: 0.0 gal/min.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v1",
-        "entities": "[]"
-      },
-      {
-        "id": 14252,
-        "timestamp": "2026-05-15T16:13:06+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Friday morning and Posey is continuing her quiet routine, resting peacefully on the couch. Music is playing in the kitchen, suggesting the rest of the household is nearby.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14251,
-        "timestamp": "2026-05-15T16:11:17+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Friday morning and Posey is continuing her quiet routine, resting peacefully on the couch while music plays in the kitchen. The living area remains empty of people, consistent with the recent activity of the household being in the kitchen area.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14250,
-        "timestamp": "2026-05-15T16:10:01+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Duncan Laurence - Arcade",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14249,
-        "timestamp": "2026-05-15T16:08:44+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Friday morning and Posey is peacefully sleeping on the living room couch, continuing the quiet morning routine as music plays in the kitchen. This matches the calm atmosphere and activity observed over the last several minutes.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14248,
-        "timestamp": "2026-05-15T16:05:53+00:00",
-        "source": "camera:living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "It's Friday morning and Posey is peacefully sleeping on the living room couch, continuing the quiet morning routine while music plays in the kitchen area where the rest of the household is likely gathered.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 14247,
-        "timestamp": "2026-05-15T16:05:00+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in kitchen: Andy Grammer - Don't Give Up On Me",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 14246,
-        "timestamp": "2026-05-15T16:02:54+00:00",
+        "id": 14296,
+        "timestamp": "2026-05-15T17:09:16+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
-        "summary": "13 mobile devices home. Cameras recently show: Miller, Penelope, Roxanne, Steve, unknown child.",
+        "summary": "13 mobile devices home. Cameras recently show: Roxanne, Steve.",
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       },
       {
-        "id": 14245,
-        "timestamp": "2026-05-15T16:01:45+00:00",
+        "id": 14295,
+        "timestamp": "2026-05-15T17:06:15+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Friday morning and Posey is peacefully sleeping on the living room couch, continuing the quiet morning routine as music plays in the kitchen. The house is calm, with the rest of the household likely occupied in the kitchen area.",
+        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen working on her laptop while music plays in the background, continuing her routine from earlier this morning.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
       },
       {
-        "id": 14244,
-        "timestamp": "2026-05-15T16:00:00+00:00",
+        "id": 14294,
+        "timestamp": "2026-05-15T17:05:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home. Cameras recently show: Penelope, Roxanne, Steve.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14293,
+        "timestamp": "2026-05-15T17:05:06+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
-        "summary": "Music in kitchen: Andra Day - Rise Up",
+        "summary": "Music in kitchen: Anson Seabra - Peter Pan Was Right",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 14243,
-        "timestamp": "2026-05-15T15:59:47+00:00",
-        "source": "camera:entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "It's Friday morning and Roxanne is visible through the glass doors in the adjacent room, likely continuing her morning routine after being seen moving through the house earlier. She appears to be moving through the living area as part of her usual morning activity.",
-        "confidence": 0.85,
-        "model_version": "narrator-v4-gemma4",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 14242,
-        "timestamp": "2026-05-15T15:59:10+00:00",
+        "id": 14292,
+        "timestamp": "2026-05-15T17:03:19+00:00",
         "source": "camera:living_room",
         "source_type": "vision",
         "location": "living_room",
-        "summary": "It's Friday morning and Posey is resting peacefully on the couch while the household is likely in the kitchen area, as indicated by the music playing and recent activity.",
+        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen working on her laptop while music plays in the background. This follows her recent movement through the living room and into the kitchen.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14291,
+        "timestamp": "2026-05-15T17:03:14+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home. Cameras recently show: Penelope, Roxanne, Steve, unknown child.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"home\", \"confidence\": 0.85}, {\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14290,
+        "timestamp": "2026-05-15T17:00:10+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Roxanne is in the kitchen, likely attending to tasks or checking a device while music plays. The living room remains peaceful following her movement through the area a few minutes ago.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"music\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14289,
+        "timestamp": "2026-05-15T17:00:05+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in kitchen: Gracie Abrams - That\u2019s So True",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14288,
+        "timestamp": "2026-05-15T16:58:33+00:00",
+        "source": "camera:entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "It's a quiet Friday morning in the entryway with Posey resting peacefully on the floor. Roxanne is visible through the glass doors in the adjacent room, maintaining the calm atmosphere observed over the last few minutes.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14287,
+        "timestamp": "2026-05-15T16:57:57+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Roxanne is moving through the living room while Posey continues her peaceful routine of resting on the couch. The music is playing in the kitchen as the household begins its day.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14286,
+        "timestamp": "2026-05-15T16:55:51+00:00",
+        "source": "camera:entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "It's a quiet Friday morning in the entryway with Posey resting on the floor. Roxanne is visible through the glass doors in the adjacent room, consistent with recent activity.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 14285,
+        "timestamp": "2026-05-15T16:55:23+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, sleeping soundly on the living room couch while music plays in the kitchen.",
         "confidence": 0.85,
         "model_version": "narrator-v4-gemma4",
         "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14284,
+        "timestamp": "2026-05-15T16:55:05+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in kitchen: Anne-Marie - 2002",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 14283,
+        "timestamp": "2026-05-15T16:53:50+00:00",
+        "source": "camera:entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "It's a quiet Friday morning in the entryway with Posey resting peacefully on the floor. Roxanne is visible through the glass doors in the adjacent room while music plays from the kitchen.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"present\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 14282,
+        "timestamp": "2026-05-15T16:53:20+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, sleeping soundly on the living room couch while music plays in the kitchen.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14281,
+        "timestamp": "2026-05-15T16:51:41+00:00",
+        "source": "camera:entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "It's a quiet Friday morning in the entryway, with Posey resting peacefully on the floor while music plays from the kitchen. The house remains calm with no new activity or people visible in the foyer.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14280,
+        "timestamp": "2026-05-15T16:51:12+00:00",
+        "source": "camera:living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "It's a quiet Friday morning and Posey is continuing her peaceful routine, resting on the living room couch while music plays in the kitchen.",
+        "confidence": 0.85,
+        "model_version": "narrator-v4-gemma4",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"present\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 14279,
+        "timestamp": "2026-05-15T16:50:05+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in kitchen: Justin Bieber - Ghost",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 1431,
+        "timestamp": "2026-05-15T16:47:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 16 observations vs typical 1 for weekday 09:00",
+        "acted_on_at": null
+      },
       {
         "id": 1430,
         "timestamp": "2026-05-15T15:47:11+00:00",
@@ -1677,14 +1713,6 @@
         "severity": "high",
         "summary": "Miller is active on the street at 5:28 AM.",
         "acted_on_at": null
-      },
-      {
-        "id": 1421,
-        "timestamp": "2026-05-15T11:43:19+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a highly regular, repeating 30-minute cycle (03:14, 03:44, 04:14) involving white noise and minor leak detection, strongly suggesting an automated sleep routine. This routine continues until 04:14 AM, immediately preceding the drop in presence from 14 to 13 devices at 04:21 AM, indicating one person or device has left the main area or home after the sleep cycle was established.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -1692,28 +1720,190 @@
       "who_is_home": [],
       "active_rooms": [
         "entryway",
-        "kitchen",
         "living_room",
         "playroom"
       ],
       "lights_on": [
-        "playroom",
-        "kitchen"
+        "playroom"
       ],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-15T14:57:28+00:00",
         "dog_run": "2026-05-14T18:17:34+00:00",
-        "entryway": "2026-05-15T16:23:22+00:00",
+        "entryway": "2026-05-15T16:58:33+00:00",
         "front_door": "2026-05-14T22:44:52+00:00",
-        "living_room": "2026-05-15T16:15:46+00:00",
+        "living_room": "2026-05-15T17:11:18+00:00",
         "side_yard": "2026-05-15T15:00:31+00:00"
       },
-      "last_updated": "2026-05-15T16:25:06.174881+00:00"
+      "last_updated": "2026-05-15T17:13:28.839588+00:00"
     }
   },
   "pge": {
     "hourly": [
+      {
+        "ts": "2026-05-10T00:00",
+        "kwh": 1.655
+      },
+      {
+        "ts": "2026-05-10T01:00",
+        "kwh": 1.054
+      },
+      {
+        "ts": "2026-05-10T02:00",
+        "kwh": 1.002
+      },
+      {
+        "ts": "2026-05-10T03:00",
+        "kwh": 1.025
+      },
+      {
+        "ts": "2026-05-10T04:00",
+        "kwh": 0.975
+      },
+      {
+        "ts": "2026-05-10T05:00",
+        "kwh": 1.111
+      },
+      {
+        "ts": "2026-05-10T06:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T07:00",
+        "kwh": 1.257
+      },
+      {
+        "ts": "2026-05-10T08:00",
+        "kwh": 1.347
+      },
+      {
+        "ts": "2026-05-10T09:00",
+        "kwh": 1.712
+      },
+      {
+        "ts": "2026-05-10T10:00",
+        "kwh": 2.537
+      },
+      {
+        "ts": "2026-05-10T11:00",
+        "kwh": 2.191
+      },
+      {
+        "ts": "2026-05-10T12:00",
+        "kwh": 1.351
+      },
+      {
+        "ts": "2026-05-10T13:00",
+        "kwh": 1.344
+      },
+      {
+        "ts": "2026-05-10T14:00",
+        "kwh": 1.758
+      },
+      {
+        "ts": "2026-05-10T15:00",
+        "kwh": 1.467
+      },
+      {
+        "ts": "2026-05-10T16:00",
+        "kwh": 1.289
+      },
+      {
+        "ts": "2026-05-10T17:00",
+        "kwh": 1.194
+      },
+      {
+        "ts": "2026-05-10T18:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T19:00",
+        "kwh": 1.115
+      },
+      {
+        "ts": "2026-05-10T20:00",
+        "kwh": 2.634
+      },
+      {
+        "ts": "2026-05-10T21:00",
+        "kwh": 3.568
+      },
+      {
+        "ts": "2026-05-10T22:00",
+        "kwh": 2.67
+      },
+      {
+        "ts": "2026-05-10T23:00",
+        "kwh": 1.629
+      },
+      {
+        "ts": "2026-05-11T00:00",
+        "kwh": 1.502
+      },
+      {
+        "ts": "2026-05-11T01:00",
+        "kwh": 1.219
+      },
+      {
+        "ts": "2026-05-11T02:00",
+        "kwh": 1.332
+      },
+      {
+        "ts": "2026-05-11T03:00",
+        "kwh": 1.057
+      },
+      {
+        "ts": "2026-05-11T04:00",
+        "kwh": 1.484
+      },
+      {
+        "ts": "2026-05-11T05:00",
+        "kwh": 0.974
+      },
+      {
+        "ts": "2026-05-11T06:00",
+        "kwh": 1.436
+      },
+      {
+        "ts": "2026-05-11T07:00",
+        "kwh": 1.482
+      },
+      {
+        "ts": "2026-05-11T08:00",
+        "kwh": 1.501
+      },
+      {
+        "ts": "2026-05-11T09:00",
+        "kwh": 1.734
+      },
+      {
+        "ts": "2026-05-11T10:00",
+        "kwh": 1.721
+      },
+      {
+        "ts": "2026-05-11T11:00",
+        "kwh": 1.414
+      },
+      {
+        "ts": "2026-05-11T12:00",
+        "kwh": 1.249
+      },
+      {
+        "ts": "2026-05-11T13:00",
+        "kwh": 1.338
+      },
+      {
+        "ts": "2026-05-11T14:00",
+        "kwh": 1.336
+      },
+      {
+        "ts": "2026-05-11T15:00",
+        "kwh": 1.554
+      },
+      {
+        "ts": "2026-05-11T16:00",
+        "kwh": 1.41
+      },
       {
         "ts": "2026-05-11T17:00",
         "kwh": 1.626
@@ -1962,8 +2152,9 @@
       }
     ],
     "latest_kwh": 1.793,
-    "avg_per_hour": 2.15,
+    "avg_per_hour": 1.88,
     "evening_peak_kwh": 4.15,
-    "data_through": "2026-05-13T23:00"
+    "data_through": "2026-05-13T23:00",
+    "_source": "pge_hourly.json"
   }
 }
