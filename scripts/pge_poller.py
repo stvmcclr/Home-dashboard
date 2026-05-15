@@ -370,6 +370,92 @@ def sync_pge_to_supabase():
     supabase_upsert(rows)
 
 
+def write_pge_hourly_json():
+    """Write last 7 days of hourly PGE readings to data/pge_hourly.json in the repo,
+    then git commit+push so GitHub Actions always has fresh data when building the dashboard."""
+    import subprocess
+    REPO_DIR = os.path.expanduser("~/Desktop/home-dashboard")
+    OUT_PATH = os.path.join(REPO_DIR, "data", "pge_hourly.json")
+
+    conn = sqlite3.connect(DB)
+    cur  = conn.execute("""
+        SELECT
+            strftime('%Y-%m-%dT%H:00', datetime(interval_ts, '-7 hours')) AS ts,
+            SUM(kwh) AS kwh
+        FROM pge_energy
+        WHERE kwh > 0 AND duration_s = 3600
+          AND interval_ts >= datetime('now', '-7 days')
+        GROUP BY ts
+        ORDER BY ts ASC
+    """)
+    rows_raw = cur.fetchall()
+
+    # Daily totals from the same data window
+    daily_cur = conn.execute("""
+        SELECT
+            date(datetime(interval_ts, '-7 hours')) AS local_date,
+            SUM(kwh)  AS total_kwh,
+            MAX(kwh)  AS peak_kwh,
+            COUNT(*)  AS hours
+        FROM pge_energy
+        WHERE kwh > 0 AND duration_s = 3600
+          AND interval_ts >= datetime('now', '-7 days')
+        GROUP BY local_date
+        ORDER BY local_date DESC
+        LIMIT 7
+    """)
+    daily_raw = daily_cur.fetchall()
+    conn.close()
+
+    if not rows_raw:
+        log("write_pge_hourly_json: no hourly data — skipping")
+        return
+
+    hourly = [{"ts": ts, "kwh": round(kwh, 3)} for ts, kwh in rows_raw]
+    daily  = [{"date": d, "total_kwh": round(tk, 2), "peak_kwh": round(pk, 3), "hours": h}
+               for d, tk, pk, h in daily_raw]
+
+    payload = {
+        "updated":        datetime.now().strftime("%Y-%m-%dT%H:%M"),
+        "latest_kwh":     hourly[-1]["kwh"] if hourly else None,
+        "data_through":   hourly[-1]["ts"]  if hourly else None,
+        "avg_per_hour":   round(sum(r["kwh"] for r in hourly) / len(hourly), 2) if hourly else None,
+        "evening_peak_kwh": (max((r["kwh"] for r in hourly if 17 <= int(r["ts"][11:13]) <= 22), default=None)),
+        "hourly":         hourly,
+        "daily":          daily,
+    }
+    if payload["evening_peak_kwh"] is not None:
+        payload["evening_peak_kwh"] = round(payload["evening_peak_kwh"], 2)
+
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    with open(OUT_PATH, "w") as f:
+        json.dump(payload, f, indent=2)
+    log(f"Wrote {len(hourly)} hourly rows to {OUT_PATH}")
+
+    # Git commit + push
+    try:
+        subprocess.run(["git", "-C", REPO_DIR, "add", "data/pge_hourly.json"], check=True, capture_output=True)
+        diff = subprocess.run(
+            ["git", "-C", REPO_DIR, "diff", "--cached", "--quiet"],
+            capture_output=True
+        )
+        if diff.returncode != 0:  # there are staged changes
+            subprocess.run(
+                ["git", "-C", REPO_DIR, "commit", "-m",
+                 f"data: update pge_hourly.json {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
+                check=True, capture_output=True
+            )
+            # Pull remote changes (Actions pushes every 15 min) then push
+            subprocess.run(["git", "-C", REPO_DIR, "pull", "--rebase", "--autostash"],
+                           check=True, capture_output=True)
+            subprocess.run(["git", "-C", REPO_DIR, "push"], check=True, capture_output=True)
+            log("pge_hourly.json committed and pushed to GitHub")
+        else:
+            log("pge_hourly.json unchanged — no git push needed")
+    except subprocess.CalledProcessError as e:
+        log(f"Git push failed: {e.stderr.decode()[:200] if e.stderr else str(e)}")
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 def main():
     log("PGE poller starting...")
@@ -435,6 +521,7 @@ def main():
 
     # Sync to Supabase so dashboard picks it up
     sync_pge_to_supabase()
+    write_pge_hourly_json()
 
     # Regenerate dashboard_data.json
     dashboard_script = os.path.expanduser("~/Desktop/home-dashboard/scripts/generate_dashboard_data.py")
@@ -445,6 +532,10 @@ def main():
             log(f"Dashboard regenerated: {result.stdout.strip()}")
         else:
             log(f"Dashboard regen error: {result.stderr.strip()[:200]}")
+
+    # Always write hourly JSON unconditionally (even if no new callback arrived)
+    # so GitHub Actions always has fresh data to build the live PGE chart.
+    write_pge_hourly_json()
 
     log("Done.")
 
