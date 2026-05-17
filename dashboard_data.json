@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17 10:47:21",
+  "generated_at": "2026-05-17 11:54:44",
   "as_of": "2026-05-17",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1486,
-        "timestamp": "2026-05-17T10:47:11+00:00",
+        "id": 1488,
+        "timestamp": "2026-05-17T11:54:34+00:00",
         "location": "Upstairs",
         "temp_f": 67.5,
         "humidity_pct": 46,
@@ -1036,8 +1036,8 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1485,
-        "timestamp": "2026-05-17T10:47:11+00:00",
+        "id": 1487,
+        "timestamp": "2026-05-17T11:54:34+00:00",
         "location": "Downstairs",
         "temp_f": 69.5,
         "humidity_pct": 45,
@@ -1180,6 +1180,34 @@
       {
         "id": 1486,
         "timestamp": "2026-05-17T10:47:11+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.5,
+        "humidity_pct": 46,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1487,
+        "timestamp": "2026-05-17T11:54:34+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 45,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 63.9,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1488,
+        "timestamp": "2026-05-17T11:54:34+00:00",
         "location": "Upstairs",
         "temp_f": 67.5,
         "humidity_pct": 46,
@@ -1357,140 +1385,8 @@
   "intelligence": {
     "observations": [
       {
-        "id": 25632,
-        "timestamp": "2026-05-17T10:44:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low RMS level and low energy variance make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25631,
-        "timestamp": "2026-05-17T10:43:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio suggests the presence of an alarm sound in the backyard area. \u2014 The high spectral centroid (4770 Hz) and high high-band energy (0.932) strongly suggest an alarm, matching the rule guess.",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25630,
-        "timestamp": "2026-05-17T10:43:32+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The camera is displaying an error message indicating that no frames have been received. Roxanne's black SUV is parked in the driveway, and the street is quiet during the late night hours.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera stream error\", \"entity_state\": \"active\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 25629,
-        "timestamp": "2026-05-17T10:43:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low energy and lack of sustained pattern make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25628,
-        "timestamp": "2026-05-17T10:42:42+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall RMS level and low energy variance make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25627,
-        "timestamp": "2026-05-17T10:42:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency energy bursts suggesting an unknown transient sound in the backyard. \u2014 The high spectral centroid (4668 Hz) and high high-band energy (0.888) suggest a sharp, non-speech/non-wind sound, but the low overall RMS level makes definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25626,
-        "timestamp": "2026-05-17T10:41:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall pattern is too diffuse for a confident classification among the given options.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25625,
-        "timestamp": "2026-05-17T10:41:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low energy and low zero-crossing rate make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25624,
-        "timestamp": "2026-05-17T10:40:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent high-frequency energy bursts, but no clear signature matches the known sounds of the backyard environment or the provided categories. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall energy and lack of sustained pattern make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25623,
-        "timestamp": "2026-05-17T10:39:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low energy and low zero-crossing rate make definitive classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25622,
-        "timestamp": "2026-05-17T10:39:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low energy and lack of distinct patterns make classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25621,
-        "timestamp": "2026-05-17T10:38:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds consistent with an alarm or sharp transient, but no clear source can be identified in the backyard setting. \u2014 The high spectral centroid (4325 Hz) and high high-band energy (0.846) suggest a sharp, high-pitched sound, which the rule guess attributes to an alarm. However, the overall low energy and low zero-crossing rate make definitive classification difficult, suggesting an unknown or intermittent event.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25620,
-        "timestamp": "2026-05-17T10:38:10+00:00",
+        "id": 25758,
+        "timestamp": "2026-05-17T11:53:43+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
@@ -1500,78 +1396,210 @@
         "entities": "[]"
       },
       {
-        "id": 25619,
-        "timestamp": "2026-05-17T10:37:38+00:00",
-        "source": "doorbell",
+        "id": 25757,
+        "timestamp": "2026-05-17T11:52:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/alert sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25756,
+        "timestamp": "2026-05-17T11:51:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/alert sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25753,
+        "timestamp": "2026-05-17T11:50:46+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: upstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 25754,
+        "timestamp": "2026-05-17T11:50:46+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in main_bedroom: White Noise",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 25755,
+        "timestamp": "2026-05-17T11:50:46+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage so far: 0.0 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 25752,
+        "timestamp": "2026-05-17T11:50:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds consistent with an alarm or sharp transient, but the overall context is unclear for a definitive classification. \u2014 The high spectral centroid (4695 Hz) and high high-band energy (0.947) suggest a sharp, high-pitched sound, which the rule guess identifies as an alarm. However, the low overall RMS level and the presence of the dogs suggest other possibilities like a distant alarm or a specific type of outdoor noise.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25751,
+        "timestamp": "2026-05-17T11:49:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall energy and lack of distinct patterns make classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25750,
+        "timestamp": "2026-05-17T11:48:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds consistent with an alarm or sharp transient, but the overall context is unclear. \u2014 The high spectral centroid and high high-band energy suggest an alarm or sharp impact, but the low overall energy and lack of sustained pattern make a definitive classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25749,
+        "timestamp": "2026-05-17T11:48:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall energy and lack of distinct patterns make classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25748,
+        "timestamp": "2026-05-17T11:47:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall RMS level and low energy variance make a definitive classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25747,
+        "timestamp": "2026-05-17T11:47:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall pattern is too diffuse for a confident classification among the given options.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25746,
+        "timestamp": "2026-05-17T11:46:50+00:00",
+        "source": "front_yard",
         "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is experiencing a technical failure and is not transmitting any video frames. The screen displays an error message indicating that no frames have been received, making it impossible to monitor the porch.",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and displaying an error message, indicating no video frames are being received. This is a continuation of a recent camera failure reported approximately 20 minutes ago.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
-        "entities": "[]"
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": null, \"confidence\": 1.0}]"
       },
       {
-        "id": 25618,
-        "timestamp": "2026-05-17T10:37:14+00:00",
+        "id": 25745,
+        "timestamp": "2026-05-17T11:46:28+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio suggests the presence of an alarm sound in the backyard area. \u2014 The high spectral centroid and high high-band energy, combined with the rule guess, point towards an alarm, despite the low overall RMS level.",
+        "summary": "The audio suggests the presence of an alarm sound in the backyard area. \u2014 The high spectral centroid and high high-band energy, combined with the rule guess, point towards an alarm trigger.",
         "confidence": 0.7,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 25617,
-        "timestamp": "2026-05-17T10:36:40+00:00",
+        "id": 25744,
+        "timestamp": "2026-05-17T11:45:25+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio contains intermittent high-frequency energy bursts, but no clear signature matches the known sounds of the dogs or typical alarms in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall RMS level and low energy variance make definitive classification difficult.",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall low RMS level and low energy variance make definitive classification difficult.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 25616,
-        "timestamp": "2026-05-17T10:35:36+00:00",
+        "id": 25743,
+        "timestamp": "2026-05-17T11:45:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 25742,
+        "timestamp": "2026-05-17T11:44:21+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio contains intermittent high-frequency energy bursts, but no clear signature matches the expected sounds for the backyard environment. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall energy and lack of sustained pattern make definitive classification difficult.",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, potentially electronic or impact-related sound, but the low overall RMS level and low energy variance make definitive classification difficult.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 25615,
-        "timestamp": "2026-05-17T10:35:14+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "The audio contains low-level, intermittent sounds consistent with general outdoor ambient noise at the front door. \u2014 The spectral centroid and mid-band energy suggest some activity, but the low overall energy and lack of distinct patterns make classification difficult. The rule guess of 'impact' is plausible but not certain.",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 25614,
-        "timestamp": "2026-05-17T10:35:03+00:00",
+        "id": 25741,
+        "timestamp": "2026-05-17T11:43:17+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall RMS level and low energy variance make definitive classification difficult.",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall pattern is too diffuse for a confident classification among the given options.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 25613,
-        "timestamp": "2026-05-17T10:34:53+00:00",
-        "source": "doorbell",
+        "id": 25740,
+        "timestamp": "2026-05-17T11:42:44+00:00",
+        "source": "backyard",
         "source_type": "audio",
-        "location": "front_door",
-        "summary": "The audio contains intermittent, sharp sounds consistent with potential animal activity or transient noises at the front door. \u2014 The high peak/RMS ratio (4.83) suggests sharp transients, and the mid-band energy is relatively high, but the overall spectral features do not strongly point to a specific known event like a bark or doorbell ring.",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event in the backyard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall RMS level and low energy variance make a definitive classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 25739,
+        "timestamp": "2026-05-17T11:41:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds consistent with an alarm or sharp transient event in the backyard. \u2014 The high spectral centroid (4708 Hz) and high high-band energy (0.944) suggest a sharp, high-pitched sound, but the low overall energy and low energy variance make a definitive classification difficult. The rule guess points to 'alarm' with moderate confidence.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
@@ -1579,83 +1607,83 @@
     ],
     "insights": [
       {
-        "id": 1868,
-        "timestamp": "2026-05-17T10:43:32+00:00",
+        "id": 1879,
+        "timestamp": "2026-05-17T11:39:49+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[front_yard] The camera stream is currently failing to receive frames.",
+        "summary": "[doorbell] The front door camera is non-functional and suspicious audio is being detected.",
         "acted_on_at": null
       },
       {
-        "id": 1867,
-        "timestamp": "2026-05-17T10:37:38+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is not providing a video feed, which prevents monitoring of the porch area.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1866,
-        "timestamp": "2026-05-17T10:34:41+00:00",
+        "id": 1878,
+        "timestamp": "2026-05-17T11:34:59+00:00",
         "insight_type": "correlation",
         "severity": "high",
-        "summary": "There is a persistent and concerning pattern of intermittent, high-frequency sounds detected across multiple areas (living room, backyard) over the last few hours, suggesting a potential alarm, impact, or electronic interference. Since the house is dark, empty, and the family is asleep, this sustained anomaly requires immediate investigation to rule out a security breach or technical malfunction.",
+        "summary": "Multiple cameras (front door, front yard, dog run) are experiencing persistent technical failures or error messages, which is unusual for a stable system. Critically, despite the cameras being down and the backyard being visually empty, the audio sensors are consistently picking up intermittent, high-frequency sounds suggestive of an alarm or sharp transients, indicating potential external interference or an ongoing, undetected event.",
         "acted_on_at": null
       },
       {
-        "id": 1865,
-        "timestamp": "2026-05-17T10:33:59+00:00",
+        "id": 1877,
+        "timestamp": "2026-05-17T11:33:05+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[living_room] Unidentified high-frequency sounds are heard, which could indicate an impact or alarm in the backyard.",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing technical issues and failing to provide consistent frames.",
         "acted_on_at": null
       },
       {
-        "id": 1864,
-        "timestamp": "2026-05-17T10:27:48+00:00",
+        "id": 1876,
+        "timestamp": "2026-05-17T11:25:40+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[backyard] High-frequency sounds detected in the audio, though no movement is visible in the camera view.",
+        "summary": "[front_yard] The front yard camera is offline while an alarm is sounding in the backyard, preventing visual verification of the source of the alert.",
         "acted_on_at": null
       },
       {
-        "id": 1863,
-        "timestamp": "2026-05-17T10:07:09+00:00",
+        "id": 1875,
+        "timestamp": "2026-05-17T11:19:37+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[backyard] Unexplained high-frequency audio sounds (potential alarm or doorbell) are detected, but no activity is visible in the backyard.",
+        "summary": "[living_room] Unidentified high-frequency sounds in the backyard.",
         "acted_on_at": null
       },
       {
-        "id": 1862,
-        "timestamp": "2026-05-17T10:00:26+00:00",
+        "id": 1874,
+        "timestamp": "2026-05-17T11:18:48+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[front_yard] The camera experienced a brief period of no frames being received, though the stream has since recovered.",
+        "summary": "[doorbell] The camera is down and there are suspicious sounds that could indicate an alarm or impact.",
         "acted_on_at": null
       },
       {
-        "id": 1861,
-        "timestamp": "2026-05-17T09:48:21+00:00",
+        "id": 1873,
+        "timestamp": "2026-05-17T11:09:28+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[living_room] Unidentified high-frequency sounds are detected, which could indicate an alarm or an impact in the backyard.",
+        "summary": "[backyard] Audio indicates potential alarm-like sounds, but no visual activity is detected.",
         "acted_on_at": null
       },
       {
-        "id": 1860,
-        "timestamp": "2026-05-17T09:34:24+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a strong pattern of escalating, high-frequency audio anomalies (suggesting alarms or impacts) occurring consistently between 01:30 AM and 02:33 AM, which correlates directly with multiple camera feed errors and technical failures across the front yard, dog run, and front door. This suggests potential external interference, either technical sabotage or the presence of an unknown party attempting to mask their activity or signal an alarm.",
-        "acted_on_at": null
-      },
-      {
-        "id": 1859,
-        "timestamp": "2026-05-17T09:18:15+00:00",
+        "id": 1872,
+        "timestamp": "2026-05-17T11:04:13+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently experiencing a feed error and is not providing a live view.",
+        "summary": "[front_yard] The front yard camera is offline, and an alarm sound was detected in the backyard.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1871,
+        "timestamp": "2026-05-17T10:58:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is experiencing a technical failure, and suspicious high-frequency audio is being detected during the outage.",
+        "acted_on_at": null
+      },
+      {
+        "id": 1870,
+        "timestamp": "2026-05-17T10:51:03+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is reporting a failure to receive frames, indicating a potential connection or hardware issue.",
         "acted_on_at": null
       }
     ],
@@ -1667,7 +1695,6 @@
         "dog_run",
         "front_door",
         "front_yard",
-        "living_room",
         "upstairs_hallway"
       ],
       "lights_on": [
@@ -1675,15 +1702,15 @@
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-17T10:27:48+00:00",
-        "dog_run": "2026-05-17T10:29:59+00:00",
-        "entryway": "2026-05-17T09:36:02+00:00",
-        "front_door": "2026-05-17T10:37:38+00:00",
-        "front_yard": "2026-05-17T10:43:32+00:00",
-        "living_room": "2026-05-17T10:33:59+00:00",
+        "backyard": "2026-05-17T11:30:08+00:00",
+        "dog_run": "2026-05-17T11:33:04+00:00",
+        "entryway": "2026-05-17T11:10:52+00:00",
+        "front_door": "2026-05-17T11:39:49+00:00",
+        "front_yard": "2026-05-17T11:46:50+00:00",
+        "living_room": "2026-05-17T11:19:37+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-17T10:44:55.328422+00:00"
+      "last_updated": "2026-05-17T11:54:26.419643+00:00"
     }
   },
   "pge": {
