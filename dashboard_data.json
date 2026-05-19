@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19 15:47:53",
+  "generated_at": "2026-05-19 17:57:40",
   "as_of": "2026-05-19",
   "projects": [
     {
@@ -1022,8 +1022,22 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1540,
-        "timestamp": "2026-05-19T15:47:46+00:00",
+        "id": 1541,
+        "timestamp": "2026-05-19T17:57:28+00:00",
+        "location": "Downstairs",
+        "temp_f": 71.6,
+        "humidity_pct": 44,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1542,
+        "timestamp": "2026-05-19T17:57:28+00:00",
         "location": "Upstairs",
         "temp_f": 66.5,
         "humidity_pct": 48,
@@ -1031,20 +1045,6 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 65.3,
         "cool_setpoint_f": 78.0,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 1539,
-        "timestamp": "2026-05-19T15:47:46+00:00",
-        "location": "Downstairs",
-        "temp_f": 71.5,
-        "humidity_pct": 43,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
-        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1180,6 +1180,34 @@
       {
         "id": 1540,
         "timestamp": "2026-05-19T15:47:46+00:00",
+        "location": "Upstairs",
+        "temp_f": 66.5,
+        "humidity_pct": 48,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 78.0,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1541,
+        "timestamp": "2026-05-19T17:57:28+00:00",
+        "location": "Downstairs",
+        "temp_f": 71.6,
+        "humidity_pct": 44,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1542,
+        "timestamp": "2026-05-19T17:57:28+00:00",
         "location": "Upstairs",
         "temp_f": 66.5,
         "humidity_pct": 48,
@@ -1357,305 +1385,305 @@
   "intelligence": {
     "observations": [
       {
-        "id": 39322,
-        "timestamp": "2026-05-19T15:46:05+00:00",
+        "id": 39835,
+        "timestamp": "2026-05-19T17:55:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy and high peak/RMS ratio, combined with the visual evidence of sharp transients in the spectrogram, strongly suggest barking from the Australian Shepherds.",
+        "confidence": 0.85,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39832,
+        "timestamp": "2026-05-19T17:55:45+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: none",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 39833,
+        "timestamp": "2026-05-19T17:55:45+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in dining_room: Drake - Over",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 39834,
+        "timestamp": "2026-05-19T17:55:45+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage so far: 112.8 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 39831,
+        "timestamp": "2026-05-19T17:55:31+00:00",
         "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "The audio contains intermittent, sharp sounds consistent with potential alarms or impacts in the front yard. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or percussive sound, but the overall pattern is not definitively matched to a specific known event like a bark or doorbell ring.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39321,
-        "timestamp": "2026-05-19T15:46:02+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, broadband sounds consistent with general outdoor activity, but no specific event is clearly identifiable. \u2014 The high energy in the high-band (0.623) and the peak/RMS ratio (3.71) suggest transient sounds, but the spectral centroid (3305 Hz) and mid-band energy (0.269) are not strongly indicative of a specific event like a bark or alarm. The low energy variance suggests the sounds are somewhat sustained or repetitive, but the overall pattern is ambiguous.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39320,
-        "timestamp": "2026-05-19T15:45:43+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high peak/RMS ratio (4.65) and the energy distribution across mid and high bands, combined with the context of dogs in the dog run, strongly suggest barking. The rule guess of 'alarm' is likely incorrect.",
-        "confidence": 0.85,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39319,
-        "timestamp": "2026-05-19T15:45:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall pattern is too diffuse for a confident classification among the given options.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39318,
-        "timestamp": "2026-05-19T15:45:09+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy and the spectral characteristics, combined with the context of two dogs, strongly suggest barking, despite the rule guess pointing to 'alarm'.",
-        "confidence": 0.85,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39317,
-        "timestamp": "2026-05-19T15:44:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the overall pattern is too diffuse for a confident classification among the given options.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39316,
-        "timestamp": "2026-05-19T15:44:43+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "The audio contains intermittent, broadband sounds consistent with general outdoor activity, but no specific event was clearly identified. \u2014 The high energy in the high-band (0.699) and the rule guess pointing to 'alarm' suggest a transient, sharp sound, but the overall spectral profile is diffuse. Given the context of dogs and an outdoor setting, it could be anything from a distant noise to a dog vocalization not strongly matching 'bark'.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39315,
-        "timestamp": "2026-05-19T15:44:33+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high peak/RMS ratio (4.84) and the energy distribution across mid and high bands, combined with the context of two dogs, strongly suggest barking. The rule guess of 'alarm' is likely incorrect given the context.",
-        "confidence": 0.85,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39314,
-        "timestamp": "2026-05-19T15:44:20+00:00",
-        "source": "doorbell",
         "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is visually empty, but audio indicates that the dogs, Posey and Harlee, are barking in the nearby dog run area.",
+        "location": "front_yard",
+        "summary": "The camera feed experienced a brief interruption with several error frames before recovering. An unknown grey SUV is currently parked in the driveway, and the front yard is otherwise empty.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.8}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown grey SUV\", \"entity_state\": null, \"confidence\": 0.95}]"
       },
       {
-        "id": 39313,
-        "timestamp": "2026-05-19T15:44:18+00:00",
+        "id": 39830,
+        "timestamp": "2026-05-19T17:55:28+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest a sharp, possibly electronic or impact-related sound, but the low overall energy variance and the rule guess pointing to 'alarm' with moderate confidence make a definitive classification difficult. Given the context of dogs, a bark is possible but the spectral profile doesn't strongly suggest it. 'Unknown' is the safest choice.",
+        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest sharp, transient sounds, but the overall pattern is too diffuse for a confident classification among the given options.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39312,
-        "timestamp": "2026-05-19T15:43:58+00:00",
+        "id": 39829,
+        "timestamp": "2026-05-19T17:55:08+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio contains distinct, high-energy bursts consistent with dog barking in the dog run area. \u2014 The high peak/RMS ratio (6.74) and the energy distribution across mid and high bands support a vocalization like barking, which is expected given the presence of two dogs.",
+        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy and the peak/RMS ratio suggest sharp, transient sounds, which aligns well with the presence of two Australian Shepherd dogs.",
         "confidence": 0.85,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39311,
-        "timestamp": "2026-05-19T15:43:47+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "The audio contains low-level, intermittent noise consistent with general outdoor ambient sounds at the front door. \u2014 The low energy levels and moderate spectral centroid suggest non-specific outdoor activity, but no distinct event like a bark, doorbell, or alarm was clearly detected.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39310,
-        "timestamp": "2026-05-19T15:43:44+00:00",
+        "id": 39828,
+        "timestamp": "2026-05-19T17:54:55+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio appears to contain intermittent, sharp sounds consistent with dog barks in the backyard setting. \u2014 The high peak/RMS ratio (5.89) and the energy distribution across mid and high bands, combined with the context of two dogs, strongly suggest barking, despite the rule guess of 'impact'.",
+        "summary": "The audio appears to contain dog barks, consistent with the backyard location and the presence of two dogs. \u2014 The high mid-band energy (0.400) and the rule guess strongly suggest barking. The spectrogram shows intermittent, sharp energy bursts typical of vocalizations.",
         "confidence": 0.85,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39309,
-        "timestamp": "2026-05-19T15:43:21+00:00",
+        "id": 39827,
+        "timestamp": "2026-05-19T17:54:33+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy (0.215) and the visual pattern in the spectrogram, combined with the context of two dogs, strongly suggest barking. The rule guess of 'alarm' is likely incorrect given the context.",
-        "confidence": 0.85,
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39308,
-        "timestamp": "2026-05-19T15:43:10+00:00",
-        "source": "backyard",
+        "id": 39826,
+        "timestamp": "2026-05-19T17:54:08+00:00",
+        "source": "front_yard",
         "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or alarm in the backyard setting. \u2014 The high spectral centroid and high high-band energy suggest sharp, transient sounds, but the overall pattern is too ambiguous to confidently classify as 'alarm' or 'bark'.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39307,
-        "timestamp": "2026-05-19T15:42:46+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy and the spectral characteristics, combined with the context of two dogs, strongly suggest barking, despite the rule guess pointing to 'alarm'.",
-        "confidence": 0.85,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39306,
-        "timestamp": "2026-05-19T15:42:42+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "The audio contains intermittent, high-frequency sounds that are not clearly identifiable as a specific event like a bark or doorbell ring at the front door. \u2014 The high-band energy is elevated, and the peak/RMS ratio is high, suggesting sharp transients, but the spectral centroid and low-band energy do not strongly point to a specific known event. The rule guess suggests 'alarm' but the overall pattern is ambiguous.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 39305,
-        "timestamp": "2026-05-19T15:42:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "The audio contains intermittent, high-frequency energy bursts consistent with some outdoor activity, but no clear signature matches the known categories. \u2014 The high spectral centroid and high high-band energy suggest sharp, transient sounds, but the overall pattern is too diffuse for a confident classification like 'bark' or 'alarm'.",
+        "location": "front_yard",
+        "summary": "alarm/alert sound at front_yard",
         "confidence": 0.7,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39304,
-        "timestamp": "2026-05-19T15:42:05+00:00",
+        "id": 39825,
+        "timestamp": "2026-05-19T17:53:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/alert sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39824,
+        "timestamp": "2026-05-19T17:53:17+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio contains distinct sounds consistent with dog barking in the dog run area. \u2014 The high mid-band energy and the spectral characteristics suggest vocalizations, fitting the context of two Australian Shepherds.",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39823,
+        "timestamp": "2026-05-19T17:52:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/alert sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39822,
+        "timestamp": "2026-05-19T17:52:21+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39821,
+        "timestamp": "2026-05-19T17:51:50+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/alert sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39820,
+        "timestamp": "2026-05-19T17:51:25+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "alarm/alert sound at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39819,
+        "timestamp": "2026-05-19T17:50:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "The audio contains intermittent, high-frequency sounds consistent with general outdoor noise, but no distinct event is identifiable. \u2014 The high spectral centroid and high high-band energy suggest sharp, possibly transient sounds, but the low overall energy and lack of pattern make classification difficult.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 39818,
+        "timestamp": "2026-05-19T17:50:44+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in dining_room: Drake - Finesse",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 39817,
+        "timestamp": "2026-05-19T17:50:29+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the dog run area. \u2014 The high mid-band energy and the visual pattern in the spectrogram strongly suggest barks, which is expected given the presence of two Australian Shepherd dogs.",
         "confidence": 0.85,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 39303,
-        "timestamp": "2026-05-19T15:42:00+00:00",
+        "id": 39816,
+        "timestamp": "2026-05-19T17:50:09+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "The audio contains intermittent, sharp sounds consistent with impacts or potential animal activity in the backyard. \u2014 The high peak/RMS ratio (5.20) and the rule guess of 'impact' suggest sudden, transient noises, but the spectral centroid and energy distribution are not strongly indicative of a specific known event like a bark or alarm.",
-        "confidence": 0.7,
+        "summary": "The audio contains distinct, intermittent bursts of sound consistent with dog barking in the backyard area. \u2014 The high mid-band energy (0.181) and high-band energy (0.813), combined with the peak/RMS ratio (3.13) and the visual evidence of sharp transients in the spectrogram, strongly suggest barking from the Australian Shepherd dogs.",
+        "confidence": 0.85,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       }
     ],
     "insights": [
       {
-        "id": 2392,
-        "timestamp": "2026-05-19T15:44:20+00:00",
+        "id": 2424,
+        "timestamp": "2026-05-19T17:47:45+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[doorbell] Dogs are barking nearby.",
+        "summary": "[front_yard] An unknown grey SUV is parked in the driveway, and dogs are barking inside.",
         "acted_on_at": null
       },
       {
-        "id": 2391,
-        "timestamp": "2026-05-19T15:19:31+00:00",
+        "id": 2423,
+        "timestamp": "2026-05-19T17:34:17+00:00",
         "insight_type": "camera_event",
         "severity": "high",
-        "summary": "[dog_run] The camera is experiencing connection issues and is not providing video frames.",
+        "summary": "[doorbell] The dogs are actively barking in the dog run, though no movement is visible on the porch.",
         "acted_on_at": null
       },
       {
-        "id": 2390,
-        "timestamp": "2026-05-19T15:18:31+00:00",
+        "id": 2422,
+        "timestamp": "2026-05-19T17:26:34+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] An unknown grey SUV is parked in the driveway, and an alarm-like sound was detected in the backyard.",
+        "acted_on_at": null
+      },
+      {
+        "id": 2421,
+        "timestamp": "2026-05-19T17:19:23+00:00",
         "insight_type": "correlation",
         "severity": "medium",
-        "summary": "Despite the household appearing to be engaged in routine morning activity, there is a persistent pattern of heightened alert indicated by continuous, escalating dog barking across multiple zones (living room, dog run, front yard) and the sighting of an unknown vehicle early in the morning. The current camera failures (front yard, dog run) at 08:12 and 08:15, combined with the ongoing barking, suggest that the dogs are reacting to an unidentified stimulus or potential visitor that is not being visually confirmed, warranting increased monitoring.",
+        "summary": "Despite the camera connection failures, the consistent audio reports of dog barking, coupled with intermittent high-frequency sounds and potential impact noises in the backyard and front yard, suggest an ongoing, unresolved outdoor disturbance. This persistent agitation, combined with the presence of unknown vehicles, indicates that the source of the noise is still active and warrants a physical check of the perimeter.",
         "acted_on_at": null
       },
       {
-        "id": 2383,
-        "timestamp": "2026-05-19T15:15:40+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 11 observations vs typical 1 for weekday 08:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 2384,
-        "timestamp": "2026-05-19T15:15:40+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: living_room averaging 108 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 2385,
-        "timestamp": "2026-05-19T15:15:40+00:00",
+        "id": 2414,
+        "timestamp": "2026-05-19T17:18:57+00:00",
         "insight_type": "deviation",
         "severity": "low",
-        "summary": "Dogs barking repeatedly at front yard (3x since 7:05AM).",
+        "summary": "Dogs barking repeatedly at dog run (4x since 9:05AM).",
         "acted_on_at": null
       },
       {
-        "id": 2386,
-        "timestamp": "2026-05-19T15:15:40+00:00",
+        "id": 2415,
+        "timestamp": "2026-05-19T17:18:57+00:00",
         "insight_type": "deviation",
         "severity": "low",
-        "summary": "Dogs barking repeatedly at front door (2x since 7:18AM).",
+        "summary": "Dogs barking repeatedly at front door (3x since 9:07AM).",
         "acted_on_at": null
       },
       {
-        "id": 2387,
-        "timestamp": "2026-05-19T15:15:40+00:00",
+        "id": 2416,
+        "timestamp": "2026-05-19T17:18:57+00:00",
         "insight_type": "deviation",
         "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 7:25AM).",
+        "summary": "Dogs barking repeatedly at living room (4x since 9:26AM).",
         "acted_on_at": null
       },
       {
-        "id": 2388,
-        "timestamp": "2026-05-19T15:15:40+00:00",
+        "id": 2417,
+        "timestamp": "2026-05-19T17:18:57+00:00",
         "insight_type": "deviation",
         "severity": "low",
-        "summary": "Dogs barking repeatedly at dog run (3x since 7:54AM).",
+        "summary": "Dogs barking repeatedly at dog run (3x since 9:27AM).",
         "acted_on_at": null
       },
       {
-        "id": 2389,
-        "timestamp": "2026-05-19T15:15:40+00:00",
+        "id": 2418,
+        "timestamp": "2026-05-19T17:18:57+00:00",
         "insight_type": "deviation",
         "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 7:57AM).",
+        "summary": "Dogs barking repeatedly at entryway (2x since 9:38AM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 2419,
+        "timestamp": "2026-05-19T17:18:57+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at front door (3x since 9:52AM).",
         "acted_on_at": null
       }
     ],
@@ -1665,24 +1693,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
-        "kitchen",
-        "living_room"
+        "front_yard"
       ],
-      "lights_on": [
-        "kitchen"
-      ],
+      "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-19T15:39:35+00:00",
-        "dog_run": "2026-05-19T15:19:31+00:00",
-        "entryway": "2026-05-19T15:05:57+00:00",
-        "front_door": "2026-05-19T15:44:20+00:00",
-        "front_yard": "2026-05-19T15:12:18+00:00",
-        "living_room": "2026-05-19T15:36:36+00:00",
+        "backyard": "2026-05-19T17:49:33+00:00",
+        "dog_run": "2026-05-19T17:32:21+00:00",
+        "entryway": "2026-05-19T17:27:12+00:00",
+        "front_door": "2026-05-19T17:34:16+00:00",
+        "front_yard": "2026-05-19T17:55:31+00:00",
+        "living_room": "2026-05-19T17:12:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-19T15:46:09.347722+00:00"
+      "last_updated": "2026-05-19T17:56:13.554528+00:00"
     }
   },
   "pge": {
