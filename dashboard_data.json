@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24 08:16:58",
+  "generated_at": "2026-05-24 10:15:32",
   "as_of": "2026-05-24",
   "projects": [
     {
@@ -1022,11 +1022,11 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1648,
-        "timestamp": "2026-05-24T08:16:54+00:00",
+        "id": 1650,
+        "timestamp": "2026-05-24T10:15:26+00:00",
         "location": "Upstairs",
-        "temp_f": 67.4,
-        "humidity_pct": 45,
+        "temp_f": 67.3,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
@@ -1036,14 +1036,14 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1647,
-        "timestamp": "2026-05-24T08:16:54+00:00",
+        "id": 1649,
+        "timestamp": "2026-05-24T10:15:26+00:00",
         "location": "Downstairs",
         "temp_f": 71.5,
         "humidity_pct": 47,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 55.2,
+        "heat_setpoint_f": 63.9,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
@@ -1127,6 +1127,34 @@
         "location": "Upstairs",
         "temp_f": 67.4,
         "humidity_pct": 45,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1649,
+        "timestamp": "2026-05-24T10:15:26+00:00",
+        "location": "Downstairs",
+        "temp_f": 71.5,
+        "humidity_pct": 47,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 63.9,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1650,
+        "timestamp": "2026-05-24T10:15:26+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.3,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
@@ -1301,63 +1329,74 @@
   "intelligence": {
     "observations": [
       {
-        "id": 66589,
-        "timestamp": "2026-05-24T08:12:44+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet during the night. The gate at the end of the run is closed, and no people or dogs are visible in the yard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": \"closed\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 66588,
-        "timestamp": "2026-05-24T08:10:59+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 66587,
-        "timestamp": "2026-05-24T08:10:49+00:00",
+        "id": 66712,
+        "timestamp": "2026-05-24T10:11:53+00:00",
         "source": "front_yard",
-        "source_type": "vision",
+        "source_type": "audio",
         "location": "front_yard",
-        "summary": "The front yard and street are quiet and empty during the late night. Roxanne's black Porsche Cayenne is parked in the driveway, and no other activity is visible.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked\", \"confidence\": 0.8}]"
+        "summary": "The audio contains intermittent, low-level sounds consistent with general outdoor noise, but no specific identifiable event like a bark or doorbell ring is present. \u2014 The spectral features suggest some transient energy (Peak/RMS ratio 5.61) and moderate low-band energy (0.431), which could be related to dogs or general outdoor activity, but the overall energy is low and the pattern is not distinct enough for a confident classification.",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
       },
       {
-        "id": 66586,
-        "timestamp": "2026-05-24T08:06:22+00:00",
+        "id": 66711,
+        "timestamp": "2026-05-24T10:11:41+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio appears to be mostly quiet with some low-level, intermittent sounds consistent with an outdoor environment near the dog run. \u2014 The low RMS level and low energy variance suggest minimal sustained noise, while the spectral centroid and mid-band energy are within a range that doesn't strongly indicate a specific event like a bark or alarm.",
+        "summary": "The audio appears to contain low-level, intermittent sounds consistent with general outdoor ambient noise in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal sustained sound, while the spectral centroid and mid-band energy are inconclusive for a specific event like a bark or alarm.",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66710,
+        "timestamp": "2026-05-24T10:09:01+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently offline and not transmitting any video frames, displaying an error message instead. This prevents any visual monitoring of the front door area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 66709,
+        "timestamp": "2026-05-24T10:08:55+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor environment, but no distinct event is identifiable.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 66583,
-        "timestamp": "2026-05-24T08:05:59+00:00",
+        "id": 66708,
+        "timestamp": "2026-05-24T10:07:56+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "The audio contains intermittent, broadband sounds consistent with general outdoor activity, but no specific event like a bark or alarm is clearly identifiable. \u2014 The high spectral centroid and moderate peak/RMS ratio suggest some transient sounds, but the low low-band energy and the general nature of the spectrogram make a definitive classification difficult.",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66705,
+        "timestamp": "2026-05-24T10:06:07+00:00",
         "source": "ha:lights",
         "source_type": "presence",
         "location": "home",
         "summary": "Lights on: none",
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
-        "id": 66584,
-        "timestamp": "2026-05-24T08:05:59+00:00",
+        "id": 66706,
+        "timestamp": "2026-05-24T10:06:07+00:00",
         "source": "ha:audio",
         "source_type": "audio",
         "location": "home",
@@ -1367,161 +1406,206 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
-        "id": 66585,
-        "timestamp": "2026-05-24T08:05:59+00:00",
+        "id": 66707,
+        "timestamp": "2026-05-24T10:06:07+00:00",
         "source": "flume",
         "source_type": "water",
         "location": "household",
-        "summary": "No water flow. Daily usage so far: 6.1 gal.",
+        "summary": "No water flow. Daily usage so far: 7.4 gal.",
         "confidence": 0.99,
         "model_version": "flume-ha-v1",
         "entities": "[]"
       },
       {
-        "id": 66582,
-        "timestamp": "2026-05-24T08:05:48+00:00",
+        "id": 66704,
+        "timestamp": "2026-05-24T10:05:37+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor setting, but no distinct sounds like barking or alarms were detected. \u2014 The low RMS level and low energy variance suggest quiet conditions. The spectral centroid and mid/high-band energy are elevated enough to rule out pure silence, but the features do not strongly match any specific event.",
+        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor setting, but no distinct sounds like barking or alarms are present. \u2014 The low RMS level and low energy variance suggest quiet conditions. The spectral centroid and mid/high-band energy are not strongly indicative of any specific event.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 66581,
-        "timestamp": "2026-05-24T08:05:11+00:00",
+        "id": 66703,
+        "timestamp": "2026-05-24T10:05:03+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor setting, but no distinct sounds like barking or alarms were detected. \u2014 The low RMS level and low energy variance suggest minimal or very quiet activity. The spectral centroid and mid/high-band energy are moderate, but the rule guess remains 'unknown' with a moderate confidence score.",
+        "summary": "The audio appears to be mostly quiet with some low-level, non-distinct sounds recorded in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the spectral centroid and mid-band energy are inconclusive for a specific event.",
+        "confidence": 0.5,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66702,
+        "timestamp": "2026-05-24T10:04:29+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor setting, but no distinct sounds like barking or alarms are present. \u2014 The low energy levels and the spectral features suggest ambient outdoor noise, but the lack of strong transients or specific frequency signatures makes definitive classification difficult.",
         "confidence": 0.6,
         "model_version": "audio-processor-v2",
         "entities": "[]"
       },
       {
-        "id": 66580,
-        "timestamp": "2026-05-24T08:04:47+00:00",
-        "source": "living_room",
+        "id": 66701,
+        "timestamp": "2026-05-24T10:03:52+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to be mostly quiet with some low-level, non-distinct background noise recorded at the dog run. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the spectral centroid and mid/high-band energy are not strongly indicative of any specific event like barking or alarm.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66700,
+        "timestamp": "2026-05-24T10:03:36+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "The audio contains general outdoor sounds with moderate energy across the frequency bands, but no distinct signature is present.",
+        "confidence": 0.5,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66699,
+        "timestamp": "2026-05-24T10:03:18+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to be very quiet with no distinct sounds matching known events in the dog run area. \u2014 Low overall energy and minimal spectral features suggest silence or very faint background noise.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66698,
+        "timestamp": "2026-05-24T10:02:37+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to contain low-level, intermittent background noise consistent with an outdoor setting, but no distinct sounds like barking or alarms were detected. \u2014 The spectral centroid is moderate, and mid/high-band energy is present, but the low energy variance suggests a lack of strong, distinct events. The low RMS level suggests quiet conditions.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66697,
+        "timestamp": "2026-05-24T10:02:19+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "The audio contains general outdoor sounds with moderate energy across the spectrum, but no distinct event is clearly identifiable. \u2014 The spectral centroid and mid-band energy suggest some activity, but the low energy variance and the rule guess pointing to 'impact' with moderate confidence suggest a non-specific transient sound.",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66696,
+        "timestamp": "2026-05-24T10:02:02+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to be very quiet with no distinct sounds matching the expected categories for the dog run area. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the spectral centroid and mid-band energy are inconclusive.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66695,
+        "timestamp": "2026-05-24T10:01:17+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to be low-level, consistent background noise from the dog run area. \u2014 The low energy levels and lack of distinct spectral features make classification difficult, but it is not clearly wind or speech.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66694,
+        "timestamp": "2026-05-24T10:00:32+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "The audio appears to contain low-level, intermittent sounds consistent with general outdoor background noise in the dog run area. \u2014 The low energy levels and lack of distinct spectral features make definitive classification difficult, though the mid-band energy suggests some activity.",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 66693,
+        "timestamp": "2026-05-24T10:00:16+00:00",
+        "source": "backyard",
         "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is empty and quiet during the late night. No people or pets are visible in the scene, and there is no observable movement.",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the night. No activity or presence of people or animals is detected in the area.",
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 66579,
-        "timestamp": "2026-05-24T08:04:34+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be mostly quiet with some low-level, non-distinct sounds recorded in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the mid-band energy is present, preventing a 'silence' classification. The spectral centroid and energy distribution do not strongly match any specific event.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66578,
-        "timestamp": "2026-05-24T08:04:14+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is offline and displaying an error message indicating that no video frames are being received. No visual activity can be observed at the front entrance due to this technical issue.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 66577,
-        "timestamp": "2026-05-24T08:03:59+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be mostly quiet with some low-level, non-distinct sounds recorded in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the mid-band energy is present, which is typical for dog activity, though no distinct barks were detected.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66576,
-        "timestamp": "2026-05-24T08:03:24+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be mostly quiet with some low-level, non-distinct background noise recorded in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal activity, and the spectral features do not strongly indicate any specific event like barking or an alarm.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66575,
-        "timestamp": "2026-05-24T08:02:49+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be very quiet with no distinct sounds detected in the dog run area.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66574,
-        "timestamp": "2026-05-24T08:02:16+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be very quiet with no distinct sounds matching known categories in the dog run area. \u2014 The low RMS level (0.0077) and low energy variance suggest minimal or very consistent background noise, but the spectral centroid and mid-band energy are inconclusive for a definitive classification.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66573,
-        "timestamp": "2026-05-24T08:01:39+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to be very quiet with no distinct sounds matching the known categories in the dog run area. \u2014 The low RMS level and low energy variance suggest minimal or very consistent background noise, but the spectral centroid and mid-band energy are inconclusive.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66572,
-        "timestamp": "2026-05-24T08:01:07+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 66571,
-        "timestamp": "2026-05-24T08:01:05+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "The audio appears to contain low-level, intermittent sounds consistent with general outdoor ambient noise in the dog run area. \u2014 The spectral centroid and mid-band energy suggest some activity, but the low overall energy and lack of distinct patterns make classification difficult.",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 66570,
-        "timestamp": "2026-05-24T08:00:59+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 3342,
+        "timestamp": "2026-05-24T09:56:34+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] A momentary loss of camera frames was detected in the sequence.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3341,
+        "timestamp": "2026-05-24T09:39:32+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] Audio indicates an alarm and an impact sound elsewhere, though the backyard remains undisturbed.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3340,
+        "timestamp": "2026-05-24T09:35:44+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] A dog bark was detected in the dog run area, but no activity is visible on camera.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3339,
+        "timestamp": "2026-05-24T09:34:58+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "A water leak was detected at 02:21, which is a high-priority physical issue that needs immediate attention. Furthermore, the front door camera remains persistently offline, creating a critical security blind spot, especially while the dogs are active and the household is asleep.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3338,
+        "timestamp": "2026-05-24T09:14:51+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] An alarm sound was detected in the front yard, which warrants investigation despite no visual activity.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3337,
+        "timestamp": "2026-05-24T09:07:12+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is offline and requires checking the error logs.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3336,
+        "timestamp": "2026-05-24T08:34:38+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The system is operating with multiple critical blind spots (front door and dog run cameras are offline), which significantly compromises security monitoring. This vulnerability is heightened by the presence of unexplained luggage (blue suitcase and black bag) in the entryway, suggesting either recent activity or an item that needs attention, despite the family being home.",
+        "acted_on_at": null
+      },
       {
         "id": 3335,
         "timestamp": "2026-05-24T07:56:34+00:00",
@@ -1545,62 +1629,6 @@
         "severity": "high",
         "summary": "There is a significant discrepancy between the camera observations (showing the house as empty and quiet) and the 00:27 signal, which confirms 14 mobile devices are currently inside the home. This suggests the family is present, but the critical front door camera remains offline, leaving a major security blind spot despite the internal occupancy.",
         "acted_on_at": null
-      },
-      {
-        "id": 3332,
-        "timestamp": "2026-05-24T07:29:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera stream experienced a momentary interruption/error.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3331,
-        "timestamp": "2026-05-24T07:09:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not transmitting video frames, displaying error messages instead.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3330,
-        "timestamp": "2026-05-24T06:40:22+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is offline, which is a recurring issue and prevents monitoring of the entrance.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3329,
-        "timestamp": "2026-05-24T06:33:45+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a concerning pattern of repeated security failures: the front door camera is offline multiple times (22:38, 22:58, 23:19), and the backyard/dog run area registers multiple, unverified alarm sounds and high-frequency activity (22:55, 23:28-23:31). This combination suggests either a persistent security vulnerability or potential unauthorized activity attempting to bypass visual detection.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3327,
-        "timestamp": "2026-05-24T06:32:50+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at entryway this hour: 4 observations vs typical 1 for weekend 23:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 3328,
-        "timestamp": "2026-05-24T06:32:50+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekend 23:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 3326,
-        "timestamp": "2026-05-24T06:19:37+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is offline, which has historically coincided with detected activity in the yard.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -1609,22 +1637,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-24T07:56:33+00:00",
-        "dog_run": "2026-05-24T08:12:44+00:00",
-        "entryway": "2026-05-24T07:32:53+00:00",
-        "front_door": "2026-05-24T08:04:14+00:00",
-        "front_yard": "2026-05-24T08:10:49+00:00",
-        "living_room": "2026-05-24T08:04:47+00:00",
+        "backyard": "2026-05-24T10:00:16+00:00",
+        "dog_run": "2026-05-24T09:57:40+00:00",
+        "entryway": "2026-05-24T09:49:07+00:00",
+        "front_door": "2026-05-24T10:09:01+00:00",
+        "front_yard": "2026-05-24T09:56:34+00:00",
+        "living_room": "2026-05-24T09:36:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-24T08:15:26.471478+00:00"
+      "last_updated": "2026-05-24T10:13:23.31877+00:00"
     }
   },
   "pge": {
