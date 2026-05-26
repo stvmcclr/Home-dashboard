@@ -390,6 +390,78 @@
     padding: 20px; text-align: center; color: var(--muted); font-size: 12px;
   }
 
+
+  /* ── Intelligence panels ── */
+  .intel-section {
+    padding: 16px 24px; border-top: 1px solid var(--border);
+  }
+  .intel-section-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; color: var(--muted); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .intel-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+  }
+  .intel-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px; overflow: hidden;
+  }
+  .intel-card-title {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.7px;
+    color: var(--muted); font-weight: 600; margin-bottom: 10px;
+  }
+  /* Daemon health grid */
+  .daemon-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .daemon-chip {
+    display: flex; align-items: center; gap: 5px;
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 20px; padding: 3px 10px; font-size: 11px;
+  }
+  .daemon-chip .dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+  .dot-ok     { background: var(--green); box-shadow: 0 0 5px var(--green); }
+  .dot-warn   { background: var(--yellow); }
+  .dot-err    { background: var(--red); box-shadow: 0 0 5px var(--red); }
+  /* Audio category bars */
+  .cat-bar-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 11px; }
+  .cat-bar-label { width: 80px; color: var(--muted); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+  .cat-bar-track { flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+  .cat-bar-fill  { height: 100%; border-radius: 3px; background: var(--accent); transition: width .4s; }
+  .cat-bar-count { width: 30px; text-align: right; color: var(--muted); }
+  /* Event feed */
+  .event-row {
+    display: flex; gap: 8px; padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 11px;
+    align-items: flex-start;
+  }
+  .event-row:last-child { border-bottom: none; }
+  .event-ts   { color: var(--muted); white-space: nowrap; flex-shrink: 0; width: 50px; font-size: 10px; margin-top: 1px; }
+  .event-loc  { color: var(--blue); flex-shrink: 0; width: 70px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .event-text { flex: 1; color: var(--text); line-height: 1.4; }
+  /* Insight pills */
+  .insight-row { display: flex; gap: 7px; align-items: flex-start; padding: 4px 0; font-size: 11px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .insight-row:last-child { border-bottom: none; }
+  .insight-sev { flex-shrink: 0; padding: 1px 7px; border-radius: 10px; font-size: 9px; font-weight: 700; text-transform: uppercase; }
+  .sev-high   { background: rgba(239,68,68,.15); color: var(--red); }
+  .sev-medium { background: rgba(234,179,8,.15); color: var(--yellow); }
+  .sev-low    { background: rgba(34,197,94,.1); color: var(--green); }
+  .sev-info   { background: rgba(59,130,246,.1); color: var(--blue); }
+  /* System meters */
+  .meter-row { display: flex; justify-content: space-between; align-items: center; margin: 5px 0; font-size: 11px; }
+  .meter-label { color: var(--muted); }
+  .meter-bar { width: 100px; height: 5px; background: var(--surface2); border-radius: 3px; overflow: hidden; display: inline-block; vertical-align: middle; margin: 0 6px; }
+  .meter-fill { height: 100%; border-radius: 3px; background: var(--green); }
+  .meter-fill.warn { background: var(--yellow); }
+  .meter-fill.crit { background: var(--red); }
+  .model-chip { display: flex; justify-content: space-between; font-size: 11px; padding: 3px 0; }
+  .model-chip-name { color: var(--text); }
+  .model-chip-size { color: var(--muted); }
+  .water-latest { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .water-muted  { font-size: 11px; color: var(--muted); }
+
   /* ── Modal ── */
   .modal-overlay {
     display: none; position: fixed; inset: 0;
@@ -636,6 +708,46 @@
   </div>
   <div id="cam-grid-container">
     <div class="empty-msg">Checking local network…</div>
+  </div>
+</div>
+
+
+<!-- ══ Intelligence ══════════════════════════════════════════════════════════ -->
+<div class="intel-section" id="intel-section">
+  <div class="intel-section-title">🧠 Home Intelligence <span id="intel-status" style="font-size:10px;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0">(local network only)</span></div>
+  <div class="intel-grid" id="intel-grid">
+    <div class="intel-card" id="card-daemons">
+      <div class="intel-card-title">System Daemons</div>
+      <div class="daemon-grid" id="daemon-grid"><span style="color:var(--muted);font-size:11px">Checking…</span></div>
+    </div>
+    <div class="intel-card" id="card-system">
+      <div class="intel-card-title">Mac Resources</div>
+      <div id="system-meters"><span style="color:var(--muted);font-size:11px">—</span></div>
+    </div>
+    <div class="intel-card" id="card-audio-cats">
+      <div class="intel-card-title">Audio Categories (4h)</div>
+      <div id="audio-cats"></div>
+    </div>
+    <div class="intel-card" id="card-audio-events">
+      <div class="intel-card-title">Recent Audio Events</div>
+      <div id="audio-events"></div>
+    </div>
+    <div class="intel-card" id="card-insights">
+      <div class="intel-card-title">Active Insights</div>
+      <div id="insights-list"></div>
+    </div>
+    <div class="intel-card" id="card-vision">
+      <div class="intel-card-title">Recent Camera Events</div>
+      <div id="vision-events"></div>
+    </div>
+    <div class="intel-card" id="card-water">
+      <div class="intel-card-title">💧 Water</div>
+      <div id="water-status"></div>
+    </div>
+    <div class="intel-card" id="card-models">
+      <div class="intel-card-title">Ollama Models</div>
+      <div id="models-list"><span style="color:var(--muted);font-size:11px">—</span></div>
+    </div>
   </div>
 </div>
 
@@ -1241,6 +1353,156 @@ function renderCameras() {
 }
 
 // ── Main load ─────────────────────────────────────────────────────────────
+
+// ── Intelligence panel ────────────────────────────────────────────────────
+const METRICS_URL = 'http://eucamacmini.local:7825/metrics';
+let metricsLoaded = false;
+
+const CAT_COLORS = {
+  bark:'#f97316', alarm:'#ef4444', scream:'#ef4444', glass_break:'#ef4444',
+  speech:'#3b82f6', doorbell:'#a855f7', impact:'#eab308',
+  music:'#22c55e', tv:'#14b8a6', unknown:'#6b7280',
+};
+
+function relT(tsStr) {
+  if (!tsStr) return '—';
+  const d = new Date(tsStr.replace(' ','T'));
+  const s = (Date.now() - d.getTime()) / 1000;
+  if (s < 60)   return `${Math.round(s)}s`;
+  if (s < 3600) return `${Math.round(s/60)}m`;
+  return `${Math.round(s/3600)}h`;
+}
+
+function renderDaemons(list) {
+  if (!list || list[0]?.error) {
+    document.getElementById('daemon-grid').innerHTML = '<span style="color:var(--red);font-size:11px">Error loading</span>';
+    return;
+  }
+  const always = list.filter(d => d.kind === 'always_on');
+  const periodic = list.filter(d => d.kind === 'periodic');
+  let html = '';
+  for (const d of always) {
+    const label = d.name.replace('home.','').replace('homebrew.mxcl.','');
+    const cls = d.ok ? 'dot-ok' : 'dot-err';
+    html += `<div class="daemon-chip"><div class="dot ${cls}"></div><span>${label}</span></div>`;
+  }
+  html += '<div style="width:100%;height:1px;background:var(--border);margin:4px 0"></div>';
+  for (const d of periodic) {
+    const label = d.name.replace('home.','');
+    const cls = d.ok ? 'dot-warn' : 'dot-err';
+    html += `<div class="daemon-chip"><div class="dot ${cls}"></div><span>${label}</span></div>`;
+  }
+  document.getElementById('daemon-grid').innerHTML = html;
+}
+
+function renderSystemMeters(sys, ollama) {
+  if (!sys) return;
+  const memPct = sys.mem_pct || 0;
+  const memCls = memPct > 90 ? 'crit' : memPct > 75 ? 'warn' : '';
+  let html = `
+    <div class="meter-row"><span class="meter-label">Memory</span>
+      <span class="meter-bar"><span class="meter-fill ${memCls}" style="width:${memPct}%"></span></span>
+      <span>${sys.mem_used_gb}/${sys.mem_total_gb} GB</span>
+    </div>
+    <div class="meter-row"><span class="meter-label">Wired</span>
+      <span class="meter-bar"><span class="meter-fill" style="width:${sys.mem_wired_gb/sys.mem_total_gb*100}%;background:var(--purple)"></span></span>
+      <span>${sys.mem_wired_gb} GB</span>
+    </div>
+    <div class="meter-row"><span class="meter-label">CPU</span>
+      <span class="meter-bar"><span class="meter-fill ${sys.cpu_pct>80?'crit':sys.cpu_pct>50?'warn':''}" style="width:${sys.cpu_pct}%"></span></span>
+      <span>${sys.cpu_pct}%</span>
+    </div>`;
+  document.getElementById('system-meters').innerHTML = html;
+}
+
+function renderAudioCats(cats) {
+  if (!cats || !cats.length) { document.getElementById('audio-cats').innerHTML = '<span style="color:var(--muted);font-size:11px">No data</span>'; return; }
+  const max = cats[0].count || 1;
+  const html = cats.slice(0,8).map(c =>
+    `<div class="cat-bar-row">
+       <span class="cat-bar-label">${c.cat}</span>
+       <div class="cat-bar-track"><div class="cat-bar-fill" style="width:${c.count/max*100}%;background:${CAT_COLORS[c.cat]||'var(--accent)'}"></div></div>
+       <span class="cat-bar-count">${c.count}</span>
+     </div>`
+  ).join('');
+  document.getElementById('audio-cats').innerHTML = html;
+}
+
+function renderAudioEvents(events) {
+  if (!events || !events.length) { document.getElementById('audio-events').innerHTML = '<span style="color:var(--muted);font-size:11px">None recent</span>'; return; }
+  document.getElementById('audio-events').innerHTML = events.map(e =>
+    `<div class="event-row">
+       <span class="event-ts">${relT(e.ts)}</span>
+       <span class="event-loc">${e.loc||'?'}</span>
+       <span class="event-text">${e.summary}</span>
+     </div>`
+  ).join('');
+}
+
+function renderInsights(list) {
+  if (!list || !list.length) { document.getElementById('insights-list').innerHTML = '<span style="color:var(--muted);font-size:11px">All clear</span>'; return; }
+  document.getElementById('insights-list').innerHTML = list.map(i =>
+    `<div class="insight-row">
+       <span class="insight-sev sev-${(i.severity||'info').toLowerCase()}">${i.severity||'info'}</span>
+       <span style="flex:1;font-size:11px">${i.summary}</span>
+       <span style="color:var(--muted);font-size:10px;white-space:nowrap">${relT(i.ts)}</span>
+     </div>`
+  ).join('');
+}
+
+function renderVisionEvents(list) {
+  if (!list || !list.length) { document.getElementById('vision-events').innerHTML = '<span style="color:var(--muted);font-size:11px">None recent</span>'; return; }
+  document.getElementById('vision-events').innerHTML = list.slice(0,8).map(e =>
+    `<div class="event-row">
+       <span class="event-ts">${relT(e.ts)}</span>
+       <span class="event-loc">${e.loc||'?'}</span>
+       <span class="event-text">${e.summary}</span>
+     </div>`
+  ).join('');
+}
+
+function renderWater(list) {
+  if (!list || !list.length) { document.getElementById('water-status').innerHTML = '<span style="color:var(--muted);font-size:11px">No data</span>'; return; }
+  const latest = list[0];
+  const gpm = latest.gpm || 0;
+  const gpmColor = gpm > 5 ? 'var(--red)' : gpm > 0.5 ? 'var(--blue)' : 'var(--green)';
+  document.getElementById('water-status').innerHTML =
+    `<div class="water-latest" style="color:${gpmColor}">${gpm.toFixed(2)} gal/min</div>
+     <div class="water-muted">${latest.summary}</div>
+     <div class="water-muted" style="margin-top:6px">${list.slice(1,4).map(e=>`${relT(e.ts)} — ${e.gpm.toFixed(2)} gpm`).join('<br>')}</div>`;
+}
+
+function renderModels(list) {
+  if (!list || !list.length) { document.getElementById('models-list').innerHTML = '<span style="color:var(--muted);font-size:11px">None loaded</span>'; return; }
+  document.getElementById('models-list').innerHTML = list.map(m =>
+    `<div class="model-chip"><span class="model-chip-name">${m.name}</span><span class="model-chip-size">${(m.size_mb/1024).toFixed(1)} GB</span></div>`
+  ).join('');
+}
+
+async function loadIntelligence() {
+  if (!isLocalNetwork) return;
+  try {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 3000);
+    const r = await fetch(METRICS_URL, { signal: ctrl.signal });
+    if (!r.ok) return;
+    const m = await r.json();
+    metricsLoaded = true;
+    document.getElementById('intel-status').textContent = `(live · ${new Date(m.ts*1000).toLocaleTimeString()})`;
+    renderDaemons(m.daemons);
+    renderSystemMeters(m.system);
+    renderAudioCats(m.audio?.categories);
+    renderAudioEvents(m.audio?.recent);
+    renderInsights(m.insights);
+    renderVisionEvents(m.vision);
+    renderWater(m.water);
+    renderModels(m.ollama);
+  } catch (e) {
+    if (!metricsLoaded)
+      document.getElementById('intel-status').textContent = '(not reachable on this network)';
+  }
+}
+
 async function loadDashboard() {
   const dot     = document.getElementById('status-dot');
   const updText = document.getElementById('updated-text');
@@ -1268,6 +1530,7 @@ async function loadDashboard() {
     renderPGE(D.pge || {});
     renderProjects(D);
     if (isLocalNetwork) renderCameras();
+    loadIntelligence();
 
   } catch (err) {
     dot.className = 'status-dot error';
@@ -1287,6 +1550,9 @@ setInterval(loadDashboard, 60000);
 setInterval(loadWeather, 600000); // weather every 10 min
 // Re-check cameras and reload images every 60s if local
 setInterval(() => { if (isLocalNetwork && D) renderCameras(); }, 60000);
+
+// Refresh intelligence metrics every 30s
+setInterval(loadIntelligence, 30000);
 
 // Keyboard close modal
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
