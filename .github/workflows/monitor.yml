@@ -48,6 +48,7 @@ jobs:
           EOF
 
       - name: Poll Nest & save to Supabase
+        continue-on-error: true
         run: python3 scripts/nest_monitor.py
 
       - name: Regenerate dashboard_data.json
