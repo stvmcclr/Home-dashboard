@@ -953,6 +953,66 @@ function formatLocation(loc) {
   return loc.replace(/_/g,' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
+function renderLiveFeed(m) {
+  // Build unified activity feed from live metrics
+  const wrap   = document.getElementById('feed-wrap');
+  const countEl = document.getElementById('feed-count');
+  const items  = [];
+
+  // Insights (high priority)
+  (m.insights || []).forEach(i => items.push({
+    ts: i.ts, type: 'insight', icon: '💡',
+    loc: '', summary: i.summary,
+    badge: i.severity || 'medium', badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
+  }));
+
+  // Vision events
+  (Array.isArray(m.vision) ? m.vision : []).forEach(v => items.push({
+    ts: v.ts, type: 'camera', icon: '🎥',
+    loc: v.loc || v.source || '', summary: v.summary,
+    badge: 'camera', badgeColor: 'var(--blue)'
+  }));
+
+  // Audio events
+  ((m.audio || {}).recent || []).forEach(a => items.push({
+    ts: a.ts, type: 'audio', icon: '🔊',
+    loc: a.loc || '', summary: a.summary,
+    badge: a.conf ? (a.conf * 100).toFixed(0) + '%' : '', badgeColor: 'var(--purple)'
+  }));
+
+  // Water
+  const w = m.water || {};
+  if (w.flow_gpm > 0) items.push({
+    ts: w.ts || new Date().toISOString(), type: 'water', icon: '💧',
+    loc: 'Flume', summary: `${w.flow_gpm} gpm · ${w.daily_gallons || '?'} gal today`,
+    badge: 'water', badgeColor: 'var(--blue)'
+  });
+
+  // Sort newest first
+  items.sort((a, b) => new Date(b.ts) - new Date(a.ts));
+
+  if (!items.length) {
+    wrap.innerHTML = '<div class="feed-empty">No recent activity</div>';
+    countEl.textContent = '0';
+    return;
+  }
+
+  wrap.innerHTML = items.slice(0, 40).map(it => `
+    <div class="feed-item">
+      <div class="feed-icon">${it.icon}</div>
+      <div class="feed-body">
+        <div class="feed-meta">
+          <span class="feed-time">${fmt.relTime(it.ts)}</span>
+          ${it.loc ? `<span class="feed-loc">${esc(it.loc)}</span>` : ''}
+          ${it.badge ? `<span class="feed-loc" style="background:rgba(0,0,0,0.2);color:${it.badgeColor}">${esc(it.badge)}</span>` : ''}
+        </div>
+        <div class="feed-summary">${esc(it.summary)}</div>
+      </div>
+    </div>`).join('');
+
+  countEl.textContent = items.length;
+}
+
 function renderFeed(data) {
   const wrap     = document.getElementById('feed-wrap');
   const insights = data.intelligence?.insights  || [];
@@ -1497,6 +1557,7 @@ async function loadIntelligence() {
     renderVisionEvents(m.vision);
     renderWater(m.water);
     renderModels(m.ollama);
+    renderLiveFeed(m);
   } catch (e) {
     if (!metricsLoaded)
       document.getElementById('intel-status').textContent = '(not reachable on this network)';
@@ -1551,8 +1612,8 @@ setInterval(loadWeather, 600000); // weather every 10 min
 // Re-check cameras and reload images every 60s if local
 setInterval(() => { if (isLocalNetwork && D) renderCameras(); }, 60000);
 
-// Refresh intelligence metrics every 30s
-setInterval(loadIntelligence, 30000);
+// Refresh intelligence metrics every 15s
+setInterval(loadIntelligence, 15000);
 
 // Keyboard close modal
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
