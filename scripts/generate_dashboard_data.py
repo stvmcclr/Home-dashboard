@@ -168,11 +168,11 @@ def build_data():
     # ── Home Intelligence ──────────────────────────────────────────────────
     intelligence = {"observations": [], "insights": [], "state": {}}
     try:
-        # Last 20 observations
+        # Last 60 observations
         obs_rows = sb.select(
             "home_observations",
             order="timestamp.desc",
-            limit=20
+            limit=60
         )
         intelligence["observations"] = obs_rows
 
@@ -200,6 +200,27 @@ def build_data():
                         state[key] = json.loads(state[key])
                     except Exception:
                         pass
+            # If who_is_home is empty, derive from recent obs entities
+            if not state.get("who_is_home"):
+                try:
+                    import sqlite3, time as _t2
+                    _db2 = os.path.expanduser("~/.openclaw/home_intelligence.db")
+                    if os.path.exists(_db2):
+                        _c = sqlite3.connect(_db2)
+                        _rows = _c.execute("""
+                            SELECT DISTINCT oe.entity_name
+                            FROM observation_entities oe
+                            JOIN observations o ON o.id = oe.observation_id
+                            WHERE oe.entity_type = 'person'
+                              AND o.timestamp > ?
+                            ORDER BY oe.entity_name
+                        """, (int(_t2.time()) - 7200,)).fetchall()
+                        _c.close()
+                        _names = [r[0] for r in _rows if r[0] and r[0].lower() not in ('unknown','none','')]
+                        if _names:
+                            state["who_is_home"] = _names
+                except Exception:
+                    pass
             intelligence["state"] = state
     except Exception as e:
         # Supabase tables missing or unreachable — fall back to local SQLite
@@ -214,7 +235,7 @@ def build_data():
                 _obs = _db.execute("""
                     SELECT id, datetime(timestamp,'unixepoch','localtime') as timestamp,
                            source, source_type, location, summary, confidence, model_version
-                    FROM observations ORDER BY timestamp DESC LIMIT 20
+                    FROM observations ORDER BY timestamp DESC LIMIT 60
                 """).fetchall()
                 intelligence["observations"] = [dict(r) for r in _obs]
                 # Open insights
@@ -225,18 +246,71 @@ def build_data():
                     ORDER BY timestamp DESC LIMIT 10
                 """).fetchall()
                 intelligence["insights"] = [dict(r) for r in _ins]
-                # Home state
-                _cutoff = int(_time.time()) - 1800
-                _who = _db.execute(
-                    "SELECT summary FROM observations WHERE source='unifi:presence' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
-                    (_cutoff,)).fetchone()
-                _lights = _db.execute(
+                # Home state — build rich arrays the dashboard expects
+                _cutoff_30 = int(_time.time()) - 1800   # 30 min
+                _cutoff_2h = int(_time.time()) - 7200   # 2 hours
+
+                # Who's home: person entities spotted by cameras in last 2h
+                _person_rows = _db.execute("""
+                    SELECT DISTINCT oe.entity_name
+                    FROM observation_entities oe
+                    JOIN observations o ON o.id = oe.observation_id
+                    WHERE oe.entity_type = 'person'
+                      AND o.timestamp > ?
+                    ORDER BY oe.entity_name
+                """, (_cutoff_2h,)).fetchall()
+                _who_list = [
+                    r[0] for r in _person_rows
+                    if r[0] and r[0].lower() not in ('unknown', 'none', '')
+                ]
+                # Fallback: check device count from presence
+                if not _who_list:
+                    _pres = _db.execute(
+                        "SELECT summary FROM observations WHERE source='unifi:presence' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
+                        (_cutoff_30,)).fetchone()
+                    if _pres and _pres[0]:
+                        import re as _re
+                        m = _re.search(r'(\d+) mobile', _pres[0])
+                        if m and int(m.group(1)) > 0:
+                            _who_list = [f"{m.group(1)} devices"]
+
+                # Lights on: parse "Lights on: room1, room2" → list
+                _lights_row = _db.execute(
                     "SELECT summary FROM observations WHERE source='ha:lights' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
-                    (_cutoff,)).fetchone()
+                    (_cutoff_30,)).fetchone()
+                _lights_list = []
+                if _lights_row and _lights_row[0]:
+                    txt = _lights_row[0]
+                    if 'Lights on:' in txt:
+                        lights_part = txt.split('Lights on:')[1].strip()
+                        _lights_list = [l.strip().replace('_', ' ') for l in lights_part.split(',') if l.strip()]
+
+                # Active rooms: locations with cam/audio obs in last 30 min
+                _room_rows = _db.execute("""
+                    SELECT DISTINCT location FROM observations
+                    WHERE timestamp > ?
+                      AND location NOT IN ('home', 'unknown', '')
+                      AND source NOT IN ('unifi:presence', 'ha:lights', 'ha:audio', 'flume')
+                    ORDER BY location
+                """, (_cutoff_30,)).fetchall()
+                _active_rooms = [r[0] for r in _room_rows if r[0]]
+
+                # Music playing
+                _music_row = _db.execute(
+                    "SELECT summary FROM observations WHERE source='ha:audio' AND timestamp>? ORDER BY timestamp DESC LIMIT 1",
+                    (_cutoff_30,)).fetchone()
+                _music_list = []
+                if _music_row and _music_row[0]:
+                    _mtxt = _music_row[0].lower()
+                    if any(w in _mtxt for w in ['playing', 'music', 'song', 'track']):
+                        _music_list = ['playing']
+
                 intelligence["state"] = {
                     "source": "sqlite_fallback",
-                    "who_is_home": (_who["summary"] if _who else ""),
-                    "lights_on": (_lights["summary"] if _lights else ""),
+                    "who_is_home":  _who_list,
+                    "lights_on":    _lights_list,
+                    "active_rooms": _active_rooms,
+                    "music_playing": _music_list,
                     "last_updated": datetime.now(timezone.utc).isoformat(),
                 }
                 _db.close()

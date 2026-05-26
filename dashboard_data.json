@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26 22:52:55",
+  "generated_at": "2026-05-26 16:15:38",
   "as_of": "2026-05-26",
   "projects": [
     {
@@ -1441,19 +1441,19 @@
   "intelligence": {
     "observations": [
       {
-        "id": 80435,
-        "timestamp": "2026-05-26T22:50:55+00:00",
+        "id": 80573,
+        "timestamp": "2026-05-26T23:13:47+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 80434,
-        "timestamp": "2026-05-26T22:50:52+00:00",
+        "id": 80572,
+        "timestamp": "2026-05-26T23:13:38+00:00",
         "source": "living_room",
         "source_type": "audio",
         "location": "living_room",
@@ -1463,19 +1463,129 @@
         "entities": "[]"
       },
       {
-        "id": 80433,
-        "timestamp": "2026-05-26T22:50:43+00:00",
-        "source": "entryway",
+        "id": 80571,
+        "timestamp": "2026-05-26T23:13:16+00:00",
+        "source": "backyard",
         "source_type": "audio",
-        "location": "entryway",
-        "summary": "dog barking at entryway",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80570,
+        "timestamp": "2026-05-26T23:13:07+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80569,
+        "timestamp": "2026-05-26T23:12:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80568,
+        "timestamp": "2026-05-26T23:12:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "dog barking at living_room",
         "confidence": 0.72,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 80432,
-        "timestamp": "2026-05-26T22:50:40+00:00",
+        "id": 80567,
+        "timestamp": "2026-05-26T23:12:36+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve walks through the living room while Miller and Penelope relax on the couch. A dog is active and moving near Miller as the family spends time in the common area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 80564,
+        "timestamp": "2026-05-26T23:12:34+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: playroom",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 80565,
+        "timestamp": "2026-05-26T23:12:34+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Audio paused in 8 rooms",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 80566,
+        "timestamp": "2026-05-26T23:12:34+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 328.2 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 80563,
+        "timestamp": "2026-05-26T23:12:31+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80562,
+        "timestamp": "2026-05-26T23:12:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80561,
+        "timestamp": "2026-05-26T23:12:06+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "music playing at living_room",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80560,
+        "timestamp": "2026-05-26T23:11:47+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
@@ -1485,140 +1595,8 @@
         "entities": "[]"
       },
       {
-        "id": 80431,
-        "timestamp": "2026-05-26T22:50:37+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is empty of people and animals. A dark green pickup truck and a black SUV are parked on the street, and an unknown dark car is parked in the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 80430,
-        "timestamp": "2026-05-26T22:50:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80429,
-        "timestamp": "2026-05-26T22:50:21+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "TV/media audio at living_room",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80428,
-        "timestamp": "2026-05-26T22:50:06+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "speech detected at dog_run",
-        "confidence": 0.75,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80427,
-        "timestamp": "2026-05-26T22:49:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80426,
-        "timestamp": "2026-05-26T22:49:50+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "TV/media audio at living_room",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80425,
-        "timestamp": "2026-05-26T22:49:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80424,
-        "timestamp": "2026-05-26T22:49:19+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "TV/media audio at living_room",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80423,
-        "timestamp": "2026-05-26T22:48:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80422,
-        "timestamp": "2026-05-26T22:48:53+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80421,
-        "timestamp": "2026-05-26T22:48:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "music playing at living_room",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80420,
-        "timestamp": "2026-05-26T22:48:40+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "alarm/siren sound at dog_run",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 80419,
-        "timestamp": "2026-05-26T22:48:23+00:00",
+        "id": 80559,
+        "timestamp": "2026-05-26T23:11:45+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
@@ -1628,19 +1606,41 @@
         "entities": "[]"
       },
       {
-        "id": 80418,
-        "timestamp": "2026-05-26T22:48:17+00:00",
+        "id": 80558,
+        "timestamp": "2026-05-26T23:11:43+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently failing to provide a video feed, displaying an error message instead. No visual information is available to monitor the driveway, street, or yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 80557,
+        "timestamp": "2026-05-26T23:11:35+00:00",
         "source": "living_room",
         "source_type": "audio",
         "location": "living_room",
-        "summary": "music playing at living_room",
-        "confidence": 0.7,
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 80417,
-        "timestamp": "2026-05-26T22:47:52+00:00",
+        "id": 80556,
+        "timestamp": "2026-05-26T23:11:16+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80555,
+        "timestamp": "2026-05-26T23:11:14+00:00",
         "source": "backyard",
         "source_type": "audio",
         "location": "backyard",
@@ -1650,18 +1650,522 @@
         "entities": "[]"
       },
       {
-        "id": 80416,
-        "timestamp": "2026-05-26T22:47:49+00:00",
+        "id": 80554,
+        "timestamp": "2026-05-26T23:11:04+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80553,
+        "timestamp": "2026-05-26T23:10:59+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80552,
+        "timestamp": "2026-05-26T23:10:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80551,
+        "timestamp": "2026-05-26T23:10:38+00:00",
         "source": "dog_run",
         "source_type": "audio",
         "location": "dog_run",
-        "summary": "alarm/siren sound at dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80550,
+        "timestamp": "2026-05-26T23:10:33+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80549,
+        "timestamp": "2026-05-26T23:10:17+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Miller is sitting on the couch in the living room, seemingly watching TV. An impact or movement sound has been detected in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 80548,
+        "timestamp": "2026-05-26T23:10:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
         "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80547,
+        "timestamp": "2026-05-26T23:10:01+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80546,
+        "timestamp": "2026-05-26T23:09:54+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80545,
+        "timestamp": "2026-05-26T23:09:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80544,
+        "timestamp": "2026-05-26T23:09:31+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "music playing at living_room",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80543,
+        "timestamp": "2026-05-26T23:09:22+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80542,
+        "timestamp": "2026-05-26T23:09:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80541,
+        "timestamp": "2026-05-26T23:09:00+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "music playing at living_room",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80540,
+        "timestamp": "2026-05-26T23:08:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 80539,
+        "timestamp": "2026-05-26T23:08:44+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80538,
+        "timestamp": "2026-05-26T23:08:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80537,
+        "timestamp": "2026-05-26T23:08:29+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80536,
+        "timestamp": "2026-05-26T23:08:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80535,
+        "timestamp": "2026-05-26T23:07:58+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80534,
+        "timestamp": "2026-05-26T23:07:53+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80533,
+        "timestamp": "2026-05-26T23:07:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80532,
+        "timestamp": "2026-05-26T23:07:27+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80531,
+        "timestamp": "2026-05-26T23:07:19+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80530,
+        "timestamp": "2026-05-26T23:07:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80529,
+        "timestamp": "2026-05-26T23:06:56+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80528,
+        "timestamp": "2026-05-26T23:06:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80527,
+        "timestamp": "2026-05-26T23:06:39+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80526,
+        "timestamp": "2026-05-26T23:06:25+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80525,
+        "timestamp": "2026-05-26T23:06:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80524,
+        "timestamp": "2026-05-26T23:06:06+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80523,
+        "timestamp": "2026-05-26T23:05:54+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty, with a single tennis ball resting on the artificial grass. No dogs or people are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 80522,
+        "timestamp": "2026-05-26T23:05:52+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80521,
+        "timestamp": "2026-05-26T23:05:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80520,
+        "timestamp": "2026-05-26T23:05:32+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80519,
+        "timestamp": "2026-05-26T23:05:21+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80518,
+        "timestamp": "2026-05-26T23:05:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80517,
+        "timestamp": "2026-05-26T23:05:03+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80516,
+        "timestamp": "2026-05-26T23:04:50+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "TV/media audio at living_room",
+        "confidence": 0.62,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80515,
+        "timestamp": "2026-05-26T23:04:50+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 80514,
+        "timestamp": "2026-05-26T23:04:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 3858,
+        "timestamp": "2026-05-26T23:10:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Impact/movement sound detected in the backyard",
+        "acted_on_at": null
+      },
+      {
+        "id": 3857,
+        "timestamp": "2026-05-26T23:05:39+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "Despite the family being present (16:01 presence signal) and the visual scenes appearing calm, there is a persistent and escalating pattern of alarm/siren and impact sounds detected in the backyard and living room (15:13, 15:16, 15:37, 15:43, 16:02, 16:03). This recurring audio anomaly, coupled with the non-functional front door camera, suggests a potential technical malfunction, a persistent external disturbance, or an unseen security issue that requires immediate investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3856,
+        "timestamp": "2026-05-26T23:04:21+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Impact sounds detected in the backyard may indicate an issue or intruder, despite the calm appearance in the living room.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3854,
+        "timestamp": "2026-05-26T23:04:10+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekday 16:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 3855,
+        "timestamp": "2026-05-26T23:04:10+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: living_room averaging 48 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3853,
+        "timestamp": "2026-05-26T23:01:08+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is down, and an alarm/siren is sounding in the backyard.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3852,
+        "timestamp": "2026-05-26T22:59:35+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Alarm and impact sounds detected in the backyard, which may indicate a security issue or accident.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3851,
+        "timestamp": "2026-05-26T22:53:03+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Alarm and impact sounds detected in the backyard.",
+        "acted_on_at": null
+      },
       {
         "id": 3850,
         "timestamp": "2026-05-26T22:50:37+00:00",
@@ -1677,75 +2181,16 @@
         "severity": "high",
         "summary": "[living_room] Alarm and impact sounds detected in the backyard, suggesting a potential security issue or accident outside.",
         "acted_on_at": null
-      },
-      {
-        "id": 3848,
-        "timestamp": "2026-05-26T22:46:09+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Alarm and impact sounds are being detected in the backyard, though the people in the living room appear undisturbed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3847,
-        "timestamp": "2026-05-26T22:43:12+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] An alarm/siren and impact noises are detected in the backyard, suggesting a potential security incident or emergency.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3846,
-        "timestamp": "2026-05-26T22:39:13+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] Audio sensors are detecting movement and alarms in the backyard, but no visual activity is present on camera.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3845,
-        "timestamp": "2026-05-26T22:37:38+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] An alarm/siren sound and impact noises are being detected in the backyard, which contradicts the calm visual scene in the living room.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3844,
-        "timestamp": "2026-05-26T22:18:44+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] An alarm/siren sound and impact/movement sounds were detected in the living room and backyard area.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3843,
-        "timestamp": "2026-05-26T22:16:23+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] An alarm/siren sound is being detected in the backyard, but no movement or people are visible.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3842,
-        "timestamp": "2026-05-26T22:13:58+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] An alarm is sounding in the backyard while the front door camera is non-functional, making it impossible to visually assess the situation.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3841,
-        "timestamp": "2026-05-26T22:04:10+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a persistent and escalating pattern of alarms/sirens detected in the backyard/side passage, coupled with extreme dog agitation and the presence of an unknown dark green pickup truck. This suggests an unresolved security issue or a persistent external stimulus (like a faulty alarm or trespasser) that is causing significant distress to the dogs, despite the family being indoors or the area being visually empty.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Miller",
+        "Penelope",
+        "Roxanne",
+        "Steve"
+      ],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -1760,434 +2205,287 @@
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-26T22:39:12+00:00",
-        "dog_run": "2026-05-26T22:44:07+00:00",
-        "entryway": "2026-05-26T22:33:47+00:00",
-        "front_door": "2026-05-26T22:35:31+00:00",
-        "front_yard": "2026-05-26T22:50:37+00:00",
-        "living_room": "2026-05-26T22:47:47+00:00",
+        "backyard": "2026-05-26T23:02:42+00:00",
+        "dog_run": "2026-05-26T23:05:54+00:00",
+        "entryway": "2026-05-26T22:58:04+00:00",
+        "front_door": "2026-05-26T23:01:08+00:00",
+        "front_yard": "2026-05-26T23:11:43+00:00",
+        "living_room": "2026-05-26T23:12:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-26T22:51:10.474447+00:00"
+      "last_updated": "2026-05-26T23:13:48.462947+00:00"
     }
   },
   "pge": {
     "hourly": [
       {
-        "ts": "2026-05-10T00:00",
-        "kwh": 1.655
+        "ts": "2026-05-22T17:00",
+        "kwh": 1.395
       },
       {
-        "ts": "2026-05-10T01:00",
-        "kwh": 1.054
+        "ts": "2026-05-22T18:00",
+        "kwh": 1.481
       },
       {
-        "ts": "2026-05-10T02:00",
-        "kwh": 1.002
+        "ts": "2026-05-22T19:00",
+        "kwh": 1.393
       },
       {
-        "ts": "2026-05-10T03:00",
-        "kwh": 1.025
+        "ts": "2026-05-22T20:00",
+        "kwh": 3.55
       },
       {
-        "ts": "2026-05-10T04:00",
-        "kwh": 0.975
+        "ts": "2026-05-22T21:00",
+        "kwh": 3.607
       },
       {
-        "ts": "2026-05-10T05:00",
-        "kwh": 1.111
+        "ts": "2026-05-22T22:00",
+        "kwh": 2.957
       },
       {
-        "ts": "2026-05-10T06:00",
-        "kwh": 1.178
+        "ts": "2026-05-22T23:00",
+        "kwh": 1.966
       },
       {
-        "ts": "2026-05-10T07:00",
-        "kwh": 1.257
+        "ts": "2026-05-23T00:00",
+        "kwh": 2.079
       },
       {
-        "ts": "2026-05-10T08:00",
-        "kwh": 1.347
+        "ts": "2026-05-23T01:00",
+        "kwh": 1.762
       },
       {
-        "ts": "2026-05-10T09:00",
-        "kwh": 1.712
+        "ts": "2026-05-23T02:00",
+        "kwh": 1.703
       },
       {
-        "ts": "2026-05-10T10:00",
-        "kwh": 2.537
+        "ts": "2026-05-23T03:00",
+        "kwh": 0.998
       },
       {
-        "ts": "2026-05-10T11:00",
-        "kwh": 2.191
+        "ts": "2026-05-23T04:00",
+        "kwh": 1.353
       },
       {
-        "ts": "2026-05-10T12:00",
-        "kwh": 1.351
+        "ts": "2026-05-23T05:00",
+        "kwh": 0.865
       },
       {
-        "ts": "2026-05-10T13:00",
+        "ts": "2026-05-23T06:00",
+        "kwh": 1.875
+      },
+      {
+        "ts": "2026-05-23T07:00",
+        "kwh": 1.832
+      },
+      {
+        "ts": "2026-05-23T08:00",
+        "kwh": 1.55
+      },
+      {
+        "ts": "2026-05-23T09:00",
+        "kwh": 1.261
+      },
+      {
+        "ts": "2026-05-23T10:00",
+        "kwh": 1.211
+      },
+      {
+        "ts": "2026-05-23T11:00",
+        "kwh": 1.38
+      },
+      {
+        "ts": "2026-05-23T12:00",
+        "kwh": 1.269
+      },
+      {
+        "ts": "2026-05-23T13:00",
         "kwh": 1.344
       },
       {
-        "ts": "2026-05-10T14:00",
-        "kwh": 1.758
+        "ts": "2026-05-23T14:00",
+        "kwh": 1.504
       },
       {
-        "ts": "2026-05-10T15:00",
-        "kwh": 1.467
-      },
-      {
-        "ts": "2026-05-10T16:00",
+        "ts": "2026-05-23T15:00",
         "kwh": 1.289
       },
       {
-        "ts": "2026-05-10T17:00",
-        "kwh": 1.194
+        "ts": "2026-05-23T16:00",
+        "kwh": 1.407
       },
       {
-        "ts": "2026-05-10T18:00",
-        "kwh": 1.178
+        "ts": "2026-05-23T17:00",
+        "kwh": 1.335
       },
       {
-        "ts": "2026-05-10T19:00",
-        "kwh": 1.115
+        "ts": "2026-05-23T18:00",
+        "kwh": 1.374
       },
       {
-        "ts": "2026-05-10T20:00",
-        "kwh": 2.634
+        "ts": "2026-05-23T19:00",
+        "kwh": 1.203
       },
       {
-        "ts": "2026-05-10T21:00",
-        "kwh": 3.568
+        "ts": "2026-05-23T20:00",
+        "kwh": 1.255
       },
       {
-        "ts": "2026-05-10T22:00",
-        "kwh": 2.67
+        "ts": "2026-05-23T21:00",
+        "kwh": 3.466
       },
       {
-        "ts": "2026-05-10T23:00",
-        "kwh": 1.629
+        "ts": "2026-05-23T22:00",
+        "kwh": 5.612
       },
       {
-        "ts": "2026-05-11T00:00",
-        "kwh": 1.502
+        "ts": "2026-05-23T23:00",
+        "kwh": 2.415
       },
       {
-        "ts": "2026-05-11T01:00",
-        "kwh": 1.219
+        "ts": "2026-05-24T00:00",
+        "kwh": 2.137
       },
       {
-        "ts": "2026-05-11T02:00",
-        "kwh": 1.332
+        "ts": "2026-05-24T01:00",
+        "kwh": 1.96
       },
       {
-        "ts": "2026-05-11T03:00",
-        "kwh": 1.057
+        "ts": "2026-05-24T02:00",
+        "kwh": 1.582
       },
       {
-        "ts": "2026-05-11T04:00",
-        "kwh": 1.484
+        "ts": "2026-05-24T03:00",
+        "kwh": 1.2
       },
       {
-        "ts": "2026-05-11T05:00",
-        "kwh": 0.974
+        "ts": "2026-05-24T04:00",
+        "kwh": 1.433
       },
       {
-        "ts": "2026-05-11T06:00",
-        "kwh": 1.436
+        "ts": "2026-05-24T05:00",
+        "kwh": 0.956
       },
       {
-        "ts": "2026-05-11T07:00",
+        "ts": "2026-05-24T06:00",
+        "kwh": 1.205
+      },
+      {
+        "ts": "2026-05-24T07:00",
+        "kwh": 1.948
+      },
+      {
+        "ts": "2026-05-24T08:00",
+        "kwh": 4.4
+      },
+      {
+        "ts": "2026-05-24T09:00",
+        "kwh": 13.042
+      },
+      {
+        "ts": "2026-05-24T10:00",
+        "kwh": 13.042
+      },
+      {
+        "ts": "2026-05-24T11:00",
+        "kwh": 7.178
+      },
+      {
+        "ts": "2026-05-24T12:00",
         "kwh": 1.482
       },
       {
-        "ts": "2026-05-11T08:00",
-        "kwh": 1.501
+        "ts": "2026-05-24T13:00",
+        "kwh": 1.375
       },
       {
-        "ts": "2026-05-11T09:00",
-        "kwh": 1.734
+        "ts": "2026-05-24T14:00",
+        "kwh": 1.372
       },
       {
-        "ts": "2026-05-11T10:00",
-        "kwh": 1.721
+        "ts": "2026-05-24T15:00",
+        "kwh": 1.423
       },
       {
-        "ts": "2026-05-11T11:00",
-        "kwh": 1.414
+        "ts": "2026-05-24T16:00",
+        "kwh": 1.456
       },
       {
-        "ts": "2026-05-11T12:00",
-        "kwh": 1.249
+        "ts": "2026-05-24T17:00",
+        "kwh": 1.445
       },
       {
-        "ts": "2026-05-11T13:00",
-        "kwh": 1.338
+        "ts": "2026-05-24T18:00",
+        "kwh": 1.346
       },
       {
-        "ts": "2026-05-11T14:00",
-        "kwh": 1.336
+        "ts": "2026-05-24T19:00",
+        "kwh": 3.187
       },
       {
-        "ts": "2026-05-11T15:00",
-        "kwh": 1.554
+        "ts": "2026-05-24T20:00",
+        "kwh": 3.381
       },
       {
-        "ts": "2026-05-11T16:00",
-        "kwh": 1.41
+        "ts": "2026-05-24T21:00",
+        "kwh": 2.511
       },
       {
-        "ts": "2026-05-11T17:00",
-        "kwh": 1.626
+        "ts": "2026-05-24T22:00",
+        "kwh": 3.485
       },
       {
-        "ts": "2026-05-11T18:00",
-        "kwh": 2.227
-      },
-      {
-        "ts": "2026-05-11T19:00",
-        "kwh": 3.785
-      },
-      {
-        "ts": "2026-05-11T20:00",
-        "kwh": 3.63
-      },
-      {
-        "ts": "2026-05-11T21:00",
-        "kwh": 3.703
-      },
-      {
-        "ts": "2026-05-11T22:00",
-        "kwh": 2.335
-      },
-      {
-        "ts": "2026-05-11T23:00",
-        "kwh": 2.331
-      },
-      {
-        "ts": "2026-05-12T00:00",
-        "kwh": 1.645
-      },
-      {
-        "ts": "2026-05-12T01:00",
-        "kwh": 1.52
-      },
-      {
-        "ts": "2026-05-12T02:00",
-        "kwh": 1.539
-      },
-      {
-        "ts": "2026-05-12T03:00",
-        "kwh": 1.516
-      },
-      {
-        "ts": "2026-05-12T04:00",
-        "kwh": 1.011
-      },
-      {
-        "ts": "2026-05-12T05:00",
-        "kwh": 1.722
-      },
-      {
-        "ts": "2026-05-12T06:00",
-        "kwh": 1.596
-      },
-      {
-        "ts": "2026-05-12T07:00",
-        "kwh": 1.784
-      },
-      {
-        "ts": "2026-05-12T08:00",
-        "kwh": 1.373
-      },
-      {
-        "ts": "2026-05-12T09:00",
-        "kwh": 1.259
-      },
-      {
-        "ts": "2026-05-12T10:00",
-        "kwh": 1.438
-      },
-      {
-        "ts": "2026-05-12T11:00",
-        "kwh": 1.659
-      },
-      {
-        "ts": "2026-05-12T12:00",
-        "kwh": 1.365
-      },
-      {
-        "ts": "2026-05-12T13:00",
-        "kwh": 1.383
-      },
-      {
-        "ts": "2026-05-12T14:00",
-        "kwh": 2.834
-      },
-      {
-        "ts": "2026-05-12T15:00",
-        "kwh": 1.969
-      },
-      {
-        "ts": "2026-05-12T16:00",
-        "kwh": 1.32
-      },
-      {
-        "ts": "2026-05-12T17:00",
-        "kwh": 1.455
-      },
-      {
-        "ts": "2026-05-12T18:00",
-        "kwh": 2.783
-      },
-      {
-        "ts": "2026-05-12T19:00",
-        "kwh": 4.151
-      },
-      {
-        "ts": "2026-05-12T20:00",
-        "kwh": 3.732
-      },
-      {
-        "ts": "2026-05-12T21:00",
-        "kwh": 2.848
-      },
-      {
-        "ts": "2026-05-12T22:00",
-        "kwh": 2.001
-      },
-      {
-        "ts": "2026-05-12T23:00",
-        "kwh": 2.201
-      },
-      {
-        "ts": "2026-05-13T00:00",
-        "kwh": 1.935
-      },
-      {
-        "ts": "2026-05-13T01:00",
-        "kwh": 1.879
-      },
-      {
-        "ts": "2026-05-13T02:00",
-        "kwh": 1.027
-      },
-      {
-        "ts": "2026-05-13T03:00",
-        "kwh": 1.403
-      },
-      {
-        "ts": "2026-05-13T04:00",
-        "kwh": 1.185
-      },
-      {
-        "ts": "2026-05-13T05:00",
-        "kwh": 0.909
-      },
-      {
-        "ts": "2026-05-13T06:00",
-        "kwh": 1.78
-      },
-      {
-        "ts": "2026-05-13T07:00",
-        "kwh": 2.005
-      },
-      {
-        "ts": "2026-05-13T08:00",
-        "kwh": 1.842
-      },
-      {
-        "ts": "2026-05-13T09:00",
-        "kwh": 4.412
-      },
-      {
-        "ts": "2026-05-13T10:00",
-        "kwh": 4.452
-      },
-      {
-        "ts": "2026-05-13T11:00",
-        "kwh": 3.414
-      },
-      {
-        "ts": "2026-05-13T12:00",
-        "kwh": 1.336
-      },
-      {
-        "ts": "2026-05-13T13:00",
-        "kwh": 1.308
-      },
-      {
-        "ts": "2026-05-13T14:00",
-        "kwh": 1.543
-      },
-      {
-        "ts": "2026-05-13T15:00",
-        "kwh": 1.476
-      },
-      {
-        "ts": "2026-05-13T16:00",
-        "kwh": 2.978
-      },
-      {
-        "ts": "2026-05-13T17:00",
-        "kwh": 2.827
-      },
-      {
-        "ts": "2026-05-13T18:00",
-        "kwh": 2.196
-      },
-      {
-        "ts": "2026-05-13T19:00",
-        "kwh": 1.725
-      },
-      {
-        "ts": "2026-05-13T20:00",
-        "kwh": 3.534
-      },
-      {
-        "ts": "2026-05-13T21:00",
-        "kwh": 3.26
-      },
-      {
-        "ts": "2026-05-13T22:00",
-        "kwh": 2.392
-      },
-      {
-        "ts": "2026-05-13T23:00",
-        "kwh": 1.793
+        "ts": "2026-05-24T23:00",
+        "kwh": 5.288
       }
     ],
     "daily": [
       {
-        "date": "2026-05-13",
-        "total_kwh": 52.61,
-        "peak_kwh": 4.452,
+        "date": "2026-05-24",
+        "total_kwh": 77.83,
+        "peak_kwh": 13.042,
         "hours": 24
       },
       {
-        "date": "2026-05-12",
-        "total_kwh": 46.1,
-        "peak_kwh": 4.151,
+        "date": "2026-05-23",
+        "total_kwh": 41.34,
+        "peak_kwh": 5.612,
         "hours": 24
       },
       {
-        "date": "2026-05-11",
-        "total_kwh": 43.38,
-        "peak_kwh": 3.785,
+        "date": "2026-05-22",
+        "total_kwh": 43.44,
+        "peak_kwh": 3.607,
         "hours": 24
       },
       {
-        "date": "2026-05-10",
-        "total_kwh": 38.24,
-        "peak_kwh": 3.568,
+        "date": "2026-05-21",
+        "total_kwh": 57.08,
+        "peak_kwh": 5.279,
+        "hours": 24
+      },
+      {
+        "date": "2026-05-20",
+        "total_kwh": 49.66,
+        "peak_kwh": 3.689,
+        "hours": 24
+      },
+      {
+        "date": "2026-05-19",
+        "total_kwh": 52.26,
+        "peak_kwh": 4.199,
+        "hours": 24
+      },
+      {
+        "date": "2026-05-18",
+        "total_kwh": 45.78,
+        "peak_kwh": 4.185,
         "hours": 24
       }
     ],
-    "latest_kwh": 1.793,
-    "avg_per_hour": 1.88,
-    "evening_peak_kwh": 4.15,
-    "data_through": "2026-05-13T23:00",
-    "_source": "pge_hourly.json"
+    "latest_kwh": 5.288,
+    "avg_per_hour": 2.46,
+    "evening_peak_kwh": 5.61,
+    "data_through": "2026-05-24T23:00"
   }
 }

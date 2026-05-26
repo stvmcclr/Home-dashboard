@@ -862,7 +862,9 @@ function renderStateStrip(data) {
 
   // Who's home
   const whoEl = document.getElementById('strip-who');
-  const who = Array.isArray(state.who_is_home) ? state.who_is_home : [];
+  let who = Array.isArray(state.who_is_home)
+    ? state.who_is_home
+    : (typeof state.who_is_home === 'string' && state.who_is_home ? [state.who_is_home] : []);
   if (who.length > 0) {
     whoEl.textContent = who.join(', ');
     whoEl.className = 'state-card-value home';
@@ -873,7 +875,11 @@ function renderStateStrip(data) {
 
   // Lights
   const lightsEl = document.getElementById('strip-lights');
-  const lights = Array.isArray(state.lights_on) ? state.lights_on : [];
+  let lights = Array.isArray(state.lights_on)
+    ? state.lights_on
+    : (typeof state.lights_on === 'string' && state.lights_on
+        ? (state.lights_on.includes('Lights on:') ? state.lights_on.split('Lights on:')[1].split(',').map(s=>s.trim()).filter(Boolean) : [state.lights_on])
+        : []);
   if (lights.length > 0) {
     lightsEl.textContent = lights.slice(0, 3).join(', ') + (lights.length > 3 ? ` +${lights.length-3}` : '');
     lightsEl.className = 'state-card-value on';
@@ -954,35 +960,57 @@ function formatLocation(loc) {
 }
 
 function renderLiveFeed(m) {
-  // Build unified activity feed from live metrics
+  // Build unified activity feed: metrics (live) + JSON observations (60 items)
   const wrap   = document.getElementById('feed-wrap');
   const countEl = document.getElementById('feed-count');
   const items  = [];
+  const seenSummaries = new Set();
 
-  // Insights (high priority)
-  (m.insights || []).forEach(i => items.push({
+  // Helper: deduplicate by (ts+summary)
+  function addItem(it) {
+    const key = (it.ts || '') + '|' + (it.summary || '').slice(0, 60);
+    if (seenSummaries.has(key)) return;
+    seenSummaries.add(key);
+    items.push(it);
+  }
+
+  // 1. Insights (high priority)
+  (m.insights || []).forEach(i => addItem({
     ts: i.ts, type: 'insight', icon: '💡',
     loc: '', summary: i.summary,
     badge: i.severity || 'medium', badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
   }));
 
-  // Vision events
-  (Array.isArray(m.vision) ? m.vision : []).forEach(v => items.push({
+  // 2. JSON observations (all 60, not just alerts)
+  const jsonObs = (D && D.intelligence && D.intelligence.observations) ? D.intelligence.observations : [];
+  jsonObs.forEach(o => {
+    const type = classifyObservation(o);
+    const iconMap = { person:'🧑', dog:'🐕', vehicle:'🚗', motion:'👁️', audio:'🔊', presence:'🏠' };
+    addItem({
+      ts: o.timestamp, type, icon: iconMap[type] || '👁️',
+      loc: formatLocation(o.location), summary: o.summary,
+      badge: o.source ? o.source.replace('camera:','').replace('ha:','').replace('unifi:','') : '',
+      badgeColor: 'var(--blue)'
+    });
+  });
+
+  // 3. Live metrics vision events (may have events not yet in JSON)
+  (Array.isArray(m.vision) ? m.vision : []).forEach(v => addItem({
     ts: v.ts, type: 'camera', icon: '🎥',
     loc: v.loc || v.source || '', summary: v.summary,
     badge: 'camera', badgeColor: 'var(--blue)'
   }));
 
-  // Audio events
-  ((m.audio || {}).recent || []).forEach(a => items.push({
+  // 4. Live metrics audio events
+  ((m.audio || {}).recent || []).forEach(a => addItem({
     ts: a.ts, type: 'audio', icon: '🔊',
     loc: a.loc || '', summary: a.summary,
     badge: a.conf ? (a.conf * 100).toFixed(0) + '%' : '', badgeColor: 'var(--purple)'
   }));
 
-  // Water
+  // 5. Water
   const w = m.water || {};
-  if (w.flow_gpm > 0) items.push({
+  if (w.flow_gpm > 0) addItem({
     ts: w.ts || new Date().toISOString(), type: 'water', icon: '💧',
     loc: 'Flume', summary: `${w.flow_gpm} gpm · ${w.daily_gallons || '?'} gal today`,
     badge: 'water', badgeColor: 'var(--blue)'
@@ -1040,12 +1068,14 @@ function renderFeed(data) {
     });
   }
 
-  // Observations
+  // All observations — sorted newest first, no secondary divider
   if (obs.length > 0) {
-    html += `<div class="feed-divider">Recent Activity (${obs.length})</div>`;
-    obs.forEach(o => {
+    // Sort newest first (ISO strings sort lexicographically)
+    const sorted = [...obs].sort((a, b) => (b.timestamp || '').localeCompare(a.timestamp || ''));
+    sorted.forEach(o => {
       const type = classifyObservation(o);
       const loc  = formatLocation(o.location);
+      const src  = (o.source || '').replace('camera:','').replace('ha:','').replace('unifi:','');
       html += `
         <div class="feed-item ${type}">
           <div class="feed-icon">${FEED_ICONS[type] || '👁️'}</div>
@@ -1053,6 +1083,7 @@ function renderFeed(data) {
             <div class="feed-meta">
               <span class="feed-time">${fmt.relTime(o.timestamp)}</span>
               ${loc ? `<span class="feed-loc">${esc(loc)}</span>` : ''}
+              ${src ? `<span class="feed-loc" style="opacity:0.6">${esc(src)}</span>` : ''}
             </div>
             <div class="feed-summary">${esc(o.summary)}</div>
           </div>

@@ -3,4 +3,7 @@
   publish = "."
   command = ""
 
-  ignore = "git diff --quiet HEAD^ HEAD -- . ':!dashboard_data.json'"
+[[headers]]
+  for = "/dashboard_data.json"
+  [headers.values]
+    Cache-Control = "no-store, max-age=0"
