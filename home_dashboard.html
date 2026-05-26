@@ -599,7 +599,9 @@
     <div class="card-header">
       <span class="card-title">Live Activity</span>
       <span class="card-badge badge-blue" id="feed-count">0</span>
+      <button id="snap-btn" onclick="takeSnapshot()" title="Grab Mac screenshot" style="margin-left:auto;background:rgba(255,255,255,0.08);border:1px solid var(--border);color:var(--text);padding:3px 10px;border-radius:6px;cursor:pointer;font-size:12px">📷 Snap</button>
     </div>
+    <div id="snap-result" style="display:none;padding:8px;border-bottom:1px solid var(--border)"><img id="snap-img" style="max-width:100%;border-radius:6px" /></div>
     <div class="feed-wrap" id="feed-wrap">
       <div class="feed-empty">Loading…</div>
     </div>
@@ -761,7 +763,7 @@
 
 <script>
 // ── Config ────────────────────────────────────────────────────────────────
-const DATA_URL   = 'dashboard_data.json';
+const DATA_URL   = 'https://raw.githubusercontent.com/stvmcclr/Home-dashboard/main/dashboard_data.json';
 const FRIGATE    = 'http://localhost:5001';
 const CAMERAS    = ['backyard','doorbell','camera2','living_room','dog_run','entryway'];
 const CAM_LABELS = {
@@ -960,61 +962,77 @@ function formatLocation(loc) {
 }
 
 function renderLiveFeed(m) {
-  // Build unified activity feed: metrics (live) + JSON observations (60 items)
+  // Build unified activity feed: vision first, then presence/home, then audio, then insights
   const wrap   = document.getElementById('feed-wrap');
   const countEl = document.getElementById('feed-count');
   const items  = [];
-  const seenSummaries = new Set();
+  const seenKeys = new Set();
+  // Deduplicate by content bucket: same location+type within 5min window
+  const audioBucket = {}; // loc+category -> last ts (to throttle noisy audio)
 
-  // Helper: deduplicate by (ts+summary)
   function addItem(it) {
-    const key = (it.ts || '') + '|' + (it.summary || '').slice(0, 60);
-    if (seenSummaries.has(key)) return;
-    seenSummaries.add(key);
+    const key = (it.ts || '').slice(0,16) + '|' + (it.summary || '').slice(0, 60);
+    if (seenKeys.has(key)) return;
+    seenKeys.add(key);
     items.push(it);
   }
 
-  // 1. Insights (high priority)
-  (m.insights || []).forEach(i => addItem({
-    ts: i.ts, type: 'insight', icon: '💡',
-    loc: '', summary: i.summary,
-    badge: i.severity || 'medium', badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
-  }));
+  function addAudio(it) {
+    // Throttle audio: max 1 per location+summary-type per 5 min
+    const bucketKey = (it.loc || '') + '|' + (it.summary || '').split(' ')[0];
+    const ts = new Date(it.ts).getTime();
+    const last = audioBucket[bucketKey] || 0;
+    if (ts - last < 5 * 60 * 1000) return; // skip if same type < 5min ago
+    audioBucket[bucketKey] = ts;
+    addItem(it);
+  }
 
-  // 2. JSON observations (all 60, not just alerts)
-  const jsonObs = (D && D.intelligence && D.intelligence.observations) ? D.intelligence.observations : [];
-  jsonObs.forEach(o => {
-    const type = classifyObservation(o);
-    const iconMap = { person:'🧑', dog:'🐕', vehicle:'🚗', motion:'👁️', audio:'🔊', presence:'🏠' };
-    addItem({
-      ts: o.timestamp, type, icon: iconMap[type] || '👁️',
-      loc: formatLocation(o.location), summary: o.summary,
-      badge: o.source ? o.source.replace('camera:','').replace('ha:','').replace('unifi:','') : '',
-      badgeColor: 'var(--blue)'
-    });
-  });
-
-  // 3. Live metrics vision events (may have events not yet in JSON)
+  // 1. Live vision events (richest content — who's doing what)
   (Array.isArray(m.vision) ? m.vision : []).forEach(v => addItem({
     ts: v.ts, type: 'camera', icon: '🎥',
-    loc: v.loc || v.source || '', summary: v.summary,
-    badge: 'camera', badgeColor: 'var(--blue)'
+    loc: formatLocation(v.loc || v.source || ''), summary: v.summary,
+    badge: v.loc || '', badgeColor: 'var(--blue)'
   }));
 
-  // 4. Live metrics audio events
-  ((m.audio || {}).recent || []).forEach(a => addItem({
-    ts: a.ts, type: 'audio', icon: '🔊',
-    loc: a.loc || '', summary: a.summary,
-    badge: a.conf ? (a.conf * 100).toFixed(0) + '%' : '', badgeColor: 'var(--purple)'
-  }));
+  // 2. JSON observations from Supabase — vision/presence/home events
+  const jsonObs = (D && D.intelligence && D.intelligence.observations) ? D.intelligence.observations : [];
+  const audioObs = [];
+  jsonObs.forEach(o => {
+    const src = o.source || '';
+    const type = classifyObservation(o);
+    const iconMap = { person:'🧑', dog:'🐕', vehicle:'🚗', motion:'👁️', audio:'🔊', presence:'🏠', camera:'🎥' };
+    const item = {
+      ts: o.timestamp, type, icon: iconMap[type] || '👁️',
+      loc: formatLocation(o.location), summary: o.summary,
+      badge: src.replace('camera:','').replace('ha:','').replace('unifi:','').replace('home:',''),
+      badgeColor: 'var(--blue)'
+    };
+    if (type === 'audio') audioObs.push(item); // defer audio
+    else addItem(item);
+  });
 
-  // 5. Water
+  // 3. Presence / home state events
   const w = m.water || {};
   if (w.flow_gpm > 0) addItem({
     ts: w.ts || new Date().toISOString(), type: 'water', icon: '💧',
     loc: 'Flume', summary: `${w.flow_gpm} gpm · ${w.daily_gallons || '?'} gal today`,
     badge: 'water', badgeColor: 'var(--blue)'
   });
+
+  // 4. Audio events (throttled, after visual)
+  ((m.audio || {}).recent || []).forEach(a => addAudio({
+    ts: a.ts, type: 'audio', icon: '🔊',
+    loc: formatLocation(a.loc || ''), summary: a.summary,
+    badge: a.conf ? (a.conf * 100).toFixed(0) + '%' : '', badgeColor: 'var(--purple)'
+  }));
+  audioObs.forEach(a => addAudio(a));
+
+  // 5. Insights at end (alerts/anomalies)
+  (m.insights || []).forEach(i => addItem({
+    ts: i.ts, type: 'insight', icon: '💡',
+    loc: '', summary: i.summary,
+    badge: i.severity || 'medium', badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
+  }));
 
   // Sort newest first
   items.sort((a, b) => new Date(b.ts) - new Date(a.ts));
@@ -1648,6 +1666,29 @@ setInterval(loadIntelligence, 15000);
 
 // Keyboard close modal
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── Screenshot ────────────────────────────────────────────────────────────
+async function takeSnapshot() {
+  const btn = document.getElementById('snap-btn');
+  const result = document.getElementById('snap-result');
+  const img = document.getElementById('snap-img');
+  btn.textContent = '⏳ Snapping…';
+  btn.disabled = true;
+  try {
+    const r = await fetch('http://eucamacmini.local:7825/screenshot', { signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+    const b64 = d.image || d.screenshot || d.data;
+    if (!b64) throw new Error('No image in response');
+    img.src = 'data:image/png;base64,' + b64;
+    result.style.display = 'block';
+    btn.textContent = '📷 Snap';
+  } catch (e) {
+    btn.textContent = '❌ Failed';
+    setTimeout(() => { btn.textContent = '📷 Snap'; }, 2000);
+  }
+  btn.disabled = false;
+}
 </script>
 </body>
 </html>
