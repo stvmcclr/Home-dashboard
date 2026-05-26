@@ -1678,7 +1678,7 @@ async function takeSnapshot() {
     const r = await fetch('http://eucamacmini.local:7825/screenshot', { signal: AbortSignal.timeout(8000) });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
-    const b64 = d.image || d.screenshot || d.data;
+    const b64 = d.png_b64 || d.image || d.screenshot || d.data;
     if (!b64) throw new Error('No image in response');
     img.src = 'data:image/png;base64,' + b64;
     result.style.display = 'block';
