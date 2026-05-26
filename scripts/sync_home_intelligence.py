@@ -99,11 +99,36 @@ def build_home_state(db: sqlite3.Connection):
     row = cur.fetchone()
     if row:
         summary = row[0] or ""
-        # "Home: Miller, Penelope." → extract names
+        # Format 1: "Home: Miller, Penelope." → extract names
         if "Home:" in summary:
             names_part = summary.split("Home:", 1)[1].strip().rstrip(".")
             if names_part and names_part.lower() not in ("", "nobody", "none"):
                 who_home = [n.strip() for n in names_part.split(",") if n.strip()]
+        # Format 2: "11 mobile devices home. Cameras recently show: Miller, Penelope."
+        elif "Cameras recently show:" in summary:
+            names_part = summary.split("Cameras recently show:", 1)[1].strip().rstrip(".")
+            if names_part and names_part.lower() not in ("", "nobody", "none"):
+                who_home = [n.strip() for n in names_part.split(",") if n.strip()]
+        # Format 3: "House appears empty" → nobody home
+        elif "empty" in summary.lower() or "no mobile" in summary.lower():
+            who_home = []
+
+    # Supplement who_home with names from recent vision observations (entity table)
+    KNOWN_FAMILY = {"Steve", "Roxanne", "Miller", "Penelope"}
+    if not who_home:
+        vision_cutoff = int(time.time()) - 3600  # last hour
+        cur = db.execute("""
+            SELECT DISTINCT oe.entity_name
+            FROM observation_entities oe
+            JOIN observations o ON oe.observation_id = o.id
+            WHERE oe.entity_type = 'person'
+              AND o.source_type = 'vision'
+              AND o.timestamp > ?
+              AND oe.entity_name != 'unknown'
+        """, (vision_cutoff,))
+        vision_names = [r[0] for r in cur.fetchall() if r[0] in KNOWN_FAMILY]
+        if vision_names:
+            who_home = sorted(set(vision_names))
 
     # Active lights — from ha:lights
     lights_on = []

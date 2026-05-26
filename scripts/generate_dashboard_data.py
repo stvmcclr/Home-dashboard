@@ -168,11 +168,11 @@ def build_data():
     # ── Home Intelligence ──────────────────────────────────────────────────
     intelligence = {"observations": [], "insights": [], "state": {}}
     try:
-        # Last 60 observations
+        # Last 100 observations
         obs_rows = sb.select(
             "home_observations",
             order="timestamp.desc",
-            limit=60
+            limit=100
         )
         intelligence["observations"] = obs_rows
 
