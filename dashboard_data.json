@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26 22:17:40",
+  "generated_at": "2026-05-26 22:22:48",
   "as_of": "2026-05-26",
   "projects": [
     {
@@ -1245,6 +1245,116 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82128,
+        "timestamp": "2026-05-27T05:20:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "alarm/siren sound at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82127,
+        "timestamp": "2026-05-27T05:19:36+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and displaying a system error message, providing no visual coverage. This loss of visibility is occurring while an alarm/siren is sounding in the backyard and movement is detected in both the backyard and dog run.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front yard camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82126,
+        "timestamp": "2026-05-27T05:19:32+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82125,
+        "timestamp": "2026-05-27T05:18:54+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82124,
+        "timestamp": "2026-05-27T05:18:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82123,
+        "timestamp": "2026-05-27T05:18:04+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "Steve appears distressed in the entryway with his hand to his head. An unidentified person is sitting in the adjacent room while alarms are sounding from the backyard and dog run.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"distressed\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": \"sitting\", \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"alarm sounding\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82121,
+        "timestamp": "2026-05-27T05:17:59+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, downstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 82122,
+        "timestamp": "2026-05-27T05:17:59+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 399.5 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 82120,
+        "timestamp": "2026-05-27T05:17:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82119,
+        "timestamp": "2026-05-27T05:17:12+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 82118,
         "timestamp": "2026-05-27T05:17:05+00:00",
         "source": "backyard",
@@ -2233,119 +2343,25 @@
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82028,
-        "timestamp": "2026-05-27T04:48:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82027,
-        "timestamp": "2026-05-27T04:48:31+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty at night, with a tennis ball resting on the artificial grass. Despite recent audio detections of movement and an alarm/siren in the backyard, no people or dogs are visible in the camera's view.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 82026,
-        "timestamp": "2026-05-27T04:48:05+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "dog barking at entryway",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82024,
-        "timestamp": "2026-05-27T04:47:57+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 82025,
-        "timestamp": "2026-05-27T04:47:57+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Light use at 0.68 gal/min. Daily total: 381.9 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 82023,
-        "timestamp": "2026-05-27T04:47:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82022,
-        "timestamp": "2026-05-27T04:47:21+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is visually empty, but audio sensors are detecting an alarm and impact/movement in the backyard near the dog run. This follows a recent period of potential security disturbance.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"alarm sounding\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"movement at dog run\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 82021,
-        "timestamp": "2026-05-27T04:47:04+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82020,
-        "timestamp": "2026-05-27T04:46:54+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "impact/movement sound at dog_run",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82019,
-        "timestamp": "2026-05-27T04:46:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 3965,
+        "timestamp": "2026-05-27T05:19:37+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is offline during a period of significant activity and alarm sounds in the backyard, leaving the front of the property unmonitored.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3964,
+        "timestamp": "2026-05-27T05:18:04+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] An alarm is sounding in the backyard and dog run, and an unidentified person is visible inside the house.",
+        "acted_on_at": null
+      },
       {
         "id": 3963,
         "timestamp": "2026-05-27T05:16:11+00:00",
@@ -2409,22 +2425,6 @@
         "severity": "medium",
         "summary": "The dogs spotted in backyard at 10:02PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 3954,
-        "timestamp": "2026-05-27T05:08:40+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (4x since 9:28PM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 3955,
-        "timestamp": "2026-05-27T05:08:40+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at entryway (3x since 9:29PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2453,13 +2453,13 @@
       "last_motion": {
         "backyard": "2026-05-27T05:02:17+00:00",
         "dog_run": "2026-05-27T05:09:24+00:00",
-        "entryway": "2026-05-27T05:11:42+00:00",
+        "entryway": "2026-05-27T05:18:04+00:00",
         "front_door": "2026-05-27T05:07:07+00:00",
-        "front_yard": "2026-05-27T04:58:29+00:00",
+        "front_yard": "2026-05-27T05:19:36+00:00",
         "living_room": "2026-05-27T05:16:11+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T05:17:08.707515+00:00"
+      "last_updated": "2026-05-27T05:20:11.912895+00:00"
     }
   },
   "pge": {
