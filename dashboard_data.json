@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26 23:49:54",
+  "generated_at": "2026-05-26 23:55:01",
   "as_of": "2026-05-26",
   "projects": [
     {
@@ -1245,6 +1245,50 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82253,
+        "timestamp": "2026-05-27T06:52:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82252,
+        "timestamp": "2026-05-27T06:51:33+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82251,
+        "timestamp": "2026-05-27T06:50:14+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying a technical error message. This is a continuation of a known, ongoing issue where no video frames are being received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82250,
+        "timestamp": "2026-05-27T06:48:26+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. No people, dogs, or movement are observed in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
         "id": 82249,
         "timestamp": "2026-05-27T06:47:20+00:00",
         "source": "unifi:presence",
@@ -2299,53 +2343,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82153,
-        "timestamp": "2026-05-27T05:36:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82152,
-        "timestamp": "2026-05-27T05:36:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82151,
-        "timestamp": "2026-05-27T05:34:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82150,
-        "timestamp": "2026-05-27T05:33:25+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 3978,
+        "timestamp": "2026-05-27T06:50:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is non-functional, which is a known ongoing issue.",
+        "acted_on_at": null
+      },
       {
         "id": 3977,
         "timestamp": "2026-05-27T06:43:20+00:00",
@@ -2417,14 +2425,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is not transmitting video frames; check error logs.",
         "acted_on_at": null
-      },
-      {
-        "id": 3968,
-        "timestamp": "2026-05-27T05:48:25+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is non-functional, leaving the front entrance unmonitored.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2441,15 +2441,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-27T06:27:51+00:00",
+        "backyard": "2026-05-27T06:48:26+00:00",
         "dog_run": "2026-05-27T06:33:04+00:00",
         "entryway": "2026-05-27T06:40:13+00:00",
-        "front_door": "2026-05-27T06:29:39+00:00",
+        "front_door": "2026-05-27T06:50:14+00:00",
         "front_yard": "2026-05-27T06:43:20+00:00",
         "living_room": "2026-05-27T06:36:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T06:47:56.550898+00:00"
+      "last_updated": "2026-05-27T06:54:00.514086+00:00"
     }
   },
   "pge": {
