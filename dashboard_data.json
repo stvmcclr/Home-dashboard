@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26 22:48:23",
+  "generated_at": "2026-05-26 22:53:30",
   "as_of": "2026-05-26",
   "projects": [
     {
@@ -1245,6 +1245,61 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82171,
+        "timestamp": "2026-05-27T05:53:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82170,
+        "timestamp": "2026-05-27T05:51:46+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the night. A tennis ball rests alone on the artificial grass, and the gate is closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 82169,
+        "timestamp": "2026-05-27T05:51:06+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is empty and quiet during the late night. No people or animals are visible in the frame, though unclassified audio is heard from the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 82168,
+        "timestamp": "2026-05-27T05:48:25+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently non-functional, displaying a technical error message indicating that no video frames are being received. This persists from a recent observation of camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82167,
+        "timestamp": "2026-05-27T05:48:02+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 82166,
         "timestamp": "2026-05-27T05:46:59+00:00",
         "source": "unifi:presence",
@@ -1586,17 +1641,6 @@
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       },
       {
-        "id": 82135,
-        "timestamp": "2026-05-27T05:22:59+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Light use at 0.90 gal/min. Daily total: 411.2 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
         "id": 82134,
         "timestamp": "2026-05-27T05:22:59+00:00",
         "source": "ha:lights",
@@ -1606,6 +1650,17 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 82135,
+        "timestamp": "2026-05-27T05:22:59+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Light use at 0.90 gal/min. Daily total: 411.2 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
       },
       {
         "id": 82133,
@@ -2288,64 +2343,17 @@
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82071,
-        "timestamp": "2026-05-27T05:02:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82070,
-        "timestamp": "2026-05-27T05:02:17+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty, and the white gate remains closed. Although an alarm is sounding in the backyard and a dog is barking at the dog run, no movement or presence is visible in this area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 82069,
-        "timestamp": "2026-05-27T05:01:32+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82068,
-        "timestamp": "2026-05-27T05:01:19+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82067,
-        "timestamp": "2026-05-27T05:00:59+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 3968,
+        "timestamp": "2026-05-27T05:48:25+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is non-functional, leaving the front entrance unmonitored.",
+        "acted_on_at": null
+      },
       {
         "id": 3967,
         "timestamp": "2026-05-27T05:40:12+00:00",
@@ -2417,14 +2425,6 @@
         "severity": "high",
         "summary": "[dog_run] Audio alerts for movement and an alarm were detected in the backyard, but the dog run appears empty.",
         "acted_on_at": null
-      },
-      {
-        "id": 3951,
-        "timestamp": "2026-05-27T05:08:40+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 9 observations vs typical 1 for weekday 22:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2434,20 +2434,23 @@
       ],
       "active_rooms": [
         "backyard",
-        "front_yard"
+        "dog_run",
+        "front_door",
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-27T05:45:39+00:00",
-        "dog_run": "2026-05-27T04:27:39+00:00",
+        "dog_run": "2026-05-27T05:51:46+00:00",
         "entryway": "2026-05-27T03:46:49+00:00",
-        "front_door": "2026-05-27T04:00:54+00:00",
+        "front_door": "2026-05-27T05:48:25+00:00",
         "front_yard": "2026-05-27T05:40:12+00:00",
-        "living_room": "2026-05-27T04:31:17+00:00",
+        "living_room": "2026-05-27T05:51:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T05:47:26.026557+00:00"
+      "last_updated": "2026-05-27T05:53:28.133777+00:00"
     }
   },
   "pge": {
