@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 05:03:39",
+  "generated_at": "2026-05-27 05:10:07",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1301,6 +1301,61 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82551,
+        "timestamp": "2026-05-27T12:08:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82550,
+        "timestamp": "2026-05-27T12:07:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82549,
+        "timestamp": "2026-05-27T12:06:55+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure and is not transmitting any video footage. An error message is displayed on the screen instead of the yard view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82548,
+        "timestamp": "2026-05-27T12:04:16+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and is displaying an error message indicating that no video frames are being received. This is a continuation of a recent technical failure with this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82547,
+        "timestamp": "2026-05-27T12:03:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 82546,
         "timestamp": "2026-05-27T11:59:32+00:00",
         "source": "backyard",
@@ -2344,64 +2399,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82451,
-        "timestamp": "2026-05-27T10:10:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82450,
-        "timestamp": "2026-05-27T10:07:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82449,
-        "timestamp": "2026-05-27T10:05:31+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82448,
-        "timestamp": "2026-05-27T10:01:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82447,
-        "timestamp": "2026-05-27T10:00:50+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet during the middle of the night. No people or dogs are visible in the side yard, and the gate remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 4006,
+        "timestamp": "2026-05-27T12:06:55+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not functioning and is displaying an error message.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4005,
+        "timestamp": "2026-05-27T12:04:16+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is down, which prevents monitoring of the front entrance.",
+        "acted_on_at": null
+      },
       {
         "id": 4004,
         "timestamp": "2026-05-27T11:57:12+00:00",
@@ -2465,22 +2481,6 @@
         "severity": "high",
         "summary": "Despite all cameras reporting empty and quiet areas, there is a sustained pattern of unclassified audio originating from the backyard between 2:50 AM and 3:11 AM. This persistent noise, combined with the multiple camera failures, suggests an ongoing external event or mechanical issue in the backyard that is not being captured by the visual sensors and requires immediate investigation.",
         "acted_on_at": null
-      },
-      {
-        "id": 3996,
-        "timestamp": "2026-05-27T10:12:01+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is non-functional and is displaying an error message, indicating a persistent connectivity issue.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3994,
-        "timestamp": "2026-05-27T10:11:38+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in front yard at 2:30AM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2498,14 +2498,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-27T11:59:26+00:00",
-        "dog_run": "2026-05-27T11:46:25+00:00",
+        "dog_run": "2026-05-27T12:06:55+00:00",
         "entryway": "2026-05-27T11:58:49+00:00",
-        "front_door": "2026-05-27T11:43:39+00:00",
+        "front_door": "2026-05-27T12:04:16+00:00",
         "front_yard": "2026-05-27T11:57:12+00:00",
         "living_room": "2026-05-27T11:58:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T12:02:41.275691+00:00"
+      "last_updated": "2026-05-27T12:08:44.360476+00:00"
     }
   },
   "pge": {
