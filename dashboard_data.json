@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 04:16:13",
+  "generated_at": "2026-05-27 04:21:20",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1301,6 +1301,72 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82517,
+        "timestamp": "2026-05-27T11:18:51+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 82516,
+        "timestamp": "2026-05-27T11:18:10+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the early morning hours. The gate is closed, blocking the path to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 82515,
+        "timestamp": "2026-05-27T11:18:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82514,
+        "timestamp": "2026-05-27T11:16:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82513,
+        "timestamp": "2026-05-27T11:15:52+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and is not receiving any video frames, displaying an error message instead. This is a continuation of recent intermittent connectivity issues with this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 82512,
+        "timestamp": "2026-05-27T11:14:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 82511,
         "timestamp": "2026-05-27T11:13:44+00:00",
         "source": "backyard",
@@ -2333,75 +2399,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82417,
-        "timestamp": "2026-05-27T09:32:57+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82416,
-        "timestamp": "2026-05-27T09:32:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82415,
-        "timestamp": "2026-05-27T09:30:09+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently non-functional, displaying an error message indicating that no video frames are being received. This is a continuation of recent intermittent connectivity issues with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"error\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 82414,
-        "timestamp": "2026-05-27T09:30:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82413,
-        "timestamp": "2026-05-27T09:28:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82412,
-        "timestamp": "2026-05-27T09:25:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4001,
+        "timestamp": "2026-05-27T11:15:52+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is non-functional and is not receiving any video frames.",
+        "acted_on_at": null
+      },
       {
         "id": 4000,
         "timestamp": "2026-05-27T11:12:56+00:00",
@@ -2473,14 +2481,6 @@
         "severity": "high",
         "summary": "[dog_run] The dog_run camera is reporting a failure to receive frames.",
         "acted_on_at": null
-      },
-      {
-        "id": 3991,
-        "timestamp": "2026-05-27T09:11:37+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a sustained pattern of impact/movement sounds and unclassified audio originating from the backyard and dog run, starting around 01:59 and continuing until 02:10. Given the time (deep night) and the absence of human activity, this suggests the dogs (Posey and Harlee) are highly active or exploring, but the persistent, unclassified audio warrants monitoring for potential wildlife or environmental issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2491,20 +2491,21 @@
         "dog_run",
         "entryway",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-27T10:57:39+00:00",
+        "backyard": "2026-05-27T11:18:10+00:00",
         "dog_run": "2026-05-27T11:04:41+00:00",
         "entryway": "2026-05-27T11:13:29+00:00",
         "front_door": "2026-05-27T11:00:57+00:00",
-        "front_yard": "2026-05-27T10:32:37+00:00",
+        "front_yard": "2026-05-27T11:15:52+00:00",
         "living_room": "2026-05-27T11:12:52+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T11:14:17.942093+00:00"
+      "last_updated": "2026-05-27T11:20:20.653217+00:00"
     }
   },
   "pge": {
