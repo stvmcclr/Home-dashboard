@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 11:27:39",
+  "generated_at": "2026-05-27 11:32:46",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1357,6 +1357,116 @@
   "intelligence": {
     "observations": [
       {
+        "id": 83555,
+        "timestamp": "2026-05-27T18:30:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83554,
+        "timestamp": "2026-05-27T18:30:06+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying an error message indicating that no video frames are being received. While audio from the backyard indicates dogs are barking near the dog run, there is no visual information available to monitor the front door area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.7}]"
+      },
+      {
+        "id": 83553,
+        "timestamp": "2026-05-27T18:29:09+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music throughout house: Janelle Mon\u00e1e - Primetime (feat. Miguel)",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 83552,
+        "timestamp": "2026-05-27T18:29:00+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83551,
+        "timestamp": "2026-05-27T18:28:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83550,
+        "timestamp": "2026-05-27T18:28:35+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty, with the white gate remaining closed. Although dog barking is heard in the audio, no dogs are visible in the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 83549,
+        "timestamp": "2026-05-27T18:27:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83548,
+        "timestamp": "2026-05-27T18:26:51+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83547,
+        "timestamp": "2026-05-27T18:25:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83546,
+        "timestamp": "2026-05-27T18:25:19+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 83545,
         "timestamp": "2026-05-27T18:25:05+00:00",
         "source": "living_room",
@@ -1566,17 +1676,6 @@
         "entities": "[]"
       },
       {
-        "id": 83525,
-        "timestamp": "2026-05-27T18:14:07+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
         "id": 83526,
         "timestamp": "2026-05-27T18:14:07+00:00",
         "source": "ha:audio",
@@ -1586,6 +1685,17 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 83525,
+        "timestamp": "2026-05-27T18:14:07+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
         "id": 83524,
@@ -3445,116 +3555,6 @@
         "confidence": 0.72,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 83355,
-        "timestamp": "2026-05-27T16:59:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83354,
-        "timestamp": "2026-05-27T16:58:57+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 542.7 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 83353,
-        "timestamp": "2026-05-27T16:58:57+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: Soul For Real - Every Little Thing I Do",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83352,
-        "timestamp": "2026-05-27T16:58:29+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83351,
-        "timestamp": "2026-05-27T16:58:27+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "impact/movement sound at dog_run",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83350,
-        "timestamp": "2026-05-27T16:57:51+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "impact/movement sound at living_room",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83349,
-        "timestamp": "2026-05-27T16:56:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83348,
-        "timestamp": "2026-05-27T16:56:38+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is in the kitchen area, appearing to be busy with a task at the counter. The rest of the living room remains quiet and unoccupied.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83347,
-        "timestamp": "2026-05-27T16:55:36+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83346,
-        "timestamp": "2026-05-27T16:55:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3658,15 +3658,15 @@
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-27T18:07:59+00:00",
+        "backyard": "2026-05-27T18:28:35+00:00",
         "dog_run": "2026-05-27T18:10:04+00:00",
         "entryway": "2026-05-27T18:05:26+00:00",
-        "front_door": "2026-05-27T18:08:36+00:00",
+        "front_door": "2026-05-27T18:30:06+00:00",
         "front_yard": "2026-05-27T18:08:58+00:00",
         "living_room": "2026-05-27T18:15:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T18:25:13.142988+00:00"
+      "last_updated": "2026-05-27T18:31:16.214196+00:00"
     }
   },
   "pge": {
