@@ -2,6 +2,8 @@
 [build]
   publish = "."
   command = ""
+  # Skip deploy when only dashboard_data.json changed — data is served from GitHub raw
+  ignore = "git diff --quiet HEAD~1 -- ':!dashboard_data.json'"
 
 [[headers]]
   for = "/dashboard_data.json"
