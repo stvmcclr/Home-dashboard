@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 00:46:16",
+  "generated_at": "2026-05-27 00:51:23",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1273,6 +1273,50 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82305,
+        "timestamp": "2026-05-27T07:47:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82304,
+        "timestamp": "2026-05-27T07:47:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 82303,
+        "timestamp": "2026-05-27T07:46:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82302,
+        "timestamp": "2026-05-27T07:45:51+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently not receiving any video frames, displaying an error message instead. This follows a recent period of intermittent connectivity where the camera briefly regained connection earlier in the night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}]"
+      },
+      {
         "id": 82301,
         "timestamp": "2026-05-27T07:45:23+00:00",
         "source": "backyard",
@@ -2327,53 +2371,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82205,
-        "timestamp": "2026-05-27T06:15:04+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82204,
-        "timestamp": "2026-05-27T06:13:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82201,
-        "timestamp": "2026-05-27T06:13:03+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: none",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 82202,
-        "timestamp": "2026-05-27T06:13:03+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 3984,
+        "timestamp": "2026-05-27T07:45:51+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not receiving frames; check error logs.",
+        "acted_on_at": null
+      },
       {
         "id": 3983,
         "timestamp": "2026-05-27T07:31:20+00:00",
@@ -2445,14 +2453,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is non-functional, preventing any monitoring of the front entrance.",
         "acted_on_at": null
-      },
-      {
-        "id": 3974,
-        "timestamp": "2026-05-27T06:22:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is offline, meaning no visual monitoring of the driveway or street is possible.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2472,11 +2472,11 @@
         "dog_run": "2026-05-27T07:36:24+00:00",
         "entryway": "2026-05-27T07:25:51+00:00",
         "front_door": "2026-05-27T07:31:19+00:00",
-        "front_yard": "2026-05-27T07:25:16+00:00",
+        "front_yard": "2026-05-27T07:45:51+00:00",
         "living_room": "2026-05-27T06:36:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T07:45:27.477784+00:00"
+      "last_updated": "2026-05-27T07:48:30.056035+00:00"
     }
   },
   "pge": {
