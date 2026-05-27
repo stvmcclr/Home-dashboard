@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 13:35:48",
+  "generated_at": "2026-05-27 13:40:55",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1384,6 +1384,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 83833,
+        "timestamp": "2026-05-27T20:38:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83832,
+        "timestamp": "2026-05-27T20:38:16+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83831,
+        "timestamp": "2026-05-27T20:37:28+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and is displaying an error message indicating that no video frames are being received. No visual information is available from this camera at this time.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 83830,
+        "timestamp": "2026-05-27T20:36:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83829,
+        "timestamp": "2026-05-27T20:36:37+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 83828,
         "timestamp": "2026-05-27T20:35:38+00:00",
@@ -3528,64 +3583,17 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83633,
-        "timestamp": "2026-05-27T19:03:42+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "speech detected at dog_run",
-        "confidence": 0.75,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83632,
-        "timestamp": "2026-05-27T19:03:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83631,
-        "timestamp": "2026-05-27T19:03:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "doorbell at living_room",
-        "confidence": 0.65,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83630,
-        "timestamp": "2026-05-27T19:02:42+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "dog barking at entryway",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83629,
-        "timestamp": "2026-05-27T19:02:10+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "speech detected at dog_run",
-        "confidence": 0.75,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4069,
+        "timestamp": "2026-05-27T20:37:29+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is not transmitting video.",
+        "acted_on_at": null
+      },
       {
         "id": 4068,
         "timestamp": "2026-05-27T20:18:50+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at living room (2x since 11:15AM).",
         "acted_on_at": null
-      },
-      {
-        "id": 4059,
-        "timestamp": "2026-05-27T19:11:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is non-functional, making the entrance unmonitorable.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3687,12 +3687,12 @@
         "backyard": "2026-05-27T20:35:38+00:00",
         "dog_run": "2026-05-27T20:22:15+00:00",
         "entryway": "2026-05-27T20:24:48+00:00",
-        "front_door": "2026-05-27T20:17:02+00:00",
+        "front_door": "2026-05-27T20:37:28+00:00",
         "front_yard": "2026-05-27T20:18:50+00:00",
         "living_room": "2026-05-27T20:20:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T20:35:48.813783+00:00"
+      "last_updated": "2026-05-27T20:38:50.477655+00:00"
     }
   },
   "pge": {
