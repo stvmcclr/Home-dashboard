@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 11:12:16",
+  "generated_at": "2026-05-27 11:17:25",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1356,6 +1356,138 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 83530,
+        "timestamp": "2026-05-27T18:15:23+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is visually empty and still, though music is playing and audio sensors detect a dog barking nearby. The cleaning crew is scheduled to be working in the house during this time.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"kitchen lights on\", \"entity_state\": \"on\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 83529,
+        "timestamp": "2026-05-27T18:15:21+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83528,
+        "timestamp": "2026-05-27T18:15:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83525,
+        "timestamp": "2026-05-27T18:14:07+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 83526,
+        "timestamp": "2026-05-27T18:14:07+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music throughout house: Brandy - Full Moon",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 83527,
+        "timestamp": "2026-05-27T18:14:07+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 663.9 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 83524,
+        "timestamp": "2026-05-27T18:13:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83523,
+        "timestamp": "2026-05-27T18:13:15+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83522,
+        "timestamp": "2026-05-27T18:12:00+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83521,
+        "timestamp": "2026-05-27T18:11:42+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83520,
+        "timestamp": "2026-05-27T18:10:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83519,
+        "timestamp": "2026-05-27T18:10:04+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty, with a tennis ball and a small red ball resting on the artificial grass. Although audio indicates a dog barking at the dog run, no dogs are currently visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.6}, {\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"small red ball\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 83518,
         "timestamp": "2026-05-27T18:09:07+00:00",
@@ -3423,141 +3555,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 83330,
-        "timestamp": "2026-05-27T16:47:31+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty, with a tennis ball and a small red ball resting on the artificial grass near the AC unit. The gate at the end of the run remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"red ball\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": \"closed\", \"confidence\": 0.99}]"
-      },
-      {
-        "id": 83329,
-        "timestamp": "2026-05-27T16:47:24+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83328,
-        "timestamp": "2026-05-27T16:46:56+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently non-functional, displaying a technical error message instead of a live video feed. This is a continuation of recent intermittent camera failures.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 83327,
-        "timestamp": "2026-05-27T16:46:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83326,
-        "timestamp": "2026-05-27T16:45:50+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83325,
-        "timestamp": "2026-05-27T16:45:24+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is displaying an error message indicating that no video frames are being received. While audio is being detected at the entryway, the lack of visual data prevents any monitoring of the front door area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 83324,
-        "timestamp": "2026-05-27T16:44:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83323,
-        "timestamp": "2026-05-27T16:43:56+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 542.1 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 83322,
-        "timestamp": "2026-05-27T16:43:55+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: Alicia Keys - Like You'll Never See Me Again",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83321,
-        "timestamp": "2026-05-27T16:43:55+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83320,
-        "timestamp": "2026-05-27T16:43:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83319,
-        "timestamp": "2026-05-27T16:43:25+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4053,
+        "timestamp": "2026-05-27T18:15:23+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Audio sensors detect dog barking and music playing, but the room is visually empty; cleaning crew is scheduled for this time.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4052,
+        "timestamp": "2026-05-27T18:10:04+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] Audio indicates a dog barking, but no dogs are visible in the dog run.",
+        "acted_on_at": null
+      },
       {
         "id": 4051,
         "timestamp": "2026-05-27T18:08:58+00:00",
@@ -3621,22 +3637,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is offline and not providing video, preventing monitoring of the entryway despite audio being detected.",
         "acted_on_at": null
-      },
-      {
-        "id": 4043,
-        "timestamp": "2026-05-27T17:04:05+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] Audio indicates movement and a dog barking in the backyard despite the area appearing empty on camera.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4042,
-        "timestamp": "2026-05-27T16:46:56+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is non-functional and displaying a technical error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3659,14 +3659,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-27T18:07:59+00:00",
-        "dog_run": "2026-05-27T17:49:08+00:00",
+        "dog_run": "2026-05-27T18:10:04+00:00",
         "entryway": "2026-05-27T18:05:26+00:00",
         "front_door": "2026-05-27T18:08:36+00:00",
         "front_yard": "2026-05-27T18:08:58+00:00",
-        "living_room": "2026-05-27T18:03:59+00:00",
+        "living_room": "2026-05-27T18:15:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T18:09:58.697489+00:00"
+      "last_updated": "2026-05-27T18:16:04.232247+00:00"
     }
   },
   "pge": {
