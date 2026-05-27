@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 10:15:50",
+  "generated_at": "2026-05-27 10:20:58",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1329,6 +1329,61 @@
   "intelligence": {
     "observations": [
       {
+        "id": 83394,
+        "timestamp": "2026-05-27T17:18:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83393,
+        "timestamp": "2026-05-27T17:18:05+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is currently unoccupied and quiet, with the kitchen lights remaining on. While the interior is still, audio sensors detect movement and impact sounds occurring in the backyard and dog run areas.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"kitchen lights on\", \"entity_state\": \"on\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 83392,
+        "timestamp": "2026-05-27T17:17:37+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83391,
+        "timestamp": "2026-05-27T17:16:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83390,
+        "timestamp": "2026-05-27T17:16:05+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 83389,
         "timestamp": "2026-05-27T17:15:05+00:00",
         "source": "backyard",
@@ -1348,6 +1403,17 @@
         "summary": "impact/movement sound at dog_run",
         "confidence": 0.6,
         "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83387,
+        "timestamp": "2026-05-27T17:13:59+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Light use at 1.75 gal/min. Daily total: 584.8 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
         "entities": "[]"
       },
       {
@@ -1371,17 +1437,6 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83387,
-        "timestamp": "2026-05-27T17:13:59+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Light use at 1.75 gal/min. Daily total: 584.8 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
       },
       {
         "id": 83384,
@@ -3472,64 +3527,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 83194,
-        "timestamp": "2026-05-27T15:46:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83193,
-        "timestamp": "2026-05-27T15:44:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dog barking at dog_run",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83192,
-        "timestamp": "2026-05-27T15:44:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83190,
-        "timestamp": "2026-05-27T15:43:48+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: Keyshia Cole - Heaven Sent",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83191,
-        "timestamp": "2026-05-27T15:43:48+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Active use at 7.40 gal/min. Daily total: 326.2 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4046,
+        "timestamp": "2026-05-27T17:16:56+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The dogs are exhibiting persistent and escalating signs of anxiety, which is correlated with unclassified audio movement detected in the backyard and dog run despite the cameras showing these areas as empty. This pattern, combined with the critical failure of both the front door and front yard cameras, suggests that the source of the dogs' distress or the activity is occurring in a significant blind spot, requiring immediate attention to check the perimeter.",
+        "acted_on_at": null
+      },
       {
         "id": 4045,
         "timestamp": "2026-05-27T17:07:24+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at living room (2x since 8:22AM).",
         "acted_on_at": null
-      },
-      {
-        "id": 4035,
-        "timestamp": "2026-05-27T16:15:59+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at backyard (4x since 8:14AM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3634,10 +3634,10 @@
         "entryway": "2026-05-27T16:33:43+00:00",
         "front_door": "2026-05-27T17:06:45+00:00",
         "front_yard": "2026-05-27T17:07:24+00:00",
-        "living_room": "2026-05-27T16:56:38+00:00",
+        "living_room": "2026-05-27T17:18:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T17:15:25.342623+00:00"
+      "last_updated": "2026-05-27T17:18:28.826465+00:00"
     }
   },
   "pge": {
