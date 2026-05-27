@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 10:46:35",
+  "generated_at": "2026-05-27 10:51:45",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1356,6 +1356,138 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 83467,
+        "timestamp": "2026-05-27T17:48:29+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional and displaying a technical error message. This is a continuation of recent intermittent camera failures.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 83466,
+        "timestamp": "2026-05-27T17:48:18+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "dog barking at entryway",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83465,
+        "timestamp": "2026-05-27T17:48:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 83464,
+        "timestamp": "2026-05-27T17:47:54+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying an error message indicating that no video frames are being received. While audio indicates dogs are barking near the entryway, there is no visual information available to monitor the front door area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": \"barking\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 83463,
+        "timestamp": "2026-05-27T17:47:52+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83462,
+        "timestamp": "2026-05-27T17:47:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83461,
+        "timestamp": "2026-05-27T17:46:53+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "dog barking at living_room",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83460,
+        "timestamp": "2026-05-27T17:46:48+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty, and the gate remains closed. Although no people or dogs are visible in the frame, audio indicates movement and barking near the entryway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 83459,
+        "timestamp": "2026-05-27T17:46:47+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "dog barking at entryway",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83458,
+        "timestamp": "2026-05-27T17:46:20+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83457,
+        "timestamp": "2026-05-27T17:45:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 83456,
+        "timestamp": "2026-05-27T17:45:48+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "impact/movement sound at front_yard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 83455,
         "timestamp": "2026-05-27T17:45:16+00:00",
@@ -3423,141 +3555,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 83267,
-        "timestamp": "2026-05-27T16:17:30+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83266,
-        "timestamp": "2026-05-27T16:16:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "impact/movement sound at living_room",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83265,
-        "timestamp": "2026-05-27T16:16:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83264,
-        "timestamp": "2026-05-27T16:15:25+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83263,
-        "timestamp": "2026-05-27T16:14:13+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 83262,
-        "timestamp": "2026-05-27T16:14:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83261,
-        "timestamp": "2026-05-27T16:13:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83259,
-        "timestamp": "2026-05-27T16:13:52+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: Keith Sweat - Nobody (feat. Athena Cage)",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83260,
-        "timestamp": "2026-05-27T16:13:52+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 533.3 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 83258,
-        "timestamp": "2026-05-27T16:13:52+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 83257,
-        "timestamp": "2026-05-27T16:12:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 83256,
-        "timestamp": "2026-05-27T16:12:21+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4048,
+        "timestamp": "2026-05-27T17:48:29+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is non-functional, which is a recurring issue.",
+        "acted_on_at": null
+      },
       {
         "id": 4047,
         "timestamp": "2026-05-27T17:27:13+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is currently non-functional, which is a recurring issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 4038,
-        "timestamp": "2026-05-27T16:16:28+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The dogs are exhibiting persistent and escalating signs of anxiety, repeatedly barking at the entryway and backyard, yet the cameras monitoring these critical entry points are non-functional or failing. This suggests a recurring, unseen external stimulus (such as a neighborhood animal, delivery vehicle, or person) is causing the household stress, which the current monitoring system cannot identify.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3645,27 +3645,27 @@
         "Roxanne"
       ],
       "active_rooms": [
+        "backyard",
         "dog_run",
         "entryway",
         "front_door",
         "front_yard",
-        "kitchen",
-        "living_room"
+        "kitchen"
       ],
       "lights_on": [
         "kitchen"
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-27T17:04:05+00:00",
+        "backyard": "2026-05-27T17:46:48+00:00",
         "dog_run": "2026-05-27T17:28:31+00:00",
         "entryway": "2026-05-27T17:19:06+00:00",
-        "front_door": "2026-05-27T17:27:13+00:00",
-        "front_yard": "2026-05-27T17:27:41+00:00",
+        "front_door": "2026-05-27T17:47:54+00:00",
+        "front_yard": "2026-05-27T17:48:29+00:00",
         "living_room": "2026-05-27T17:18:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T17:45:44.3836+00:00"
+      "last_updated": "2026-05-27T17:48:46.692925+00:00"
     }
   },
   "pge": {
