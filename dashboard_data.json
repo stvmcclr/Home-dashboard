@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 00:10:21",
+  "generated_at": "2026-05-27 00:15:28",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1273,6 +1273,72 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82270,
+        "timestamp": "2026-05-27T07:13:06+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: none",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 82271,
+        "timestamp": "2026-05-27T07:13:06+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in main_bedroom: White Noise",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 82272,
+        "timestamp": "2026-05-27T07:13:06+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 0.0 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 82269,
+        "timestamp": "2026-05-27T07:11:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82268,
+        "timestamp": "2026-05-27T07:10:50+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying a technical error message indicating that no video frames are being received. This is a continuation of a known, ongoing issue with this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 82267,
+        "timestamp": "2026-05-27T07:10:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 82266,
         "timestamp": "2026-05-27T07:09:01+00:00",
         "source": "backyard",
@@ -2305,75 +2371,25 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 82172,
-        "timestamp": "2026-05-27T05:54:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82171,
-        "timestamp": "2026-05-27T05:53:09+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82170,
-        "timestamp": "2026-05-27T05:51:46+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet during the night. A tennis ball rests alone on the artificial grass, and the gate is closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 82169,
-        "timestamp": "2026-05-27T05:51:06+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is empty and quiet during the late night. No people or animals are visible in the frame, though unclassified audio is heard from the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 82168,
-        "timestamp": "2026-05-27T05:48:25+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is currently non-functional, displaying a technical error message indicating that no video frames are being received. This persists from a recent observation of camera failure.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 82167,
-        "timestamp": "2026-05-27T05:48:02+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 3981,
+        "timestamp": "2026-05-27T07:10:50+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is non-functional, which is a known, ongoing issue.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3980,
+        "timestamp": "2026-05-27T07:10:26+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a significant discrepancy between the sensor data: between 23:51 and 00:06, the backyard repeatedly reports unclassified audio, yet the camera observations for the same period consistently report the area as empty and quiet. This suggests an auditory event or source that is not visible to the cameras and warrants investigation, especially since the household should be asleep.",
+        "acted_on_at": null
+      },
       {
         "id": 3979,
         "timestamp": "2026-05-27T07:03:52+00:00",
@@ -2437,22 +2453,6 @@
         "severity": "low",
         "summary": "High-activity pattern: dog_run averaging 39 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 3972,
-        "timestamp": "2026-05-27T06:09:27+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: living_room averaging 52 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3970,
-        "timestamp": "2026-05-27T06:09:02+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is non-functional, which is a known issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2460,7 +2460,6 @@
       "who_is_home": [],
       "active_rooms": [
         "backyard",
-        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -2470,12 +2469,12 @@
         "backyard": "2026-05-27T07:09:01+00:00",
         "dog_run": "2026-05-27T06:33:04+00:00",
         "entryway": "2026-05-27T06:40:13+00:00",
-        "front_door": "2026-05-27T06:50:14+00:00",
+        "front_door": "2026-05-27T07:10:50+00:00",
         "front_yard": "2026-05-27T07:03:51+00:00",
         "living_room": "2026-05-27T06:36:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T07:09:07.934389+00:00"
+      "last_updated": "2026-05-27T07:15:11.129912+00:00"
     }
   },
   "pge": {
