@@ -168,11 +168,11 @@ def build_data():
     # ── Home Intelligence ──────────────────────────────────────────────────
     intelligence = {"observations": [], "insights": [], "state": {}}
     try:
-        # Last 100 observations
+        # Last 200 observations — dashboard activity feed uses all of them
         obs_rows = sb.select(
             "home_observations",
             order="timestamp.desc",
-            limit=100
+            limit=200
         )
         intelligence["observations"] = obs_rows
 

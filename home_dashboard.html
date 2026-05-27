@@ -186,10 +186,17 @@
   .feed-item:hover { background: rgba(255,255,255,0.03); }
   .feed-item.person   { border-left-color: var(--blue); }
   .feed-item.dog      { border-left-color: var(--amber); }
+  .feed-item.bark     { border-left-color: var(--amber); }
   .feed-item.vehicle  { border-left-color: var(--purple); }
   .feed-item.motion   { border-left-color: var(--border); }
   .feed-item.audio    { border-left-color: var(--teal); }
+  .feed-item.speech   { border-left-color: var(--teal); }
+  .feed-item.music    { border-left-color: var(--purple); }
+  .feed-item.alarm    { border-left-color: var(--red); }
+  .feed-item.doorbell { border-left-color: var(--blue); }
+  .feed-item.impact   { border-left-color: var(--orange); }
   .feed-item.presence { border-left-color: var(--green); }
+  .feed-item.water    { border-left-color: var(--blue); }
 
   .feed-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; line-height: 1.3; }
   .feed-body { flex: 1; min-width: 0; }
@@ -930,29 +937,65 @@ function renderStateStrip(data) {
 
 // ── Activity feed ─────────────────────────────────────────────────────────
 function classifyObservation(obs) {
-  const src  = (obs.source || '').toLowerCase();
-  const sum  = (obs.summary || '').toLowerCase();
+  const src   = (obs.source || '').toLowerCase();
+  const sum   = (obs.summary || '').toLowerCase();
   const stype = (obs.source_type || '').toLowerCase();
-  if (stype === 'presence' || src.includes('presence')) {
-    if (sum.includes('person') || sum.includes('home:') || src.includes('unifi')) return 'presence';
+
+  if (stype === 'water' || src.includes('flume')) return 'water';
+  if (stype === 'presence' || src.includes('unifi')) return 'presence';
+
+  if (stype === 'audio' || src === 'ha:audio') {
+    if (sum.includes('bark') || (sum.includes('dog') && !sum.includes('camera'))) return 'bark';
+    if (sum.includes('speech') || sum.includes('talking') || sum.includes('voice') || sum.includes('conversation')) return 'speech';
+    if (sum.includes('alarm') || sum.includes('siren') || sum.includes('scream') || sum.includes('distress')) return 'alarm';
+    if (sum.includes('doorbell') || sum.includes('ring')) return 'doorbell';
+    if (sum.includes('glass') || sum.includes('break') || sum.includes('impact')) return 'impact';
+    if (sum.includes('music') || sum.includes('playing') || sum.includes('song') || sum.includes('audio')) return 'music';
+    return 'audio';
   }
-  if (stype === 'audio' || src.includes('audio')) return 'audio';
+
   if (stype === 'vision') {
-    if (sum.includes('dog') || sum.includes('animal') || sum.includes('pet')) return 'dog';
-    if (sum.includes('car') || sum.includes('vehicle') || sum.includes('truck')) return 'vehicle';
-    if (sum.includes('person') || sum.includes('people') || sum.includes('figure')) return 'person';
+    if (sum.includes('dog') || sum.includes('animal') || sum.includes('pet') || sum.includes('posey') || sum.includes('harlee')) return 'dog';
+    if (sum.includes('car') || sum.includes('vehicle') || sum.includes('truck') || sum.includes('suv')) return 'vehicle';
+    if (sum.includes('person') || sum.includes('people') || sum.includes('figure') || sum.includes('man') || sum.includes('woman') || sum.includes('child') || sum.includes('steve') || sum.includes('roxanne') || sum.includes('miller') || sum.includes('penelope')) return 'person';
     return 'motion';
   }
   return 'motion';
 }
 
+// Returns true for observations that are too noisy/boring to show
+function shouldSkipObs(obs) {
+  const sum   = (obs.summary || '').toLowerCase();
+  const stype = (obs.source_type || '').toLowerCase();
+  const src   = (obs.source || '').toLowerCase();
+
+  // Audio: skip generic noise that adds no signal
+  if (stype === 'audio') {
+    if (src === 'ha:audio') return false; // always show HA music events
+    if (sum.includes('unclassified') || sum.includes('silence') ||
+        sum.includes('wind') || sum.includes('outdoor ambient') ||
+        sum.includes('tv/media') || sum.includes('music playing')) return true;
+  }
+  // Presence: skip raw device-count pings (not name-based events)
+  if (stype === 'presence' && /^\d+ mobile/.test(sum)) return true;
+
+  return false;
+}
+
 const FEED_ICONS = {
   person:   '🧑',
   dog:      '🐕',
+  bark:     '🐕',
   vehicle:  '🚗',
   motion:   '👁️',
-  audio:    '🎵',
-  presence: '🏠',
+  speech:   '💬',
+  alarm:    '🚨',
+  doorbell: '🔔',
+  music:    '🎵',
+  audio:    '🔊',
+  impact:   '💥',
+  presence: '📱',
+  water:    '💧',
   insight:  '⚠️',
 };
 
@@ -962,101 +1005,98 @@ function formatLocation(loc) {
 }
 
 function renderLiveFeed(m) {
-  // Build unified activity feed: vision first, then presence/home, then audio, then insights
-  const wrap   = document.getElementById('feed-wrap');
+  const wrap    = document.getElementById('feed-wrap');
   const countEl = document.getElementById('feed-count');
-  const items  = [];
+  const items   = [];
   const seenKeys = new Set();
-  // Deduplicate by content bucket: same location+type within 5min window
-  const audioBucket = {}; // loc+category -> last ts (to throttle noisy audio)
+
+  // Deduplicate: same location+summary prefix within a 2-min window
+  const recentBucket = {}; // key -> last ts (ms)
+  const DEDUP_MS = 2 * 60 * 1000;
 
   function addItem(it) {
-    const key = (it.ts || '').slice(0,16) + '|' + (it.summary || '').slice(0, 60);
-    if (seenKeys.has(key)) return;
-    seenKeys.add(key);
+    if (!it.summary) return;
+    // Exact-duplicate guard (same minute + same summary)
+    const exactKey = (it.ts || '').slice(0, 15) + '|' + (it.summary || '').slice(0, 60);
+    if (seenKeys.has(exactKey)) return;
+    seenKeys.add(exactKey);
+    // Soft dedup: same location+type within 2 min
+    const softKey = (it.loc || '') + '|' + it.type;
+    const ts = new Date(it.ts || 0).getTime();
+    const last = recentBucket[softKey] || 0;
+    if (ts - last < DEDUP_MS && it.type !== 'insight' && it.type !== 'water') return;
+    recentBucket[softKey] = ts;
     items.push(it);
   }
 
-  function addAudio(it) {
-    // Throttle audio: max 1 per location+summary-type per 5 min
-    const bucketKey = (it.loc || '') + '|' + (it.summary || '').split(' ')[0];
-    const ts = new Date(it.ts).getTime();
-    const last = audioBucket[bucketKey] || 0;
-    if (ts - last < 5 * 60 * 1000) return; // skip if same type < 5min ago
-    audioBucket[bucketKey] = ts;
-    addItem(it);
-  }
+  // 1. Insights first (open alerts — always show)
+  (m.insights || []).forEach(i => items.push({
+    ts: i.ts || i.timestamp, type: 'insight', icon: FEED_ICONS.insight,
+    loc: '', summary: i.summary,
+    badge: i.severity || 'medium',
+    badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
+  }));
 
-  // 1. Live vision events (richest content — who's doing what)
+  // 2. All Supabase observations — sorted newest first, smart-filtered
+  const jsonObs = (D && D.intelligence && D.intelligence.observations) ? D.intelligence.observations : [];
+  const sorted  = [...jsonObs].sort((a,b) => (b.timestamp||'').localeCompare(a.timestamp||''));
+  sorted.forEach(o => {
+    if (shouldSkipObs(o)) return;
+    const type = classifyObservation(o);
+    const src  = (o.source || '').replace('camera:','').replace('ha:','').replace('unifi:','').replace('home:','');
+    // Confidence badge for audio events
+    const confBadge = (o.source_type === 'audio' && o.confidence)
+      ? Math.round(o.confidence * 100) + '%' : null;
+    addItem({
+      ts: o.timestamp, type,
+      icon: FEED_ICONS[type] || '👁️',
+      loc: formatLocation(o.location),
+      summary: o.summary,
+      badge: confBadge || src,
+      badgeColor: 'var(--blue)'
+    });
+  });
+
+  // 3. Live vision events from Frigate SSE (may be newer than Supabase)
   (Array.isArray(m.vision) ? m.vision : []).forEach(v => addItem({
-    ts: v.ts, type: 'camera', icon: '🎥',
+    ts: v.ts, type: 'motion', icon: '🎥',
     loc: formatLocation(v.loc || v.source || ''), summary: v.summary,
     badge: v.loc || '', badgeColor: 'var(--blue)'
   }));
 
-  // 2. JSON observations from Supabase — vision/presence/home events
-  const jsonObs = (D && D.intelligence && D.intelligence.observations) ? D.intelligence.observations : [];
-  const audioObs = [];
-  jsonObs.forEach(o => {
-    const src = o.source || '';
-    const type = classifyObservation(o);
-    const iconMap = { person:'🧑', dog:'🐕', vehicle:'🚗', motion:'👁️', audio:'🔊', presence:'🏠', camera:'🎥' };
-    const item = {
-      ts: o.timestamp, type, icon: iconMap[type] || '👁️',
-      loc: formatLocation(o.location), summary: o.summary,
-      badge: src.replace('camera:','').replace('ha:','').replace('unifi:','').replace('home:',''),
-      badgeColor: 'var(--blue)'
-    };
-    if (type === 'audio') audioObs.push(item); // defer audio
-    else addItem(item);
-  });
-
-  // 3. Presence / home state events
+  // 4. Water (if active)
   const w = m.water || {};
   if (w.flow_gpm > 0) addItem({
-    ts: w.ts || new Date().toISOString(), type: 'water', icon: '💧',
+    ts: w.ts || new Date().toISOString(), type: 'water', icon: FEED_ICONS.water,
     loc: 'Flume', summary: `${w.flow_gpm} gpm · ${w.daily_gallons || '?'} gal today`,
     badge: 'water', badgeColor: 'var(--blue)'
   });
 
-  // 4. Audio events (throttled, after visual)
-  ((m.audio || {}).recent || []).forEach(a => addAudio({
-    ts: a.ts, type: 'audio', icon: '🔊',
-    loc: formatLocation(a.loc || ''), summary: a.summary,
-    badge: a.conf ? (a.conf * 100).toFixed(0) + '%' : '', badgeColor: 'var(--purple)'
-  }));
-  audioObs.forEach(a => addAudio(a));
+  // Sort all (insights floated to top already since added first, but re-sort for ts within each group)
+  const insights = items.filter(i => i.type === 'insight');
+  const rest     = items.filter(i => i.type !== 'insight').sort((a,b) => new Date(b.ts)-new Date(a.ts));
+  const all      = [...insights, ...rest];
 
-  // 5. Insights at end (alerts/anomalies)
-  (m.insights || []).forEach(i => addItem({
-    ts: i.ts, type: 'insight', icon: '💡',
-    loc: '', summary: i.summary,
-    badge: i.severity || 'medium', badgeColor: i.severity === 'high' ? 'var(--red)' : 'var(--orange)'
-  }));
-
-  // Sort newest first
-  items.sort((a, b) => new Date(b.ts) - new Date(a.ts));
-
-  if (!items.length) {
+  if (!all.length) {
     wrap.innerHTML = '<div class="feed-empty">No recent activity</div>';
     countEl.textContent = '0';
     return;
   }
 
-  wrap.innerHTML = items.slice(0, 40).map(it => `
-    <div class="feed-item">
+  wrap.innerHTML = all.slice(0, 100).map(it => `
+    <div class="feed-item ${it.type}">
       <div class="feed-icon">${it.icon}</div>
       <div class="feed-body">
         <div class="feed-meta">
           <span class="feed-time">${fmt.relTime(it.ts)}</span>
           ${it.loc ? `<span class="feed-loc">${esc(it.loc)}</span>` : ''}
-          ${it.badge ? `<span class="feed-loc" style="background:rgba(0,0,0,0.2);color:${it.badgeColor}">${esc(it.badge)}</span>` : ''}
+          ${it.badge ? `<span class="feed-loc" style="background:rgba(0,0,0,0.15);color:${it.badgeColor}">${esc(it.badge)}</span>` : ''}
         </div>
         <div class="feed-summary">${esc(it.summary)}</div>
       </div>
     </div>`).join('');
 
-  countEl.textContent = items.length;
+  countEl.textContent = all.length;
 }
 
 function renderFeed(data) {
@@ -1086,14 +1126,24 @@ function renderFeed(data) {
     });
   }
 
-  // All observations — sorted newest first, no secondary divider
+  // All observations — sorted newest first, smart-filtered
   if (obs.length > 0) {
-    // Sort newest first (ISO strings sort lexicographically)
     const sorted = [...obs].sort((a, b) => (b.timestamp || '').localeCompare(a.timestamp || ''));
+    // Soft dedup: same loc+type within 2 min
+    const recentBucket = {};
     sorted.forEach(o => {
+      if (shouldSkipObs(o)) return;
       const type = classifyObservation(o);
       const loc  = formatLocation(o.location);
       const src  = (o.source || '').replace('camera:','').replace('ha:','').replace('unifi:','');
+      const confBadge = (o.source_type === 'audio' && o.confidence)
+        ? Math.round(o.confidence * 100) + '%' : null;
+      // 2-min soft dedup
+      const softKey = (loc || '') + '|' + type;
+      const ts = new Date(o.timestamp || 0).getTime();
+      const last = recentBucket[softKey] || 0;
+      if (ts - last < 2 * 60 * 1000) return;
+      recentBucket[softKey] = ts;
       html += `
         <div class="feed-item ${type}">
           <div class="feed-icon">${FEED_ICONS[type] || '👁️'}</div>
@@ -1101,7 +1151,8 @@ function renderFeed(data) {
             <div class="feed-meta">
               <span class="feed-time">${fmt.relTime(o.timestamp)}</span>
               ${loc ? `<span class="feed-loc">${esc(loc)}</span>` : ''}
-              ${src ? `<span class="feed-loc" style="opacity:0.6">${esc(src)}</span>` : ''}
+              ${confBadge ? `<span class="feed-loc" style="opacity:0.7">${esc(confBadge)}</span>` :
+                src ? `<span class="feed-loc" style="opacity:0.6">${esc(src)}</span>` : ''}
             </div>
             <div class="feed-summary">${esc(o.summary)}</div>
           </div>
