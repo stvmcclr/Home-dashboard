@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26 23:08:51",
+  "generated_at": "2026-05-26 23:14:00",
   "as_of": "2026-05-26",
   "projects": [
     {
@@ -1245,6 +1245,39 @@
   "intelligence": {
     "observations": [
       {
+        "id": 82196,
+        "timestamp": "2026-05-27T06:11:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82195,
+        "timestamp": "2026-05-27T06:09:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 82194,
+        "timestamp": "2026-05-27T06:09:02+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying a technical error message. This is a continuation of a known issue where no video frames are being received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
         "id": 82193,
         "timestamp": "2026-05-27T06:08:03+00:00",
         "source": "ha:audio",
@@ -2310,42 +2343,41 @@
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 82096,
-        "timestamp": "2026-05-27T05:10:29+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 82095,
-        "timestamp": "2026-05-27T05:10:20+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "An unidentified person wearing a grey hoodie is walking through the glass doors into the adjacent room. This movement is occurring while an alarm is sounding in the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 82094,
-        "timestamp": "2026-05-27T05:09:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "alarm/siren sound at backyard",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 3973,
+        "timestamp": "2026-05-27T06:09:56+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "Despite the house appearing quiet and the family settling down (White Noise at 23:08), there is a concerning pattern of unclassified audio detections (23:00-23:07) in the backyard and dog run. This persistent, unexplained noise, combined with the multiple, ongoing failures of the front door and front yard cameras, suggests that the perimeter is potentially compromised or experiencing persistent, unmonitored activity.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3971,
+        "timestamp": "2026-05-27T06:09:27+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: dog_run averaging 39 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3972,
+        "timestamp": "2026-05-27T06:09:27+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: living_room averaging 52 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 3970,
+        "timestamp": "2026-05-27T06:09:02+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is non-functional, which is a known issue.",
+        "acted_on_at": null
+      },
       {
         "id": 3969,
         "timestamp": "2026-05-27T06:00:52+00:00",
@@ -2393,38 +2425,6 @@
         "severity": "high",
         "summary": "[entryway] An alarm is sounding in the backyard and dog run, and an unidentified person is visible inside the house.",
         "acted_on_at": null
-      },
-      {
-        "id": 3963,
-        "timestamp": "2026-05-27T05:16:11+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Alarms are sounding in the backyard following reports of impact sounds and a barking dog, suggesting a security incident.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3962,
-        "timestamp": "2026-05-27T05:11:42+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] An unidentified person is inside the house while a backyard alarm is sounding.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3961,
-        "timestamp": "2026-05-27T05:10:20+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Unidentified person detected moving through the house while a backyard alarm is sounding.",
-        "acted_on_at": null
-      },
-      {
-        "id": 3960,
-        "timestamp": "2026-05-27T05:09:25+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The persistent alarms and impact sounds detected in empty areas (e.g., 22:05 living room, 22:02 backyard) suggest that the initial disturbance was not fully resolved, potentially indicating a security breach or unresolved issue. This is compounded by the observation of unknown individuals entering the home (22:08) while the alarm system remains active, warranting immediate investigation.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -2446,12 +2446,12 @@
         "backyard": "2026-05-27T06:06:09+00:00",
         "dog_run": "2026-05-27T05:51:46+00:00",
         "entryway": "2026-05-27T05:54:37+00:00",
-        "front_door": "2026-05-27T05:48:25+00:00",
+        "front_door": "2026-05-27T06:09:02+00:00",
         "front_yard": "2026-05-27T06:00:51+00:00",
         "living_room": "2026-05-27T05:51:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-27T06:08:35.355447+00:00"
+      "last_updated": "2026-05-27T06:11:37.779872+00:00"
     }
   },
   "pge": {
