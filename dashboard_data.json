@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 03:30:48",
+  "generated_at": "2026-05-28 03:35:55",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85545,
+        "timestamp": "2026-05-28T10:33:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85544,
+        "timestamp": "2026-05-28T10:32:23+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85543,
+        "timestamp": "2026-05-28T10:31:14+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently non-functional, displaying an error message indicating that no video frames are being received. This is a continuation of a known technical issue with this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 85542,
+        "timestamp": "2026-05-28T10:30:50+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85541,
+        "timestamp": "2026-05-28T10:29:29+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 85540,
         "timestamp": "2026-05-28T10:28:18+00:00",
@@ -3444,64 +3499,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 85345,
-        "timestamp": "2026-05-28T07:58:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 85344,
-        "timestamp": "2026-05-28T07:57:50+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85343,
-        "timestamp": "2026-05-28T07:57:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85342,
-        "timestamp": "2026-05-28T07:55:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85341,
-        "timestamp": "2026-05-28T07:53:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4165,
+        "timestamp": "2026-05-28T10:32:29+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a concerning convergence of external suspicious activity (unknown person in a blue shirt near a white van) and repeated, critical failures of the front door and front yard cameras. This pattern suggests potential ongoing surveillance or attempted tampering with the home's security systems during the early morning hours.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4164,
+        "timestamp": "2026-05-28T10:31:23+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at front_yard this hour: 5 observations vs typical 1 for weekday 03:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 4163,
+        "timestamp": "2026-05-28T10:31:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is not providing any video feed, which is a known ongoing issue.",
+        "acted_on_at": null
+      },
       {
         "id": 4162,
         "timestamp": "2026-05-28T09:47:18+00:00",
@@ -3557,30 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera stream was interrupted, and an unknown person is seen near a white van on the street late at night.",
         "acted_on_at": null
-      },
-      {
-        "id": 4155,
-        "timestamp": "2026-05-28T07:45:11+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is offline and not receiving frames, which is a known ongoing issue.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4154,
-        "timestamp": "2026-05-28T07:29:46+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a significant contradiction between the internal camera feeds (showing the house is empty) and the 00:28 presence signal reporting 14 mobile devices home. This suggests either a major technical glitch, or that the house is occupied by multiple unseen individuals, which, combined with the repeated sightings of unknown people near the white van and the non-functional front door camera, raises immediate security concerns.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4153,
-        "timestamp": "2026-05-28T07:02:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is currently non-functional, which is a known ongoing issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3603,12 +3603,12 @@
         "backyard": "2026-05-28T10:20:14+00:00",
         "dog_run": "2026-05-28T10:26:18+00:00",
         "entryway": "2026-05-28T10:20:36+00:00",
-        "front_door": "2026-05-28T10:10:39+00:00",
+        "front_door": "2026-05-28T10:31:14+00:00",
         "front_yard": "2026-05-28T10:19:47+00:00",
         "living_room": "2026-05-28T10:17:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T10:28:34.010933+00:00"
+      "last_updated": "2026-05-28T10:34:39.719175+00:00"
     }
   },
   "pge": {
