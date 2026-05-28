@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 17:12:08",
+  "generated_at": "2026-05-27 17:17:16",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 84338,
+        "timestamp": "2026-05-28T00:13:35+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room and kitchen area are currently empty. No people or animals are visible in the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 84337,
+        "timestamp": "2026-05-28T00:13:07+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84336,
+        "timestamp": "2026-05-28T00:12:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84335,
+        "timestamp": "2026-05-28T00:11:34+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84334,
+        "timestamp": "2026-05-28T00:11:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 84333,
         "timestamp": "2026-05-28T00:09:58+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.99,
         "model_version": "flume-ha-v2",
         "entities": "[]"
-      },
-      {
-        "id": 84138,
-        "timestamp": "2026-05-27T22:44:33+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 84137,
-        "timestamp": "2026-05-27T22:43:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84136,
-        "timestamp": "2026-05-27T22:43:46+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is non-functional, displaying an error message indicating that no video frames are being received. Audio activity is detected in the backyard and living room, where a dog is barking.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera offline\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.7}]"
-      },
-      {
-        "id": 84135,
-        "timestamp": "2026-05-27T22:43:16+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84134,
-        "timestamp": "2026-05-27T22:43:04+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Penelope is standing in the kitchen area, focused on a small object in her hands. In the background, a dog can be heard barking at the dog run.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
       }
     ],
     "insights": [
@@ -3549,10 +3549,10 @@
         "entryway": "2026-05-27T23:48:46+00:00",
         "front_door": "2026-05-28T00:09:19+00:00",
         "front_yard": "2026-05-27T23:56:55+00:00",
-        "living_room": "2026-05-27T23:56:30+00:00",
+        "living_room": "2026-05-28T00:13:35+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T00:11:24.718176+00:00"
+      "last_updated": "2026-05-28T00:14:26.949007+00:00"
     }
   },
   "pge": {
