@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 21:15:13",
+  "generated_at": "2026-05-27 21:20:21",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85095,
+        "timestamp": "2026-05-28T04:16:59+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a technical error and is not transmitting video frames, displaying an error message instead. This appears to be a recurrence of a recent connectivity issue.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 85094,
+        "timestamp": "2026-05-28T04:16:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85093,
+        "timestamp": "2026-05-28T04:15:17+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying an error message. While visual data is unavailable, audio sensors are detecting impact and movement sounds in the front yard and dog run.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 85090,
+        "timestamp": "2026-05-28T04:15:05+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, family_room, stairs",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 85091,
+        "timestamp": "2026-05-28T04:15:05+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Audio paused in 9 rooms",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 85092,
+        "timestamp": "2026-05-28T04:15:05+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Low flow at 0.34 gal/min. Daily total: 915.5 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
       {
         "id": 85089,
         "timestamp": "2026-05-28T04:15:00+00:00",
@@ -3377,75 +3443,25 @@
         "confidence": 0.62,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 84895,
-        "timestamp": "2026-05-28T02:47:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84894,
-        "timestamp": "2026-05-28T02:47:19+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84893,
-        "timestamp": "2026-05-28T02:47:04+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "Miller and Penelope are in the backyard near the trampoline. They appear to be stationary or engaged in quiet activity near the edge of the frame.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 84892,
-        "timestamp": "2026-05-28T02:46:52+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84891,
-        "timestamp": "2026-05-28T02:46:19+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84890,
-        "timestamp": "2026-05-28T02:46:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4133,
+        "timestamp": "2026-05-28T04:17:00+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing a recurring technical error and is not transmitting video frames.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4132,
+        "timestamp": "2026-05-28T04:15:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is offline, and impact sounds are being detected in the front yard.",
+        "acted_on_at": null
+      },
       {
         "id": 4131,
         "timestamp": "2026-05-28T04:07:06+00:00",
@@ -3509,36 +3525,20 @@
         "severity": "medium",
         "summary": "Unusually high activity at backyard this hour: 14 observations vs typical 1 for weekday 20:00",
         "acted_on_at": null
-      },
-      {
-        "id": 4123,
-        "timestamp": "2026-05-28T03:25:42+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at front door (3x since 7:19PM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 4124,
-        "timestamp": "2026-05-28T03:25:42+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 7:34PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
         "Miller",
-        "Penelope",
-        "Steve"
+        "Penelope"
       ],
       "active_rooms": [
         "backyard",
         "dog_run",
         "entryway",
         "family_room",
+        "front_door",
         "front_yard",
         "kitchen",
         "living_room",
@@ -3554,12 +3554,12 @@
         "backyard": "2026-05-28T04:02:14+00:00",
         "dog_run": "2026-05-28T04:07:05+00:00",
         "entryway": "2026-05-28T04:14:40+00:00",
-        "front_door": "2026-05-28T03:30:26+00:00",
-        "front_yard": "2026-05-28T03:56:10+00:00",
+        "front_door": "2026-05-28T04:15:17+00:00",
+        "front_yard": "2026-05-28T04:16:59+00:00",
         "living_room": "2026-05-28T04:08:34+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T04:15:01.91546+00:00"
+      "last_updated": "2026-05-28T04:18:03.534136+00:00"
     }
   },
   "pge": {
