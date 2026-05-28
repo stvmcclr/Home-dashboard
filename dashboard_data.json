@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 17:07:02",
+  "generated_at": "2026-05-27 17:12:08",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1022,24 +1022,24 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1725,
-        "timestamp": "2026-05-27T23:09:49+00:00",
+        "id": 1727,
+        "timestamp": "2026-05-28T00:12:01+00:00",
         "location": "Downstairs",
-        "temp_f": 70.5,
-        "humidity_pct": 51,
+        "temp_f": 70.7,
+        "humidity_pct": 50,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
+        "heat_setpoint_f": 67.3,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1726,
-        "timestamp": "2026-05-27T23:09:49+00:00",
+        "id": 1728,
+        "timestamp": "2026-05-28T00:12:01+00:00",
         "location": "Upstairs",
-        "temp_f": 70.6,
+        "temp_f": 71.6,
         "humidity_pct": 52,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1050,7 +1050,36 @@
         "connectivity": "ONLINE"
       }
     ],
-    "history": []
+    "history": [
+      {
+        "id": 1727,
+        "timestamp": "2026-05-28T00:12:01+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.7,
+        "humidity_pct": 50,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 67.3,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1728,
+        "timestamp": "2026-05-28T00:12:01+00:00",
+        "location": "Upstairs",
+        "temp_f": 71.6,
+        "humidity_pct": 52,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      }
+    ]
   },
   "energy": {
     "monthly_electric": [
@@ -1215,6 +1244,116 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 84333,
+        "timestamp": "2026-05-28T00:09:58+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84332,
+        "timestamp": "2026-05-28T00:09:19+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and is not receiving any video frames. Audio sensors indicate activity with dogs barking at the entryway and dog run, as well as speech detected in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 84331,
+        "timestamp": "2026-05-28T00:08:52+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84330,
+        "timestamp": "2026-05-28T00:08:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84329,
+        "timestamp": "2026-05-28T00:07:36+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "dog barking at entryway",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84328,
+        "timestamp": "2026-05-28T00:06:57+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "speech detected at backyard",
+        "confidence": 0.75,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84327,
+        "timestamp": "2026-05-28T00:06:46+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dog barking at dog_run",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84326,
+        "timestamp": "2026-05-28T00:06:41+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "speech detected at living_room",
+        "confidence": 0.75,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84325,
+        "timestamp": "2026-05-28T00:06:05+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84324,
+        "timestamp": "2026-05-28T00:05:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 84323,
         "timestamp": "2026-05-28T00:05:11+00:00",
@@ -3304,119 +3443,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 84133,
-        "timestamp": "2026-05-27T22:42:25+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84132,
-        "timestamp": "2026-05-27T22:42:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "dog barking at living_room",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84131,
-        "timestamp": "2026-05-27T22:42:15+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is currently empty, with no people or animals visible in the frame. However, audio sensors detect movement and an impact sound occurring in this area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"blue mat\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"black bag\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 84130,
-        "timestamp": "2026-05-27T22:41:43+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Penelope is standing in the kitchen area, looking towards the living room. A dog can be heard barking at the dog run outside.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 84129,
-        "timestamp": "2026-05-27T22:41:19+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "impact/movement sound at entryway",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84128,
-        "timestamp": "2026-05-27T22:41:00+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dog barking at dog_run",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84127,
-        "timestamp": "2026-05-27T22:40:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "impact/movement sound at backyard",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84126,
-        "timestamp": "2026-05-27T22:40:46+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "impact/movement sound at living_room",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84125,
-        "timestamp": "2026-05-27T22:40:07+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Penelope is walking through the living room and kitchen area while carrying a blue piece of clothing. She appears to be moving between different parts of the house.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 84124,
-        "timestamp": "2026-05-27T22:39:38+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard area are empty and still. The white gate is closed, blocking the path toward the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 4094,
+        "timestamp": "2026-05-28T00:09:19+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is down, preventing visual confirmation of the activity indicated by the audio sensors.",
+        "acted_on_at": null
+      },
       {
         "id": 4093,
         "timestamp": "2026-05-27T23:57:31+00:00",
@@ -3488,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is non-functional and displaying an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 4084,
-        "timestamp": "2026-05-27T23:06:23+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is down, and audio is being detected at the entryway, preventing visual verification of activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3518,12 +3547,12 @@
         "backyard": "2026-05-28T00:02:59+00:00",
         "dog_run": "2026-05-27T23:57:31+00:00",
         "entryway": "2026-05-27T23:48:46+00:00",
-        "front_door": "2026-05-27T23:48:02+00:00",
+        "front_door": "2026-05-28T00:09:19+00:00",
         "front_yard": "2026-05-27T23:56:55+00:00",
         "living_room": "2026-05-27T23:56:30+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T00:05:19.625281+00:00"
+      "last_updated": "2026-05-28T00:11:24.718176+00:00"
     }
   },
   "pge": {
