@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 00:05:38",
+  "generated_at": "2026-05-28 00:10:45",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85293,
+        "timestamp": "2026-05-28T07:07:32+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85292,
+        "timestamp": "2026-05-28T07:05:31+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "An unknown person in a blue shirt is standing near a white van parked on the street. Roxanne's black Porsche Cayenne is parked in the driveway, and the street is otherwise quiet.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 85291,
         "timestamp": "2026-05-28T07:05:00+00:00",
@@ -3449,28 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 85093,
-        "timestamp": "2026-05-28T04:15:17+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is non-functional and displaying an error message. While visual data is unavailable, audio sensors are detecting impact and movement sounds in the front yard and dog run.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 85091,
-        "timestamp": "2026-05-28T04:15:05+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Audio paused in 9 rooms",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3561,7 +3561,8 @@
         "unknown person"
       ],
       "active_rooms": [
-        "front_door"
+        "front_door",
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3570,11 +3571,11 @@
         "dog_run": "2026-05-28T06:34:25+00:00",
         "entryway": "2026-05-28T06:31:42+00:00",
         "front_door": "2026-05-28T07:02:40+00:00",
-        "front_yard": "2026-05-28T06:22:40+00:00",
+        "front_yard": "2026-05-28T07:05:31+00:00",
         "living_room": "2026-05-28T06:27:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T07:05:06.856095+00:00"
+      "last_updated": "2026-05-28T07:08:08.844675+00:00"
     }
   },
   "pge": {
