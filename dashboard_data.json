@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 23:29:49",
+  "generated_at": "2026-05-27 23:34:55",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85254,
+        "timestamp": "2026-05-28T06:34:25+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet at night. No people or dogs are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 85253,
+        "timestamp": "2026-05-28T06:33:50+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85252,
+        "timestamp": "2026-05-28T06:31:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85251,
+        "timestamp": "2026-05-28T06:31:42+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet during the late-night hours. No people or animals are visible in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 85250,
+        "timestamp": "2026-05-28T06:29:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 85249,
         "timestamp": "2026-05-28T06:28:14+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 85054,
-        "timestamp": "2026-05-28T03:56:26+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 85053,
-        "timestamp": "2026-05-28T03:56:10+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently experiencing a technical error and is not transmitting any video frames. The screen displays an error message indicating that no frames have been received, suggesting a recurrence of the recent connectivity issue.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"error\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 85052,
-        "timestamp": "2026-05-28T03:55:48+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "impact/movement sound at entryway",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85051,
-        "timestamp": "2026-05-28T03:55:03+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Light use at 1.33 gal/min. Daily total: 878.0 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 85050,
-        "timestamp": "2026-05-28T03:55:03+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, family_room, upstairs_hallway, stairs, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 4151,
+        "timestamp": "2026-05-28T06:29:02+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a concerning confluence of signals: unknown individuals are repeatedly observed near the property (white van, 23:01, 23:22), while the critical front door camera remains non-functional, creating a major security blind spot. This external suspicious activity, combined with persistent unclassified audio detected in the backyard, suggests the property may be being monitored or targeted.",
+        "acted_on_at": null
+      },
       {
         "id": 4150,
         "timestamp": "2026-05-28T06:22:40+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is offline due to a technical error, and an alarm is sounding in the living room.",
         "acted_on_at": null
-      },
-      {
-        "id": 4141,
-        "timestamp": "2026-05-28T04:57:22+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Front door camera is down, and impact sounds are being detected in the living room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,6 +3563,8 @@
       ],
       "active_rooms": [
         "backyard",
+        "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3571,14 +3573,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-28T06:28:14+00:00",
-        "dog_run": "2026-05-28T05:29:48+00:00",
-        "entryway": "2026-05-28T05:45:36+00:00",
+        "dog_run": "2026-05-28T06:34:25+00:00",
+        "entryway": "2026-05-28T06:31:42+00:00",
         "front_door": "2026-05-28T06:20:37+00:00",
         "front_yard": "2026-05-28T06:22:40+00:00",
         "living_room": "2026-05-28T06:27:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T06:28:38.544621+00:00"
+      "last_updated": "2026-05-28T06:34:42.196609+00:00"
     }
   },
   "pge": {
