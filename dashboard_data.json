@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 22:59:00",
+  "generated_at": "2026-05-27 23:04:09",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85220,
+        "timestamp": "2026-05-28T06:00:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85219,
+        "timestamp": "2026-05-28T05:59:34+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "impact/movement sound at dog_run",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85218,
+        "timestamp": "2026-05-28T05:59:31+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently non-functional, displaying an error message indicating that no video frames are being received. This confirms an ongoing loss of the video feed from this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 85217,
+        "timestamp": "2026-05-28T05:58:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 85216,
         "timestamp": "2026-05-28T05:57:25+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[]"
-      },
-      {
-        "id": 85021,
-        "timestamp": "2026-05-28T03:40:02+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Light use at 1.75 gal/min. Daily total: 858.1 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 85019,
-        "timestamp": "2026-05-28T03:39:49+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "dog barking at entryway",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85018,
-        "timestamp": "2026-05-28T03:38:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85017,
-        "timestamp": "2026-05-28T03:38:51+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Miller is in the kitchen opening the refrigerator. Audio from the living room and backyard indicates movement and a dog barking.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"opening the refrigerator\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 4147,
+        "timestamp": "2026-05-28T05:59:31+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is down, creating a security blind spot.",
+        "acted_on_at": null
+      },
       {
         "id": 4146,
         "timestamp": "2026-05-28T05:40:24+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is non-functional, and audio sensors are detecting impact and movement sounds in the living room and backyard.",
         "acted_on_at": null
-      },
-      {
-        "id": 4137,
-        "timestamp": "2026-05-28T04:27:53+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Despite multiple cameras showing the house as empty and still after 21:05, the sensors repeatedly detect impact/movement sounds in the entryway, living room, and backyard (21:23-21:26). This pattern, combined with the dogs' persistent restlessness and the front door camera remaining offline, suggests unexplained activity or potential unauthorized presence within the home that is not being captured visually.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,7 +3563,6 @@
       ],
       "active_rooms": [
         "backyard",
-        "dog_run",
         "entryway",
         "front_door",
         "front_yard",
@@ -3575,12 +3574,12 @@
         "backyard": "2026-05-28T05:46:57+00:00",
         "dog_run": "2026-05-28T05:29:48+00:00",
         "entryway": "2026-05-28T05:45:36+00:00",
-        "front_door": "2026-05-28T05:38:54+00:00",
+        "front_door": "2026-05-28T05:59:31+00:00",
         "front_yard": "2026-05-28T05:40:24+00:00",
         "living_room": "2026-05-28T05:42:11+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T05:58:21.400994+00:00"
+      "last_updated": "2026-05-28T06:01:23.395654+00:00"
     }
   },
   "pge": {
