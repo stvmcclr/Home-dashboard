@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 23:09:18",
+  "generated_at": "2026-05-27 23:14:28",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85232,
+        "timestamp": "2026-05-28T06:12:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85231,
+        "timestamp": "2026-05-28T06:10:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85230,
+        "timestamp": "2026-05-28T06:09:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85229,
+        "timestamp": "2026-05-28T06:08:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85228,
+        "timestamp": "2026-05-28T06:07:27+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. The gate separating the passage from the driveway remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 85227,
         "timestamp": "2026-05-28T06:06:35+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[]"
-      },
-      {
-        "id": 85033,
-        "timestamp": "2026-05-28T03:45:02+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 858.1 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 85031,
-        "timestamp": "2026-05-28T03:45:02+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, family_room, upstairs_hallway, stairs, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 85030,
-        "timestamp": "2026-05-28T03:43:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85029,
-        "timestamp": "2026-05-28T03:43:32+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85028,
-        "timestamp": "2026-05-28T03:43:18+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3565,13 +3565,12 @@
         "backyard",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-28T05:46:57+00:00",
+        "backyard": "2026-05-28T06:07:27+00:00",
         "dog_run": "2026-05-28T05:29:48+00:00",
         "entryway": "2026-05-28T05:45:36+00:00",
         "front_door": "2026-05-28T05:59:31+00:00",
@@ -3579,7 +3578,7 @@
         "living_room": "2026-05-28T05:42:11+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T06:07:27.459988+00:00"
+      "last_updated": "2026-05-28T06:13:30.437259+00:00"
     }
   },
   "pge": {
