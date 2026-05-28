@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 20:08:39",
+  "generated_at": "2026-05-27 20:13:47",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1245,6 +1245,61 @@
   "intelligence": {
     "observations": [
       {
+        "id": 84949,
+        "timestamp": "2026-05-28T03:10:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84948,
+        "timestamp": "2026-05-28T03:10:05+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84947,
+        "timestamp": "2026-05-28T03:09:35+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and displaying an error message. Audio sensors indicate activity in the backyard and dog run, along with movement and an impact sound in the front yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front door camera\", \"entity_state\": \"error\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.7}]"
+      },
+      {
+        "id": 84946,
+        "timestamp": "2026-05-28T03:09:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84945,
+        "timestamp": "2026-05-28T03:08:58+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 84944,
         "timestamp": "2026-05-28T03:08:00+00:00",
         "source": "dog_run",
@@ -1883,6 +1938,17 @@
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking at entryway\", \"confidence\": 0.8}]"
       },
       {
+        "id": 84884,
+        "timestamp": "2026-05-28T02:44:57+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, family_room, downstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
         "id": 84885,
         "timestamp": "2026-05-28T02:44:57+00:00",
         "source": "ha:audio",
@@ -1903,17 +1969,6 @@
         "confidence": 0.99,
         "model_version": "flume-ha-v2",
         "entities": "[]"
-      },
-      {
-        "id": 84884,
-        "timestamp": "2026-05-28T02:44:57+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, family_room, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
         "id": 84883,
@@ -2246,17 +2301,6 @@
         "entities": "[]"
       },
       {
-        "id": 84852,
-        "timestamp": "2026-05-28T02:33:33+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "Miller is playing on the trampoline with a basketball. He bounces the ball on the trampoline mat and then sits down.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"playing on trampoline\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"basketball\", \"entity_state\": \"bouncing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
         "id": 84853,
         "timestamp": "2026-05-28T02:33:33+00:00",
         "source": "backyard",
@@ -2266,6 +2310,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
+      },
+      {
+        "id": 84852,
+        "timestamp": "2026-05-28T02:33:33+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "Miller is playing on the trampoline with a basketball. He bounces the ball on the trampoline mat and then sits down.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": \"playing on trampoline\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"basketball\", \"entity_state\": \"bouncing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}]"
       },
       {
         "id": 84851,
@@ -2961,6 +3016,17 @@
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"standing at kitchen counter\", \"confidence\": 0.95}]"
       },
       {
+        "id": 84786,
+        "timestamp": "2026-05-28T02:14:54+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, downstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
         "id": 84787,
         "timestamp": "2026-05-28T02:14:54+00:00",
         "source": "ha:audio",
@@ -2981,17 +3047,6 @@
         "confidence": 0.99,
         "model_version": "flume-ha-v2",
         "entities": "[]"
-      },
-      {
-        "id": 84786,
-        "timestamp": "2026-05-28T02:14:54+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
       },
       {
         "id": 84785,
@@ -3388,61 +3443,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 84749,
-        "timestamp": "2026-05-28T02:07:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84748,
-        "timestamp": "2026-05-28T02:07:01+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "impact/movement sound at living_room",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84747,
-        "timestamp": "2026-05-28T02:06:42+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84746,
-        "timestamp": "2026-05-28T02:06:30+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84745,
-        "timestamp": "2026-05-28T02:06:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3539,7 +3539,6 @@
         "backyard",
         "dog_run",
         "downstairs_hallway",
-        "entryway",
         "family_room",
         "front_door",
         "front_yard",
@@ -3556,12 +3555,12 @@
         "backyard": "2026-05-28T03:01:52+00:00",
         "dog_run": "2026-05-28T03:00:06+00:00",
         "entryway": "2026-05-28T02:41:02+00:00",
-        "front_door": "2026-05-28T02:45:35+00:00",
+        "front_door": "2026-05-28T03:09:35+00:00",
         "front_yard": "2026-05-28T02:51:35+00:00",
         "living_room": "2026-05-28T02:58:52+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T03:08:24.527443+00:00"
+      "last_updated": "2026-05-28T03:11:26.174807+00:00"
     }
   },
   "pge": {
