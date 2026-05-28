@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 23:40:02",
+  "generated_at": "2026-05-27 23:45:10",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85261,
+        "timestamp": "2026-05-28T06:43:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85260,
+        "timestamp": "2026-05-28T06:42:06+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is non-functional and is displaying an error message indicating that no video frames are being received. This is a continuation of a known issue with the camera feed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 85259,
+        "timestamp": "2026-05-28T06:40:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 85258,
         "timestamp": "2026-05-28T06:37:33+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 85061,
-        "timestamp": "2026-05-28T04:00:49+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85060,
-        "timestamp": "2026-05-28T04:00:36+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "speech detected at living_room",
-        "confidence": 0.75,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 85059,
-        "timestamp": "2026-05-28T04:00:03+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 886.6 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4152,
+        "timestamp": "2026-05-28T06:42:06+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is not providing a video feed, which is a security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 4151,
         "timestamp": "2026-05-28T06:29:02+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is currently non-functional, preventing monitoring of the entrance.",
         "acted_on_at": null
-      },
-      {
-        "id": 4142,
-        "timestamp": "2026-05-28T04:58:59+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is offline due to a technical error, and an alarm is sounding in the living room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,12 +3575,12 @@
         "backyard": "2026-05-28T06:28:14+00:00",
         "dog_run": "2026-05-28T06:34:25+00:00",
         "entryway": "2026-05-28T06:31:42+00:00",
-        "front_door": "2026-05-28T06:20:37+00:00",
+        "front_door": "2026-05-28T06:42:06+00:00",
         "front_yard": "2026-05-28T06:22:40+00:00",
         "living_room": "2026-05-28T06:27:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T06:37:43.776972+00:00"
+      "last_updated": "2026-05-28T06:43:48.835408+00:00"
     }
   },
   "pge": {
