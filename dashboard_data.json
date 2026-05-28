@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 21:57:37",
+  "generated_at": "2026-05-27 22:02:44",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 85157,
+        "timestamp": "2026-05-28T05:00:10+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet, with no people or animals visible in the frame. While audio sensors detect movement in the backyard and front yard, the foyer remains still during this late-night observation.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 85156,
+        "timestamp": "2026-05-28T05:00:10+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: stairs",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 85155,
+        "timestamp": "2026-05-28T04:58:59+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a technical error and is not transmitting any video frames. An alarm or siren is sounding in the living room, but the lack of visual data prevents monitoring the front yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"state\", \"entity_name\": \"alarm in living room\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 85154,
+        "timestamp": "2026-05-28T04:58:36+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.65,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 85153,
+        "timestamp": "2026-05-28T04:58:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 85152,
         "timestamp": "2026-05-28T04:57:21+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.6,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 84957,
-        "timestamp": "2026-05-28T03:13:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84956,
-        "timestamp": "2026-05-28T03:13:30+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84955,
-        "timestamp": "2026-05-28T03:13:19+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "Steve is in the side passage tending to the patio heater. Penelope joins him, standing nearby and watching his progress.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"patio heater\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 84954,
-        "timestamp": "2026-05-28T03:13:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 84953,
-        "timestamp": "2026-05-28T03:12:24+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is experiencing a technical error and is not receiving any video frames. The last captured frame shows Roxanne's Porsche Cayenne in the driveway and vehicles parked on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 4142,
+        "timestamp": "2026-05-28T04:58:59+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is offline due to a technical error, and an alarm is sounding in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 4141,
         "timestamp": "2026-05-28T04:57:22+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing a recurring technical error and is not transmitting video frames.",
         "acted_on_at": null
-      },
-      {
-        "id": 4132,
-        "timestamp": "2026-05-28T04:15:17+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The front door camera is offline, and impact sounds are being detected in the front yard.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,29 +3563,26 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "family_room",
+        "entryway",
         "front_door",
         "front_yard",
-        "kitchen",
         "living_room",
         "stairs"
       ],
       "lights_on": [
-        "kitchen",
-        "family_room",
         "stairs"
       ],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-28T04:44:49+00:00",
         "dog_run": "2026-05-28T04:48:27+00:00",
-        "entryway": "2026-05-28T04:14:40+00:00",
+        "entryway": "2026-05-28T05:00:10+00:00",
         "front_door": "2026-05-28T04:57:21+00:00",
-        "front_yard": "2026-05-28T04:37:51+00:00",
+        "front_yard": "2026-05-28T04:58:59+00:00",
         "living_room": "2026-05-28T04:49:30+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T04:57:37.35424+00:00"
+      "last_updated": "2026-05-28T05:00:39.390733+00:00"
     }
   },
   "pge": {
