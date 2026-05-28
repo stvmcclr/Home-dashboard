@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 08:48:35",
+  "generated_at": "2026-05-28 15:53:35",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1734,
-        "timestamp": "2026-05-28T11:58:20+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.6,
-        "humidity_pct": 49,
-        "mode": "HEATCOOL",
+        "id": 1735,
+        "timestamp": "2026-05-28T15:53:25+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 55,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 57.9,
-        "cool_setpoint_f": 67.8,
+        "heat_setpoint_f": 66.8,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1733,
-        "timestamp": "2026-05-28T11:58:20+00:00",
-        "location": "Downstairs",
-        "temp_f": 70.4,
-        "humidity_pct": 48,
-        "mode": "HEAT",
+        "id": 1736,
+        "timestamp": "2026-05-28T15:53:25+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.3,
+        "humidity_pct": 58,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 55.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1159,6 +1159,34 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1735,
+        "timestamp": "2026-05-28T15:53:25+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 55,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 66.8,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1736,
+        "timestamp": "2026-05-28T15:53:25+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.3,
+        "humidity_pct": 58,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1329,6 +1357,237 @@
   "intelligence": {
     "observations": [
       {
+        "id": 86604,
+        "timestamp": "2026-05-28T15:52:55+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86603,
+        "timestamp": "2026-05-28T15:52:50+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86602,
+        "timestamp": "2026-05-28T15:52:19+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86601,
+        "timestamp": "2026-05-28T15:52:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86600,
+        "timestamp": "2026-05-28T15:51:35+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86598,
+        "timestamp": "2026-05-28T15:51:25+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music throughout house: Bruno Mars - Straight up & Down",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 86599,
+        "timestamp": "2026-05-28T15:51:25+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 287.5 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 86597,
+        "timestamp": "2026-05-28T15:51:22+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86596,
+        "timestamp": "2026-05-28T15:50:48+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86595,
+        "timestamp": "2026-05-28T15:50:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86594,
+        "timestamp": "2026-05-28T15:50:17+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86593,
+        "timestamp": "2026-05-28T15:49:47+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86592,
+        "timestamp": "2026-05-28T15:49:22+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is currently empty and quiet. No people or pets are visible in the camera view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 86591,
+        "timestamp": "2026-05-28T15:49:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86590,
+        "timestamp": "2026-05-28T15:48:32+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86589,
+        "timestamp": "2026-05-28T15:48:16+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86588,
+        "timestamp": "2026-05-28T15:47:45+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86587,
+        "timestamp": "2026-05-28T15:47:43+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86586,
+        "timestamp": "2026-05-28T15:47:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86585,
+        "timestamp": "2026-05-28T15:47:21+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The camera feed is experiencing intermittent connection errors, displaying black error screens. Although the visible yard appears empty, audio from the dog run indicates dogs are barking urgently, and audio from the living room suggests someone is calling for help.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": \"calling for help\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 86584,
+        "timestamp": "2026-05-28T15:47:14+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 86583,
         "timestamp": "2026-05-28T15:46:59+00:00",
         "source": "front_yard",
@@ -1348,6 +1607,17 @@
         "summary": "unclassified audio at dog_run",
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 86581,
+        "timestamp": "2026-05-28T15:46:24+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Low flow at 0.38 gal/min. Daily total: 265.5 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
         "entities": "[]"
       },
       {
@@ -1371,17 +1641,6 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 86581,
-        "timestamp": "2026-05-28T15:46:24+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "Low flow at 0.38 gal/min. Daily total: 265.5 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
       },
       {
         "id": 86578,
@@ -1637,17 +1896,6 @@
         "entities": "[]"
       },
       {
-        "id": 86554,
-        "timestamp": "2026-05-28T15:41:24+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: Mariah Carey - Fantasy",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
         "id": 86555,
         "timestamp": "2026-05-28T15:41:24+00:00",
         "source": "flume",
@@ -1657,6 +1905,17 @@
         "confidence": 0.99,
         "model_version": "flume-ha-v2",
         "entities": "[]"
+      },
+      {
+        "id": 86554,
+        "timestamp": "2026-05-28T15:41:24+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music throughout house: Mariah Carey - Fantasy",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       },
       {
         "id": 86553,
@@ -3296,240 +3555,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 86404,
-        "timestamp": "2026-05-28T14:58:58+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty. The white gate is closed, obstructing the path to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"basketball\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 86403,
-        "timestamp": "2026-05-28T14:58:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86402,
-        "timestamp": "2026-05-28T14:58:26+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86401,
-        "timestamp": "2026-05-28T14:58:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86400,
-        "timestamp": "2026-05-28T14:57:51+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86399,
-        "timestamp": "2026-05-28T14:57:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86398,
-        "timestamp": "2026-05-28T14:57:37+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "wind at entryway at entryway (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86397,
-        "timestamp": "2026-05-28T14:57:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 86396,
-        "timestamp": "2026-05-28T14:57:15+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86395,
-        "timestamp": "2026-05-28T14:57:06+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "calm family conversation indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86394,
-        "timestamp": "2026-05-28T14:56:51+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86393,
-        "timestamp": "2026-05-28T14:56:35+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86392,
-        "timestamp": "2026-05-28T14:56:22+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne and Penelope are in the kitchen area, continuing their morning routine. Roxanne is interacting with items on the kitchen counter while Penelope stands nearby.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 86391,
-        "timestamp": "2026-05-28T14:56:20+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86390,
-        "timestamp": "2026-05-28T14:56:18+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86389,
-        "timestamp": "2026-05-28T14:56:18+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music playing: living_room (Michael Jackson - Remember the Time), kitchen (Michael Jackson - Remember the Time), dining_room (Michael Jackson - Remember the Time), playroom (TV), sonos roam sl black (Michael Jackson - Remember the Time)",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 86388,
-        "timestamp": "2026-05-28T14:56:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86387,
-        "timestamp": "2026-05-28T14:55:48+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86386,
-        "timestamp": "2026-05-28T14:55:47+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard and street are currently still, with no people or animals visible. An unknown grey Tesla remains parked in the driveway, and several vehicles are parked along the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown grey Tesla\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 86385,
-        "timestamp": "2026-05-28T14:55:44+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 86384,
-        "timestamp": "2026-05-28T14:55:41+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4197,
+        "timestamp": "2026-05-28T15:47:21+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] Urgent dog barking and audio of someone calling for help in the living room indicate a potential emergency.",
+        "acted_on_at": null
+      },
       {
         "id": 4196,
         "timestamp": "2026-05-28T15:35:31+00:00",
@@ -3601,14 +3637,6 @@
         "severity": "high",
         "summary": "[front_yard] A loud thud or crash was heard in the living room, and dogs are barking at the front yard, though no activity is visible on camera.",
         "acted_on_at": null
-      },
-      {
-        "id": 4187,
-        "timestamp": "2026-05-28T14:34:32+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The sudden, synchronized burst of multiple dog barks, multiple doorbell chimes across various zones, and a loud thud/crash in the living room, immediately following a period of calm family activity, suggests an unexpected and potentially urgent incident has occurred inside the home. Steve should investigate the living room immediately.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3616,8 +3644,7 @@
       "who_is_home": [
         "Miller",
         "Penelope",
-        "Roxanne",
-        "Steve"
+        "Roxanne"
       ],
       "active_rooms": [
         "backyard",
@@ -3639,94 +3666,433 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-05-28T15:44:28+00:00",
-        "dog_run": "2026-05-28T15:25:21+00:00",
+        "dog_run": "2026-05-28T15:47:21+00:00",
         "entryway": "2026-05-28T15:40:26+00:00",
         "front_door": "2026-05-28T15:33:21+00:00",
         "front_yard": "2026-05-28T15:38:29+00:00",
-        "living_room": "2026-05-28T15:45:05+00:00",
+        "living_room": "2026-05-28T15:49:22+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T15:47:11.53979+00:00"
+      "last_updated": "2026-05-28T15:53:14.554695+00:00"
     }
   },
   "pge": {
     "hourly": [
       {
-        "ts": "2026-05-24T17:00",
-        "kwh": 1.445
+        "ts": "2026-05-10T00:00",
+        "kwh": 1.655
       },
       {
-        "ts": "2026-05-24T18:00",
-        "kwh": 1.346
+        "ts": "2026-05-10T01:00",
+        "kwh": 1.054
       },
       {
-        "ts": "2026-05-24T19:00",
-        "kwh": 3.187
+        "ts": "2026-05-10T02:00",
+        "kwh": 1.002
       },
       {
-        "ts": "2026-05-24T20:00",
-        "kwh": 3.381
+        "ts": "2026-05-10T03:00",
+        "kwh": 1.025
       },
       {
-        "ts": "2026-05-24T21:00",
-        "kwh": 2.511
+        "ts": "2026-05-10T04:00",
+        "kwh": 0.975
       },
       {
-        "ts": "2026-05-24T22:00",
-        "kwh": 3.485
+        "ts": "2026-05-10T05:00",
+        "kwh": 1.111
       },
       {
-        "ts": "2026-05-24T23:00",
-        "kwh": 5.288
+        "ts": "2026-05-10T06:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T07:00",
+        "kwh": 1.257
+      },
+      {
+        "ts": "2026-05-10T08:00",
+        "kwh": 1.347
+      },
+      {
+        "ts": "2026-05-10T09:00",
+        "kwh": 1.712
+      },
+      {
+        "ts": "2026-05-10T10:00",
+        "kwh": 2.537
+      },
+      {
+        "ts": "2026-05-10T11:00",
+        "kwh": 2.191
+      },
+      {
+        "ts": "2026-05-10T12:00",
+        "kwh": 1.351
+      },
+      {
+        "ts": "2026-05-10T13:00",
+        "kwh": 1.344
+      },
+      {
+        "ts": "2026-05-10T14:00",
+        "kwh": 1.758
+      },
+      {
+        "ts": "2026-05-10T15:00",
+        "kwh": 1.467
+      },
+      {
+        "ts": "2026-05-10T16:00",
+        "kwh": 1.289
+      },
+      {
+        "ts": "2026-05-10T17:00",
+        "kwh": 1.194
+      },
+      {
+        "ts": "2026-05-10T18:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T19:00",
+        "kwh": 1.115
+      },
+      {
+        "ts": "2026-05-10T20:00",
+        "kwh": 2.634
+      },
+      {
+        "ts": "2026-05-10T21:00",
+        "kwh": 3.568
+      },
+      {
+        "ts": "2026-05-10T22:00",
+        "kwh": 2.67
+      },
+      {
+        "ts": "2026-05-10T23:00",
+        "kwh": 1.629
+      },
+      {
+        "ts": "2026-05-11T00:00",
+        "kwh": 1.502
+      },
+      {
+        "ts": "2026-05-11T01:00",
+        "kwh": 1.219
+      },
+      {
+        "ts": "2026-05-11T02:00",
+        "kwh": 1.332
+      },
+      {
+        "ts": "2026-05-11T03:00",
+        "kwh": 1.057
+      },
+      {
+        "ts": "2026-05-11T04:00",
+        "kwh": 1.484
+      },
+      {
+        "ts": "2026-05-11T05:00",
+        "kwh": 0.974
+      },
+      {
+        "ts": "2026-05-11T06:00",
+        "kwh": 1.436
+      },
+      {
+        "ts": "2026-05-11T07:00",
+        "kwh": 1.482
+      },
+      {
+        "ts": "2026-05-11T08:00",
+        "kwh": 1.501
+      },
+      {
+        "ts": "2026-05-11T09:00",
+        "kwh": 1.734
+      },
+      {
+        "ts": "2026-05-11T10:00",
+        "kwh": 1.721
+      },
+      {
+        "ts": "2026-05-11T11:00",
+        "kwh": 1.414
+      },
+      {
+        "ts": "2026-05-11T12:00",
+        "kwh": 1.249
+      },
+      {
+        "ts": "2026-05-11T13:00",
+        "kwh": 1.338
+      },
+      {
+        "ts": "2026-05-11T14:00",
+        "kwh": 1.336
+      },
+      {
+        "ts": "2026-05-11T15:00",
+        "kwh": 1.554
+      },
+      {
+        "ts": "2026-05-11T16:00",
+        "kwh": 1.41
+      },
+      {
+        "ts": "2026-05-11T17:00",
+        "kwh": 1.626
+      },
+      {
+        "ts": "2026-05-11T18:00",
+        "kwh": 2.227
+      },
+      {
+        "ts": "2026-05-11T19:00",
+        "kwh": 3.785
+      },
+      {
+        "ts": "2026-05-11T20:00",
+        "kwh": 3.63
+      },
+      {
+        "ts": "2026-05-11T21:00",
+        "kwh": 3.703
+      },
+      {
+        "ts": "2026-05-11T22:00",
+        "kwh": 2.335
+      },
+      {
+        "ts": "2026-05-11T23:00",
+        "kwh": 2.331
+      },
+      {
+        "ts": "2026-05-12T00:00",
+        "kwh": 1.645
+      },
+      {
+        "ts": "2026-05-12T01:00",
+        "kwh": 1.52
+      },
+      {
+        "ts": "2026-05-12T02:00",
+        "kwh": 1.539
+      },
+      {
+        "ts": "2026-05-12T03:00",
+        "kwh": 1.516
+      },
+      {
+        "ts": "2026-05-12T04:00",
+        "kwh": 1.011
+      },
+      {
+        "ts": "2026-05-12T05:00",
+        "kwh": 1.722
+      },
+      {
+        "ts": "2026-05-12T06:00",
+        "kwh": 1.596
+      },
+      {
+        "ts": "2026-05-12T07:00",
+        "kwh": 1.784
+      },
+      {
+        "ts": "2026-05-12T08:00",
+        "kwh": 1.373
+      },
+      {
+        "ts": "2026-05-12T09:00",
+        "kwh": 1.259
+      },
+      {
+        "ts": "2026-05-12T10:00",
+        "kwh": 1.438
+      },
+      {
+        "ts": "2026-05-12T11:00",
+        "kwh": 1.659
+      },
+      {
+        "ts": "2026-05-12T12:00",
+        "kwh": 1.365
+      },
+      {
+        "ts": "2026-05-12T13:00",
+        "kwh": 1.383
+      },
+      {
+        "ts": "2026-05-12T14:00",
+        "kwh": 2.834
+      },
+      {
+        "ts": "2026-05-12T15:00",
+        "kwh": 1.969
+      },
+      {
+        "ts": "2026-05-12T16:00",
+        "kwh": 1.32
+      },
+      {
+        "ts": "2026-05-12T17:00",
+        "kwh": 1.455
+      },
+      {
+        "ts": "2026-05-12T18:00",
+        "kwh": 2.783
+      },
+      {
+        "ts": "2026-05-12T19:00",
+        "kwh": 4.151
+      },
+      {
+        "ts": "2026-05-12T20:00",
+        "kwh": 3.732
+      },
+      {
+        "ts": "2026-05-12T21:00",
+        "kwh": 2.848
+      },
+      {
+        "ts": "2026-05-12T22:00",
+        "kwh": 2.001
+      },
+      {
+        "ts": "2026-05-12T23:00",
+        "kwh": 2.201
+      },
+      {
+        "ts": "2026-05-13T00:00",
+        "kwh": 1.935
+      },
+      {
+        "ts": "2026-05-13T01:00",
+        "kwh": 1.879
+      },
+      {
+        "ts": "2026-05-13T02:00",
+        "kwh": 1.027
+      },
+      {
+        "ts": "2026-05-13T03:00",
+        "kwh": 1.403
+      },
+      {
+        "ts": "2026-05-13T04:00",
+        "kwh": 1.185
+      },
+      {
+        "ts": "2026-05-13T05:00",
+        "kwh": 0.909
+      },
+      {
+        "ts": "2026-05-13T06:00",
+        "kwh": 1.78
+      },
+      {
+        "ts": "2026-05-13T07:00",
+        "kwh": 2.005
+      },
+      {
+        "ts": "2026-05-13T08:00",
+        "kwh": 1.842
+      },
+      {
+        "ts": "2026-05-13T09:00",
+        "kwh": 4.412
+      },
+      {
+        "ts": "2026-05-13T10:00",
+        "kwh": 4.452
+      },
+      {
+        "ts": "2026-05-13T11:00",
+        "kwh": 3.414
+      },
+      {
+        "ts": "2026-05-13T12:00",
+        "kwh": 1.336
+      },
+      {
+        "ts": "2026-05-13T13:00",
+        "kwh": 1.308
+      },
+      {
+        "ts": "2026-05-13T14:00",
+        "kwh": 1.543
+      },
+      {
+        "ts": "2026-05-13T15:00",
+        "kwh": 1.476
+      },
+      {
+        "ts": "2026-05-13T16:00",
+        "kwh": 2.978
+      },
+      {
+        "ts": "2026-05-13T17:00",
+        "kwh": 2.827
+      },
+      {
+        "ts": "2026-05-13T18:00",
+        "kwh": 2.196
+      },
+      {
+        "ts": "2026-05-13T19:00",
+        "kwh": 1.725
+      },
+      {
+        "ts": "2026-05-13T20:00",
+        "kwh": 3.534
+      },
+      {
+        "ts": "2026-05-13T21:00",
+        "kwh": 3.26
+      },
+      {
+        "ts": "2026-05-13T22:00",
+        "kwh": 2.392
+      },
+      {
+        "ts": "2026-05-13T23:00",
+        "kwh": 1.793
       }
     ],
     "daily": [
       {
-        "date": "2026-05-24",
-        "total_kwh": 77.83,
-        "peak_kwh": 13.042,
+        "date": "2026-05-13",
+        "total_kwh": 52.61,
+        "peak_kwh": 4.452,
         "hours": 24
       },
       {
-        "date": "2026-05-23",
-        "total_kwh": 41.34,
-        "peak_kwh": 5.612,
+        "date": "2026-05-12",
+        "total_kwh": 46.1,
+        "peak_kwh": 4.151,
         "hours": 24
       },
       {
-        "date": "2026-05-22",
-        "total_kwh": 43.44,
-        "peak_kwh": 3.607,
+        "date": "2026-05-11",
+        "total_kwh": 43.38,
+        "peak_kwh": 3.785,
         "hours": 24
       },
       {
-        "date": "2026-05-21",
-        "total_kwh": 57.08,
-        "peak_kwh": 5.279,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-20",
-        "total_kwh": 49.66,
-        "peak_kwh": 3.689,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-19",
-        "total_kwh": 52.26,
-        "peak_kwh": 4.199,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-18",
-        "total_kwh": 45.78,
-        "peak_kwh": 4.185,
+        "date": "2026-05-10",
+        "total_kwh": 38.24,
+        "peak_kwh": 3.568,
         "hours": 24
       }
     ],
-    "latest_kwh": 5.288,
-    "avg_per_hour": 2.95,
-    "evening_peak_kwh": 3.48,
-    "data_through": "2026-05-24T23:00"
+    "latest_kwh": 1.793,
+    "avg_per_hour": 1.88,
+    "evening_peak_kwh": 4.15,
+    "data_through": "2026-05-13T23:00",
+    "_source": "pge_hourly.json"
   }
 }
