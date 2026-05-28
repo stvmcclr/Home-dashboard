@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27 19:53:18",
+  "generated_at": "2026-05-27 19:58:25",
   "as_of": "2026-05-27",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 84913,
+        "timestamp": "2026-05-28T02:56:11+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 84912,
+        "timestamp": "2026-05-28T02:55:29+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "alarm/siren sound at living_room",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84911,
+        "timestamp": "2026-05-28T02:55:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "impact/movement sound at backyard",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84910,
+        "timestamp": "2026-05-28T02:54:35+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 84909,
+        "timestamp": "2026-05-28T02:53:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 84908,
         "timestamp": "2026-05-28T02:52:59+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.99,
         "model_version": "flume-ha-v2",
         "entities": "[]"
-      },
-      {
-        "id": 84713,
-        "timestamp": "2026-05-28T01:59:52+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: downstairs_hallway, kitchen",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 84712,
-        "timestamp": "2026-05-28T01:59:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84711,
-        "timestamp": "2026-05-28T01:59:32+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "impact/movement sound at entryway",
-        "confidence": 0.6,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84710,
-        "timestamp": "2026-05-28T01:59:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 84709,
-        "timestamp": "2026-05-28T01:59:02+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front door camera is non-functional and is not receiving any video frames, displaying an error message instead. Audio sensors indicate activity in the backyard and dog run, with dogs barking in the living room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"dogs\", \"entity_state\": \"barking\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
@@ -3561,7 +3561,7 @@
         "living_room": "2026-05-28T02:48:34+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-28T02:53:17.898477+00:00"
+      "last_updated": "2026-05-28T02:56:18.993221+00:00"
     }
   },
   "pge": {
