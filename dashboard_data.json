@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 22:39:49",
+  "generated_at": "2026-05-28 22:44:57",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89238,
+        "timestamp": "2026-05-29T05:42:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89237,
+        "timestamp": "2026-05-29T05:41:06+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is not transmitting any video frames and is instead displaying an error message. This indicates a persistent technical failure or loss of connection at the entryway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 89236,
+        "timestamp": "2026-05-29T05:40:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89235,
+        "timestamp": "2026-05-29T05:40:06+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Roxanne is sitting on the couch in the living room, talking on her mobile phone. The scene is quiet and calm during the late evening.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"talking on phone\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.7}]"
+      },
       {
         "id": 89234,
         "timestamp": "2026-05-29T05:39:24+00:00",
@@ -3399,53 +3443,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 89038,
-        "timestamp": "2026-05-29T03:52:40+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music throughout house: The Isley Brothers - Footsteps in the Dark, Pts. 1 & 2",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 89037,
-        "timestamp": "2026-05-29T03:52:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89036,
-        "timestamp": "2026-05-29T03:50:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89035,
-        "timestamp": "2026-05-29T03:50:37+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is quiet at night. A dark green pickup truck is parked in the driveway, and a dark car is parked on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 4299,
+        "timestamp": "2026-05-29T05:42:43+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:26PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4300,
+        "timestamp": "2026-05-29T05:42:43+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:40PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4298,
+        "timestamp": "2026-05-29T05:41:07+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is experiencing a technical failure or loss of connection, as it is not transmitting any video frames.",
+        "acted_on_at": null
+      },
       {
         "id": 4297,
         "timestamp": "2026-05-29T04:59:26+00:00",
@@ -3501,30 +3525,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is offline, meaning the entrance is not being monitored.",
         "acted_on_at": null
-      },
-      {
-        "id": 4290,
-        "timestamp": "2026-05-29T03:06:21+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Energy synthesis (May 28): 1. **Overnight Baseline:** The baseline load is approximately **2.57 kWh/hr**. This is driven by \"always-on\" essentials: refrigerators, Wi-Fi routers, security systems, and standby power from electronics.\n\n2. **Evening Spike:** The **21:00 PDT** spike (**4.30 kWh/hr**) is consistent enough across 11",
-        "acted_on_at": null
-      },
-      {
-        "id": 4289,
-        "timestamp": "2026-05-29T03:05:00+00:00",
-        "insight_type": "trend",
-        "severity": "medium",
-        "summary": "Energy consumption trending up 49%: recent avg 53.6 kWh/day vs earlier 35.9 kWh/day. This covers 11 days of data.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4288,
-        "timestamp": "2026-05-29T02:48:06+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing a connection error and is not providing a live feed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3555,12 +3555,12 @@
         "backyard": "2026-05-29T05:39:24+00:00",
         "dog_run": "2026-05-29T05:27:59+00:00",
         "entryway": "2026-05-29T05:38:27+00:00",
-        "front_door": "2026-05-29T05:20:42+00:00",
+        "front_door": "2026-05-29T05:41:06+00:00",
         "front_yard": "2026-05-29T05:38:00+00:00",
-        "living_room": "2026-05-29T05:33:36+00:00",
+        "living_room": "2026-05-29T05:40:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T05:39:47.602042+00:00"
+      "last_updated": "2026-05-29T05:42:51.248217+00:00"
     }
   },
   "pge": {
