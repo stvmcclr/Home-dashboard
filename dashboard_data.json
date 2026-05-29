@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 20:50:57",
+  "generated_at": "2026-05-28 20:56:04",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89039,
+        "timestamp": "2026-05-29T03:53:07+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89038,
+        "timestamp": "2026-05-29T03:52:40+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music throughout house: The Isley Brothers - Footsteps in the Dark, Pts. 1 & 2",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"sonos roam sl black\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"powder_room\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"roam 28a\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 89037,
+        "timestamp": "2026-05-29T03:52:28+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89036,
+        "timestamp": "2026-05-29T03:50:58+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89035,
+        "timestamp": "2026-05-29T03:50:37+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet at night. A dark green pickup truck is parked in the driveway, and a dark car is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
       {
         "id": 89034,
         "timestamp": "2026-05-29T03:50:27+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 88839,
-        "timestamp": "2026-05-29T02:56:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 88838,
-        "timestamp": "2026-05-29T02:55:57+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 88837,
-        "timestamp": "2026-05-29T02:55:43+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 88836,
-        "timestamp": "2026-05-29T02:55:04+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 88835,
-        "timestamp": "2026-05-29T02:54:51+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3538,7 +3538,6 @@
         "backyard",
         "dog_run",
         "downstairs_hallway",
-        "entryway",
         "front_door",
         "front_yard",
         "kitchen",
@@ -3557,11 +3556,11 @@
         "dog_run": "2026-05-29T03:43:22+00:00",
         "entryway": "2026-05-29T03:21:19+00:00",
         "front_door": "2026-05-29T03:34:28+00:00",
-        "front_yard": "2026-05-29T03:29:57+00:00",
+        "front_yard": "2026-05-29T03:50:37+00:00",
         "living_room": "2026-05-29T03:19:57+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T03:50:28.02439+00:00"
+      "last_updated": "2026-05-29T03:53:29.448359+00:00"
     }
   },
   "pge": {
