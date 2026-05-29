@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 05:00:31",
+  "generated_at": "2026-05-29 05:05:39",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89804,
+        "timestamp": "2026-05-29T12:02:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89803,
+        "timestamp": "2026-05-29T12:02:15+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently offline and displaying a connection error message. While audio indicates dogs are barking urgently in the front yard, the lack of video prevents any visual assessment of the situation.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front door camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking urgently\", \"confidence\": 0.7}]"
+      },
       {
         "id": 89802,
         "timestamp": "2026-05-29T11:59:29+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 89604,
-        "timestamp": "2026-05-29T09:05:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 89603,
-        "timestamp": "2026-05-29T09:04:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4337,
+        "timestamp": "2026-05-29T12:02:15+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The front door camera is offline during a period of urgent dog barking in the front yard, making it impossible to visually investigate the cause.",
+        "acted_on_at": null
+      },
       {
         "id": 4336,
         "timestamp": "2026-05-29T11:47:50+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera feed is non-functional, displaying an error message indicating no frames are being received.",
         "acted_on_at": null
-      },
-      {
-        "id": 4327,
-        "timestamp": "2026-05-29T09:45:04+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a high correlation between the persistent, unclassified audio detected across the backyard and front yard, and the multiple, repeated technical failures of the front door and front yard cameras. This suggests that the unclassified audio may be masking an external event, or that the source of the noise is contributing to the camera signal instability, requiring manual visual inspection of the perimeter.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3602,12 +3602,12 @@
         "backyard": "2026-05-29T11:58:47+00:00",
         "dog_run": "2026-05-29T11:47:50+00:00",
         "entryway": "2026-05-29T11:48:44+00:00",
-        "front_door": "2026-05-29T11:41:33+00:00",
+        "front_door": "2026-05-29T12:02:15+00:00",
         "front_yard": "2026-05-29T11:57:14+00:00",
         "living_room": "2026-05-29T11:48:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T11:59:53.963691+00:00"
+      "last_updated": "2026-05-29T12:02:56.037922+00:00"
     }
   },
   "pge": {
