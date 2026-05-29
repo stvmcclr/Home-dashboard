@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 04:14:27",
+  "generated_at": "2026-05-29 04:19:34",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89748,
+        "timestamp": "2026-05-29T11:16:55+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the early morning hours. The white gate remains closed, and no movement is detected in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 89747,
+        "timestamp": "2026-05-29T11:16:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89746,
+        "timestamp": "2026-05-29T11:14:53+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently offline and not receiving any video frames, displaying a technical error message instead. This follows a recent period where the feed also went offline after showing Roxanne's SUV and an unknown vehicle.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 89745,
+        "timestamp": "2026-05-29T11:14:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 89744,
         "timestamp": "2026-05-29T11:12:14+00:00",
@@ -3455,53 +3499,17 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 89548,
-        "timestamp": "2026-05-29T08:18:09+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 89549,
-        "timestamp": "2026-05-29T08:18:09+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 8.7 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 89546,
-        "timestamp": "2026-05-29T08:17:18+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet during the late night. The gate is closed, and a few balls are left on the artificial grass.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"yellow ball\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"red ball\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 89545,
-        "timestamp": "2026-05-29T08:17:15+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4333,
+        "timestamp": "2026-05-29T11:14:53+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is offline and not providing any visual information.",
+        "acted_on_at": null
+      },
       {
         "id": 4332,
         "timestamp": "2026-05-29T10:45:30+00:00",
@@ -3573,37 +3581,31 @@
         "severity": "high",
         "summary": "[dog_run] The camera experienced a brief loss of signal/frames during this period.",
         "acted_on_at": null
-      },
-      {
-        "id": 4323,
-        "timestamp": "2026-05-29T08:44:35+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a high correlation between the persistent, unclassified audio detected in the backyard (01:30-01:41) and the presence of an unknown dark vehicle parked in the front yard. This suggests potential unauthorized activity or an unexplained presence on the property during deep night hours, despite the household presence signal indicating occupancy.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [],
       "active_rooms": [
+        "backyard",
         "dog_run",
         "entryway",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-29T10:33:59+00:00",
+        "backyard": "2026-05-29T11:16:55+00:00",
         "dog_run": "2026-05-29T11:04:33+00:00",
         "entryway": "2026-05-29T11:03:05+00:00",
         "front_door": "2026-05-29T11:00:15+00:00",
-        "front_yard": "2026-05-29T10:32:16+00:00",
+        "front_yard": "2026-05-29T11:14:53+00:00",
         "living_room": "2026-05-29T11:01:37+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T11:14:08.804953+00:00"
+      "last_updated": "2026-05-29T11:17:10.84849+00:00"
     }
   },
   "pge": {
