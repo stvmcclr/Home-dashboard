@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 23:41:20",
+  "generated_at": "2026-05-28 23:46:27",
   "as_of": "2026-05-28",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89432,
+        "timestamp": "2026-05-29T06:43:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89431,
+        "timestamp": "2026-05-29T06:41:22+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream is experiencing a technical failure, displaying a 'no frames received' error message for several seconds. Upon recovery, the view shows a quiet front yard at night with Roxanne's black SUV parked in the driveway and another dark vehicle on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked on street\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 89430,
+        "timestamp": "2026-05-29T06:41:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89429,
+        "timestamp": "2026-05-29T06:40:43+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 89428,
         "timestamp": "2026-05-29T06:39:35+00:00",
@@ -3427,53 +3471,57 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 89232,
-        "timestamp": "2026-05-29T05:38:27+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or animals are visible in the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 89231,
-        "timestamp": "2026-05-29T05:38:00+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is quiet at night with a dark green SUV parked in the driveway and a dark car parked on the street. No people or animals are visible in the yard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 89230,
-        "timestamp": "2026-05-29T05:37:34+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89229,
-        "timestamp": "2026-05-29T05:36:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4312,
+        "timestamp": "2026-05-29T06:43:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 6 observations vs typical 1 for weekday 23:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 4313,
+        "timestamp": "2026-05-29T06:43:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "The dogs spotted in living room at 10:48PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4314,
+        "timestamp": "2026-05-29T06:43:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "The dogs spotted in front door at 11:04PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4315,
+        "timestamp": "2026-05-29T06:43:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Dogs barking at living room at 10:48PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4316,
+        "timestamp": "2026-05-29T06:43:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Dogs barking at front door at 11:04PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4311,
+        "timestamp": "2026-05-29T06:41:22+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is experiencing a critical error message ('No frames have been received'), which is particularly concerning given the recent reports of a loud impact and an alarm in the house.",
+        "acted_on_at": null
+      },
       {
         "id": 4310,
         "timestamp": "2026-05-29T06:20:22+00:00",
@@ -3505,54 +3553,6 @@
         "severity": "high",
         "summary": "[doorbell] The front door camera is offline, and a loud crash was heard in the living room, which may indicate an incident inside the house.",
         "acted_on_at": null
-      },
-      {
-        "id": 4306,
-        "timestamp": "2026-05-29T06:00:53+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A doorbell chime and a loud thud were heard, which may indicate a delivery or an accident.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4305,
-        "timestamp": "2026-05-29T05:59:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] A loud impact sound was detected in the living room, and a smoke or carbon monoxide alarm is beeping in the dog run area.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4304,
-        "timestamp": "2026-05-29T05:58:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud thud or impact sound was heard at the entryway, following a doorbell chime.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4303,
-        "timestamp": "2026-05-29T05:56:47+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] A loud thud or crash was heard in the entryway, and Steve is currently in that area.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4302,
-        "timestamp": "2026-05-29T05:48:53+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Urgent and repeated dog barking is occurring, which is a significant disruption and potential cause for concern.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4301,
-        "timestamp": "2026-05-29T05:43:10+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The front door camera failure represents a persistent, high-risk security blind spot that is unmitigated while the household is currently settled and occupied in the living room. This combination of vulnerability and low vigilance increases the risk profile significantly.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3577,11 +3577,11 @@
         "dog_run": "2026-05-29T06:30:51+00:00",
         "entryway": "2026-05-29T06:27:04+00:00",
         "front_door": "2026-05-29T06:26:33+00:00",
-        "front_yard": "2026-05-29T06:20:22+00:00",
+        "front_yard": "2026-05-29T06:41:22+00:00",
         "living_room": "2026-05-29T06:27:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T06:40:29.827259+00:00"
+      "last_updated": "2026-05-29T06:43:31.231782+00:00"
     }
   },
   "pge": {
