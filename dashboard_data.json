@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 03:38:39",
+  "generated_at": "2026-05-29 03:43:45",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89712,
+        "timestamp": "2026-05-29T10:39:41+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is offline and not transmitting any video, displaying a connection error message instead. No activity can be observed from this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 89711,
+        "timestamp": "2026-05-29T10:38:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89710,
+        "timestamp": "2026-05-29T10:38:09+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 89709,
         "timestamp": "2026-05-29T10:37:14+00:00",
@@ -3466,39 +3499,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 89512,
-        "timestamp": "2026-05-29T07:47:39+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89511,
-        "timestamp": "2026-05-29T07:47:03+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet during the night. The white gate remains closed, and no movement is detected in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 89510,
-        "timestamp": "2026-05-29T07:46:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3599,12 +3599,12 @@
         "backyard": "2026-05-29T10:33:59+00:00",
         "dog_run": "2026-05-29T10:01:01+00:00",
         "entryway": "2026-05-29T10:17:02+00:00",
-        "front_door": "2026-05-29T10:18:58+00:00",
+        "front_door": "2026-05-29T10:39:41+00:00",
         "front_yard": "2026-05-29T10:32:16+00:00",
         "living_room": "2026-05-29T10:15:32+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T10:37:43.493818+00:00"
+      "last_updated": "2026-05-29T10:40:46.750348+00:00"
     }
   },
   "pge": {
