@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 01:29:18",
+  "generated_at": "2026-05-29 01:34:27",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 89567,
+        "timestamp": "2026-05-29T08:31:59+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front door camera is currently offline and not transmitting any video, displaying a connection error message instead. Unclassified audio is being detected in the backyard during the late night hours.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 89566,
+        "timestamp": "2026-05-29T08:31:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 89565,
+        "timestamp": "2026-05-29T08:30:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 89564,
         "timestamp": "2026-05-29T08:28:39+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 89367,
-        "timestamp": "2026-05-29T06:09:30+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89366,
-        "timestamp": "2026-05-29T06:08:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 89365,
-        "timestamp": "2026-05-29T06:08:30+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3572,12 +3572,12 @@
         "backyard": "2026-05-29T08:27:58+00:00",
         "dog_run": "2026-05-29T08:17:18+00:00",
         "entryway": "2026-05-29T07:57:56+00:00",
-        "front_door": "2026-05-29T08:10:54+00:00",
+        "front_door": "2026-05-29T08:31:59+00:00",
         "front_yard": "2026-05-29T08:26:32+00:00",
         "living_room": "2026-05-29T07:58:25+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T08:29:00.127463+00:00"
+      "last_updated": "2026-05-29T08:32:01.631569+00:00"
     }
   },
   "pge": {
