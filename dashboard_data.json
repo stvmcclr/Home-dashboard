@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 12:46:48",
+  "generated_at": "2026-05-29 12:51:55",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1754,
-        "timestamp": "2026-05-29T17:27:16+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.3,
-        "humidity_pct": 54,
-        "mode": "HEATCOOL",
+        "id": 1755,
+        "timestamp": "2026-05-29T19:51:49+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 65.3,
-        "cool_setpoint_f": 77.9,
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1753,
-        "timestamp": "2026-05-29T17:27:16+00:00",
-        "location": "Downstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 53,
-        "mode": "HEAT",
+        "id": 1756,
+        "timestamp": "2026-05-29T19:51:49+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.5,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1182,6 +1182,34 @@
         "timestamp": "2026-05-29T17:27:16+00:00",
         "location": "Upstairs",
         "temp_f": 67.3,
+        "humidity_pct": 54,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1755,
+        "timestamp": "2026-05-29T19:51:49+00:00",
+        "location": "Downstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 52,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1756,
+        "timestamp": "2026-05-29T19:51:49+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.5,
         "humidity_pct": 54,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1356,6 +1384,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 90988,
+        "timestamp": "2026-05-29T19:48:55+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 90987,
+        "timestamp": "2026-05-29T19:48:53+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 90986,
+        "timestamp": "2026-05-29T19:48:40+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a stream error, displaying a message that no frames have been received. The background view shows Roxanne's black Porsche Cayenne parked in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 90985,
+        "timestamp": "2026-05-29T19:48:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 90984,
+        "timestamp": "2026-05-29T19:47:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 90983,
+        "timestamp": "2026-05-29T19:47:20+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 90982,
+        "timestamp": "2026-05-29T19:46:47+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 90981,
         "timestamp": "2026-05-29T19:46:15+00:00",
@@ -3478,83 +3583,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 90788,
-        "timestamp": "2026-05-29T18:39:15+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty, with a tennis ball and a small red toy sitting on the artificial grass. The gate at the end of the run is closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"red toy\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 90787,
-        "timestamp": "2026-05-29T18:39:14+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 90786,
-        "timestamp": "2026-05-29T18:39:09+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 90785,
-        "timestamp": "2026-05-29T18:38:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 90784,
-        "timestamp": "2026-05-29T18:38:26+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve walks through the living room area while looking at his phone. The rest of the room is empty.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"phone\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 90783,
-        "timestamp": "2026-05-29T18:38:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 90782,
-        "timestamp": "2026-05-29T18:37:38+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3642,8 +3670,7 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
-        "Steve"
+        "Roxanne"
       ],
       "active_rooms": [
         "backyard",
@@ -3667,11 +3694,11 @@
         "dog_run": "2026-05-29T19:42:46+00:00",
         "entryway": "2026-05-29T19:43:42+00:00",
         "front_door": "2026-05-29T19:29:40+00:00",
-        "front_yard": "2026-05-29T19:27:58+00:00",
+        "front_yard": "2026-05-29T19:48:40+00:00",
         "living_room": "2026-05-29T19:37:56+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-29T19:46:22.314423+00:00"
+      "last_updated": "2026-05-29T19:49:23.981955+00:00"
     }
   },
   "pge": {
