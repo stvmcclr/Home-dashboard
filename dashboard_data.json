@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30 00:19:25",
+  "generated_at": "2026-05-30 00:24:31",
   "as_of": "2026-05-30",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1764,
-        "timestamp": "2026-05-30T04:15:25+00:00",
-        "location": "Upstairs",
-        "temp_f": 68.5,
-        "humidity_pct": 46,
-        "mode": "HEATCOOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": 57.9,
-        "cool_setpoint_f": 67.9,
+        "id": 1765,
+        "timestamp": "2026-05-30T07:24:23+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.4,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1763,
-        "timestamp": "2026-05-30T04:15:25+00:00",
-        "location": "Downstairs",
-        "temp_f": 70.5,
-        "humidity_pct": 53,
-        "mode": "HEAT",
+        "id": 1766,
+        "timestamp": "2026-05-30T07:24:23+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.8,
+        "humidity_pct": 50,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1101,6 +1101,34 @@
         "humidity_pct": 46,
         "mode": "HEATCOOL",
         "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1765,
+        "timestamp": "2026-05-30T07:24:23+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.4,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1766,
+        "timestamp": "2026-05-30T07:24:23+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.8,
+        "humidity_pct": 50,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
@@ -1272,6 +1300,105 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 92827,
+        "timestamp": "2026-05-30T07:23:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92826,
+        "timestamp": "2026-05-30T07:21:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92823,
+        "timestamp": "2026-05-30T07:20:38+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: none",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 92824,
+        "timestamp": "2026-05-30T07:20:38+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in main_bedroom: White Noise",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 92825,
+        "timestamp": "2026-05-30T07:20:38+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 0.2 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 92822,
+        "timestamp": "2026-05-30T07:20:35+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92821,
+        "timestamp": "2026-05-30T07:20:00+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92820,
+        "timestamp": "2026-05-30T07:19:55+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and displaying a connection error message instead of video. This is consistent with recent reports of the camera intermittently failing.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 92819,
+        "timestamp": "2026-05-30T07:18:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 92818,
         "timestamp": "2026-05-30T07:16:59+00:00",
@@ -3372,108 +3499,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 92627,
-        "timestamp": "2026-05-30T05:36:42+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 92626,
-        "timestamp": "2026-05-30T05:36:26+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92625,
-        "timestamp": "2026-05-30T05:35:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92624,
-        "timestamp": "2026-05-30T05:35:42+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 92623,
-        "timestamp": "2026-05-30T05:35:34+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently non-functional, displaying a connection error message instead of video. This is a continuation of a recent intermittent failure issue with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 92622,
-        "timestamp": "2026-05-30T05:35:29+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, stairs, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 92621,
-        "timestamp": "2026-05-30T05:35:04+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92620,
-        "timestamp": "2026-05-30T05:34:56+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92619,
-        "timestamp": "2026-05-30T05:34:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4459,
+        "timestamp": "2026-05-30T07:19:55+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is currently not providing a video feed due to a connection error.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4458,
+        "timestamp": "2026-05-30T07:19:11+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a concerning pattern of unclassified audio events in the backyard and side passage (00:09 - 00:18) occurring during the deepest hours of the night when the house is otherwise quiet. This activity, combined with the persistent failure of the front yard camera, suggests potential external movement or disturbance that is currently unmonitored and requires investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4457,
+        "timestamp": "2026-05-30T07:18:54+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 11:27PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
       {
         "id": 4456,
         "timestamp": "2026-05-30T06:59:24+00:00",
@@ -3529,30 +3581,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 10:31PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 4451,
-        "timestamp": "2026-05-30T06:18:25+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:38PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4452,
-        "timestamp": "2026-05-30T06:18:25+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:41PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4453,
-        "timestamp": "2026-05-30T06:18:25+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:46PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3576,11 +3604,11 @@
         "dog_run": "2026-05-30T07:15:29+00:00",
         "entryway": "2026-05-30T07:16:42+00:00",
         "front_door": "2026-05-30T07:13:36+00:00",
-        "front_yard": "2026-05-30T06:59:24+00:00",
+        "front_yard": "2026-05-30T07:19:55+00:00",
         "living_room": "2026-05-30T07:14:53+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-30T07:17:14.602931+00:00"
+      "last_updated": "2026-05-30T07:23:18.690683+00:00"
     }
   },
   "pge": {
