@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30 15:39:36",
+  "generated_at": "2026-05-30 15:44:43",
   "as_of": "2026-05-30",
   "projects": [
     {
@@ -1608,6 +1608,127 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 95171,
+        "timestamp": "2026-05-30T22:42:04+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "Miller walks from the entryway into the living room, followed by a dog. A green ball remains on the floor in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"green ball\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 95172,
+        "timestamp": "2026-05-30T22:42:04+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in playroom: TV",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 95173,
+        "timestamp": "2026-05-30T22:42:04+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "Light use at 1.50 gal/min. Daily total: 389.3 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 95170,
+        "timestamp": "2026-05-30T22:41:37+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 95169,
+        "timestamp": "2026-05-30T22:40:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 95168,
+        "timestamp": "2026-05-30T22:40:54+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "Miller and Penelope are playing on the trampoline in the backyard. An orange ball is being tossed through the air, moving towards the camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"orange ball\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 95167,
+        "timestamp": "2026-05-30T22:40:11+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 95166,
+        "timestamp": "2026-05-30T22:40:01+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 95165,
+        "timestamp": "2026-05-30T22:39:57+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and patio area are empty and quiet under the bright afternoon sun. No people or animals are visible in the yard or on the porch.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 95164,
+        "timestamp": "2026-05-30T22:39:36+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 95163,
+        "timestamp": "2026-05-30T22:39:28+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 95162,
         "timestamp": "2026-05-30T22:39:03+00:00",
@@ -3686,130 +3807,25 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 94973,
-        "timestamp": "2026-05-30T21:49:43+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94972,
-        "timestamp": "2026-05-30T21:49:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "television or music playing in the background at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94971,
-        "timestamp": "2026-05-30T21:49:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94970,
-        "timestamp": "2026-05-30T21:49:00+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a doorbell chime or door knock at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94969,
-        "timestamp": "2026-05-30T21:48:51+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are quiet and empty. The white gate separating the side passage from the driveway is closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"patio heater\", \"entity_state\": null, \"confidence\": 0.99}]"
-      },
-      {
-        "id": 94968,
-        "timestamp": "2026-05-30T21:48:42+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94967,
-        "timestamp": "2026-05-30T21:48:27+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94966,
-        "timestamp": "2026-05-30T21:48:14+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94965,
-        "timestamp": "2026-05-30T21:48:03+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 94964,
-        "timestamp": "2026-05-30T21:47:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 94963,
-        "timestamp": "2026-05-30T21:47:17+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "Miller is sitting in the room visible through the glass doors, appearing to be looking at a device. Although audio reports a child crying or yelling in distress at the entryway, no such activity is visually apparent in the current frames.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"red ball\", \"entity_state\": null, \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 4565,
+        "timestamp": "2026-05-30T22:41:04+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 10 observations vs typical 1 for weekend 15:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 4566,
+        "timestamp": "2026-05-30T22:41:04+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekend 15:00",
+        "acted_on_at": null
+      },
       {
         "id": 4564,
         "timestamp": "2026-05-30T22:29:32+00:00",
@@ -3873,22 +3889,6 @@
         "severity": "high",
         "summary": "[living_room] The living room camera experienced a temporary loss of signal.",
         "acted_on_at": null
-      },
-      {
-        "id": 4556,
-        "timestamp": "2026-05-30T21:47:17+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Audio indicates a child crying or yelling in distress at the entryway, which is not visually confirmed by the camera.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4555,
-        "timestamp": "2026-05-30T21:43:22+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is down, which is a known and ongoing issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3913,15 +3913,15 @@
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-05-30T22:36:53+00:00",
+        "backyard": "2026-05-30T22:40:54+00:00",
         "dog_run": "2026-05-30T22:29:31+00:00",
-        "entryway": "2026-05-30T22:33:26+00:00",
-        "front_door": "2026-05-30T22:14:55+00:00",
+        "entryway": "2026-05-30T22:42:04+00:00",
+        "front_door": "2026-05-30T22:39:57+00:00",
         "front_yard": "2026-05-30T22:35:16+00:00",
         "living_room": "2026-05-30T22:38:30+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-30T22:39:06.340903+00:00"
+      "last_updated": "2026-05-30T22:42:08.321659+00:00"
     }
   },
   "pge": {
