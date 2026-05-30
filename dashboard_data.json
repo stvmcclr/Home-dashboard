@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 23:17:57",
+  "generated_at": "2026-05-29 23:23:04",
   "as_of": "2026-05-29",
   "projects": [
     {
@@ -1273,6 +1273,149 @@
   "intelligence": {
     "observations": [
       {
+        "id": 92729,
+        "timestamp": "2026-05-30T06:22:06+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92728,
+        "timestamp": "2026-05-30T06:21:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 92727,
+        "timestamp": "2026-05-30T06:21:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92726,
+        "timestamp": "2026-05-30T06:20:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 92725,
+        "timestamp": "2026-05-30T06:20:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92722,
+        "timestamp": "2026-05-30T06:20:33+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, stairs, dining_room, downstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 92723,
+        "timestamp": "2026-05-30T06:20:33+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Audio paused in 3 rooms",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[]"
+      },
+      {
+        "id": 92724,
+        "timestamp": "2026-05-30T06:20:33+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 498.9 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 92721,
+        "timestamp": "2026-05-30T06:19:33+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92720,
+        "timestamp": "2026-05-30T06:19:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92719,
+        "timestamp": "2026-05-30T06:18:03+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92718,
+        "timestamp": "2026-05-30T06:17:54+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is intermittently failing, displaying connection error messages in most frames. In the single visible frame, an unknown dark car is parked in the driveway at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera connection error\", \"entity_state\": \"intermittent\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 92717,
+        "timestamp": "2026-05-30T06:17:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
         "id": 92716,
         "timestamp": "2026-05-30T06:16:32+00:00",
         "source": "living_room",
@@ -1625,17 +1768,6 @@
         "entities": "[]"
       },
       {
-        "id": 92683,
-        "timestamp": "2026-05-30T06:01:58+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. No people or animals are visible in the area, and there is no movement detected.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
         "id": 92684,
         "timestamp": "2026-05-30T06:01:58+00:00",
         "source": "backyard",
@@ -1644,6 +1776,17 @@
         "summary": "unclassified audio at backyard",
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92683,
+        "timestamp": "2026-05-30T06:01:58+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. No people or animals are visible in the area, and there is no movement detected.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
         "entities": "[]"
       },
       {
@@ -3328,230 +3471,87 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 92529,
-        "timestamp": "2026-05-30T05:00:16+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92528,
-        "timestamp": "2026-05-30T04:59:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92527,
-        "timestamp": "2026-05-30T04:59:35+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. No people, animals, or significant activity are visible in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 92526,
-        "timestamp": "2026-05-30T04:59:14+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "A dog is resting peacefully on the couch in the living room. The house is quiet and dimly lit during the late evening.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"resting\", \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 92525,
-        "timestamp": "2026-05-30T04:59:06+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92524,
-        "timestamp": "2026-05-30T04:59:00+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92523,
-        "timestamp": "2026-05-30T04:58:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92522,
-        "timestamp": "2026-05-30T04:58:08+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92521,
-        "timestamp": "2026-05-30T04:58:05+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is intermittently failing to provide video, displaying connection error messages. In the available footage, an unknown dark sedan is seen parked in the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown dark sedan\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera connection error\", \"entity_state\": \"intermittent\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 92520,
-        "timestamp": "2026-05-30T04:58:00+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92519,
-        "timestamp": "2026-05-30T04:57:27+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is working at the kitchen counter while Roxanne is near the refrigerator. A dog is resting peacefully on the couch in the living room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 92518,
-        "timestamp": "2026-05-30T04:56:52+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is quiet at night, with the lights on in the adjacent room. An unidentified person is standing very close to the camera, partially obscuring the view of the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unidentified person\", \"entity_state\": \"standing near camera\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 92517,
-        "timestamp": "2026-05-30T04:56:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4454,
+        "timestamp": "2026-05-30T06:18:53+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The front yard camera has been intermittently failing since 22:15, creating a persistent security blind spot. This is particularly concerning given the previous high-severity alert regarding an unknown dark car parked in the driveway, suggesting a potential vulnerability in perimeter monitoring.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4447,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 4 observations vs typical 1 for weekday 23:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 4448,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in entryway at 10:18PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4449,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in entryway at 10:19PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4450,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:31PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4451,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:38PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4452,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:41PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4453,
+        "timestamp": "2026-05-30T06:18:25+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:46PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4446,
+        "timestamp": "2026-05-30T06:17:54+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] An unknown dark car is parked in the driveway at night, and the camera is experiencing intermittent connection errors.",
+        "acted_on_at": null
+      },
       {
         "id": 4445,
         "timestamp": "2026-05-30T05:57:12+00:00",
         "insight_type": "camera_event",
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing connection errors, and an unknown dark car is parked in the driveway.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4444,
-        "timestamp": "2026-05-30T05:35:35+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently non-functional, displaying a connection error message.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4443,
-        "timestamp": "2026-05-30T05:19:22+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] The camera view is being significantly obscured by a person standing very close to the lens.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4442,
-        "timestamp": "2026-05-30T05:18:24+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a concerning pattern of multiple, persistent blind spots at the primary entry points (front yard camera failure and repeated, close-proximity obstruction of the entryway camera by an unidentified person). This combination significantly compromises the ability to monitor the home's security perimeter, especially given the unidentified person's repeated presence near the entryway between 21:48 and 22:04.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4439,
-        "timestamp": "2026-05-30T05:18:02+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 6 observations vs typical 1 for weekday 22:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 4440,
-        "timestamp": "2026-05-30T05:18:02+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: living_room averaging 69 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4441,
-        "timestamp": "2026-05-30T05:18:02+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:07PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4438,
-        "timestamp": "2026-05-30T05:15:02+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not providing video, preventing monitoring of the driveway and street.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4437,
-        "timestamp": "2026-05-30T05:12:20+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] An unidentified person is standing extremely close to the camera, obscuring a large portion of the entryway view.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4436,
-        "timestamp": "2026-05-30T05:09:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The camera feed experienced a disruption, as indicated by the error message frames.",
         "acted_on_at": null
       }
     ],
@@ -3563,17 +3563,18 @@
       ],
       "active_rooms": [
         "backyard",
+        "dining_room",
         "dog_run",
         "downstairs_hallway",
         "front_door",
         "front_yard",
         "kitchen",
-        "living_room",
         "stairs"
       ],
       "lights_on": [
         "kitchen",
         "stairs",
+        "dining_room",
         "downstairs_hallway"
       ],
       "music_playing": [],
@@ -3582,11 +3583,11 @@
         "dog_run": "2026-05-30T06:12:43+00:00",
         "entryway": "2026-05-30T05:42:36+00:00",
         "front_door": "2026-05-30T06:07:53+00:00",
-        "front_yard": "2026-05-30T05:57:12+00:00",
+        "front_yard": "2026-05-30T06:17:54+00:00",
         "living_room": "2026-05-30T05:46:48+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-30T06:16:33.793127+00:00"
+      "last_updated": "2026-05-30T06:22:37.194358+00:00"
     }
   },
   "pge": {
