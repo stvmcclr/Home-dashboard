@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30 01:00:20",
+  "generated_at": "2026-05-30 01:05:27",
   "as_of": "2026-05-30",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 92882,
+        "timestamp": "2026-05-30T08:01:48+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92881,
+        "timestamp": "2026-05-30T08:01:47+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is intermittently displaying a connection error message instead of video. When the feed is briefly active, Roxanne's black Porsche Cayenne is seen parked in the driveway at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white car\", \"entity_state\": \"parked on street\", \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera connection error\", \"entity_state\": \"active\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 92880,
+        "timestamp": "2026-05-30T08:01:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 92879,
+        "timestamp": "2026-05-30T08:00:16+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and appears to be unoccupied. No people or animals are visible in the current view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 92878,
+        "timestamp": "2026-05-30T07:59:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 92877,
         "timestamp": "2026-05-30T07:58:38+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 92682,
-        "timestamp": "2026-05-30T06:01:47+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92681,
-        "timestamp": "2026-05-30T06:00:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92680,
-        "timestamp": "2026-05-30T06:00:15+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92679,
-        "timestamp": "2026-05-30T05:59:14+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 92678,
-        "timestamp": "2026-05-30T05:58:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4462,
+        "timestamp": "2026-05-30T08:01:47+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is intermittently displaying a connection error message.",
+        "acted_on_at": null
+      },
       {
         "id": 4461,
         "timestamp": "2026-05-30T07:40:35+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 4 observations vs typical 1 for weekday 23:00",
         "acted_on_at": null
-      },
-      {
-        "id": 4448,
-        "timestamp": "2026-05-30T06:18:25+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in entryway at 10:18PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3592,7 +3592,8 @@
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3601,11 +3602,11 @@
         "dog_run": "2026-05-30T07:57:14+00:00",
         "entryway": "2026-05-30T07:16:42+00:00",
         "front_door": "2026-05-30T07:54:26+00:00",
-        "front_yard": "2026-05-30T07:40:34+00:00",
-        "living_room": "2026-05-30T07:14:53+00:00",
+        "front_yard": "2026-05-30T08:01:47+00:00",
+        "living_room": "2026-05-30T08:00:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-30T07:59:40.294895+00:00"
+      "last_updated": "2026-05-30T08:02:43.84793+00:00"
     }
   },
   "pge": {
