@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 00:47:40",
+  "generated_at": "2026-05-31 00:52:46",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 96780,
+        "timestamp": "2026-05-31T07:51:02+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96779,
+        "timestamp": "2026-05-31T07:49:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96778,
+        "timestamp": "2026-05-31T07:49:16+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera experienced a brief period of signal loss, as evidenced by the error messages in the first five frames. Upon recovery, the front yard is seen to be quiet at night with Roxanne's black Porsche Cayenne parked in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 96777,
+        "timestamp": "2026-05-31T07:48:00+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96776,
+        "timestamp": "2026-05-31T07:46:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96775,
+        "timestamp": "2026-05-31T07:45:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 96774,
         "timestamp": "2026-05-31T07:44:58+00:00",
@@ -3405,75 +3471,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 96580,
-        "timestamp": "2026-05-31T05:57:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96579,
-        "timestamp": "2026-05-31T05:56:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96578,
-        "timestamp": "2026-05-31T05:55:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96577,
-        "timestamp": "2026-05-31T05:54:52+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96576,
-        "timestamp": "2026-05-31T05:54:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96575,
-        "timestamp": "2026-05-31T05:53:15+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4632,
+        "timestamp": "2026-05-31T07:49:16+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] Brief signal loss occurred, but the camera has recovered and the yard is quiet.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4631,
+        "timestamp": "2026-05-31T07:48:02+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The dogs are exhibiting signs of high distress (urgent barking) accompanied by continuous unclassified audio in the backyard, suggesting an unobserved event or potential intrusion. This high-alert audio activity is occurring despite the camera feeds showing the backyard as empty or experiencing technical failures, indicating something significant is happening out of sight.",
+        "acted_on_at": null
+      },
       {
         "id": 4630,
         "timestamp": "2026-05-31T07:28:29+00:00",
@@ -3537,22 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: living_room averaging 76 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 4623,
-        "timestamp": "2026-05-31T06:47:22+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in dog run at 10:47PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4624,
-        "timestamp": "2026-05-31T06:47:22+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:49PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3566,8 +3566,7 @@
         "entryway",
         "front_door",
         "front_yard",
-        "kitchen",
-        "living_room"
+        "kitchen"
       ],
       "lights_on": [
         "kitchen"
@@ -3578,11 +3577,11 @@
         "dog_run": "2026-05-31T07:32:07+00:00",
         "entryway": "2026-05-31T07:24:36+00:00",
         "front_door": "2026-05-31T07:34:52+00:00",
-        "front_yard": "2026-05-31T07:28:28+00:00",
+        "front_yard": "2026-05-31T07:49:16+00:00",
         "living_room": "2026-05-31T07:20:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-31T07:45:06.26128+00:00"
+      "last_updated": "2026-05-31T07:51:08.587628+00:00"
     }
   },
   "pge": {
