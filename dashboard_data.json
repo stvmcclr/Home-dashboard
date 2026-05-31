@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 02:45:29",
+  "generated_at": "2026-05-31 02:50:36",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1300,6 +1300,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 96943,
+        "timestamp": "2026-05-31T09:48:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96942,
+        "timestamp": "2026-05-31T09:47:54+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96941,
+        "timestamp": "2026-05-31T09:46:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96940,
+        "timestamp": "2026-05-31T09:45:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 96939,
+        "timestamp": "2026-05-31T09:45:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 96938,
+        "timestamp": "2026-05-31T09:43:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 96937,
         "timestamp": "2026-05-31T09:42:15+00:00",
@@ -3433,75 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 96743,
-        "timestamp": "2026-05-31T07:19:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96742,
-        "timestamp": "2026-05-31T07:18:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96741,
-        "timestamp": "2026-05-31T07:17:45+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96740,
-        "timestamp": "2026-05-31T07:16:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96739,
-        "timestamp": "2026-05-31T07:16:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 96738,
-        "timestamp": "2026-05-31T07:15:17+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4637,
+        "timestamp": "2026-05-31T09:48:46+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a persistent discrepancy between the visual evidence and the audio sensors: the cameras show the backyard and front yard are empty and quiet, yet the audio sensors detect continuous, unclassified audio activity in these areas from 02:38 AM to 02:48 AM. This suggests an ongoing, low-level environmental stimulus or activity that is not visible to the cameras and should be monitored.",
+        "acted_on_at": null
+      },
       {
         "id": 4636,
         "timestamp": "2026-05-31T09:14:53+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera experienced a brief period of no frames being received.",
         "acted_on_at": null
-      },
-      {
-        "id": 4627,
-        "timestamp": "2026-05-31T06:49:32+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The camera feed is experiencing technical issues, showing significant visual artifacts (vertical lines) and a system notification that no frames are being received.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3608,7 +3608,7 @@
         "living_room": "2026-05-31T09:38:12+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-05-31T09:43:20.98325+00:00"
+      "last_updated": "2026-05-31T09:49:24.675018+00:00"
     }
   },
   "pge": {
