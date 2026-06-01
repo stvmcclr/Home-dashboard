@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 22:08:33",
+  "generated_at": "2026-05-31 22:13:41",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100142,
+        "timestamp": "2026-06-01T05:10:07+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100141,
+        "timestamp": "2026-06-01T05:09:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100139,
+        "timestamp": "2026-06-01T05:09:43+00:00",
+        "source": "ha:lights",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "Lights on: kitchen, upstairs_hallway, stairs, downstairs_hallway",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 100140,
+        "timestamp": "2026-06-01T05:09:43+00:00",
+        "source": "flume",
+        "source_type": "water",
+        "location": "household",
+        "summary": "No water flow. Daily usage: 417.6 gal.",
+        "confidence": 0.99,
+        "model_version": "flume-ha-v2",
+        "entities": "[]"
+      },
+      {
+        "id": 100138,
+        "timestamp": "2026-06-01T05:08:56+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. No people, animals, or movement are observed in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 100137,
+        "timestamp": "2026-06-01T05:08:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100136,
+        "timestamp": "2026-06-01T05:08:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100135,
         "timestamp": "2026-06-01T05:06:48+00:00",
@@ -3366,83 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 99942,
-        "timestamp": "2026-06-01T03:39:57+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "television or music playing in the background at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99941,
-        "timestamp": "2026-06-01T03:39:56+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99940,
-        "timestamp": "2026-06-01T03:39:52+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is moving through the kitchen area in the evening. The living room remains quiet, but there is activity in the background.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 99939,
-        "timestamp": "2026-06-01T03:39:33+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99938,
-        "timestamp": "2026-06-01T03:39:26+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99937,
-        "timestamp": "2026-06-01T03:39:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "calm family conversation indoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99936,
-        "timestamp": "2026-06-01T03:39:02+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3538,7 +3538,6 @@
         "dog_run",
         "downstairs_hallway",
         "entryway",
-        "family_room",
         "front_door",
         "front_yard",
         "kitchen",
@@ -3548,14 +3547,13 @@
       ],
       "lights_on": [
         "kitchen",
-        "family_room",
         "upstairs_hallway",
         "stairs",
         "downstairs_hallway"
       ],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-01T04:48:18+00:00",
+        "backyard": "2026-06-01T05:08:56+00:00",
         "dog_run": "2026-06-01T05:06:48+00:00",
         "entryway": "2026-06-01T05:03:31+00:00",
         "front_door": "2026-06-01T05:00:27+00:00",
@@ -3563,7 +3561,7 @@
         "living_room": "2026-06-01T05:05:09+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T05:08:07.664163+00:00"
+      "last_updated": "2026-06-01T05:11:09.554701+00:00"
     }
   },
   "pge": {
