@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01 03:06:51",
+  "generated_at": "2026-06-01 03:11:58",
   "as_of": "2026-06-01",
   "projects": [
     {
@@ -1272,6 +1272,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100550,
+        "timestamp": "2026-06-01T10:11:33+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and patio area are dark and empty during the night. No people, animals, or significant movement are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 100549,
+        "timestamp": "2026-06-01T10:10:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100548,
+        "timestamp": "2026-06-01T10:10:08+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a stream interruption, displaying error messages for most of the sequence. One frame reveals the black Porsche Cayenne is parked in the driveway during the early morning hours.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"stream interruption\", \"entity_state\": \"ongoing\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 100547,
+        "timestamp": "2026-06-01T10:09:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100546,
+        "timestamp": "2026-06-01T10:07:50+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100545,
+        "timestamp": "2026-06-01T10:07:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100544,
+        "timestamp": "2026-06-01T10:06:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100543,
         "timestamp": "2026-06-01T10:04:46+00:00",
@@ -3394,86 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 100350,
-        "timestamp": "2026-06-01T07:26:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100349,
-        "timestamp": "2026-06-01T07:25:33+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is experiencing a stream interruption, frequently displaying an error message instead of a live feed. A single captured frame shows a dark vehicle parked in the driveway at night.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera interruption\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 100348,
-        "timestamp": "2026-06-01T07:25:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100346,
-        "timestamp": "2026-06-01T07:24:57+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in main_bedroom: White Noise",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"main_bedroom\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100345,
-        "timestamp": "2026-06-01T07:24:57+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: none",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100347,
-        "timestamp": "2026-06-01T07:24:57+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 0.2 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 100344,
-        "timestamp": "2026-06-01T07:23:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4799,
+        "timestamp": "2026-06-01T10:10:08+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera stream has been interrupted for approximately 20 minutes.",
+        "acted_on_at": null
+      },
       {
         "id": 4798,
         "timestamp": "2026-06-01T09:58:10+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is not providing a visual feed due to a stream interruption, which is a recurring issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 4789,
-        "timestamp": "2026-06-01T07:31:59+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The dog_run camera feed is interrupted and showing an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3571,12 +3570,12 @@
         "backyard": "2026-06-01T09:59:41+00:00",
         "dog_run": "2026-06-01T09:58:09+00:00",
         "entryway": "2026-06-01T09:37:55+00:00",
-        "front_door": "2026-06-01T09:51:12+00:00",
-        "front_yard": "2026-06-01T09:49:31+00:00",
+        "front_door": "2026-06-01T10:11:33+00:00",
+        "front_yard": "2026-06-01T10:10:08+00:00",
         "living_room": "2026-06-01T09:34:35+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T10:05:36.452411+00:00"
+      "last_updated": "2026-06-01T10:11:42.263619+00:00"
     }
   },
   "pge": {
