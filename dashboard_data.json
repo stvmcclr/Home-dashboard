@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 23:15:09",
+  "generated_at": "2026-05-31 23:20:18",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100257,
+        "timestamp": "2026-06-01T06:16:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100256,
+        "timestamp": "2026-06-01T06:15:55+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100255,
+        "timestamp": "2026-06-01T06:15:14+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100254,
         "timestamp": "2026-06-01T06:13:44+00:00",
@@ -3410,42 +3443,73 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"garage\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100057,
-        "timestamp": "2026-06-01T04:24:38+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, family_room, upstairs_hallway, stairs, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100056,
-        "timestamp": "2026-06-01T04:24:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 100055,
-        "timestamp": "2026-06-01T04:24:20+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4782,
+        "timestamp": "2026-06-01T06:15:44+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the cameras showing the house and backyard are empty and quiet from 22:50 onwards, there is a persistent pattern of unclassified audio in the backyard (23:02-23:13), accompanied by the dogs barking at 23:06. This suggests an unexplained external stimulus, such as wildlife or a structural noise, that is occurring long after the household has settled down.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4775,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 6 observations vs typical 1 for weekend 23:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 4776,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: backyard averaging 65 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4777,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_yard averaging 59 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4778,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: living_room averaging 83 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4779,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:32PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4780,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:37PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4781,
+        "timestamp": "2026-06-01T06:15:08+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "The dogs spotted in entryway at 10:43PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
       {
         "id": 4774,
         "timestamp": "2026-06-01T06:02:04+00:00",
@@ -3461,70 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is currently down and not receiving frames.",
         "acted_on_at": null
-      },
-      {
-        "id": 4772,
-        "timestamp": "2026-06-01T05:32:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio indicates a possible argument in the living room, which contradicts the calm visual appearance.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4771,
-        "timestamp": "2026-06-01T05:19:23+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently offline, displaying a 'no frames received' error.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4770,
-        "timestamp": "2026-06-01T05:15:07+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Despite the camera feeds showing Roxanne engaging in routine activities (kitchen) and the backyard being visually empty, there is a persistent stream of unclassified audio detected in both the living room and backyard from 21:54 to 22:13. This continuous audio presence, combined with the initial 'tense' alert and multiple technical failures (dog run, front yard), suggests an ongoing, unidentifiable source of noise or activity that warrants investigation.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4769,
-        "timestamp": "2026-06-01T05:14:14+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:05PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4766,
-        "timestamp": "2026-06-01T05:14:13+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 8 observations vs typical 1 for weekend 22:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 4767,
-        "timestamp": "2026-06-01T05:14:13+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: entryway averaging 63 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4768,
-        "timestamp": "2026-06-01T05:14:13+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: front_door averaging 58 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4765,
-        "timestamp": "2026-06-01T05:06:48+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is experiencing a technical failure, with the feed becoming heavily glitched and then going dark.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3538,8 +3538,7 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3552,7 +3551,7 @@
         "living_room": "2026-06-01T05:47:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T06:14:56.487204+00:00"
+      "last_updated": "2026-06-01T06:17:58.730517+00:00"
     }
   },
   "pge": {
