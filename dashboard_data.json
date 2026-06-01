@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 23:20:18",
+  "generated_at": "2026-05-31 23:25:26",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100262,
+        "timestamp": "2026-06-01T06:23:54+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a stream interruption, displaying an error message instead of a live feed. No visual information is available to monitor the driveway or street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"stream interruption\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 100261,
+        "timestamp": "2026-06-01T06:22:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100260,
+        "timestamp": "2026-06-01T06:21:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100259,
+        "timestamp": "2026-06-01T06:19:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100258,
+        "timestamp": "2026-06-01T06:18:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100257,
         "timestamp": "2026-06-01T06:16:45+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 100062,
-        "timestamp": "2026-06-01T04:27:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100061,
-        "timestamp": "2026-06-01T04:25:42+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100060,
-        "timestamp": "2026-06-01T04:25:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 100059,
-        "timestamp": "2026-06-01T04:24:38+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 409.9 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 100058,
-        "timestamp": "2026-06-01T04:24:38+00:00",
-        "source": "ha:audio",
-        "source_type": "audio",
-        "location": "home",
-        "summary": "Music in garage: Luke Combs - Be By You",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"garage\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 4783,
+        "timestamp": "2026-06-01T06:23:54+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing a stream interruption, displaying an error message instead of a live feed.",
+        "acted_on_at": null
+      },
       {
         "id": 4782,
         "timestamp": "2026-06-01T06:15:44+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is not providing any visual data, preventing monitoring of the property.",
         "acted_on_at": null
-      },
-      {
-        "id": 4773,
-        "timestamp": "2026-06-01T05:40:51+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently down and not receiving frames.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3536,7 +3536,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3547,11 +3546,11 @@
         "dog_run": "2026-06-01T06:09:20+00:00",
         "entryway": "2026-06-01T05:49:22+00:00",
         "front_door": "2026-06-01T06:05:26+00:00",
-        "front_yard": "2026-06-01T06:02:04+00:00",
+        "front_yard": "2026-06-01T06:23:54+00:00",
         "living_room": "2026-06-01T05:47:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T06:17:58.730517+00:00"
+      "last_updated": "2026-06-01T06:24:01.720395+00:00"
     }
   },
   "pge": {
