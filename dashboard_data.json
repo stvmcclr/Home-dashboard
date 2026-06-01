@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01 00:43:18",
+  "generated_at": "2026-06-01 00:48:26",
   "as_of": "2026-06-01",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100371,
+        "timestamp": "2026-06-01T07:46:00+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a stream interruption and is not providing any visual feed, displaying an error message instead. This is consistent with recent history of intermittent stream issues for this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 100370,
+        "timestamp": "2026-06-01T07:44:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100368,
+        "timestamp": "2026-06-01T07:43:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100369,
+        "timestamp": "2026-06-01T07:43:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 100367,
         "timestamp": "2026-06-01T07:41:50+00:00",
@@ -3399,50 +3443,6 @@
         "confidence": 0.95,
         "model_version": "signal-aggregator-v1",
         "entities": "[]"
-      },
-      {
-        "id": 100172,
-        "timestamp": "2026-06-01T05:24:44+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 419.1 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
-      },
-      {
-        "id": 100170,
-        "timestamp": "2026-06-01T05:24:44+00:00",
-        "source": "ha:lights",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "Lights on: kitchen, upstairs_hallway, stairs, downstairs_hallway",
-        "confidence": 0.95,
-        "model_version": "signal-aggregator-v1",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"living_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"playroom\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"kitchen\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"family_room\", \"entity_state\": \"off\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"upstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"downstairs_hallway\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"stairs\", \"entity_state\": \"on\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dining_room\", \"entity_state\": \"off\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100169,
-        "timestamp": "2026-06-01T05:24:42+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is lying on the couch relaxing while Roxanne sits nearby, eating a snack and looking at her phone. The atmosphere in the living room is calm and quiet during the late evening.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"eating and using phone\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100168,
-        "timestamp": "2026-06-01T05:24:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3529,9 +3529,7 @@
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Steve"
-      ],
+      "who_is_home": [],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3547,11 +3545,11 @@
         "dog_run": "2026-06-01T07:31:58+00:00",
         "entryway": "2026-06-01T07:20:08+00:00",
         "front_door": "2026-06-01T07:28:03+00:00",
-        "front_yard": "2026-06-01T07:25:33+00:00",
+        "front_yard": "2026-06-01T07:46:00+00:00",
         "living_room": "2026-06-01T07:18:20+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T07:43:00.3059+00:00"
+      "last_updated": "2026-06-01T07:46:03.069232+00:00"
     }
   },
   "pge": {
