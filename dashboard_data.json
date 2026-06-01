@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 21:17:18",
+  "generated_at": "2026-05-31 21:22:26",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100047,
+        "timestamp": "2026-06-01T04:19:37+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music playing: backyard (TV), garage (Lainey Wilson - Can't Sit Still)",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"backyard\", \"entity_state\": \"playing\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"garage\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 100046,
+        "timestamp": "2026-06-01T04:19:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100045,
+        "timestamp": "2026-06-01T04:18:19+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The backyard patio is empty and quiet at night. The porch lights are on, illuminating the stone patio and surrounding greenery.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 100044,
+        "timestamp": "2026-06-01T04:17:51+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera has resumed streaming after a period of displaying an error message. The yard is visible at night with a dark green pickup truck parked in the driveway and cars parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"black car\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 100043,
+        "timestamp": "2026-06-01T04:17:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100042,
+        "timestamp": "2026-06-01T04:17:11+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "A man sits on the couch in the living room, focused on his mobile phone. The atmosphere is calm during the evening.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
       {
         "id": 100041,
         "timestamp": "2026-06-01T04:16:22+00:00",
@@ -3377,72 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 99847,
-        "timestamp": "2026-06-01T03:08:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99846,
-        "timestamp": "2026-06-01T03:07:45+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99845,
-        "timestamp": "2026-06-01T03:07:12+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99844,
-        "timestamp": "2026-06-01T03:06:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99843,
-        "timestamp": "2026-06-01T03:06:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99842,
-        "timestamp": "2026-06-01T03:06:12+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3553,17 +3553,19 @@
         "stairs",
         "downstairs_hallway"
       ],
-      "music_playing": [],
+      "music_playing": [
+        "Music playing: backyard (TV), garage (Lainey Wilson - Can't Sit Still)"
+      ],
       "last_motion": {
         "backyard": "2026-06-01T04:06:10+00:00",
         "dog_run": "2026-06-01T04:03:53+00:00",
         "entryway": "2026-06-01T04:15:22+00:00",
-        "front_door": "2026-06-01T03:57:51+00:00",
-        "front_yard": "2026-06-01T04:09:30+00:00",
-        "living_room": "2026-06-01T04:15:01+00:00",
+        "front_door": "2026-06-01T04:18:19+00:00",
+        "front_yard": "2026-06-01T04:17:51+00:00",
+        "living_room": "2026-06-01T04:17:11+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T04:16:37.797983+00:00"
+      "last_updated": "2026-06-01T04:19:40.256089+00:00"
     }
   },
   "pge": {
