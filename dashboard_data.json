@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 21:37:48",
+  "generated_at": "2026-05-31 21:42:56",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100083,
+        "timestamp": "2026-06-01T04:40:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 100082,
+        "timestamp": "2026-06-01T04:39:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100081,
+        "timestamp": "2026-06-01T04:39:40+00:00",
+        "source": "ha:audio",
+        "source_type": "audio",
+        "location": "home",
+        "summary": "Music in garage: Kacey Musgraves - Dry Spell",
+        "confidence": 0.95,
+        "model_version": "signal-aggregator-v1",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"garage\", \"entity_state\": \"playing\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 100080,
+        "timestamp": "2026-06-01T04:39:09+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The backyard patio is empty and quiet at night. The porch lights are on, illuminating the stone patio and surrounding greenery.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"stone patio\", \"entity_state\": \"illuminated\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"porch lights\", \"entity_state\": \"on\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 100079,
+        "timestamp": "2026-06-01T04:38:28+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera has resumed streaming after a brief period of displaying an error message. A dark green pickup truck is parked in the driveway, and the street is quiet at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"nighttime\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 100078,
+        "timestamp": "2026-06-01T04:38:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100077,
         "timestamp": "2026-06-01T04:37:39+00:00",
@@ -3377,72 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 99883,
-        "timestamp": "2026-06-01T03:21:34+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99882,
-        "timestamp": "2026-06-01T03:20:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99881,
-        "timestamp": "2026-06-01T03:20:50+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 calm family conversation indoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99880,
-        "timestamp": "2026-06-01T03:20:04+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99879,
-        "timestamp": "2026-06-01T03:19:58+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 99878,
-        "timestamp": "2026-06-01T03:19:30+00:00",
-        "source": "flume",
-        "source_type": "water",
-        "location": "household",
-        "summary": "No water flow. Daily usage: 403.4 gal.",
-        "confidence": 0.99,
-        "model_version": "flume-ha-v2",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3557,12 +3557,12 @@
         "backyard": "2026-06-01T04:27:53+00:00",
         "dog_run": "2026-06-01T04:03:53+00:00",
         "entryway": "2026-06-01T04:15:22+00:00",
-        "front_door": "2026-06-01T04:18:19+00:00",
-        "front_yard": "2026-06-01T04:17:51+00:00",
+        "front_door": "2026-06-01T04:39:09+00:00",
+        "front_yard": "2026-06-01T04:38:28+00:00",
         "living_room": "2026-06-01T04:17:11+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T04:37:49.925767+00:00"
+      "last_updated": "2026-06-01T04:40:51.402788+00:00"
     }
   },
   "pge": {
