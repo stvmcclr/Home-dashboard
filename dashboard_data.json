@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 22:59:48",
+  "generated_at": "2026-05-31 23:04:56",
   "as_of": "2026-05-31",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 100240,
+        "timestamp": "2026-06-01T06:02:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100239,
+        "timestamp": "2026-06-01T06:02:04+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a stream interruption, displaying an error message instead of a live feed. No visual information is available to monitor the driveway or street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 100238,
+        "timestamp": "2026-06-01T06:01:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 100237,
+        "timestamp": "2026-06-01T06:00:19+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 100236,
         "timestamp": "2026-06-01T05:59:38+00:00",
@@ -3399,53 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 100040,
-        "timestamp": "2026-06-01T04:16:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100039,
-        "timestamp": "2026-06-01T04:15:39+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 100038,
-        "timestamp": "2026-06-01T04:15:22+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or animals are visible in the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"white sneakers\", \"entity_state\": \"on floor\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 100037,
-        "timestamp": "2026-06-01T04:15:01+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "A person in a grey hoodie sits in the living room, focused on their mobile phone while a soccer match plays on the television. The dog is resting nearby in a calm evening setting.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"using phone\", \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"television\", \"entity_state\": \"playing soccer\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 4774,
+        "timestamp": "2026-06-01T06:02:04+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not providing any visual data, preventing monitoring of the property.",
+        "acted_on_at": null
+      },
       {
         "id": 4773,
         "timestamp": "2026-06-01T05:40:51+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing a technical failure, with the feed becoming heavily glitched and then going dark.",
         "acted_on_at": null
-      },
-      {
-        "id": 4764,
-        "timestamp": "2026-06-01T04:58:57+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not streaming video and is displaying an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3548,11 +3548,11 @@
         "dog_run": "2026-06-01T05:48:50+00:00",
         "entryway": "2026-06-01T05:49:22+00:00",
         "front_door": "2026-06-01T05:45:00+00:00",
-        "front_yard": "2026-06-01T05:40:51+00:00",
+        "front_yard": "2026-06-01T06:02:04+00:00",
         "living_room": "2026-06-01T05:47:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-01T05:59:43.160556+00:00"
+      "last_updated": "2026-06-01T06:02:45.15492+00:00"
     }
   },
   "pge": {
