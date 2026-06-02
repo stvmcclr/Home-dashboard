@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01 23:31:54",
+  "generated_at": "2026-06-01 23:37:02",
   "as_of": "2026-06-01",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 104281,
+        "timestamp": "2026-06-02T06:32:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104280,
+        "timestamp": "2026-06-02T06:32:05+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No movement or activity is visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 104279,
+        "timestamp": "2026-06-02T06:31:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104278,
+        "timestamp": "2026-06-02T06:29:42+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet during the night. No people or dogs are visible in the area, and the gate remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
       {
         "id": 104277,
         "timestamp": "2026-06-02T06:28:55+00:00",
@@ -3399,53 +3443,41 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 104081,
-        "timestamp": "2026-06-02T04:39:16+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104080,
-        "timestamp": "2026-06-02T04:39:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104079,
-        "timestamp": "2026-06-02T04:38:49+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104078,
-        "timestamp": "2026-06-02T04:37:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4938,
+        "timestamp": "2026-06-02T06:33:30+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the high volume of historical distress and alert flags recorded today, the current sensor data shows a sustained period of calm and routine activity (Steve working, dog resting, and all outdoor areas being quiet), indicating the immediate household situation is stable and secure.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4935,
+        "timestamp": "2026-06-02T06:31:32+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: living_room averaging 85 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4936,
+        "timestamp": "2026-06-02T06:31:32+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:32PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 4937,
+        "timestamp": "2026-06-02T06:31:32+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:58PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
       {
         "id": 4934,
         "timestamp": "2026-06-02T06:16:47+00:00",
@@ -3493,38 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] Raised voices or an argument detected in the living room area.",
         "acted_on_at": null
-      },
-      {
-        "id": 4928,
-        "timestamp": "2026-06-02T04:30:16+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a significant discrepancy between the camera feeds (which report the house as empty or calm after 21:17) and the home signals (which register unclassified audio and an unexpected or unfamiliar voice indoors between 21:23 and 21:28). This suggests unexplained activity or presence inside the home despite the visual evidence of quiet, which is concerning given the previous high-alert flags.",
-        "acted_on_at": null
-      },
-      {
-        "id": 4926,
-        "timestamp": "2026-06-02T04:29:47+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 9 observations vs typical 1 for weekday 21:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 4927,
-        "timestamp": "2026-06-02T04:29:47+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekday 21:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 4925,
-        "timestamp": "2026-06-02T04:24:11+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is intermittently failing to receive frames and displaying error messages.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3543,14 +3543,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-02T06:27:52+00:00",
-        "dog_run": "2026-06-02T06:09:07+00:00",
+        "dog_run": "2026-06-02T06:29:42+00:00",
         "entryway": "2026-06-02T06:28:55+00:00",
-        "front_door": "2026-06-02T06:11:07+00:00",
+        "front_door": "2026-06-02T06:32:05+00:00",
         "front_yard": "2026-06-02T06:16:47+00:00",
         "living_room": "2026-06-02T05:58:52+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-02T06:29:08.230214+00:00"
+      "last_updated": "2026-06-02T06:35:15.51952+00:00"
     }
   },
   "pge": {
