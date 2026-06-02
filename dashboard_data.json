@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 04:14:14",
+  "generated_at": "2026-06-02 04:19:22",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 104436,
+        "timestamp": "2026-06-02T11:17:21+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104435,
+        "timestamp": "2026-06-02T11:13:29+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and unoccupied in the middle of the night. A bright, blurry light arc, likely from passing vehicle headlights, is visible on the left side of the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"passing headlights\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 104434,
+        "timestamp": "2026-06-02T11:12:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 104433,
         "timestamp": "2026-06-02T11:11:52+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": \"in use\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 104236,
-        "timestamp": "2026-06-02T05:58:50+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104235,
-        "timestamp": "2026-06-02T05:58:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104234,
-        "timestamp": "2026-06-02T05:58:25+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3563,7 +3563,8 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3573,10 +3574,10 @@
         "entryway": "2026-06-02T11:03:11+00:00",
         "front_door": "2026-06-02T11:04:02+00:00",
         "front_yard": "2026-06-02T11:10:04+00:00",
-        "living_room": "2026-06-02T10:27:55+00:00",
+        "living_room": "2026-06-02T11:13:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-02T11:12:06.359584+00:00"
+      "last_updated": "2026-06-02T11:18:10.505399+00:00"
     }
   },
   "pge": {
