@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 00:33:39",
+  "generated_at": "2026-06-02 00:38:47",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 104328,
+        "timestamp": "2026-06-02T07:36:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104327,
+        "timestamp": "2026-06-02T07:35:39+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No movement or activity is visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 104326,
+        "timestamp": "2026-06-02T07:35:24+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104325,
+        "timestamp": "2026-06-02T07:34:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104324,
+        "timestamp": "2026-06-02T07:34:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 104323,
         "timestamp": "2026-06-02T07:32:33+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 104128,
-        "timestamp": "2026-06-02T04:59:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104127,
-        "timestamp": "2026-06-02T04:58:37+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104126,
-        "timestamp": "2026-06-02T04:58:04+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. Through the glass doors, the living room is visible, illuminated by the blue glow of the television.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 104125,
-        "timestamp": "2026-06-02T04:57:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 104124,
-        "timestamp": "2026-06-02T04:57:22+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4941,
+        "timestamp": "2026-06-02T07:35:03+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The persistent presence of an unknown dark car, combined with multiple unclassified audio events in the backyard (00:14, 00:17, 00:32) while the household is settled and Roxanne is asleep, suggests potential unauthorized activity or surveillance at the property.",
+        "acted_on_at": null
+      },
       {
         "id": 4940,
         "timestamp": "2026-06-02T06:58:15+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "The system transitioned from multiple high-alert flags (child distress, unknown male, arguments) to a sudden, highly specific 'routine audio: calm family conversation' at 22:28, immediately following the sighting of both Steve and Roxanne. This rapid shift suggests a deliberate attempt to normalize the environment and dismiss the significant preceding distress and suspicious activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 4931,
-        "timestamp": "2026-06-02T04:59:53+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Roxanne is seen moving through the kitchen following recent reports of distress and raised voices in the home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,12 +3575,12 @@
         "backyard": "2026-06-02T07:29:21+00:00",
         "dog_run": "2026-06-02T07:32:04+00:00",
         "entryway": "2026-06-02T07:14:30+00:00",
-        "front_door": "2026-06-02T07:15:03+00:00",
+        "front_door": "2026-06-02T07:35:39+00:00",
         "front_yard": "2026-06-02T07:19:02+00:00",
         "living_room": "2026-06-02T07:24:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-02T07:33:11.543753+00:00"
+      "last_updated": "2026-06-02T07:36:16.177136+00:00"
     }
   },
   "pge": {
