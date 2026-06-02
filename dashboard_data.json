@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01 21:18:32",
+  "generated_at": "2026-06-01 21:23:40",
   "as_of": "2026-06-01",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 104044,
+        "timestamp": "2026-06-02T04:21:26+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104043,
+        "timestamp": "2026-06-02T04:21:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104042,
+        "timestamp": "2026-06-02T04:20:53+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 104041,
+        "timestamp": "2026-06-02T04:20:08+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet at night. The garden lights are illuminated along the fence, and the gate remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 104040,
+        "timestamp": "2026-06-02T04:19:34+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the night. String lights are illuminated along the fence, and the gate remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 104039,
+        "timestamp": "2026-06-02T04:19:22+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 104038,
         "timestamp": "2026-06-02T04:17:28+00:00",
@@ -3377,72 +3443,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 103844,
-        "timestamp": "2026-06-02T03:08:00+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 103843,
-        "timestamp": "2026-06-02T03:07:10+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 103842,
-        "timestamp": "2026-06-02T03:07:02+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 103841,
-        "timestamp": "2026-06-02T03:06:52+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 103840,
-        "timestamp": "2026-06-02T03:06:30+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 103839,
-        "timestamp": "2026-06-02T03:05:40+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 calm family conversation indoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3546,15 +3546,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-02T03:59:01+00:00",
-        "dog_run": "2026-06-02T03:59:28+00:00",
+        "backyard": "2026-06-02T04:19:34+00:00",
+        "dog_run": "2026-06-02T04:20:08+00:00",
         "entryway": "2026-06-02T04:14:16+00:00",
         "front_door": "2026-06-02T04:02:14+00:00",
         "front_yard": "2026-06-02T04:09:35+00:00",
         "living_room": "2026-06-02T04:17:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-02T04:18:25.734403+00:00"
+      "last_updated": "2026-06-02T04:21:28.316085+00:00"
     }
   },
   "pge": {
