@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 02:47:04",
+  "generated_at": "2026-06-02 02:52:11",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 104393,
+        "timestamp": "2026-06-02T09:47:17+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera initially shows a dark SUV parked on the street at night, but the video stream subsequently fails, displaying error messages indicating that no frames are being received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
+      },
       {
         "id": 104392,
         "timestamp": "2026-06-02T09:42:21+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 104193,
-        "timestamp": "2026-06-02T05:34:30+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 4946,
+        "timestamp": "2026-06-02T09:47:18+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera stream has stopped receiving frames, displaying a system error message.",
+        "acted_on_at": null
+      },
       {
         "id": 4945,
         "timestamp": "2026-06-02T09:36:17+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: living_room averaging 85 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 4936,
-        "timestamp": "2026-06-02T06:31:32+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:32PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,6 +3563,7 @@
         "dog_run",
         "entryway",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
@@ -3572,11 +3573,11 @@
         "dog_run": "2026-06-02T09:39:27+00:00",
         "entryway": "2026-06-02T09:31:42+00:00",
         "front_door": "2026-06-02T09:39:49+00:00",
-        "front_yard": "2026-06-02T09:03:48+00:00",
+        "front_yard": "2026-06-02T09:47:17+00:00",
         "living_room": "2026-06-02T09:42:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-02T09:47:00.063147+00:00"
+      "last_updated": "2026-06-02T09:50:02.62378+00:00"
     }
   },
   "pge": {
