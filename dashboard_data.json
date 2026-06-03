@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03 02:42:07",
+  "generated_at": "2026-06-03 02:47:14",
   "as_of": "2026-06-03",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107990,
+        "timestamp": "2026-06-03T09:43:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107989,
+        "timestamp": "2026-06-03T09:42:00+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107988,
+        "timestamp": "2026-06-03T09:41:23+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107987,
+        "timestamp": "2026-06-03T09:41:21+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the late night. The gate is closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 107986,
         "timestamp": "2026-06-03T09:37:59+00:00",
@@ -3427,50 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107790,
-        "timestamp": "2026-06-03T05:03:52+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107789,
-        "timestamp": "2026-06-03T05:02:35+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107788,
-        "timestamp": "2026-06-03T05:02:04+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107787,
-        "timestamp": "2026-06-03T05:01:33+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3569,7 +3569,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-03T09:20:44+00:00",
+        "backyard": "2026-06-03T09:41:21+00:00",
         "dog_run": "2026-06-03T09:33:14+00:00",
         "entryway": "2026-06-03T09:22:12+00:00",
         "front_door": "2026-06-03T09:28:40+00:00",
@@ -3577,7 +3577,7 @@
         "living_room": "2026-06-03T09:35:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T09:40:37.78527+00:00"
+      "last_updated": "2026-06-03T09:46:45.792729+00:00"
     }
   },
   "pge": {
