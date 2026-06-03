@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 21:19:18",
+  "generated_at": "2026-06-02 21:24:26",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107726,
+        "timestamp": "2026-06-03T04:20:48+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107725,
+        "timestamp": "2026-06-03T04:20:35+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107724,
+        "timestamp": "2026-06-03T04:19:54+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107723,
+        "timestamp": "2026-06-03T04:19:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107722,
+        "timestamp": "2026-06-03T04:18:59+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog_run camera is currently displaying a technical error message indicating that no frames have been received. The actual view of the side yard is obscured by this error overlay, suggesting a stream interruption or camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 107721,
         "timestamp": "2026-06-03T04:17:05+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107526,
-        "timestamp": "2026-06-03T02:41:03+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107525,
-        "timestamp": "2026-06-03T02:40:59+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a child crying or yelling in distress at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107524,
-        "timestamp": "2026-06-03T02:40:55+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107523,
-        "timestamp": "2026-06-03T02:40:31+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107522,
-        "timestamp": "2026-06-03T02:40:30+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5030,
+        "timestamp": "2026-06-03T04:18:59+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The dog_run camera is not transmitting video and is reporting a frame reception error.",
+        "acted_on_at": null
+      },
       {
         "id": 5029,
         "timestamp": "2026-06-03T04:07:18+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at backyard this hour: 12 observations vs typical 1 for weekday 20:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5020,
-        "timestamp": "2026-06-03T03:05:00+00:00",
-        "insight_type": "trend",
-        "severity": "medium",
-        "summary": "Energy consumption trending up 38%: recent avg 54.2 kWh/day vs earlier 39.3 kWh/day. This covers 6 days of data.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3545,14 +3545,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-03T04:08:21+00:00",
-        "dog_run": "2026-06-03T03:56:58+00:00",
+        "dog_run": "2026-06-03T04:18:59+00:00",
         "entryway": "2026-06-03T04:11:49+00:00",
         "front_door": "2026-06-03T04:17:05+00:00",
         "front_yard": "2026-06-03T04:15:01+00:00",
         "living_room": "2026-06-03T04:13:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T04:18:32.196458+00:00"
+      "last_updated": "2026-06-03T04:21:34.686167+00:00"
     }
   },
   "pge": {
