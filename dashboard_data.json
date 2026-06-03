@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 23:17:06",
+  "generated_at": "2026-06-02 23:22:14",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107862,
+        "timestamp": "2026-06-03T06:19:32+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front_yard camera is currently non-functional, displaying an error message stating that no frames have been received. There is no visual information available to monitor the driveway, street, or property.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 107861,
+        "timestamp": "2026-06-03T06:18:56+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet. No people or animals are visible in the foyer during this late-night observation.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 107860,
+        "timestamp": "2026-06-03T06:17:55+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 107859,
         "timestamp": "2026-06-03T06:15:26+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107662,
-        "timestamp": "2026-06-03T03:31:19+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107661,
-        "timestamp": "2026-06-03T03:31:00+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107660,
-        "timestamp": "2026-06-03T03:30:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5034,
+        "timestamp": "2026-06-03T06:19:32+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is currently down and not providing a video feed; error logs should be checked.",
+        "acted_on_at": null
+      },
       {
         "id": 5033,
         "timestamp": "2026-06-03T06:08:15+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera remains offline, preventing any visual monitoring of the front yard, driveway, or street.",
         "acted_on_at": null
-      },
-      {
-        "id": 5024,
-        "timestamp": "2026-06-03T03:21:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is offline, preventing visual monitoring of the driveway and street.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3564,22 +3564,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-03T06:15:24+00:00",
         "dog_run": "2026-06-03T06:03:58+00:00",
-        "entryway": "2026-06-03T05:33:24+00:00",
+        "entryway": "2026-06-03T06:18:56+00:00",
         "front_door": "2026-06-03T06:00:15+00:00",
-        "front_yard": "2026-06-03T05:58:47+00:00",
+        "front_yard": "2026-06-03T06:19:32+00:00",
         "living_room": "2026-06-03T05:47:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T06:16:56.255783+00:00"
+      "last_updated": "2026-06-03T06:19:58.006414+00:00"
     }
   },
   "pge": {
