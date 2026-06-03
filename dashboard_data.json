@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03 00:23:44",
+  "generated_at": "2026-06-03 00:28:52",
   "as_of": "2026-06-03",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107893,
+        "timestamp": "2026-06-03T07:24:38+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 107892,
+        "timestamp": "2026-06-03T07:21:57+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 107891,
         "timestamp": "2026-06-03T07:18:04+00:00",
@@ -3449,28 +3471,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107693,
-        "timestamp": "2026-06-03T03:45:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107692,
-        "timestamp": "2026-06-03T03:45:14+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3558,8 +3558,7 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
-        "Steve"
+        "Roxanne"
       ],
       "active_rooms": [
         "backyard",
@@ -3575,12 +3574,12 @@
         "backyard": "2026-06-03T07:17:13+00:00",
         "dog_run": "2026-06-03T07:06:28+00:00",
         "entryway": "2026-06-03T07:04:59+00:00",
-        "front_door": "2026-06-03T07:02:21+00:00",
+        "front_door": "2026-06-03T07:24:38+00:00",
         "front_yard": "2026-06-03T07:00:48+00:00",
         "living_room": "2026-06-03T07:18:04+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T07:20:45.871934+00:00"
+      "last_updated": "2026-06-03T07:26:52.052927+00:00"
     }
   },
   "pge": {
