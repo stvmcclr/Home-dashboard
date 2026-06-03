@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03 04:09:07",
+  "generated_at": "2026-06-03 04:14:14",
   "as_of": "2026-06-03",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 108050,
+        "timestamp": "2026-06-03T11:11:57+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 108049,
+        "timestamp": "2026-06-03T11:11:03+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and driveway are quiet and empty in the early morning. The dark green pickup truck is parked in the driveway, and Roxanne's black SUV is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked on street\", \"confidence\": 1.0}]"
+      },
       {
         "id": 108048,
         "timestamp": "2026-06-03T11:07:53+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107850,
-        "timestamp": "2026-06-03T06:03:58+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The side yard dog run is empty and quiet at night. No people or dogs are visible in the illuminated area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 107849,
-        "timestamp": "2026-06-03T06:02:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5047,
+        "timestamp": "2026-06-03T11:11:27+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There are multiple, unconfirmed 'unknown' and 'unclassified' audio events detected at the front door throughout the early morning hours (03:48, 03:53, 03:57, 04:07). Since the cameras show no visible activity corresponding to these alerts, this suggests a persistent, non-visual external stimulus (such as distant animal calls, environmental noise, or faulty sensor) that requires manual investigation to rule out a potential recurring issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5046,
         "timestamp": "2026-06-03T10:10:47+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "At 00:00, there was an unclassified audio event at the front door, coinciding with the confirmation that the usual vehicles (dark green pickup and black SUV) are parked. Given the deep quiet and the lack of visual confirmation of a person, this suggests a very late, quiet interaction, such as a delivery drop-off or a brief visit, that occurred before the household settled into deep sleep.",
         "acted_on_at": null
-      },
-      {
-        "id": 5037,
-        "timestamp": "2026-06-03T07:08:16+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: backyard averaging 72 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3601,11 +3601,11 @@
         "dog_run": "2026-06-03T10:56:52+00:00",
         "entryway": "2026-06-03T10:53:54+00:00",
         "front_door": "2026-06-03T10:51:49+00:00",
-        "front_yard": "2026-06-03T10:50:26+00:00",
+        "front_yard": "2026-06-03T11:11:03+00:00",
         "living_room": "2026-06-03T11:06:25+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T11:08:57.207146+00:00"
+      "last_updated": "2026-06-03T11:11:59.267927+00:00"
     }
   },
   "pge": {
