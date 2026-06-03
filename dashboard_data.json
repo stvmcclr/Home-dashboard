@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02 23:58:05",
-  "as_of": "2026-06-02",
+  "generated_at": "2026-06-03 00:03:12",
+  "as_of": "2026-06-03",
   "projects": [
     {
       "id": 1,
@@ -948,7 +948,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 13.5 \u00d7 29.5 \u00d7 1 inch (Merv 11 or 13 recommended). Two HVAC systems \u2014 this is downstairs unit.",
-      "days_until_due": -39,
+      "days_until_due": -40,
       "is_overdue": 1
     },
     {
@@ -961,7 +961,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 16 \u00d7 24 \u00d7 1 inch. Upstairs HVAC unit.",
-      "days_until_due": -39,
+      "days_until_due": -40,
       "is_overdue": 1
     },
     {
@@ -974,7 +974,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "LG washer/dryer combo. Installed 2019. Expected lifespan ~10-13 yrs. Annual cleaning/maintenance check.",
-      "days_until_due": 213,
+      "days_until_due": 212,
       "is_overdue": 0
     },
     {
@@ -987,7 +987,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador refrigerator. New 2025. Check condenser coils annually. Warranty: typically 2yr full, 5yr sealed system.",
-      "days_until_due": 272,
+      "days_until_due": 271,
       "is_overdue": 0
     },
     {
@@ -1000,7 +1000,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Wolf range. New 2025. Annual burner and igniter check. Wolf warranty: 2yr parts & labor.",
-      "days_until_due": 272,
+      "days_until_due": 271,
       "is_overdue": 0
     },
     {
@@ -1013,7 +1013,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador dishwasher. New 2025. Clean filter every 6 months. Warranty: typically 2yr.",
-      "days_until_due": 272,
+      "days_until_due": 271,
       "is_overdue": 0
     }
   ],
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107882,
+        "timestamp": "2026-06-03T07:02:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107881,
+        "timestamp": "2026-06-03T07:02:21+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 107880,
+        "timestamp": "2026-06-03T07:00:56+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107879,
+        "timestamp": "2026-06-03T07:00:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet and empty during the night. A dark green pickup is parked in the driveway, and Roxanne's black SUV is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 107878,
+        "timestamp": "2026-06-03T06:56:42+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the late night. The gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
       {
         "id": 107877,
         "timestamp": "2026-06-03T06:55:47+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107682,
-        "timestamp": "2026-06-03T03:40:44+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107681,
-        "timestamp": "2026-06-03T03:39:57+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107680,
-        "timestamp": "2026-06-03T03:39:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107679,
-        "timestamp": "2026-06-03T03:39:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107678,
-        "timestamp": "2026-06-03T03:38:32+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3558,7 +3558,6 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Miller",
         "Roxanne",
         "Steve"
       ],
@@ -3572,15 +3571,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-03T06:36:04+00:00",
+        "backyard": "2026-06-03T06:56:42+00:00",
         "dog_run": "2026-06-03T06:45:20+00:00",
         "entryway": "2026-06-03T06:18:56+00:00",
-        "front_door": "2026-06-03T06:41:03+00:00",
-        "front_yard": "2026-06-03T06:40:02+00:00",
+        "front_door": "2026-06-03T07:02:21+00:00",
+        "front_yard": "2026-06-03T07:00:48+00:00",
         "living_room": "2026-06-03T06:32:34+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T06:56:25.507871+00:00"
+      "last_updated": "2026-06-03T07:02:30.862424+00:00"
     }
   },
   "pge": {
