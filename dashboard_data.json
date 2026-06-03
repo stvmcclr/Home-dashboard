@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 23:22:14",
+  "generated_at": "2026-06-02 23:27:21",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107867,
+        "timestamp": "2026-06-03T06:24:46+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet at night. During the sequence, the camera experienced a momentary failure, displaying an error message indicating that no frames were received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 107866,
+        "timestamp": "2026-06-03T06:22:34+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107865,
+        "timestamp": "2026-06-03T06:22:29+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107864,
+        "timestamp": "2026-06-03T06:21:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107863,
+        "timestamp": "2026-06-03T06:20:38+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 107862,
         "timestamp": "2026-06-03T06:19:32+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107667,
-        "timestamp": "2026-06-03T03:33:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107666,
-        "timestamp": "2026-06-03T03:32:52+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107665,
-        "timestamp": "2026-06-03T03:32:08+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is non-functional and continues to display an error message indicating that no video frames are being received. This is a continuation of the recent intermittent connection loss observed with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 107664,
-        "timestamp": "2026-06-03T03:31:53+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107663,
-        "timestamp": "2026-06-03T03:31:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5035,
+        "timestamp": "2026-06-03T06:24:46+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera experienced a momentary failure, showing an error message: 'No frames have been received, check error logs'.",
+        "acted_on_at": null
+      },
       {
         "id": 5034,
         "timestamp": "2026-06-03T06:19:32+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[doorbell] Urgent dog barking at the dog run following recent reports of a child crying in distress.",
         "acted_on_at": null
-      },
-      {
-        "id": 5025,
-        "timestamp": "2026-06-03T03:32:08+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera remains offline, preventing any visual monitoring of the front yard, driveway, or street.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,14 +3572,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-03T06:15:24+00:00",
-        "dog_run": "2026-06-03T06:03:58+00:00",
+        "dog_run": "2026-06-03T06:24:46+00:00",
         "entryway": "2026-06-03T06:18:56+00:00",
-        "front_door": "2026-06-03T06:00:15+00:00",
+        "front_door": "2026-06-03T06:20:38+00:00",
         "front_yard": "2026-06-03T06:19:32+00:00",
         "living_room": "2026-06-03T05:47:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T06:19:58.006414+00:00"
+      "last_updated": "2026-06-03T06:26:05.567484+00:00"
     }
   },
   "pge": {
