@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 21:09:03",
+  "generated_at": "2026-06-02 21:14:11",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107713,
+        "timestamp": "2026-06-03T04:11:49+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "A person is sitting on a couch in the adjacent room, focused on a laptop. The entryway itself is quiet and unoccupied.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107712,
+        "timestamp": "2026-06-03T04:11:33+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107711,
+        "timestamp": "2026-06-03T04:08:21+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the evening. No movement or people are observed in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 107710,
         "timestamp": "2026-06-03T04:03:26+00:00",
@@ -3410,42 +3443,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107513,
-        "timestamp": "2026-06-03T02:38:36+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "An unknown person in a pink shirt is bending down near the patio heater in the side passage. Penelope is standing nearby near the trampoline, and the gate remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"closed\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 107512,
-        "timestamp": "2026-06-03T02:38:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107511,
-        "timestamp": "2026-06-03T02:37:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5029,
+        "timestamp": "2026-06-03T04:07:18+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the high-severity flags regarding distress calls and the front yard camera being offline, the current observations show a return to routine quiet activity (20:56 onwards). The last confirmed person seen (Miller at 21:02) suggests the household is winding down, but the persistent, non-functional front yard camera and the recent history of distress signals remain critical, unaddressed security vulnerabilities.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5028,
+        "timestamp": "2026-06-03T04:07:03+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekday 21:00",
+        "acted_on_at": null
+      },
       {
         "id": 5027,
         "timestamp": "2026-06-03T03:47:27+00:00",
@@ -3509,29 +3525,12 @@
         "severity": "medium",
         "summary": "Energy consumption trending up 38%: recent avg 54.2 kWh/day vs earlier 39.3 kWh/day. This covers 6 days of data.",
         "acted_on_at": null
-      },
-      {
-        "id": 5019,
-        "timestamp": "2026-06-03T02:53:52+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The camera feed is experiencing a connection interruption.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5018,
-        "timestamp": "2026-06-03T02:51:49+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Audio from the entryway indicates a child is crying or yelling in distress, though no one is visible on the porch.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
         "Miller",
-        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3543,15 +3542,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-03T03:47:27+00:00",
+        "backyard": "2026-06-03T04:08:21+00:00",
         "dog_run": "2026-06-03T03:56:58+00:00",
-        "entryway": "2026-06-03T04:02:24+00:00",
+        "entryway": "2026-06-03T04:11:49+00:00",
         "front_door": "2026-06-03T03:56:27+00:00",
         "front_yard": "2026-06-03T03:32:08+00:00",
         "living_room": "2026-06-03T03:27:44+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T04:06:21.622778+00:00"
+      "last_updated": "2026-06-03T04:12:27.092438+00:00"
     }
   },
   "pge": {
