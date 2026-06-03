@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03 01:20:07",
+  "generated_at": "2026-06-03 01:25:14",
   "as_of": "2026-06-03",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107932,
+        "timestamp": "2026-06-03T08:24:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107931,
+        "timestamp": "2026-06-03T08:23:23+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107930,
+        "timestamp": "2026-06-03T08:19:23+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 107929,
+        "timestamp": "2026-06-03T08:19:03+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the late night. The gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 107928,
         "timestamp": "2026-06-03T08:16:22+00:00",
@@ -3427,50 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107732,
-        "timestamp": "2026-06-03T04:24:12+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107731,
-        "timestamp": "2026-06-03T04:23:45+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107730,
-        "timestamp": "2026-06-03T04:22:23+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107729,
-        "timestamp": "2026-06-03T04:22:12+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3569,7 +3568,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-03T07:58:27+00:00",
+        "backyard": "2026-06-03T08:19:03+00:00",
         "dog_run": "2026-06-03T08:08:00+00:00",
         "entryway": "2026-06-03T07:50:32+00:00",
         "front_door": "2026-06-03T08:05:42+00:00",
@@ -3577,7 +3576,7 @@
         "living_room": "2026-06-03T08:03:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T08:18:34.432562+00:00"
+      "last_updated": "2026-06-03T08:24:39.016963+00:00"
     }
   },
   "pge": {
