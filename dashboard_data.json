@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 22:05:23",
+  "generated_at": "2026-06-02 22:10:29",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107795,
+        "timestamp": "2026-06-03T05:09:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107794,
+        "timestamp": "2026-06-03T05:09:05+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107793,
+        "timestamp": "2026-06-03T05:07:28+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107792,
+        "timestamp": "2026-06-03T05:06:27+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve and Roxanne are relaxing on the couch in the living room. Roxanne is looking at her phone while Steve lounges with his feet up.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"using phone\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 107791,
+        "timestamp": "2026-06-03T05:05:49+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 107790,
         "timestamp": "2026-06-03T05:03:52+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107595,
-        "timestamp": "2026-06-03T03:06:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 107594,
-        "timestamp": "2026-06-03T03:05:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107593,
-        "timestamp": "2026-06-03T03:05:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107592,
-        "timestamp": "2026-06-03T03:04:53+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107591,
-        "timestamp": "2026-06-03T03:04:48+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "calm family conversation indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5032,
+        "timestamp": "2026-06-03T05:07:45+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The current sensor data shows a return to a calm, routine state (family relaxing, conversation, dogs present), which strongly contradicts the high-severity emergency flags logged earlier today (smoke alarm, distress calls, dog barking). This suggests that the immediate crisis or danger that triggered the alerts has passed, and the household has settled down.",
+        "acted_on_at": null
+      },
       {
         "id": 5031,
         "timestamp": "2026-06-03T04:56:24+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] A child is heard crying in distress at the entryway, and the front yard camera is experiencing connection loss.",
         "acted_on_at": null
-      },
-      {
-        "id": 5022,
-        "timestamp": "2026-06-03T03:07:02+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a pattern of persistent, unknown activity: an unidentified person in a pink shirt is repeatedly observed in the backyard side passage, often near Penelope, coinciding with multiple high-stress events (e.g., 19:42 doorbell/dog barking, 19:28 crying audio). This suggests the family may have experienced an ongoing intrusion or disruptive encounter that was the source of the distress and the unknown presence.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3549,10 +3549,10 @@
         "entryway": "2026-06-03T04:47:52+00:00",
         "front_door": "2026-06-03T04:58:33+00:00",
         "front_yard": "2026-06-03T04:56:24+00:00",
-        "living_room": "2026-06-03T04:59:10+00:00",
+        "living_room": "2026-06-03T05:06:27+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T05:04:05.149868+00:00"
+      "last_updated": "2026-06-03T05:10:09.30949+00:00"
     }
   },
   "pge": {
