@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02 20:53:42",
+  "generated_at": "2026-06-02 20:58:49",
   "as_of": "2026-06-02",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 107704,
+        "timestamp": "2026-06-03T03:56:58+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "Harlee is walking through the dog run at night. The landscape lights are illuminated along the edge of the garden bed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 107703,
+        "timestamp": "2026-06-03T03:56:27+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet during this baseline observation. No people or animals are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 107702,
+        "timestamp": "2026-06-03T03:55:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107701,
+        "timestamp": "2026-06-03T03:53:50+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107700,
+        "timestamp": "2026-06-03T03:52:23+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 107699,
+        "timestamp": "2026-06-03T03:52:19+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 107698,
         "timestamp": "2026-06-03T03:50:48+00:00",
@@ -3377,72 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 107504,
-        "timestamp": "2026-06-03T02:35:26+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107503,
-        "timestamp": "2026-06-03T02:35:24+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107502,
-        "timestamp": "2026-06-03T02:35:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107501,
-        "timestamp": "2026-06-03T02:35:07+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "An unknown person in a pink shirt is bending down near the patio heater in the side passage. Penelope stands nearby near the trampoline.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 107500,
-        "timestamp": "2026-06-03T02:34:06+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107499,
-        "timestamp": "2026-06-03T02:33:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3530,14 +3530,12 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Penelope",
         "Roxanne",
         "Steve"
       ],
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3546,14 +3544,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-03T03:47:27+00:00",
-        "dog_run": "2026-06-03T03:35:50+00:00",
+        "dog_run": "2026-06-03T03:56:58+00:00",
         "entryway": "2026-06-03T03:24:39+00:00",
-        "front_door": "2026-06-03T03:34:35+00:00",
+        "front_door": "2026-06-03T03:56:27+00:00",
         "front_yard": "2026-06-03T03:32:08+00:00",
         "living_room": "2026-06-03T03:27:44+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T03:51:10.162405+00:00"
+      "last_updated": "2026-06-03T03:57:13.452647+00:00"
     }
   },
   "pge": {
