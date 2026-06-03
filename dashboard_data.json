@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03 03:23:03",
+  "generated_at": "2026-06-03 03:28:10",
   "as_of": "2026-06-03",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 108021,
+        "timestamp": "2026-06-03T10:25:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 108020,
+        "timestamp": "2026-06-03T10:22:40+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet during the late night. The gate is closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 108019,
+        "timestamp": "2026-06-03T10:20:53+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during the late night. A bright, blurry light source is visible on the left side of the frame, but no people or animals are present in the room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 108018,
+        "timestamp": "2026-06-03T10:20:42+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unknown at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 108017,
         "timestamp": "2026-06-03T10:19:24+00:00",
@@ -3455,50 +3499,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 107821,
-        "timestamp": "2026-06-03T05:33:24+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet during the night. No people or animals are visible moving through the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 107820,
-        "timestamp": "2026-06-03T05:32:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107819,
-        "timestamp": "2026-06-03T05:32:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 107818,
-        "timestamp": "2026-06-03T05:29:08+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is relaxing on the couch in the living room, covered by a blanket. The scene remains still with no observable movement across the frames.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
@@ -3591,20 +3591,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-03T10:02:00+00:00",
+        "backyard": "2026-06-03T10:22:40+00:00",
         "dog_run": "2026-06-03T10:15:40+00:00",
         "entryway": "2026-06-03T10:07:40+00:00",
         "front_door": "2026-06-03T10:09:31+00:00",
         "front_yard": "2026-06-03T10:08:49+00:00",
-        "living_room": "2026-06-03T09:35:06+00:00",
+        "living_room": "2026-06-03T10:20:53+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-03T10:20:09.456249+00:00"
+      "last_updated": "2026-06-03T10:26:22.590701+00:00"
     }
   },
   "pge": {
