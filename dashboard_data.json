@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 01:04:53",
+  "generated_at": "2026-06-04 01:10:00",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 111676,
+        "timestamp": "2026-06-04T08:08:28+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The covered patio is empty and dark at night. No movement or activity is visible on the camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 111675,
+        "timestamp": "2026-06-04T08:08:27+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111674,
+        "timestamp": "2026-06-04T08:08:24+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111673,
+        "timestamp": "2026-06-04T08:06:53+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111672,
+        "timestamp": "2026-06-04T08:04:40+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 111671,
+        "timestamp": "2026-06-04T08:04:34+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet during the night. No people or dogs are visible in the area, and a tennis ball sits on the artificial grass.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis ball\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 111670,
         "timestamp": "2026-06-04T07:59:31+00:00",
@@ -3405,72 +3471,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 111476,
-        "timestamp": "2026-06-04T06:03:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 111475,
-        "timestamp": "2026-06-04T06:03:24+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111474,
-        "timestamp": "2026-06-04T06:02:49+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111473,
-        "timestamp": "2026-06-04T06:02:17+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111472,
-        "timestamp": "2026-06-04T06:02:15+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The covered patio is empty and quiet during the night. No people or animals are visible, and the area remains still under the patio lights.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 111471,
-        "timestamp": "2026-06-04T06:02:13+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3573,14 +3573,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-04T07:58:34+00:00",
-        "dog_run": "2026-06-04T07:43:51+00:00",
+        "dog_run": "2026-06-04T08:04:34+00:00",
         "entryway": "2026-06-04T07:41:59+00:00",
-        "front_door": "2026-06-04T07:47:49+00:00",
+        "front_door": "2026-06-04T08:08:28+00:00",
         "front_yard": "2026-06-04T07:57:19+00:00",
         "living_room": "2026-06-04T07:57:45+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-04T08:02:34.012706+00:00"
+      "last_updated": "2026-06-04T08:08:38.097265+00:00"
     }
   },
   "pge": {
