@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 00:54:35",
+  "generated_at": "2026-06-04 00:59:42",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 111669,
+        "timestamp": "2026-06-04T07:58:34+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and still during the night. The gate is closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 111668,
+        "timestamp": "2026-06-04T07:57:45+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during the late night hours. A bright, out-of-focus light source is visible on the left edge of the frame, likely a lens flare.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 111667,
+        "timestamp": "2026-06-04T07:57:19+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream intermittently displays an error message before showing a view of the quiet front yard at night. A dark SUV, likely Roxanne's Cayenne, is parked in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"intermittent failure\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 111666,
+        "timestamp": "2026-06-04T07:55:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 111665,
         "timestamp": "2026-06-04T07:52:41+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 111469,
-        "timestamp": "2026-06-04T06:01:42+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111468,
-        "timestamp": "2026-06-04T06:01:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111467,
-        "timestamp": "2026-06-04T06:00:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111466,
-        "timestamp": "2026-06-04T06:00:31+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5163,
+        "timestamp": "2026-06-04T07:57:19+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera stream is intermittently failing with error messages.",
+        "acted_on_at": null
+      },
       {
         "id": 5162,
         "timestamp": "2026-06-04T07:43:52+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[dog_run] The camera stream reported a 'No frames have been received' error in one of the recent frames.",
         "acted_on_at": null
-      },
-      {
-        "id": 5153,
-        "timestamp": "2026-06-04T06:55:17+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Urgent dog barking and a possible knock at the backyard are heard, which may indicate an intruder or an issue at the dog run.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3566,20 +3566,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-04T07:38:00+00:00",
+        "backyard": "2026-06-04T07:58:34+00:00",
         "dog_run": "2026-06-04T07:43:51+00:00",
         "entryway": "2026-06-04T07:41:59+00:00",
         "front_door": "2026-06-04T07:47:49+00:00",
-        "front_yard": "2026-06-04T07:36:35+00:00",
-        "living_room": "2026-06-04T07:12:07+00:00",
+        "front_yard": "2026-06-04T07:57:19+00:00",
+        "living_room": "2026-06-04T07:57:45+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-04T07:53:24.25143+00:00"
+      "last_updated": "2026-06-04T07:59:31.866413+00:00"
     }
   },
   "pge": {
