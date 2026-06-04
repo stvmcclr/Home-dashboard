@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 04:50:23",
+  "generated_at": "2026-06-04 04:55:31",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1300,6 +1300,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 111810,
+        "timestamp": "2026-06-04T11:53:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111809,
+        "timestamp": "2026-06-04T11:52:35+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 111808,
+        "timestamp": "2026-06-04T11:52:00+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111807,
+        "timestamp": "2026-06-04T11:51:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111806,
+        "timestamp": "2026-06-04T11:48:35+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 111805,
+        "timestamp": "2026-06-04T11:48:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 111804,
         "timestamp": "2026-06-04T11:47:12+00:00",
@@ -3433,72 +3499,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 111610,
-        "timestamp": "2026-06-04T06:57:04+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111609,
-        "timestamp": "2026-06-04T06:57:02+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111608,
-        "timestamp": "2026-06-04T06:57:00+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty and still at night. While audio indicates urgent dog barking, no animals or people are visible within the camera's field of view.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"open\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 111607,
-        "timestamp": "2026-06-04T06:55:33+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111606,
-        "timestamp": "2026-06-04T06:55:17+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway remains empty and still during the late-night hours. However, audio indicates urgent dog barking and a possible doorbell chime or knock at the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 111605,
-        "timestamp": "2026-06-04T06:55:03+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3597,7 +3597,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-04T11:27:23+00:00",
+        "backyard": "2026-06-04T11:48:35+00:00",
         "dog_run": "2026-06-04T11:33:56+00:00",
         "entryway": "2026-06-04T11:30:00+00:00",
         "front_door": "2026-06-04T11:35:31+00:00",
@@ -3605,7 +3605,7 @@
         "living_room": "2026-06-04T11:45:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-04T11:47:26.396965+00:00"
+      "last_updated": "2026-06-04T11:53:31.444691+00:00"
     }
   },
   "pge": {
