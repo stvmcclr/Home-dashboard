@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 03:33:35",
+  "generated_at": "2026-06-04 03:38:42",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 111752,
+        "timestamp": "2026-06-04T10:36:56+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 111751,
+        "timestamp": "2026-06-04T10:36:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 silence or quiet ambient background noise",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111750,
+        "timestamp": "2026-06-04T10:35:33+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111749,
+        "timestamp": "2026-06-04T10:32:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 111748,
+        "timestamp": "2026-06-04T10:32:21+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The covered patio is empty and quiet at night. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 111747,
         "timestamp": "2026-06-04T10:30:38+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 111552,
-        "timestamp": "2026-06-04T06:29:38+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111551,
-        "timestamp": "2026-06-04T06:29:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111550,
-        "timestamp": "2026-06-04T06:29:04+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111549,
-        "timestamp": "2026-06-04T06:28:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111548,
-        "timestamp": "2026-06-04T06:28:31+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5167,
+        "timestamp": "2026-06-04T10:35:33+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There are multiple unclassified audio events detected at the front door, front yard, and backyard (3:18, 3:21, 3:22, 3:32). Since the camera system has experienced multiple high-severity failures, these repeated, unexplained sounds suggest persistent external activity (e.g., a visitor or animal) that the visual sensors failed to capture, warranting a check of the perimeter.",
+        "acted_on_at": null
+      },
       {
         "id": 5166,
         "timestamp": "2026-06-04T09:48:57+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekday 00:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5157,
-        "timestamp": "2026-06-04T07:32:41+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in backyard at 11:57PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3599,12 +3599,12 @@
         "backyard": "2026-06-04T10:24:45+00:00",
         "dog_run": "2026-06-04T10:30:38+00:00",
         "entryway": "2026-06-04T09:58:48+00:00",
-        "front_door": "2026-06-04T10:11:50+00:00",
+        "front_door": "2026-06-04T10:32:21+00:00",
         "front_yard": "2026-06-04T10:23:16+00:00",
         "living_room": "2026-06-04T10:14:12+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-04T10:31:18.569501+00:00"
+      "last_updated": "2026-06-04T10:37:22.102063+00:00"
     }
   },
   "pge": {
