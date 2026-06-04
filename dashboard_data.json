@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 03:02:54",
+  "generated_at": "2026-06-04 03:08:02",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 111732,
+        "timestamp": "2026-06-04T10:05:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 111731,
+        "timestamp": "2026-06-04T10:04:10+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the night. The gate is closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 111730,
+        "timestamp": "2026-06-04T10:02:21+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet at night with Roxanne's black SUV parked in the driveway and a dark car on the street. The camera stream experienced a brief interruption where no frames were received before returning to the normal view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"interruption\", \"confidence\": 0.9}]"
+      },
       {
         "id": 111729,
         "timestamp": "2026-06-04T10:00:01+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 111532,
-        "timestamp": "2026-06-04T06:21:40+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111531,
-        "timestamp": "2026-06-04T06:21:07+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 111530,
-        "timestamp": "2026-06-04T06:20:56+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3568,15 +3568,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-04T09:42:57+00:00",
+        "backyard": "2026-06-04T10:04:10+00:00",
         "dog_run": "2026-06-04T09:48:57+00:00",
         "entryway": "2026-06-04T09:58:48+00:00",
         "front_door": "2026-06-04T09:50:25+00:00",
-        "front_yard": "2026-06-04T09:41:10+00:00",
+        "front_yard": "2026-06-04T10:02:21+00:00",
         "living_room": "2026-06-04T09:28:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-04T10:00:52.969103+00:00"
+      "last_updated": "2026-06-04T10:06:59.699585+00:00"
     }
   },
   "pge": {
