@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 03:58:28",
+  "generated_at": "2026-06-05 04:03:35",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115504,
+        "timestamp": "2026-06-05T11:00:03+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115503,
+        "timestamp": "2026-06-05T10:58:02+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115502,
+        "timestamp": "2026-06-05T10:56:35+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, securing the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 115501,
+        "timestamp": "2026-06-05T10:56:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115500,
+        "timestamp": "2026-06-05T10:55:43+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional, displaying an error message that no video frames are being received. This appears to be a persistent technical failure or loss of connection, as noted in recent history.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 115499,
         "timestamp": "2026-06-05T10:54:30+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 115304,
-        "timestamp": "2026-06-05T07:54:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115303,
-        "timestamp": "2026-06-05T07:52:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115302,
-        "timestamp": "2026-06-05T07:52:07+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, securing the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 115301,
-        "timestamp": "2026-06-05T07:50:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115300,
-        "timestamp": "2026-06-05T07:49:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5319,
+        "timestamp": "2026-06-05T10:55:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a persistent connection or transmission failure.",
+        "acted_on_at": null
+      },
       {
         "id": 5318,
         "timestamp": "2026-06-05T10:20:15+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera experienced a brief connection error.",
         "acted_on_at": null
-      },
-      {
-        "id": 5309,
-        "timestamp": "2026-06-05T08:37:18+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is experiencing intermittent connection issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3589,7 +3589,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3597,15 +3596,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-05T10:36:11+00:00",
-        "dog_run": "2026-06-05T10:35:10+00:00",
+        "backyard": "2026-06-05T10:56:35+00:00",
+        "dog_run": "2026-06-05T10:55:43+00:00",
         "entryway": "2026-06-05T10:28:12+00:00",
         "front_door": "2026-06-05T10:49:48+00:00",
         "front_yard": "2026-06-05T10:40:55+00:00",
         "living_room": "2026-06-05T10:44:24+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T10:55:32.972628+00:00"
+      "last_updated": "2026-06-05T11:01:38.341834+00:00"
     }
   },
   "pge": {
