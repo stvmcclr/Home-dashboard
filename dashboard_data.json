@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 05:35:52",
+  "generated_at": "2026-06-05 05:41:00",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1300,6 +1300,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115645,
+        "timestamp": "2026-06-05T12:38:37+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is not transmitting video and is displaying an error message. This is a continuation of a persistent technical failure or loss of connection to the camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 115644,
+        "timestamp": "2026-06-05T12:38:25+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115643,
+        "timestamp": "2026-06-05T12:37:57+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115642,
+        "timestamp": "2026-06-05T12:37:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115641,
+        "timestamp": "2026-06-05T12:36:55+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115640,
+        "timestamp": "2026-06-05T12:36:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 115639,
         "timestamp": "2026-06-05T12:35:25+00:00",
@@ -3433,75 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 115445,
-        "timestamp": "2026-06-05T09:59:41+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is quiet with Roxanne's dark SUV parked in the driveway, but the camera feed has suddenly cut out. The most recent frames show an error message indicating that no frames are being received from the front_yard camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 115444,
-        "timestamp": "2026-06-05T09:58:59+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is dark and appears empty during the late night hours. A bright, curved light flare on the left side of the frame obscures a portion of the view.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 115443,
-        "timestamp": "2026-06-05T09:58:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115442,
-        "timestamp": "2026-06-05T09:57:04+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115441,
-        "timestamp": "2026-06-05T09:55:06+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, securing the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 115440,
-        "timestamp": "2026-06-05T09:55:03+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5327,
+        "timestamp": "2026-06-05T12:38:37+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a persistent connection failure.",
+        "acted_on_at": null
+      },
       {
         "id": 5326,
         "timestamp": "2026-06-05T12:18:01+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera feed has cut out and is displaying an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 5317,
-        "timestamp": "2026-06-05T10:14:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not sending video frames; check error logs for connectivity or hardware issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-05T12:19:51+00:00",
-        "dog_run": "2026-06-05T12:18:01+00:00",
+        "dog_run": "2026-06-05T12:38:37+00:00",
         "entryway": "2026-06-05T11:59:03+00:00",
         "front_door": "2026-06-05T12:32:47+00:00",
         "front_yard": "2026-06-05T12:24:41+00:00",
         "living_room": "2026-06-05T12:15:22+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T12:35:41.858189+00:00"
+      "last_updated": "2026-06-05T12:38:45.376265+00:00"
     }
   },
   "pge": {
