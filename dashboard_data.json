@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 06:06:34",
+  "generated_at": "2026-06-05 06:11:41",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1300,6 +1300,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115697,
+        "timestamp": "2026-06-05T13:08:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115696,
+        "timestamp": "2026-06-05T13:08:14+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115695,
+        "timestamp": "2026-06-05T13:07:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115694,
+        "timestamp": "2026-06-05T13:07:20+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not providing any video feed, displaying an error message indicating that no frames have been received. This suggests a technical issue with the camera or the network connection.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 115693,
+        "timestamp": "2026-06-05T13:06:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 115692,
+        "timestamp": "2026-06-05T13:06:13+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 115691,
         "timestamp": "2026-06-05T13:05:55+00:00",
@@ -3433,75 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 115497,
-        "timestamp": "2026-06-05T10:50:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115496,
-        "timestamp": "2026-06-05T10:49:48+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is dark and quiet during the night. No movement or activity is visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 115495,
-        "timestamp": "2026-06-05T10:48:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115494,
-        "timestamp": "2026-06-05T10:46:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115493,
-        "timestamp": "2026-06-05T10:45:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115492,
-        "timestamp": "2026-06-05T10:44:24+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is dark and appears empty during the late night hours. A bright, curved light flare on the left side of the frame obscures a portion of the view.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5333,
+        "timestamp": "2026-06-05T13:07:20+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not transmitting video, which may indicate a camera or network error.",
+        "acted_on_at": null
+      },
       {
         "id": 5332,
         "timestamp": "2026-06-05T13:06:00+00:00",
@@ -3511,19 +3519,19 @@
         "acted_on_at": null
       },
       {
-        "id": 5330,
-        "timestamp": "2026-06-05T13:05:00+00:00",
-        "insight_type": "trend",
-        "severity": "medium",
-        "summary": "Consistent evening energy spike: avg peak 4.84 kWh/hr typically around 21:00 PDT across 3 days. Likely AC/HVAC cooling cycle. At $0.35/kWh this peak window costs ~$10.15/evening.",
-        "acted_on_at": null
-      },
-      {
         "id": 5331,
         "timestamp": "2026-06-05T13:05:00+00:00",
         "insight_type": "trend",
         "severity": "medium",
         "summary": "Energy consumption trending up 81%: recent avg 59.6 kWh/day vs earlier 33.0 kWh/day. This covers 3 days of data.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5330,
+        "timestamp": "2026-06-05T13:05:00+00:00",
+        "insight_type": "trend",
+        "severity": "medium",
+        "summary": "Consistent evening energy spike: avg peak 4.84 kWh/hr typically around 21:00 PDT across 3 days. Likely AC/HVAC cooling cycle. At $0.35/kWh this peak window costs ~$10.15/evening.",
         "acted_on_at": null
       },
       {
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing a persistent failure and is not providing any visual monitoring of the dog run.",
         "acted_on_at": null
-      },
-      {
-        "id": 5323,
-        "timestamp": "2026-06-05T11:37:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is non-functional, preventing monitoring of the dog run area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3601,11 +3601,11 @@
         "dog_run": "2026-06-05T12:59:25+00:00",
         "entryway": "2026-06-05T12:44:31+00:00",
         "front_door": "2026-06-05T12:53:39+00:00",
-        "front_yard": "2026-06-05T12:45:30+00:00",
+        "front_yard": "2026-06-05T13:07:20+00:00",
         "living_room": "2026-06-05T13:01:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T13:06:05.580014+00:00"
+      "last_updated": "2026-06-05T13:09:09.213431+00:00"
     }
   },
   "pge": {
