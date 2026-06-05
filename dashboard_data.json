@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 03:07:15",
+  "generated_at": "2026-06-05 03:12:22",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115454,
+        "timestamp": "2026-06-05T10:09:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115453,
+        "timestamp": "2026-06-05T10:08:54+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is dark and shows no visible movement or activity. The scene remains static, consistent with a baseline observation during the night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 115452,
+        "timestamp": "2026-06-05T10:08:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 115451,
         "timestamp": "2026-06-05T10:06:39+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 115254,
-        "timestamp": "2026-06-05T07:08:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115253,
-        "timestamp": "2026-06-05T07:07:31+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet during the late night hours, with a single yellow ball sitting on the artificial grass. A momentary camera error occurred during the sequence, resulting in one frame with no video data.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"yellow ball\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 115252,
-        "timestamp": "2026-06-05T07:07:22+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5316,
+        "timestamp": "2026-06-05T10:08:35+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a persistent pattern of unclassified audio detected in the backyard (02:48 - 03:08) that strongly contradicts the visual reports of the area being empty and quiet. This sustained audio activity, combined with the front yard camera's intermittent failures and the high number of mobile devices still reporting 'home' at 03:03, suggests an unknown external presence or unusual activity occurring outside the house while the family is asleep.",
+        "acted_on_at": null
+      },
       {
         "id": 5315,
         "timestamp": "2026-06-05T09:59:41+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing connection errors, consistent with recent intermittent connection issues.",
         "acted_on_at": null
-      },
-      {
-        "id": 5306,
-        "timestamp": "2026-06-05T07:34:52+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not providing any visual coverage due to a connection error.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,12 +3572,12 @@
         "backyard": "2026-06-05T09:55:06+00:00",
         "dog_run": "2026-06-05T09:54:07+00:00",
         "entryway": "2026-06-05T09:42:46+00:00",
-        "front_door": "2026-06-05T09:48:12+00:00",
+        "front_door": "2026-06-05T10:08:54+00:00",
         "front_yard": "2026-06-05T09:59:41+00:00",
         "living_room": "2026-06-05T09:58:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T10:07:04.445784+00:00"
+      "last_updated": "2026-06-05T10:10:06.236205+00:00"
     }
   },
   "pge": {
