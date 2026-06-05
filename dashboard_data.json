@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 23:32:18",
+  "generated_at": "2026-06-04 23:37:25",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115222,
+        "timestamp": "2026-06-05T06:34:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115221,
+        "timestamp": "2026-06-05T06:33:36+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115220,
+        "timestamp": "2026-06-05T06:33:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 115219,
+        "timestamp": "2026-06-05T06:33:09+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing intermittent connection issues, displaying error messages before finally recovering to show an empty yard at night. A dark vehicle is parked in the driveway, and the street is quiet.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera connection error\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 115218,
+        "timestamp": "2026-06-05T06:33:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 115217,
         "timestamp": "2026-06-05T06:31:36+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 115022,
-        "timestamp": "2026-06-05T04:39:29+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115021,
-        "timestamp": "2026-06-05T04:38:54+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet during the night. The porch lights are on, illuminating the stone patio and surrounding plants.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 115020,
-        "timestamp": "2026-06-05T04:38:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115019,
-        "timestamp": "2026-06-05T04:38:09+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 115018,
-        "timestamp": "2026-06-05T04:37:59+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5299,
+        "timestamp": "2026-06-05T06:33:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing intermittent connection errors, though the stream has recovered in the latest frame.",
+        "acted_on_at": null
+      },
       {
         "id": 5298,
         "timestamp": "2026-06-05T06:06:34+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] A camera error message was detected in the stream.",
         "acted_on_at": null
-      },
-      {
-        "id": 5289,
-        "timestamp": "2026-06-05T04:28:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front_yard camera is not providing a video feed; check error logs for potential hardware or network issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,11 +3547,11 @@
         "dog_run": "2026-06-05T06:25:20+00:00",
         "entryway": "2026-06-05T05:55:44+00:00",
         "front_door": "2026-06-05T06:22:30+00:00",
-        "front_yard": "2026-06-05T06:12:02+00:00",
+        "front_yard": "2026-06-05T06:33:09+00:00",
         "living_room": "2026-06-05T06:11:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T06:31:58.726616+00:00"
+      "last_updated": "2026-06-05T06:35:02.755086+00:00"
     }
   },
   "pge": {
