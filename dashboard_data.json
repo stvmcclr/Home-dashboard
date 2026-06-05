@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 22:51:22",
+  "generated_at": "2026-06-04 22:56:28",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115167,
+        "timestamp": "2026-06-05T05:55:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115166,
+        "timestamp": "2026-06-05T05:54:02+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115165,
+        "timestamp": "2026-06-05T05:53:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115164,
+        "timestamp": "2026-06-05T05:51:36+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front_yard camera is not transmitting video and is displaying an error message indicating that no frames have been received. This is a continuation of a known, persistent issue with the camera's connection or functionality.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 115163,
+        "timestamp": "2026-06-05T05:50:17+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 115162,
         "timestamp": "2026-06-05T05:49:32+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 114967,
-        "timestamp": "2026-06-05T04:05:29+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114966,
-        "timestamp": "2026-06-05T04:05:18+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114965,
-        "timestamp": "2026-06-05T04:05:14+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114964,
-        "timestamp": "2026-06-05T04:03:44+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114963,
-        "timestamp": "2026-06-05T04:03:00+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty and quiet at night. No movement or activity is detected in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 5296,
+        "timestamp": "2026-06-05T05:51:36+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is not transmitting video, which is a continuation of a known, persistent issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5295,
         "timestamp": "2026-06-05T05:30:16+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard is currently still, but recent history shows a loud thud and raised voices in the living room, following a camera disconnection.",
         "acted_on_at": null
-      },
-      {
-        "id": 5286,
-        "timestamp": "2026-06-05T04:07:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is disconnected, following a recent loud thud and ongoing raised voices in the living room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,11 +3547,11 @@
         "dog_run": "2026-06-05T05:44:16+00:00",
         "entryway": "2026-06-05T05:10:19+00:00",
         "front_door": "2026-06-05T05:40:36+00:00",
-        "front_yard": "2026-06-05T05:30:16+00:00",
+        "front_yard": "2026-06-05T05:51:36+00:00",
         "living_room": "2026-06-05T05:47:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T05:49:33.833925+00:00"
+      "last_updated": "2026-06-05T05:55:37.456766+00:00"
     }
   },
   "pge": {
