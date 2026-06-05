@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 14:18:29",
+  "generated_at": "2026-06-05 14:23:37",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1412,6 +1412,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 116849,
+        "timestamp": "2026-06-05T21:20:31+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 116848,
+        "timestamp": "2026-06-05T21:19:48+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 116847,
+        "timestamp": "2026-06-05T21:19:11+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing intermittent connectivity issues, frequently displaying error messages. When the stream is active, Steve is seen near the dark green pickup truck parked in the driveway alongside Roxanne's black Porsche Cayenne.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"intermittent connectivity\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 116846,
+        "timestamp": "2026-06-05T21:19:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 116845,
+        "timestamp": "2026-06-05T21:19:00+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 116844,
+        "timestamp": "2026-06-05T21:18:36+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 116843,
+        "timestamp": "2026-06-05T21:17:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 116842,
         "timestamp": "2026-06-05T21:17:36+00:00",
@@ -3534,86 +3611,49 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 116649,
-        "timestamp": "2026-06-05T20:08:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 116648,
-        "timestamp": "2026-06-05T20:08:21+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 116647,
-        "timestamp": "2026-06-05T20:07:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 116646,
-        "timestamp": "2026-06-05T20:07:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 116645,
-        "timestamp": "2026-06-05T20:06:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 116644,
-        "timestamp": "2026-06-05T20:05:52+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 116643,
-        "timestamp": "2026-06-05T20:05:25+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5379,
+        "timestamp": "2026-06-05T21:19:12+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is intermittently failing to capture frames, and Steve is present in the driveway.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5378,
+        "timestamp": "2026-06-05T21:18:39+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "An unknown person in a blue shirt was observed entering the backyard area at 14:13, immediately preceding increased dog barking and unclassified audio detections in the backyard and entryway. This suggests a visitor or delivery interaction that warrants monitoring, especially since the white gate remains closed.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5375,
+        "timestamp": "2026-06-05T21:17:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at entryway this hour: 4 observations vs typical 1 for weekday 14:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 5376,
+        "timestamp": "2026-06-05T21:17:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekday 14:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 5377,
+        "timestamp": "2026-06-05T21:17:50+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_door averaging 59 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 5374,
         "timestamp": "2026-06-05T21:03:35+00:00",
@@ -3653,46 +3693,6 @@
         "severity": "medium",
         "summary": "The system reports a significant energy consumption trend increase (187%) alongside multiple critical camera failures (Front Yard, Dog Run), suggesting a potential underlying system inefficiency or issue that is not correlated with the current visible calm state of the household. This combination requires investigation to ensure the energy usage is normal and that all monitoring systems are operational.",
         "acted_on_at": null
-      },
-      {
-        "id": 5369,
-        "timestamp": "2026-06-05T20:17:20+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekday 13:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 5368,
-        "timestamp": "2026-06-05T20:16:24+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not transmitting video, showing a 'no frames received' error.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5367,
-        "timestamp": "2026-06-05T20:05:00+00:00",
-        "insight_type": "trend",
-        "severity": "medium",
-        "summary": "Energy consumption trending up 187%: recent avg 59.6 kWh/day vs earlier 20.8 kWh/day. This covers 3 days of data.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5366,
-        "timestamp": "2026-06-05T20:01:06+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline and not providing any visual information.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5365,
-        "timestamp": "2026-06-05T19:55:47+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera has returned to functionality after previously displaying a 'no frames received' error.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3716,11 +3716,11 @@
         "dog_run": "2026-06-05T21:03:35+00:00",
         "entryway": "2026-06-05T21:11:34+00:00",
         "front_door": "2026-06-05T21:01:54+00:00",
-        "front_yard": "2026-06-05T20:57:47+00:00",
+        "front_yard": "2026-06-05T21:19:11+00:00",
         "living_room": "2026-06-05T21:10:01+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T21:17:44.398409+00:00"
+      "last_updated": "2026-06-05T21:20:47.090496+00:00"
     }
   },
   "pge": {
