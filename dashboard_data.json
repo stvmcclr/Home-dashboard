@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04 23:06:42",
+  "generated_at": "2026-06-04 23:11:50",
   "as_of": "2026-06-04",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 115187,
+        "timestamp": "2026-06-05T06:09:23+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115186,
+        "timestamp": "2026-06-05T06:08:40+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 115185,
+        "timestamp": "2026-06-05T06:07:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115184,
+        "timestamp": "2026-06-05T06:06:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115183,
+        "timestamp": "2026-06-05T06:04:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 115182,
+        "timestamp": "2026-06-05T06:04:42+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the night. No people or dogs are visible in the side yard area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 115181,
         "timestamp": "2026-06-05T06:04:25+00:00",
@@ -3377,75 +3443,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 114987,
-        "timestamp": "2026-06-05T04:15:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 114986,
-        "timestamp": "2026-06-05T04:15:22+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114985,
-        "timestamp": "2026-06-05T04:14:48+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard and driveway are empty and quiet at night, with the regular dark green pickup truck parked in the driveway. No people or animals are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 114984,
-        "timestamp": "2026-06-05T04:14:35+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114983,
-        "timestamp": "2026-06-05T04:14:05+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 114982,
-        "timestamp": "2026-06-05T04:13:31+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5298,
+        "timestamp": "2026-06-05T06:06:34+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a pattern of unclassified audio alerts occurring in the backyard, living room, and at the front door between 22:56 and 23:04, suggesting external or internal disturbance despite the cameras reporting all areas as empty and quiet. This cluster of late-night audio anomalies, combined with the earlier glass breaking alert and the persistent front yard camera failure, suggests the property may be under surveillance or experiencing minor unauthorized activity.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5297,
+        "timestamp": "2026-06-05T06:06:11+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 5 observations vs typical 1 for weekday 23:00",
+        "acted_on_at": null
+      },
       {
         "id": 5296,
         "timestamp": "2026-06-05T05:51:36+00:00",
@@ -3509,22 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front_yard camera is not providing a video feed; check error logs for potential hardware or network issues.",
         "acted_on_at": null
-      },
-      {
-        "id": 5288,
-        "timestamp": "2026-06-05T04:23:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] The camera feed has encountered an error and is no longer receiving frames.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5287,
-        "timestamp": "2026-06-05T04:14:48+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard is currently still, but recent history shows a loud thud and raised voices in the living room, following a camera disconnection.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3544,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-05T05:48:05+00:00",
-        "dog_run": "2026-06-05T05:44:16+00:00",
+        "backyard": "2026-06-05T06:08:40+00:00",
+        "dog_run": "2026-06-05T06:04:42+00:00",
         "entryway": "2026-06-05T05:55:44+00:00",
         "front_door": "2026-06-05T06:01:52+00:00",
         "front_yard": "2026-06-05T05:51:36+00:00",
         "living_room": "2026-06-05T05:47:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-05T06:04:42.855893+00:00"
+      "last_updated": "2026-06-05T06:10:45.924011+00:00"
     }
   },
   "pge": {
