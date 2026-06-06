@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 00:58:57",
+  "generated_at": "2026-06-06 01:04:05",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118376,
+        "timestamp": "2026-06-06T08:00:48+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently offline and not transmitting any video frames. An error message is displayed on the screen indicating that no frames have been received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118375,
+        "timestamp": "2026-06-06T07:59:48+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118374,
+        "timestamp": "2026-06-06T07:59:19+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet during the late night. No movement or people are visible in the foyer or near the stairs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 118373,
         "timestamp": "2026-06-06T07:57:53+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 118176,
-        "timestamp": "2026-06-06T05:14:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118175,
-        "timestamp": "2026-06-06T05:14:28+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118174,
-        "timestamp": "2026-06-06T05:14:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5455,
+        "timestamp": "2026-06-06T08:00:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is offline, making it impossible to monitor the dog run area.",
+        "acted_on_at": null
+      },
       {
         "id": 5454,
         "timestamp": "2026-06-06T07:30:58+00:00",
@@ -3573,24 +3581,15 @@
         "severity": "high",
         "summary": "[front_yard] The camera briefly displayed a 'no frames received' error before returning to a normal view.",
         "acted_on_at": null
-      },
-      {
-        "id": 5445,
-        "timestamp": "2026-06-06T05:36:48+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline, which is a continuation of a known connectivity issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Roxanne"
-      ],
+      "who_is_home": [],
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3598,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-06T07:57:53+00:00",
-        "dog_run": "2026-06-06T07:40:23+00:00",
-        "entryway": "2026-06-06T07:12:24+00:00",
-        "front_door": "2026-06-06T07:38:37+00:00",
+        "dog_run": "2026-06-06T08:00:48+00:00",
+        "entryway": "2026-06-06T07:59:19+00:00",
+        "front_door": "2026-06-06T07:59:48+00:00",
         "front_yard": "2026-06-06T07:52:30+00:00",
         "living_room": "2026-06-06T07:28:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T07:58:49.413598+00:00"
+      "last_updated": "2026-06-06T08:01:52.109189+00:00"
     }
   },
   "pge": {
