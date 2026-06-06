@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 03:48:18",
+  "generated_at": "2026-06-06 03:53:26",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1328,6 +1328,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118455,
+        "timestamp": "2026-06-06T10:50:09+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently offline and not receiving any video frames. An error message is displayed on the screen, indicating a loss of connection.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118454,
+        "timestamp": "2026-06-06T10:47:58+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during the night. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 118453,
         "timestamp": "2026-06-06T10:46:07+00:00",
@@ -3505,31 +3527,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118255,
-        "timestamp": "2026-06-06T05:47:37+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118254,
-        "timestamp": "2026-06-06T05:47:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5465,
+        "timestamp": "2026-06-06T10:50:09+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is offline and requires investigation of the error logs.",
+        "acted_on_at": null
+      },
       {
         "id": 5464,
         "timestamp": "2026-06-06T10:43:01+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is offline and not providing a video feed.",
         "acted_on_at": null
-      },
-      {
-        "id": 5455,
-        "timestamp": "2026-06-06T08:00:48+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline, making it impossible to monitor the dog run area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3616,20 +3616,22 @@
       "who_is_home": [],
       "active_rooms": [
         "backyard",
+        "dog_run",
+        "front_door",
         "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-06T10:46:07+00:00",
-        "dog_run": "2026-06-06T09:44:53+00:00",
+        "dog_run": "2026-06-06T10:50:09+00:00",
         "entryway": "2026-06-06T09:30:15+00:00",
-        "front_door": "2026-06-06T09:43:28+00:00",
+        "front_door": "2026-06-06T10:47:58+00:00",
         "front_yard": "2026-06-06T10:42:52+00:00",
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T10:46:19.12238+00:00"
+      "last_updated": "2026-06-06T10:52:24.150374+00:00"
     }
   },
   "pge": {
