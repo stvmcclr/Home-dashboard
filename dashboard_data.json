@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 04:34:23",
+  "generated_at": "2026-06-06 04:39:31",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118469,
+        "timestamp": "2026-06-06T11:32:00+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is offline and not receiving any video frames. An error message is displayed on the screen, indicating a connection loss.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 118468,
         "timestamp": "2026-06-06T11:28:41+00:00",
@@ -3544,20 +3555,25 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118269,
-        "timestamp": "2026-06-06T05:55:04+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5468,
+        "timestamp": "2026-06-06T11:37:09+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The unclassified audio detected at the front door at 04:11 AM is an anomaly given the deep overnight quiet and the consistent reports of no visible activity. This unexplained sound, combined with the persistent failure of the dog run camera, suggests a potential low-level disturbance or interaction with the property boundary that requires immediate investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5467,
+        "timestamp": "2026-06-06T11:32:00+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is offline, preventing any monitoring of the dogs in the dog run area.",
+        "acted_on_at": null
+      },
       {
         "id": 5466,
         "timestamp": "2026-06-06T11:11:31+00:00",
@@ -3621,22 +3637,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera reported 'No frames have been received' for several consecutive frames before recovering.",
         "acted_on_at": null
-      },
-      {
-        "id": 5458,
-        "timestamp": "2026-06-06T08:26:04+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "Multiple critical cameras (dog_run and front_yard) are experiencing persistent, high-severity technical failures, leaving key monitoring areas unobserved. This significantly degrades the home's security and situational awareness, especially since the dogs are present and the family is currently home.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5457,
-        "timestamp": "2026-06-06T08:25:43+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekend 01:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3645,7 +3645,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3654,14 +3653,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-06T11:26:57+00:00",
-        "dog_run": "2026-06-06T11:11:30+00:00",
+        "dog_run": "2026-06-06T11:32:00+00:00",
         "entryway": "2026-06-06T11:05:19+00:00",
         "front_door": "2026-06-06T11:28:41+00:00",
         "front_yard": "2026-06-06T11:24:38+00:00",
         "living_room": "2026-06-06T11:19:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T11:31:59.493229+00:00"
+      "last_updated": "2026-06-06T11:38:04.132095+00:00"
     }
   },
   "pge": {
