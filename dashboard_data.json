@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 05:15:23",
+  "generated_at": "2026-06-06 05:20:30",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1903,
-        "timestamp": "2026-06-06T11:09:11+00:00",
+        "id": 1905,
+        "timestamp": "2026-06-06T12:15:28+00:00",
         "location": "Downstairs",
-        "temp_f": 72.4,
+        "temp_f": 71.3,
         "humidity_pct": 43,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1904,
-        "timestamp": "2026-06-06T11:09:11+00:00",
+        "id": 1906,
+        "timestamp": "2026-06-06T12:15:28+00:00",
         "location": "Upstairs",
-        "temp_f": 67.5,
-        "humidity_pct": 45,
+        "temp_f": 68.5,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
@@ -1183,6 +1183,34 @@
         "location": "Upstairs",
         "temp_f": 67.5,
         "humidity_pct": 45,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1905,
+        "timestamp": "2026-06-06T12:15:28+00:00",
+        "location": "Downstairs",
+        "temp_f": 71.3,
+        "humidity_pct": 43,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1906,
+        "timestamp": "2026-06-06T12:15:28+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.5,
+        "humidity_pct": 47,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
@@ -1356,6 +1384,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118509,
+        "timestamp": "2026-06-06T12:16:56+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118508,
+        "timestamp": "2026-06-06T12:16:52+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118507,
+        "timestamp": "2026-06-06T12:15:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118506,
         "timestamp": "2026-06-06T12:14:32+00:00",
@@ -3522,39 +3583,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 118309,
-        "timestamp": "2026-06-06T06:37:24+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night. No people or animals are visible under the patio lights.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 118308,
-        "timestamp": "2026-06-06T06:35:28+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118307,
-        "timestamp": "2026-06-06T06:35:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3661,7 +3689,7 @@
         "living_room": "2026-06-06T12:05:14+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T12:14:33.918905+00:00"
+      "last_updated": "2026-06-06T12:17:37.244184+00:00"
     }
   },
   "pge": {
