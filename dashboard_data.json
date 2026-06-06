@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 22:45:22",
+  "generated_at": "2026-06-05 22:50:29",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1272,6 +1272,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118256,
+        "timestamp": "2026-06-06T05:47:48+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118255,
+        "timestamp": "2026-06-06T05:47:37+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118254,
+        "timestamp": "2026-06-06T05:47:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118253,
+        "timestamp": "2026-06-06T05:47:10+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera displays an error message for several frames before recovering to show the driveway and street at night. A dark green pickup is parked in the driveway, and the area is otherwise quiet.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 118252,
+        "timestamp": "2026-06-06T05:47:05+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118251,
+        "timestamp": "2026-06-06T05:46:36+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118250,
+        "timestamp": "2026-06-06T05:45:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118249,
         "timestamp": "2026-06-06T05:44:47+00:00",
@@ -3394,86 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118056,
-        "timestamp": "2026-06-06T04:22:09+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is intermittently failing, displaying error messages instead of live video. When a frame is successfully captured, a dark green pickup is parked in the driveway and a white van is visible on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118055,
-        "timestamp": "2026-06-06T04:21:42+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "calm family conversation indoors at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118054,
-        "timestamp": "2026-06-06T04:21:40+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "calm family conversation indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118053,
-        "timestamp": "2026-06-06T04:21:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 118052,
-        "timestamp": "2026-06-06T04:17:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118051,
-        "timestamp": "2026-06-06T04:16:35+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118050,
-        "timestamp": "2026-06-06T04:15:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5446,
+        "timestamp": "2026-06-06T05:47:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera briefly displayed a 'no frames received' error before returning to a normal view.",
+        "acted_on_at": null
+      },
       {
         "id": 5445,
         "timestamp": "2026-06-06T05:36:48+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] Despite the recent report of a loud thud or crash in the living room, Steve and Roxanne appear completely undisturbed and are relaxing calmly.",
         "acted_on_at": null
-      },
-      {
-        "id": 5436,
-        "timestamp": "2026-06-06T04:58:08+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud thud or crash was heard in the living room, accompanied by a momentary camera error.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3576,11 +3576,11 @@
         "dog_run": "2026-06-06T05:36:48+00:00",
         "entryway": "2026-06-06T05:40:35+00:00",
         "front_door": "2026-06-06T05:35:15+00:00",
-        "front_yard": "2026-06-06T05:26:01+00:00",
+        "front_yard": "2026-06-06T05:47:10+00:00",
         "living_room": "2026-06-06T05:32:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T05:44:52.209376+00:00"
+      "last_updated": "2026-06-06T05:47:55.094351+00:00"
     }
   },
   "pge": {
