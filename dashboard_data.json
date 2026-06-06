@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 05:35:56",
+  "generated_at": "2026-06-06 05:41:03",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1384,6 +1384,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118543,
+        "timestamp": "2026-06-06T12:38:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118542,
+        "timestamp": "2026-06-06T12:38:03+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118541,
+        "timestamp": "2026-06-06T12:36:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118540,
+        "timestamp": "2026-06-06T12:36:32+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118539,
+        "timestamp": "2026-06-06T12:36:16+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet during the early morning hours. No movement or people are detected in the foyer or near the stairs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 118538,
         "timestamp": "2026-06-06T12:35:05+00:00",
@@ -3528,64 +3583,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 118343,
-        "timestamp": "2026-06-06T07:16:34+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet late at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118342,
-        "timestamp": "2026-06-06T07:16:24+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118341,
-        "timestamp": "2026-06-06T07:12:24+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet during the late night. No movement or people are visible in the foyer or near the stairs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 118340,
-        "timestamp": "2026-06-06T07:12:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118339,
-        "timestamp": "2026-06-06T07:11:54+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5471,
+        "timestamp": "2026-06-06T12:37:51+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a persistent pattern of unclassified audio detected at the front door and backyard starting at 5:29 AM, despite all cameras reporting these areas as empty and quiet. This suggests a recurring, non-visual sound source\u2014potentially related to the dogs or early morning neighborhood activity\u2014that the system is failing to categorize or visualize, requiring manual investigation.",
+        "acted_on_at": null
+      },
       {
         "id": 5470,
         "timestamp": "2026-06-06T12:05:46+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "high",
         "summary": "[front_yard] The 'front_yard' camera is experiencing a stream interruption, displaying error messages instead of a live video feed.",
         "acted_on_at": null
-      },
-      {
-        "id": 5461,
-        "timestamp": "2026-06-06T09:03:31+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline and not transmitting video frames.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3673,6 +3673,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3681,13 +3682,13 @@
       "last_motion": {
         "backyard": "2026-06-06T12:28:40+00:00",
         "dog_run": "2026-06-06T12:34:04+00:00",
-        "entryway": "2026-06-06T11:50:44+00:00",
+        "entryway": "2026-06-06T12:36:16+00:00",
         "front_door": "2026-06-06T12:29:52+00:00",
         "front_yard": "2026-06-06T12:26:36+00:00",
         "living_room": "2026-06-06T12:05:14+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T12:35:51.6623+00:00"
+      "last_updated": "2026-06-06T12:38:55.101152+00:00"
     }
   },
   "pge": {
