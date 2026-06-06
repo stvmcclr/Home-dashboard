@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 03:38:04",
+  "generated_at": "2026-06-06 03:43:11",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118451,
+        "timestamp": "2026-06-06T10:42:52+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet at night with Roxanne's black SUV parked in the driveway. However, the camera feed has encountered an error and is no longer transmitting frames.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
+      },
       {
         "id": 118450,
         "timestamp": "2026-06-06T10:36:44+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118251,
-        "timestamp": "2026-06-06T05:46:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5464,
+        "timestamp": "2026-06-06T10:43:01+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera has stopped sending frames, indicating a potential connection or hardware issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5463,
         "timestamp": "2026-06-06T09:26:37+00:00",
@@ -3601,20 +3609,14 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is offline, making it impossible to monitor the dog run area.",
         "acted_on_at": null
-      },
-      {
-        "id": 5454,
-        "timestamp": "2026-06-06T07:30:58+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is experiencing significant technical issues, preventing reliable monitoring of the driveway and street.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [],
-      "active_rooms": [],
+      "active_rooms": [
+        "front_yard"
+      ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
@@ -3622,11 +3624,11 @@
         "dog_run": "2026-06-06T09:44:53+00:00",
         "entryway": "2026-06-06T09:30:15+00:00",
         "front_door": "2026-06-06T09:43:28+00:00",
-        "front_yard": "2026-06-06T09:36:24+00:00",
+        "front_yard": "2026-06-06T10:42:52+00:00",
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T10:37:05.880674+00:00"
+      "last_updated": "2026-06-06T10:43:11.012712+00:00"
     }
   },
   "pge": {
