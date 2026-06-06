@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 04:24:09",
+  "generated_at": "2026-06-06 04:29:16",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1356,6 +1356,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118468,
+        "timestamp": "2026-06-06T11:28:41+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during the early morning hours. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118467,
+        "timestamp": "2026-06-06T11:26:57+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty in the early morning. The white gate remains closed, blocking access to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118466,
+        "timestamp": "2026-06-06T11:24:38+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet in the early morning. Roxanne's black SUV is parked in the driveway, and no activity is visible on the street or in the yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne Coupe\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
+      },
       {
         "id": 118465,
         "timestamp": "2026-06-06T11:19:46+00:00",
@@ -3522,39 +3555,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118268,
-        "timestamp": "2026-06-06T05:54:45+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118267,
-        "timestamp": "2026-06-06T05:54:29+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "raised voices or an argument between people at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118266,
-        "timestamp": "2026-06-06T05:54:10+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
       }
     ],
     "insights": [
@@ -3653,15 +3653,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T11:06:31+00:00",
+        "backyard": "2026-06-06T11:26:57+00:00",
         "dog_run": "2026-06-06T11:11:30+00:00",
         "entryway": "2026-06-06T11:05:19+00:00",
-        "front_door": "2026-06-06T11:08:20+00:00",
-        "front_yard": "2026-06-06T11:03:47+00:00",
+        "front_door": "2026-06-06T11:28:41+00:00",
+        "front_yard": "2026-06-06T11:24:38+00:00",
         "living_room": "2026-06-06T11:19:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T11:22:52.219772+00:00"
+      "last_updated": "2026-06-06T11:28:57.299952+00:00"
     }
   },
   "pge": {
