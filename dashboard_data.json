@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 04:44:37",
+  "generated_at": "2026-06-06 04:49:44",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1356,6 +1356,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118472,
+        "timestamp": "2026-06-06T11:45:19+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front_yard camera is not transmitting any video frames, displaying an error message instead. This indicates a loss of signal or a camera failure that requires checking the error logs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front_yard camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118471,
+        "timestamp": "2026-06-06T11:44:30+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118470,
         "timestamp": "2026-06-06T11:44:04+00:00",
@@ -3533,31 +3555,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118272,
-        "timestamp": "2026-06-06T05:56:13+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118271,
-        "timestamp": "2026-06-06T05:55:54+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve and Roxanne are relaxing on the couch in the living room. Steve is stretching his arms behind his head while Roxanne lies beside him.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 5469,
+        "timestamp": "2026-06-06T11:45:19+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is not sending any frames, indicating a potential hardware or network issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5468,
         "timestamp": "2026-06-06T11:37:09+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[front_yard] The front_yard camera is not receiving frames and is displaying a technical error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 5459,
-        "timestamp": "2026-06-06T08:34:18+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera reported 'No frames have been received' for several consecutive frames before recovering.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3656,11 +3656,11 @@
         "dog_run": "2026-06-06T11:32:00+00:00",
         "entryway": "2026-06-06T11:05:19+00:00",
         "front_door": "2026-06-06T11:28:41+00:00",
-        "front_yard": "2026-06-06T11:24:38+00:00",
+        "front_yard": "2026-06-06T11:45:19+00:00",
         "living_room": "2026-06-06T11:19:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T11:44:09.233656+00:00"
+      "last_updated": "2026-06-06T11:47:12.85525+00:00"
     }
   },
   "pge": {
