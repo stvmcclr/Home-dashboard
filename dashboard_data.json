@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 11:44:40",
+  "generated_at": "2026-06-06 11:49:48",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1496,6 +1496,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 119393,
+        "timestamp": "2026-06-06T18:46:47+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not transmitting any video, displaying an error message indicating that no frames have been received. This suggests a loss of connection or a camera malfunction.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 119392,
+        "timestamp": "2026-06-06T18:45:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 119391,
+        "timestamp": "2026-06-06T18:45:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 119390,
+        "timestamp": "2026-06-06T18:44:33+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 119389,
+        "timestamp": "2026-06-06T18:44:24+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 119388,
+        "timestamp": "2026-06-06T18:44:07+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty with no people or animals present. The scene remains static across all observed frames.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 119387,
         "timestamp": "2026-06-06T18:44:03+00:00",
@@ -3629,75 +3695,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 119193,
-        "timestamp": "2026-06-06T17:12:41+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 119192,
-        "timestamp": "2026-06-06T17:12:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 119191,
-        "timestamp": "2026-06-06T17:11:41+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 119190,
-        "timestamp": "2026-06-06T17:11:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 119189,
-        "timestamp": "2026-06-06T17:10:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 119188,
-        "timestamp": "2026-06-06T17:09:55+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is offline and displaying an error message, so no activity in the dog run can be observed. This is a continuation of a known connection loss issue for this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5507,
+        "timestamp": "2026-06-06T18:46:47+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not providing any visual data, showing an error message instead.",
+        "acted_on_at": null
+      },
       {
         "id": 5506,
         "timestamp": "2026-06-06T18:43:47+00:00",
@@ -3769,14 +3777,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at front_door this hour: 4 observations vs typical 1 for weekend 09:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5497,
-        "timestamp": "2026-06-06T16:41:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Unclassified audio at the front door follows a recent loud thud/impact sound.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3785,6 +3785,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3793,13 +3794,13 @@
       "last_motion": {
         "backyard": "2026-06-06T18:29:13+00:00",
         "dog_run": "2026-06-06T18:31:37+00:00",
-        "entryway": "2026-06-06T17:58:32+00:00",
+        "entryway": "2026-06-06T18:44:07+00:00",
         "front_door": "2026-06-06T18:30:05+00:00",
-        "front_yard": "2026-06-06T18:26:17+00:00",
+        "front_yard": "2026-06-06T18:46:47+00:00",
         "living_room": "2026-06-06T18:12:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T18:44:03.888265+00:00"
+      "last_updated": "2026-06-06T18:47:12.094119+00:00"
     }
   },
   "pge": {
