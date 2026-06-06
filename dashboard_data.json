@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 00:53:51",
+  "generated_at": "2026-06-06 00:58:57",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118373,
+        "timestamp": "2026-06-06T07:57:53+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet late at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118372,
+        "timestamp": "2026-06-06T07:53:12+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118371,
+        "timestamp": "2026-06-06T07:53:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118370,
+        "timestamp": "2026-06-06T07:52:57+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118369,
         "timestamp": "2026-06-06T07:52:30+00:00",
@@ -3455,50 +3499,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118173,
-        "timestamp": "2026-06-06T05:13:56+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118172,
-        "timestamp": "2026-06-06T05:13:30+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118171,
-        "timestamp": "2026-06-06T05:13:22+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a child crying or yelling in distress at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118170,
-        "timestamp": "2026-06-06T05:12:27+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
       }
     ],
     "insights": [
@@ -3586,20 +3586,18 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
-        "Steve"
+        "Roxanne"
       ],
       "active_rooms": [
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T07:37:11+00:00",
+        "backyard": "2026-06-06T07:57:53+00:00",
         "dog_run": "2026-06-06T07:40:23+00:00",
         "entryway": "2026-06-06T07:12:24+00:00",
         "front_door": "2026-06-06T07:38:37+00:00",
@@ -3607,7 +3605,7 @@
         "living_room": "2026-06-06T07:28:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T07:52:44.450922+00:00"
+      "last_updated": "2026-06-06T07:58:49.413598+00:00"
     }
   },
   "pge": {
