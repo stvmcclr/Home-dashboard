@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 08:40:20",
+  "generated_at": "2026-06-06 08:45:26",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1907,
-        "timestamp": "2026-06-06T14:14:16+00:00",
-        "location": "Downstairs",
-        "temp_f": 71.3,
-        "humidity_pct": 45,
-        "mode": "HEAT",
+        "id": 1910,
+        "timestamp": "2026-06-06T15:40:23+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.4,
+        "humidity_pct": 48,
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.5,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 64.8,
+        "cool_setpoint_f": 78.0,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 1908,
-        "timestamp": "2026-06-06T14:14:16+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.4,
-        "humidity_pct": 52,
-        "mode": "HEATCOOL",
+        "id": 1909,
+        "timestamp": "2026-06-06T15:40:23+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.5,
+        "humidity_pct": 44,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 64.8,
-        "cool_setpoint_f": 78.0,
+        "heat_setpoint_f": 66.5,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1246,6 +1246,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 1909,
+        "timestamp": "2026-06-06T15:40:23+00:00",
+        "location": "Downstairs",
+        "temp_f": 70.5,
+        "humidity_pct": 44,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 66.5,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1910,
+        "timestamp": "2026-06-06T15:40:23+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.4,
+        "humidity_pct": 48,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.8,
+        "cool_setpoint_f": 78.0,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1412,6 +1440,270 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118918,
+        "timestamp": "2026-06-06T15:44:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118917,
+        "timestamp": "2026-06-06T15:44:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118916,
+        "timestamp": "2026-06-06T15:43:59+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "wind or weather noise outdoors at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118915,
+        "timestamp": "2026-06-06T15:43:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118914,
+        "timestamp": "2026-06-06T15:43:41+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and shows no visible activity. Despite the quiet scene on camera, audio indicates dogs barking at the entryway and a loud crash occurring in the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118913,
+        "timestamp": "2026-06-06T15:43:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118912,
+        "timestamp": "2026-06-06T15:42:58+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "dogs barking briefly once or twice at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118911,
+        "timestamp": "2026-06-06T15:42:47+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118910,
+        "timestamp": "2026-06-06T15:42:42+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty. The white gate remains closed, blocking access to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118909,
+        "timestamp": "2026-06-06T15:42:16+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118908,
+        "timestamp": "2026-06-06T15:42:14+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is currently empty and shows no movement. Despite a recent report of a loud thud or impact sound in the entryway, the camera captures a still and unoccupied scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118907,
+        "timestamp": "2026-06-06T15:41:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118906,
+        "timestamp": "2026-06-06T15:41:12+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118905,
+        "timestamp": "2026-06-06T15:40:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118904,
+        "timestamp": "2026-06-06T15:40:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118903,
+        "timestamp": "2026-06-06T15:40:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118902,
+        "timestamp": "2026-06-06T15:40:03+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying an error message indicating that no video frames are being received. While one frame shows Roxanne's black Cayenne parked in the driveway, the subsequent frames all show a technical error screen.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118901,
+        "timestamp": "2026-06-06T15:40:01+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118900,
+        "timestamp": "2026-06-06T15:39:29+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118899,
+        "timestamp": "2026-06-06T15:39:25+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "a loud thud, crash, or impact sound at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118898,
+        "timestamp": "2026-06-06T15:39:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118897,
+        "timestamp": "2026-06-06T15:38:58+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind or weather noise outdoors at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118896,
+        "timestamp": "2026-06-06T15:38:52+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118895,
+        "timestamp": "2026-06-06T15:38:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118894,
         "timestamp": "2026-06-06T15:38:25+00:00",
@@ -3347,273 +3639,41 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118718,
-        "timestamp": "2026-06-06T13:59:16+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is currently empty and quiet. The view shows a peaceful garden area under a clear sky with no visible activity.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 118717,
-        "timestamp": "2026-06-06T13:59:06+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118716,
-        "timestamp": "2026-06-06T13:58:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118715,
-        "timestamp": "2026-06-06T13:58:06+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118714,
-        "timestamp": "2026-06-06T13:57:59+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118713,
-        "timestamp": "2026-06-06T13:57:45+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is moving through the kitchen area, likely starting her morning routine. The living room remains quiet and undisturbed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 118712,
-        "timestamp": "2026-06-06T13:57:35+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118711,
-        "timestamp": "2026-06-06T13:57:29+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118710,
-        "timestamp": "2026-06-06T13:57:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118709,
-        "timestamp": "2026-06-06T13:56:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118708,
-        "timestamp": "2026-06-06T13:56:02+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty in the early morning. The white gate remains closed, blocking access to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118707,
-        "timestamp": "2026-06-06T13:55:57+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118706,
-        "timestamp": "2026-06-06T13:54:26+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118705,
-        "timestamp": "2026-06-06T13:54:04+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is in the kitchen area, likely preparing for the day. Posey is resting quietly on the couch in the living room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"in the kitchen\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting on the couch\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 118703,
-        "timestamp": "2026-06-06T13:54:03+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118704,
-        "timestamp": "2026-06-06T13:54:03+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118702,
-        "timestamp": "2026-06-06T13:53:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118701,
-        "timestamp": "2026-06-06T13:53:12+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard and street are quiet with no people or animals visible. Roxanne's black Cayenne is parked in the driveway, and a white van is visible on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"on street\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 118700,
-        "timestamp": "2026-06-06T13:52:52+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118699,
-        "timestamp": "2026-06-06T13:52:20+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is in the kitchen early in the morning, appearing to be getting something from the refrigerator. The living room remains quiet and undisturbed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"active in kitchen\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 118698,
-        "timestamp": "2026-06-06T13:52:02+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118697,
-        "timestamp": "2026-06-06T13:52:00+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118696,
-        "timestamp": "2026-06-06T13:51:00+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118695,
-        "timestamp": "2026-06-06T13:50:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5491,
+        "timestamp": "2026-06-06T15:43:41+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] Audio indicates a loud thud or crash in the living room, which may require investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5490,
+        "timestamp": "2026-06-06T15:42:16+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a high-priority, developing event occurring inside the home. Starting at 08:37, the system registered multiple distress signals (child crying, doorbell ringing, dogs barking), which escalated into loud thuds and crashes at 08:39 and 08:40. This pattern contradicts the previously observed calm routine and suggests an unexpected, potentially disruptive incident requiring immediate investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5489,
+        "timestamp": "2026-06-06T15:42:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] A loud thud or impact sound was recently detected in the entryway, but no movement or person is currently visible in the camera feed.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5488,
+        "timestamp": "2026-06-06T15:40:03+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is displaying a 'no frames received' error, which is a continuation of a recent intermittent issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5487,
         "timestamp": "2026-06-06T15:17:12+00:00",
@@ -3661,38 +3721,6 @@
         "severity": "medium",
         "summary": "Roxanne slept only 2.06h last night. May be a rough morning \u2014 heads up.",
         "acted_on_at": null
-      },
-      {
-        "id": 5481,
-        "timestamp": "2026-06-06T14:13:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently offline and not providing a video feed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5480,
-        "timestamp": "2026-06-06T14:00:50+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline, preventing monitoring of the dogs in the run.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5479,
-        "timestamp": "2026-06-06T13:39:18+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Despite the family being engaged in a normal morning routine inside, there is a persistent pattern of unclassified audio detections at the entryway, front door, and backyard starting around 06:33. This suggests an external presence or disturbance (possibly related to Miller's activity outside) that the system is detecting but cannot classify, warranting monitoring.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5478,
-        "timestamp": "2026-06-06T13:37:52+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 9 observations vs typical 1 for weekend 06:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3712,15 +3740,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T15:20:23+00:00",
+        "backyard": "2026-06-06T15:42:42+00:00",
         "dog_run": "2026-06-06T15:24:41+00:00",
-        "entryway": "2026-06-06T15:18:59+00:00",
-        "front_door": "2026-06-06T15:22:40+00:00",
-        "front_yard": "2026-06-06T15:17:12+00:00",
+        "entryway": "2026-06-06T15:42:14+00:00",
+        "front_door": "2026-06-06T15:43:41+00:00",
+        "front_yard": "2026-06-06T15:40:03+00:00",
         "living_room": "2026-06-06T15:38:14+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T15:38:48.98567+00:00"
+      "last_updated": "2026-06-06T15:44:56.023052+00:00"
     }
   },
   "pge": {
