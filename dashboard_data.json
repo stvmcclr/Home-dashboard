@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 01:45:02",
+  "generated_at": "2026-06-06 01:50:15",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118407,
+        "timestamp": "2026-06-06T08:47:25+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118406,
+        "timestamp": "2026-06-06T08:44:48+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet during the late night. No movement or people are visible in the foyer or near the stairs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118405,
+        "timestamp": "2026-06-06T08:44:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 118404,
         "timestamp": "2026-06-06T08:42:39+00:00",
@@ -3466,39 +3499,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118207,
-        "timestamp": "2026-06-06T05:22:42+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118206,
-        "timestamp": "2026-06-06T05:22:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118205,
-        "timestamp": "2026-06-06T05:21:41+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3589,6 +3589,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3597,13 +3598,13 @@
       "last_motion": {
         "backyard": "2026-06-06T08:38:58+00:00",
         "dog_run": "2026-06-06T08:42:39+00:00",
-        "entryway": "2026-06-06T07:59:19+00:00",
+        "entryway": "2026-06-06T08:44:48+00:00",
         "front_door": "2026-06-06T08:40:40+00:00",
         "front_yard": "2026-06-06T08:34:04+00:00",
         "living_room": "2026-06-06T08:13:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T08:44:35.765826+00:00"
+      "last_updated": "2026-06-06T08:47:40.655228+00:00"
     }
   },
   "pge": {
