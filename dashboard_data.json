@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 23:36:54",
+  "generated_at": "2026-06-05 23:42:01",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118311,
+        "timestamp": "2026-06-06T06:39:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118310,
+        "timestamp": "2026-06-06T06:39:07+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is offline and not transmitting any video frames, displaying an error message instead. No activity can be observed in the dog run area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118309,
+        "timestamp": "2026-06-06T06:37:24+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people or animals are visible under the patio lights.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 118308,
         "timestamp": "2026-06-06T06:35:28+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118111,
-        "timestamp": "2026-06-06T04:47:54+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch with Posey while Roxanne walks through the living area towards the kitchen. Although audio recently indicated raised voices, the current atmosphere has settled into a calm conversation.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 118110,
-        "timestamp": "2026-06-06T04:47:34+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118109,
-        "timestamp": "2026-06-06T04:47:00+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3572,14 +3572,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-06T06:35:28+00:00",
-        "dog_run": "2026-06-06T06:18:35+00:00",
+        "dog_run": "2026-06-06T06:39:07+00:00",
         "entryway": "2026-06-06T06:26:17+00:00",
-        "front_door": "2026-06-06T06:17:01+00:00",
+        "front_door": "2026-06-06T06:37:24+00:00",
         "front_yard": "2026-06-06T06:28:56+00:00",
         "living_room": "2026-06-06T05:55:54+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T06:36:33.743058+00:00"
+      "last_updated": "2026-06-06T06:39:37.987173+00:00"
     }
   },
   "pge": {
