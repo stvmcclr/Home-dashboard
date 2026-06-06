@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 04:13:54",
+  "generated_at": "2026-06-06 04:19:01",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1356,6 +1356,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118464,
+        "timestamp": "2026-06-06T11:16:37+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118463,
+        "timestamp": "2026-06-06T11:13:46+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 118462,
         "timestamp": "2026-06-06T11:11:32+00:00",
@@ -3533,28 +3555,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118264,
-        "timestamp": "2026-06-06T05:53:53+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "raised voices or an argument between people at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118263,
-        "timestamp": "2026-06-06T05:53:20+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3660,7 +3660,7 @@
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T11:13:43.044146+00:00"
+      "last_updated": "2026-06-06T11:16:46.906326+00:00"
     }
   },
   "pge": {
