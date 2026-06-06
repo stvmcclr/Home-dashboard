@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 21:28:33",
+  "generated_at": "2026-06-05 21:33:41",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1272,6 +1272,138 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118082,
+        "timestamp": "2026-06-06T04:31:25+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area appears empty, but audio from the backyard indicates a smoke or carbon monoxide alarm is beeping alongside a loud thud or crash. This combination of sounds suggests a potential emergency or incident occurring just out of the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"smoke alarm\", \"entity_state\": \"beeping\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"backyard\", \"entity_state\": \"potential emergency\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118081,
+        "timestamp": "2026-06-06T04:29:48+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"white gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118080,
+        "timestamp": "2026-06-06T04:29:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a smoke alarm or carbon monoxide alarm beeping at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118079,
+        "timestamp": "2026-06-06T04:28:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118078,
+        "timestamp": "2026-06-06T04:28:10+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "A person is visible in the kitchen area, appearing calm. However, a loud thud or impact sound was recently detected at the entryway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"loud thud at entryway\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 118077,
+        "timestamp": "2026-06-06T04:27:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a loud thud, crash, or impact sound at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118076,
+        "timestamp": "2026-06-06T04:27:10+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118075,
+        "timestamp": "2026-06-06T04:26:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118074,
+        "timestamp": "2026-06-06T04:26:16+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118073,
+        "timestamp": "2026-06-06T04:26:15+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "a loud thud, crash, or impact sound at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118072,
+        "timestamp": "2026-06-06T04:26:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118071,
+        "timestamp": "2026-06-06T04:26:02+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118070,
         "timestamp": "2026-06-06T04:25:32+00:00",
@@ -3339,141 +3471,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 117882,
-        "timestamp": "2026-06-06T02:59:39+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117881,
-        "timestamp": "2026-06-06T02:59:34+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 117880,
-        "timestamp": "2026-06-06T02:59:09+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117879,
-        "timestamp": "2026-06-06T02:58:53+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117878,
-        "timestamp": "2026-06-06T02:58:44+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently failing to provide a video feed, displaying an error message instead. Before the failure, a dark green SUV was parked in the driveway with other vehicles visible on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"dark green SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 117877,
-        "timestamp": "2026-06-06T02:58:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117876,
-        "timestamp": "2026-06-06T02:57:54+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117875,
-        "timestamp": "2026-06-06T02:57:34+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 117874,
-        "timestamp": "2026-06-06T02:57:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117873,
-        "timestamp": "2026-06-06T02:57:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117872,
-        "timestamp": "2026-06-06T02:56:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117871,
-        "timestamp": "2026-06-06T02:56:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 5432,
+        "timestamp": "2026-06-06T04:31:25+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] A smoke or carbon monoxide alarm is beeping in the backyard, accompanied by a loud thud or crash sound.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5431,
+        "timestamp": "2026-06-06T04:28:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A loud thud or crash was heard at the entryway, which may indicate something falling or an unexpected event at the door.",
+        "acted_on_at": null
+      },
       {
         "id": 5430,
         "timestamp": "2026-06-06T04:24:28+00:00",
@@ -3537,22 +3553,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 8 observations vs typical 1 for weekday 20:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5422,
-        "timestamp": "2026-06-06T03:19:31+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently failing to provide a video feed, displaying an error message instead.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5421,
-        "timestamp": "2026-06-06T03:06:59+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Energy synthesis (Jun 05): 1. The specific overnight baseline value is not explicitly provided in the current hourly summary, but the 599% increase in daily average (8.5 kWh to 59.6 kWh) indicates that the home's non-peak load has risen significantly.\n\n2. The 4.84 kWh/hr spike at 21:00 is consistent with HVAC/AC cooling in th",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,15 +3572,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T04:07:40+00:00",
+        "backyard": "2026-06-06T04:29:48+00:00",
         "dog_run": "2026-06-06T04:09:33+00:00",
         "entryway": "2026-06-06T04:23:46+00:00",
-        "front_door": "2026-06-06T04:07:03+00:00",
+        "front_door": "2026-06-06T04:31:25+00:00",
         "front_yard": "2026-06-06T04:22:09+00:00",
-        "living_room": "2026-06-06T04:25:32+00:00",
+        "living_room": "2026-06-06T04:28:10+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T04:25:38.648197+00:00"
+      "last_updated": "2026-06-06T04:31:42.87603+00:00"
     }
   },
   "pge": {
