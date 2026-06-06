@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 01:19:26",
+  "generated_at": "2026-06-06 01:24:33",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118392,
+        "timestamp": "2026-06-06T08:21:48+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently offline and not transmitting any video frames, displaying an error message instead. No activity or presence can be observed in the dog run area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118391,
+        "timestamp": "2026-06-06T08:20:10+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118390,
+        "timestamp": "2026-06-06T08:19:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118389,
+        "timestamp": "2026-06-06T08:18:27+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet late at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 118388,
         "timestamp": "2026-06-06T08:16:57+00:00",
@@ -3455,53 +3499,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118192,
-        "timestamp": "2026-06-06T05:18:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118191,
-        "timestamp": "2026-06-06T05:18:34+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118190,
-        "timestamp": "2026-06-06T05:18:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118189,
-        "timestamp": "2026-06-06T05:17:57+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5456,
+        "timestamp": "2026-06-06T08:21:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is offline and not providing a video feed.",
+        "acted_on_at": null
+      },
       {
         "id": 5455,
         "timestamp": "2026-06-06T08:00:48+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[living_room] Audio indicates raised voices or an argument in the living room, which contrasts with the calm visual of them relaxing.",
         "acted_on_at": null
-      },
-      {
-        "id": 5446,
-        "timestamp": "2026-06-06T05:47:10+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera briefly displayed a 'no frames received' error before returning to a normal view.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,15 +3597,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T07:57:53+00:00",
-        "dog_run": "2026-06-06T08:00:48+00:00",
+        "backyard": "2026-06-06T08:18:27+00:00",
+        "dog_run": "2026-06-06T08:21:48+00:00",
         "entryway": "2026-06-06T07:59:19+00:00",
-        "front_door": "2026-06-06T07:59:48+00:00",
+        "front_door": "2026-06-06T08:20:10+00:00",
         "front_yard": "2026-06-06T08:13:18+00:00",
         "living_room": "2026-06-06T08:13:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T08:17:07.465058+00:00"
+      "last_updated": "2026-06-06T08:23:14.016288+00:00"
     }
   },
   "pge": {
