@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 06:06:42",
+  "generated_at": "2026-06-06 06:11:50",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1384,6 +1384,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118591,
+        "timestamp": "2026-06-06T13:08:58+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118590,
+        "timestamp": "2026-06-06T13:08:40+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118589,
+        "timestamp": "2026-06-06T13:08:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118588,
+        "timestamp": "2026-06-06T13:08:31+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve walks through the living room towards the kitchen area and begins interacting with the kitchen counter.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 118587,
         "timestamp": "2026-06-06T13:06:08+00:00",
@@ -3539,53 +3583,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 118391,
-        "timestamp": "2026-06-06T08:20:10+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 118390,
-        "timestamp": "2026-06-06T08:19:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118389,
-        "timestamp": "2026-06-06T08:18:27+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet late at night. The white gate remains closed, blocking access from the side passage to the driveway area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118388,
-        "timestamp": "2026-06-06T08:16:57+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5475,
+        "timestamp": "2026-06-06T13:06:44+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Energy synthesis (Jun 06): 1. **Overnight Baseline:** The exact kWh value for the 00:00\u201305:00 window cannot be calculated because the hourly breakdown for that period is missing from the current dataset. However, this load is typically driven by refrigeration, security systems, and standby electronics.\n\n2. **Evening Spike:** ",
+        "acted_on_at": null
+      },
       {
         "id": 5473,
         "timestamp": "2026-06-06T13:05:00+00:00",
@@ -3657,19 +3665,13 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is currently offline and not receiving video frames.",
         "acted_on_at": null
-      },
-      {
-        "id": 5465,
-        "timestamp": "2026-06-06T10:50:09+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is offline and requires investigation of the error logs.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Steve"
+      ],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3685,10 +3687,10 @@
         "entryway": "2026-06-06T12:36:16+00:00",
         "front_door": "2026-06-06T12:50:20+00:00",
         "front_yard": "2026-06-06T12:47:43+00:00",
-        "living_room": "2026-06-06T12:51:30+00:00",
+        "living_room": "2026-06-06T13:08:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T13:06:20.211817+00:00"
+      "last_updated": "2026-06-06T13:09:21.960218+00:00"
     }
   },
   "pge": {
