@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 02:15:54",
+  "generated_at": "2026-06-06 02:21:03",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118419,
+        "timestamp": "2026-06-06T09:15:42+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The 'front_yard' camera is experiencing a stream interruption, displaying error messages for most of the captured sequence. The one visible frame shows a quiet night in the front yard with a black SUV parked in the driveway and cars parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"stream interruption\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.8}]"
+      },
       {
         "id": 118418,
         "timestamp": "2026-06-06T09:14:59+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118219,
-        "timestamp": "2026-06-06T05:27:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5462,
+        "timestamp": "2026-06-06T09:15:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The 'front_yard' camera is experiencing a stream interruption, displaying error messages instead of a live video feed.",
+        "acted_on_at": null
+      },
       {
         "id": 5461,
         "timestamp": "2026-06-06T09:03:31+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is malfunctioning, leaving the driveway and street unmonitored.",
         "acted_on_at": null
-      },
-      {
-        "id": 5452,
-        "timestamp": "2026-06-06T07:25:42+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "Multiple critical cameras (dog_run, front_yard) are experiencing persistent connectivity failures, leaving key areas unmonitored. This is especially concerning given the known history of distress signals and the inability to monitor the dogs, which poses a high safety risk.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,11 +3600,11 @@
         "dog_run": "2026-06-06T09:03:31+00:00",
         "entryway": "2026-06-06T08:44:48+00:00",
         "front_door": "2026-06-06T09:01:56+00:00",
-        "front_yard": "2026-06-06T08:54:59+00:00",
+        "front_yard": "2026-06-06T09:15:42+00:00",
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T09:15:00.234441+00:00"
+      "last_updated": "2026-06-06T09:18:02.764466+00:00"
     }
   },
   "pge": {
