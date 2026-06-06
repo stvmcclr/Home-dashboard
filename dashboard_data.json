@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 20:57:50",
+  "generated_at": "2026-06-05 21:02:56",
   "as_of": "2026-06-05",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118024,
+        "timestamp": "2026-06-06T04:00:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying a technical error message stating that no frames have been received. This is a continuation of the recent camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"error\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118023,
+        "timestamp": "2026-06-06T04:00:45+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118022,
+        "timestamp": "2026-06-06T03:58:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118021,
+        "timestamp": "2026-06-06T03:56:41+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118020,
+        "timestamp": "2026-06-06T03:55:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118019,
         "timestamp": "2026-06-06T03:54:53+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 117824,
-        "timestamp": "2026-06-06T02:42:27+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117823,
-        "timestamp": "2026-06-06T02:42:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117822,
-        "timestamp": "2026-06-06T02:41:53+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117821,
-        "timestamp": "2026-06-06T02:41:21+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 117820,
-        "timestamp": "2026-06-06T02:40:56+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5429,
+        "timestamp": "2026-06-06T04:00:49+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is displaying a technical error and is not providing a live feed.",
+        "acted_on_at": null
+      },
       {
         "id": 5428,
         "timestamp": "2026-06-06T03:49:03+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "Energy consumption trending up 599%: recent avg 59.6 kWh/day vs earlier 8.5 kWh/day. This covers 3 days of data.",
         "acted_on_at": null
-      },
-      {
-        "id": 5419,
-        "timestamp": "2026-06-06T02:58:45+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not providing a video feed, indicating a technical issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3548,11 +3548,11 @@
         "dog_run": "2026-06-06T03:49:03+00:00",
         "entryway": "2026-06-06T03:33:43+00:00",
         "front_door": "2026-06-06T03:45:08+00:00",
-        "front_yard": "2026-06-06T03:40:12+00:00",
+        "front_yard": "2026-06-06T04:00:48+00:00",
         "living_room": "2026-06-06T03:38:09+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T03:55:10.929207+00:00"
+      "last_updated": "2026-06-06T04:01:13.573521+00:00"
     }
   },
   "pge": {
