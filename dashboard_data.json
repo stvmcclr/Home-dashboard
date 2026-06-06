@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 02:41:34",
+  "generated_at": "2026-06-06 02:46:41",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1328,6 +1328,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118440,
+        "timestamp": "2026-06-06T09:44:53+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently offline, displaying an error message indicating that no video frames are being received. The visible portion of the screen shows a distorted, static-filled view of the side yard at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118439,
+        "timestamp": "2026-06-06T09:43:28+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch is empty and quiet during the night. No movement or activity is visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 118438,
+        "timestamp": "2026-06-06T09:43:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118437,
+        "timestamp": "2026-06-06T09:41:08+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking access to the driveway area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 118436,
+        "timestamp": "2026-06-06T09:41:00+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118435,
+        "timestamp": "2026-06-06T09:39:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118434,
         "timestamp": "2026-06-06T09:37:58+00:00",
@@ -3461,72 +3527,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118240,
-        "timestamp": "2026-06-06T05:37:20+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118239,
-        "timestamp": "2026-06-06T05:36:48+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is currently offline and not receiving any video frames. The display shows an error message suggesting a check of the error logs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118238,
-        "timestamp": "2026-06-06T05:36:47+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118237,
-        "timestamp": "2026-06-06T05:36:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118236,
-        "timestamp": "2026-06-06T05:36:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118235,
-        "timestamp": "2026-06-06T05:35:41+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3624,15 +3624,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-06T09:20:24+00:00",
-        "dog_run": "2026-06-06T09:24:08+00:00",
+        "backyard": "2026-06-06T09:41:08+00:00",
+        "dog_run": "2026-06-06T09:44:53+00:00",
         "entryway": "2026-06-06T09:30:15+00:00",
-        "front_door": "2026-06-06T09:22:21+00:00",
+        "front_door": "2026-06-06T09:43:28+00:00",
         "front_yard": "2026-06-06T09:36:24+00:00",
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T09:39:21.138837+00:00"
+      "last_updated": "2026-06-06T09:45:27.921008+00:00"
     }
   },
   "pge": {
