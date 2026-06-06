@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 02:26:12",
+  "generated_at": "2026-06-06 02:31:18",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118429,
+        "timestamp": "2026-06-06T09:27:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118428,
         "timestamp": "2026-06-06T09:24:08+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 118229,
-        "timestamp": "2026-06-06T05:32:28+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5463,
+        "timestamp": "2026-06-06T09:26:37+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a concerning pattern of unexplained activity: the unclassified audio detected in the backyard at 02:02, combined with the observation of a bright, out-of-focus light source in the living room at 02:00, suggests potential activity or an environmental issue occurring while the household should be asleep.",
+        "acted_on_at": null
+      },
       {
         "id": 5462,
         "timestamp": "2026-06-06T09:15:43+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera is experiencing significant technical issues, preventing reliable monitoring of the driveway and street.",
         "acted_on_at": null
-      },
-      {
-        "id": 5453,
-        "timestamp": "2026-06-06T07:30:12+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is malfunctioning, leaving the driveway and street unmonitored.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3590,8 +3590,7 @@
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3604,7 +3603,7 @@
         "living_room": "2026-06-06T09:00:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T09:24:10.852622+00:00"
+      "last_updated": "2026-06-06T09:30:14.983806+00:00"
     }
   },
   "pge": {
