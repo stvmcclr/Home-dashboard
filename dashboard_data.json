@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 01:24:33",
+  "generated_at": "2026-06-06 01:29:40",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 118395,
+        "timestamp": "2026-06-06T08:27:29+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 118394,
+        "timestamp": "2026-06-06T08:25:50+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 118393,
+        "timestamp": "2026-06-06T08:23:23+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 118392,
         "timestamp": "2026-06-06T08:21:48+00:00",
@@ -3466,42 +3499,25 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 118195,
-        "timestamp": "2026-06-06T05:19:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118194,
-        "timestamp": "2026-06-06T05:19:13+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "raised voices or an argument between people at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 118193,
-        "timestamp": "2026-06-06T05:19:07+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5458,
+        "timestamp": "2026-06-06T08:26:04+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "Multiple critical cameras (dog_run and front_yard) are experiencing persistent, high-severity technical failures, leaving key monitoring areas unobserved. This significantly degrades the home's security and situational awareness, especially since the dogs are present and the family is currently home.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5457,
+        "timestamp": "2026-06-06T08:25:43+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekend 01:00",
+        "acted_on_at": null
+      },
       {
         "id": 5456,
         "timestamp": "2026-06-06T08:21:48+00:00",
@@ -3565,22 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is currently offline, preventing any visual monitoring of the dog run area.",
         "acted_on_at": null
-      },
-      {
-        "id": 5448,
-        "timestamp": "2026-06-06T06:08:16+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera briefly went offline/errored out.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5447,
-        "timestamp": "2026-06-06T05:55:54+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio indicates raised voices or an argument in the living room, which contrasts with the calm visual of them relaxing.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3605,7 +3605,7 @@
         "living_room": "2026-06-06T08:13:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-06T08:23:14.016288+00:00"
+      "last_updated": "2026-06-06T08:29:18.653499+00:00"
     }
   },
   "pge": {
