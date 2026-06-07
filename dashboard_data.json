@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 17:32:45",
+  "generated_at": "2026-06-06 17:37:52",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1215,6 +1215,105 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 120252,
+        "timestamp": "2026-06-07T00:35:38+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 120251,
+        "timestamp": "2026-06-07T00:35:24+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120250,
+        "timestamp": "2026-06-07T00:34:59+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "A person wearing a baseball jersey walks Harlee onto the front porch, accompanied by a child visible at the edge of the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 120249,
+        "timestamp": "2026-06-07T00:34:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120248,
+        "timestamp": "2026-06-07T00:33:56+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120247,
+        "timestamp": "2026-06-07T00:33:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120246,
+        "timestamp": "2026-06-07T00:33:21+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is currently empty, but audio from the entryway indicates a child is crying or yelling in distress. No people or animals are visible in the living room area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 120245,
+        "timestamp": "2026-06-07T00:33:16+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120244,
+        "timestamp": "2026-06-07T00:33:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 120243,
         "timestamp": "2026-06-07T00:32:26+00:00",
@@ -3315,108 +3414,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 120052,
-        "timestamp": "2026-06-06T23:22:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 120051,
-        "timestamp": "2026-06-06T23:21:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120050,
-        "timestamp": "2026-06-06T23:20:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120049,
-        "timestamp": "2026-06-06T23:20:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120048,
-        "timestamp": "2026-06-06T23:19:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120047,
-        "timestamp": "2026-06-06T23:19:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 120046,
-        "timestamp": "2026-06-06T23:18:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120045,
-        "timestamp": "2026-06-06T23:18:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120044,
-        "timestamp": "2026-06-06T23:18:19+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5541,
+        "timestamp": "2026-06-07T00:33:21+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A child is heard crying or yelling in distress at the entryway",
+        "acted_on_at": null
+      },
       {
         "id": 5540,
         "timestamp": "2026-06-07T00:07:23+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera recently recovered from a 'no frames received' error, and an unusual piece of plywood is leaning against the front fence.",
         "acted_on_at": null
-      },
-      {
-        "id": 5531,
-        "timestamp": "2026-06-06T23:24:26+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Urgent dog barking and unclassified audio at the front door and backyard despite an empty entryway.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3520,12 +3520,12 @@
         "backyard": "2026-06-07T00:31:24+00:00",
         "dog_run": "2026-06-07T00:14:47+00:00",
         "entryway": "2026-06-07T00:29:35+00:00",
-        "front_door": "2026-06-07T00:10:34+00:00",
+        "front_door": "2026-06-07T00:34:59+00:00",
         "front_yard": "2026-06-07T00:28:36+00:00",
-        "living_room": "2026-06-07T00:23:58+00:00",
+        "living_room": "2026-06-07T00:33:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T00:32:43.550897+00:00"
+      "last_updated": "2026-06-07T00:35:45.049612+00:00"
     }
   },
   "pge": {
