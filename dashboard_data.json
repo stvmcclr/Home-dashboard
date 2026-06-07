@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 03:16:26",
+  "generated_at": "2026-06-07 03:21:34",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121374,
+        "timestamp": "2026-06-07T10:19:09+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently displaying an error message, indicating that no video frames are being received. This suggests a loss of connection or a technical failure with the camera feed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 121373,
         "timestamp": "2026-06-07T10:14:02+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"failing\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 121174,
-        "timestamp": "2026-06-07T06:27:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 5597,
+        "timestamp": "2026-06-07T10:19:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing a loss of video feed.",
+        "acted_on_at": null
+      },
       {
         "id": 5596,
         "timestamp": "2026-06-07T10:05:44+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "The high mobile device count (19 at 00:52) combined with the unexplained bright, out-of-focus light source visible in the living room (00:19) suggests unexpected activity or presence inside the home during the deep night, contradicting the expected quiet, sleeping pattern.",
         "acted_on_at": null
-      },
-      {
-        "id": 5587,
-        "timestamp": "2026-06-07T07:33:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] A brief interruption in the camera stream was detected.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,11 +3600,11 @@
         "dog_run": "2026-06-07T10:13:11+00:00",
         "entryway": "2026-06-07T10:13:36+00:00",
         "front_door": "2026-06-07T10:07:37+00:00",
-        "front_yard": "2026-06-07T09:58:24+00:00",
+        "front_yard": "2026-06-07T10:19:09+00:00",
         "living_room": "2026-06-07T09:36:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T10:16:18.284672+00:00"
+      "last_updated": "2026-06-07T10:19:20.297636+00:00"
     }
   },
   "pge": {
