@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 02:04:38",
+  "generated_at": "2026-06-07 02:09:45",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121339,
+        "timestamp": "2026-06-07T09:08:53+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is empty and quiet during the night. An unknown dark car is parked in the driveway, and several vehicles are parked along the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown black car\", \"entity_state\": \"parked\", \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 121338,
+        "timestamp": "2026-06-07T09:05:36+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet at night. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 121337,
         "timestamp": "2026-06-07T08:59:49+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 121139,
-        "timestamp": "2026-06-07T06:14:04+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121138,
-        "timestamp": "2026-06-07T06:13:29+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5591,
+        "timestamp": "2026-06-07T09:05:10+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the late hour, multiple signals indicate minor, late-night activity (unclassified audio, visible light source in the living room, scattered dog toys) suggesting the household is awake and active. This activity is occurring concurrently with persistent, high-severity technical failures in the front yard and dog run camera feeds, making current monitoring unreliable.",
+        "acted_on_at": null
+      },
       {
         "id": 5590,
         "timestamp": "2026-06-07T08:35:45+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: front_yard averaging 65 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 5581,
-        "timestamp": "2026-06-07T06:50:03+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not providing video frames and is displaying an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,12 +3572,12 @@
         "backyard": "2026-06-07T08:59:49+00:00",
         "dog_run": "2026-06-07T08:49:47+00:00",
         "entryway": "2026-06-07T08:41:26+00:00",
-        "front_door": "2026-06-07T08:45:03+00:00",
-        "front_yard": "2026-06-07T08:56:35+00:00",
+        "front_door": "2026-06-07T09:05:36+00:00",
+        "front_yard": "2026-06-07T09:08:53+00:00",
         "living_room": "2026-06-07T08:50:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T09:03:20.129275+00:00"
+      "last_updated": "2026-06-07T09:09:24.275655+00:00"
     }
   },
   "pge": {
