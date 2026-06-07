@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 02:55:58",
+  "generated_at": "2026-06-07 03:01:05",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121363,
+        "timestamp": "2026-06-07T10:00:56+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 121362,
+        "timestamp": "2026-06-07T09:58:24+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera was displaying an error message indicating a loss of video feed. The most recent frame shows the camera feed has been restored, showing the empty front yard and driveway at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
       {
         "id": 121361,
         "timestamp": "2026-06-07T09:53:53+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 121163,
-        "timestamp": "2026-06-07T06:24:03+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and dark at night. No people or animals are visible in the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 121162,
-        "timestamp": "2026-06-07T06:23:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5594,
+        "timestamp": "2026-06-07T09:58:24+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera experienced a period of no video feed, though the connection appears to have been restored in the latest frame.",
+        "acted_on_at": null
+      },
       {
         "id": 5593,
         "timestamp": "2026-06-07T09:37:34+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "The system is experiencing persistent, high-severity technical failures with the front yard and living room cameras, creating significant security blind spots. While the house is currently quiet and appears secure, the inability to monitor the perimeter and key internal areas poses an immediate risk that needs technical attention.",
         "acted_on_at": null
-      },
-      {
-        "id": 5582,
-        "timestamp": "2026-06-07T07:02:47+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: backyard averaging 75 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3589,7 +3589,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3601,11 +3600,11 @@
         "dog_run": "2026-06-07T09:52:27+00:00",
         "entryway": "2026-06-07T09:27:53+00:00",
         "front_door": "2026-06-07T09:47:08+00:00",
-        "front_yard": "2026-06-07T09:37:34+00:00",
+        "front_yard": "2026-06-07T09:58:24+00:00",
         "living_room": "2026-06-07T09:36:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T09:54:58.260986+00:00"
+      "last_updated": "2026-06-07T10:01:03.184185+00:00"
     }
   },
   "pge": {
