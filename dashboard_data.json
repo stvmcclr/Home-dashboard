@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 04:58:51",
+  "generated_at": "2026-06-07 05:03:57",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121417,
+        "timestamp": "2026-06-07T11:57:05+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure, with most frames displaying a system error message instead of a video feed. The single usable frame shows an empty side yard during the early morning hours, consistent with recent history.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 121416,
         "timestamp": "2026-06-07T11:55:53+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 121217,
-        "timestamp": "2026-06-07T06:55:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5603,
+        "timestamp": "2026-06-07T11:57:06+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing technical issues, displaying error messages instead of video frames.",
+        "acted_on_at": null
+      },
       {
         "id": 5602,
         "timestamp": "2026-06-07T11:42:24+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera experienced a period of no video feed, though the connection appears to have been restored in the latest frame.",
         "acted_on_at": null
-      },
-      {
-        "id": 5593,
-        "timestamp": "2026-06-07T09:37:34+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is disconnected or malfunctioning.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,14 +3626,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-07T11:45:31+00:00",
-        "dog_run": "2026-06-07T11:36:25+00:00",
+        "dog_run": "2026-06-07T11:57:05+00:00",
         "entryway": "2026-06-07T11:44:47+00:00",
         "front_door": "2026-06-07T11:49:52+00:00",
         "front_yard": "2026-06-07T11:42:10+00:00",
         "living_room": "2026-06-07T11:53:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T11:56:41.326537+00:00"
+      "last_updated": "2026-06-07T12:02:45.04128+00:00"
     }
   },
   "pge": {
