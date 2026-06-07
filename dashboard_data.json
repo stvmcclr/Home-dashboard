@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 04:02:33",
+  "generated_at": "2026-06-07 04:07:40",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121399,
+        "timestamp": "2026-06-07T11:04:13+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 121398,
+        "timestamp": "2026-06-07T11:04:07+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, blocking access to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 121397,
         "timestamp": "2026-06-07T11:00:15+00:00",
@@ -3477,28 +3499,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 121199,
-        "timestamp": "2026-06-07T06:47:31+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121198,
-        "timestamp": "2026-06-07T06:46:57+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3596,7 +3596,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-07T10:43:32+00:00",
+        "backyard": "2026-06-07T11:04:07+00:00",
         "dog_run": "2026-06-07T10:54:52+00:00",
         "entryway": "2026-06-07T10:59:20+00:00",
         "front_door": "2026-06-07T10:48:35+00:00",
@@ -3604,7 +3604,7 @@
         "living_room": "2026-06-07T10:22:32+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T11:01:53.889933+00:00"
+      "last_updated": "2026-06-07T11:04:56.198081+00:00"
     }
   },
   "pge": {
