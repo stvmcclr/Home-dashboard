@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 19:55:58",
+  "generated_at": "2026-06-06 20:01:05",
   "as_of": "2026-06-06",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 120675,
+        "timestamp": "2026-06-07T02:57:44+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120674,
+        "timestamp": "2026-06-07T02:57:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120673,
+        "timestamp": "2026-06-07T02:57:13+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120672,
+        "timestamp": "2026-06-07T02:57:07+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying an error message that no frames are being received. This is a continuation of a persistent technical failure or loss of signal that has been ongoing for over twenty minutes.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 120671,
+        "timestamp": "2026-06-07T02:55:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 120670,
+        "timestamp": "2026-06-07T02:55:33+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 120669,
         "timestamp": "2026-06-07T02:54:48+00:00",
@@ -3377,75 +3443,25 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 120475,
-        "timestamp": "2026-06-07T01:54:01+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 120474,
-        "timestamp": "2026-06-07T01:54:00+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120473,
-        "timestamp": "2026-06-07T01:53:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120472,
-        "timestamp": "2026-06-07T01:52:29+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120471,
-        "timestamp": "2026-06-07T01:51:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 120470,
-        "timestamp": "2026-06-07T01:50:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5555,
+        "timestamp": "2026-06-07T02:57:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 12 observations vs typical 1 for weekend 19:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 5554,
+        "timestamp": "2026-06-07T02:57:07+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not transmitting video, which is a known ongoing issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5553,
         "timestamp": "2026-06-07T02:40:03+00:00",
@@ -3509,22 +3525,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at backyard this hour: 8 observations vs typical 1 for weekend 18:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5545,
-        "timestamp": "2026-06-07T01:49:08+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] An unknown person is visible in the backyard area near the gate.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5544,
-        "timestamp": "2026-06-07T00:57:13+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sequence of high-stress audio events (screaming/crying) earlier in the afternoon, combined with the appearance of multiple unknown individuals (the baseball jersey visitor and the person in the red shirt at 17:53), suggests the family may have been dealing with an unexpected or unresolved interaction. The current quiet state, despite the recent activity, warrants checking if the unknown person in red was related to the earlier commotion or if they are a scheduled visitor.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3549,11 +3549,11 @@
         "dog_run": "2026-06-07T02:48:21+00:00",
         "entryway": "2026-06-07T02:33:44+00:00",
         "front_door": "2026-06-07T02:47:01+00:00",
-        "front_yard": "2026-06-07T02:36:36+00:00",
+        "front_yard": "2026-06-07T02:57:07+00:00",
         "living_room": "2026-06-07T02:53:57+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T02:55:11.658917+00:00"
+      "last_updated": "2026-06-07T02:58:13.448947+00:00"
     }
   },
   "pge": {
