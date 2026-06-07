@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 03:11:20",
+  "generated_at": "2026-06-07 03:16:26",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121373,
+        "timestamp": "2026-06-07T10:14:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 121372,
+        "timestamp": "2026-06-07T10:13:36+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and dark during the late-night hours. No people or animals are visible in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 121371,
+        "timestamp": "2026-06-07T10:13:11+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the night. Several tennis balls are scattered across the artificial grass, and the gate is closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": \"scattered\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 121370,
+        "timestamp": "2026-06-07T10:13:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 121369,
         "timestamp": "2026-06-07T10:09:00+00:00",
@@ -3455,50 +3499,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 121173,
-        "timestamp": "2026-06-07T06:27:51+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121172,
-        "timestamp": "2026-06-07T06:26:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 121171,
-        "timestamp": "2026-06-07T06:26:36+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121170,
-        "timestamp": "2026-06-07T06:25:52+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3589,6 +3589,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3596,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-07T10:02:28+00:00",
-        "dog_run": "2026-06-07T09:52:27+00:00",
-        "entryway": "2026-06-07T09:27:53+00:00",
+        "dog_run": "2026-06-07T10:13:11+00:00",
+        "entryway": "2026-06-07T10:13:36+00:00",
         "front_door": "2026-06-07T10:07:37+00:00",
         "front_yard": "2026-06-07T09:58:24+00:00",
         "living_room": "2026-06-07T09:36:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T10:10:14.255198+00:00"
+      "last_updated": "2026-06-07T10:16:18.284672+00:00"
     }
   },
   "pge": {
