@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 03:06:12",
+  "generated_at": "2026-06-07 03:11:20",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121369,
+        "timestamp": "2026-06-07T10:09:00+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 121368,
+        "timestamp": "2026-06-07T10:08:00+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 121367,
+        "timestamp": "2026-06-07T10:07:37+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during the night. No movement or activity is visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 121366,
+        "timestamp": "2026-06-07T10:06:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 121365,
         "timestamp": "2026-06-07T10:02:28+00:00",
@@ -3455,53 +3499,25 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 121169,
-        "timestamp": "2026-06-07T06:25:29+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121168,
-        "timestamp": "2026-06-07T06:25:14+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121167,
-        "timestamp": "2026-06-07T06:24:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121166,
-        "timestamp": "2026-06-07T06:24:51+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5596,
+        "timestamp": "2026-06-07T10:05:44+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The combination of the unknown dark car observed at 02:08, the brief dog barking at 02:47, and the persistent, multi-hour failure of the front yard camera suggests an unrecorded interaction or presence in the driveway/front yard during the early morning hours. This window requires manual visual inspection to determine if the unknown vehicle or activity was related to a visitor or delivery.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5595,
+        "timestamp": "2026-06-07T10:05:12+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekend 03:00",
+        "acted_on_at": null
+      },
       {
         "id": 5594,
         "timestamp": "2026-06-07T09:58:24+00:00",
@@ -3565,22 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] A brief interruption in the camera stream was detected.",
         "acted_on_at": null
-      },
-      {
-        "id": 5586,
-        "timestamp": "2026-06-07T07:26:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] A camera error frame was detected, indicating a momentary loss of signal.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5585,
-        "timestamp": "2026-06-07T07:03:51+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The system is experiencing persistent, high-severity technical failures with the front yard and living room cameras, creating significant security blind spots. While the house is currently quiet and appears secure, the inability to monitor the perimeter and key internal areas poses an immediate risk that needs technical attention.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3590,8 +3590,7 @@
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3599,12 +3598,12 @@
         "backyard": "2026-06-07T10:02:28+00:00",
         "dog_run": "2026-06-07T09:52:27+00:00",
         "entryway": "2026-06-07T09:27:53+00:00",
-        "front_door": "2026-06-07T09:47:08+00:00",
+        "front_door": "2026-06-07T10:07:37+00:00",
         "front_yard": "2026-06-07T09:58:24+00:00",
         "living_room": "2026-06-07T09:36:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T10:04:05.691995+00:00"
+      "last_updated": "2026-06-07T10:10:14.255198+00:00"
     }
   },
   "pge": {
