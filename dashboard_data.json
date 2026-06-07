@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 01:28:52",
+  "generated_at": "2026-06-07 01:33:58",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121318,
+        "timestamp": "2026-06-07T08:31:53+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 121317,
+        "timestamp": "2026-06-07T08:28:57+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the night, with the gate closed and tennis balls scattered across the artificial grass. However, one frame in the sequence shows a technical error message indicating a momentary loss of the camera feed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": \"scattered\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 121316,
+        "timestamp": "2026-06-07T08:26:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 121315,
         "timestamp": "2026-06-07T08:24:30+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 121118,
-        "timestamp": "2026-06-07T05:55:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121117,
-        "timestamp": "2026-06-07T05:53:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121116,
-        "timestamp": "2026-06-07T05:53:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5589,
+        "timestamp": "2026-06-07T08:28:58+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] A frame in the sequence shows a 'No frames have been received' error, indicating a potential camera connectivity issue.",
+        "acted_on_at": null
+      },
       {
         "id": 5588,
         "timestamp": "2026-06-07T08:04:34+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] The camera view is extremely dark and lacks visibility.",
         "acted_on_at": null
-      },
-      {
-        "id": 5579,
-        "timestamp": "2026-06-07T06:29:32+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is failing to provide video frames, indicating a potential technical issue or loss of signal.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,14 +3569,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-07T08:18:41+00:00",
-        "dog_run": "2026-06-07T08:08:03+00:00",
+        "dog_run": "2026-06-07T08:28:57+00:00",
         "entryway": "2026-06-07T07:55:02+00:00",
         "front_door": "2026-06-07T08:24:30+00:00",
         "front_yard": "2026-06-07T08:15:01+00:00",
         "living_room": "2026-06-07T08:04:52+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T08:26:40.62636+00:00"
+      "last_updated": "2026-06-07T08:32:45.623138+00:00"
     }
   },
   "pge": {
