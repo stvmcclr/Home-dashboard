@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 01:44:12",
+  "generated_at": "2026-06-07 01:49:18",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121327,
+        "timestamp": "2026-06-07T08:45:03+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet at night. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 121326,
+        "timestamp": "2026-06-07T08:42:14+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 121325,
         "timestamp": "2026-06-07T08:41:26+00:00",
@@ -3449,28 +3471,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 121127,
-        "timestamp": "2026-06-07T06:08:43+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently failing to provide any video frames, displaying an error message instead. This indicates a loss of signal or a technical issue with the camera stream.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 121126,
-        "timestamp": "2026-06-07T06:04:39+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3571,12 +3571,12 @@
         "backyard": "2026-06-07T08:39:17+00:00",
         "dog_run": "2026-06-07T08:28:57+00:00",
         "entryway": "2026-06-07T08:41:26+00:00",
-        "front_door": "2026-06-07T08:24:30+00:00",
+        "front_door": "2026-06-07T08:45:03+00:00",
         "front_yard": "2026-06-07T08:35:45+00:00",
         "living_room": "2026-06-07T08:04:52+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T08:41:59.353791+00:00"
+      "last_updated": "2026-06-07T08:48:04.2519+00:00"
     }
   },
   "pge": {
