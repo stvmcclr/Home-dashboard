@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 04:28:09",
+  "generated_at": "2026-06-07 04:33:17",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1328,6 +1328,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 121408,
+        "timestamp": "2026-06-07T11:31:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 121407,
+        "timestamp": "2026-06-07T11:29:24+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch remains empty and quiet during the night. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 121406,
         "timestamp": "2026-06-07T11:24:59+00:00",
@@ -3505,28 +3527,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 121208,
-        "timestamp": "2026-06-07T06:51:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 121207,
-        "timestamp": "2026-06-07T06:51:30+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3617,7 +3617,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3628,12 +3627,12 @@
         "backyard": "2026-06-07T11:24:59+00:00",
         "dog_run": "2026-06-07T11:15:49+00:00",
         "entryway": "2026-06-07T10:59:20+00:00",
-        "front_door": "2026-06-07T11:08:56+00:00",
+        "front_door": "2026-06-07T11:29:24+00:00",
         "front_yard": "2026-06-07T11:20:48+00:00",
         "living_room": "2026-06-07T11:08:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-07T11:26:11.266046+00:00"
+      "last_updated": "2026-06-07T11:32:22.658153+00:00"
     }
   },
   "pge": {
