@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 00:10:48",
+  "generated_at": "2026-06-08 00:15:56",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124706,
+        "timestamp": "2026-06-08T07:12:36+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124705,
+        "timestamp": "2026-06-08T07:11:59+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during a scheduled baseline observation late at night. A bright, curved light artifact appears on the left edge of the frame, but no people or animals are visible.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124704,
+        "timestamp": "2026-06-08T07:11:56+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 124703,
         "timestamp": "2026-06-08T07:08:13+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 124506,
-        "timestamp": "2026-06-08T04:42:56+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is walking through the kitchen and living room area, appearing to investigate the house following a recent alarm alert and loud thud. Roxanne is also visible in the background near the kitchen.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 124505,
-        "timestamp": "2026-06-08T04:42:25+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124504,
-        "timestamp": "2026-06-08T04:42:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3558,6 +3558,7 @@
     "state": {
       "id": "current",
       "who_is_home": [
+        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3565,7 +3566,8 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3575,10 +3577,10 @@
         "entryway": "2026-06-08T07:02:11+00:00",
         "front_door": "2026-06-08T06:59:27+00:00",
         "front_yard": "2026-06-08T06:54:17+00:00",
-        "living_room": "2026-06-08T06:26:18+00:00",
+        "living_room": "2026-06-08T07:11:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T07:10:12.573482+00:00"
+      "last_updated": "2026-06-08T07:13:14.61824+00:00"
     }
   },
   "pge": {
