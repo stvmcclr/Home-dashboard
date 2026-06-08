@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 01:43:07",
+  "generated_at": "2026-06-08 01:48:14",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124774,
+        "timestamp": "2026-06-08T08:46:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 124773,
+        "timestamp": "2026-06-08T08:45:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124772,
+        "timestamp": "2026-06-08T08:43:46+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch and patio area are empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124771,
+        "timestamp": "2026-06-08T08:43:23+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 124770,
+        "timestamp": "2026-06-08T08:42:55+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during a scheduled baseline observation late at night. A bright, curved light artifact is visible on the left edge of the frame, but no people or animals are present.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124769,
+        "timestamp": "2026-06-08T08:42:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124768,
+        "timestamp": "2026-06-08T08:41:47+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 124767,
         "timestamp": "2026-06-08T08:40:23+00:00",
@@ -3394,83 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124574,
-        "timestamp": "2026-06-08T05:20:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "silence or quiet ambient background noise at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124573,
-        "timestamp": "2026-06-08T05:18:46+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is sitting on the couch using her phone while covered with an orange blanket. A man, likely Steve, walks through the living room towards the kitchen area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sitting on couch using phone\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"walking through the living room\", \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"orange blanket\", \"entity_state\": \"covering Roxanne\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 124572,
-        "timestamp": "2026-06-08T05:18:26+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124571,
-        "timestamp": "2026-06-08T05:18:15+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124570,
-        "timestamp": "2026-06-08T05:17:04+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124569,
-        "timestamp": "2026-06-08T05:16:53+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night, with no people or animals visible on this camera. However, audio from the living room indicates someone may be calling for help or yelling, which is highly concerning.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 124568,
-        "timestamp": "2026-06-08T05:16:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3563,20 +3563,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-08T08:22:30+00:00",
+        "backyard": "2026-06-08T08:43:23+00:00",
         "dog_run": "2026-06-08T08:30:49+00:00",
         "entryway": "2026-06-08T08:33:43+00:00",
-        "front_door": "2026-06-08T08:22:52+00:00",
+        "front_door": "2026-06-08T08:43:46+00:00",
         "front_yard": "2026-06-08T08:37:49+00:00",
-        "living_room": "2026-06-08T07:57:23+00:00",
+        "living_room": "2026-06-08T08:42:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T08:41:32.797885+00:00"
+      "last_updated": "2026-06-08T08:47:37.034079+00:00"
     }
   },
   "pge": {
