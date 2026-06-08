@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 00:21:03",
+  "generated_at": "2026-06-08 00:26:10",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124715,
+        "timestamp": "2026-06-08T07:24:05+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124714,
+        "timestamp": "2026-06-08T07:22:29+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124713,
+        "timestamp": "2026-06-08T07:20:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124712,
+        "timestamp": "2026-06-08T07:20:49+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124711,
+        "timestamp": "2026-06-08T07:20:00+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch and patio area are empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124710,
+        "timestamp": "2026-06-08T07:19:35+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 124709,
         "timestamp": "2026-06-08T07:18:28+00:00",
@@ -3405,75 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124515,
-        "timestamp": "2026-06-08T04:47:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124514,
-        "timestamp": "2026-06-08T04:47:22+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124513,
-        "timestamp": "2026-06-08T04:46:58+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The 'front_yard' camera is currently non-functional, displaying an error message instead of a video stream. This is a recurring issue that prevents any visual monitoring of the driveway and street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 124512,
-        "timestamp": "2026-06-08T04:46:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124511,
-        "timestamp": "2026-06-08T04:45:43+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 124510,
-        "timestamp": "2026-06-08T04:45:37+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5744,
+        "timestamp": "2026-06-08T07:23:36+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a pattern of unexplained external activity: two unknown vehicles (dark green pickup and white van) were observed parked outside, and the doorbell rang twice (00:08, 00:14). However, no people were seen interacting with these vehicles or entering the home, suggesting a possible surveillance, delivery, or unannounced visit that occurred while the household was settled.",
+        "acted_on_at": null
+      },
       {
         "id": 5743,
         "timestamp": "2026-06-08T07:07:24+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 11 observations vs typical 1 for weekend 22:00",
         "acted_on_at": null
-      },
-      {
-        "id": 5734,
-        "timestamp": "2026-06-08T05:21:42+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:03PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,15 +3572,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-08T06:59:04+00:00",
+        "backyard": "2026-06-08T07:19:35+00:00",
         "dog_run": "2026-06-08T07:07:24+00:00",
         "entryway": "2026-06-08T07:02:11+00:00",
-        "front_door": "2026-06-08T06:59:27+00:00",
+        "front_door": "2026-06-08T07:20:00+00:00",
         "front_yard": "2026-06-08T07:15:00+00:00",
         "living_room": "2026-06-08T07:11:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T07:19:18.352848+00:00"
+      "last_updated": "2026-06-08T07:25:23.973362+00:00"
     }
   },
   "pge": {
