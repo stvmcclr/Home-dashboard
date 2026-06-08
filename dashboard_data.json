@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 01:17:29",
+  "generated_at": "2026-06-08 01:22:38",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124754,
+        "timestamp": "2026-06-08T08:17:02+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream is currently unavailable, displaying an error message indicating that no frames have been received. This suggests a technical issue with the camera or the network connection.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 124753,
         "timestamp": "2026-06-08T08:11:19+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked on street\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"black car\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"non-functional\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 124554,
-        "timestamp": "2026-06-08T05:07:34+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "routine audio at entryway \u2014 silence or quiet ambient background noise",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5746,
+        "timestamp": "2026-06-08T08:17:15+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is not receiving frames, which may indicate a hardware or connectivity error.",
+        "acted_on_at": null
+      },
       {
         "id": 5745,
         "timestamp": "2026-06-08T07:35:45+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] A loud thud or impact sound was detected in the audio, though no clear cause is visible in the video.",
         "acted_on_at": null
-      },
-      {
-        "id": 5736,
-        "timestamp": "2026-06-08T05:22:45+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a significant discrepancy between the visual evidence of the household settling down and relaxing (Steve and Roxanne on the couch) and the audio signals, which repeatedly detect yelling, arguments, and calls for help (22:13, 22:20, 22:21). This suggests that the perceived calm is deceptive, and the household may be experiencing an internal conflict or emergency that is not visible on camera.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3573,11 +3572,11 @@
         "dog_run": "2026-06-08T08:10:07+00:00",
         "entryway": "2026-06-08T07:47:38+00:00",
         "front_door": "2026-06-08T08:02:16+00:00",
-        "front_yard": "2026-06-08T07:56:25+00:00",
+        "front_yard": "2026-06-08T08:17:02+00:00",
         "living_room": "2026-06-08T07:57:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T08:17:11.449692+00:00"
+      "last_updated": "2026-06-08T08:20:13.647069+00:00"
     }
   },
   "pge": {
