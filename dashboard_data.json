@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 23:19:34",
+  "generated_at": "2026-06-07 23:24:40",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124663,
+        "timestamp": "2026-06-08T06:19:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 124662,
+        "timestamp": "2026-06-08T06:19:08+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124660,
+        "timestamp": "2026-06-08T06:18:24+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124661,
+        "timestamp": "2026-06-08T06:18:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 124659,
         "timestamp": "2026-06-08T06:17:56+00:00",
@@ -3399,53 +3443,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124463,
-        "timestamp": "2026-06-08T04:28:50+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124462,
-        "timestamp": "2026-06-08T04:28:28+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124461,
-        "timestamp": "2026-06-08T04:27:51+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124460,
-        "timestamp": "2026-06-08T04:27:25+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5739,
+        "timestamp": "2026-06-08T06:23:07+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The household transitioned from a period of high-stress activity (flagged earlier today) to a deep quiet, but the drop in mobile devices from 17 to 16, combined with the consistent emptiness of the entryway and front yard after 22:36, suggests one person may have left the immediate area or the home entirely, which is unusual given the apparent relaxation in the living room.",
+        "acted_on_at": null
+      },
+      {
+        "id": 5738,
+        "timestamp": "2026-06-08T06:22:47+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 7 observations vs typical 1 for weekend 23:00",
+        "acted_on_at": null
+      },
       {
         "id": 5737,
         "timestamp": "2026-06-08T05:43:37+00:00",
@@ -3509,22 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front_yard camera is non-functional, preventing visual monitoring of the driveway and street.",
         "acted_on_at": null
-      },
-      {
-        "id": 5729,
-        "timestamp": "2026-06-08T04:53:47+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio of a scream in pain or fear at the dog_run coincides with Steve investigating a recent alarm and loud thud.",
-        "acted_on_at": null
-      },
-      {
-        "id": 5728,
-        "timestamp": "2026-06-08T04:49:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] An unknown person is entering the house at night, and a smoke or carbon monoxide alarm is beeping in the dog run area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,12 +3547,12 @@
         "backyard": "2026-06-08T06:17:56+00:00",
         "dog_run": "2026-06-08T06:04:50+00:00",
         "entryway": "2026-06-08T06:16:33+00:00",
-        "front_door": "2026-06-08T05:57:45+00:00",
+        "front_door": "2026-06-08T06:18:24+00:00",
         "front_yard": "2026-06-08T06:10:14+00:00",
         "living_room": "2026-06-08T06:11:20+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T06:18:19.588538+00:00"
+      "last_updated": "2026-06-08T06:24:25.53527+00:00"
     }
   },
   "pge": {
