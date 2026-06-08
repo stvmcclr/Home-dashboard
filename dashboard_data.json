@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 03:25:43",
+  "generated_at": "2026-06-08 03:30:51",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124819,
+        "timestamp": "2026-06-08T10:28:15+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch and patio area are empty and quiet at night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124818,
+        "timestamp": "2026-06-08T10:26:51+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 124817,
         "timestamp": "2026-06-08T10:22:44+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 124619,
-        "timestamp": "2026-06-08T05:43:37+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the living room couch, shifting his position during the sequence. In the background, Roxanne is moving through the kitchen area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 124618,
-        "timestamp": "2026-06-08T05:43:15+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5753,
+        "timestamp": "2026-06-08T10:25:43+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the general quietness and the camera's connectivity issues, the front yard camera captured vehicles (white van and dark vehicle) at 03:22 AM, which correlates with unclassified audio detected in the backyard (03:16, 03:19). This suggests external activity occurred shortly before the current time, and the combination of unexplained audio and visible vehicles warrants increased monitoring of the perimeter.",
+        "acted_on_at": null
+      },
       {
         "id": 5752,
         "timestamp": "2026-06-08T10:05:34+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "There is a pattern of unexplained external activity: two unknown vehicles (dark green pickup and white van) were observed parked outside, and the doorbell rang twice (00:08, 00:14). However, no people were seen interacting with these vehicles or entering the home, suggesting a possible surveillance, delivery, or unannounced visit that occurred while the household was settled.",
         "acted_on_at": null
-      },
-      {
-        "id": 5743,
-        "timestamp": "2026-06-08T07:07:24+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is intermittently failing to provide a live feed, showing an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,15 +3569,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-08T10:06:16+00:00",
+        "backyard": "2026-06-08T10:26:51+00:00",
         "dog_run": "2026-06-08T10:14:40+00:00",
         "entryway": "2026-06-08T10:05:34+00:00",
-        "front_door": "2026-06-08T10:07:54+00:00",
+        "front_door": "2026-06-08T10:28:15+00:00",
         "front_yard": "2026-06-08T10:22:44+00:00",
         "living_room": "2026-06-08T10:14:04+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T10:25:33.993174+00:00"
+      "last_updated": "2026-06-08T10:28:36.402787+00:00"
     }
   },
   "pge": {
