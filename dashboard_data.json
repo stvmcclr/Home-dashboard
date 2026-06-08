@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 04:58:00",
+  "generated_at": "2026-06-08 05:03:07",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124869,
+        "timestamp": "2026-06-08T11:57:28+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is not transmitting any video frames, displaying an error message instead. This indicates a loss of connection or a hardware failure with the camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 124868,
         "timestamp": "2026-06-08T11:56:22+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124669,
-        "timestamp": "2026-06-08T06:31:31+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 5757,
+        "timestamp": "2026-06-08T11:57:28+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not providing any video frames, indicating a potential connection or hardware error.",
+        "acted_on_at": null
+      },
       {
         "id": 5756,
         "timestamp": "2026-06-08T11:47:27+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera stream is unavailable, showing a 'no frames received' error.",
         "acted_on_at": null
-      },
-      {
-        "id": 5747,
-        "timestamp": "2026-06-08T08:24:05+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a persistent pattern of external surveillance (multiple unknown vehicles observed between 00:15 and 00:56) coinciding with multiple technical failures and artifacts in the primary camera feeds (Front Yard, Dog Run, Living Room). This suggests external interest in the property while the household is asleep, and the system's inability to provide a clear, continuous view is a significant vulnerability.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,14 +3570,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-08T11:49:12+00:00",
-        "dog_run": "2026-06-08T11:36:57+00:00",
+        "dog_run": "2026-06-08T11:57:28+00:00",
         "entryway": "2026-06-08T11:37:22+00:00",
         "front_door": "2026-06-08T11:49:52+00:00",
         "front_yard": "2026-06-08T11:47:27+00:00",
         "living_room": "2026-06-08T11:45:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T11:56:45.73504+00:00"
+      "last_updated": "2026-06-08T12:02:48.838686+00:00"
     }
   },
   "pge": {
