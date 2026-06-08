@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 04:27:13",
+  "generated_at": "2026-06-08 04:32:21",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124856,
+        "timestamp": "2026-06-08T11:28:39+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 124855,
+        "timestamp": "2026-06-08T11:27:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 124854,
         "timestamp": "2026-06-08T11:25:26+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 124656,
-        "timestamp": "2026-06-08T06:11:20+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is lounging on the living room couch late at night. He appears to be relaxing while television or music plays in the background.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"lounging on the couch\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 124655,
-        "timestamp": "2026-06-08T06:10:14+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is experiencing a technical failure, displaying an error message in most frames. The single visible frame shows a dark green pickup truck parked in the driveway and a white van on the street at night.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"error message displayed\", \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 5755,
+        "timestamp": "2026-06-08T11:26:48+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a major discrepancy between the visual evidence (empty house, quiet cameras) and the home signals, specifically the 04:18 presence reading of 18 mobile devices inside. This high device count, combined with persistent unclassified audio in the backyard and the consistent presence of unknown vehicles outside, suggests either a significant, unobserved gathering of people or a critical malfunction/spoofing of the home's internal presence tracking system.",
+        "acted_on_at": null
+      },
       {
         "id": 5754,
         "timestamp": "2026-06-08T11:25:27+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera is not receiving frames, which may indicate a hardware or connectivity error.",
         "acted_on_at": null
-      },
-      {
-        "id": 5745,
-        "timestamp": "2026-06-08T07:35:45+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera experienced a brief period of no frames received before resuming the stream.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3568,7 +3568,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-08T11:08:03+00:00",
+        "backyard": "2026-06-08T11:28:39+00:00",
         "dog_run": "2026-06-08T11:16:21+00:00",
         "entryway": "2026-06-08T10:51:25+00:00",
         "front_door": "2026-06-08T11:08:59+00:00",
@@ -3576,7 +3576,7 @@
         "living_room": "2026-06-08T10:59:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T11:26:19.42508+00:00"
+      "last_updated": "2026-06-08T11:29:21.84619+00:00"
     }
   },
   "pge": {
