@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 04:42:40",
+  "generated_at": "2026-06-08 04:47:46",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124864,
+        "timestamp": "2026-06-08T11:47:27+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream experienced a momentary interruption, displaying error messages in most of the captured frames. During the active frame, Roxanne's black SUV is parked in the driveway, and a white van is visible on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"stream error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 124863,
+        "timestamp": "2026-06-08T11:45:05+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during a scheduled baseline observation. A bright, curved light artifact is visible on the left edge of the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 124862,
         "timestamp": "2026-06-08T11:37:22+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124664,
-        "timestamp": "2026-06-08T06:25:38+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is currently experiencing a technical error and is not receiving any video frames. An error message is displayed on the screen instead of the live feed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 124663,
-        "timestamp": "2026-06-08T06:19:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 5756,
+        "timestamp": "2026-06-08T11:47:27+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera stream experienced a momentary error/interruption.",
+        "acted_on_at": null
+      },
       {
         "id": 5755,
         "timestamp": "2026-06-08T11:26:48+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "There is a persistent pattern of external surveillance (multiple unknown vehicles observed between 00:15 and 00:56) coinciding with multiple technical failures and artifacts in the primary camera feeds (Front Yard, Dog Run, Living Room). This suggests external interest in the property while the household is asleep, and the system's inability to provide a clear, continuous view is a significant vulnerability.",
         "acted_on_at": null
-      },
-      {
-        "id": 5746,
-        "timestamp": "2026-06-08T08:17:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is not receiving frames, which may indicate a hardware or connectivity error.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,7 +3563,8 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3572,11 +3573,11 @@
         "dog_run": "2026-06-08T11:36:57+00:00",
         "entryway": "2026-06-08T11:37:22+00:00",
         "front_door": "2026-06-08T11:29:22+00:00",
-        "front_yard": "2026-06-08T11:25:26+00:00",
-        "living_room": "2026-06-08T10:59:40+00:00",
+        "front_yard": "2026-06-08T11:47:27+00:00",
+        "living_room": "2026-06-08T11:45:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T11:41:30.460148+00:00"
+      "last_updated": "2026-06-08T11:47:36.192344+00:00"
     }
   },
   "pge": {
