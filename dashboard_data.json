@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 23:24:40",
+  "generated_at": "2026-06-07 23:29:48",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124666,
+        "timestamp": "2026-06-08T06:26:18+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is shrouded in darkness, making it impossible to see any activity. A bright, curved light artifact is visible on the left edge of the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 124665,
+        "timestamp": "2026-06-08T06:26:17+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124664,
+        "timestamp": "2026-06-08T06:25:38+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently experiencing a technical error and is not receiving any video frames. An error message is displayed on the screen instead of the live feed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 124663,
         "timestamp": "2026-06-08T06:19:24+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124466,
-        "timestamp": "2026-06-08T04:29:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124465,
-        "timestamp": "2026-06-08T04:29:04+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124464,
-        "timestamp": "2026-06-08T04:28:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5740,
+        "timestamp": "2026-06-08T06:25:39+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not receiving frames; check error logs.",
+        "acted_on_at": null
+      },
       {
         "id": 5739,
         "timestamp": "2026-06-08T06:23:07+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[backyard] Audio from the living room indicates someone is calling for help or yelling for assistance.",
         "acted_on_at": null
-      },
-      {
-        "id": 5730,
-        "timestamp": "2026-06-08T05:08:08+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front_yard camera is non-functional, preventing visual monitoring of the driveway and street.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3545,14 +3545,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-08T06:17:56+00:00",
-        "dog_run": "2026-06-08T06:04:50+00:00",
+        "dog_run": "2026-06-08T06:25:38+00:00",
         "entryway": "2026-06-08T06:16:33+00:00",
         "front_door": "2026-06-08T06:18:24+00:00",
         "front_yard": "2026-06-08T06:10:14+00:00",
-        "living_room": "2026-06-08T06:11:20+00:00",
+        "living_room": "2026-06-08T06:26:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T06:24:25.53527+00:00"
+      "last_updated": "2026-06-08T06:27:29.510135+00:00"
     }
   },
   "pge": {
