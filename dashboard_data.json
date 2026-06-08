@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 23:50:19",
+  "generated_at": "2026-06-07 23:55:25",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124685,
+        "timestamp": "2026-06-08T06:54:17+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera has recovered from a period of technical failure. A dark green pickup truck is parked in the driveway, and a white van is visible on the street. The front yard is empty of people and animals during this late-night period.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked on street\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 124684,
+        "timestamp": "2026-06-08T06:51:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 124683,
+        "timestamp": "2026-06-08T06:51:14+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 124682,
         "timestamp": "2026-06-08T06:46:47+00:00",
@@ -3410,39 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 124485,
-        "timestamp": "2026-06-08T04:37:17+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124484,
-        "timestamp": "2026-06-08T04:36:53+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 124483,
-        "timestamp": "2026-06-08T04:36:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3530,7 +3530,6 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3547,11 +3546,11 @@
         "dog_run": "2026-06-08T06:46:47+00:00",
         "entryway": "2026-06-08T06:16:33+00:00",
         "front_door": "2026-06-08T06:38:53+00:00",
-        "front_yard": "2026-06-08T06:31:56+00:00",
+        "front_yard": "2026-06-08T06:54:17+00:00",
         "living_room": "2026-06-08T06:26:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T06:48:54.108692+00:00"
+      "last_updated": "2026-06-08T06:55:01.569788+00:00"
     }
   },
   "pge": {
