@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 19:19:01",
+  "generated_at": "2026-06-07 19:24:09",
   "as_of": "2026-06-07",
   "projects": [
     {
@@ -1244,6 +1244,116 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 124075,
+        "timestamp": "2026-06-08T02:21:00+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 124074,
+        "timestamp": "2026-06-08T02:20:52+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124073,
+        "timestamp": "2026-06-08T02:20:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124072,
+        "timestamp": "2026-06-08T02:20:20+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty. The white gate remains closed, separating the passage from the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 124071,
+        "timestamp": "2026-06-08T02:20:19+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124070,
+        "timestamp": "2026-06-08T02:19:26+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124069,
+        "timestamp": "2026-06-08T02:18:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124068,
+        "timestamp": "2026-06-08T02:18:48+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 124067,
+        "timestamp": "2026-06-08T02:18:44+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is walking through the kitchen area while Roxanne is also present in the kitchen. The visual scene appears routine, though audio from the front door indicates a child is crying in distress.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 124066,
+        "timestamp": "2026-06-08T02:18:27+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 124065,
         "timestamp": "2026-06-08T02:17:58+00:00",
@@ -3333,119 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 123875,
-        "timestamp": "2026-06-08T01:33:03+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123874,
-        "timestamp": "2026-06-08T01:33:02+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne and Steve are in the kitchen area, engaged in a calm conversation. The living room itself is quiet and unoccupied.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 123873,
-        "timestamp": "2026-06-08T01:32:58+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "routine audio at entryway \u2014 calm family conversation indoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123872,
-        "timestamp": "2026-06-08T01:32:37+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123871,
-        "timestamp": "2026-06-08T01:32:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123870,
-        "timestamp": "2026-06-08T01:31:57+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123869,
-        "timestamp": "2026-06-08T01:31:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123868,
-        "timestamp": "2026-06-08T01:31:31+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 123867,
-        "timestamp": "2026-06-08T01:31:13+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is intermittently failing to capture frames, displaying a system error message. When frames are available, the yard and street appear quiet with a dark green SUV in the driveway and cars parked on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark green SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 123866,
-        "timestamp": "2026-06-08T01:31:05+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5703,
+        "timestamp": "2026-06-08T02:18:45+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Audio from the front door indicates a child is crying in distress.",
+        "acted_on_at": null
+      },
       {
         "id": 5702,
         "timestamp": "2026-06-08T02:18:19+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] The scene appears calm and routine, suggesting the recent audio alert for assistance has been resolved.",
         "acted_on_at": null
-      },
-      {
-        "id": 5693,
-        "timestamp": "2026-06-08T01:42:11+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio alert for someone calling for help/assistance in the living room contradicts the calm visual scene.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3544,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-08T01:58:43+00:00",
+        "backyard": "2026-06-08T02:20:20+00:00",
         "dog_run": "2026-06-08T02:08:45+00:00",
         "entryway": "2026-06-08T01:41:21+00:00",
         "front_door": "2026-06-08T02:00:01+00:00",
         "front_yard": "2026-06-08T02:16:34+00:00",
-        "living_room": "2026-06-08T02:14:35+00:00",
+        "living_room": "2026-06-08T02:18:44+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-08T02:18:26.65287+00:00"
+      "last_updated": "2026-06-08T02:21:29.994808+00:00"
     }
   },
   "pge": {
