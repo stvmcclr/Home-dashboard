@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 03:46:43",
+  "generated_at": "2026-06-09 03:51:50",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128635,
+        "timestamp": "2026-06-09T10:51:21+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and unoccupied in the middle of the night. A bright, curved light artifact is visible on the left side of the frame, likely a lens flare or reflection.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128634,
+        "timestamp": "2026-06-09T10:50:40+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the early morning hours. The white gate separating the passage from the driveway remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 128633,
+        "timestamp": "2026-06-09T10:50:36+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128632,
+        "timestamp": "2026-06-09T10:49:26+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and street are quiet and empty during the late night. The black SUV and dark green pickup remain parked in the driveway, and no activity is observed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne Coupe\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 128631,
         "timestamp": "2026-06-09T10:43:32+00:00",
@@ -3455,53 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128435,
-        "timestamp": "2026-06-09T05:34:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128434,
-        "timestamp": "2026-06-09T05:32:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128433,
-        "timestamp": "2026-06-09T05:32:50+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch with his laptop while another person sits beside him using a phone. The person in the yellow shirt appears to be stretching their arm.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 128432,
-        "timestamp": "2026-06-09T05:32:32+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5945,
+        "timestamp": "2026-06-09T10:47:50+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There are multiple instances of unclassified audio detected at the backyard (03:18) and the front door (03:34) during the deepest hours of the night. Since all camera feeds and presence sensors report the area as empty and quiet, this suggests potential intermittent external noise or activity that is not visible, which Steve might want to investigate further.",
+        "acted_on_at": null
+      },
       {
         "id": 5944,
         "timestamp": "2026-06-09T09:47:23+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] Audio indicates someone is calling for help in the living room, which is a high-priority concern.",
         "acted_on_at": null
-      },
-      {
-        "id": 5935,
-        "timestamp": "2026-06-09T05:00:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Significant video corruption/glitch detected in frame 3.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3593,20 +3593,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-09T10:30:11+00:00",
+        "backyard": "2026-06-09T10:50:40+00:00",
         "dog_run": "2026-06-09T10:43:32+00:00",
         "entryway": "2026-06-09T10:38:44+00:00",
         "front_door": "2026-06-09T10:31:32+00:00",
-        "front_yard": "2026-06-09T10:28:47+00:00",
-        "living_room": "2026-06-09T10:05:21+00:00",
+        "front_yard": "2026-06-09T10:49:26+00:00",
+        "living_room": "2026-06-09T10:51:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T10:45:37.508752+00:00"
+      "last_updated": "2026-06-09T10:51:45.98706+00:00"
     }
   },
   "pge": {
