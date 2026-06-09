@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 04:02:08",
+  "generated_at": "2026-06-09 04:07:14",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128639,
+        "timestamp": "2026-06-09T11:05:16+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128638,
+        "timestamp": "2026-06-09T11:04:16+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The camera is experiencing a technical error, with one frame displaying a 'No frames have been received' message. When the camera is operational, the dog run is empty and the gate is closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.95}]"
+      },
       {
         "id": 128637,
         "timestamp": "2026-06-09T10:54:21+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128439,
-        "timestamp": "2026-06-09T05:34:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128438,
-        "timestamp": "2026-06-09T05:34:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5946,
+        "timestamp": "2026-06-09T11:04:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera is experiencing a technical error and is failing to receive frames.",
+        "acted_on_at": null
+      },
       {
         "id": 5945,
         "timestamp": "2026-06-09T10:47:50+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[living_room] A significant digital glitch is obscuring part of the camera view.",
         "acted_on_at": null
-      },
-      {
-        "id": 5936,
-        "timestamp": "2026-06-09T05:08:07+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Audio indicates someone is calling for help in the living room, which is a high-priority concern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,14 +3600,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-09T10:50:40+00:00",
-        "dog_run": "2026-06-09T10:43:32+00:00",
+        "dog_run": "2026-06-09T11:04:16+00:00",
         "entryway": "2026-06-09T10:38:44+00:00",
         "front_door": "2026-06-09T10:54:21+00:00",
         "front_yard": "2026-06-09T10:49:26+00:00",
         "living_room": "2026-06-09T10:51:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T11:00:53.716711+00:00"
+      "last_updated": "2026-06-09T11:06:59.607169+00:00"
     }
   },
   "pge": {
