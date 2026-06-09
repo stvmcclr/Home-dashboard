@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 21:37:35",
+  "generated_at": "2026-06-08 21:42:43",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128358,
+        "timestamp": "2026-06-09T04:38:58+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve moves from the kitchen area to the couch, where he sits down to use his laptop. While a loud thud or crash was recently detected in the living room, no immediate cause is visible in these frames.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"sitting on couch using laptop\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 128357,
+        "timestamp": "2026-06-09T04:38:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128356,
+        "timestamp": "2026-06-09T04:37:20+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "dogs barking urgently or repeatedly at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128355,
+        "timestamp": "2026-06-09T04:37:11+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is empty and quiet at night. Outdoor lights illuminate the stone patio and surrounding greenery.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128354,
+        "timestamp": "2026-06-09T04:37:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 128353,
         "timestamp": "2026-06-09T04:36:39+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128158,
-        "timestamp": "2026-06-09T02:59:11+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128157,
-        "timestamp": "2026-06-09T02:58:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128156,
-        "timestamp": "2026-06-09T02:58:37+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is empty and quiet. A few tennis balls are scattered on the artificial grass near the AC unit, and the gate remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 128155,
-        "timestamp": "2026-06-09T02:58:34+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128154,
-        "timestamp": "2026-06-09T02:57:57+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5931,
+        "timestamp": "2026-06-09T04:38:58+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A loud thud or crash was recently detected in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 5930,
         "timestamp": "2026-06-09T04:13:32+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] An unidentified man in a yellow shirt is in the kitchen with Roxanne.",
         "acted_on_at": null
-      },
-      {
-        "id": 5921,
-        "timestamp": "2026-06-09T03:10:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The porch is currently empty, but a recent alert (1036s ago) indicated a potential emergency with someone calling for help at the front door and dogs barking urgently.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,12 +3547,12 @@
         "backyard": "2026-06-09T04:32:29+00:00",
         "dog_run": "2026-06-09T04:25:25+00:00",
         "entryway": "2026-06-09T04:33:49+00:00",
-        "front_door": "2026-06-09T04:15:59+00:00",
+        "front_door": "2026-06-09T04:37:11+00:00",
         "front_yard": "2026-06-09T04:30:55+00:00",
-        "living_room": "2026-06-09T04:35:40+00:00",
+        "living_room": "2026-06-09T04:38:58+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T04:36:44.592959+00:00"
+      "last_updated": "2026-06-09T04:39:46.846707+00:00"
     }
   },
   "pge": {
