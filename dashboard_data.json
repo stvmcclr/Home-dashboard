@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 01:02:46",
+  "generated_at": "2026-06-09 01:07:53",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1272,6 +1272,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128548,
+        "timestamp": "2026-06-09T08:05:32+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and patio area is empty and quiet at night. No movement or activity is visible in the outdoor scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128547,
+        "timestamp": "2026-06-09T08:04:04+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate separating the passage from the driveway remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 128546,
+        "timestamp": "2026-06-09T08:03:57+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128545,
+        "timestamp": "2026-06-09T08:03:01+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128544,
+        "timestamp": "2026-06-09T08:02:29+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128543,
+        "timestamp": "2026-06-09T08:02:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 128542,
+        "timestamp": "2026-06-09T08:01:15+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and street are quiet and empty late at night. A dark green pickup truck is parked in the driveway, and several cars are parked along the curb.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
+      },
       {
         "id": 128541,
         "timestamp": "2026-06-09T08:00:24+00:00",
@@ -3394,83 +3471,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128348,
-        "timestamp": "2026-06-09T04:35:40+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is sitting on the couch using his laptop. In the background, Roxanne is seen walking through the kitchen area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 128347,
-        "timestamp": "2026-06-09T04:35:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128346,
-        "timestamp": "2026-06-09T04:34:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128345,
-        "timestamp": "2026-06-09T04:34:46+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "television or music playing in the background at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128344,
-        "timestamp": "2026-06-09T04:34:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128343,
-        "timestamp": "2026-06-09T04:33:49+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or animals are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 128342,
-        "timestamp": "2026-06-09T04:32:29+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. No movement or activity is detected in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3569,15 +3568,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-09T07:42:42+00:00",
+        "backyard": "2026-06-09T08:04:04+00:00",
         "dog_run": "2026-06-09T07:57:50+00:00",
         "entryway": "2026-06-09T07:35:31+00:00",
-        "front_door": "2026-06-09T07:44:03+00:00",
-        "front_yard": "2026-06-09T07:40:38+00:00",
+        "front_door": "2026-06-09T08:05:32+00:00",
+        "front_yard": "2026-06-09T08:01:15+00:00",
         "living_room": "2026-06-09T07:48:48+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T08:01:05.017774+00:00"
+      "last_updated": "2026-06-09T08:07:19.875587+00:00"
     }
   },
   "pge": {
