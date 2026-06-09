@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 02:19:40",
+  "generated_at": "2026-06-09 02:24:47",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128589,
+        "timestamp": "2026-06-09T09:23:05+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128588,
+        "timestamp": "2026-06-09T09:22:14+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128587,
+        "timestamp": "2026-06-09T09:20:16+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the late night hours. The gate is closed, and a few tennis balls are scattered on the artificial grass.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 128586,
+        "timestamp": "2026-06-09T09:19:53+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128585,
+        "timestamp": "2026-06-09T09:19:50+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and appears unoccupied in the middle of the night. A bright, curved light artifact is visible on the left side of the frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 128584,
         "timestamp": "2026-06-09T09:17:16+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 128389,
-        "timestamp": "2026-06-09T05:02:11+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128388,
-        "timestamp": "2026-06-09T05:00:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128387,
-        "timestamp": "2026-06-09T05:00:15+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch while using his laptop, with another person resting beside him under a blanket. The scene is calm, although a significant digital glitch appears in the middle of the sequence.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 128386,
-        "timestamp": "2026-06-09T04:59:03+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128385,
-        "timestamp": "2026-06-09T04:57:58+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night. Outdoor lights illuminate the stone patio and surrounding greenery.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"stone patio\", \"entity_state\": \"illuminated\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"outdoor furniture\", \"entity_state\": \"unoccupied\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
@@ -3563,20 +3563,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-09T09:06:59+00:00",
-        "dog_run": "2026-06-09T08:59:41+00:00",
+        "dog_run": "2026-06-09T09:20:16+00:00",
         "entryway": "2026-06-09T09:07:41+00:00",
         "front_door": "2026-06-09T09:08:18+00:00",
         "front_yard": "2026-06-09T09:05:12+00:00",
-        "living_room": "2026-06-09T08:34:21+00:00",
+        "living_room": "2026-06-09T09:19:50+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T09:17:23.891745+00:00"
+      "last_updated": "2026-06-09T09:23:28.533713+00:00"
     }
   },
   "pge": {
