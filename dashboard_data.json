@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 00:01:11",
+  "generated_at": "2026-06-09 00:06:18",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128493,
+        "timestamp": "2026-06-09T07:05:25+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 128492,
+        "timestamp": "2026-06-09T07:03:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 128491,
+        "timestamp": "2026-06-09T07:03:22+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and appears unoccupied. A bright, curved light artifact is visible on the left side of the frame, but no people or animals are discernible in the darkness.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128490,
+        "timestamp": "2026-06-09T07:02:04+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and patio area are empty and quiet at night. No movement or activity is visible in the outdoor scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128489,
+        "timestamp": "2026-06-09T07:00:44+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate separating the passage from the driveway remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 128488,
         "timestamp": "2026-06-09T06:59:06+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128293,
-        "timestamp": "2026-06-09T03:55:28+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is empty and quiet at night. The outdoor lights are on, illuminating the stone patio and surrounding greenery.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 128292,
-        "timestamp": "2026-06-09T03:55:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128291,
-        "timestamp": "2026-06-09T03:55:02+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128290,
-        "timestamp": "2026-06-09T03:53:58+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 128289,
-        "timestamp": "2026-06-09T03:51:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3565,20 +3565,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-09T06:39:11+00:00",
+        "backyard": "2026-06-09T07:00:44+00:00",
         "dog_run": "2026-06-09T06:55:38+00:00",
         "entryway": "2026-06-09T06:50:03+00:00",
-        "front_door": "2026-06-09T06:40:27+00:00",
+        "front_door": "2026-06-09T07:02:04+00:00",
         "front_yard": "2026-06-09T06:59:06+00:00",
-        "living_room": "2026-06-09T06:15:41+00:00",
+        "living_room": "2026-06-09T07:03:22+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T07:00:07.41365+00:00"
+      "last_updated": "2026-06-09T07:06:14.92496+00:00"
     }
   },
   "pge": {
