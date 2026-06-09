@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 05:03:37",
+  "generated_at": "2026-06-09 05:08:44",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128664,
+        "timestamp": "2026-06-09T12:06:45+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet in the early morning with tennis balls scattered on the artificial turf. However, the camera stream experienced a technical error, resulting in a frame with no video data.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": \"scattered\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"frame loss\", \"confidence\": 1.0}]"
+      },
       {
         "id": 128663,
         "timestamp": "2026-06-09T11:57:22+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark pickup truck\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 128464,
-        "timestamp": "2026-06-09T06:16:38+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5948,
+        "timestamp": "2026-06-09T12:06:46+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera stream reported a 'No frames have been received' error.",
+        "acted_on_at": null
+      },
       {
         "id": 5947,
         "timestamp": "2026-06-09T11:48:28+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] The camera is experiencing a technical failure and is not providing a live video stream.",
         "acted_on_at": null
-      },
-      {
-        "id": 5938,
-        "timestamp": "2026-06-09T05:31:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Audio from the living room indicates someone is calling for help, though the dog run is empty.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3592,21 +3592,20 @@
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-09T11:53:08+00:00",
-        "dog_run": "2026-06-09T11:46:00+00:00",
+        "dog_run": "2026-06-09T12:06:45+00:00",
         "entryway": "2026-06-09T11:24:34+00:00",
         "front_door": "2026-06-09T11:55:46+00:00",
         "front_yard": "2026-06-09T11:52:43+00:00",
         "living_room": "2026-06-09T11:36:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T12:01:57.654889+00:00"
+      "last_updated": "2026-06-09T12:08:03.734676+00:00"
     }
   },
   "pge": {
