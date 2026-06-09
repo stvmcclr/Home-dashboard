@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 23:50:55",
+  "generated_at": "2026-06-08 23:56:03",
   "as_of": "2026-06-08",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128486,
+        "timestamp": "2026-06-09T06:50:03+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet. No people or animals are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 128485,
+        "timestamp": "2026-06-09T06:48:23+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 128484,
         "timestamp": "2026-06-09T06:44:14+00:00",
@@ -3449,28 +3471,6 @@
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128286,
-        "timestamp": "2026-06-09T03:49:30+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The camera initially shows a quiet evening with a dark green pickup in the driveway and several vehicles parked on the street. The feed then abruptly cuts to a black screen with an error message indicating that no frames are being received.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 128285,
-        "timestamp": "2026-06-09T03:49:29+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3563,6 +3563,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3571,13 +3572,13 @@
       "last_motion": {
         "backyard": "2026-06-09T06:39:11+00:00",
         "dog_run": "2026-06-09T06:34:46+00:00",
-        "entryway": "2026-06-09T06:04:35+00:00",
+        "entryway": "2026-06-09T06:50:03+00:00",
         "front_door": "2026-06-09T06:40:27+00:00",
         "front_yard": "2026-06-09T06:38:11+00:00",
         "living_room": "2026-06-09T06:15:41+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T06:47:57.261666+00:00"
+      "last_updated": "2026-06-09T06:54:00.710842+00:00"
     }
   },
   "pge": {
