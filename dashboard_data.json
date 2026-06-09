@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 04:48:13",
+  "generated_at": "2026-06-09 04:53:20",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 128659,
+        "timestamp": "2026-06-09T11:52:43+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and street are quiet in the early morning. The black SUV and dark green pickup are parked in the driveway, and a white van is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne Coupe\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white van\", \"entity_state\": \"parked on street\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 128658,
+        "timestamp": "2026-06-09T11:50:07+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 128657,
         "timestamp": "2026-06-09T11:46:00+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 128459,
-        "timestamp": "2026-06-09T06:11:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 128458,
-        "timestamp": "2026-06-09T06:09:52+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 5947,
+        "timestamp": "2026-06-09T11:48:28+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The unclassified audio detected in the backyard at 04:43 AM is unusual given the overall quiet state and the late hour, suggesting a potential external event. This sudden, unexplained sound warrants checking the backyard area for potential wildlife activity or environmental disturbances.",
+        "acted_on_at": null
+      },
       {
         "id": 5946,
         "timestamp": "2026-06-09T11:04:17+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] Audio from the living room indicates someone is calling for help, though the dog run is empty.",
         "acted_on_at": null
-      },
-      {
-        "id": 5937,
-        "timestamp": "2026-06-09T05:29:32+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A significant digital glitch is obscuring part of the camera view.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3603,11 +3603,11 @@
         "dog_run": "2026-06-09T11:46:00+00:00",
         "entryway": "2026-06-09T11:24:34+00:00",
         "front_door": "2026-06-09T11:35:19+00:00",
-        "front_yard": "2026-06-09T11:31:11+00:00",
+        "front_yard": "2026-06-09T11:52:43+00:00",
         "living_room": "2026-06-09T11:36:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-09T11:46:43.127875+00:00"
+      "last_updated": "2026-06-09T11:52:50.998499+00:00"
     }
   },
   "pge": {
