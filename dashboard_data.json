@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 00:33:03",
+  "generated_at": "2026-06-10 00:38:10",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132179,
+        "timestamp": "2026-06-10T07:35:05+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132178,
+        "timestamp": "2026-06-10T07:34:52+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132177,
+        "timestamp": "2026-06-10T07:34:51+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room remains in near-total darkness during this late-night scheduled baseline observation. A bright, blurry light artifact is visible on the left side of the frame, but no people or animals are detected.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132176,
+        "timestamp": "2026-06-10T07:34:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132175,
+        "timestamp": "2026-06-10T07:34:03+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during the night. No movement or activity is detected in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132174,
+        "timestamp": "2026-06-10T07:31:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132173,
         "timestamp": "2026-06-10T07:27:48+00:00",
@@ -3405,72 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 131979,
-        "timestamp": "2026-06-10T04:46:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131978,
-        "timestamp": "2026-06-10T04:44:32+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131977,
-        "timestamp": "2026-06-10T04:44:15+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is moving around in the kitchen area, though the footage is heavily overexposed in that section. The living room remains quiet and undisturbed during this evening period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 131976,
-        "timestamp": "2026-06-10T04:43:55+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131975,
-        "timestamp": "2026-06-10T04:42:21+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131974,
-        "timestamp": "2026-06-10T04:41:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3558,7 +3558,6 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3566,7 +3565,8 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3574,12 +3574,12 @@
         "backyard": "2026-06-10T07:27:36+00:00",
         "dog_run": "2026-06-10T07:19:52+00:00",
         "entryway": "2026-06-10T07:22:21+00:00",
-        "front_door": "2026-06-10T07:13:10+00:00",
+        "front_door": "2026-06-10T07:34:03+00:00",
         "front_yard": "2026-06-10T07:19:08+00:00",
-        "living_room": "2026-06-10T06:49:29+00:00",
+        "living_room": "2026-06-10T07:34:51+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T07:30:25.746979+00:00"
+      "last_updated": "2026-06-10T07:36:38.546086+00:00"
     }
   },
   "pge": {
