@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 04:13:54",
+  "generated_at": "2026-06-10 04:19:02",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132294,
+        "timestamp": "2026-06-10T11:17:28+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132293,
+        "timestamp": "2026-06-10T11:15:41+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 132292,
         "timestamp": "2026-06-10T11:10:56+00:00",
@@ -3477,31 +3499,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132094,
-        "timestamp": "2026-06-10T05:47:39+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132093,
-        "timestamp": "2026-06-10T05:47:37+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "someone calling for help or yelling for assistance at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6086,
+        "timestamp": "2026-06-10T11:16:45+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a pattern of persistent, unclassified audio events detected in the backyard and front yard (3:55 AM - 4:10 AM) that contradict the visual reports of the area being 'empty' and 'quiet.' This, combined with the front yard camera failure (3:27 AM onwards), suggests that there may be subtle, non-visual activity\u2014such as wildlife or unusual noise\u2014that the system is failing to categorize or record properly.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6085,
+        "timestamp": "2026-06-10T11:15:21+00:00",
+        "insight_type": "absence",
+        "severity": "low",
+        "summary": "Dogs appear to be home alone \u2014 no family member sighted in 5.4 hours (last seen ~10:50PM). Dogs are active in camera observations.",
+        "acted_on_at": null
+      },
       {
         "id": 6084,
         "timestamp": "2026-06-10T10:27:31+00:00",
@@ -3565,22 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera feed is experiencing a technical error, displaying 'No frames have been received'.",
         "acted_on_at": null
-      },
-      {
-        "id": 6076,
-        "timestamp": "2026-06-10T07:13:34+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "There is a concerning sequence of events starting at 23:58: the front yard camera feed suddenly flagged a connection issue, immediately followed by multiple unclassified audio events in the backyard and at the front door. This suggests a potential external disturbance or localized technical fault occurring during the deep sleep hours, which warrants investigation.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6073,
-        "timestamp": "2026-06-10T07:12:52+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: dog_run averaging 65 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3596,7 +3596,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-10T10:54:56+00:00",
+        "backyard": "2026-06-10T11:15:41+00:00",
         "dog_run": "2026-06-10T11:09:35+00:00",
         "entryway": "2026-06-10T11:10:56+00:00",
         "front_door": "2026-06-10T10:59:07+00:00",
@@ -3604,7 +3604,7 @@
         "living_room": "2026-06-10T10:38:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T11:12:53.20776+00:00"
+      "last_updated": "2026-06-10T11:19:01.888407+00:00"
     }
   },
   "pge": {
