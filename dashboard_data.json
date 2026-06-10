@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 21:07:47",
+  "generated_at": "2026-06-09 21:12:54",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 131908,
+        "timestamp": "2026-06-10T04:10:46+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 131907,
+        "timestamp": "2026-06-10T04:09:29+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 131906,
+        "timestamp": "2026-06-10T04:09:24+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and driveway are quiet at night with the dark green pickup truck parked in the driveway. A technical error occurred during the sequence, resulting in a frame with no video data.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"error\", \"confidence\": 1.0}]"
+      },
       {
         "id": 131905,
         "timestamp": "2026-06-10T04:05:55+00:00",
@@ -3410,42 +3443,33 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 131708,
-        "timestamp": "2026-06-10T02:35:21+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131707,
-        "timestamp": "2026-06-10T02:34:58+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 131706,
-        "timestamp": "2026-06-10T02:34:42+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6049,
+        "timestamp": "2026-06-10T04:10:57+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There are multiple unclassified audio events occurring late at night (20:55, 20:58, 21:01, 21:05, 21:09) when the house is unoccupied by people. This pattern, combined with the historical alerts regarding urgent dog barking and the current lack of dog activity logs, suggests potential unexplained noise or distress that requires investigation, especially given the backyard camera remains non-functional.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6048,
+        "timestamp": "2026-06-10T04:09:41+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (2x since 7:58PM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 6047,
+        "timestamp": "2026-06-10T04:09:24+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera reported a 'No frames have been received' error, which may indicate a connectivity or hardware issue.",
+        "acted_on_at": null
+      },
       {
         "id": 6046,
         "timestamp": "2026-06-10T03:59:02+00:00",
@@ -3501,30 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] Significant discrepancy between the calm visual scene and audio reports of distress (calls for help and urgent dog barking).",
         "acted_on_at": null
-      },
-      {
-        "id": 6039,
-        "timestamp": "2026-06-10T02:58:26+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio sensors report someone calling for help and urgent dog barking, which contradicts the calm visual scene in the living room.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6038,
-        "timestamp": "2026-06-10T02:57:34+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] The backyard camera is not transmitting video, which may indicate a network or hardware failure.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6037,
-        "timestamp": "2026-06-10T02:42:53+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Recent audio indicated a child in distress, but the current visual shows the family appearing calm in the kitchen.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3548,11 +3548,11 @@
         "dog_run": "2026-06-10T03:50:34+00:00",
         "entryway": "2026-06-10T03:32:11+00:00",
         "front_door": "2026-06-10T04:05:29+00:00",
-        "front_yard": "2026-06-10T03:48:41+00:00",
+        "front_yard": "2026-06-10T04:09:24+00:00",
         "living_room": "2026-06-10T03:44:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T04:06:26.535139+00:00"
+      "last_updated": "2026-06-10T04:12:30.517886+00:00"
     }
   },
   "pge": {
