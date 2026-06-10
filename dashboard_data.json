@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 04:54:52",
+  "generated_at": "2026-06-10 04:59:59",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132315,
+        "timestamp": "2026-06-10T11:56:52+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 132314,
+        "timestamp": "2026-06-10T11:56:22+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet during the early morning hours. No movement or individuals are detected in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132313,
+        "timestamp": "2026-06-10T11:53:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 132312,
         "timestamp": "2026-06-10T11:50:36+00:00",
@@ -3466,39 +3499,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132115,
-        "timestamp": "2026-06-10T05:57:27+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The side yard dog run is empty and quiet at night. The gate remains closed, and no people or dogs are visible in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 132114,
-        "timestamp": "2026-06-10T05:56:00+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is quiet at night with Roxanne's black SUV parked in the driveway. The camera stream is intermittently displaying an error message stating that no frames have been received.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"error message displayed\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 132113,
-        "timestamp": "2026-06-10T05:55:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3589,22 +3589,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-10T11:36:11+00:00",
+        "backyard": "2026-06-10T11:56:52+00:00",
         "dog_run": "2026-06-10T11:50:36+00:00",
-        "entryway": "2026-06-10T11:10:56+00:00",
+        "entryway": "2026-06-10T11:56:22+00:00",
         "front_door": "2026-06-10T11:41:09+00:00",
         "front_yard": "2026-06-10T11:49:56+00:00",
         "living_room": "2026-06-10T11:23:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T11:52:32.288853+00:00"
+      "last_updated": "2026-06-10T11:58:36.26871+00:00"
     }
   },
   "pge": {
