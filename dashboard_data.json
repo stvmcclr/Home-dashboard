@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 04:49:44",
+  "generated_at": "2026-06-10 04:54:52",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132312,
+        "timestamp": "2026-06-10T11:50:36+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure, displaying an error message and corrupted imagery instead of actual footage.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132311,
+        "timestamp": "2026-06-10T11:49:56+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132310,
+        "timestamp": "2026-06-10T11:49:56+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not transmitting any video, displaying an error message indicating that no frames have been received. This suggests a technical failure or a loss of connection to the camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132309,
+        "timestamp": "2026-06-10T11:49:43+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132308,
         "timestamp": "2026-06-10T11:46:55+00:00",
@@ -3455,53 +3499,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132112,
-        "timestamp": "2026-06-10T05:52:35+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132111,
-        "timestamp": "2026-06-10T05:52:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132110,
-        "timestamp": "2026-06-10T05:51:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 132109,
-        "timestamp": "2026-06-10T05:50:59+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a doorbell chime or door knock at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6088,
+        "timestamp": "2026-06-10T11:50:36+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The dog_run camera is not receiving frames and is displaying a technical error.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6087,
+        "timestamp": "2026-06-10T11:49:56+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is not providing a video feed, showing an error message instead.",
+        "acted_on_at": null
+      },
       {
         "id": 6086,
         "timestamp": "2026-06-10T11:16:45+00:00",
@@ -3565,22 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera reported 'No frames have been received' for the first five frames of this sequence, indicating a potential technical issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 6078,
-        "timestamp": "2026-06-10T07:19:52+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is experiencing a technical issue and is not receiving frames.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6077,
-        "timestamp": "2026-06-10T07:19:09+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera feed is experiencing a technical error, displaying 'No frames have been received'.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-10T11:36:11+00:00",
-        "dog_run": "2026-06-10T11:30:05+00:00",
+        "dog_run": "2026-06-10T11:50:36+00:00",
         "entryway": "2026-06-10T11:10:56+00:00",
         "front_door": "2026-06-10T11:41:09+00:00",
-        "front_yard": "2026-06-10T11:29:21+00:00",
+        "front_yard": "2026-06-10T11:49:56+00:00",
         "living_room": "2026-06-10T11:23:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T11:49:28.545633+00:00"
+      "last_updated": "2026-06-10T11:52:32.288853+00:00"
     }
   },
   "pge": {
