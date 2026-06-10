@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 00:17:37",
+  "generated_at": "2026-06-10 00:22:47",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132167,
+        "timestamp": "2026-06-10T07:21:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132166,
+        "timestamp": "2026-06-10T07:21:07+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 132165,
+        "timestamp": "2026-06-10T07:20:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132164,
+        "timestamp": "2026-06-10T07:19:52+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently displaying a system error message indicating that no frames are being received. The underlying scene shows the empty dog run at night, but the feed is interrupted by a technical failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 132163,
+        "timestamp": "2026-06-10T07:19:12+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132162,
+        "timestamp": "2026-06-10T07:19:08+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera feed is experiencing a technical error, intermittently displaying a 'no frames received' message. When the feed is functional, Roxanne's black SUV is parked in the driveway and the front yard is quiet at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"active\", \"confidence\": 1.0}]"
+      },
       {
         "id": 132161,
         "timestamp": "2026-06-10T07:13:10+00:00",
@@ -3405,75 +3471,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 131967,
-        "timestamp": "2026-06-10T04:38:06+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131966,
-        "timestamp": "2026-06-10T04:37:09+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131965,
-        "timestamp": "2026-06-10T04:36:44+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "Two women are in the entryway, with one walking through the room and another standing near a doorway. A black dog is moving around them, and a person is seen ascending the stairs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 131964,
-        "timestamp": "2026-06-10T04:36:28+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131963,
-        "timestamp": "2026-06-10T04:35:33+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131962,
-        "timestamp": "2026-06-10T04:35:33+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "calm family conversation indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6078,
+        "timestamp": "2026-06-10T07:19:52+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a technical issue and is not receiving frames.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6077,
+        "timestamp": "2026-06-10T07:19:09+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera feed is experiencing a technical error, displaying 'No frames have been received'.",
+        "acted_on_at": null
+      },
       {
         "id": 6076,
         "timestamp": "2026-06-10T07:13:34+00:00",
@@ -3537,28 +3553,11 @@
         "severity": "medium",
         "summary": "Harlee spotted in living room at 10:17PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6069,
-        "timestamp": "2026-06-10T06:12:16+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:18PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6070,
-        "timestamp": "2026-06-10T06:12:16+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:26PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Miller",
         "Roxanne",
         "Steve"
       ],
@@ -3566,21 +3565,20 @@
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-10T07:07:05+00:00",
-        "dog_run": "2026-06-10T06:59:12+00:00",
+        "dog_run": "2026-06-10T07:19:52+00:00",
         "entryway": "2026-06-10T06:36:13+00:00",
         "front_door": "2026-06-10T07:13:10+00:00",
-        "front_yard": "2026-06-10T06:58:25+00:00",
+        "front_yard": "2026-06-10T07:19:08+00:00",
         "living_room": "2026-06-10T06:49:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T07:15:11.466052+00:00"
+      "last_updated": "2026-06-10T07:21:17.895984+00:00"
     }
   },
   "pge": {
