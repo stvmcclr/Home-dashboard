@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 00:48:24",
+  "generated_at": "2026-06-10 00:53:31",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132187,
+        "timestamp": "2026-06-10T07:51:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 132186,
+        "timestamp": "2026-06-10T07:48:13+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 132185,
+        "timestamp": "2026-06-10T07:46:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 132184,
         "timestamp": "2026-06-10T07:41:37+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 131987,
-        "timestamp": "2026-06-10T04:53:44+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne walks through the kitchen area in the background while Harlee rests on an ottoman in the living room. The camera feed is experiencing severe digital distortion and glitching throughout the sequence.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"resting\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera glitching\", \"entity_state\": \"active\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 131986,
-        "timestamp": "2026-06-10T04:51:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131985,
-        "timestamp": "2026-06-10T04:50:18+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is walking through the living room area. The camera feed is experiencing severe digital distortion and glitching throughout the sequence.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
@@ -3557,9 +3557,7 @@
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Steve"
-      ],
+      "who_is_home": [],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3571,7 +3569,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-10T07:27:36+00:00",
+        "backyard": "2026-06-10T07:48:13+00:00",
         "dog_run": "2026-06-10T07:41:37+00:00",
         "entryway": "2026-06-10T07:22:21+00:00",
         "front_door": "2026-06-10T07:34:03+00:00",
@@ -3579,7 +3577,7 @@
         "living_room": "2026-06-10T07:34:51+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T07:45:45.491622+00:00"
+      "last_updated": "2026-06-10T07:51:49.078804+00:00"
     }
   },
   "pge": {
