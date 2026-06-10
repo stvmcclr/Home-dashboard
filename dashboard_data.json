@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 04:44:38",
+  "generated_at": "2026-06-10 04:49:44",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132308,
+        "timestamp": "2026-06-10T11:46:55+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132307,
+        "timestamp": "2026-06-10T11:46:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 132306,
+        "timestamp": "2026-06-10T11:45:55+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132305,
         "timestamp": "2026-06-10T11:41:20+00:00",
@@ -3466,39 +3499,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132108,
-        "timestamp": "2026-06-10T05:50:30+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "A man, likely Steve, is walking through the entryway towards the living room. This movement occurs amidst highly alarming audio reports of a loud crash at the front door and someone yelling for help in the entryway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"walking\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 132107,
-        "timestamp": "2026-06-10T05:50:11+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 132106,
-        "timestamp": "2026-06-10T05:50:09+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "a child crying or yelling in distress at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3604,7 +3604,7 @@
         "living_room": "2026-06-10T11:23:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T11:43:24.844773+00:00"
+      "last_updated": "2026-06-10T11:49:28.545633+00:00"
     }
   },
   "pge": {
