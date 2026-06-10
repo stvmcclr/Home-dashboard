@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 18:08:22",
+  "generated_at": "2026-06-09 18:13:32",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1215,6 +1215,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 131443,
+        "timestamp": "2026-06-10T01:10:12+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 131442,
+        "timestamp": "2026-06-10T01:09:32+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 131441,
+        "timestamp": "2026-06-10T01:09:25+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard camera is still non-functional, displaying a persistent error message indicating that no video frames have been received. There is no visual information available from this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 131440,
+        "timestamp": "2026-06-10T01:08:40+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 131439,
+        "timestamp": "2026-06-10T01:07:54+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 131438,
         "timestamp": "2026-06-10T01:07:10+00:00",
@@ -3359,64 +3414,49 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 131244,
-        "timestamp": "2026-06-09T23:59:54+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "A person is walking through the front yard near the patio area. The street shows several vehicles parked, including Roxanne's Porsche Cayenne.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 131242,
-        "timestamp": "2026-06-09T23:59:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131241,
-        "timestamp": "2026-06-09T23:59:19+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131240,
-        "timestamp": "2026-06-09T23:59:04+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "someone calling for help or yelling for assistance at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131239,
-        "timestamp": "2026-06-09T23:58:58+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6024,
+        "timestamp": "2026-06-10T01:09:25+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] The backyard camera remains offline with a persistent connection or hardware error.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6023,
+        "timestamp": "2026-06-10T01:08:14+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The repeated, unclassified doorbell rings and audio activity in the dog run and front yard (17:58 - 18:07), occurring while the house is empty and a suspicious dark green pickup truck remains parked with its hood open, suggests persistent attempts by an unknown individual to gain attention or access to the property.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6020,
+        "timestamp": "2026-06-10T01:07:52+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at front_yard this hour: 5 observations vs typical 1 for weekday 18:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 6021,
+        "timestamp": "2026-06-10T01:07:52+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: backyard averaging 70 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6022,
+        "timestamp": "2026-06-10T01:07:52+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_yard averaging 61 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 6019,
         "timestamp": "2026-06-10T00:48:56+00:00",
@@ -3456,46 +3496,6 @@
         "severity": "high",
         "summary": "A loud thud/impact sound was detected in the living room at 17:05, occurring while the family was actively moving through the area. Given the history of multiple high-severity alerts regarding distress calls and unexplained activity at the entryway and front yard, this recent impact sound suggests a potential secondary incident or unsecured object that needs immediate investigation.",
         "acted_on_at": null
-      },
-      {
-        "id": 6014,
-        "timestamp": "2026-06-10T00:06:46+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at front_yard this hour: 5 observations vs typical 1 for weekday 17:00",
-        "acted_on_at": null
-      },
-      {
-        "id": 6013,
-        "timestamp": "2026-06-09T23:50:34+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] The porch is empty, but recent audio history indicates a call for help was heard at the entryway.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6012,
-        "timestamp": "2026-06-09T23:48:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing intermittent stream failures, and an unknown person is walking a dog in the yard.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6011,
-        "timestamp": "2026-06-09T23:32:25+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is experiencing stream failure, and a loud thud was heard at the entryway.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6010,
-        "timestamp": "2026-06-09T23:29:06+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] An audio alert for 'calling for help' was detected at the entryway, but there is no visual evidence of distress or an unknown person in the frames.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3516,7 +3516,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-10T00:48:56+00:00",
+        "backyard": "2026-06-10T01:09:25+00:00",
         "dog_run": "2026-06-10T01:01:49+00:00",
         "entryway": "2026-06-10T00:28:56+00:00",
         "front_door": "2026-06-10T00:55:20+00:00",
@@ -3524,7 +3524,7 @@
         "living_room": "2026-06-10T00:37:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T01:07:42.862109+00:00"
+      "last_updated": "2026-06-10T01:10:45.285774+00:00"
     }
   },
   "pge": {
