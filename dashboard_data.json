@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 22:55:22",
+  "generated_at": "2026-06-09 23:00:33",
   "as_of": "2026-06-09",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132116,
+        "timestamp": "2026-06-10T05:58:31+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132115,
+        "timestamp": "2026-06-10T05:57:27+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet at night. The gate remains closed, and no people or dogs are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 132114,
+        "timestamp": "2026-06-10T05:56:00+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet at night with Roxanne's black SUV parked in the driveway. The camera stream is intermittently displaying an error message stating that no frames have been received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"error message displayed\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 132113,
+        "timestamp": "2026-06-10T05:55:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132112,
         "timestamp": "2026-06-10T05:52:35+00:00",
@@ -3399,53 +3443,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 131916,
-        "timestamp": "2026-06-10T04:15:56+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131915,
-        "timestamp": "2026-06-10T04:15:20+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131914,
-        "timestamp": "2026-06-10T04:15:19+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131913,
-        "timestamp": "2026-06-10T04:14:50+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking urgently or repeatedly at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6065,
+        "timestamp": "2026-06-10T05:56:01+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera stream is intermittently displaying an error message.",
+        "acted_on_at": null
+      },
       {
         "id": 6064,
         "timestamp": "2026-06-10T05:50:30+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[backyard] A smoke or carbon monoxide alarm is beeping in the living room.",
         "acted_on_at": null
-      },
-      {
-        "id": 6055,
-        "timestamp": "2026-06-10T04:54:16+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is intermittently failing to receive frames.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3546,14 +3546,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-10T05:43:23+00:00",
-        "dog_run": "2026-06-10T05:35:45+00:00",
+        "dog_run": "2026-06-10T05:57:27+00:00",
         "entryway": "2026-06-10T05:50:30+00:00",
         "front_door": "2026-06-10T05:49:20+00:00",
-        "front_yard": "2026-06-10T05:35:01+00:00",
+        "front_yard": "2026-06-10T05:56:00+00:00",
         "living_room": "2026-06-10T05:34:03+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T05:52:49.197429+00:00"
+      "last_updated": "2026-06-10T05:58:52.902316+00:00"
     }
   },
   "pge": {
