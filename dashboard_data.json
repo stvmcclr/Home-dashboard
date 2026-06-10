@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 00:12:27",
+  "generated_at": "2026-06-10 00:17:37",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132161,
+        "timestamp": "2026-06-10T07:13:10+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch area is empty and quiet during the night. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132160,
+        "timestamp": "2026-06-10T07:13:09+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132159,
+        "timestamp": "2026-06-10T07:13:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132158,
         "timestamp": "2026-06-10T07:11:03+00:00",
@@ -3438,42 +3471,41 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 131961,
-        "timestamp": "2026-06-10T04:35:02+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131960,
-        "timestamp": "2026-06-10T04:35:02+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 131959,
-        "timestamp": "2026-06-10T04:34:20+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6076,
+        "timestamp": "2026-06-10T07:13:34+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a concerning sequence of events starting at 23:58: the front yard camera feed suddenly flagged a connection issue, immediately followed by multiple unclassified audio events in the backyard and at the front door. This suggests a potential external disturbance or localized technical fault occurring during the deep sleep hours, which warrants investigation.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6073,
+        "timestamp": "2026-06-10T07:12:52+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: dog_run averaging 65 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6074,
+        "timestamp": "2026-06-10T07:12:52+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_door averaging 70 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6075,
+        "timestamp": "2026-06-10T07:12:52+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_yard averaging 69 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 6072,
         "timestamp": "2026-06-10T06:58:25+00:00",
@@ -3521,38 +3553,6 @@
         "severity": "medium",
         "summary": "Harlee spotted in living room at 10:26PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6066,
-        "timestamp": "2026-06-10T06:11:00+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] While this camera shows no activity, audio from the living room indicates someone is calling for help, which is highly concerning.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6065,
-        "timestamp": "2026-06-10T05:56:01+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera stream is intermittently displaying an error message.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6064,
-        "timestamp": "2026-06-10T05:50:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Audio reports of a loud crash at the front door and someone yelling for help in the entryway are critical safety concerns.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6063,
-        "timestamp": "2026-06-10T05:35:01+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera stream is intermittently failing to receive frames, showing an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,12 +3575,12 @@
         "backyard": "2026-06-10T07:07:05+00:00",
         "dog_run": "2026-06-10T06:59:12+00:00",
         "entryway": "2026-06-10T06:36:13+00:00",
-        "front_door": "2026-06-10T06:52:40+00:00",
+        "front_door": "2026-06-10T07:13:10+00:00",
         "front_yard": "2026-06-10T06:58:25+00:00",
         "living_room": "2026-06-10T06:49:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T07:12:05.133607+00:00"
+      "last_updated": "2026-06-10T07:15:11.466052+00:00"
     }
   },
   "pge": {
