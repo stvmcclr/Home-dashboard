@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 01:55:09",
+  "generated_at": "2026-06-10 02:00:17",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132222,
+        "timestamp": "2026-06-10T08:56:14+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during the night. No movement or activity is detected in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132221,
+        "timestamp": "2026-06-10T08:55:26+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132220,
+        "timestamp": "2026-06-10T08:53:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132219,
+        "timestamp": "2026-06-10T08:53:34+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway remains empty and quiet during the night. No movement or individuals are detected in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 132218,
         "timestamp": "2026-06-10T08:51:54+00:00",
@@ -3427,50 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132022,
-        "timestamp": "2026-06-10T05:17:03+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132021,
-        "timestamp": "2026-06-10T05:15:03+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The side yard dog run is empty and quiet at night. No people or dogs are visible, and the gate remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 132020,
-        "timestamp": "2026-06-10T05:14:58+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132019,
-        "timestamp": "2026-06-10T05:13:32+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard and driveway are quiet and empty at night. The dark green pickup truck remains parked in the driveway as usual.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
@@ -3561,6 +3561,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3569,13 +3570,13 @@
       "last_motion": {
         "backyard": "2026-06-10T08:49:42+00:00",
         "dog_run": "2026-06-10T08:43:58+00:00",
-        "entryway": "2026-06-10T08:07:50+00:00",
-        "front_door": "2026-06-10T08:35:47+00:00",
+        "entryway": "2026-06-10T08:53:34+00:00",
+        "front_door": "2026-06-10T08:56:14+00:00",
         "front_yard": "2026-06-10T08:43:15+00:00",
         "living_room": "2026-06-10T08:20:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T08:52:47.64358+00:00"
+      "last_updated": "2026-06-10T08:58:52.824308+00:00"
     }
   },
   "pge": {
