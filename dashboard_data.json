@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 02:51:37",
+  "generated_at": "2026-06-10 02:56:45",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132253,
+        "timestamp": "2026-06-10T09:53:03+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 132252,
+        "timestamp": "2026-06-10T09:52:33+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is in near-total darkness during a scheduled late-night baseline observation. A bright, blurry light artifact is visible on the left side of the frame, but no people or animals are detected.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 132251,
+        "timestamp": "2026-06-10T09:52:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 132250,
         "timestamp": "2026-06-10T09:47:28+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132053,
-        "timestamp": "2026-06-10T05:28:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132052,
-        "timestamp": "2026-06-10T05:28:08+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is empty and quiet during the night. However, audio from the living room indicates that an argument is occurring inside the house.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front porch\", \"entity_state\": \"empty\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"living room\", \"entity_state\": \"argument occurring\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 132051,
-        "timestamp": "2026-06-10T05:27:22+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3563,20 +3563,21 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-10T09:32:28+00:00",
+        "backyard": "2026-06-10T09:53:03+00:00",
         "dog_run": "2026-06-10T09:47:28+00:00",
         "entryway": "2026-06-10T09:38:55+00:00",
         "front_door": "2026-06-10T09:37:17+00:00",
         "front_yard": "2026-06-10T09:45:57+00:00",
-        "living_room": "2026-06-10T09:06:29+00:00",
+        "living_room": "2026-06-10T09:52:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T09:50:42.295811+00:00"
+      "last_updated": "2026-06-10T09:56:46.803279+00:00"
     }
   },
   "pge": {
