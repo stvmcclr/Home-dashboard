@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 02:25:57",
+  "generated_at": "2026-06-10 02:31:05",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132239,
+        "timestamp": "2026-06-10T09:26:50+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the night. The gate is closed, and a few tennis balls are scattered on the artificial grass.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"closed\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 132238,
+        "timestamp": "2026-06-10T09:25:12+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet and still in the middle of the night. Roxanne's black SUV is parked in the driveway, and a car is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked on street\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 132237,
+        "timestamp": "2026-06-10T09:23:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 dogs barking briefly once or twice",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132236,
+        "timestamp": "2026-06-10T09:23:30+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132235,
         "timestamp": "2026-06-10T09:22:09+00:00",
@@ -3427,50 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 132039,
-        "timestamp": "2026-06-10T05:22:49+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132038,
-        "timestamp": "2026-06-10T05:22:11+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132037,
-        "timestamp": "2026-06-10T05:21:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132036,
-        "timestamp": "2026-06-10T05:21:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3570,14 +3569,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-10T09:11:17+00:00",
-        "dog_run": "2026-06-10T09:05:58+00:00",
+        "dog_run": "2026-06-10T09:26:50+00:00",
         "entryway": "2026-06-10T08:53:34+00:00",
         "front_door": "2026-06-10T09:16:47+00:00",
-        "front_yard": "2026-06-10T09:04:02+00:00",
+        "front_yard": "2026-06-10T09:25:12+00:00",
         "living_room": "2026-06-10T09:06:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T09:23:14.242414+00:00"
+      "last_updated": "2026-06-10T09:29:17.976464+00:00"
     }
   },
   "pge": {
