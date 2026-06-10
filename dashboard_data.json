@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 01:39:46",
+  "generated_at": "2026-06-10 01:44:54",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132213,
+        "timestamp": "2026-06-10T08:43:15+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera experienced a period of error messages indicating no frames were being received before finally showing the quiet front yard. Roxanne's black SUV is parked in the driveway, and the street is empty at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"frames not received\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 132212,
+        "timestamp": "2026-06-10T08:41:58+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132211,
+        "timestamp": "2026-06-10T08:39:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 132210,
         "timestamp": "2026-06-10T08:35:47+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132013,
-        "timestamp": "2026-06-10T05:10:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132012,
-        "timestamp": "2026-06-10T05:10:19+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132011,
-        "timestamp": "2026-06-10T05:09:46+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6079,
+        "timestamp": "2026-06-10T08:43:15+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera reported 'No frames have been received' for the first five frames of this sequence, indicating a potential technical issue.",
+        "acted_on_at": null
+      },
       {
         "id": 6078,
         "timestamp": "2026-06-10T07:19:52+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Harlee spotted in living room at 10:11PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6068,
-        "timestamp": "2026-06-10T06:12:16+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:17PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3561,7 +3561,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3573,11 +3572,11 @@
         "dog_run": "2026-06-10T08:23:14+00:00",
         "entryway": "2026-06-10T08:07:50+00:00",
         "front_door": "2026-06-10T08:35:47+00:00",
-        "front_yard": "2026-06-10T08:22:24+00:00",
+        "front_yard": "2026-06-10T08:43:15+00:00",
         "living_room": "2026-06-10T08:20:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T08:37:34.575915+00:00"
+      "last_updated": "2026-06-10T08:43:39.824485+00:00"
     }
   },
   "pge": {
