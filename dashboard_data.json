@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 03:27:33",
+  "generated_at": "2026-06-10 03:32:40",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1022,13 +1022,13 @@
   "thermostat": {
     "latest": [
       {
-        "id": 1988,
-        "timestamp": "2026-06-10T06:14:19+00:00",
+        "id": 1990,
+        "timestamp": "2026-06-10T10:32:33+00:00",
         "location": "Upstairs",
-        "temp_f": 67.2,
-        "humidity_pct": 46,
+        "temp_f": 67.6,
+        "humidity_pct": 49,
         "mode": "HEATCOOL",
-        "hvac_status": "COOLING",
+        "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.5,
         "eco_mode": "OFF",
@@ -1036,10 +1036,10 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 1987,
-        "timestamp": "2026-06-10T06:14:19+00:00",
+        "id": 1989,
+        "timestamp": "2026-06-10T10:32:33+00:00",
         "location": "Downstairs",
-        "temp_f": 73.5,
+        "temp_f": 71.5,
         "humidity_pct": 46,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1101,6 +1101,34 @@
         "humidity_pct": 46,
         "mode": "HEATCOOL",
         "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.5,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1989,
+        "timestamp": "2026-06-10T10:32:33+00:00",
+        "location": "Downstairs",
+        "temp_f": 71.5,
+        "humidity_pct": 46,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 1990,
+        "timestamp": "2026-06-10T10:32:33+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.6,
+        "humidity_pct": 49,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.5,
         "eco_mode": "OFF",
@@ -1272,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 132272,
+        "timestamp": "2026-06-10T10:29:13+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132271,
+        "timestamp": "2026-06-10T10:28:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132270,
+        "timestamp": "2026-06-10T10:28:32+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the early morning hours. A few tennis balls are scattered on the artificial grass near the AC unit, and the gate is closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"AC unit\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 132269,
+        "timestamp": "2026-06-10T10:27:36+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 132268,
+        "timestamp": "2026-06-10T10:27:31+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not transmitting any video, displaying an error message that no frames have been received. This indicates a loss of signal or a camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 132267,
         "timestamp": "2026-06-10T10:24:52+00:00",
@@ -3416,64 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 132072,
-        "timestamp": "2026-06-10T05:34:31+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132071,
-        "timestamp": "2026-06-10T05:34:22+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "a doorbell chime or door knock at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132070,
-        "timestamp": "2026-06-10T05:34:12+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 132069,
-        "timestamp": "2026-06-10T05:34:03+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve and Roxanne are relaxing on the couch in the living room. Despite audio sensors detecting someone calling for help or yelling for assistance, they appear completely unconcerned and continue to lounge.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 132068,
-        "timestamp": "2026-06-10T05:33:57+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6084,
+        "timestamp": "2026-06-10T10:27:31+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not providing a video feed, displaying a 'No frames have been received' error.",
+        "acted_on_at": null
+      },
       {
         "id": 6083,
         "timestamp": "2026-06-10T10:15:19+00:00",
@@ -3545,14 +3581,6 @@
         "severity": "low",
         "summary": "High-activity pattern: dog_run averaging 65 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 6074,
-        "timestamp": "2026-06-10T07:12:52+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: front_door averaging 70 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-10T10:13:36+00:00",
-        "dog_run": "2026-06-10T10:08:02+00:00",
+        "dog_run": "2026-06-10T10:28:32+00:00",
         "entryway": "2026-06-10T10:24:31+00:00",
         "front_door": "2026-06-10T10:18:09+00:00",
-        "front_yard": "2026-06-10T10:06:58+00:00",
+        "front_yard": "2026-06-10T10:27:31+00:00",
         "living_room": "2026-06-10T09:52:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-10T10:27:15.324413+00:00"
+      "last_updated": "2026-06-10T10:30:17.757982+00:00"
     }
   },
   "pge": {
