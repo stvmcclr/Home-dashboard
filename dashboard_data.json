@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 23:01:23",
+  "generated_at": "2026-06-10 23:06:31",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135558,
+        "timestamp": "2026-06-11T06:05:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 135557,
+        "timestamp": "2026-06-11T06:04:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 135556,
+        "timestamp": "2026-06-11T06:02:41+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 135555,
+        "timestamp": "2026-06-11T06:01:19+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a significant technical failure, starting with a complete loss of signal followed by severe video corruption with heavy vertical color bars. It is currently impossible to see the dog run or monitor the gate and dogs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"malfunctioning\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 135554,
+        "timestamp": "2026-06-11T06:01:04+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 135553,
         "timestamp": "2026-06-11T05:59:20+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135358,
-        "timestamp": "2026-06-11T03:42:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135357,
-        "timestamp": "2026-06-11T03:41:48+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135356,
-        "timestamp": "2026-06-11T03:41:44+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The footage begins with intense motion blur and visual artifacts, which may be related to recent reports of an unidentified man moving through the house. The scene eventually stabilizes, showing Steve and Miller relaxing on the couch with a dog.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135355,
-        "timestamp": "2026-06-11T03:41:26+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135354,
-        "timestamp": "2026-06-11T03:40:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3544,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T05:41:11+00:00",
-        "dog_run": "2026-06-11T05:40:43+00:00",
+        "backyard": "2026-06-11T06:02:41+00:00",
+        "dog_run": "2026-06-11T06:01:19+00:00",
         "entryway": "2026-06-11T05:44:29+00:00",
         "front_door": "2026-06-11T05:48:35+00:00",
         "front_yard": "2026-06-11T05:55:18+00:00",
         "living_room": "2026-06-11T05:57:09+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T05:59:58.737429+00:00"
+      "last_updated": "2026-06-11T06:06:03.897238+00:00"
     }
   },
   "pge": {
