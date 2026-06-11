@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 04:45:02",
+  "generated_at": "2026-06-11 04:50:09",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135735,
+        "timestamp": "2026-06-11T11:49:55+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is dark and empty during the early morning hours. No movement or people are detected in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135734,
+        "timestamp": "2026-06-11T11:49:03+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and driveway are empty and quiet during the early morning hours. Roxanne's black SUV is parked in the driveway, and several cars are parked along the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 135733,
+        "timestamp": "2026-06-11T11:48:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135732,
+        "timestamp": "2026-06-11T11:48:08+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unknown at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135731,
+        "timestamp": "2026-06-11T11:47:02+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unknown at dog_run",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135730,
         "timestamp": "2026-06-11T11:43:56+00:00",
@@ -3444,61 +3499,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135535,
-        "timestamp": "2026-06-11T05:50:38+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room camera feed is experiencing extreme digital distortion throughout the sequence. Despite the heavy glitching, Roxanne can be seen sitting on the couch while another person moves in the background near the kitchen area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.6}, {\"entity_type\": \"state\", \"entity_name\": \"digital distortion\", \"entity_state\": \"extreme\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135534,
-        "timestamp": "2026-06-11T05:50:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135533,
-        "timestamp": "2026-06-11T05:49:41+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135532,
-        "timestamp": "2026-06-11T05:49:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135531,
-        "timestamp": "2026-06-11T05:48:39+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3589,22 +3589,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-11T11:36:14+00:00",
         "dog_run": "2026-06-11T11:34:12+00:00",
-        "entryway": "2026-06-11T11:04:22+00:00",
+        "entryway": "2026-06-11T11:49:55+00:00",
         "front_door": "2026-06-11T11:38:13+00:00",
-        "front_yard": "2026-06-11T11:28:25+00:00",
+        "front_yard": "2026-06-11T11:49:03+00:00",
         "living_room": "2026-06-11T11:19:08+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T11:44:04.343427+00:00"
+      "last_updated": "2026-06-11T11:50:10.102502+00:00"
     }
   },
   "pge": {
