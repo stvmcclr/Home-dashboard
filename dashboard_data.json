@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 19:15:47",
+  "generated_at": "2026-06-10 19:20:54",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135156,
+        "timestamp": "2026-06-11T02:17:45+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet. No people, animals, or vehicles are visible in the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135155,
+        "timestamp": "2026-06-11T02:16:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135154,
+        "timestamp": "2026-06-11T02:16:15+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is relaxing on the couch using his laptop while others are active in the kitchen area. The video stream experienced a brief interruption with a single black frame.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"using laptop on couch\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"in kitchen\", \"confidence\": 0.6}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"in kitchen\", \"confidence\": 0.6}]"
+      },
+      {
+        "id": 135153,
+        "timestamp": "2026-06-11T02:16:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135152,
+        "timestamp": "2026-06-11T02:15:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135151,
+        "timestamp": "2026-06-11T02:15:21+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135150,
         "timestamp": "2026-06-11T02:15:06+00:00",
@@ -3377,75 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 134956,
-        "timestamp": "2026-06-11T00:52:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134955,
-        "timestamp": "2026-06-11T00:51:50+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134954,
-        "timestamp": "2026-06-11T00:51:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134953,
-        "timestamp": "2026-06-11T00:50:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134952,
-        "timestamp": "2026-06-11T00:49:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134951,
-        "timestamp": "2026-06-11T00:48:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6254,
+        "timestamp": "2026-06-11T02:16:16+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A momentary loss of video feed was detected.",
+        "acted_on_at": null
+      },
       {
         "id": 6253,
         "timestamp": "2026-06-11T01:49:37+00:00",
@@ -3517,20 +3525,11 @@
         "severity": "high",
         "summary": "There is a concerning pattern of multiple external cameras (front yard, dog run, backyard) failing or displaying empty feeds starting around 17:13, which coincides with a sustained period of unclassified audio and repeated doorbell rings (17:20-17:28). This suggests an ongoing, unobserved interaction or presence outside the home that is generating noise but cannot be visually confirmed by the failing sensors, warranting immediate attention.",
         "acted_on_at": null
-      },
-      {
-        "id": 6244,
-        "timestamp": "2026-06-11T00:28:22+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Cleaning crew detected: 22 observations showing cleaning activity across 3 areas (entryway, front_door, living_room), ~261.0 min duration starting around 11:43 AM. Expected recurring service visit.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Miller",
         "Penelope",
         "Roxanne",
         "Steve"
@@ -3549,12 +3548,12 @@
         "backyard": "2026-06-11T02:09:42+00:00",
         "dog_run": "2026-06-11T02:04:28+00:00",
         "entryway": "2026-06-11T02:09:07+00:00",
-        "front_door": "2026-06-11T01:57:00+00:00",
+        "front_door": "2026-06-11T02:17:45+00:00",
         "front_yard": "2026-06-11T02:00:59+00:00",
-        "living_room": "2026-06-11T02:11:15+00:00",
+        "living_room": "2026-06-11T02:16:15+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T02:15:08.961489+00:00"
+      "last_updated": "2026-06-11T02:18:10.943434+00:00"
     }
   },
   "pge": {
