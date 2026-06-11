@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 04:39:54",
+  "generated_at": "2026-06-11 04:45:02",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135730,
+        "timestamp": "2026-06-11T11:43:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135729,
+        "timestamp": "2026-06-11T11:42:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135728,
+        "timestamp": "2026-06-11T11:41:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135727,
+        "timestamp": "2026-06-11T11:40:23+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135726,
+        "timestamp": "2026-06-11T11:38:13+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch area is dark and quiet during the early morning hours. No movement or activity is visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 135725,
         "timestamp": "2026-06-11T11:36:14+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135530,
-        "timestamp": "2026-06-11T05:48:35+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night. No people or animals are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 135529,
-        "timestamp": "2026-06-11T05:48:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135528,
-        "timestamp": "2026-06-11T05:47:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135527,
-        "timestamp": "2026-06-11T05:47:14+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room camera feed is experiencing extreme digital distortion throughout the sequence. Despite the heavy glitching, Roxanne and another person can be seen relaxing on the couch.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera glitch\", \"entity_state\": \"active\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 135526,
-        "timestamp": "2026-06-11T05:47:07+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6334,
+        "timestamp": "2026-06-11T11:38:25+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the cameras showing empty areas, the combination of persistent technical failures (front_yard, dog_run) and multiple unclassified audio events (04:17, 04:19, 04:21) suggests unexplained activity or disturbance occurring outside the home that the system is unable to properly record or identify.",
+        "acted_on_at": null
+      },
       {
         "id": 6333,
         "timestamp": "2026-06-11T11:34:12+00:00",
@@ -3573,21 +3581,11 @@
         "severity": "high",
         "summary": "[front_yard] An unknown dark vehicle is parked in the driveway late at night.",
         "acted_on_at": null
-      },
-      {
-        "id": 6324,
-        "timestamp": "2026-06-11T09:03:33+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] An unknown dark vehicle is parked in the driveway at 2:02 AM, coinciding with intermittent camera video loss.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Roxanne"
-      ],
+      "who_is_home": [],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3601,12 +3599,12 @@
         "backyard": "2026-06-11T11:36:14+00:00",
         "dog_run": "2026-06-11T11:34:12+00:00",
         "entryway": "2026-06-11T11:04:22+00:00",
-        "front_door": "2026-06-11T11:17:38+00:00",
+        "front_door": "2026-06-11T11:38:13+00:00",
         "front_yard": "2026-06-11T11:28:25+00:00",
         "living_room": "2026-06-11T11:19:08+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T11:38:01.195625+00:00"
+      "last_updated": "2026-06-11T11:44:04.343427+00:00"
     }
   },
   "pge": {
