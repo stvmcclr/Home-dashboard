@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 01:35:11",
+  "generated_at": "2026-06-11 01:40:19",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135638,
+        "timestamp": "2026-06-11T08:37:37+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135637,
         "timestamp": "2026-06-11T08:34:35+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135438,
-        "timestamp": "2026-06-11T04:32:56+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6322,
+        "timestamp": "2026-06-11T08:35:26+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Multiple exterior cameras (front yard, dog run) are experiencing systemic failures, which means the system cannot confirm if the minor, unclassified audio events detected near the front door and yard are due to wildlife, neighborhood activity, or something else. This technical blind spot is the most critical observation.",
+        "acted_on_at": null
+      },
       {
         "id": 6321,
         "timestamp": "2026-06-11T08:00:05+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The dogs spotted in living room at 10:38PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6312,
-        "timestamp": "2026-06-11T06:32:50+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in living room at 10:47PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,7 +3575,7 @@
         "living_room": "2026-06-11T08:13:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T08:35:11.128027+00:00"
+      "last_updated": "2026-06-11T08:38:13.117339+00:00"
     }
   },
   "pge": {
