@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 00:23:22",
+  "generated_at": "2026-06-11 00:28:28",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135606,
+        "timestamp": "2026-06-11T07:26:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 135605,
+        "timestamp": "2026-06-11T07:25:21+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 135604,
+        "timestamp": "2026-06-11T07:24:52+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional and displaying an error message instead of a video stream. No people or dogs are visible in the side yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135603,
+        "timestamp": "2026-06-11T07:23:04+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135602,
         "timestamp": "2026-06-11T07:18:05+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135406,
-        "timestamp": "2026-06-11T04:10:46+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135405,
-        "timestamp": "2026-06-11T04:10:38+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is failing to transmit video, displaying an error message instead. While a dark green pickup is visible in the driveway, the camera's technical issue prevents any further observation of the yard or street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135404,
-        "timestamp": "2026-06-11T04:09:40+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room camera feed is experiencing severe digital distortion and glitching, obscuring much of the view of the room. Posey the dog is visible in the lower left corner, but no people are seen in the living area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera glitching\", \"entity_state\": \"severe\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135403,
-        "timestamp": "2026-06-11T04:09:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6318,
+        "timestamp": "2026-06-11T07:24:53+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not receiving frames and is displaying an error message.",
+        "acted_on_at": null
+      },
       {
         "id": 6317,
         "timestamp": "2026-06-11T07:18:05+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is intermittently failing to stream video, showing a 'no frames received' error.",
         "acted_on_at": null
-      },
-      {
-        "id": 6308,
-        "timestamp": "2026-06-11T05:57:10+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is experiencing extreme digital distortion.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,15 +3572,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T07:04:41+00:00",
-        "dog_run": "2026-06-11T07:04:11+00:00",
+        "backyard": "2026-06-11T07:25:21+00:00",
+        "dog_run": "2026-06-11T07:24:52+00:00",
         "entryway": "2026-06-11T07:16:33+00:00",
         "front_door": "2026-06-11T07:10:27+00:00",
         "front_yard": "2026-06-11T07:18:05+00:00",
         "living_room": "2026-06-11T06:42:48+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T07:22:10.255566+00:00"
+      "last_updated": "2026-06-11T07:28:14.569256+00:00"
     }
   },
   "pge": {
