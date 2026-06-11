@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 20:53:13",
+  "generated_at": "2026-06-10 20:58:21",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,127 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135377,
+        "timestamp": "2026-06-11T03:58:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 135376,
+        "timestamp": "2026-06-11T03:56:42+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room camera feed is experiencing severe visual distortion and glitching. A man, likely Steve, is visible in the room, but the technical failure is occurring alongside a recent alert of someone calling for help at the entryway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.6}, {\"entity_type\": \"state\", \"entity_name\": \"camera distortion\", \"entity_state\": \"severe\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 135375,
+        "timestamp": "2026-06-11T03:55:57+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty. The white gate separating the side passage from the driveway remains closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 135374,
+        "timestamp": "2026-06-11T03:55:17+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135373,
+        "timestamp": "2026-06-11T03:55:15+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The camera feed is experiencing severe visual distortion and glitching. While a man, likely Steve, is visible in the living room area, audio indicates someone is calling for help at the entryway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"visual distortion\", \"entity_state\": \"active\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 135372,
+        "timestamp": "2026-06-11T03:54:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135371,
+        "timestamp": "2026-06-11T03:54:06+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135370,
+        "timestamp": "2026-06-11T03:53:49+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard is empty and quiet during the evening. Tennis balls are scattered across the artificial grass, and the landscape lights are illuminated along the fence.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": \"scattered\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 135369,
+        "timestamp": "2026-06-11T03:53:45+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "someone calling for help or yelling for assistance at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135368,
+        "timestamp": "2026-06-11T03:53:40+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135367,
+        "timestamp": "2026-06-11T03:52:57+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135366,
         "timestamp": "2026-06-11T03:50:56+00:00",
@@ -3322,130 +3443,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135177,
-        "timestamp": "2026-06-11T02:25:36+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135176,
-        "timestamp": "2026-06-11T02:25:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135175,
-        "timestamp": "2026-06-11T02:25:17+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The side yard dog run is currently empty of people and dogs, with a few tennis balls scattered on the artificial grass. The camera stream is experiencing intermittent technical issues, as evidenced by error messages in several frames.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": \"scattered\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"intermittent\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135174,
-        "timestamp": "2026-06-11T02:25:12+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135173,
-        "timestamp": "2026-06-11T02:24:54+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135172,
-        "timestamp": "2026-06-11T02:24:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135171,
-        "timestamp": "2026-06-11T02:24:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135170,
-        "timestamp": "2026-06-11T02:23:53+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135169,
-        "timestamp": "2026-06-11T02:23:51+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135168,
-        "timestamp": "2026-06-11T02:23:41+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135167,
-        "timestamp": "2026-06-11T02:22:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6275,
+        "timestamp": "2026-06-11T03:56:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] The camera feed is severely glitching, and there is a recent alert of someone calling for help at the entryway, suggesting a potential emergency or security issue.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6274,
+        "timestamp": "2026-06-11T03:55:15+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Severe camera glitching and audio of someone calling for help at the entryway.",
+        "acted_on_at": null
+      },
       {
         "id": 6273,
         "timestamp": "2026-06-11T03:48:14+00:00",
@@ -3509,22 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] A critical audio alert from the entryway sounds like someone is calling for help, which requires immediate attention.",
         "acted_on_at": null
-      },
-      {
-        "id": 6265,
-        "timestamp": "2026-06-11T03:27:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing a failure, showing an error message instead of video frames, which follows a recent pattern of intermittent errors.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6264,
-        "timestamp": "2026-06-11T03:27:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio from the entryway indicates someone is calling for help or yelling for assistance.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3538,7 +3538,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3546,15 +3545,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T03:35:34+00:00",
-        "dog_run": "2026-06-11T03:29:33+00:00",
+        "backyard": "2026-06-11T03:55:57+00:00",
+        "dog_run": "2026-06-11T03:53:49+00:00",
         "entryway": "2026-06-11T03:28:04+00:00",
         "front_door": "2026-06-11T03:40:43+00:00",
         "front_yard": "2026-06-11T03:49:55+00:00",
-        "living_room": "2026-06-11T03:48:14+00:00",
+        "living_room": "2026-06-11T03:56:42+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T03:52:03.790144+00:00"
+      "last_updated": "2026-06-11T03:58:06.949937+00:00"
     }
   },
   "pge": {
