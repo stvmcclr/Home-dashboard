@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 21:59:54",
+  "generated_at": "2026-06-10 22:05:02",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,94 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135479,
+        "timestamp": "2026-06-11T05:04:54+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135478,
+        "timestamp": "2026-06-11T05:03:14+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve walks through the living room while Roxanne and Posey remain on the couch. The camera feed is experiencing severe digital distortion and glitching.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 135477,
+        "timestamp": "2026-06-11T05:01:50+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135476,
+        "timestamp": "2026-06-11T05:01:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "silence or quiet ambient background noise at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135475,
+        "timestamp": "2026-06-11T05:00:55+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "a child crying or yelling in distress at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135474,
+        "timestamp": "2026-06-11T05:00:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135473,
+        "timestamp": "2026-06-11T05:00:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 135472,
+        "timestamp": "2026-06-11T04:59:27+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty at night with the white gate closed. No movement from people or dogs is observed in this area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 135471,
         "timestamp": "2026-06-11T04:58:53+00:00",
@@ -3355,97 +3443,25 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135279,
-        "timestamp": "2026-06-11T03:07:39+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135278,
-        "timestamp": "2026-06-11T03:07:31+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135277,
-        "timestamp": "2026-06-11T03:07:03+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is failing to capture video and is instead displaying an error message stating that no frames have been received. This confirms the recent pattern of intermittent camera errors.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 135276,
-        "timestamp": "2026-06-11T03:06:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135275,
-        "timestamp": "2026-06-11T03:06:38+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway transitions from empty to active as Miller sits on the couch. Steve then walks through the house with a dog, followed by Steve and Penelope moving through the glass doors.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.7}]"
-      },
-      {
-        "id": 135274,
-        "timestamp": "2026-06-11T03:06:09+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135273,
-        "timestamp": "2026-06-11T03:06:00+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135272,
-        "timestamp": "2026-06-11T03:05:59+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6294,
+        "timestamp": "2026-06-11T05:03:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Severe camera glitching is occurring alongside audio of a child crying in distress at the front door and a recent alert of someone calling for help from the backyard, suggesting a potential emergency.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6293,
+        "timestamp": "2026-06-11T04:59:27+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] No activity is visible in the backyard, though a smoke/CO alarm and call for help were recently reported at the front door.",
+        "acted_on_at": null
+      },
       {
         "id": 6292,
         "timestamp": "2026-06-11T04:58:10+00:00",
@@ -3509,28 +3525,11 @@
         "severity": "high",
         "summary": "[living_room] The living room camera feed is experiencing significant digital artifacts and connection errors, making the footage nearly unwatchable.",
         "acted_on_at": null
-      },
-      {
-        "id": 6284,
-        "timestamp": "2026-06-11T04:39:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Significant digital glitching was observed in the initial frames of the camera feed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6283,
-        "timestamp": "2026-06-11T04:38:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] A smoke or carbon monoxide alarm is beeping at the front door, and someone is heard calling for help at the entryway.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Miller",
         "Roxanne",
         "Steve"
       ],
@@ -3545,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T04:38:43+00:00",
+        "backyard": "2026-06-11T04:59:27+00:00",
         "dog_run": "2026-06-11T04:58:10+00:00",
         "entryway": "2026-06-11T04:58:53+00:00",
         "front_door": "2026-06-11T04:43:49+00:00",
         "front_yard": "2026-06-11T04:53:04+00:00",
-        "living_room": "2026-06-11T04:57:25+00:00",
+        "living_room": "2026-06-11T05:03:14+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T04:58:55.511937+00:00"
+      "last_updated": "2026-06-11T05:05:00.321359+00:00"
     }
   },
   "pge": {
