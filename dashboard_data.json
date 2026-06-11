@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 22:40:53",
+  "generated_at": "2026-06-10 22:46:00",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135523,
+        "timestamp": "2026-06-11T05:44:29+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is dark and quiet. No people or animals are visible in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135522,
+        "timestamp": "2026-06-11T05:41:11+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 135521,
+        "timestamp": "2026-06-11T05:40:43+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a significant technical failure. The initial frames show a complete loss of signal with an error message, and the subsequent frames exhibit severe video corruption with heavy vertical color bars.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135520,
+        "timestamp": "2026-06-11T05:40:25+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135519,
+        "timestamp": "2026-06-11T05:38:47+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room camera feed is experiencing extreme digital distortion throughout the sequence. In the final frame, the signal begins to stabilize, revealing Roxanne relaxing on the couch with a dog.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
       {
         "id": 135518,
         "timestamp": "2026-06-11T05:38:02+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135323,
-        "timestamp": "2026-06-11T03:29:33+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is experiencing a technical error and is not receiving frames, as indicated by the error message on the screen. The background shows an empty side yard with tennis balls scattered on the artificial grass.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"tennis balls\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 135322,
-        "timestamp": "2026-06-11T03:29:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135321,
-        "timestamp": "2026-06-11T03:28:59+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is seen in the living area near the kitchen. While the visual scene appears relatively calm despite significant video distortion, there is an ongoing critical concern regarding a recent audio alert of someone calling for help at the entryway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"standing in the living area\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135320,
-        "timestamp": "2026-06-11T03:28:04+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or animals are visible in the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 135319,
-        "timestamp": "2026-06-11T03:27:41+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is not transmitting video and is instead displaying an error message indicating that no frames have been received. This is a continuation of a recent pattern of intermittent camera errors.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6307,
+        "timestamp": "2026-06-11T05:40:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a signal loss and severe video corruption.",
+        "acted_on_at": null
+      },
       {
         "id": 6306,
         "timestamp": "2026-06-11T05:34:25+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] The camera feed is experiencing extreme digital distortion, which may indicate a hardware or network issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 6297,
-        "timestamp": "2026-06-11T05:09:54+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The living room camera feed is experiencing extreme digital distortion and a complete loss of signal, making it impossible to monitor the area effectively.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3536,6 +3536,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3543,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T05:25:35+00:00",
-        "dog_run": "2026-06-11T05:19:33+00:00",
-        "entryway": "2026-06-11T04:58:53+00:00",
+        "backyard": "2026-06-11T05:41:11+00:00",
+        "dog_run": "2026-06-11T05:40:43+00:00",
+        "entryway": "2026-06-11T05:44:29+00:00",
         "front_door": "2026-06-11T05:26:11+00:00",
         "front_yard": "2026-06-11T05:34:25+00:00",
-        "living_room": "2026-06-11T05:28:11+00:00",
+        "living_room": "2026-06-11T05:38:47+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T05:38:30.585085+00:00"
+      "last_updated": "2026-06-11T05:44:45.240139+00:00"
     }
   },
   "pge": {
