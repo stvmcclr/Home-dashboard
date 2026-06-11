@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 04:09:06",
+  "generated_at": "2026-06-11 04:14:12",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135713,
+        "timestamp": "2026-06-11T11:13:31+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is intermittently failing, displaying an error message alongside clear views of an empty side yard. No people or dogs are visible in the yard during the functional frames.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135712,
+        "timestamp": "2026-06-11T11:08:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unknown at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135711,
+        "timestamp": "2026-06-11T11:07:46+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and driveway are empty and quiet during the early morning hours. Roxanne's black SUV is parked in the driveway, and several cars are parked along the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Porsche Cayenne Coupe\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
       {
         "id": 135710,
         "timestamp": "2026-06-11T11:04:28+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135513,
-        "timestamp": "2026-06-11T05:30:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 135512,
-        "timestamp": "2026-06-11T05:28:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135511,
-        "timestamp": "2026-06-11T05:28:11+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room camera feed experiences extreme digital distortion for most of the sequence. In the final frame, the signal stabilizes, revealing Roxanne relaxing on the couch with a dog.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"digital distortion\", \"entity_state\": \"active\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 6332,
+        "timestamp": "2026-06-11T11:13:31+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing intermittent technical failure, displaying error messages.",
+        "acted_on_at": null
+      },
       {
         "id": 6331,
         "timestamp": "2026-06-11T10:52:52+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is failing to provide a video feed, displaying an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 6322,
-        "timestamp": "2026-06-11T08:35:26+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Multiple exterior cameras (front yard, dog run) are experiencing systemic failures, which means the system cannot confirm if the minor, unclassified audio events detected near the front door and yard are due to wildlife, neighborhood activity, or something else. This technical blind spot is the most critical observation.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3599,14 +3599,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-11T10:54:38+00:00",
-        "dog_run": "2026-06-11T10:52:51+00:00",
+        "dog_run": "2026-06-11T11:13:31+00:00",
         "entryway": "2026-06-11T11:04:22+00:00",
         "front_door": "2026-06-11T10:57:10+00:00",
-        "front_yard": "2026-06-11T10:47:07+00:00",
+        "front_yard": "2026-06-11T11:07:46+00:00",
         "living_room": "2026-06-11T10:32:51+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T11:07:37.433122+00:00"
+      "last_updated": "2026-06-11T11:13:40.924956+00:00"
     }
   },
   "pge": {
