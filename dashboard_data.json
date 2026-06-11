@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 01:45:26",
+  "generated_at": "2026-06-11 01:50:34",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135644,
+        "timestamp": "2026-06-11T08:49:25+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 135643,
+        "timestamp": "2026-06-11T08:48:49+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135642,
+        "timestamp": "2026-06-11T08:48:05+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is non-functional and displaying an error message indicating that no frames are being received. No activity or entities can be observed in the side yard due to this camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135641,
+        "timestamp": "2026-06-11T08:47:36+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is dark and empty during the night. No movement or people are detected in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135640,
+        "timestamp": "2026-06-11T08:44:52+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 135639,
         "timestamp": "2026-06-11T08:42:44+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135444,
-        "timestamp": "2026-06-11T04:36:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135443,
-        "timestamp": "2026-06-11T04:36:42+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The side yard dog run is empty and quiet at night with landscape lights illuminated. The camera initially displayed error messages indicating no frames were received before showing the unoccupied yard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 135442,
-        "timestamp": "2026-06-11T04:36:08+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "someone calling for help or yelling for assistance at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135441,
-        "timestamp": "2026-06-11T04:35:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135440,
-        "timestamp": "2026-06-11T04:34:28+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3561,21 +3561,22 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T08:28:49+00:00",
-        "dog_run": "2026-06-11T08:27:38+00:00",
-        "entryway": "2026-06-11T08:02:09+00:00",
+        "backyard": "2026-06-11T08:49:25+00:00",
+        "dog_run": "2026-06-11T08:48:05+00:00",
+        "entryway": "2026-06-11T08:47:36+00:00",
         "front_door": "2026-06-11T08:33:37+00:00",
         "front_yard": "2026-06-11T08:42:44+00:00",
         "living_room": "2026-06-11T08:13:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T08:44:19.584575+00:00"
+      "last_updated": "2026-06-11T08:50:26.832926+00:00"
     }
   },
   "pge": {
