@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 02:41:49",
+  "generated_at": "2026-06-11 02:47:00",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135671,
+        "timestamp": "2026-06-11T09:45:00+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard and street are quiet and empty during the night. An unknown dark SUV remains parked in the driveway, consistent with recent observations.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown dark SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 135670,
+        "timestamp": "2026-06-11T09:42:06+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 14.96h. HR 64bpm. HRV 167ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-699d0f60",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
       {
         "id": 135669,
         "timestamp": "2026-06-11T09:35:29+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135471,
-        "timestamp": "2026-06-11T04:58:53+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is dark and quiet at night. No people or animals are visible in the foyer.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 135470,
-        "timestamp": "2026-06-11T04:58:10+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The camera is displaying a technical error message indicating that no frames are being received. The visible portion of the dog run appears empty and quiet under the landscape lights.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 6327,
+        "timestamp": "2026-06-11T09:45:13+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] An unknown dark vehicle is parked in the driveway in the middle of the night.",
+        "acted_on_at": null
+      },
       {
         "id": 6326,
         "timestamp": "2026-06-11T09:36:36+00:00",
@@ -3545,19 +3553,13 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is not receiving frames and is displaying an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 6317,
-        "timestamp": "2026-06-11T07:18:05+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is non-functional and not providing any video feed.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3572,11 +3574,11 @@
         "dog_run": "2026-06-11T09:29:15+00:00",
         "entryway": "2026-06-11T09:33:05+00:00",
         "front_door": "2026-06-11T09:35:11+00:00",
-        "front_yard": "2026-06-11T09:24:16+00:00",
+        "front_yard": "2026-06-11T09:45:00+00:00",
         "living_room": "2026-06-11T08:59:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T09:39:25.36428+00:00"
+      "last_updated": "2026-06-11T09:45:28.010616+00:00"
     }
   },
   "pge": {
