@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 10:44:19",
+  "generated_at": "2026-06-11 10:49:28",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1328,6 +1328,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 136859,
+        "timestamp": "2026-06-11T17:46:00+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch and patio area are empty and quiet under a clear blue sky. No people or animals are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 136858,
+        "timestamp": "2026-06-11T17:45:55+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136857,
+        "timestamp": "2026-06-11T17:45:24+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136856,
+        "timestamp": "2026-06-11T17:44:31+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136855,
+        "timestamp": "2026-06-11T17:43:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 136854,
         "timestamp": "2026-06-11T17:42:52+00:00",
@@ -3472,64 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 136659,
-        "timestamp": "2026-06-11T16:31:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136658,
-        "timestamp": "2026-06-11T16:31:05+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "wind at entryway at entryway (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136656,
-        "timestamp": "2026-06-11T16:30:30+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "wind at entryway at entryway (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136657,
-        "timestamp": "2026-06-11T16:30:30+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 136655,
-        "timestamp": "2026-06-11T16:30:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6410,
+        "timestamp": "2026-06-11T17:44:07+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a persistent, unclassified audio source in the backyard and dog run area (10:36 - 10:42) that is causing the dogs to be repeatedly agitated and barking, even though the area is visually empty and the family is present. This suggests an ongoing stimulus (e.g., wildlife, distant noise, or a mechanical issue) that is drawing the dogs' attention and should be investigated.",
+        "acted_on_at": null
+      },
       {
         "id": 6408,
         "timestamp": "2026-06-11T17:43:37+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[backyard] The camera experienced a period of no frames, followed by Steve appearing extremely close to the lens with a distressed facial expression.",
         "acted_on_at": null
-      },
-      {
-        "id": 6400,
-        "timestamp": "2026-06-11T16:46:20+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio sensors report barking and a child crying, which is not visually apparent in the living room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3631,12 +3631,12 @@
         "backyard": "2026-06-11T17:37:21+00:00",
         "dog_run": "2026-06-11T17:36:13+00:00",
         "entryway": "2026-06-11T17:20:00+00:00",
-        "front_door": "2026-06-11T17:25:30+00:00",
+        "front_door": "2026-06-11T17:46:00+00:00",
         "front_yard": "2026-06-11T17:29:54+00:00",
         "living_room": "2026-06-11T17:32:01+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T17:43:49.988457+00:00"
+      "last_updated": "2026-06-11T17:46:52.248734+00:00"
     }
   },
   "pge": {
