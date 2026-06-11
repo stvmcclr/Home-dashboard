@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 02:05:56",
+  "generated_at": "2026-06-11 02:11:03",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135655,
+        "timestamp": "2026-06-11T09:08:42+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional, displaying error messages and a distorted, glitched image. No activity or entities can be observed in the side yard due to this technical failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135654,
+        "timestamp": "2026-06-11T09:06:43+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135653,
+        "timestamp": "2026-06-11T09:06:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 135652,
         "timestamp": "2026-06-11T09:05:39+00:00",
@@ -3438,39 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135455,
-        "timestamp": "2026-06-11T04:43:49+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and quiet at night. No people, animals, or movement are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 135454,
-        "timestamp": "2026-06-11T04:42:32+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room camera feed is experiencing severe technical issues, including a period of no frames received and heavy digital artifacts. Steve is visible on the couch working on a laptop, and Posey is nearby, but the footage is largely unwatchable due to the glitching.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"working on laptop\", \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera malfunction\", \"entity_state\": \"digital artifacts and no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 135453,
-        "timestamp": "2026-06-11T04:41:34+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3570,14 +3570,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-11T08:49:25+00:00",
-        "dog_run": "2026-06-11T08:48:05+00:00",
+        "dog_run": "2026-06-11T09:08:42+00:00",
         "entryway": "2026-06-11T08:47:36+00:00",
         "front_door": "2026-06-11T08:54:11+00:00",
         "front_yard": "2026-06-11T09:03:33+00:00",
         "living_room": "2026-06-11T08:59:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T09:05:46.598695+00:00"
+      "last_updated": "2026-06-11T09:08:49.180511+00:00"
     }
   },
   "pge": {
