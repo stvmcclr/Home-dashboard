@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 04:55:18",
+  "generated_at": "2026-06-11 05:00:24",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135741,
+        "timestamp": "2026-06-11T11:59:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unknown at backyard",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135740,
+        "timestamp": "2026-06-11T11:58:37+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is dark and empty during the early morning hours. No movement or activity is detected in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135739,
+        "timestamp": "2026-06-11T11:57:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135738,
+        "timestamp": "2026-06-11T11:56:42+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 135737,
+        "timestamp": "2026-06-11T11:54:52+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure, displaying an error message indicating that no frames are being received. This is consistent with recent history of intermittent camera issues.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"failing\", \"confidence\": 0.95}]"
+      },
       {
         "id": 135736,
         "timestamp": "2026-06-11T11:53:00+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135541,
-        "timestamp": "2026-06-11T05:53:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135540,
-        "timestamp": "2026-06-11T05:52:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135539,
-        "timestamp": "2026-06-11T05:52:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135538,
-        "timestamp": "2026-06-11T05:51:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135537,
-        "timestamp": "2026-06-11T05:51:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6335,
+        "timestamp": "2026-06-11T11:54:52+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera feed is currently unavailable due to a technical error.",
+        "acted_on_at": null
+      },
       {
         "id": 6334,
         "timestamp": "2026-06-11T11:38:25+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "Despite the late hour and the presence of an unknown dark vehicle parked in the driveway (2:24 AM), the home occupancy signal confirms 16 devices are still present (02:31 AM). Furthermore, multiple exterior cameras are experiencing systemic failures, which could obscure any activity related to the vehicle or potential unauthorized entry.",
         "acted_on_at": null
-      },
-      {
-        "id": 6325,
-        "timestamp": "2026-06-11T09:24:17+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] An unknown dark vehicle is parked in the driveway late at night.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3596,15 +3596,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-11T11:36:14+00:00",
-        "dog_run": "2026-06-11T11:34:12+00:00",
+        "backyard": "2026-06-11T11:56:42+00:00",
+        "dog_run": "2026-06-11T11:54:52+00:00",
         "entryway": "2026-06-11T11:49:55+00:00",
-        "front_door": "2026-06-11T11:38:13+00:00",
+        "front_door": "2026-06-11T11:58:37+00:00",
         "front_yard": "2026-06-11T11:49:03+00:00",
         "living_room": "2026-06-11T11:19:08+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T11:53:13.320998+00:00"
+      "last_updated": "2026-06-11T11:59:17.02186+00:00"
     }
   },
   "pge": {
