@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 00:18:13",
+  "generated_at": "2026-06-11 00:23:22",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135602,
+        "timestamp": "2026-06-11T07:18:05+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not receiving video frames and is displaying an error message. This technical failure is consistent with recent reports of intermittent camera errors.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 135601,
+        "timestamp": "2026-06-11T07:16:33+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is dark and empty. No movement or people are detected in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 135600,
         "timestamp": "2026-06-11T07:10:27+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135402,
-        "timestamp": "2026-06-11T04:09:16+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135401,
-        "timestamp": "2026-06-11T04:07:58+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6317,
+        "timestamp": "2026-06-11T07:18:05+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is non-functional and not providing any video feed.",
+        "acted_on_at": null
+      },
       {
         "id": 6316,
         "timestamp": "2026-06-11T06:57:36+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] The camera feed is experiencing extreme digital distortion.",
         "acted_on_at": null
-      },
-      {
-        "id": 6307,
-        "timestamp": "2026-06-11T05:40:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is experiencing a signal loss and severe video corruption.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3565,6 +3565,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3573,13 +3574,13 @@
       "last_motion": {
         "backyard": "2026-06-11T07:04:41+00:00",
         "dog_run": "2026-06-11T07:04:11+00:00",
-        "entryway": "2026-06-11T06:31:06+00:00",
+        "entryway": "2026-06-11T07:16:33+00:00",
         "front_door": "2026-06-11T07:10:27+00:00",
-        "front_yard": "2026-06-11T06:57:36+00:00",
+        "front_yard": "2026-06-11T07:18:05+00:00",
         "living_room": "2026-06-11T06:42:48+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T07:16:06.347626+00:00"
+      "last_updated": "2026-06-11T07:22:10.255566+00:00"
     }
   },
   "pge": {
