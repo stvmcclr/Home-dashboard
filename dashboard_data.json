@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 21:13:42",
+  "generated_at": "2026-06-10 21:18:50",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 135414,
+        "timestamp": "2026-06-11T04:15:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135413,
+        "timestamp": "2026-06-11T04:14:27+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet at night. The landscape lights are illuminated along the fence, and the gate is closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"AC unit\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 135412,
+        "timestamp": "2026-06-11T04:13:49+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135411,
+        "timestamp": "2026-06-11T04:13:48+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135410,
+        "timestamp": "2026-06-11T04:13:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 135409,
+        "timestamp": "2026-06-11T04:13:29+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet. No people or animals are visible in the foyer.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 135408,
         "timestamp": "2026-06-11T04:12:11+00:00",
@@ -3377,72 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 135214,
-        "timestamp": "2026-06-11T02:41:26+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135213,
-        "timestamp": "2026-06-11T02:41:23+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is initially empty, but Penelope is seen walking on the stairs towards the end of the sequence.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 135212,
-        "timestamp": "2026-06-11T02:41:22+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "wind at entryway at entryway (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135211,
-        "timestamp": "2026-06-11T02:40:48+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135210,
-        "timestamp": "2026-06-11T02:40:19+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 135209,
-        "timestamp": "2026-06-11T02:39:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3538,6 +3538,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3546,14 +3547,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-11T03:55:57+00:00",
-        "dog_run": "2026-06-11T03:53:49+00:00",
-        "entryway": "2026-06-11T03:28:04+00:00",
+        "dog_run": "2026-06-11T04:14:27+00:00",
+        "entryway": "2026-06-11T04:13:29+00:00",
         "front_door": "2026-06-11T04:02:56+00:00",
         "front_yard": "2026-06-11T04:10:38+00:00",
         "living_room": "2026-06-11T04:09:40+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T04:13:18.251952+00:00"
+      "last_updated": "2026-06-11T04:16:20.830416+00:00"
     }
   },
   "pge": {
