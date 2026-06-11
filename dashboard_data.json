@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10 17:23:13",
+  "generated_at": "2026-06-10 17:28:20",
   "as_of": "2026-06-10",
   "projects": [
     {
@@ -1215,6 +1215,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 134916,
+        "timestamp": "2026-06-11T00:24:59+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 134915,
+        "timestamp": "2026-06-11T00:24:51+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is currently empty. No people or animals are visible in the foyer area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 134914,
+        "timestamp": "2026-06-11T00:24:22+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 134913,
+        "timestamp": "2026-06-11T00:24:13+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is currently empty and quiet. There was a brief period where the camera feed showed no frames, but the view has since returned to the unoccupied room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 134912,
+        "timestamp": "2026-06-11T00:23:28+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 134911,
         "timestamp": "2026-06-11T00:22:42+00:00",
@@ -3359,64 +3414,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 134716,
-        "timestamp": "2026-06-10T23:10:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134715,
-        "timestamp": "2026-06-10T23:10:26+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134714,
-        "timestamp": "2026-06-10T23:10:18+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134713,
-        "timestamp": "2026-06-10T23:09:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 134712,
-        "timestamp": "2026-06-10T23:09:50+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "Miller is sitting on the trampoline in the backyard, surrounded by several white balls scattered on the mat. The white gate in the side passage remains closed, blocking access to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": \"closed\", \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 6243,
+        "timestamp": "2026-06-11T00:24:13+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A brief interruption in the camera stream was detected.",
+        "acted_on_at": null
+      },
       {
         "id": 6242,
         "timestamp": "2026-06-11T00:22:39+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "high",
         "summary": "There is a critical and immediate conflict between the visual and audio signals at 16:27; the camera shows the living room as empty or containing only a resting dog and an unknown person, but the audio simultaneously records urgent dog barking, yelling for help, and general distress. This suggests a high-stress, unobserved event or potential intrusion that requires immediate attention.",
         "acted_on_at": null
-      },
-      {
-        "id": 6232,
-        "timestamp": "2026-06-10T23:27:57+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 4:26PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3517,13 +3517,13 @@
       "last_motion": {
         "backyard": "2026-06-11T00:22:39+00:00",
         "dog_run": "2026-06-11T00:16:31+00:00",
-        "entryway": "2026-06-11T00:08:02+00:00",
+        "entryway": "2026-06-11T00:24:51+00:00",
         "front_door": "2026-06-10T23:46:30+00:00",
         "front_yard": "2026-06-11T00:13:21+00:00",
-        "living_room": "2026-06-11T00:19:48+00:00",
+        "living_room": "2026-06-11T00:24:13+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T00:22:51.745098+00:00"
+      "last_updated": "2026-06-11T00:25:53.744971+00:00"
     }
   },
   "pge": {
