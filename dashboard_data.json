@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 10:28:53",
+  "generated_at": "2026-06-11 10:34:04",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1328,6 +1328,94 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 136827,
+        "timestamp": "2026-06-11T17:31:33+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136826,
+        "timestamp": "2026-06-11T17:30:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136825,
+        "timestamp": "2026-06-11T17:29:54+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying an error message instead of a video stream. Simultaneously, audio from the front door indicates a child is crying or yelling in distress.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera connection error\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"crying in distress\", \"confidence\": 0.7}]"
+      },
+      {
+        "id": 136824,
+        "timestamp": "2026-06-11T17:29:33+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "routine audio at living_room \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136823,
+        "timestamp": "2026-06-11T17:29:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136822,
+        "timestamp": "2026-06-11T17:28:50+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 silence or quiet ambient background noise",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 136821,
+        "timestamp": "2026-06-11T17:28:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 136820,
+        "timestamp": "2026-06-11T17:28:39+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 136819,
         "timestamp": "2026-06-11T17:28:20+00:00",
@@ -3439,97 +3527,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking urgently in backyard\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"crying in distress in backyard\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 136627,
-        "timestamp": "2026-06-11T16:17:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136626,
-        "timestamp": "2026-06-11T16:17:46+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 silence or quiet ambient background noise",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136625,
-        "timestamp": "2026-06-11T16:17:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "an unexpected or unfamiliar voice indoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136624,
-        "timestamp": "2026-06-11T16:17:14+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136623,
-        "timestamp": "2026-06-11T16:17:01+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136622,
-        "timestamp": "2026-06-11T16:16:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136621,
-        "timestamp": "2026-06-11T16:16:45+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 136620,
-        "timestamp": "2026-06-11T16:16:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6404,
+        "timestamp": "2026-06-11T17:29:54+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not streaming, and audio indicates a child is crying in distress at the front door.",
+        "acted_on_at": null
+      },
       {
         "id": 6403,
         "timestamp": "2026-06-11T17:15:34+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at living room (4x since 8:44AM).",
         "acted_on_at": null
-      },
-      {
-        "id": 6395,
-        "timestamp": "2026-06-11T16:43:01+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at backyard (5x since 8:52AM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3632,11 +3632,11 @@
         "dog_run": "2026-06-11T17:15:33+00:00",
         "entryway": "2026-06-11T17:20:00+00:00",
         "front_door": "2026-06-11T17:25:30+00:00",
-        "front_yard": "2026-06-11T17:09:04+00:00",
+        "front_yard": "2026-06-11T17:29:54+00:00",
         "living_room": "2026-06-11T17:18:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-11T17:28:33.282505+00:00"
+      "last_updated": "2026-06-11T17:31:38.143715+00:00"
     }
   },
   "pge": {
