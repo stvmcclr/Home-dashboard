@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 03:34:17",
+  "generated_at": "2026-06-12 03:39:23",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138627,
+        "timestamp": "2026-06-12T10:38:39+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is dark and empty during the early morning hours. No activity is visible within the house, though unclassified audio is being detected from the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138626,
+        "timestamp": "2026-06-12T10:38:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138625,
+        "timestamp": "2026-06-12T10:37:51+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently failing to transmit video, displaying an error message indicating that no frames have been received. This suggests a recurring technical issue or a new connection failure, despite a recent recovery from a similar problem.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138624,
+        "timestamp": "2026-06-12T10:36:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138623,
+        "timestamp": "2026-06-12T10:33:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138622,
         "timestamp": "2026-06-12T10:33:00+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138427,
-        "timestamp": "2026-06-12T06:44:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138426,
-        "timestamp": "2026-06-12T06:41:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 138425,
-        "timestamp": "2026-06-12T06:38:34+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138424,
-        "timestamp": "2026-06-12T06:36:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138423,
-        "timestamp": "2026-06-12T06:33:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6517,
+        "timestamp": "2026-06-12T10:38:39+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Unclassified audio is heard from the backyard, though no activity is visible in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 6516,
         "timestamp": "2026-06-12T10:04:38+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "There is a persistent pattern of unclassified audio detections in the backyard (00:43, 00:47, 00:48, 00:52, 00:54, 00:56, 00:59, 01:01) that does not correlate with any visible activity, suggesting an unknown source of noise or potential wildlife presence that the cameras are failing to capture due to technical issues or poor visibility.",
         "acted_on_at": null
-      },
-      {
-        "id": 6507,
-        "timestamp": "2026-06-12T07:28:09+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] Front yard camera outage: no video frames are being received, only error messages.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3561,9 +3561,9 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3572,11 +3572,11 @@
         "dog_run": "2026-06-12T10:23:18+00:00",
         "entryway": "2026-06-12T10:08:53+00:00",
         "front_door": "2026-06-12T10:19:50+00:00",
-        "front_yard": "2026-06-12T10:17:09+00:00",
-        "living_room": "2026-06-12T09:06:01+00:00",
+        "front_yard": "2026-06-12T10:37:51+00:00",
+        "living_room": "2026-06-12T10:38:39+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T10:33:09.078534+00:00"
+      "last_updated": "2026-06-12T10:39:14.357988+00:00"
     }
   },
   "pge": {
