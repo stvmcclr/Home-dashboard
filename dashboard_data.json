@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 02:37:54",
+  "generated_at": "2026-06-12 02:43:01",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138572,
+        "timestamp": "2026-06-12T09:41:00+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera initially displays a technical error message indicating no frames are being received. The final frame shows a clear view of the side yard, which is currently empty and the gate appears to be closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 138571,
+        "timestamp": "2026-06-12T09:39:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138570,
+        "timestamp": "2026-06-12T09:39:30+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138569,
+        "timestamp": "2026-06-12T09:39:02+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and backyard area are empty and quiet during the night. No people or animals are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138568,
+        "timestamp": "2026-06-12T09:38:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138567,
+        "timestamp": "2026-06-12T09:37:42+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 138566,
         "timestamp": "2026-06-12T09:35:00+00:00",
@@ -3405,75 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138372,
-        "timestamp": "2026-06-12T06:00:30+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch in the living room late at night. He shifts from lying on his side to lying on his back while a dog rests nearby.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": \"resting\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 138371,
-        "timestamp": "2026-06-12T06:00:08+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138370,
-        "timestamp": "2026-06-12T06:00:02+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138369,
-        "timestamp": "2026-06-12T05:59:05+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138368,
-        "timestamp": "2026-06-12T05:58:32+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138367,
-        "timestamp": "2026-06-12T05:58:31+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6515,
+        "timestamp": "2026-06-12T09:41:00+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera experienced a period of technical failure, displaying error messages before successfully capturing a frame.",
+        "acted_on_at": null
+      },
       {
         "id": 6514,
         "timestamp": "2026-06-12T09:04:06+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "There is a persistent discrepancy between the camera feeds, which consistently report the backyard and front yard as empty and quiet, and the audio sensors, which repeatedly detect unclassified audio between 23:48 and 00:00. This suggests unexplained activity occurring outside the home while the family is settling down for the night, warranting increased monitoring of the outdoor perimeter.",
         "acted_on_at": null
-      },
-      {
-        "id": 6501,
-        "timestamp": "2026-06-12T07:02:30+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: backyard averaging 83 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,21 +3563,20 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T09:17:04+00:00",
-        "dog_run": "2026-06-12T09:20:14+00:00",
+        "backyard": "2026-06-12T09:37:42+00:00",
+        "dog_run": "2026-06-12T09:41:00+00:00",
         "entryway": "2026-06-12T09:23:26+00:00",
-        "front_door": "2026-06-12T09:18:40+00:00",
+        "front_door": "2026-06-12T09:39:02+00:00",
         "front_yard": "2026-06-12T09:35:00+00:00",
         "living_room": "2026-06-12T09:06:01+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T09:35:17.489422+00:00"
+      "last_updated": "2026-06-12T09:41:21.126313+00:00"
     }
   },
   "pge": {
