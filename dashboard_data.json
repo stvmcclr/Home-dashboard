@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 18:41:17",
+  "generated_at": "2026-06-11 18:46:24",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1215,6 +1215,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 137917,
+        "timestamp": "2026-06-12T01:42:17+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 137916,
+        "timestamp": "2026-06-12T01:41:57+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is displaying a technical error message, indicating that no video frames are being received. This is a continuation of a recent period where the camera has been non-functional.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 137915,
+        "timestamp": "2026-06-12T01:41:55+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 137914,
+        "timestamp": "2026-06-12T01:40:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 137913,
+        "timestamp": "2026-06-12T01:40:33+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is standing in the kitchen area while Penelope sits on the couch. A tricolor dog, likely Posey, is walking through the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
       {
         "id": 137912,
         "timestamp": "2026-06-12T01:39:49+00:00",
@@ -3359,64 +3414,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 137717,
-        "timestamp": "2026-06-12T00:01:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137716,
-        "timestamp": "2026-06-12T00:01:19+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137715,
-        "timestamp": "2026-06-12T00:01:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137714,
-        "timestamp": "2026-06-12T00:00:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137713,
-        "timestamp": "2026-06-12T00:00:11+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch and visible backyard area appear empty and still, but audio indicates that the dogs are barking urgently at the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"dogs\", \"entity_state\": \"barking\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 6467,
+        "timestamp": "2026-06-12T01:41:57+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is non-functional and displaying a technical error message.",
+        "acted_on_at": null
+      },
       {
         "id": 6466,
         "timestamp": "2026-06-12T01:20:23+00:00",
@@ -3488,20 +3496,13 @@
         "severity": "high",
         "summary": "The combination of the high-priority smoke/CO alarm alert at 17:20, the subsequent movement of people (Steve/Posey), and the current empty state of the house, suggests the immediate danger may have passed, but the safety system status (alarm reset/clear) is unknown. Furthermore, the persistent unclassified audio and dog restlessness, coupled with multiple camera outages (front yard, dog run, front door), indicate a significant lapse in perimeter and internal monitoring that requires immediate attention.",
         "acted_on_at": null
-      },
-      {
-        "id": 6457,
-        "timestamp": "2026-06-12T00:47:07+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 4:44PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
         "Miller",
+        "Penelope",
         "Roxanne",
         "Steve"
       ],
@@ -3517,14 +3518,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T01:38:54+00:00",
-        "dog_run": "2026-06-12T01:20:23+00:00",
+        "dog_run": "2026-06-12T01:41:57+00:00",
         "entryway": "2026-06-12T01:36:47+00:00",
         "front_door": "2026-06-12T01:25:03+00:00",
         "front_yard": "2026-06-12T01:32:04+00:00",
-        "living_room": "2026-06-12T01:33:43+00:00",
+        "living_room": "2026-06-12T01:40:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T01:40:26.703116+00:00"
+      "last_updated": "2026-06-12T01:43:28.053048+00:00"
     }
   },
   "pge": {
