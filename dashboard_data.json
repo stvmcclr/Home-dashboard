@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 03:44:31",
+  "generated_at": "2026-06-12 03:49:38",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138634,
+        "timestamp": "2026-06-12T10:44:54+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure, displaying error messages and a heavily glitched video feed. No people or dogs can be observed due to the loss of a stable video stream.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 138633,
+        "timestamp": "2026-06-12T10:43:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 138632,
+        "timestamp": "2026-06-12T10:43:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138631,
         "timestamp": "2026-06-12T10:42:07+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138434,
-        "timestamp": "2026-06-12T06:48:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138433,
-        "timestamp": "2026-06-12T06:47:58+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is dark and quiet during the late night hours. No people or animals are clearly visible in the current view, though the room remains still.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 138432,
-        "timestamp": "2026-06-12T06:46:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6518,
+        "timestamp": "2026-06-12T10:44:54+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not functioning correctly, showing error messages and severe visual distortion.",
+        "acted_on_at": null
+      },
       {
         "id": 6517,
         "timestamp": "2026-06-12T10:38:39+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing technical failure and is not providing consistent video.",
         "acted_on_at": null
-      },
-      {
-        "id": 6508,
-        "timestamp": "2026-06-12T08:03:36+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a persistent pattern of unclassified audio detections in the backyard (00:43, 00:47, 00:48, 00:52, 00:54, 00:56, 00:59, 01:01) that does not correlate with any visible activity, suggesting an unknown source of noise or potential wildlife presence that the cameras are failing to capture due to technical issues or poor visibility.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,14 +3569,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T10:40:32+00:00",
-        "dog_run": "2026-06-12T10:23:18+00:00",
+        "dog_run": "2026-06-12T10:44:54+00:00",
         "entryway": "2026-06-12T10:08:53+00:00",
         "front_door": "2026-06-12T10:42:07+00:00",
         "front_yard": "2026-06-12T10:37:51+00:00",
         "living_room": "2026-06-12T10:38:39+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T10:42:16.428865+00:00"
+      "last_updated": "2026-06-12T10:48:19.657252+00:00"
     }
   },
   "pge": {
