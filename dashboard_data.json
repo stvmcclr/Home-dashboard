@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 16:02:56",
+  "generated_at": "2026-06-12 16:08:03",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1440,6 +1440,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140486,
+        "timestamp": "2026-06-12T23:05:33+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140485,
+        "timestamp": "2026-06-12T23:04:55+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140484,
+        "timestamp": "2026-06-12T23:04:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140483,
+        "timestamp": "2026-06-12T23:03:55+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140482,
+        "timestamp": "2026-06-12T23:03:48+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Miller is sitting on the couch using his mobile device while Penelope moves through the kitchen area. Although the living room scene appears calm, audio from the entryway indicates someone is calling for help.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.7}]"
+      },
       {
         "id": 140481,
         "timestamp": "2026-06-12T23:02:54+00:00",
@@ -3584,64 +3639,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 140286,
-        "timestamp": "2026-06-12T21:21:08+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140285,
-        "timestamp": "2026-06-12T21:19:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140284,
-        "timestamp": "2026-06-12T21:19:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140283,
-        "timestamp": "2026-06-12T21:18:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140282,
-        "timestamp": "2026-06-12T21:18:07+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6617,
+        "timestamp": "2026-06-12T23:03:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Audio from the entryway indicates someone is calling for help, which is a potential emergency and contradicts the calm visual scene in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 6616,
         "timestamp": "2026-06-12T22:57:35+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "medium",
         "summary": "The combination of urgent dog barking, doorbell activations, and persistent unclassified audio aligns with simultaneous front_yard and dog_run camera outages, strongly suggesting a visitor or delivery at the front door that the system cannot visually verify. This creates a monitoring blind spot during active perimeter events, so Steve should check the doorbell feed or verify camera status.",
         "acted_on_at": null
-      },
-      {
-        "id": 6607,
-        "timestamp": "2026-06-12T20:20:34+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent unclassified audio in the dog_run and backyard zones aligns with simultaneous outages in the dog_run and front_yard cameras, indicating likely electrical or network interference from the failing hardware rather than an external event, but it leaves the side passage and driveway blind during a period of flagged high activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3746,10 +3746,10 @@
         "entryway": "2026-06-12T22:59:50+00:00",
         "front_door": "2026-06-12T22:46:09+00:00",
         "front_yard": "2026-06-12T22:30:56+00:00",
-        "living_room": "2026-06-12T23:01:37+00:00",
+        "living_room": "2026-06-12T23:03:48+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T23:02:56.246677+00:00"
+      "last_updated": "2026-06-12T23:05:57.781248+00:00"
     }
   },
   "pge": {
