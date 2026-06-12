@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 19:47:53",
+  "generated_at": "2026-06-11 19:53:01",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1215,6 +1215,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138073,
+        "timestamp": "2026-06-12T02:50:07+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional and displaying a technical error message indicating that no video frames are being received. This is a continuation of a recent period of camera failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138072,
+        "timestamp": "2026-06-12T02:49:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138071,
+        "timestamp": "2026-06-12T02:48:31+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and still. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 138070,
+        "timestamp": "2026-06-12T02:47:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138069,
         "timestamp": "2026-06-12T02:46:55+00:00",
@@ -3370,53 +3414,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 137873,
-        "timestamp": "2026-06-12T01:24:09+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137872,
-        "timestamp": "2026-06-12T01:23:58+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137871,
-        "timestamp": "2026-06-12T01:23:38+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 137870,
-        "timestamp": "2026-06-12T01:22:56+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6478,
+        "timestamp": "2026-06-12T02:50:13+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "There is a concerning pattern of multiple, simultaneous camera failures (Front Yard, Dog Run, Living Room glitches) that coincide directly with the appearance of unknown individuals (red and green shirts) in the backyard/side passage. This suggests a potential security compromise or deliberate tampering, rather than random technical malfunctions.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6477,
+        "timestamp": "2026-06-12T02:48:54+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at backyard this hour: 11 observations vs typical 1 for weekday 19:00",
+        "acted_on_at": null
+      },
       {
         "id": 6476,
         "timestamp": "2026-06-12T02:40:00+00:00",
@@ -3480,22 +3496,6 @@
         "severity": "high",
         "summary": "[entryway] A doorbell chime or knock was heard, and Roxanne is heading to the door.",
         "acted_on_at": null
-      },
-      {
-        "id": 6468,
-        "timestamp": "2026-06-12T01:48:52+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There are multiple instances of unclassified audio (18:40, 18:42, 18:43, 18:45) coinciding with the doorbell ringing three times (18:44, 18:46, 18:48), despite the camera confirming the entry area is empty and still. This pattern suggests repeated, unobserved attempts at entry or external interaction that requires manual verification.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6467,
-        "timestamp": "2026-06-12T01:41:57+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is non-functional and displaying a technical error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3517,15 +3517,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T02:33:32+00:00",
-        "dog_run": "2026-06-12T02:28:02+00:00",
+        "backyard": "2026-06-12T02:48:31+00:00",
+        "dog_run": "2026-06-12T02:50:07+00:00",
         "entryway": "2026-06-12T02:23:22+00:00",
         "front_door": "2026-06-12T02:34:56+00:00",
         "front_yard": "2026-06-12T02:40:00+00:00",
         "living_room": "2026-06-12T02:46:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T02:47:15.290025+00:00"
+      "last_updated": "2026-06-12T02:50:17.12097+00:00"
     }
   },
   "pge": {
