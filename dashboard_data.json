@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 03:03:31",
+  "generated_at": "2026-06-12 03:08:39",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138597,
+        "timestamp": "2026-06-12T10:05:04+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138596,
+        "timestamp": "2026-06-12T10:04:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138595,
         "timestamp": "2026-06-12T10:01:57+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 138397,
-        "timestamp": "2026-06-12T06:17:07+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138396,
-        "timestamp": "2026-06-12T06:15:43+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch in the living room late at night. A dog rests quietly on the sofa beside him.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": \"resting\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 6516,
+        "timestamp": "2026-06-12T10:04:38+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Despite the cameras showing empty scenes or technical failures, there is a persistent pattern of unclassified audio detected in the backyard and dog run (02:53-03:01). This suggests an ongoing, non-human environmental sound source (e.g., wildlife or distant noise) that is not being correctly classified, and warrants a manual check of the outdoor area.",
+        "acted_on_at": null
+      },
       {
         "id": 6515,
         "timestamp": "2026-06-12T09:41:00+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] Front yard camera outage: no video frames are being received, only error messages.",
         "acted_on_at": null
-      },
-      {
-        "id": 6506,
-        "timestamp": "2026-06-12T07:03:22+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "There is a persistent discrepancy between the camera feeds, which consistently report the backyard and front yard as empty and quiet, and the audio sensors, which repeatedly detect unclassified audio between 23:48 and 00:00. This suggests unexplained activity occurring outside the home while the family is settling down for the night, warranting increased monitoring of the outdoor perimeter.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,7 +3575,7 @@
         "living_room": "2026-06-12T09:06:01+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T10:02:41.749361+00:00"
+      "last_updated": "2026-06-12T10:05:46.295901+00:00"
     }
   },
   "pge": {
