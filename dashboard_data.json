@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 01:00:23",
+  "generated_at": "2026-06-12 01:05:32",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138499,
+        "timestamp": "2026-06-12T08:01:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138498,
+        "timestamp": "2026-06-12T07:59:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138497,
         "timestamp": "2026-06-12T07:57:33+00:00",
@@ -3421,31 +3443,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138299,
-        "timestamp": "2026-06-12T04:57:41+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 138298,
-        "timestamp": "2026-06-12T04:57:33+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6508,
+        "timestamp": "2026-06-12T08:03:36+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "There is a persistent pattern of unclassified audio detections in the backyard (00:43, 00:47, 00:48, 00:52, 00:54, 00:56, 00:59, 01:01) that does not correlate with any visible activity, suggesting an unknown source of noise or potential wildlife presence that the cameras are failing to capture due to technical issues or poor visibility.",
+        "acted_on_at": null
+      },
       {
         "id": 6507,
         "timestamp": "2026-06-12T07:28:09+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing an intermittent outage.",
         "acted_on_at": null
-      },
-      {
-        "id": 6498,
-        "timestamp": "2026-06-12T06:31:57+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The camera feed has stopped receiving frames, as indicated by the error screen.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3552,7 +3552,7 @@
         "living_room": "2026-06-12T07:35:03+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T07:57:37.806508+00:00"
+      "last_updated": "2026-06-12T08:03:50.445875+00:00"
     }
   },
   "pge": {
