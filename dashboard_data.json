@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 14:46:04",
+  "generated_at": "2026-06-12 14:51:11",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1412,6 +1412,94 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140325,
+        "timestamp": "2026-06-12T21:49:49+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 140324,
+        "timestamp": "2026-06-12T21:49:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140323,
+        "timestamp": "2026-06-12T21:49:01+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional and displaying an error message indicating that no video stream is being received. This is a continuation of a recent period where the camera has been offline, preventing visual monitoring of the property.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 140322,
+        "timestamp": "2026-06-12T21:47:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140321,
+        "timestamp": "2026-06-12T21:46:35+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140320,
+        "timestamp": "2026-06-12T21:45:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140319,
+        "timestamp": "2026-06-12T21:45:14+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140318,
+        "timestamp": "2026-06-12T21:44:03+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is quiet and still, with no movement detected in the foyer. A person is visible sitting in the adjacent room through the glass doors, but there is no activity in the immediate area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": \"sitting\", \"confidence\": 0.5}]"
+      },
       {
         "id": 140317,
         "timestamp": "2026-06-12T21:43:15+00:00",
@@ -3523,97 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140125,
-        "timestamp": "2026-06-12T19:48:57+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140124,
-        "timestamp": "2026-06-12T19:48:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140123,
-        "timestamp": "2026-06-12T19:48:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140122,
-        "timestamp": "2026-06-12T19:48:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140121,
-        "timestamp": "2026-06-12T19:48:04+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140120,
-        "timestamp": "2026-06-12T19:47:38+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140119,
-        "timestamp": "2026-06-12T19:46:57+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140118,
-        "timestamp": "2026-06-12T19:46:54+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "Penelope is playing with an orange ball in the entryway, moving from the sofa area towards the stairs. Steve and Posey the dog are nearby, observing or participating in the play.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"orange ball\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 6610,
+        "timestamp": "2026-06-12T21:49:01+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is offline and not providing any visual monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 6609,
         "timestamp": "2026-06-12T21:43:15+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is non-functional, which is particularly concerning given recent reports of a child crying or yelling in distress at the front door.",
         "acted_on_at": null
-      },
-      {
-        "id": 6600,
-        "timestamp": "2026-06-12T19:16:23+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The convergence of simultaneous dog_run and front_yard camera outages, persistent unclassified audio in the backyard, dogs barking at the perimeter, and audio of someone calling for help at the entryway strongly suggests an external security incident or distress event occurring just outside the home. This matters because the technical blind spots prevent visual verification of a potential safety threat, while the dogs' agitation and distress audio confirm active external stimuli that require immediate attention.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3703,6 +3703,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3712,13 +3713,13 @@
       "last_motion": {
         "backyard": "2026-06-12T21:30:24+00:00",
         "dog_run": "2026-06-12T21:26:24+00:00",
-        "entryway": "2026-06-12T20:32:07+00:00",
+        "entryway": "2026-06-12T21:44:03+00:00",
         "front_door": "2026-06-12T21:43:15+00:00",
-        "front_yard": "2026-06-12T21:26:53+00:00",
+        "front_yard": "2026-06-12T21:49:01+00:00",
         "living_room": "2026-06-12T21:42:20+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T21:44:01.710271+00:00"
+      "last_updated": "2026-06-12T21:50:04.928374+00:00"
     }
   },
   "pge": {
