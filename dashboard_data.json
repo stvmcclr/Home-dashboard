@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 21:09:49",
+  "generated_at": "2026-06-11 21:14:56",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138238,
+        "timestamp": "2026-06-12T04:11:39+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and is displaying an error message stating that no video frames are being received. This is a continuation of a persistent outage, making it impossible to monitor the driveway or street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138237,
+        "timestamp": "2026-06-12T04:11:13+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is visually empty and still, but audio from the adjacent living room indicates someone is calling for help or yelling. No people or animals are visible in the current camera view or the visible portion of the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138236,
+        "timestamp": "2026-06-12T04:10:32+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138235,
+        "timestamp": "2026-06-12T04:10:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 138234,
+        "timestamp": "2026-06-12T04:09:17+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is initially standing in the kitchen area looking at his phone before walking over to the couch where Miller is using a laptop. The scene depicts a quiet, routine evening at home.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"object\", \"entity_name\": \"laptop\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 138233,
         "timestamp": "2026-06-12T04:08:53+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138038,
-        "timestamp": "2026-06-12T02:33:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 138037,
-        "timestamp": "2026-06-12T02:33:32+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and still. The white gate remains closed, blocking the path to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 138036,
-        "timestamp": "2026-06-12T02:32:41+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138035,
-        "timestamp": "2026-06-12T02:32:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138034,
-        "timestamp": "2026-06-12T02:31:51+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 6489,
+        "timestamp": "2026-06-12T04:11:13+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] Distressed audio (yelling for help) detected from the adjacent living room, creating a high-priority discrepancy with the empty visual scene.",
+        "acted_on_at": null
+      },
       {
         "id": 6488,
         "timestamp": "2026-06-12T04:04:45+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[living_room] The living room camera stopped receiving frames, indicating a potential technical issue with the camera or network.",
         "acted_on_at": null
-      },
-      {
-        "id": 6479,
-        "timestamp": "2026-06-12T03:13:38+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is non-functional, which is a continuation of a recent period of camera failure.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3548,13 +3548,13 @@
       "last_motion": {
         "backyard": "2026-06-12T03:55:29+00:00",
         "dog_run": "2026-06-12T03:56:01+00:00",
-        "entryway": "2026-06-12T03:57:53+00:00",
+        "entryway": "2026-06-12T04:11:13+00:00",
         "front_door": "2026-06-12T04:04:44+00:00",
-        "front_yard": "2026-06-12T03:49:08+00:00",
-        "living_room": "2026-06-12T04:02:55+00:00",
+        "front_yard": "2026-06-12T04:11:39+00:00",
+        "living_room": "2026-06-12T04:09:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T04:09:10.74474+00:00"
+      "last_updated": "2026-06-12T04:12:12.677396+00:00"
     }
   },
   "pge": {
