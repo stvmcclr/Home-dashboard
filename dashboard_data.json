@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 15:52:42",
+  "generated_at": "2026-06-12 15:57:49",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 2030,
-        "timestamp": "2026-06-12T21:24:10+00:00",
+        "id": 2032,
+        "timestamp": "2026-06-12T22:52:58+00:00",
         "location": "Upstairs",
-        "temp_f": 73.5,
+        "temp_f": 75.5,
         "humidity_pct": 55,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
@@ -1036,17 +1036,17 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 2029,
-        "timestamp": "2026-06-12T21:24:10+00:00",
+        "id": 2031,
+        "timestamp": "2026-06-12T22:52:58+00:00",
         "location": "Downstairs",
-        "temp_f": 77.6,
+        "temp_f": 78.5,
         "humidity_pct": 51,
         "mode": "HEAT",
         "hvac_status": "OFF",
         "heat_setpoint_f": 62.2,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
-        "fan_mode": "OFF",
+        "fan_mode": "ON",
         "connectivity": "ONLINE"
       }
     ],
@@ -1246,6 +1246,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 2031,
+        "timestamp": "2026-06-12T22:52:58+00:00",
+        "location": "Downstairs",
+        "temp_f": 78.5,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "ON",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2032,
+        "timestamp": "2026-06-12T22:52:58+00:00",
+        "location": "Upstairs",
+        "temp_f": 75.5,
+        "humidity_pct": 55,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 65.3,
+        "cool_setpoint_f": 77.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1412,6 +1440,160 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140461,
+        "timestamp": "2026-06-12T22:56:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140460,
+        "timestamp": "2026-06-12T22:56:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140459,
+        "timestamp": "2026-06-12T22:55:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140458,
+        "timestamp": "2026-06-12T22:54:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a child crying or yelling in distress at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140457,
+        "timestamp": "2026-06-12T22:54:44+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140456,
+        "timestamp": "2026-06-12T22:54:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140455,
+        "timestamp": "2026-06-12T22:54:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 140454,
+        "timestamp": "2026-06-12T22:54:07+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140453,
+        "timestamp": "2026-06-12T22:53:48+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140452,
+        "timestamp": "2026-06-12T22:53:25+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard remain empty and quiet. The white gate is closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 140451,
+        "timestamp": "2026-06-12T22:52:33+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140450,
+        "timestamp": "2026-06-12T22:52:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140449,
+        "timestamp": "2026-06-12T22:52:07+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 140448,
+        "timestamp": "2026-06-12T22:51:00+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 140447,
         "timestamp": "2026-06-12T22:50:47+00:00",
@@ -3457,160 +3639,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 140261,
-        "timestamp": "2026-06-12T20:57:29+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140260,
-        "timestamp": "2026-06-12T20:55:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140259,
-        "timestamp": "2026-06-12T20:54:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140258,
-        "timestamp": "2026-06-12T20:53:21+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140257,
-        "timestamp": "2026-06-12T20:52:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140256,
-        "timestamp": "2026-06-12T20:52:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a child crying or yelling in distress at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140255,
-        "timestamp": "2026-06-12T20:51:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140254,
-        "timestamp": "2026-06-12T20:49:56+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140253,
-        "timestamp": "2026-06-12T20:49:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140252,
-        "timestamp": "2026-06-12T20:48:56+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140251,
-        "timestamp": "2026-06-12T20:48:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140250,
-        "timestamp": "2026-06-12T20:47:30+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty. The white gate separating the passage from the driveway remains closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 140249,
-        "timestamp": "2026-06-12T20:46:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140248,
-        "timestamp": "2026-06-12T20:46:02+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3714,7 +3742,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T22:32:50+00:00",
+        "backyard": "2026-06-12T22:53:25+00:00",
         "dog_run": "2026-06-12T22:50:30+00:00",
         "entryway": "2026-06-12T22:42:59+00:00",
         "front_door": "2026-06-12T22:46:09+00:00",
@@ -3722,7 +3750,7 @@
         "living_room": "2026-06-12T22:47:46+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T22:50:49.89769+00:00"
+      "last_updated": "2026-06-12T22:56:52.798893+00:00"
     }
   },
   "pge": {
