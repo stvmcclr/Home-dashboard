@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 01:56:55",
+  "generated_at": "2026-06-12 02:02:02",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138543,
+        "timestamp": "2026-06-12T09:00:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138542,
+        "timestamp": "2026-06-12T08:58:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138541,
+        "timestamp": "2026-06-12T08:58:49+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a significant technical failure, with large vertical color bars obscuring most of the view. No people or dogs are visible in the small portion of the yard that remains visible.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 138540,
+        "timestamp": "2026-06-12T08:57:28+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138539,
+        "timestamp": "2026-06-12T08:56:48+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and backyard area are empty and quiet during the night. No people or animals are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 138538,
         "timestamp": "2026-06-12T08:55:22+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138343,
-        "timestamp": "2026-06-12T05:39:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138341,
-        "timestamp": "2026-06-12T05:38:45+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138342,
-        "timestamp": "2026-06-12T05:38:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138340,
-        "timestamp": "2026-06-12T05:37:13+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138339,
-        "timestamp": "2026-06-12T05:36:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6513,
+        "timestamp": "2026-06-12T08:58:49+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a technical failure, obscuring the view with vertical color bars.",
+        "acted_on_at": null
+      },
       {
         "id": 6512,
         "timestamp": "2026-06-12T08:53:45+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: dog_run averaging 66 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 6503,
-        "timestamp": "2026-06-12T07:02:30+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: front_door averaging 72 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,14 +3569,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T08:55:22+00:00",
-        "dog_run": "2026-06-12T08:38:14+00:00",
+        "dog_run": "2026-06-12T08:58:49+00:00",
         "entryway": "2026-06-12T08:37:46+00:00",
-        "front_door": "2026-06-12T08:36:13+00:00",
+        "front_door": "2026-06-12T08:56:48+00:00",
         "front_yard": "2026-06-12T08:53:45+00:00",
         "living_room": "2026-06-12T08:20:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T08:55:34.279788+00:00"
+      "last_updated": "2026-06-12T09:01:40.431516+00:00"
     }
   },
   "pge": {
