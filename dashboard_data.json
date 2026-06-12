@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 00:09:08",
+  "generated_at": "2026-06-12 00:14:15",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138458,
+        "timestamp": "2026-06-12T07:11:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 138457,
+        "timestamp": "2026-06-12T07:11:40+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and backyard area are empty and quiet during the night. No people or animals are visible in the scene, and only the sound of wind or weather can be heard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138456,
+        "timestamp": "2026-06-12T07:11:17+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 138455,
+        "timestamp": "2026-06-12T07:11:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138454,
+        "timestamp": "2026-06-12T07:09:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138453,
         "timestamp": "2026-06-12T07:07:16+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138258,
-        "timestamp": "2026-06-12T04:21:50+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The patio area is empty and still during the night. No people or animals are visible in the outdoor space.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 138257,
-        "timestamp": "2026-06-12T04:21:25+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 138256,
-        "timestamp": "2026-06-12T04:21:04+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138255,
-        "timestamp": "2026-06-12T04:20:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138254,
-        "timestamp": "2026-06-12T04:19:59+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is currently non-functional and displaying a technical error message. No visual information is available to monitor the dog run or the dogs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3544,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T06:49:33+00:00",
+        "backyard": "2026-06-12T07:11:17+00:00",
         "dog_run": "2026-06-12T06:52:49+00:00",
         "entryway": "2026-06-12T07:03:22+00:00",
-        "front_door": "2026-06-12T06:51:04+00:00",
+        "front_door": "2026-06-12T07:11:40+00:00",
         "front_yard": "2026-06-12T07:07:16+00:00",
         "living_room": "2026-06-12T06:47:58+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T07:08:50.621386+00:00"
+      "last_updated": "2026-06-12T07:11:55.320629+00:00"
     }
   },
   "pge": {
