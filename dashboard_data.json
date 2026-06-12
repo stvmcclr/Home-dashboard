@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 13:34:25",
+  "generated_at": "2026-06-12 13:39:31",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1384,6 +1384,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140232,
+        "timestamp": "2026-06-12T20:36:52+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet during a bright, sunny afternoon. No people or animals are visible in the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front porch\", \"entity_state\": \"empty\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 140231,
+        "timestamp": "2026-06-12T20:36:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140230,
+        "timestamp": "2026-06-12T20:35:58+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140229,
+        "timestamp": "2026-06-12T20:35:52+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140228,
+        "timestamp": "2026-06-12T20:35:23+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is standing in the kitchen area near the counter. The living room is otherwise empty and quiet.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 140227,
+        "timestamp": "2026-06-12T20:34:44+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 dogs barking briefly once or twice",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140226,
+        "timestamp": "2026-06-12T20:34:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 140225,
         "timestamp": "2026-06-12T20:33:38+00:00",
@@ -3506,83 +3583,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 140032,
-        "timestamp": "2026-06-12T19:08:24+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140031,
-        "timestamp": "2026-06-12T19:08:00+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "someone calling for help or yelling for assistance at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140030,
-        "timestamp": "2026-06-12T19:07:47+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140029,
-        "timestamp": "2026-06-12T19:07:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140028,
-        "timestamp": "2026-06-12T19:07:05+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Penelope is sitting on the couch in the living room, focused on using her laptop. Harlee is resting peacefully on the couch beside her.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"using laptop\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"resting\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 140027,
-        "timestamp": "2026-06-12T19:05:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140026,
-        "timestamp": "2026-06-12T19:05:54+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3687,12 +3687,12 @@
         "backyard": "2026-06-12T20:26:58+00:00",
         "dog_run": "2026-06-12T19:36:41+00:00",
         "entryway": "2026-06-12T20:32:07+00:00",
-        "front_door": "2026-06-12T20:14:58+00:00",
+        "front_door": "2026-06-12T20:36:52+00:00",
         "front_yard": "2026-06-12T20:23:34+00:00",
-        "living_room": "2026-06-12T20:13:21+00:00",
+        "living_room": "2026-06-12T20:35:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T20:34:18.082609+00:00"
+      "last_updated": "2026-06-12T20:37:20.347293+00:00"
     }
   },
   "pge": {
