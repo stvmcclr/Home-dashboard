@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 22:52:14",
+  "generated_at": "2026-06-11 22:57:25",
   "as_of": "2026-06-11",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138365,
+        "timestamp": "2026-06-12T05:54:54+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138364,
+        "timestamp": "2026-06-12T05:53:22+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138363,
+        "timestamp": "2026-06-12T05:51:42+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138362,
+        "timestamp": "2026-06-12T05:50:36+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is non-functional and displaying a technical error message. No visual information is available to monitor the dog run or the dogs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 138361,
+        "timestamp": "2026-06-12T05:50:11+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138360,
         "timestamp": "2026-06-12T05:49:03+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 138165,
-        "timestamp": "2026-06-12T03:33:39+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138164,
-        "timestamp": "2026-06-12T03:33:31+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138163,
-        "timestamp": "2026-06-12T03:33:07+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138162,
-        "timestamp": "2026-06-12T03:32:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138161,
-        "timestamp": "2026-06-12T03:32:41+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty. The white gate remains closed, blocking the path between the house and the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 1.0}]"
       }
     ],
     "insights": [
@@ -3534,6 +3534,7 @@
       ],
       "active_rooms": [
         "backyard",
+        "dog_run",
         "front_door",
         "living_room"
       ],
@@ -3541,14 +3542,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T05:47:02+00:00",
-        "dog_run": "2026-06-12T04:19:59+00:00",
+        "dog_run": "2026-06-12T05:50:36+00:00",
         "entryway": "2026-06-12T04:43:23+00:00",
         "front_door": "2026-06-12T05:48:37+00:00",
         "front_yard": "2026-06-12T04:33:06+00:00",
         "living_room": "2026-06-12T05:41:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T05:49:21.135298+00:00"
+      "last_updated": "2026-06-12T05:55:23.775123+00:00"
     }
   },
   "pge": {
