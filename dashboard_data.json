@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 05:01:27",
+  "generated_at": "2026-06-12 05:06:38",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 2020,
-        "timestamp": "2026-06-12T08:40:15+00:00",
-        "location": "Upstairs",
-        "temp_f": 67.4,
-        "humidity_pct": 48,
-        "mode": "HEATCOOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": 57.9,
-        "cool_setpoint_f": 67.7,
+        "id": 2021,
+        "timestamp": "2026-06-12T12:01:36+00:00",
+        "location": "Downstairs",
+        "temp_f": 75.5,
+        "humidity_pct": 44,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 2019,
-        "timestamp": "2026-06-12T08:40:15+00:00",
-        "location": "Downstairs",
-        "temp_f": 77.4,
+        "id": 2022,
+        "timestamp": "2026-06-12T12:01:36+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.8,
         "humidity_pct": 47,
-        "mode": "HEAT",
+        "mode": "HEATCOOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 55.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1101,6 +1101,34 @@
         "humidity_pct": 48,
         "mode": "HEATCOOL",
         "hvac_status": "COOLING",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2021,
+        "timestamp": "2026-06-12T12:01:36+00:00",
+        "location": "Downstairs",
+        "temp_f": 75.5,
+        "humidity_pct": 44,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2022,
+        "timestamp": "2026-06-12T12:01:36+00:00",
+        "location": "Upstairs",
+        "temp_f": 67.8,
+        "humidity_pct": 47,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.7,
         "eco_mode": "OFF",
@@ -1272,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138688,
+        "timestamp": "2026-06-12T12:04:26+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet in the early morning. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 138687,
+        "timestamp": "2026-06-12T12:03:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138686,
+        "timestamp": "2026-06-12T12:02:07+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138685,
+        "timestamp": "2026-06-12T12:01:10+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently failing to transmit video, displaying an error message instead of a live feed. This is consistent with recent reports of intermittent connectivity issues for this camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 138684,
         "timestamp": "2026-06-12T11:58:34+00:00",
@@ -3427,50 +3499,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 138488,
-        "timestamp": "2026-06-12T07:48:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138487,
-        "timestamp": "2026-06-12T07:47:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138486,
-        "timestamp": "2026-06-12T07:44:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138485,
-        "timestamp": "2026-06-12T07:43:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3568,15 +3596,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T11:43:57+00:00",
+        "backyard": "2026-06-12T12:04:26+00:00",
         "dog_run": "2026-06-12T11:47:46+00:00",
         "entryway": "2026-06-12T11:41:56+00:00",
         "front_door": "2026-06-12T11:45:48+00:00",
-        "front_yard": "2026-06-12T11:40:21+00:00",
+        "front_yard": "2026-06-12T12:01:10+00:00",
         "living_room": "2026-06-12T11:24:06+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T11:58:37.378824+00:00"
+      "last_updated": "2026-06-12T12:04:43.044345+00:00"
     }
   },
   "pge": {
