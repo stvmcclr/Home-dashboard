@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 05:47:43",
+  "generated_at": "2026-06-12 05:52:51",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138760,
+        "timestamp": "2026-06-12T12:50:02+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138759,
+        "timestamp": "2026-06-12T12:49:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138758,
+        "timestamp": "2026-06-12T12:49:25+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet during the early morning hours. However, the camera stream is experiencing technical issues, with some frames displaying a 'No frames have been received' error message.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 138757,
+        "timestamp": "2026-06-12T12:48:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138756,
+        "timestamp": "2026-06-12T12:47:53+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and backyard area are empty and quiet during the early morning hours. No people, animals, or vehicles are visible in the scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 138755,
         "timestamp": "2026-06-12T12:46:38+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138560,
-        "timestamp": "2026-06-12T09:23:26+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is dark and empty. No movement or people are detected in the scene during this late-night period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 138559,
-        "timestamp": "2026-06-12T09:22:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138558,
-        "timestamp": "2026-06-12T09:20:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138557,
-        "timestamp": "2026-06-12T09:20:14+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is experiencing a technical failure, displaying an error message and vertical color bars. No activity or entities can be observed in the yard due to this malfunction.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 138556,
-        "timestamp": "2026-06-12T09:18:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6526,
+        "timestamp": "2026-06-12T12:49:25+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera stream is experiencing errors, showing 'No frames have been received' messages.",
+        "acted_on_at": null
+      },
       {
         "id": 6525,
         "timestamp": "2026-06-12T12:43:47+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[living_room] Unclassified audio is heard from the backyard, though no activity is visible in the living room.",
         "acted_on_at": null
-      },
-      {
-        "id": 6516,
-        "timestamp": "2026-06-12T10:04:38+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Despite the cameras showing empty scenes or technical failures, there is a persistent pattern of unclassified audio detected in the backyard and dog run (02:53-03:01). This suggests an ongoing, non-human environmental sound source (e.g., wildlife or distant noise) that is not being correctly classified, and warrants a manual check of the outdoor area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T12:45:40+00:00",
-        "dog_run": "2026-06-12T12:28:48+00:00",
+        "dog_run": "2026-06-12T12:49:25+00:00",
         "entryway": "2026-06-12T12:27:44+00:00",
-        "front_door": "2026-06-12T12:27:22+00:00",
+        "front_door": "2026-06-12T12:47:53+00:00",
         "front_yard": "2026-06-12T12:43:47+00:00",
         "living_room": "2026-06-12T12:10:08+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T12:47:14.970845+00:00"
+      "last_updated": "2026-06-12T12:50:17.063627+00:00"
     }
   },
   "pge": {
