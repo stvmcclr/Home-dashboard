@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 01:51:49",
+  "generated_at": "2026-06-12 01:56:55",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 138538,
+        "timestamp": "2026-06-12T08:55:22+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet during the late night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 138537,
+        "timestamp": "2026-06-12T08:54:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 138536,
+        "timestamp": "2026-06-12T08:53:46+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 138535,
+        "timestamp": "2026-06-12T08:53:45+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a technical failure, displaying an error message about not receiving frames. Despite the error overlay, an unknown dark SUV is visible parked in the driveway at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unknown dark SUV\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"displaying error message\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 138534,
+        "timestamp": "2026-06-12T08:52:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 138533,
         "timestamp": "2026-06-12T08:48:48+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 138338,
-        "timestamp": "2026-06-12T05:35:37+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138337,
-        "timestamp": "2026-06-12T05:34:51+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 138336,
-        "timestamp": "2026-06-12T05:34:02+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138335,
-        "timestamp": "2026-06-12T05:33:50+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 138334,
-        "timestamp": "2026-06-12T05:33:41+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6512,
+        "timestamp": "2026-06-12T08:53:45+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing a technical failure, and an unknown dark SUV is parked in the driveway.",
+        "acted_on_at": null
+      },
       {
         "id": 6511,
         "timestamp": "2026-06-12T08:38:14+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: front_door averaging 72 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 6504,
-        "timestamp": "2026-06-12T07:02:30+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in living room at 11:15PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,21 +3563,20 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-12T08:34:42+00:00",
+        "backyard": "2026-06-12T08:55:22+00:00",
         "dog_run": "2026-06-12T08:38:14+00:00",
         "entryway": "2026-06-12T08:37:46+00:00",
         "front_door": "2026-06-12T08:36:13+00:00",
-        "front_yard": "2026-06-12T08:32:00+00:00",
+        "front_yard": "2026-06-12T08:53:45+00:00",
         "living_room": "2026-06-12T08:20:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T08:49:27.673068+00:00"
+      "last_updated": "2026-06-12T08:55:34.279788+00:00"
     }
   },
   "pge": {
