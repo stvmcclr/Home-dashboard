@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 12:12:33",
+  "generated_at": "2026-06-12 12:17:40",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1356,6 +1356,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140044,
+        "timestamp": "2026-06-12T19:14:28+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140043,
+        "timestamp": "2026-06-12T19:14:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140042,
+        "timestamp": "2026-06-12T19:13:28+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140041,
+        "timestamp": "2026-06-12T19:12:56+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a severe technical failure, displaying heavy vertical color bars and then losing signal entirely. No activity in the side yard or the status of the dogs can be monitored due to this error.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 140040,
         "timestamp": "2026-06-12T19:11:57+00:00",
@@ -3511,53 +3555,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 139844,
-        "timestamp": "2026-06-12T17:54:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 139843,
-        "timestamp": "2026-06-12T17:54:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 139842,
-        "timestamp": "2026-06-12T17:53:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 139841,
-        "timestamp": "2026-06-12T17:53:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6599,
+        "timestamp": "2026-06-12T19:12:57+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing a severe technical failure, displaying heavy vertical color bars and then losing signal entirely. No activity in the side yard or the status of the dogs can be monitored due to this error.",
+        "acted_on_at": null
+      },
       {
         "id": 6596,
         "timestamp": "2026-06-12T19:11:04+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[doorbell] Dogs are barking urgently in the backyard",
         "acted_on_at": null
-      },
-      {
-        "id": 6589,
-        "timestamp": "2026-06-12T18:20:44+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Dogs are barking urgently in the backyard, which follows a recent period of high tension.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3656,14 +3656,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-12T19:01:09+00:00",
-        "dog_run": "2026-06-12T18:47:54+00:00",
+        "dog_run": "2026-06-12T19:12:56+00:00",
         "entryway": "2026-06-12T19:08:55+00:00",
         "front_door": "2026-06-12T19:04:01+00:00",
         "front_yard": "2026-06-12T18:49:26+00:00",
         "living_room": "2026-06-12T19:07:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-12T19:12:13.176431+00:00"
+      "last_updated": "2026-06-12T19:15:15.461338+00:00"
     }
   },
   "pge": {
