@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 19:27:56",
+  "generated_at": "2026-06-12 19:33:04",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140996,
+        "timestamp": "2026-06-13T02:31:54+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty. The white gate remains closed, and no people or animals are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 140995,
+        "timestamp": "2026-06-13T02:31:14+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140994,
+        "timestamp": "2026-06-13T02:30:34+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty of any people or dogs. A large, colorful vertical bar glitch is obscuring the bottom portion of the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"visual glitch\", \"entity_state\": \"present\", \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"AC unit\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 140993,
+        "timestamp": "2026-06-13T02:29:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140992,
+        "timestamp": "2026-06-13T02:28:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 140991,
         "timestamp": "2026-06-13T02:25:42+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 140796,
-        "timestamp": "2026-06-13T00:35:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140795,
-        "timestamp": "2026-06-13T00:34:43+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room is currently empty and quiet, with no people or pets visible in the area. The space appears undisturbed during this period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 140794,
-        "timestamp": "2026-06-13T00:34:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140793,
-        "timestamp": "2026-06-13T00:33:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140792,
-        "timestamp": "2026-06-13T00:32:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6643,
+        "timestamp": "2026-06-13T02:30:34+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera is experiencing a severe visual glitch that obscures a large part of the frame.",
+        "acted_on_at": null
+      },
       {
         "id": 6642,
         "timestamp": "2026-06-13T02:09:42+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is malfunctioning, making it impossible to monitor the side yard.",
         "acted_on_at": null
-      },
-      {
-        "id": 6633,
-        "timestamp": "2026-06-13T01:04:05+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is malfunctioning and not providing a reliable feed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3541,15 +3541,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-13T02:10:16+00:00",
-        "dog_run": "2026-06-13T02:09:42+00:00",
+        "backyard": "2026-06-13T02:31:54+00:00",
+        "dog_run": "2026-06-13T02:30:34+00:00",
         "entryway": "2026-06-13T02:20:25+00:00",
         "front_door": "2026-06-13T02:18:42+00:00",
         "front_yard": "2026-06-13T02:11:47+00:00",
         "living_room": "2026-06-13T02:05:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T02:26:38.144812+00:00"
+      "last_updated": "2026-06-13T02:32:40.458497+00:00"
     }
   },
   "pge": {
