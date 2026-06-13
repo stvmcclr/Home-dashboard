@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 23:54:16",
+  "generated_at": "2026-06-12 23:59:22",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141486,
+        "timestamp": "2026-06-13T06:56:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141485,
+        "timestamp": "2026-06-13T06:55:52+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141484,
+        "timestamp": "2026-06-13T06:54:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141483,
         "timestamp": "2026-06-13T06:53:33+00:00",
@@ -3438,120 +3471,87 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141286,
-        "timestamp": "2026-06-13T04:50:33+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is in the kitchen while Miller and Penelope lounge on the couch watching a sports game on television. Posey is walking through the living room, potentially reacting to the urgent barking heard from the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}]"
-      },
-      {
-        "id": 141285,
-        "timestamp": "2026-06-13T04:50:32+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind or weather noise outdoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141284,
-        "timestamp": "2026-06-13T04:50:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
       {
-        "id": 6692,
-        "timestamp": "2026-06-13T06:42:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is experiencing heavy visual corruption/glitching.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6691,
-        "timestamp": "2026-06-13T06:36:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera remains offline, displaying an error message instead of video.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6690,
-        "timestamp": "2026-06-13T06:31:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed experienced significant visual corruption in the initial frames of this sequence.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6689,
-        "timestamp": "2026-06-13T06:30:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is still not receiving frames, which prevents any visual monitoring of Posey and Harlee in the side yard.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6688,
-        "timestamp": "2026-06-13T06:18:34+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is experiencing significant visual corruption/glitching.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6687,
-        "timestamp": "2026-06-13T05:59:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is experiencing significant digital distortion and artifacting.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6686,
-        "timestamp": "2026-06-13T05:56:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Significant digital glitching/artifacting detected in the camera feed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6685,
-        "timestamp": "2026-06-13T05:54:23+00:00",
+        "id": 6702,
+        "timestamp": "2026-06-13T06:56:11+00:00",
         "insight_type": "correlation",
         "severity": "medium",
-        "summary": "The dogs' urgent, repeated barking coincides with simultaneous camera outages (dog_run, front_yard) and active wind signals, indicating they are likely reacting to yard activity that cannot be visually confirmed. This matters because the technical failures mask potential yard issues, and herding dogs barking urgently at night warrants a quick check to rule out a real problem.",
+        "summary": "The living room camera's digital distortion coincides with active TV/audio and unclassified room audio, suggesting potential electromagnetic interference or network congestion from entertainment devices. Coupled with the simultaneous offline status of the front yard and dog run cameras, this points to a localized network or power issue that should be checked to prevent security blind spots.",
         "acted_on_at": null
       },
       {
-        "id": 6684,
-        "timestamp": "2026-06-13T05:51:21+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Urgent dog barking is heard from the backyard, which may indicate a disturbance or something of interest to the dogs.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6683,
-        "timestamp": "2026-06-13T05:50:11+00:00",
+        "id": 6693,
+        "timestamp": "2026-06-13T06:54:24+00:00",
         "insight_type": "deviation",
         "severity": "medium",
-        "summary": "Dogs barking at living room at 10:28PM \u2014 unusual hour.",
+        "summary": "Unusually high activity at living_room this hour: 8 observations vs typical 1 for weekday 23:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 6694,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_yard averaging 67 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6695,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:50PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6696,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:54PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6697,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:56PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6698,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:59PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6699,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 11:05PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6700,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 11:10PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6701,
+        "timestamp": "2026-06-13T06:54:24+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "The dogs spotted in living room at 11:42PM \u2014 unusual hour.",
         "acted_on_at": null
       }
     ],
@@ -3579,7 +3579,7 @@
         "living_room": "2026-06-13T06:42:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T06:54:01.823308+00:00"
+      "last_updated": "2026-06-13T06:57:03.518567+00:00"
     }
   },
   "pge": {
