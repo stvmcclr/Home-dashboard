@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 15:42:00",
+  "generated_at": "2026-06-13 22:44:02",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1022,11 +1022,11 @@
   "thermostat": {
     "latest": [
       {
-        "id": 2054,
-        "timestamp": "2026-06-13T21:36:34+00:00",
+        "id": 2056,
+        "timestamp": "2026-06-13T22:43:57+00:00",
         "location": "Upstairs",
-        "temp_f": 72.5,
-        "humidity_pct": 59,
+        "temp_f": 74.6,
+        "humidity_pct": 58,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": 64.8,
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 2053,
-        "timestamp": "2026-06-13T21:36:34+00:00",
+        "id": 2055,
+        "timestamp": "2026-06-13T22:43:57+00:00",
         "location": "Downstairs",
-        "temp_f": 75.5,
-        "humidity_pct": 55,
+        "temp_f": 76.5,
+        "humidity_pct": 53,
         "mode": "HEAT",
         "hvac_status": "OFF",
         "heat_setpoint_f": 64.0,
@@ -1358,6 +1358,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 2055,
+        "timestamp": "2026-06-13T22:43:57+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.5,
+        "humidity_pct": 53,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.0,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2056,
+        "timestamp": "2026-06-13T22:43:57+00:00",
+        "location": "Upstairs",
+        "temp_f": 74.6,
+        "humidity_pct": 58,
+        "mode": "HEATCOOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.8,
+        "cool_setpoint_f": 78.0,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1524,6 +1552,149 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 143420,
+        "timestamp": "2026-06-13T22:43:26+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind or weather noise outdoors at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143419,
+        "timestamp": "2026-06-13T22:43:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a smoke alarm or carbon monoxide alarm beeping at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143418,
+        "timestamp": "2026-06-13T22:42:51+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "glass breaking or shattering at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143417,
+        "timestamp": "2026-06-13T22:42:44+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "television or music playing in the background at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143416,
+        "timestamp": "2026-06-13T22:42:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "glass breaking or shattering at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143415,
+        "timestamp": "2026-06-13T22:42:26+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway remains quiet with Posey the dog resting on the blue couch and a child visible in the adjacent room. This calm visual state is highly concerning given recent audio reports of glass breaking and calls for help in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"present\", \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"potential emergency\", \"entity_state\": \"active\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 143414,
+        "timestamp": "2026-06-13T22:42:11+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "silence or quiet ambient background noise at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143413,
+        "timestamp": "2026-06-13T22:42:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143412,
+        "timestamp": "2026-06-13T22:41:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "glass breaking or shattering at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143411,
+        "timestamp": "2026-06-13T22:41:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143410,
+        "timestamp": "2026-06-13T22:41:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a child crying or yelling in distress at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143409,
+        "timestamp": "2026-06-13T22:40:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143408,
+        "timestamp": "2026-06-13T22:40:29+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is not receiving any video frames, displaying an error message instead. This indicates a persistent loss of connection, leaving the driveway and street area unmonitored.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"disconnected\", \"confidence\": 1.0}]"
+      },
       {
         "id": 143407,
         "timestamp": "2026-06-13T22:40:06+00:00",
@@ -3580,152 +3751,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143220,
-        "timestamp": "2026-06-13T21:15:00+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently non-functional, displaying an error message indicating that no video frames are being received. This loss of connection means the driveway and street area are currently unmonitored.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera offline\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 143219,
-        "timestamp": "2026-06-13T21:14:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143218,
-        "timestamp": "2026-06-13T21:13:55+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143217,
-        "timestamp": "2026-06-13T21:13:29+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143216,
-        "timestamp": "2026-06-13T21:13:00+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143215,
-        "timestamp": "2026-06-13T21:12:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143214,
-        "timestamp": "2026-06-13T21:11:42+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "A person is entering or exiting the house through the front door, which is currently open. Posey the Australian Shepherd is resting in a chair near the staircase.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"unknown\", \"entity_state\": \"entering or exiting\", \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"front door\", \"entity_state\": \"open\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 143212,
-        "timestamp": "2026-06-13T21:11:27+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143213,
-        "timestamp": "2026-06-13T21:11:27+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 143211,
-        "timestamp": "2026-06-13T21:11:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143210,
-        "timestamp": "2026-06-13T21:10:34+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch and yard area are empty and quiet. The scene shows a sunny afternoon with no visible activity or people.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 143209,
-        "timestamp": "2026-06-13T21:10:26+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 143208,
-        "timestamp": "2026-06-13T21:09:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6828,
+        "timestamp": "2026-06-13T22:42:26+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] The visual calm in the entryway contradicts recent audio and history indicating a potential emergency (glass breaking, calls for help) in the backyard.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6827,
+        "timestamp": "2026-06-13T22:41:18+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The simultaneous convergence of glass shattering, a loud impact, urgent dog barking at the backyard, a scream, and alarm activation within a four-minute window strongly indicates a sudden perimeter breach or severe accident at the backyard entrance, escalating to a potential injury or threat that requires immediate emergency response.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6826,
+        "timestamp": "2026-06-13T22:40:29+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is disconnected, leaving the driveway and street area unmonitored.",
+        "acted_on_at": null
+      },
       {
         "id": 6825,
         "timestamp": "2026-06-13T22:39:35+00:00",
@@ -3781,30 +3833,6 @@
         "severity": "high",
         "summary": "[entryway] Audio reports a loud thud and someone calling for help at the entryway, which is a high-priority emergency indicator.",
         "acted_on_at": null
-      },
-      {
-        "id": 6818,
-        "timestamp": "2026-06-13T22:31:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio indicates urgent dog barking and a scream at the entryway, which may indicate an emergency or intruder.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6817,
-        "timestamp": "2026-06-13T22:23:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Dogs are barking urgently at the backyard.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6816,
-        "timestamp": "2026-06-13T22:06:01+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not transmitting video, preventing monitoring of the dogs and the gate.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3819,6 +3847,7 @@
         "dog_run",
         "entryway",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
@@ -3826,64 +3855,432 @@
       "last_motion": {
         "backyard": "2026-06-13T22:24:14+00:00",
         "dog_run": "2026-06-13T22:26:52+00:00",
-        "entryway": "2026-06-13T22:39:35+00:00",
+        "entryway": "2026-06-13T22:42:26+00:00",
         "front_door": "2026-06-13T22:37:43+00:00",
-        "front_yard": "2026-06-13T21:57:52+00:00",
+        "front_yard": "2026-06-13T22:40:29+00:00",
         "living_room": "2026-06-13T22:31:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T22:40:31.271034+00:00"
+      "last_updated": "2026-06-13T22:43:35.620366+00:00"
     }
   },
   "pge": {
-    "hourly": [],
+    "hourly": [
+      {
+        "ts": "2026-05-10T00:00",
+        "kwh": 1.655
+      },
+      {
+        "ts": "2026-05-10T01:00",
+        "kwh": 1.054
+      },
+      {
+        "ts": "2026-05-10T02:00",
+        "kwh": 1.002
+      },
+      {
+        "ts": "2026-05-10T03:00",
+        "kwh": 1.025
+      },
+      {
+        "ts": "2026-05-10T04:00",
+        "kwh": 0.975
+      },
+      {
+        "ts": "2026-05-10T05:00",
+        "kwh": 1.111
+      },
+      {
+        "ts": "2026-05-10T06:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T07:00",
+        "kwh": 1.257
+      },
+      {
+        "ts": "2026-05-10T08:00",
+        "kwh": 1.347
+      },
+      {
+        "ts": "2026-05-10T09:00",
+        "kwh": 1.712
+      },
+      {
+        "ts": "2026-05-10T10:00",
+        "kwh": 2.537
+      },
+      {
+        "ts": "2026-05-10T11:00",
+        "kwh": 2.191
+      },
+      {
+        "ts": "2026-05-10T12:00",
+        "kwh": 1.351
+      },
+      {
+        "ts": "2026-05-10T13:00",
+        "kwh": 1.344
+      },
+      {
+        "ts": "2026-05-10T14:00",
+        "kwh": 1.758
+      },
+      {
+        "ts": "2026-05-10T15:00",
+        "kwh": 1.467
+      },
+      {
+        "ts": "2026-05-10T16:00",
+        "kwh": 1.289
+      },
+      {
+        "ts": "2026-05-10T17:00",
+        "kwh": 1.194
+      },
+      {
+        "ts": "2026-05-10T18:00",
+        "kwh": 1.178
+      },
+      {
+        "ts": "2026-05-10T19:00",
+        "kwh": 1.115
+      },
+      {
+        "ts": "2026-05-10T20:00",
+        "kwh": 2.634
+      },
+      {
+        "ts": "2026-05-10T21:00",
+        "kwh": 3.568
+      },
+      {
+        "ts": "2026-05-10T22:00",
+        "kwh": 2.67
+      },
+      {
+        "ts": "2026-05-10T23:00",
+        "kwh": 1.629
+      },
+      {
+        "ts": "2026-05-11T00:00",
+        "kwh": 1.502
+      },
+      {
+        "ts": "2026-05-11T01:00",
+        "kwh": 1.219
+      },
+      {
+        "ts": "2026-05-11T02:00",
+        "kwh": 1.332
+      },
+      {
+        "ts": "2026-05-11T03:00",
+        "kwh": 1.057
+      },
+      {
+        "ts": "2026-05-11T04:00",
+        "kwh": 1.484
+      },
+      {
+        "ts": "2026-05-11T05:00",
+        "kwh": 0.974
+      },
+      {
+        "ts": "2026-05-11T06:00",
+        "kwh": 1.436
+      },
+      {
+        "ts": "2026-05-11T07:00",
+        "kwh": 1.482
+      },
+      {
+        "ts": "2026-05-11T08:00",
+        "kwh": 1.501
+      },
+      {
+        "ts": "2026-05-11T09:00",
+        "kwh": 1.734
+      },
+      {
+        "ts": "2026-05-11T10:00",
+        "kwh": 1.721
+      },
+      {
+        "ts": "2026-05-11T11:00",
+        "kwh": 1.414
+      },
+      {
+        "ts": "2026-05-11T12:00",
+        "kwh": 1.249
+      },
+      {
+        "ts": "2026-05-11T13:00",
+        "kwh": 1.338
+      },
+      {
+        "ts": "2026-05-11T14:00",
+        "kwh": 1.336
+      },
+      {
+        "ts": "2026-05-11T15:00",
+        "kwh": 1.554
+      },
+      {
+        "ts": "2026-05-11T16:00",
+        "kwh": 1.41
+      },
+      {
+        "ts": "2026-05-11T17:00",
+        "kwh": 1.626
+      },
+      {
+        "ts": "2026-05-11T18:00",
+        "kwh": 2.227
+      },
+      {
+        "ts": "2026-05-11T19:00",
+        "kwh": 3.785
+      },
+      {
+        "ts": "2026-05-11T20:00",
+        "kwh": 3.63
+      },
+      {
+        "ts": "2026-05-11T21:00",
+        "kwh": 3.703
+      },
+      {
+        "ts": "2026-05-11T22:00",
+        "kwh": 2.335
+      },
+      {
+        "ts": "2026-05-11T23:00",
+        "kwh": 2.331
+      },
+      {
+        "ts": "2026-05-12T00:00",
+        "kwh": 1.645
+      },
+      {
+        "ts": "2026-05-12T01:00",
+        "kwh": 1.52
+      },
+      {
+        "ts": "2026-05-12T02:00",
+        "kwh": 1.539
+      },
+      {
+        "ts": "2026-05-12T03:00",
+        "kwh": 1.516
+      },
+      {
+        "ts": "2026-05-12T04:00",
+        "kwh": 1.011
+      },
+      {
+        "ts": "2026-05-12T05:00",
+        "kwh": 1.722
+      },
+      {
+        "ts": "2026-05-12T06:00",
+        "kwh": 1.596
+      },
+      {
+        "ts": "2026-05-12T07:00",
+        "kwh": 1.784
+      },
+      {
+        "ts": "2026-05-12T08:00",
+        "kwh": 1.373
+      },
+      {
+        "ts": "2026-05-12T09:00",
+        "kwh": 1.259
+      },
+      {
+        "ts": "2026-05-12T10:00",
+        "kwh": 1.438
+      },
+      {
+        "ts": "2026-05-12T11:00",
+        "kwh": 1.659
+      },
+      {
+        "ts": "2026-05-12T12:00",
+        "kwh": 1.365
+      },
+      {
+        "ts": "2026-05-12T13:00",
+        "kwh": 1.383
+      },
+      {
+        "ts": "2026-05-12T14:00",
+        "kwh": 2.834
+      },
+      {
+        "ts": "2026-05-12T15:00",
+        "kwh": 1.969
+      },
+      {
+        "ts": "2026-05-12T16:00",
+        "kwh": 1.32
+      },
+      {
+        "ts": "2026-05-12T17:00",
+        "kwh": 1.455
+      },
+      {
+        "ts": "2026-05-12T18:00",
+        "kwh": 2.783
+      },
+      {
+        "ts": "2026-05-12T19:00",
+        "kwh": 4.151
+      },
+      {
+        "ts": "2026-05-12T20:00",
+        "kwh": 3.732
+      },
+      {
+        "ts": "2026-05-12T21:00",
+        "kwh": 2.848
+      },
+      {
+        "ts": "2026-05-12T22:00",
+        "kwh": 2.001
+      },
+      {
+        "ts": "2026-05-12T23:00",
+        "kwh": 2.201
+      },
+      {
+        "ts": "2026-05-13T00:00",
+        "kwh": 1.935
+      },
+      {
+        "ts": "2026-05-13T01:00",
+        "kwh": 1.879
+      },
+      {
+        "ts": "2026-05-13T02:00",
+        "kwh": 1.027
+      },
+      {
+        "ts": "2026-05-13T03:00",
+        "kwh": 1.403
+      },
+      {
+        "ts": "2026-05-13T04:00",
+        "kwh": 1.185
+      },
+      {
+        "ts": "2026-05-13T05:00",
+        "kwh": 0.909
+      },
+      {
+        "ts": "2026-05-13T06:00",
+        "kwh": 1.78
+      },
+      {
+        "ts": "2026-05-13T07:00",
+        "kwh": 2.005
+      },
+      {
+        "ts": "2026-05-13T08:00",
+        "kwh": 1.842
+      },
+      {
+        "ts": "2026-05-13T09:00",
+        "kwh": 4.412
+      },
+      {
+        "ts": "2026-05-13T10:00",
+        "kwh": 4.452
+      },
+      {
+        "ts": "2026-05-13T11:00",
+        "kwh": 3.414
+      },
+      {
+        "ts": "2026-05-13T12:00",
+        "kwh": 1.336
+      },
+      {
+        "ts": "2026-05-13T13:00",
+        "kwh": 1.308
+      },
+      {
+        "ts": "2026-05-13T14:00",
+        "kwh": 1.543
+      },
+      {
+        "ts": "2026-05-13T15:00",
+        "kwh": 1.476
+      },
+      {
+        "ts": "2026-05-13T16:00",
+        "kwh": 2.978
+      },
+      {
+        "ts": "2026-05-13T17:00",
+        "kwh": 2.827
+      },
+      {
+        "ts": "2026-05-13T18:00",
+        "kwh": 2.196
+      },
+      {
+        "ts": "2026-05-13T19:00",
+        "kwh": 1.725
+      },
+      {
+        "ts": "2026-05-13T20:00",
+        "kwh": 3.534
+      },
+      {
+        "ts": "2026-05-13T21:00",
+        "kwh": 3.26
+      },
+      {
+        "ts": "2026-05-13T22:00",
+        "kwh": 2.392
+      },
+      {
+        "ts": "2026-05-13T23:00",
+        "kwh": 1.793
+      }
+    ],
     "daily": [
       {
-        "date": "2026-05-24",
-        "total_kwh": 77.83,
-        "peak_kwh": 13.042,
+        "date": "2026-05-13",
+        "total_kwh": 52.61,
+        "peak_kwh": 4.452,
         "hours": 24
       },
       {
-        "date": "2026-05-23",
-        "total_kwh": 41.34,
-        "peak_kwh": 5.612,
+        "date": "2026-05-12",
+        "total_kwh": 46.1,
+        "peak_kwh": 4.151,
         "hours": 24
       },
       {
-        "date": "2026-05-22",
-        "total_kwh": 43.44,
-        "peak_kwh": 3.607,
+        "date": "2026-05-11",
+        "total_kwh": 43.38,
+        "peak_kwh": 3.785,
         "hours": 24
       },
       {
-        "date": "2026-05-21",
-        "total_kwh": 57.08,
-        "peak_kwh": 5.279,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-20",
-        "total_kwh": 49.66,
-        "peak_kwh": 3.689,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-19",
-        "total_kwh": 52.26,
-        "peak_kwh": 4.199,
-        "hours": 24
-      },
-      {
-        "date": "2026-05-18",
-        "total_kwh": 45.78,
-        "peak_kwh": 4.185,
+        "date": "2026-05-10",
+        "total_kwh": 38.24,
+        "peak_kwh": 3.568,
         "hours": 24
       }
     ],
-    "latest_kwh": null,
-    "avg_per_hour": null,
-    "evening_peak_kwh": null,
-    "data_through": null
+    "latest_kwh": 1.793,
+    "avg_per_hour": 1.88,
+    "evening_peak_kwh": 4.15,
+    "data_through": "2026-05-13T23:00",
+    "_source": "pge_hourly.json"
   }
 }
