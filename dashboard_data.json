@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 21:41:08",
+  "generated_at": "2026-06-12 21:46:18",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141265,
+        "timestamp": "2026-06-13T04:42:24+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is non-functional and displaying an error message instead of a video stream. This outage coincides with audio of dogs barking urgently in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 141264,
+        "timestamp": "2026-06-13T04:42:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141263,
+        "timestamp": "2026-06-13T04:41:11+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141262,
+        "timestamp": "2026-06-13T04:40:43+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "A person moves quickly through the living area, passing Roxanne and Penelope who are seated at the dining table. In the background, Steve is active in the kitchen while dogs bark urgently in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown\", \"entity_state\": \"barking\", \"confidence\": 0.7}]"
+      },
+      {
+        "id": 141261,
+        "timestamp": "2026-06-13T04:40:34+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141260,
         "timestamp": "2026-06-13T04:39:10+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141065,
-        "timestamp": "2026-06-13T03:16:03+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "dogs barking urgently or repeatedly at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141064,
-        "timestamp": "2026-06-13T03:15:59+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "dogs barking urgently or repeatedly at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141063,
-        "timestamp": "2026-06-13T03:15:04+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is non-functional and displaying an error message indicating that no video frames are being received. This is a continuation of a recent technical issue with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141062,
-        "timestamp": "2026-06-13T03:14:44+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is currently non-functional, displaying an error message indicating that no frames are being received. This follows a recent period where the camera view was obscured by a visual glitch.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141061,
-        "timestamp": "2026-06-13T03:14:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6661,
+        "timestamp": "2026-06-13T04:40:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Dogs are barking urgently in the backyard and an unfamiliar voice was heard.",
+        "acted_on_at": null
+      },
       {
         "id": 6660,
         "timestamp": "2026-06-13T04:36:30+00:00",
@@ -3517,20 +3525,13 @@
         "severity": "high",
         "summary": "[dog_run] The camera is still exhibiting technical glitches as noted in recent history.",
         "acted_on_at": null
-      },
-      {
-        "id": 6651,
-        "timestamp": "2026-06-13T03:55:36+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[backyard] Urgent dog barking detected in audio, but no animals are visible in the backyard.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
         "Miller",
+        "Penelope",
         "Roxanne",
         "Steve"
       ],
@@ -3545,14 +3546,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-13T04:38:20+00:00",
-        "dog_run": "2026-06-13T04:17:37+00:00",
+        "dog_run": "2026-06-13T04:42:24+00:00",
         "entryway": "2026-06-13T03:54:55+00:00",
         "front_door": "2026-06-13T04:23:18+00:00",
         "front_yard": "2026-06-13T04:18:52+00:00",
-        "living_room": "2026-06-13T04:36:30+00:00",
+        "living_room": "2026-06-13T04:40:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T04:40:24.954476+00:00"
+      "last_updated": "2026-06-13T04:43:27.744382+00:00"
     }
   },
   "pge": {
