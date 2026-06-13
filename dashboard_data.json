@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 01:41:51",
+  "generated_at": "2026-06-13 01:46:59",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141613,
+        "timestamp": "2026-06-13T08:46:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141612,
+        "timestamp": "2026-06-13T08:45:10+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 141611,
+        "timestamp": "2026-06-13T08:42:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141610,
+        "timestamp": "2026-06-13T08:41:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141609,
+        "timestamp": "2026-06-13T08:40:44+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying an error message indicating that no video frames are being received. This is a continuation of a recent technical failure that coincided with urgent barking in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"front yard camera failure\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 141608,
         "timestamp": "2026-06-13T08:39:41+00:00",
@@ -3444,61 +3499,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"looking at a device\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting on Roxanne\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 141413,
-        "timestamp": "2026-06-13T05:56:35+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141412,
-        "timestamp": "2026-06-13T05:56:11+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141411,
-        "timestamp": "2026-06-13T05:55:22+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is non-functional and is displaying an error message indicating that no video frames are being received. This is a continuation of a recent technical issue with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141410,
-        "timestamp": "2026-06-13T05:54:57+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve and Roxanne are relaxing on the couch in the living room with Posey. The atmosphere is quiet and calm late at night.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 141409,
-        "timestamp": "2026-06-13T05:54:50+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3585,16 +3585,13 @@
     ],
     "state": {
       "id": "current",
-      "who_is_home": [
-        "Steve"
-      ],
+      "who_is_home": [],
       "active_rooms": [
         "backyard",
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3603,11 +3600,11 @@
         "dog_run": "2026-06-13T08:35:12+00:00",
         "entryway": "2026-06-13T08:36:25+00:00",
         "front_door": "2026-06-13T08:36:00+00:00",
-        "front_yard": "2026-06-13T08:20:12+00:00",
+        "front_yard": "2026-06-13T08:40:44+00:00",
         "living_room": "2026-06-13T08:15:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T08:40:17.31499+00:00"
+      "last_updated": "2026-06-13T08:46:23.310343+00:00"
     }
   },
   "pge": {
