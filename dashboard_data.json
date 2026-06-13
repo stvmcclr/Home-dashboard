@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 02:12:40",
+  "generated_at": "2026-06-13 02:17:48",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141639,
+        "timestamp": "2026-06-13T09:16:30+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is displaying heavily corrupted video with vertical lines obscuring the view of the side yard. No people or dogs are visible in the distorted footage.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.6}]"
+      },
+      {
+        "id": 141638,
+        "timestamp": "2026-06-13T09:13:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141637,
+        "timestamp": "2026-06-13T09:12:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141636,
         "timestamp": "2026-06-13T09:10:46+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141439,
-        "timestamp": "2026-06-13T06:19:33+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is dark and empty during the night. No people or animals are visible in the foyer area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141438,
-        "timestamp": "2026-06-13T06:18:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141437,
-        "timestamp": "2026-06-13T06:18:34+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne and Steve are relaxing on the couch in the living room. Roxanne is looking at her phone while Steve rests, though the camera feed is experiencing heavy visual corruption.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 6715,
+        "timestamp": "2026-06-13T09:16:30+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing severe video corruption, which is a continuation of a persistent technical issue.",
+        "acted_on_at": null
+      },
       {
         "id": 6714,
         "timestamp": "2026-06-13T08:59:55+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at front_yard this hour: 4 observations vs typical 1 for weekend 00:00",
         "acted_on_at": null
-      },
-      {
-        "id": 6705,
-        "timestamp": "2026-06-13T07:29:35+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is nearly unviewable due to extreme darkness or visual corruption.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-13T09:10:46+00:00",
-        "dog_run": "2026-06-13T08:55:49+00:00",
+        "dog_run": "2026-06-13T09:16:30+00:00",
         "entryway": "2026-06-13T08:36:25+00:00",
         "front_door": "2026-06-13T08:56:21+00:00",
         "front_yard": "2026-06-13T09:02:04+00:00",
         "living_room": "2026-06-13T09:00:35+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T09:10:51.141279+00:00"
+      "last_updated": "2026-06-13T09:16:54.684048+00:00"
     }
   },
   "pge": {
