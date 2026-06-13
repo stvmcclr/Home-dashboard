@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 04:05:22",
+  "generated_at": "2026-06-13 04:10:29",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1328,6 +1328,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141741,
+        "timestamp": "2026-06-13T11:08:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141740,
+        "timestamp": "2026-06-13T11:07:19+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently non-functional, displaying an error message that no frames have been received. This is consistent with recent intermittent camera failures observed during the night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 141739,
+        "timestamp": "2026-06-13T11:07:14+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141738,
+        "timestamp": "2026-06-13T11:05:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141737,
+        "timestamp": "2026-06-13T11:04:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141736,
         "timestamp": "2026-06-13T11:01:05+00:00",
@@ -3472,64 +3527,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141541,
-        "timestamp": "2026-06-13T07:42:53+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141540,
-        "timestamp": "2026-06-13T07:42:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141539,
-        "timestamp": "2026-06-13T07:40:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141538,
-        "timestamp": "2026-06-13T07:39:30+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141537,
-        "timestamp": "2026-06-13T07:38:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6723,
+        "timestamp": "2026-06-13T11:07:20+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is not transmitting video, which is part of an ongoing pattern of intermittent failures during the night.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6722,
+        "timestamp": "2026-06-13T11:04:46+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous loss of video from the dog_run and front_yard cameras, while audio sensors in the same zones continue to report unclassified noise, strongly indicates a localized network or PoE power fault affecting the outdoor camera cluster rather than actual outdoor activity. This matters because it blinds the perimeter monitoring and requires physical inspection of the outdoor network switch or breaker.",
+        "acted_on_at": null
+      },
       {
         "id": 6721,
         "timestamp": "2026-06-13T10:39:03+00:00",
@@ -3593,22 +3609,6 @@
         "severity": "medium",
         "summary": "The synchronized pattern of persistent unclassified audio in the backyard, dog barking, and simultaneous camera failures in adjacent zones strongly suggests an external stimulus (likely wildlife or environmental noise) is triggering the dogs but evading visual detection; consider rebooting the failed cameras or performing a quick perimeter check to rule out a security event.",
         "acted_on_at": null
-      },
-      {
-        "id": 6712,
-        "timestamp": "2026-06-13T08:57:55+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in front yard at 12:59AM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6713,
-        "timestamp": "2026-06-13T08:57:55+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Dogs barking at front yard at 12:59AM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3628,11 +3628,11 @@
         "dog_run": "2026-06-13T10:59:44+00:00",
         "entryway": "2026-06-13T10:54:21+00:00",
         "front_door": "2026-06-13T11:00:18+00:00",
-        "front_yard": "2026-06-13T10:46:40+00:00",
+        "front_yard": "2026-06-13T11:07:19+00:00",
         "living_room": "2026-06-13T10:32:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T11:03:43.41901+00:00"
+      "last_updated": "2026-06-13T11:09:52.208192+00:00"
     }
   },
   "pge": {
