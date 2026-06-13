@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 07:09:56",
+  "generated_at": "2026-06-13 07:15:05",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1356,6 +1356,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141941,
+        "timestamp": "2026-06-13T14:11:35+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141940,
+        "timestamp": "2026-06-13T14:10:03+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141939,
         "timestamp": "2026-06-13T14:09:47+00:00",
@@ -3533,31 +3555,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141741,
-        "timestamp": "2026-06-13T11:08:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141740,
-        "timestamp": "2026-06-13T11:07:19+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently non-functional, displaying an error message that no frames have been received. This is consistent with recent intermittent camera failures observed during the night.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6731,
+        "timestamp": "2026-06-13T14:10:44+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous drop of the front yard and dog run cameras, paired with a sudden spike in unclassified audio across those same zones, indicates a localized network or power interruption rather than independent hardware failures. This matters because it is currently blinding your monitoring for that area while the household is active and present, so checking the local network switch or access point is recommended.",
+        "acted_on_at": null
+      },
       {
         "id": 6730,
         "timestamp": "2026-06-13T13:45:43+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "medium",
         "summary": "The simultaneous loss of video from the dog_run and front_yard cameras, while audio sensors in the same zones continue to report unclassified noise, strongly indicates a localized network or PoE power fault affecting the outdoor camera cluster rather than actual outdoor activity. This matters because it blinds the perimeter monitoring and requires physical inspection of the outdoor network switch or breaker.",
         "acted_on_at": null
-      },
-      {
-        "id": 6721,
-        "timestamp": "2026-06-13T10:39:03+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is currently non-functional, preventing any visibility into the dog run area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3659,7 +3659,7 @@
         "living_room": "2026-06-13T13:35:42+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T14:09:53.956398+00:00"
+      "last_updated": "2026-06-13T14:12:56.188833+00:00"
     }
   },
   "pge": {
