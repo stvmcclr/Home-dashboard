@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 05:06:59",
+  "generated_at": "2026-06-13 05:12:07",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1328,6 +1328,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141800,
+        "timestamp": "2026-06-13T12:10:03+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141799,
+        "timestamp": "2026-06-13T12:09:41+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a stream failure, displaying an error message that no frames have been received. This indicates a loss of the video feed from the G5 Pro camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 141798,
+        "timestamp": "2026-06-13T12:08:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141797,
+        "timestamp": "2026-06-13T12:06:57+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141796,
+        "timestamp": "2026-06-13T12:06:30+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141795,
+        "timestamp": "2026-06-13T12:05:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141794,
         "timestamp": "2026-06-13T12:04:36+00:00",
@@ -3461,75 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141600,
-        "timestamp": "2026-06-13T08:33:07+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 141599,
-        "timestamp": "2026-06-13T08:31:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141598,
-        "timestamp": "2026-06-13T08:30:07+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141597,
-        "timestamp": "2026-06-13T08:29:35+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, and no movement or activity is detected in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 141596,
-        "timestamp": "2026-06-13T08:28:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141595,
-        "timestamp": "2026-06-13T08:27:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6725,
+        "timestamp": "2026-06-13T12:07:16+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous video dropouts in the front yard and dog run cameras, coinciding with unclassified audio in those exact zones, strongly indicate a localized network or power fault affecting those specific outdoor cameras rather than an intrusion or wildlife event. Steve should check the outdoor network switch, Wi-Fi extender, or power supply for those zones to restore monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 6724,
         "timestamp": "2026-06-13T11:48:58+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is displaying error messages and heavy video corruption, obscuring the view of the side yard.",
         "acted_on_at": null
-      },
-      {
-        "id": 6715,
-        "timestamp": "2026-06-13T09:16:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is experiencing severe video corruption, which is a continuation of a persistent technical issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3617,7 +3617,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3629,11 +3628,11 @@
         "dog_run": "2026-06-13T12:02:38+00:00",
         "entryway": "2026-06-13T11:39:49+00:00",
         "front_door": "2026-06-13T12:04:08+00:00",
-        "front_yard": "2026-06-13T11:48:58+00:00",
+        "front_yard": "2026-06-13T12:09:41+00:00",
         "living_room": "2026-06-13T12:04:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T12:04:49.160874+00:00"
+      "last_updated": "2026-06-13T12:10:58.456603+00:00"
     }
   },
   "pge": {
