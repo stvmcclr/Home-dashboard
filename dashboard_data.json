@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 23:08:12",
+  "generated_at": "2026-06-12 23:13:20",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141431,
+        "timestamp": "2026-06-13T06:11:20+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141430,
+        "timestamp": "2026-06-13T06:10:59+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Roxanne and Steve are relaxing on the couch in the living room. Roxanne is looking at her phone while Steve rests, with Posey nearby.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 141429,
+        "timestamp": "2026-06-13T06:10:47+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141428,
+        "timestamp": "2026-06-13T06:08:51+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is non-functional and displaying an error message stating that no frames have been received. This prevents any visual monitoring of the side yard and the dogs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 141427,
+        "timestamp": "2026-06-13T06:07:20+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141426,
         "timestamp": "2026-06-13T06:05:08+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141231,
-        "timestamp": "2026-06-13T04:31:19+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141230,
-        "timestamp": "2026-06-13T04:30:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "an unexpected or unfamiliar voice indoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141229,
-        "timestamp": "2026-06-13T04:30:43+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141228,
-        "timestamp": "2026-06-13T04:30:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "an unexpected or unfamiliar voice indoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141227,
-        "timestamp": "2026-06-13T04:30:18+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "The living room lights are turned on, and children are seen moving through the area. This occurs amidst alarming audio of a child crying in distress in the backyard, a loud crash at the entryway, and urgent dog barking.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"child\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.7}]"
       }
     ],
     "insights": [
@@ -3563,6 +3563,7 @@
       ],
       "active_rooms": [
         "backyard",
+        "dog_run",
         "front_door",
         "front_yard",
         "living_room"
@@ -3571,14 +3572,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-13T06:01:58+00:00",
-        "dog_run": "2026-06-13T05:26:17+00:00",
+        "dog_run": "2026-06-13T06:08:51+00:00",
         "entryway": "2026-06-13T05:34:09+00:00",
         "front_door": "2026-06-13T05:51:16+00:00",
         "front_yard": "2026-06-13T05:55:22+00:00",
-        "living_room": "2026-06-13T06:05:00+00:00",
+        "living_room": "2026-06-13T06:10:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T06:05:30.165127+00:00"
+      "last_updated": "2026-06-13T06:11:37.756407+00:00"
     }
   },
   "pge": {
