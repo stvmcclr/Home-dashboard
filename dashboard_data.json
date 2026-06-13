@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 04:46:30",
+  "generated_at": "2026-06-13 04:51:37",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1328,6 +1328,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141778,
+        "timestamp": "2026-06-13T11:48:58+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera briefly failed to receive frames before resuming its stream. In the early morning view, the dark green pickup is parked in the driveway and Roxanne's black Cayenne is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 141777,
+        "timestamp": "2026-06-13T11:48:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141776,
         "timestamp": "2026-06-13T11:46:14+00:00",
@@ -3505,31 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141578,
-        "timestamp": "2026-06-13T08:08:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141577,
-        "timestamp": "2026-06-13T08:08:00+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, and no movement or activity is detected in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
       }
     ],
     "insights": [
+      {
+        "id": 6724,
+        "timestamp": "2026-06-13T11:48:58+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera was temporarily non-functional but has resumed streaming.",
+        "acted_on_at": null
+      },
       {
         "id": 6723,
         "timestamp": "2026-06-13T11:07:20+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing severe video corruption, which is a continuation of a persistent technical issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 6714,
-        "timestamp": "2026-06-13T08:59:55+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The synchronized pattern of persistent unclassified audio in the backyard, dog barking, and simultaneous camera failures in adjacent zones strongly suggests an external stimulus (likely wildlife or environmental noise) is triggering the dogs but evading visual detection; consider rebooting the failed cameras or performing a quick perimeter check to rule out a security event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3619,8 +3619,7 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3629,11 +3628,11 @@
         "dog_run": "2026-06-13T11:41:23+00:00",
         "entryway": "2026-06-13T11:39:49+00:00",
         "front_door": "2026-06-13T11:41:47+00:00",
-        "front_yard": "2026-06-13T11:28:01+00:00",
+        "front_yard": "2026-06-13T11:48:58+00:00",
         "living_room": "2026-06-13T11:18:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T11:46:29.194369+00:00"
+      "last_updated": "2026-06-13T11:49:33.987292+00:00"
     }
   },
   "pge": {
