@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 18:26:28",
+  "generated_at": "2026-06-12 18:31:36",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 140900,
+        "timestamp": "2026-06-13T01:28:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140899,
+        "timestamp": "2026-06-13T01:28:07+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional and displaying an error message indicating that no video frames are being received. This prevents any visual monitoring of the front yard, driveway, or street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 140898,
+        "timestamp": "2026-06-13T01:27:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 140897,
+        "timestamp": "2026-06-13T01:26:44+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and still. The white gate remains closed, and no people or animals are visible in the area, despite the audio of dogs barking urgently.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 140896,
         "timestamp": "2026-06-13T01:25:41+00:00",
@@ -3399,53 +3443,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 140700,
-        "timestamp": "2026-06-13T00:14:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140699,
-        "timestamp": "2026-06-13T00:14:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140698,
-        "timestamp": "2026-06-13T00:14:28+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is empty and quiet under a bright, sunny sky. No movement or activity is visible at the front door.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 140697,
-        "timestamp": "2026-06-13T00:14:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6635,
+        "timestamp": "2026-06-13T01:26:45+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] Audio indicates urgent dog barking, but no animals or people are visible in the camera view.",
+        "acted_on_at": null
+      },
       {
         "id": 6634,
         "timestamp": "2026-06-13T01:24:51+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[backyard] Urgent dog barking detected in the backyard, but no dogs are visible in the camera's view.",
         "acted_on_at": null
-      },
-      {
-        "id": 6625,
-        "timestamp": "2026-06-13T00:10:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A recent alert reported a loud crash and sounds of distress elsewhere in the house, creating a high-tension situation despite the calm visual in this room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3539,20 +3539,21 @@
         "backyard",
         "dog_run",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-13T01:05:33+00:00",
+        "backyard": "2026-06-13T01:26:44+00:00",
         "dog_run": "2026-06-13T01:24:51+00:00",
         "entryway": "2026-06-13T00:49:40+00:00",
         "front_door": "2026-06-13T01:17:08+00:00",
-        "front_yard": "2026-06-13T00:44:53+00:00",
+        "front_yard": "2026-06-13T01:28:07+00:00",
         "living_room": "2026-06-13T01:20:09+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T01:26:03.640176+00:00"
+      "last_updated": "2026-06-13T01:29:05.38508+00:00"
     }
   },
   "pge": {
