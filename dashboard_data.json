@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 15:01:02",
+  "generated_at": "2026-06-13 15:06:10",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1524,6 +1524,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 143307,
+        "timestamp": "2026-06-13T22:03:25+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Penelope is relaxing on the couch with a dog. She is seen lying down under a Giants blanket before sitting up.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 143306,
+        "timestamp": "2026-06-13T22:02:43+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 143305,
+        "timestamp": "2026-06-13T22:02:21+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143304,
+        "timestamp": "2026-06-13T22:01:55+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard camera is currently non-functional, displaying an error message instead of a video feed. No visual information is available from the scene due to a loss of stream.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 143303,
+        "timestamp": "2026-06-13T22:01:47+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 143302,
         "timestamp": "2026-06-13T22:00:42+00:00",
@@ -3668,64 +3723,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143107,
-        "timestamp": "2026-06-13T20:15:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143106,
-        "timestamp": "2026-06-13T20:15:03+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143105,
-        "timestamp": "2026-06-13T20:14:28+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera continues to display an error message and a heavily glitched video feed. This persistent outage prevents any monitoring of the dog run area, the gate, or the dogs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.7}]"
-      },
-      {
-        "id": 143104,
-        "timestamp": "2026-06-13T20:13:42+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard are empty. The white gate remains closed, blocking the path to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 143103,
-        "timestamp": "2026-06-13T20:13:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6815,
+        "timestamp": "2026-06-13T22:01:55+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] The backyard camera is not transmitting video, indicating a potential connection or hardware issue.",
+        "acted_on_at": null
+      },
       {
         "id": 6814,
         "timestamp": "2026-06-13T21:39:11+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at entryway this hour: 9 observations vs typical 1 for weekend 13:00",
         "acted_on_at": null
-      },
-      {
-        "id": 6807,
-        "timestamp": "2026-06-13T20:30:40+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at front_door this hour: 4 observations vs typical 1 for weekend 13:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3825,15 +3825,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-13T21:54:23+00:00",
+        "backyard": "2026-06-13T22:01:55+00:00",
         "dog_run": "2026-06-13T21:45:25+00:00",
         "entryway": "2026-06-13T21:53:15+00:00",
         "front_door": "2026-06-13T21:53:41+00:00",
         "front_yard": "2026-06-13T21:57:52+00:00",
-        "living_room": "2026-06-13T22:00:01+00:00",
+        "living_room": "2026-06-13T22:03:25+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T22:01:00.687268+00:00"
+      "last_updated": "2026-06-13T22:04:02.137533+00:00"
     }
   },
   "pge": {
