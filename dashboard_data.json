@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 20:44:47",
+  "generated_at": "2026-06-12 20:49:54",
   "as_of": "2026-06-12",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141126,
+        "timestamp": "2026-06-13T03:47:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141125,
+        "timestamp": "2026-06-13T03:47:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 141124,
+        "timestamp": "2026-06-13T03:45:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141123,
+        "timestamp": "2026-06-13T03:44:21+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141122,
+        "timestamp": "2026-06-13T03:44:16+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141121,
+        "timestamp": "2026-06-13T03:42:50+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141120,
         "timestamp": "2026-06-13T03:41:50+00:00",
@@ -3377,75 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 140926,
-        "timestamp": "2026-06-13T01:43:31+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140925,
-        "timestamp": "2026-06-13T01:43:21+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is experiencing a severe technical malfunction, displaying heavily glitched video frames and error messages. This prevents any monitoring of the side yard or the dogs.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 140924,
-        "timestamp": "2026-06-13T01:42:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140923,
-        "timestamp": "2026-06-13T01:42:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 140922,
-        "timestamp": "2026-06-13T01:42:31+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 140921,
-        "timestamp": "2026-06-13T01:42:28+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6650,
+        "timestamp": "2026-06-13T03:48:17+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The simultaneous trigger of a smoke/CO alarm, urgent dog barking, a doorbell ring, and a sudden presence spike strongly indicates an active perimeter event, but the concurrent front yard and dog run camera failures prevent visual confirmation. Steve should immediately verify the alarm status and check the doorbell activity via a backup camera or phone to rule out a safety hazard or urgent visitor.",
+        "acted_on_at": null
+      },
       {
         "id": 6649,
         "timestamp": "2026-06-13T03:41:51+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "The convergence of prolonged urgent dog barking at the perimeter, multiple camera malfunctions, and a sudden audio detection of a child in distress at the front door indicates a potential child safety incident that requires immediate verification, as technical failures are preventing visual confirmation.",
         "acted_on_at": null
-      },
-      {
-        "id": 6636,
-        "timestamp": "2026-06-13T01:41:54+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Pattern: dogs have been unusually active in the backyard on 4 of the last 7 days (avg 12 observations/day). This may indicate fence activity, a neighborhood animal, or family routine changes.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3549,7 +3549,7 @@
         "living_room": "2026-06-13T03:37:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T03:42:37.79952+00:00"
+      "last_updated": "2026-06-13T03:48:42.99179+00:00"
     }
   },
   "pge": {
