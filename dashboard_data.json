@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 15:06:10",
+  "generated_at": "2026-06-13 15:11:17",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1524,6 +1524,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 143311,
+        "timestamp": "2026-06-13T22:09:55+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143310,
+        "timestamp": "2026-06-13T22:06:01+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a persistent technical failure and is not transmitting any new video frames. The visible scene shows an empty side yard with a fence and greenery.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 143309,
+        "timestamp": "2026-06-13T22:05:27+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143308,
+        "timestamp": "2026-06-13T22:04:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 143307,
         "timestamp": "2026-06-13T22:03:25+00:00",
@@ -3679,53 +3723,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143111,
-        "timestamp": "2026-06-13T20:18:05+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143110,
-        "timestamp": "2026-06-13T20:17:24+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143109,
-        "timestamp": "2026-06-13T20:16:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143108,
-        "timestamp": "2026-06-13T20:16:01+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6816,
+        "timestamp": "2026-06-13T22:06:01+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not transmitting video, preventing monitoring of the dogs and the gate.",
+        "acted_on_at": null
+      },
       {
         "id": 6815,
         "timestamp": "2026-06-13T22:01:55+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at backyard this hour: 4 observations vs typical 1 for weekend 13:00",
         "acted_on_at": null
-      },
-      {
-        "id": 6806,
-        "timestamp": "2026-06-13T20:30:40+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at entryway this hour: 9 observations vs typical 1 for weekend 13:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3826,14 +3826,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-13T22:01:55+00:00",
-        "dog_run": "2026-06-13T21:45:25+00:00",
+        "dog_run": "2026-06-13T22:06:01+00:00",
         "entryway": "2026-06-13T21:53:15+00:00",
         "front_door": "2026-06-13T21:53:41+00:00",
         "front_yard": "2026-06-13T21:57:52+00:00",
         "living_room": "2026-06-13T22:03:25+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T22:04:02.137533+00:00"
+      "last_updated": "2026-06-13T22:10:05.177604+00:00"
     }
   },
   "pge": {
