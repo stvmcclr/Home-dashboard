@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 06:44:20",
+  "generated_at": "2026-06-13 06:49:27",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1356,6 +1356,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141914,
+        "timestamp": "2026-06-13T13:47:23+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch and patio area are empty and quiet during the early morning. A black SUV is parked in the driveway in the background.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 141913,
+        "timestamp": "2026-06-13T13:47:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141912,
+        "timestamp": "2026-06-13T13:45:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141911,
+        "timestamp": "2026-06-13T13:45:43+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure and is not receiving any video frames. An error message is displayed on the screen, indicating a need to check the system error logs.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 141910,
+        "timestamp": "2026-06-13T13:44:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141909,
+        "timestamp": "2026-06-13T13:42:45+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141908,
         "timestamp": "2026-06-13T13:41:25+00:00",
@@ -3489,75 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 141714,
-        "timestamp": "2026-06-13T10:39:51+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141713,
-        "timestamp": "2026-06-13T10:39:29+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch and patio area are dark and empty at night. No movement or people are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141712,
-        "timestamp": "2026-06-13T10:39:17+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 141711,
-        "timestamp": "2026-06-13T10:39:03+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is non-functional and displaying an error message stating that no frames have been received. This is a continuation of a recent technical failure with the camera feed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 141710,
-        "timestamp": "2026-06-13T10:38:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141709,
-        "timestamp": "2026-06-13T10:35:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6730,
+        "timestamp": "2026-06-13T13:45:43+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not receiving video frames due to a technical failure.",
+        "acted_on_at": null
+      },
       {
         "id": 6729,
         "timestamp": "2026-06-13T13:32:26+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is currently non-functional, preventing any visibility into the dog run area.",
         "acted_on_at": null
-      },
-      {
-        "id": 6720,
-        "timestamp": "2026-06-13T10:26:07+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is currently offline, showing an error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3653,14 +3653,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-13T13:41:25+00:00",
-        "dog_run": "2026-06-13T13:25:14+00:00",
+        "dog_run": "2026-06-13T13:45:43+00:00",
         "entryway": "2026-06-13T13:10:37+00:00",
-        "front_door": "2026-06-13T13:26:47+00:00",
+        "front_door": "2026-06-13T13:47:23+00:00",
         "front_yard": "2026-06-13T13:32:25+00:00",
         "living_room": "2026-06-13T13:35:42+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T13:42:27.96896+00:00"
+      "last_updated": "2026-06-13T13:48:34.481362+00:00"
     }
   },
   "pge": {
