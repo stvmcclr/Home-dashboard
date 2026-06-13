@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 00:19:51",
+  "generated_at": "2026-06-13 00:24:58",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 141515,
+        "timestamp": "2026-06-13T07:23:41+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 141514,
+        "timestamp": "2026-06-13T07:23:38+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a technical failure, displaying an error message indicating that no video frames are being received. The preceding frames show a quiet night with cars parked in the driveway and on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 141513,
+        "timestamp": "2026-06-13T07:23:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141512,
+        "timestamp": "2026-06-13T07:21:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141511,
+        "timestamp": "2026-06-13T07:20:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 141510,
+        "timestamp": "2026-06-13T07:18:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 141509,
         "timestamp": "2026-06-13T07:17:36+00:00",
@@ -3405,75 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 141315,
-        "timestamp": "2026-06-13T05:01:43+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a doorbell chime or door knock at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141314,
-        "timestamp": "2026-06-13T05:01:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141313,
-        "timestamp": "2026-06-13T05:01:11+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "wind or weather noise outdoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141312,
-        "timestamp": "2026-06-13T05:01:09+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141311,
-        "timestamp": "2026-06-13T05:00:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 141310,
-        "timestamp": "2026-06-13T05:00:08+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6704,
+        "timestamp": "2026-06-13T07:23:38+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing a known technical issue and is not providing a live feed.",
+        "acted_on_at": null
+      },
       {
         "id": 6703,
         "timestamp": "2026-06-13T07:12:34+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 10:50PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6696,
-        "timestamp": "2026-06-13T06:54:24+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:54PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,11 +3575,11 @@
         "dog_run": "2026-06-13T07:12:34+00:00",
         "entryway": "2026-06-13T07:05:02+00:00",
         "front_door": "2026-06-13T07:14:22+00:00",
-        "front_yard": "2026-06-13T07:17:36+00:00",
+        "front_yard": "2026-06-13T07:23:38+00:00",
         "living_room": "2026-06-13T06:42:28+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-13T07:18:17.125384+00:00"
+      "last_updated": "2026-06-13T07:24:22.354789+00:00"
     }
   },
   "pge": {
