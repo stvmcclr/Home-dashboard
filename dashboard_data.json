@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 21:04:38",
+  "generated_at": "2026-06-13 21:09:45",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1244,6 +1244,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144054,
+        "timestamp": "2026-06-14T04:07:18+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera feed has failed, transitioning from a glitchy view of the closed gate to a complete loss of signal. The most recent frames show an error message indicating that no frames are being received, suggesting a camera or network failure.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"offline\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 144053,
+        "timestamp": "2026-06-14T04:06:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144052,
+        "timestamp": "2026-06-14T04:05:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144051,
+        "timestamp": "2026-06-14T04:03:46+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144050,
+        "timestamp": "2026-06-14T04:03:06+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144049,
+        "timestamp": "2026-06-14T04:02:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 144048,
+        "timestamp": "2026-06-14T04:02:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144047,
         "timestamp": "2026-06-14T04:01:45+00:00",
@@ -3366,86 +3443,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 143854,
-        "timestamp": "2026-06-14T02:23:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143853,
-        "timestamp": "2026-06-14T02:23:01+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "calm family conversation indoors at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143852,
-        "timestamp": "2026-06-14T02:22:38+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143851,
-        "timestamp": "2026-06-14T02:22:23+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143850,
-        "timestamp": "2026-06-14T02:21:22+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143849,
-        "timestamp": "2026-06-14T02:20:52+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143848,
-        "timestamp": "2026-06-14T02:19:53+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6870,
+        "timestamp": "2026-06-14T04:07:18+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera has stopped sending frames, displaying a 'No frames have been received' error.",
+        "acted_on_at": null
+      },
       {
         "id": 6869,
         "timestamp": "2026-06-14T03:59:39+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing a total loss of video feed, showing only an error message and a glitched image.",
         "acted_on_at": null
-      },
-      {
-        "id": 6860,
-        "timestamp": "2026-06-14T01:55:37+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing video loss and is not transmitting any frames.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3535,21 +3535,20 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-14T04:00:32+00:00",
-        "dog_run": "2026-06-14T03:46:41+00:00",
+        "dog_run": "2026-06-14T04:07:18+00:00",
         "entryway": "2026-06-14T03:57:07+00:00",
         "front_door": "2026-06-14T03:53:30+00:00",
         "front_yard": "2026-06-14T03:59:39+00:00",
         "living_room": "2026-06-14T03:35:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T04:02:07.663271+00:00"
+      "last_updated": "2026-06-14T04:08:10.647905+00:00"
     }
   },
   "pge": {
