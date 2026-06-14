@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 04:09:38",
+  "generated_at": "2026-06-14 04:14:46",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144562,
+        "timestamp": "2026-06-14T11:11:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144561,
+        "timestamp": "2026-06-14T11:10:23+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144560,
+        "timestamp": "2026-06-14T11:09:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144559,
+        "timestamp": "2026-06-14T11:09:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144557,
         "timestamp": "2026-06-14T11:08:22+00:00",
@@ -3455,53 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 144362,
-        "timestamp": "2026-06-14T07:33:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144361,
-        "timestamp": "2026-06-14T07:33:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144360,
-        "timestamp": "2026-06-14T07:33:26+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144359,
-        "timestamp": "2026-06-14T07:32:10+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch late at night with a dog resting on the floor nearby. The living room is quiet and dimly lit.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.7}]"
       }
     ],
     "insights": [
+      {
+        "id": 6933,
+        "timestamp": "2026-06-14T11:10:09+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous presence of 16 devices indoors, persistent perimeter audio, a 04:03 doorbell trigger, and repeated camera stream failures strongly indicates weather or wind is triggering audio sensors while causing network glitches in the outdoor cameras, rather than actual external activity. Steve should verify local weather conditions and reboot the dog_run and front_yard cameras to prevent false alerts and restore monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 6932,
         "timestamp": "2026-06-14T11:08:22+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is failing to provide a video stream, displaying an error message instead.",
         "acted_on_at": null
-      },
-      {
-        "id": 6923,
-        "timestamp": "2026-06-14T09:35:31+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is experiencing intermittent technical glitches/error messages.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3604,7 +3604,7 @@
         "living_room": "2026-06-14T10:35:07+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T11:09:00.225758+00:00"
+      "last_updated": "2026-06-14T11:12:03.924305+00:00"
     }
   },
   "pge": {
