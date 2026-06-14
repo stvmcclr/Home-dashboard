@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 18:46:19",
+  "generated_at": "2026-06-13 18:51:27",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1215,6 +1215,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 143794,
+        "timestamp": "2026-06-14T01:48:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143793,
+        "timestamp": "2026-06-14T01:47:53+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143792,
+        "timestamp": "2026-06-14T01:46:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 143791,
+        "timestamp": "2026-06-14T01:45:44+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "routine audio at entryway \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 143790,
         "timestamp": "2026-06-14T01:45:20+00:00",
@@ -3370,53 +3414,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143594,
-        "timestamp": "2026-06-13T23:41:48+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is experiencing a technical failure, displaying an error message that no video frames are being received. The only available frame shows a person, likely Steve, walking with a stroller in the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"walking with a stroller\", \"confidence\": 0.8}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 143593,
-        "timestamp": "2026-06-13T23:41:33+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143592,
-        "timestamp": "2026-06-13T23:41:30+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 143591,
-        "timestamp": "2026-06-13T23:41:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6858,
+        "timestamp": "2026-06-14T01:47:04+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at dog_run this hour: 5 observations vs typical 1 for weekend 18:00",
+        "acted_on_at": null
+      },
       {
         "id": 6857,
         "timestamp": "2026-06-14T01:41:06+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "high",
         "summary": "[entryway] Recent history shows an unidentified person and a call for help in the entryway.",
         "acted_on_at": null
-      },
-      {
-        "id": 6848,
-        "timestamp": "2026-06-13T23:44:03+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The simultaneous activation of a smoke/CO alarm, audio indicating glass breaking and distress calls, combined with frantic multi-zone dog barking and multiple camera failures, strongly suggests an active emergency or potential security breach requiring immediate verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3506,8 +3506,7 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3520,7 +3519,7 @@
         "living_room": "2026-06-14T01:17:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T01:45:27.099992+00:00"
+      "last_updated": "2026-06-14T01:48:31.103154+00:00"
     }
   },
   "pge": {
