@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 22:36:46",
+  "generated_at": "2026-06-13 22:41:53",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144181,
+        "timestamp": "2026-06-14T05:39:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 144180,
+        "timestamp": "2026-06-14T05:38:59+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is quiet, with Steve seen walking through the kitchen area. The rest of the house appears still during the late evening.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"walking through the kitchen\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 144179,
+        "timestamp": "2026-06-14T05:38:28+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144178,
+        "timestamp": "2026-06-14T05:38:09+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The patio area is currently empty and shows no visible movement under the night lights. This follows a recent period where audio from the entryway indicated someone calling for help.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 144177,
+        "timestamp": "2026-06-14T05:37:02+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Posey the dog is resting quietly on the couch in the living room. The house is still and quiet during the late evening.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 144176,
+        "timestamp": "2026-06-14T05:36:54+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144175,
         "timestamp": "2026-06-14T05:34:46+00:00",
@@ -3377,75 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143981,
-        "timestamp": "2026-06-14T03:26:03+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is non-functional, displaying a 'no frames received' error message and a persistent vertical glitch. No activity or entities can be observed due to the technical failure.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 143980,
-        "timestamp": "2026-06-14T03:25:53+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143979,
-        "timestamp": "2026-06-14T03:25:30+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 dogs barking briefly once or twice",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143978,
-        "timestamp": "2026-06-14T03:25:22+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143977,
-        "timestamp": "2026-06-14T03:24:40+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143976,
-        "timestamp": "2026-06-14T03:24:29+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6879,
+        "timestamp": "2026-06-14T05:38:09+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] The patio is currently empty, but recent audio from the entryway indicated someone calling for help.",
+        "acted_on_at": null
+      },
       {
         "id": 6878,
         "timestamp": "2026-06-14T05:30:27+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera has stopped sending frames, displaying a 'No frames have been received' error.",
         "acted_on_at": null
-      },
-      {
-        "id": 6869,
-        "timestamp": "2026-06-14T03:59:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing video loss, which is consistent with recent intermittent connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,12 +3547,12 @@
         "backyard": "2026-06-14T05:25:58+00:00",
         "dog_run": "2026-06-14T05:30:27+00:00",
         "entryway": "2026-06-14T05:28:00+00:00",
-        "front_door": "2026-06-14T05:17:26+00:00",
+        "front_door": "2026-06-14T05:38:09+00:00",
         "front_yard": "2026-06-14T05:23:28+00:00",
-        "living_room": "2026-06-14T05:34:07+00:00",
+        "living_room": "2026-06-14T05:38:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T05:36:09.766579+00:00"
+      "last_updated": "2026-06-14T05:39:11.069358+00:00"
     }
   },
   "pge": {
