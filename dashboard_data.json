@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 22:21:25",
+  "generated_at": "2026-06-13 22:26:32",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144154,
+        "timestamp": "2026-06-14T05:24:00+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144153,
+        "timestamp": "2026-06-14T05:23:28+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a complete loss of video feed, displaying an error message indicating that no frames have been received. This follows a recent period of intermittent video loss on this same camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"video loss\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 144152,
+        "timestamp": "2026-06-14T05:21:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144151,
+        "timestamp": "2026-06-14T05:21:37+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is in the kitchen area while Posey the dog walks across the living room floor. The house is quiet during the late evening.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 144150,
         "timestamp": "2026-06-14T05:20:28+00:00",
@@ -3399,53 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143954,
-        "timestamp": "2026-06-14T03:10:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143953,
-        "timestamp": "2026-06-14T03:10:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143952,
-        "timestamp": "2026-06-14T03:10:42+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty, with no people or animals visible in the frame. The scene remains static throughout the observed period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 143951,
-        "timestamp": "2026-06-14T03:10:25+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6877,
+        "timestamp": "2026-06-14T05:23:28+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is experiencing video loss, which may require checking the error logs as suggested by the on-screen message.",
+        "acted_on_at": null
+      },
       {
         "id": 6876,
         "timestamp": "2026-06-14T05:17:27+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "The simultaneous outage of both exterior cameras, paired with repeated unclassified audio/doorbell activity and a smoke/CO alarm beeping at the front door, indicates a high probability of tampering or an active environmental hazard that is currently obscured and requires immediate verification.",
         "acted_on_at": null
-      },
-      {
-        "id": 6867,
-        "timestamp": "2026-06-14T03:46:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is still experiencing a significant vertical glitch, making it difficult to monitor the area.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,11 +3547,11 @@
         "dog_run": "2026-06-14T05:09:58+00:00",
         "entryway": "2026-06-14T04:42:35+00:00",
         "front_door": "2026-06-14T05:17:26+00:00",
-        "front_yard": "2026-06-14T05:02:25+00:00",
-        "living_room": "2026-06-14T05:15:29+00:00",
+        "front_yard": "2026-06-14T05:23:28+00:00",
+        "living_room": "2026-06-14T05:21:37+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T05:21:00.535063+00:00"
+      "last_updated": "2026-06-14T05:24:02.428682+00:00"
     }
   },
   "pge": {
