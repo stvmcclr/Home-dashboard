@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 00:14:01",
+  "generated_at": "2026-06-14 00:19:08",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144333,
+        "timestamp": "2026-06-14T07:16:20+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144332,
+        "timestamp": "2026-06-14T07:15:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144331,
+        "timestamp": "2026-06-14T07:15:45+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144330,
+        "timestamp": "2026-06-14T07:15:05+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is relaxing on the couch with a dog in the living room. The camera feed experienced a temporary technical failure, resulting in several seconds of no video being received before recovering.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"Camera Feed Interruption\", \"entity_state\": \"interrupted\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 144329,
+        "timestamp": "2026-06-14T07:14:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144328,
         "timestamp": "2026-06-14T07:13:25+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.85}, {\"entity_type\": \"object\", \"entity_name\": \"cardboard box\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 144133,
-        "timestamp": "2026-06-14T05:07:58+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144132,
-        "timestamp": "2026-06-14T05:07:49+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144131,
-        "timestamp": "2026-06-14T05:07:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144130,
-        "timestamp": "2026-06-14T05:07:01+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, blocking the path from the side passage to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 144129,
-        "timestamp": "2026-06-14T05:06:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a doorbell chime or door knock at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6911,
+        "timestamp": "2026-06-14T07:15:05+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] The camera feed experienced a technical failure and loss of signal.",
+        "acted_on_at": null
+      },
       {
         "id": 6910,
         "timestamp": "2026-06-14T07:13:25+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "High-activity pattern: front_door averaging 71 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 6903,
-        "timestamp": "2026-06-14T06:59:02+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: front_yard averaging 68 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3577,10 +3577,10 @@
         "entryway": "2026-06-14T06:59:11+00:00",
         "front_door": "2026-06-14T07:05:26+00:00",
         "front_yard": "2026-06-14T07:08:36+00:00",
-        "living_room": "2026-06-14T07:13:25+00:00",
+        "living_room": "2026-06-14T07:15:05+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T07:13:32.517406+00:00"
+      "last_updated": "2026-06-14T07:16:34.933118+00:00"
     }
   },
   "pge": {
