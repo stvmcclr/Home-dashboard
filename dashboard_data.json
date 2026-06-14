@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 00:29:22",
+  "generated_at": "2026-06-14 00:34:30",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144355,
+        "timestamp": "2026-06-14T07:31:10+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144354,
+        "timestamp": "2026-06-14T07:30:39+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 144353,
+        "timestamp": "2026-06-14T07:30:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144352,
+        "timestamp": "2026-06-14T07:29:52+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144351,
+        "timestamp": "2026-06-14T07:29:14+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is currently experiencing a complete loss of video feed, displaying an error message instead of the driveway and street. This follows a brief period of video loss recorded approximately 20 minutes ago.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"front yard camera\", \"entity_state\": \"offline\", \"confidence\": 1.0}]"
+      },
       {
         "id": 144350,
         "timestamp": "2026-06-14T07:28:34+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"working in kitchen\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting on couch\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 144155,
-        "timestamp": "2026-06-14T05:25:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144154,
-        "timestamp": "2026-06-14T05:24:00+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144153,
-        "timestamp": "2026-06-14T05:23:28+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently experiencing a complete loss of video feed, displaying an error message indicating that no frames have been received. This follows a recent period of intermittent video loss on this same camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"video loss\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 144152,
-        "timestamp": "2026-06-14T05:21:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144151,
-        "timestamp": "2026-06-14T05:21:37+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is in the kitchen area while Posey the dog walks across the living room floor. The house is quiet during the late evening.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
@@ -3564,7 +3564,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3572,15 +3571,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-14T07:10:09+00:00",
+        "backyard": "2026-06-14T07:30:39+00:00",
         "dog_run": "2026-06-14T07:17:00+00:00",
         "entryway": "2026-06-14T06:59:11+00:00",
         "front_door": "2026-06-14T07:25:46+00:00",
-        "front_yard": "2026-06-14T07:08:36+00:00",
+        "front_yard": "2026-06-14T07:29:14+00:00",
         "living_room": "2026-06-14T07:24:03+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T07:28:42.429892+00:00"
+      "last_updated": "2026-06-14T07:31:44.569313+00:00"
     }
   },
   "pge": {
