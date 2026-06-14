@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 01:56:25",
+  "generated_at": "2026-06-14 02:01:32",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144435,
+        "timestamp": "2026-06-14T09:00:48+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is failing to provide a video stream, displaying a technical error message instead. No visual information is available to monitor the dog run or the state of the gate.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 144434,
+        "timestamp": "2026-06-14T08:59:59+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144433,
+        "timestamp": "2026-06-14T08:58:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144432,
+        "timestamp": "2026-06-14T08:56:06+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144431,
+        "timestamp": "2026-06-14T08:55:09+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
       {
         "id": 144430,
         "timestamp": "2026-06-14T08:54:40+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 144235,
-        "timestamp": "2026-06-14T06:12:21+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144234,
-        "timestamp": "2026-06-14T06:11:37+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144233,
-        "timestamp": "2026-06-14T06:10:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144232,
-        "timestamp": "2026-06-14T06:10:05+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "television or music playing in the background at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144231,
-        "timestamp": "2026-06-14T06:09:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3565,22 +3565,21 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-14T08:34:01+00:00",
-        "dog_run": "2026-06-14T08:40:16+00:00",
+        "backyard": "2026-06-14T08:55:09+00:00",
+        "dog_run": "2026-06-14T09:00:48+00:00",
         "entryway": "2026-06-14T08:30:34+00:00",
         "front_door": "2026-06-14T08:49:06+00:00",
         "front_yard": "2026-06-14T08:54:03+00:00",
         "living_room": "2026-06-14T08:17:39+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T08:54:56.397818+00:00"
+      "last_updated": "2026-06-14T09:01:01.18669+00:00"
     }
   },
   "pge": {
