@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 08:15:37",
+  "generated_at": "2026-06-14 08:20:44",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1356,6 +1356,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 145089,
+        "timestamp": "2026-06-14T15:18:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 145088,
+        "timestamp": "2026-06-14T15:17:48+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 145087,
+        "timestamp": "2026-06-14T15:17:16+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 145086,
+        "timestamp": "2026-06-14T15:16:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 145085,
+        "timestamp": "2026-06-14T15:16:18+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "a child crying or yelling in distress at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 145084,
+        "timestamp": "2026-06-14T15:15:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 145083,
         "timestamp": "2026-06-14T15:15:09+00:00",
@@ -3489,75 +3555,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 144889,
-        "timestamp": "2026-06-14T13:38:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144888,
-        "timestamp": "2026-06-14T13:38:13+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144887,
-        "timestamp": "2026-06-14T13:38:00+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch and patio area are empty and quiet, with no visible people or animals. While the visual scene is static, audio indicates dogs have been barking at both the front door and the backyard.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 144886,
-        "timestamp": "2026-06-14T13:37:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144885,
-        "timestamp": "2026-06-14T13:37:52+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144884,
-        "timestamp": "2026-06-14T13:37:24+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6948,
+        "timestamp": "2026-06-14T15:17:09+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The synchronized doorbell chime, perimeter audio spikes, and dog barking confirm an active visitor or delivery at the front door while the house is unoccupied. This matters because the concurrent dog_run camera failure and front_yard feed instability create a visual blind spot exactly as activity peaks, leaving the household reliant on audio alerts during an active event.",
+        "acted_on_at": null
+      },
       {
         "id": 6947,
         "timestamp": "2026-06-14T14:15:50+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera stream experienced a technical failure, including an error message and visual glitching, before returning to normal.",
         "acted_on_at": null
-      },
-      {
-        "id": 6938,
-        "timestamp": "2026-06-14T12:11:42+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The simultaneous failure of perimeter cameras, persistent unclassified audio, and the sudden appearance of a dark green pickup truck in the driveway at 05:01 indicate active but obscured outdoor activity while the household remains asleep. This pattern suggests a potential visitor or delivery that the system is currently blind to, warranting immediate verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3660,7 +3660,7 @@
         "living_room": "2026-06-14T15:11:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T15:15:22.820826+00:00"
+      "last_updated": "2026-06-14T15:18:24.339838+00:00"
     }
   },
   "pge": {
