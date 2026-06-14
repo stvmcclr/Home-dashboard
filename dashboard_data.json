@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 00:03:46",
+  "generated_at": "2026-06-14 00:08:53",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1022,31 +1022,31 @@
   "thermostat": {
     "latest": [
       {
-        "id": 2060,
-        "timestamp": "2026-06-14T02:41:43+00:00",
-        "location": "Upstairs",
-        "temp_f": 77.5,
-        "humidity_pct": 55,
-        "mode": "HEATCOOL",
+        "id": 2061,
+        "timestamp": "2026-06-14T07:08:52+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.2,
+        "humidity_pct": 53,
+        "mode": "HEAT",
         "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "ON",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2062,
+        "timestamp": "2026-06-14T07:08:52+00:00",
+        "location": "Upstairs",
+        "temp_f": 72.2,
+        "humidity_pct": 48,
+        "mode": "HEATCOOL",
+        "hvac_status": "COOLING",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 2059,
-        "timestamp": "2026-06-14T02:41:43+00:00",
-        "location": "Downstairs",
-        "temp_f": 78.5,
-        "humidity_pct": 52,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 66.6,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "ON",
         "connectivity": "ONLINE"
       }
     ],
@@ -1073,6 +1073,34 @@
         "humidity_pct": 55,
         "mode": "HEATCOOL",
         "hvac_status": "OFF",
+        "heat_setpoint_f": 57.9,
+        "cool_setpoint_f": 67.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2061,
+        "timestamp": "2026-06-14T07:08:52+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.2,
+        "humidity_pct": 53,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "ON",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2062,
+        "timestamp": "2026-06-14T07:08:52+00:00",
+        "location": "Upstairs",
+        "temp_f": 72.2,
+        "humidity_pct": 48,
+        "mode": "HEATCOOL",
+        "hvac_status": "COOLING",
         "heat_setpoint_f": 57.9,
         "cool_setpoint_f": 67.9,
         "eco_mode": "OFF",
@@ -1244,6 +1272,127 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144318,
+        "timestamp": "2026-06-14T07:07:16+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "wind at living_room at living_room (wind)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144317,
+        "timestamp": "2026-06-14T07:07:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144316,
+        "timestamp": "2026-06-14T07:06:59+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is relaxing on the couch in the living room. The camera feed undergoes a period of severe digital distortion and technical failure before returning to a clear view of the same scene.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"active\", \"confidence\": 0.99}]"
+      },
+      {
+        "id": 144315,
+        "timestamp": "2026-06-14T07:06:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144314,
+        "timestamp": "2026-06-14T07:05:42+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144313,
+        "timestamp": "2026-06-14T07:05:26+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The backyard patio is empty and quiet under the night lights. No people or animals are visible in the outdoor space.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 144312,
+        "timestamp": "2026-06-14T07:04:05+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is sitting on the couch in the living room. The camera feed then undergoes a severe technical failure, resulting in heavy digital distortion and unreadable footage.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"sitting on couch\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"active\", \"confidence\": 0.99}]"
+      },
+      {
+        "id": 144311,
+        "timestamp": "2026-06-14T07:03:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144310,
+        "timestamp": "2026-06-14T07:03:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 144309,
+        "timestamp": "2026-06-14T07:02:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144308,
+        "timestamp": "2026-06-14T07:01:36+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144307,
         "timestamp": "2026-06-14T07:01:12+00:00",
@@ -3322,130 +3471,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 144118,
-        "timestamp": "2026-06-14T05:03:05+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144117,
-        "timestamp": "2026-06-14T05:02:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144116,
-        "timestamp": "2026-06-14T05:02:52+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144115,
-        "timestamp": "2026-06-14T05:02:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144114,
-        "timestamp": "2026-06-14T05:02:25+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera experiences intermittent video loss, displaying error messages before recovering. Once the feed is restored, the dark green pickup is visible in the driveway and Roxanne's black SUV is parked on the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 144113,
-        "timestamp": "2026-06-14T05:01:35+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144112,
-        "timestamp": "2026-06-14T05:01:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144111,
-        "timestamp": "2026-06-14T04:59:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144110,
-        "timestamp": "2026-06-14T04:59:34+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144109,
-        "timestamp": "2026-06-14T04:58:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144108,
-        "timestamp": "2026-06-14T04:56:42+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6909,
+        "timestamp": "2026-06-14T07:07:00+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] The camera feed experienced a severe technical failure with heavy digital distortion.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6908,
+        "timestamp": "2026-06-14T07:04:12+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] The living room camera is experiencing a significant technical failure/glitch.",
+        "acted_on_at": null
+      },
+      {
+        "id": 6907,
+        "timestamp": "2026-06-14T07:02:01+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous spike in unclassified audio, severe camera corruption, and multiple camera feed failures across different zones strongly indicates a power fluctuation or network instability affecting the smart home system, rather than independent household events. This warrants a quick system check to ensure sensor reliability and rule out masked security incidents.",
+        "acted_on_at": null
+      },
       {
         "id": 6906,
         "timestamp": "2026-06-14T07:01:12+00:00",
@@ -3501,30 +3553,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 10:57PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 6905,
-        "timestamp": "2026-06-14T06:59:02+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 11:48PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6898,
-        "timestamp": "2026-06-14T06:57:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud thud or crash was recently heard at the entryway.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6897,
-        "timestamp": "2026-06-14T06:55:31+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud thud/crash was heard at the entryway coinciding with severe camera corruption.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,12 +3575,12 @@
         "backyard": "2026-06-14T06:49:20+00:00",
         "dog_run": "2026-06-14T06:56:04+00:00",
         "entryway": "2026-06-14T06:59:11+00:00",
-        "front_door": "2026-06-14T06:43:32+00:00",
+        "front_door": "2026-06-14T07:05:26+00:00",
         "front_yard": "2026-06-14T06:47:07+00:00",
-        "living_room": "2026-06-14T07:01:12+00:00",
+        "living_room": "2026-06-14T07:06:59+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T07:01:22.024409+00:00"
+      "last_updated": "2026-06-14T07:07:27.310472+00:00"
     }
   },
   "pge": {
