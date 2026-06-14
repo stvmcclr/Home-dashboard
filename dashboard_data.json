@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 01:05:14",
+  "generated_at": "2026-06-14 01:10:20",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144402,
+        "timestamp": "2026-06-14T08:08:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144401,
+        "timestamp": "2026-06-14T08:07:13+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The porch and garden area are empty and quiet under the night lights. No people, animals, or movement are visible in the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 144400,
+        "timestamp": "2026-06-14T08:07:13+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144399,
+        "timestamp": "2026-06-14T08:05:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144398,
+        "timestamp": "2026-06-14T08:04:07+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 144397,
+        "timestamp": "2026-06-14T08:03:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144396,
         "timestamp": "2026-06-14T08:02:10+00:00",
@@ -3405,75 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 144202,
-        "timestamp": "2026-06-14T05:55:49+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "routine audio at living_room \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144201,
-        "timestamp": "2026-06-14T05:52:10+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144200,
-        "timestamp": "2026-06-14T05:51:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144199,
-        "timestamp": "2026-06-14T05:51:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144198,
-        "timestamp": "2026-06-14T05:50:50+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144197,
-        "timestamp": "2026-06-14T05:49:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6920,
+        "timestamp": "2026-06-14T08:04:10+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The doorbell trigger at 00:46 was immediately followed by a sustained cluster of unclassified audio in the backyard, strongly suggesting wildlife or the dogs are active outside. This coincides with simultaneous camera feed failures across multiple zones, indicating a network instability rather than a security breach, but warrants a quick verification to ensure no animals are trapped or causing damage.",
+        "acted_on_at": null
+      },
       {
         "id": 6915,
         "timestamp": "2026-06-14T08:02:02+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] The camera feed experienced a technical failure and loss of signal.",
         "acted_on_at": null
-      },
-      {
-        "id": 6910,
-        "timestamp": "2026-06-14T07:13:25+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is experiencing severe digital distortion and technical failure.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,12 +3572,12 @@
         "backyard": "2026-06-14T07:30:39+00:00",
         "dog_run": "2026-06-14T07:59:14+00:00",
         "entryway": "2026-06-14T07:44:58+00:00",
-        "front_door": "2026-06-14T07:46:42+00:00",
+        "front_door": "2026-06-14T08:07:13+00:00",
         "front_yard": "2026-06-14T07:49:57+00:00",
         "living_room": "2026-06-14T07:32:10+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T08:03:13.910742+00:00"
+      "last_updated": "2026-06-14T08:09:18.323382+00:00"
     }
   },
   "pge": {
