@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 03:44:01",
+  "generated_at": "2026-06-14 03:49:08",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1300,6 +1300,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144533,
+        "timestamp": "2026-06-14T10:47:32+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The camera initially shows an empty side yard dog run, but the video stream subsequently fails, displaying error messages and heavy visual distortion.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 144532,
+        "timestamp": "2026-06-14T10:46:37+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144531,
+        "timestamp": "2026-06-14T10:45:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144530,
+        "timestamp": "2026-06-14T10:43:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144529,
         "timestamp": "2026-06-14T10:41:32+00:00",
@@ -3455,53 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 144333,
-        "timestamp": "2026-06-14T07:16:20+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144332,
-        "timestamp": "2026-06-14T07:15:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144331,
-        "timestamp": "2026-06-14T07:15:45+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144330,
-        "timestamp": "2026-06-14T07:15:05+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is relaxing on the couch with a dog in the living room. The camera feed experienced a temporary technical failure, resulting in several seconds of no video being received before recovering.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"state\", \"entity_name\": \"Camera Feed Interruption\", \"entity_state\": \"interrupted\", \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 6930,
+        "timestamp": "2026-06-14T10:47:32+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera stream has failed, showing error messages and heavy visual distortion.",
+        "acted_on_at": null
+      },
       {
         "id": 6929,
         "timestamp": "2026-06-14T10:35:07+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "Synchronized camera feed failures across multiple zones and a cluster of unclassified audio triggers between 01:41 and 01:59 strongly indicate a network or smart hub instability rather than actual outdoor events. This system-wide glitch is causing false triggers and data loss during a typically quiet period.",
         "acted_on_at": null
-      },
-      {
-        "id": 6920,
-        "timestamp": "2026-06-14T08:04:10+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The doorbell trigger at 00:46 was immediately followed by a sustained cluster of unclassified audio in the backyard, strongly suggesting wildlife or the dogs are active outside. This coincides with simultaneous camera feed failures across multiple zones, indicating a network instability rather than a security breach, but warrants a quick verification to ensure no animals are trapped or causing damage.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3597,14 +3597,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-14T10:38:16+00:00",
-        "dog_run": "2026-06-14T10:25:56+00:00",
+        "dog_run": "2026-06-14T10:47:32+00:00",
         "entryway": "2026-06-14T10:02:25+00:00",
         "front_door": "2026-06-14T10:32:09+00:00",
         "front_yard": "2026-06-14T10:37:48+00:00",
         "living_room": "2026-06-14T10:35:07+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T10:41:39.726541+00:00"
+      "last_updated": "2026-06-14T10:47:44.81166+00:00"
     }
   },
   "pge": {
