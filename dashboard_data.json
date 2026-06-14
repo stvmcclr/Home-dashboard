@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 04:04:30",
+  "generated_at": "2026-06-14 04:09:38",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1300,6 +1300,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144557,
+        "timestamp": "2026-06-14T11:08:22+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera stream is experiencing a technical failure, initially displaying error messages indicating no frames are being received and then showing a heavily distorted view of the empty side yard. No people or dogs are visible during this period of malfunction.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 144558,
+        "timestamp": "2026-06-14T11:08:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144556,
+        "timestamp": "2026-06-14T11:06:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144555,
+        "timestamp": "2026-06-14T11:05:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 144554,
+        "timestamp": "2026-06-14T11:03:23+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144553,
+        "timestamp": "2026-06-14T11:03:18+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144552,
         "timestamp": "2026-06-14T11:01:48+00:00",
@@ -3433,75 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.7}]"
-      },
-      {
-        "id": 144358,
-        "timestamp": "2026-06-14T07:32:04+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144357,
-        "timestamp": "2026-06-14T07:31:56+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144356,
-        "timestamp": "2026-06-14T07:31:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144355,
-        "timestamp": "2026-06-14T07:31:10+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144354,
-        "timestamp": "2026-06-14T07:30:39+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 144353,
-        "timestamp": "2026-06-14T07:30:25+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6932,
+        "timestamp": "2026-06-14T11:08:22+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera stream is failing, showing error messages and heavy visual distortion.",
+        "acted_on_at": null
+      },
       {
         "id": 6931,
         "timestamp": "2026-06-14T10:58:43+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera is experiencing intermittent technical glitches/error messages.",
         "acted_on_at": null
-      },
-      {
-        "id": 6922,
-        "timestamp": "2026-06-14T09:14:51+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is reporting that no frames have been received, which prevents continuous monitoring of the front yard.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3591,21 +3591,20 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-14T11:00:11+00:00",
-        "dog_run": "2026-06-14T10:47:32+00:00",
+        "dog_run": "2026-06-14T11:08:22+00:00",
         "entryway": "2026-06-14T10:48:04+00:00",
         "front_door": "2026-06-14T10:53:36+00:00",
         "front_yard": "2026-06-14T10:58:43+00:00",
         "living_room": "2026-06-14T10:35:07+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T11:02:53.780846+00:00"
+      "last_updated": "2026-06-14T11:09:00.225758+00:00"
     }
   },
   "pge": {
