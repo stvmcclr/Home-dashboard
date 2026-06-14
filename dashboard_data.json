@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 03:23:32",
+  "generated_at": "2026-06-14 03:28:39",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144509,
+        "timestamp": "2026-06-14T10:25:56+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the early morning hours. The gate is closed, and no activity is visible in the side yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"AC unit\", \"entity_state\": null, \"confidence\": 0.99}]"
+      },
+      {
+        "id": 144508,
+        "timestamp": "2026-06-14T10:24:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144507,
+        "timestamp": "2026-06-14T10:23:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144506,
+        "timestamp": "2026-06-14T10:23:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144505,
         "timestamp": "2026-06-14T10:21:52+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 144309,
-        "timestamp": "2026-06-14T07:02:13+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144308,
-        "timestamp": "2026-06-14T07:01:36+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144307,
-        "timestamp": "2026-06-14T07:01:12+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is sitting on the couch in the living room. During this sequence, the camera feed experienced a significant technical failure, resulting in a black screen and an error message.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"sitting on the couch\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 144306,
-        "timestamp": "2026-06-14T07:00:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6928,
+        "timestamp": "2026-06-14T10:25:56+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera is now functional and providing a clear view, despite the recent error message.",
+        "acted_on_at": null
+      },
       {
         "id": 6927,
         "timestamp": "2026-06-14T10:07:59+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 6 observations vs typical 1 for weekend 01:00",
         "acted_on_at": null
-      },
-      {
-        "id": 6916,
-        "timestamp": "2026-06-14T08:02:02+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 12:13AM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3569,14 +3569,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-14T10:17:36+00:00",
-        "dog_run": "2026-06-14T10:04:14+00:00",
+        "dog_run": "2026-06-14T10:25:56+00:00",
         "entryway": "2026-06-14T10:02:25+00:00",
         "front_door": "2026-06-14T10:11:07+00:00",
         "front_yard": "2026-06-14T10:17:09+00:00",
         "living_room": "2026-06-14T09:49:23+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T10:23:21.947733+00:00"
+      "last_updated": "2026-06-14T10:26:27.039176+00:00"
     }
   },
   "pge": {
