@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 21:50:40",
+  "generated_at": "2026-06-13 21:55:49",
   "as_of": "2026-06-13",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144103,
+        "timestamp": "2026-06-14T04:53:14+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "routine audio at living_room \u2014 television or music playing in the background",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144102,
+        "timestamp": "2026-06-14T04:52:10+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144101,
+        "timestamp": "2026-06-14T04:50:40+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144100,
         "timestamp": "2026-06-14T04:50:11+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 143903,
-        "timestamp": "2026-06-14T02:47:08+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143902,
-        "timestamp": "2026-06-14T02:47:08+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 143901,
-        "timestamp": "2026-06-14T02:47:00+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6873,
+        "timestamp": "2026-06-14T04:53:14+00:00",
+        "insight_type": "absence",
+        "severity": "low",
+        "summary": "Dogs appear to be home alone \u2014 no family member sighted in 5.2 hours (last seen ~4:43PM). Dogs are active in camera observations.",
+        "acted_on_at": null
+      },
       {
         "id": 6872,
         "timestamp": "2026-06-14T04:48:39+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera remains non-functional, preventing any visibility into the dog run area.",
         "acted_on_at": null
-      },
-      {
-        "id": 6863,
-        "timestamp": "2026-06-14T02:50:17+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The simultaneous outage of both exterior cameras aligns precisely with the doorbell activation and dog barking, creating a critical blind spot at the front entry during an active arrival event. This timing means the household cannot verify if the dogs are reacting to a visitor, delivery, or potential security concern, making immediate camera troubleshooting or a manual check advisable.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3549,7 +3549,7 @@
         "living_room": "2026-06-14T04:23:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T04:50:33.928656+00:00"
+      "last_updated": "2026-06-14T04:53:36.037982+00:00"
     }
   },
   "pge": {
