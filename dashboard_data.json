@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 02:11:46",
+  "generated_at": "2026-06-14 02:16:53",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 144444,
+        "timestamp": "2026-06-14T09:15:32+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The side passage and backyard are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 144443,
+        "timestamp": "2026-06-14T09:15:18+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 144442,
+        "timestamp": "2026-06-14T09:14:51+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera is experiencing a technical failure, displaying error messages for most of the sequence. The single available frame shows a quiet, empty front yard at night with a dark vehicle parked in the driveway and others along the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.6}]"
+      },
+      {
+        "id": 144441,
+        "timestamp": "2026-06-14T09:11:24+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 144440,
         "timestamp": "2026-06-14T09:09:40+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 144244,
-        "timestamp": "2026-06-14T06:19:19+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144243,
-        "timestamp": "2026-06-14T06:17:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144242,
-        "timestamp": "2026-06-14T06:17:47+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 144241,
-        "timestamp": "2026-06-14T06:16:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 6922,
+        "timestamp": "2026-06-14T09:14:51+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is reporting that no frames have been received, which prevents continuous monitoring of the front yard.",
+        "acted_on_at": null
+      },
       {
         "id": 6921,
         "timestamp": "2026-06-14T09:06:31+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] The camera feed experienced a temporary technical failure, resulting in several seconds of distorted video.",
         "acted_on_at": null
-      },
-      {
-        "id": 6912,
-        "timestamp": "2026-06-14T07:17:00+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The dog_run camera is non-functional, preventing monitoring of the dogs and the gate.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,15 +3572,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-14T08:55:09+00:00",
+        "backyard": "2026-06-14T09:15:32+00:00",
         "dog_run": "2026-06-14T09:00:48+00:00",
         "entryway": "2026-06-14T08:30:34+00:00",
         "front_door": "2026-06-14T09:09:40+00:00",
-        "front_yard": "2026-06-14T08:54:03+00:00",
+        "front_yard": "2026-06-14T09:14:51+00:00",
         "living_room": "2026-06-14T09:03:51+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T09:10:12.286138+00:00"
+      "last_updated": "2026-06-14T09:16:18.566055+00:00"
     }
   },
   "pge": {
