@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 16:42:20",
+  "generated_at": "2026-06-14 16:47:28",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1524,6 +1524,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 146375,
+        "timestamp": "2026-06-14T23:43:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146374,
+        "timestamp": "2026-06-14T23:43:32+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is quiet with Posey resting near the stairs, but audio from the backyard reports someone screaming in pain or fear. This suggests a potential emergency occurring out of view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 146373,
+        "timestamp": "2026-06-14T23:43:11+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146372,
+        "timestamp": "2026-06-14T23:42:28+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty and quiet under a sunny sky. However, there is a highly concerning audio detection of someone screaming in pain or fear in the backyard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 146371,
+        "timestamp": "2026-06-14T23:41:53+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 146370,
         "timestamp": "2026-06-14T23:41:21+00:00",
@@ -3668,64 +3723,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146175,
-        "timestamp": "2026-06-14T22:13:01+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run is currently empty, with no people or dogs visible in the side yard. The area remains quiet and undisturbed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 146174,
-        "timestamp": "2026-06-14T22:12:24+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146173,
-        "timestamp": "2026-06-14T22:12:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146172,
-        "timestamp": "2026-06-14T22:11:50+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146171,
-        "timestamp": "2026-06-14T22:11:00+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7003,
+        "timestamp": "2026-06-14T23:43:33+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] Audio indicates someone screaming in pain or fear in the backyard, which is a high-priority emergency.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7002,
+        "timestamp": "2026-06-14T23:42:28+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] Someone is reported screaming in pain or fear in the backyard.",
+        "acted_on_at": null
+      },
       {
         "id": 7001,
         "timestamp": "2026-06-14T23:40:32+00:00",
@@ -3789,22 +3805,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing a technical malfunction, displaying an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 6993,
-        "timestamp": "2026-06-14T21:02:56+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is offline, which is a recurring issue that prevents visual monitoring of the property entrance and street.",
-        "acted_on_at": null
-      },
-      {
-        "id": 6992,
-        "timestamp": "2026-06-14T20:48:19+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is malfunctioning and not providing a live feed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3827,13 +3827,13 @@
       "last_motion": {
         "backyard": "2026-06-14T23:28:09+00:00",
         "dog_run": "2026-06-14T23:40:11+00:00",
-        "entryway": "2026-06-14T23:20:25+00:00",
-        "front_door": "2026-06-14T23:21:54+00:00",
+        "entryway": "2026-06-14T23:43:32+00:00",
+        "front_door": "2026-06-14T23:42:28+00:00",
         "front_yard": "2026-06-14T23:33:52+00:00",
         "living_room": "2026-06-14T23:39:19+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-14T23:41:32.786508+00:00"
+      "last_updated": "2026-06-14T23:44:34.192582+00:00"
     }
   },
   "pge": {
