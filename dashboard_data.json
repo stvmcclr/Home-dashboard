@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 11:45:03",
+  "generated_at": "2026-06-15 11:50:12",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1328,6 +1328,116 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148533,
+        "timestamp": "2026-06-15T18:48:36+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room appears empty, but audio sensors are reporting urgent dog barking and the sound of glass breaking. This follows a recent sighting of a person and Posey in the area amidst reports of a potential call for help.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"barking\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"glass breaking\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148532,
+        "timestamp": "2026-06-15T18:48:30+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148531,
+        "timestamp": "2026-06-15T18:47:48+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148530,
+        "timestamp": "2026-06-15T18:46:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 148529,
+        "timestamp": "2026-06-15T18:45:48+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "dogs barking urgently or repeatedly at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148528,
+        "timestamp": "2026-06-15T18:45:17+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "A person in a blue shirt is seen moving through the kitchen area while Posey walks through the living room. This occurs amidst reports of urgent barking in the backyard and a potential call for help in the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148527,
+        "timestamp": "2026-06-15T18:45:14+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "glass breaking or shattering at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148526,
+        "timestamp": "2026-06-15T18:44:40+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "glass breaking or shattering at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148525,
+        "timestamp": "2026-06-15T18:44:12+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty. The white gate panel is leaning against the side of the house near the trampoline.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate open\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148524,
+        "timestamp": "2026-06-15T18:43:15+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148523,
         "timestamp": "2026-06-15T18:41:45+00:00",
@@ -3417,119 +3527,25 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148333,
-        "timestamp": "2026-06-15T17:20:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148332,
-        "timestamp": "2026-06-15T17:20:16+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Penelope is relaxing on the couch alongside Posey. The living room is quiet, with only the sound of wind audible.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": \"relaxing\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 148331,
-        "timestamp": "2026-06-15T17:19:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148330,
-        "timestamp": "2026-06-15T17:18:31+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148329,
-        "timestamp": "2026-06-15T17:18:26+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148328,
-        "timestamp": "2026-06-15T17:17:46+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148327,
-        "timestamp": "2026-06-15T17:17:10+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148326,
-        "timestamp": "2026-06-15T17:16:00+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148325,
-        "timestamp": "2026-06-15T17:15:32+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148324,
-        "timestamp": "2026-06-15T17:15:29+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7120,
+        "timestamp": "2026-06-15T18:48:36+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Urgent audio detected: glass breaking and dogs barking in the living room, following reports of a potential call for help.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7119,
+        "timestamp": "2026-06-15T18:45:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Urgent barking in the backyard and a potential call for help in the living room are reported in the audio.",
+        "acted_on_at": null
+      },
       {
         "id": 7118,
         "timestamp": "2026-06-15T18:38:19+00:00",
@@ -3593,22 +3609,6 @@
         "severity": "medium",
         "summary": "Posey/Harlee have been restless in the backyard for the past 30 minutes (3 sightings, 10:56AM\u201311:11AM). Last time this happened: Sunday, Jun 14. Worth checking the fence line.",
         "acted_on_at": null
-      },
-      {
-        "id": 7114,
-        "timestamp": "2026-06-15T18:30:59+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at backyard (2x since 10:56AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 7115,
-        "timestamp": "2026-06-15T18:30:59+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (2x since 11:05AM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3628,15 +3628,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-15T18:13:31+00:00",
+        "backyard": "2026-06-15T18:44:12+00:00",
         "dog_run": "2026-06-15T18:36:31+00:00",
         "entryway": "2026-06-15T18:38:19+00:00",
         "front_door": "2026-06-15T18:30:31+00:00",
         "front_yard": "2026-06-15T18:35:00+00:00",
-        "living_room": "2026-06-15T18:17:25+00:00",
+        "living_room": "2026-06-15T18:48:36+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T18:42:55.359646+00:00"
+      "last_updated": "2026-06-15T18:48:59.784729+00:00"
     }
   },
   "pge": {
