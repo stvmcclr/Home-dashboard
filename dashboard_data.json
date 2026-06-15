@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 14:03:33",
+  "generated_at": "2026-06-15 14:08:41",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1356,6 +1356,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148729,
+        "timestamp": "2026-06-15T21:06:23+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional, displaying an error message instead of a video feed. While audio indicates dogs are barking in the vicinity, there is no visual information available to monitor the dogs or the state of the gate.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"gate\", \"entity_state\": \"unknown\", \"confidence\": 0.5}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"unknown\", \"confidence\": 0.5}]"
+      },
+      {
+        "id": 148728,
+        "timestamp": "2026-06-15T21:05:58+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148727,
+        "timestamp": "2026-06-15T21:05:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148726,
+        "timestamp": "2026-06-15T21:03:52+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148725,
+        "timestamp": "2026-06-15T21:03:24+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Roxanne is in the kitchen area. Despite her calm appearance in the frames, the audio indicates someone is yelling for help and dogs are barking, following a reported loud crash in the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 148724,
         "timestamp": "2026-06-15T21:03:00+00:00",
@@ -3500,64 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148529,
-        "timestamp": "2026-06-15T18:45:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "dogs barking urgently or repeatedly at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148528,
-        "timestamp": "2026-06-15T18:45:17+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "A person in a blue shirt is seen moving through the kitchen area while Posey walks through the living room. This occurs amidst reports of urgent barking in the backyard and a potential call for help in the living room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 148527,
-        "timestamp": "2026-06-15T18:45:14+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "glass breaking or shattering at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148526,
-        "timestamp": "2026-06-15T18:44:40+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "glass breaking or shattering at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148525,
-        "timestamp": "2026-06-15T18:44:12+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are empty. The white gate panel is leaning against the side of the house near the trampoline.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate open\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
       }
     ],
     "insights": [
+      {
+        "id": 7146,
+        "timestamp": "2026-06-15T21:03:24+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Audio indicates yelling for help and a recent loud crash in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 7145,
         "timestamp": "2026-06-15T20:56:52+00:00",
@@ -3629,19 +3637,12 @@
         "severity": "high",
         "summary": "[backyard] Dogs are barking urgently, but no dogs are visible in the camera's view.",
         "acted_on_at": null
-      },
-      {
-        "id": 7136,
-        "timestamp": "2026-06-15T20:20:18+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not providing a video feed due to a technical error.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
+        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3656,14 +3657,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-15T20:45:04+00:00",
-        "dog_run": "2026-06-15T20:45:44+00:00",
+        "dog_run": "2026-06-15T21:06:23+00:00",
         "entryway": "2026-06-15T20:56:52+00:00",
         "front_door": "2026-06-15T20:57:32+00:00",
         "front_yard": "2026-06-15T21:01:37+00:00",
-        "living_room": "2026-06-15T20:49:38+00:00",
+        "living_room": "2026-06-15T21:03:24+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T21:03:25.556531+00:00"
+      "last_updated": "2026-06-15T21:06:32.849122+00:00"
     }
   },
   "pge": {
