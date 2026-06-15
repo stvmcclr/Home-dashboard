@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 12:05:34",
+  "generated_at": "2026-06-15 12:10:40",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1328,6 +1328,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148579,
+        "timestamp": "2026-06-15T19:08:39+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148578,
+        "timestamp": "2026-06-15T19:08:10+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve and Roxanne are in the kitchen area, and the house appears calm. The recent smoke/CO alarm and barking from the front yard have subsided.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148577,
+        "timestamp": "2026-06-15T19:06:09+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty. The white gate panel is leaning against the side of the house near the trampoline.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"white gate panel\", \"entity_state\": \"leaning against house\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"gate open\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148576,
+        "timestamp": "2026-06-15T19:05:34+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "routine audio at front_yard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148575,
+        "timestamp": "2026-06-15T19:04:55+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "silence or quiet ambient background noise at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148574,
+        "timestamp": "2026-06-15T19:04:28+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Steve is standing in the kitchen looking at his phone while audio sensors detect a smoke or carbon monoxide alarm beeping at the front door and urgent dog barking in the front yard. Although the visual scene appears calm, the audio alerts indicate a potential emergency.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"looking at his phone\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"smoke/CO alarm\", \"entity_state\": \"beeping\", \"confidence\": 0.9}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking urgently\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 148573,
+        "timestamp": "2026-06-15T19:04:20+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "calm family conversation indoors at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148572,
         "timestamp": "2026-06-15T19:01:18+00:00",
@@ -3450,86 +3527,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148379,
-        "timestamp": "2026-06-15T17:38:40+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148378,
-        "timestamp": "2026-06-15T17:38:05+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148377,
-        "timestamp": "2026-06-15T17:38:03+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The backyard and side passage are currently empty, with the white gate panel leaning against the house, leaving the path unobstructed. However, audio from the living room indicates someone is calling for help or yelling for assistance.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate open\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.99}]"
-      },
-      {
-        "id": 148376,
-        "timestamp": "2026-06-15T17:37:27+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148375,
-        "timestamp": "2026-06-15T17:37:24+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne and Penelope are interacting near the kitchen island. While the visual scene appears calm, the audio system has detected a call for help or yelling in the living room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 148374,
-        "timestamp": "2026-06-15T17:36:17+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148373,
-        "timestamp": "2026-06-15T17:35:21+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne and Penelope are in the kitchen area, engaged in a calm interaction. They appear to be talking near the kitchen island.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 7124,
+        "timestamp": "2026-06-15T19:08:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] The house has returned to a calm state after the recent smoke/CO alarm and barking.",
+        "acted_on_at": null
+      },
       {
         "id": 7123,
         "timestamp": "2026-06-15T19:01:19+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at front_door this hour: 5 observations vs typical 1 for weekday 11:00",
         "acted_on_at": null
-      },
-      {
-        "id": 7109,
-        "timestamp": "2026-06-15T18:30:59+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at backyard this hour: 7 observations vs typical 1 for weekday 11:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3621,7 +3621,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3629,15 +3628,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-15T18:44:12+00:00",
+        "backyard": "2026-06-15T19:06:09+00:00",
         "dog_run": "2026-06-15T18:58:53+00:00",
         "entryway": "2026-06-15T18:38:19+00:00",
         "front_door": "2026-06-15T18:53:22+00:00",
         "front_yard": "2026-06-15T18:57:17+00:00",
-        "living_room": "2026-06-15T19:01:18+00:00",
+        "living_room": "2026-06-15T19:08:10+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T19:04:15.70372+00:00"
+      "last_updated": "2026-06-15T19:10:31.802323+00:00"
     }
   },
   "pge": {
