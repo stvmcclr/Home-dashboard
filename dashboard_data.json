@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 18:40:06",
+  "generated_at": "2026-06-14 18:45:13",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 146625,
+        "timestamp": "2026-06-15T01:42:03+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146624,
+        "timestamp": "2026-06-15T01:42:03+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146623,
+        "timestamp": "2026-06-15T01:41:49+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet, with no movement observed in the foyer or through the glass doors. The house appears calm and undisturbed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 146622,
+        "timestamp": "2026-06-15T01:40:51+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 146621,
+        "timestamp": "2026-06-15T01:40:14+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "Penelope is visible in the adjacent room through the glass doors of the entryway. The house appears quiet and calm.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
       {
         "id": 146620,
         "timestamp": "2026-06-15T01:39:38+00:00",
@@ -3388,61 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146425,
-        "timestamp": "2026-06-15T00:10:04+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "Steve walks through the side passage towards the backyard while carrying a large white panel. The white gate remains closed, blocking access to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white panel\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 146424,
-        "timestamp": "2026-06-15T00:10:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146423,
-        "timestamp": "2026-06-15T00:09:35+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146422,
-        "timestamp": "2026-06-15T00:08:58+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146421,
-        "timestamp": "2026-06-15T00:08:44+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3537,6 +3537,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3546,13 +3547,13 @@
       "last_motion": {
         "backyard": "2026-06-15T01:38:38+00:00",
         "dog_run": "2026-06-15T01:28:55+00:00",
-        "entryway": "2026-06-15T00:48:56+00:00",
+        "entryway": "2026-06-15T01:41:49+00:00",
         "front_door": "2026-06-15T01:30:02+00:00",
         "front_yard": "2026-06-15T01:39:38+00:00",
         "living_room": "2026-06-15T01:37:53+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T01:39:46.696218+00:00"
+      "last_updated": "2026-06-15T01:42:48.477274+00:00"
     }
   },
   "pge": {
