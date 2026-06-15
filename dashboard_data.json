@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 23:01:24",
+  "generated_at": "2026-06-14 23:06:31",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 147181,
+        "timestamp": "2026-06-15T06:03:24+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147180,
+        "timestamp": "2026-06-15T06:02:39+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147179,
+        "timestamp": "2026-06-15T06:01:49+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147178,
+        "timestamp": "2026-06-15T06:01:09+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 147177,
         "timestamp": "2026-06-15T06:00:04+00:00",
@@ -3427,53 +3471,41 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146981,
-        "timestamp": "2026-06-15T04:20:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146980,
-        "timestamp": "2026-06-15T04:19:59+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne walks through the living room towards the kitchen area. Posey the dog waits near his food bowl.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 146979,
-        "timestamp": "2026-06-15T04:19:47+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone screaming in pain or fear at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146978,
-        "timestamp": "2026-06-15T04:19:01+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7045,
+        "timestamp": "2026-06-15T06:02:00+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 8 observations vs typical 1 for weekend 23:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 7046,
+        "timestamp": "2026-06-15T06:02:00+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:05PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7047,
+        "timestamp": "2026-06-15T06:02:00+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:42PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7048,
+        "timestamp": "2026-06-15T06:02:00+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:43PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
       {
         "id": 7044,
         "timestamp": "2026-06-15T05:47:35+00:00",
@@ -3521,38 +3553,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at living room (2x since 9:36PM).",
         "acted_on_at": null
-      },
-      {
-        "id": 7039,
-        "timestamp": "2026-06-15T04:58:25+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Cleaning crew detected: 5 observations showing cleaning activity across 2 areas (backyard, living_room), ~165.0 min duration starting around 06:43 PM. Expected recurring service visit.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7037,
-        "timestamp": "2026-06-15T04:43:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing signal loss and is currently not providing a video feed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7036,
-        "timestamp": "2026-06-15T04:36:25+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Significant digital distortion in the camera feed, combined with reports of a loud thud and potential yelling, indicates a high-priority security or safety concern.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7035,
-        "timestamp": "2026-06-15T04:35:06+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud thud was heard in the living room, coinciding with significant video distortion in the camera feed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3579,7 +3579,7 @@
         "living_room": "2026-06-15T05:54:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T06:00:46.350189+00:00"
+      "last_updated": "2026-06-15T06:03:48.742777+00:00"
     }
   },
   "pge": {
