@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 15:40:53",
+  "generated_at": "2026-06-15 15:46:01",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1384,6 +1384,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148917,
+        "timestamp": "2026-06-15T22:41:43+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "unclassified audio at entryway",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148916,
+        "timestamp": "2026-06-15T22:41:43+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148915,
         "timestamp": "2026-06-15T22:40:45+00:00",
@@ -3561,31 +3583,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148717,
-        "timestamp": "2026-06-15T21:00:12+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148716,
-        "timestamp": "2026-06-15T20:59:38+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7168,
+        "timestamp": "2026-06-15T22:43:38+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The simultaneous failure of the front yard and dog run cameras, unclassified audio, and wind/weather noise strongly indicates a localized network or power disruption that is compromising monitoring coverage and agitating the dogs, meaning the flagged distress audio may be real but is currently unverified due to sensor blind spots.",
+        "acted_on_at": null
+      },
       {
         "id": 7167,
         "timestamp": "2026-06-15T22:09:12+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at dog run (7x since 2:06PM).",
         "acted_on_at": null
-      },
-      {
-        "id": 7159,
-        "timestamp": "2026-06-15T21:38:02+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (6x since 2:11PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3692,7 +3692,7 @@
         "living_room": "2026-06-15T22:36:03+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T22:40:48.538389+00:00"
+      "last_updated": "2026-06-15T22:43:50.321753+00:00"
     }
   },
   "pge": {
