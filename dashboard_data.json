@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 17:48:53",
+  "generated_at": "2026-06-14 17:54:00",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 146514,
+        "timestamp": "2026-06-15T00:51:11+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146513,
+        "timestamp": "2026-06-15T00:49:25+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146512,
+        "timestamp": "2026-06-15T00:48:56+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "A person, likely Penelope, is visible in the adjacent room through the glass doors while Posey the dog moves through the entryway. The scene shows normal, quiet activity within the home.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
       {
         "id": 146511,
         "timestamp": "2026-06-15T00:48:11+00:00",
@@ -3410,39 +3443,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146314,
-        "timestamp": "2026-06-14T23:19:36+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a doorbell chime or door knock at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146313,
-        "timestamp": "2026-06-14T23:19:09+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146312,
-        "timestamp": "2026-06-14T23:19:05+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3530,11 +3530,13 @@
     "state": {
       "id": "current",
       "who_is_home": [
+        "Penelope",
         "Roxanne",
         "Steve"
       ],
       "active_rooms": [
         "backyard",
+        "entryway",
         "front_door"
       ],
       "lights_on": [],
@@ -3542,13 +3544,13 @@
       "last_motion": {
         "backyard": "2026-06-15T00:34:04+00:00",
         "dog_run": "2026-06-15T00:00:48+00:00",
-        "entryway": "2026-06-15T00:06:55+00:00",
+        "entryway": "2026-06-15T00:48:56+00:00",
         "front_door": "2026-06-15T00:47:08+00:00",
         "front_yard": "2026-06-14T23:56:59+00:00",
         "living_room": "2026-06-15T00:14:01+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T00:48:14.049943+00:00"
+      "last_updated": "2026-06-15T00:51:15.808683+00:00"
     }
   },
   "pge": {
