@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 23:52:36",
+  "generated_at": "2026-06-14 23:57:44",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 147243,
+        "timestamp": "2026-06-15T06:54:34+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run camera is currently displaying a large error message indicating that no frames are being received. The side yard itself appears empty and quiet during the late night hours.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"AC unit\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"fence\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 147242,
+        "timestamp": "2026-06-15T06:54:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147241,
+        "timestamp": "2026-06-15T06:52:31+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 147240,
         "timestamp": "2026-06-15T06:52:21+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 147043,
-        "timestamp": "2026-06-15T04:43:03+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is currently displaying an error message indicating that no frames have been received. This is consistent with recent reports of intermittent signal loss for this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"no frames received\", \"confidence\": 1.0}]"
-      },
-      {
-        "id": 147042,
-        "timestamp": "2026-06-15T04:42:38+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147041,
-        "timestamp": "2026-06-15T04:41:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7052,
+        "timestamp": "2026-06-15T06:54:34+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera stream is experiencing technical issues, displaying an error message that no frames have been received.",
+        "acted_on_at": null
+      },
       {
         "id": 7051,
         "timestamp": "2026-06-15T06:33:46+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is experiencing intermittent connectivity issues, making it difficult to monitor the yard.",
         "acted_on_at": null
-      },
-      {
-        "id": 7042,
-        "timestamp": "2026-06-15T05:09:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The dog_run camera is failing to provide a video feed, showing an error message instead.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3573,14 +3573,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-15T06:36:49+00:00",
-        "dog_run": "2026-06-15T06:33:46+00:00",
+        "dog_run": "2026-06-15T06:54:34+00:00",
         "entryway": "2026-06-15T06:21:09+00:00",
         "front_door": "2026-06-15T06:35:28+00:00",
         "front_yard": "2026-06-15T06:49:37+00:00",
         "living_room": "2026-06-15T06:39:32+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T06:52:24.314394+00:00"
+      "last_updated": "2026-06-15T06:55:26.336755+00:00"
     }
   },
   "pge": {
