@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 05:04:57",
+  "generated_at": "2026-06-15 05:10:04",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1300,6 +1300,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 147656,
+        "timestamp": "2026-06-15T12:07:16+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is dark and empty during the early morning hours. No people, animals, or significant activity is visible in the camera's view.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 147655,
+        "timestamp": "2026-06-15T12:06:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147654,
+        "timestamp": "2026-06-15T12:06:06+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet during the early morning hours. However, the camera stream experienced a momentary failure, as one frame contains a system error message indicating no frames were received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 147653,
+        "timestamp": "2026-06-15T12:05:23+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147652,
+        "timestamp": "2026-06-15T12:04:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 147651,
         "timestamp": "2026-06-15T12:03:56+00:00",
@@ -3444,64 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 147456,
-        "timestamp": "2026-06-15T09:47:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147455,
-        "timestamp": "2026-06-15T09:46:22+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147454,
-        "timestamp": "2026-06-15T09:45:51+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147453,
-        "timestamp": "2026-06-15T09:44:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147452,
-        "timestamp": "2026-06-15T09:43:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7074,
+        "timestamp": "2026-06-15T12:06:06+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] A technical error occurred in the camera stream, with one frame displaying a 'No frames have been received' error message.",
+        "acted_on_at": null
+      },
       {
         "id": 7073,
         "timestamp": "2026-06-15T11:53:36+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "high",
         "summary": "[dog_run] The 'dog_run' camera is still experiencing a technical failure, displaying an error message that no frames are being received.",
         "acted_on_at": null
-      },
-      {
-        "id": 7064,
-        "timestamp": "2026-06-15T09:10:27+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The simultaneous spike in unclassified outdoor audio and brief dog barking at 02:04 correlates with confirmed wind/weather noise, and when combined with 14 devices home and empty indoor cameras, confirms the household is securely asleep indoors, indicating the outdoor activity is benign environmental noise rather than a security threat.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,14 +3600,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-15T11:48:46+00:00",
-        "dog_run": "2026-06-15T11:45:34+00:00",
+        "dog_run": "2026-06-15T12:06:06+00:00",
         "entryway": "2026-06-15T11:40:55+00:00",
-        "front_door": "2026-06-15T11:46:57+00:00",
+        "front_door": "2026-06-15T12:07:16+00:00",
         "front_yard": "2026-06-15T12:03:56+00:00",
         "living_room": "2026-06-15T11:57:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T12:04:36.78496+00:00"
+      "last_updated": "2026-06-15T12:07:38.614513+00:00"
     }
   },
   "pge": {
