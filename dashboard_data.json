@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 13:37:56",
+  "generated_at": "2026-06-15 13:43:04",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1356,6 +1356,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148689,
+        "timestamp": "2026-06-15T20:40:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing a technical error and is not providing a video feed. All captured frames display an error message stating that no frames have been received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 148688,
+        "timestamp": "2026-06-15T20:40:00+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148687,
+        "timestamp": "2026-06-15T20:39:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148686,
+        "timestamp": "2026-06-15T20:38:49+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148685,
+        "timestamp": "2026-06-15T20:36:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148684,
+        "timestamp": "2026-06-15T20:36:32+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty on a sunny afternoon. A dark SUV is parked in the driveway, and no activity is visible on the porch or near the house.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148683,
+        "timestamp": "2026-06-15T20:36:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148682,
         "timestamp": "2026-06-15T20:35:27+00:00",
@@ -3478,86 +3555,33 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148489,
-        "timestamp": "2026-06-15T18:19:26+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148488,
-        "timestamp": "2026-06-15T18:19:23+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "Two people are walking down the stone path from the front porch towards the driveway. They appear to be heading toward Roxanne's black SUV parked in the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": null, \"confidence\": 0.7}, {\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 148487,
-        "timestamp": "2026-06-15T18:19:13+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148486,
-        "timestamp": "2026-06-15T18:18:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148485,
-        "timestamp": "2026-06-15T18:18:29+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148484,
-        "timestamp": "2026-06-15T18:18:28+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "an unexpected or unfamiliar voice indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148483,
-        "timestamp": "2026-06-15T18:18:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a doorbell chime or door knock at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7140,
+        "timestamp": "2026-06-15T20:37:59+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The simultaneous failure of the front yard and dog run cameras, paired with persistent urgent barking across multiple zones, indicates the dogs are likely reacting to an external stimulus in the exact blind spots where the cameras are offline, creating a temporary security and awareness gap.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7138,
+        "timestamp": "2026-06-15T20:35:59+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at living room (2x since 12:46PM).",
+        "acted_on_at": null
+      },
+      {
+        "id": 7139,
+        "timestamp": "2026-06-15T20:35:59+00:00",
+        "insight_type": "deviation",
+        "severity": "low",
+        "summary": "Dogs barking repeatedly at front yard (2x since 12:59PM).",
+        "acted_on_at": null
+      },
       {
         "id": 7137,
         "timestamp": "2026-06-15T20:29:15+00:00",
@@ -3613,30 +3637,6 @@
         "severity": "high",
         "summary": "[living_room] Dogs are barking urgently at the dog run, which may indicate something is happening outside.",
         "acted_on_at": null
-      },
-      {
-        "id": 7130,
-        "timestamp": "2026-06-15T19:35:56+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The recurring leaning white gate panel in the backyard, combined with persistent dog agitation at the dog run, intermittent camera failures, and detected wind/weather noise, strongly suggests a gate was blown open or damaged by recent weather. This matters because it could compromise yard security and allow the dogs to escape or let wildlife in.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7125,
-        "timestamp": "2026-06-15T19:33:24+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at front door (4x since 11:30AM).",
-        "acted_on_at": null
-      },
-      {
-        "id": 7126,
-        "timestamp": "2026-06-15T19:33:24+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at living room (5x since 11:45AM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3648,7 +3648,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3659,12 +3658,12 @@
         "backyard": "2026-06-15T20:29:15+00:00",
         "dog_run": "2026-06-15T20:24:21+00:00",
         "entryway": "2026-06-15T20:10:54+00:00",
-        "front_door": "2026-06-15T20:23:53+00:00",
-        "front_yard": "2026-06-15T20:20:18+00:00",
+        "front_door": "2026-06-15T20:36:32+00:00",
+        "front_yard": "2026-06-15T20:40:48+00:00",
         "living_room": "2026-06-15T20:25:41+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T20:35:47.599573+00:00"
+      "last_updated": "2026-06-15T20:41:54.866703+00:00"
     }
   },
   "pge": {
