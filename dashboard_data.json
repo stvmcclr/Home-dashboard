@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 18:04:14",
+  "generated_at": "2026-06-14 18:09:21",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 146536,
+        "timestamp": "2026-06-15T01:06:14+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing technical issues, displaying error messages for most of the sequence. The single functional frame shows an empty side yard with the gate closed.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 146535,
+        "timestamp": "2026-06-15T01:04:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 146534,
+        "timestamp": "2026-06-15T01:04:21+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is initially visible with a dark green pickup truck in the driveway and cars parked on the street. However, the camera stream then fails, displaying an error message indicating that no frames are being received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera failure\", \"entity_state\": \"active\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 146533,
+        "timestamp": "2026-06-15T01:03:55+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 146532,
         "timestamp": "2026-06-15T01:03:05+00:00",
@@ -3399,53 +3443,25 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146336,
-        "timestamp": "2026-06-14T23:28:45+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146335,
-        "timestamp": "2026-06-14T23:28:09+00:00",
-        "source": "backyard",
-        "source_type": "vision",
-        "location": "backyard",
-        "summary": "The side passage and backyard area are currently empty. The white gate remains closed, blocking access to the driveway.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"bicycle\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 146334,
-        "timestamp": "2026-06-14T23:28:05+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146333,
-        "timestamp": "2026-06-14T23:27:55+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7014,
+        "timestamp": "2026-06-15T01:06:15+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is experiencing technical issues, intermittently displaying error messages.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7013,
+        "timestamp": "2026-06-15T01:04:21+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is experiencing a failure and is not receiving frames.",
+        "acted_on_at": null
+      },
       {
         "id": 7012,
         "timestamp": "2026-06-15T01:00:22+00:00",
@@ -3509,22 +3525,6 @@
         "severity": "high",
         "summary": "[doorbell] Unclassified audio is currently being detected in the backyard, following a recent highly concerning alert for screaming in the backyard.",
         "acted_on_at": null
-      },
-      {
-        "id": 7004,
-        "timestamp": "2026-06-14T23:45:30+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Audio from the backyard reported someone screaming in pain or fear 34 seconds ago, suggesting a potential emergency occurring out of view.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7003,
-        "timestamp": "2026-06-14T23:43:33+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Audio indicates someone screaming in pain or fear in the backyard, which is a high-priority emergency.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3536,22 +3536,24 @@
       ],
       "active_rooms": [
         "backyard",
+        "dog_run",
         "entryway",
         "front_door",
+        "front_yard",
         "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-15T00:56:03+00:00",
-        "dog_run": "2026-06-15T00:00:48+00:00",
+        "dog_run": "2026-06-15T01:06:14+00:00",
         "entryway": "2026-06-15T00:48:56+00:00",
         "front_door": "2026-06-15T00:47:08+00:00",
-        "front_yard": "2026-06-14T23:56:59+00:00",
+        "front_yard": "2026-06-15T01:04:21+00:00",
         "living_room": "2026-06-15T01:02:18+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T01:03:21.774443+00:00"
+      "last_updated": "2026-06-15T01:06:24.02292+00:00"
     }
   },
   "pge": {
