@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 11:03:57",
+  "generated_at": "2026-06-15 11:09:05",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1328,6 +1328,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148441,
+        "timestamp": "2026-06-15T18:05:08+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room appears empty and calm, but audio indicates dogs are barking urgently in the backyard. This follows a recent alert of a potential call for help in this same room, creating a highly concerning situation.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"dogs\", \"entity_state\": \"barking urgently in backyard\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148440,
+        "timestamp": "2026-06-15T18:04:49+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148439,
+        "timestamp": "2026-06-15T18:04:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148438,
+        "timestamp": "2026-06-15T18:04:07+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148437,
+        "timestamp": "2026-06-15T18:03:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148436,
+        "timestamp": "2026-06-15T18:03:24+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148435,
         "timestamp": "2026-06-15T18:01:17+00:00",
@@ -3461,75 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148241,
-        "timestamp": "2026-06-15T16:39:21+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148240,
-        "timestamp": "2026-06-15T16:39:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148239,
-        "timestamp": "2026-06-15T16:38:42+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148238,
-        "timestamp": "2026-06-15T16:38:14+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148237,
-        "timestamp": "2026-06-15T16:37:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148236,
-        "timestamp": "2026-06-15T16:36:42+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7103,
+        "timestamp": "2026-06-15T18:05:08+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Urgent dog barking in the backyard follows a recent alert of a potential call for help in the living room.",
+        "acted_on_at": null
+      },
       {
         "id": 7102,
         "timestamp": "2026-06-15T17:59:55+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is reporting a loss of frames and is currently not providing a live view.",
         "acted_on_at": null
-      },
-      {
-        "id": 7093,
-        "timestamp": "2026-06-15T16:26:59+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "A sudden cluster of outdoor audio and dog barking immediately preceded an audio detection of yelling or calling for help in the living room at 09:21, indicating a potential emergency or sudden incident that requires immediate verification, particularly since the dog_run and front_yard cameras are currently offline.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3633,10 +3633,10 @@
         "entryway": "2026-06-15T17:52:36+00:00",
         "front_door": "2026-06-15T17:48:00+00:00",
         "front_yard": "2026-06-15T17:51:53+00:00",
-        "living_room": "2026-06-15T17:59:01+00:00",
+        "living_room": "2026-06-15T18:05:08+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T18:03:09.17921+00:00"
+      "last_updated": "2026-06-15T18:06:12.594018+00:00"
     }
   },
   "pge": {
