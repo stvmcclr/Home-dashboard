@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 12:46:34",
+  "generated_at": "2026-06-15 12:51:41",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1328,6 +1328,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148619,
+        "timestamp": "2026-06-15T19:47:33+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty. The white gate panel is leaning against the side of the house near the trampoline.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate open\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148618,
+        "timestamp": "2026-06-15T19:47:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 148617,
+        "timestamp": "2026-06-15T19:46:32+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "A dog is resting quietly on the couch in the living room. Despite a recent loud thud or crash heard in the room, the dog appears undisturbed and remains still.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"dog\", \"entity_state\": \"resting\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 148616,
         "timestamp": "2026-06-15T19:43:32+00:00",
@@ -3494,42 +3527,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148419,
-        "timestamp": "2026-06-15T17:55:44+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148418,
-        "timestamp": "2026-06-15T17:55:04+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148417,
-        "timestamp": "2026-06-15T17:54:40+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7133,
+        "timestamp": "2026-06-15T19:46:32+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] A loud thud or crash was heard in the living room, but no visible cause or damage is apparent in the current frames.",
+        "acted_on_at": null
+      },
       {
         "id": 7132,
         "timestamp": "2026-06-15T19:43:33+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[living_room] The house has returned to a calm state after the recent smoke/CO alarm and barking.",
         "acted_on_at": null
-      },
-      {
-        "id": 7123,
-        "timestamp": "2026-06-15T19:01:19+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A smoke or carbon monoxide alarm is beeping at the front door, accompanied by urgent dog barking outside.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3627,15 +3627,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-15T19:26:54+00:00",
+        "backyard": "2026-06-15T19:47:33+00:00",
         "dog_run": "2026-06-15T19:40:46+00:00",
         "entryway": "2026-06-15T18:38:19+00:00",
         "front_door": "2026-06-15T19:34:45+00:00",
         "front_yard": "2026-06-15T19:39:06+00:00",
-        "living_room": "2026-06-15T19:43:32+00:00",
+        "living_room": "2026-06-15T19:46:32+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T19:44:07.347778+00:00"
+      "last_updated": "2026-06-15T19:50:10.737679+00:00"
     }
   },
   "pge": {
