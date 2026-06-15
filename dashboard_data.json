@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 01:04:19",
+  "generated_at": "2026-06-15 01:09:26",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1272,6 +1272,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 147334,
+        "timestamp": "2026-06-15T08:05:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147333,
+        "timestamp": "2026-06-15T08:03:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147332,
+        "timestamp": "2026-06-15T08:02:53+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147331,
+        "timestamp": "2026-06-15T08:02:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 147330,
         "timestamp": "2026-06-15T08:00:58+00:00",
@@ -3427,53 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 147134,
-        "timestamp": "2026-06-15T05:36:13+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147133,
-        "timestamp": "2026-06-15T05:35:29+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is dark and appears empty. No movement or people are detected in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 147132,
-        "timestamp": "2026-06-15T05:35:28+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147131,
-        "timestamp": "2026-06-15T05:35:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7058,
+        "timestamp": "2026-06-15T08:06:50+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Cleaning crew detected: 3 observations showing cleaning activity across 2 areas (backyard, living_room), ~141.0 min duration starting around 07:07 PM. Expected recurring service visit.",
+        "acted_on_at": null
+      },
       {
         "id": 7057,
         "timestamp": "2026-06-15T07:56:32+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The synchronized 'unclassified audio' in both the living room and backyard over an 8-minute window, paired with the failing dog_run camera and empty backyard feed, suggests the dogs may be active in the yard (triggering audio while visually obscured) or a localized sound source is bleeding between zones. This warrants a quick check to ensure the dogs are secure and the audio isn't masking a security event.",
         "acted_on_at": null
-      },
-      {
-        "id": 7045,
-        "timestamp": "2026-06-15T06:02:00+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Unusually high activity at living_room this hour: 8 observations vs typical 1 for weekend 23:00",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,7 +3575,7 @@
         "living_room": "2026-06-15T07:25:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T08:02:10.003415+00:00"
+      "last_updated": "2026-06-15T08:08:13.680449+00:00"
     }
   },
   "pge": {
