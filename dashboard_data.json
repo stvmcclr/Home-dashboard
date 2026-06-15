@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 23:27:01",
+  "generated_at": "2026-06-14 23:32:07",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 147210,
+        "timestamp": "2026-06-15T06:30:27+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147209,
+        "timestamp": "2026-06-15T06:29:51+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147208,
+        "timestamp": "2026-06-15T06:29:00+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream experienced a brief interruption, displaying error messages before returning to a view of the quiet front yard. Late at night, the driveway and street are still, with Roxanne's black SUV parked in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 147207,
+        "timestamp": "2026-06-15T06:28:20+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147206,
+        "timestamp": "2026-06-15T06:26:49+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 147205,
+        "timestamp": "2026-06-15T06:25:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 147204,
         "timestamp": "2026-06-15T06:23:48+00:00",
@@ -3405,75 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 147010,
-        "timestamp": "2026-06-15T04:32:52+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147009,
-        "timestamp": "2026-06-15T04:32:20+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147008,
-        "timestamp": "2026-06-15T04:31:49+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147007,
-        "timestamp": "2026-06-15T04:31:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147006,
-        "timestamp": "2026-06-15T04:30:49+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 147005,
-        "timestamp": "2026-06-15T04:30:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7050,
+        "timestamp": "2026-06-15T06:29:00+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera experienced a brief period of no frames received, suggesting a temporary connection issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7049,
         "timestamp": "2026-06-15T06:04:15+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[living_room] The video stream is experiencing significant digital corruption/glitching in the lower portion of the frame.",
         "acted_on_at": null
-      },
-      {
-        "id": 7040,
-        "timestamp": "2026-06-15T05:01:59+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The simultaneous occurrence of repeated dog barking, false doorbell triggers, explicit wind detection, and camera signal loss/distortion points to a weather event (likely a wind gust or storm front) affecting the property, which explains the dogs' restlessness and the network/power fluctuations causing the camera anomalies.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3575,11 +3575,11 @@
         "dog_run": "2026-06-15T06:13:10+00:00",
         "entryway": "2026-06-15T06:21:09+00:00",
         "front_door": "2026-06-15T06:14:58+00:00",
-        "front_yard": "2026-06-15T06:08:16+00:00",
+        "front_yard": "2026-06-15T06:29:00+00:00",
         "living_room": "2026-06-15T05:54:02+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T06:25:08.321759+00:00"
+      "last_updated": "2026-06-15T06:31:11.408486+00:00"
     }
   },
   "pge": {
