@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14 19:46:41",
+  "generated_at": "2026-06-14 19:51:47",
   "as_of": "2026-06-14",
   "projects": [
     {
@@ -1244,6 +1244,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 146781,
+        "timestamp": "2026-06-15T02:46:43+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Miller is sitting at the dining table while Steve and Roxanne are in the kitchen area. The household is engaged in quiet evening activities in the open-plan living space.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Miller\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 146780,
+        "timestamp": "2026-06-15T02:46:43+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 146779,
         "timestamp": "2026-06-15T02:46:13+00:00",
@@ -3421,31 +3443,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 146581,
-        "timestamp": "2026-06-15T01:25:27+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "someone calling for help or yelling for assistance at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 146580,
-        "timestamp": "2026-06-15T01:24:54+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7026,
+        "timestamp": "2026-06-15T02:46:51+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Cleaning crew detected: 4 observations showing cleaning activity across 2 areas (backyard, living_room), ~39.0 min duration starting around 06:43 PM. Expected recurring service visit.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7024,
+        "timestamp": "2026-06-15T02:46:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 10 observations vs typical 1 for weekend 19:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 7025,
+        "timestamp": "2026-06-15T02:46:50+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at backyard this hour: 7 observations vs typical 1 for weekend 19:00",
+        "acted_on_at": null
+      },
       {
         "id": 7023,
         "timestamp": "2026-06-15T02:38:01+00:00",
@@ -3501,30 +3525,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at living_room this hour: 7 observations vs typical 1 for weekend 18:00",
         "acted_on_at": null
-      },
-      {
-        "id": 7016,
-        "timestamp": "2026-06-15T01:28:55+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The camera is experiencing technical issues, displaying error messages.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7015,
-        "timestamp": "2026-06-15T01:28:16+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] Unclassified audio indicates someone calling for help at the entryway.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7014,
-        "timestamp": "2026-06-15T01:06:15+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is experiencing technical issues, intermittently displaying error messages.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3550,10 +3550,10 @@
         "entryway": "2026-06-15T02:33:13+00:00",
         "front_door": "2026-06-15T02:39:49+00:00",
         "front_yard": "2026-06-15T02:36:33+00:00",
-        "living_room": "2026-06-15T02:43:29+00:00",
+        "living_room": "2026-06-15T02:46:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T02:46:29.154752+00:00"
+      "last_updated": "2026-06-15T02:49:33.971036+00:00"
     }
   },
   "pge": {
