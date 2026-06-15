@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 13:22:30",
+  "generated_at": "2026-06-15 13:27:37",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1356,6 +1356,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 148672,
+        "timestamp": "2026-06-15T20:25:41+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is empty of people and animals. While audio indicates dogs are barking urgently in the front yard, the interior of the house remains still.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 148671,
+        "timestamp": "2026-06-15T20:24:21+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical failure, displaying an error message and severe visual distortion. It is impossible to monitor the side yard or the status of the gate due to this malfunction.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"technical failure\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 148670,
+        "timestamp": "2026-06-15T20:24:04+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "dogs barking urgently or repeatedly at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 148669,
+        "timestamp": "2026-06-15T20:23:53+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is empty on a sunny afternoon. A dark SUV is parked in the driveway, but there is no visible activity on the porch or near the house.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark SUV\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 148668,
+        "timestamp": "2026-06-15T20:22:48+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 148667,
         "timestamp": "2026-06-15T20:20:18+00:00",
@@ -3500,61 +3555,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 148472,
-        "timestamp": "2026-06-15T18:16:21+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a smoke alarm or carbon monoxide alarm beeping at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148471,
-        "timestamp": "2026-06-15T18:16:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 148470,
-        "timestamp": "2026-06-15T18:15:54+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "someone calling for help or yelling for assistance at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148469,
-        "timestamp": "2026-06-15T18:15:21+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "dogs barking briefly once or twice at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 148468,
-        "timestamp": "2026-06-15T18:15:21+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3657,14 +3657,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-15T20:08:29+00:00",
-        "dog_run": "2026-06-15T20:02:09+00:00",
+        "dog_run": "2026-06-15T20:24:21+00:00",
         "entryway": "2026-06-15T20:10:54+00:00",
-        "front_door": "2026-06-15T20:15:52+00:00",
+        "front_door": "2026-06-15T20:23:53+00:00",
         "front_yard": "2026-06-15T20:20:18+00:00",
-        "living_room": "2026-06-15T19:53:48+00:00",
+        "living_room": "2026-06-15T20:25:41+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-15T20:20:30.091676+00:00"
+      "last_updated": "2026-06-15T20:26:35.657222+00:00"
     }
   },
   "pge": {
