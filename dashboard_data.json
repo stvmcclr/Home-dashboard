@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 21:34:49",
+  "generated_at": "2026-06-15 21:39:56",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149556,
+        "timestamp": "2026-06-16T04:36:50+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149555,
+        "timestamp": "2026-06-16T04:34:59+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 149554,
+        "timestamp": "2026-06-16T04:34:25+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run camera is experiencing a critical failure, displaying an error message that no frames are being received. Consequently, no activity or entities in the dog run area can be monitored.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 149553,
         "timestamp": "2026-06-16T04:32:15+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149356,
-        "timestamp": "2026-06-16T02:20:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 149355,
-        "timestamp": "2026-06-16T02:18:30+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is empty and quiet during the evening. A white SUV is parked on the street in the background.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"white SUV\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149354,
-        "timestamp": "2026-06-16T02:18:03+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7191,
+        "timestamp": "2026-06-16T04:34:25+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The dog run camera is non-functional and displaying a critical error message.",
+        "acted_on_at": null
+      },
       {
         "id": 7190,
         "timestamp": "2026-06-16T04:24:04+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The simultaneous doorbell activation, multi-zone audio bursts, and urgent dog barking align with a parked white SUV, indicating a visitor or delivery that likely occurred outside camera blind spots or during the intermittent outages; verify package status and check the perimeter.",
         "acted_on_at": null
-      },
-      {
-        "id": 7181,
-        "timestamp": "2026-06-16T02:28:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Dogs are barking in the backyard, but the dog run is empty and the gate is closed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3540,15 +3540,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-16T04:14:36+00:00",
-        "dog_run": "2026-06-16T04:13:51+00:00",
+        "backyard": "2026-06-16T04:34:59+00:00",
+        "dog_run": "2026-06-16T04:34:25+00:00",
         "entryway": "2026-06-16T03:54:09+00:00",
         "front_door": "2026-06-16T04:25:02+00:00",
         "front_yard": "2026-06-16T04:30:35+00:00",
         "living_room": "2026-06-16T04:24:04+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T04:33:21.181407+00:00"
+      "last_updated": "2026-06-16T04:39:25.922958+00:00"
     }
   },
   "pge": {
