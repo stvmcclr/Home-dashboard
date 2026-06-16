@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 00:54:46",
+  "generated_at": "2026-06-16 00:59:53",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149778,
+        "timestamp": "2026-06-16T07:57:06+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch area is dark and shows no visible movement. Despite the empty scene, audio from the backyard and front yard indicates a dog is barking and a toddler is crying.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"unknown toddler\", \"entity_state\": null, \"confidence\": 0.8}]"
+      },
+      {
+        "id": 149777,
+        "timestamp": "2026-06-16T07:54:15+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "A dog barks in the background while a toddler cries slightly in the foreground. at backyard (It is possible that the dog was startled by something outside, causing it to bark, and the toddler was upset by something unrelated to the dog.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 149776,
         "timestamp": "2026-06-16T07:52:19+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 149578,
-        "timestamp": "2026-06-16T04:56:43+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "Roxanne and Penelope are walking onto the backyard patio at night. Penelope is carrying a beverage, while Roxanne is carrying a bag and other items.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149577,
-        "timestamp": "2026-06-16T04:56:31+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "wind at living_room at living_room (wind)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7217,
+        "timestamp": "2026-06-16T07:57:06+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] Audio indicates a dog barking and a toddler crying, though no movement is visible on the front door camera.",
+        "acted_on_at": null
+      },
       {
         "id": 7216,
         "timestamp": "2026-06-16T07:41:49+00:00",
@@ -3545,19 +3553,13 @@
         "severity": "medium",
         "summary": "The simultaneous doorbell trigger, multi-zone unclassified audio spikes, restless dogs, and the appearance of an unknown grey SUV in the driveway strongly suggest a late-night visitor or delivery that may have just arrived or departed while the family was inside.",
         "acted_on_at": null
-      },
-      {
-        "id": 7200,
-        "timestamp": "2026-06-16T06:01:48+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Posey spotted in living room at 10:06PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "unknown toddler"
+      ],
       "active_rooms": [
         "backyard",
         "dog_run",
@@ -3571,12 +3573,12 @@
         "backyard": "2026-06-16T07:44:07+00:00",
         "dog_run": "2026-06-16T07:47:40+00:00",
         "entryway": "2026-06-16T07:42:16+00:00",
-        "front_door": "2026-06-16T07:36:10+00:00",
+        "front_door": "2026-06-16T07:57:06+00:00",
         "front_yard": "2026-06-16T07:41:48+00:00",
         "living_room": "2026-06-16T07:20:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T07:54:08.930743+00:00"
+      "last_updated": "2026-06-16T07:57:11.313922+00:00"
     }
   },
   "pge": {
