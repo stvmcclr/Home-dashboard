@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 18:04:35",
+  "generated_at": "2026-06-15 18:09:42",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149229,
+        "timestamp": "2026-06-16T01:05:12+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is currently non-functional, displaying a technical error message instead of live video. Although audio indicates dogs barking near the dog run, the camera failure prevents visual confirmation of their presence.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"error\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 149228,
+        "timestamp": "2026-06-16T01:05:05+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149227,
+        "timestamp": "2026-06-16T01:04:59+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 149226,
         "timestamp": "2026-06-16T01:03:34+00:00",
@@ -3410,39 +3443,6 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149029,
-        "timestamp": "2026-06-15T23:31:35+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149028,
-        "timestamp": "2026-06-15T23:31:31+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "Roxanne walks across the front porch area. The porch is initially empty before she enters the frame and moves through the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"walking\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149027,
-        "timestamp": "2026-06-15T23:31:17+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3532,8 +3532,7 @@
       "who_is_home": [
         "Penelope",
         "Roxanne",
-        "Steve",
-        "unknown child"
+        "Steve"
       ],
       "active_rooms": [
         "backyard",
@@ -3547,14 +3546,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-16T00:45:30+00:00",
-        "dog_run": "2026-06-16T00:44:07+00:00",
+        "dog_run": "2026-06-16T01:05:12+00:00",
         "entryway": "2026-06-16T00:50:35+00:00",
         "front_door": "2026-06-16T00:56:12+00:00",
         "front_yard": "2026-06-16T00:38:04+00:00",
         "living_room": "2026-06-16T00:55:20+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T01:03:52.616024+00:00"
+      "last_updated": "2026-06-16T01:06:54.507858+00:00"
     }
   },
   "pge": {
