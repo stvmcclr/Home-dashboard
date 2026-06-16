@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 08:25:50",
+  "generated_at": "2026-06-16 08:30:58",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1328,6 +1328,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 150290,
+        "timestamp": "2026-06-16T15:28:16+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Roxanne walks through the living room and kitchen area while Posey rests on the floor. The house is quiet during the morning.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"walking\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 150288,
+        "timestamp": "2026-06-16T15:27:58+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 150289,
+        "timestamp": "2026-06-16T15:27:56+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 150287,
+        "timestamp": "2026-06-16T15:27:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 150285,
+        "timestamp": "2026-06-16T15:26:57+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 150286,
+        "timestamp": "2026-06-16T15:26:54+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 150284,
         "timestamp": "2026-06-16T15:25:30+00:00",
@@ -3461,75 +3527,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 150090,
-        "timestamp": "2026-06-16T13:45:34+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150089,
-        "timestamp": "2026-06-16T13:45:31+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150088,
-        "timestamp": "2026-06-16T13:45:30+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150087,
-        "timestamp": "2026-06-16T13:43:30+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150086,
-        "timestamp": "2026-06-16T13:41:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150085,
-        "timestamp": "2026-06-16T13:41:54+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7246,
+        "timestamp": "2026-06-16T15:25:40+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 6 observations vs typical 1 for weekday 08:00",
+        "acted_on_at": null
+      },
       {
         "id": 7245,
         "timestamp": "2026-06-16T14:53:25+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "Unusually high activity at front_yard this hour: 5 observations vs typical 1 for weekday 06:00",
         "acted_on_at": null
-      },
-      {
-        "id": 7236,
-        "timestamp": "2026-06-16T13:06:44+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not receiving video frames; check error logs.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3631,10 +3631,10 @@
         "entryway": "2026-06-16T14:34:38+00:00",
         "front_door": "2026-06-16T15:15:45+00:00",
         "front_yard": "2026-06-16T14:29:07+00:00",
-        "living_room": "2026-06-16T15:12:49+00:00",
+        "living_room": "2026-06-16T15:28:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T15:25:31.821866+00:00"
+      "last_updated": "2026-06-16T15:28:39.270257+00:00"
     }
   },
   "pge": {
