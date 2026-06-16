@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 00:39:22",
+  "generated_at": "2026-06-16 00:44:31",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149767,
+        "timestamp": "2026-06-16T07:41:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera experienced a brief technical failure but has since recovered. The scene is quiet at night, with Roxanne's black Cayenne parked in the driveway and other vehicles parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's Cayenne\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"resolved\", \"confidence\": 0.9}]"
+      },
       {
         "id": 149766,
         "timestamp": "2026-06-16T07:36:58+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149567,
-        "timestamp": "2026-06-16T04:52:05+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7216,
+        "timestamp": "2026-06-16T07:41:49+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera briefly lost connection but has returned to normal operation.",
+        "acted_on_at": null
+      },
       {
         "id": 7215,
         "timestamp": "2026-06-16T07:20:38+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 10:06PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 7205,
-        "timestamp": "2026-06-16T06:01:48+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Harlee spotted in living room at 10:46PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3574,11 +3574,11 @@
         "dog_run": "2026-06-16T07:27:10+00:00",
         "entryway": "2026-06-16T06:56:22+00:00",
         "front_door": "2026-06-16T07:36:10+00:00",
-        "front_yard": "2026-06-16T07:20:38+00:00",
+        "front_yard": "2026-06-16T07:41:48+00:00",
         "living_room": "2026-06-16T07:20:00+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T07:38:55.461354+00:00"
+      "last_updated": "2026-06-16T07:41:57.800738+00:00"
     }
   },
   "pge": {
