@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 16:33:09",
+  "generated_at": "2026-06-16 16:38:16",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1412,6 +1412,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 151746,
+        "timestamp": "2026-06-16T23:34:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151745,
+        "timestamp": "2026-06-16T23:34:43+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is empty and quiet, with no visible activity or people present. The scene remains static throughout the observed period.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 151744,
+        "timestamp": "2026-06-16T23:34:08+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151743,
+        "timestamp": "2026-06-16T23:33:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 151742,
+        "timestamp": "2026-06-16T23:33:09+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera stream is experiencing a failure, displaying error messages instead of video for most of the captured period. When the stream is active, a dark car is visible parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera stream failure\", \"entity_state\": \"error messages displayed\", \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked on street\", \"confidence\": 0.9}]"
+      },
       {
         "id": 151741,
         "timestamp": "2026-06-16T23:31:41+00:00",
@@ -3556,64 +3611,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 151546,
-        "timestamp": "2026-06-16T22:23:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151545,
-        "timestamp": "2026-06-16T22:23:33+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking briefly once or twice at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151544,
-        "timestamp": "2026-06-16T22:23:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 151543,
-        "timestamp": "2026-06-16T22:23:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151542,
-        "timestamp": "2026-06-16T22:22:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "television or music playing in the background at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7315,
+        "timestamp": "2026-06-16T23:33:10+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera stream is failing and displaying error messages, which is a known intermittent issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7314,
         "timestamp": "2026-06-16T23:15:35+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "Dogs barking repeatedly at backyard (4x since 2:50PM).",
         "acted_on_at": null
-      },
-      {
-        "id": 7307,
-        "timestamp": "2026-06-16T22:43:29+00:00",
-        "insight_type": "deviation",
-        "severity": "low",
-        "summary": "Dogs barking repeatedly at backyard (3x since 2:54PM).",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3706,7 +3706,8 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3715,11 +3716,11 @@
         "dog_run": "2026-06-16T23:15:35+00:00",
         "entryway": "2026-06-16T23:09:09+00:00",
         "front_door": "2026-06-16T23:19:26+00:00",
-        "front_yard": "2026-06-16T23:12:26+00:00",
-        "living_room": "2026-06-16T22:47:57+00:00",
+        "front_yard": "2026-06-16T23:33:09+00:00",
+        "living_room": "2026-06-16T23:34:43+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T23:32:49.709639+00:00"
+      "last_updated": "2026-06-16T23:35:51.866836+00:00"
     }
   },
   "pge": {
