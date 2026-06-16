@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 12:11:36",
+  "generated_at": "2026-06-16 12:16:43",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1356,6 +1356,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 151100,
+        "timestamp": "2026-06-16T19:13:27+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151099,
+        "timestamp": "2026-06-16T19:12:50+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151098,
+        "timestamp": "2026-06-16T19:12:20+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and quiet, with no people or animals visible in the frame. An Amazon box sits on the floor near the white armchair, and audio suggests activity in the adjacent living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Amazon box\", \"entity_state\": \"on floor\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"blue sofa\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white armchair\", \"entity_state\": null, \"confidence\": 0.95}]"
+      },
+      {
+        "id": 151097,
+        "timestamp": "2026-06-16T19:11:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151096,
+        "timestamp": "2026-06-16T19:11:03+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 151095,
         "timestamp": "2026-06-16T19:10:28+00:00",
@@ -3500,61 +3555,6 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 150900,
-        "timestamp": "2026-06-16T18:15:27+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "wind or weather noise outdoors at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150899,
-        "timestamp": "2026-06-16T18:14:17+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150898,
-        "timestamp": "2026-06-16T18:13:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150897,
-        "timestamp": "2026-06-16T18:13:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 150896,
-        "timestamp": "2026-06-16T18:12:57+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The 'dog_run' camera is experiencing a technical failure, with most frames displaying an error message. The single usable frame shows an empty side yard with the gate closed.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
@@ -3654,6 +3654,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3663,13 +3664,13 @@
       "last_motion": {
         "backyard": "2026-06-16T19:06:05+00:00",
         "dog_run": "2026-06-16T18:55:13+00:00",
-        "entryway": "2026-06-16T18:26:47+00:00",
+        "entryway": "2026-06-16T19:12:20+00:00",
         "front_door": "2026-06-16T19:07:56+00:00",
         "front_yard": "2026-06-16T19:09:40+00:00",
         "living_room": "2026-06-16T19:00:37+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T19:10:53.186464+00:00"
+      "last_updated": "2026-06-16T19:13:54.972825+00:00"
     }
   },
   "pge": {
