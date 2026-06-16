@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 14:55:44",
+  "generated_at": "2026-06-16 15:00:54",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1384,6 +1384,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 151472,
+        "timestamp": "2026-06-16T21:57:58+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151471,
+        "timestamp": "2026-06-16T21:57:54+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151470,
+        "timestamp": "2026-06-16T21:57:22+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 151469,
+        "timestamp": "2026-06-16T21:56:45+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty. The white gate panel remains closed, blocking the path toward the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 151468,
+        "timestamp": "2026-06-16T21:55:12+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty with the white gate panel closed. Although no dogs are visible in the camera's view, audio indicates that dogs are barking urgently nearby.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"animal\", \"entity_name\": \"unknown dog\", \"entity_state\": \"barking\", \"confidence\": 0.7}]"
+      },
       {
         "id": 151467,
         "timestamp": "2026-06-16T21:54:51+00:00",
@@ -3528,64 +3583,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 151272,
-        "timestamp": "2026-06-16T20:46:51+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "dogs barking urgently or repeatedly at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151271,
-        "timestamp": "2026-06-16T20:46:41+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151270,
-        "timestamp": "2026-06-16T20:46:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151269,
-        "timestamp": "2026-06-16T20:46:26+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "calm family conversation indoors at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 151268,
-        "timestamp": "2026-06-16T20:45:57+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7298,
+        "timestamp": "2026-06-16T21:55:12+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] Audio indicates urgent dog barking, but no dogs are visible in the frame.",
+        "acted_on_at": null
+      },
       {
         "id": 7297,
         "timestamp": "2026-06-16T21:54:02+00:00",
@@ -3657,20 +3665,13 @@
         "severity": "high",
         "summary": "[dog_run] The camera stream is down and not providing any visual information.",
         "acted_on_at": null
-      },
-      {
-        "id": 7288,
-        "timestamp": "2026-06-16T19:50:48+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera is experiencing intermittent connection errors.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne"
+        "Roxanne",
+        "unknown person"
       ],
       "active_rooms": [
         "backyard",
@@ -3682,7 +3683,7 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-16T21:54:02+00:00",
+        "backyard": "2026-06-16T21:56:45+00:00",
         "dog_run": "2026-06-16T21:41:05+00:00",
         "entryway": "2026-06-16T21:31:57+00:00",
         "front_door": "2026-06-16T21:54:30+00:00",
@@ -3690,7 +3691,7 @@
         "living_room": "2026-06-16T21:13:19+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T21:55:11.04646+00:00"
+      "last_updated": "2026-06-16T21:58:13.822233+00:00"
     }
   },
   "pge": {
