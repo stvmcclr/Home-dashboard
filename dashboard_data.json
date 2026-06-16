@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 03:33:40",
+  "generated_at": "2026-06-16 03:38:47",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149894,
+        "timestamp": "2026-06-16T10:36:12+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is intermittently failing, displaying an error message indicating that no frames are being received. When the stream is functional, the side yard appears empty and quiet during the early morning hours.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate\", \"entity_state\": \"closed\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 149893,
+        "timestamp": "2026-06-16T10:34:57+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 149892,
         "timestamp": "2026-06-16T10:32:20+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[]"
-      },
-      {
-        "id": 149694,
-        "timestamp": "2026-06-16T05:49:35+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149693,
-        "timestamp": "2026-06-16T05:49:04+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve and Roxanne are relaxing on the couch in the living room, both focused on their mobile phones. Harlee is resting on a dog bed in front of them.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"using phone\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"using phone\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": \"resting\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 7229,
+        "timestamp": "2026-06-16T10:36:12+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is intermittently failing to provide a video stream.",
+        "acted_on_at": null
+      },
       {
         "id": 7228,
         "timestamp": "2026-06-16T10:12:55+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "Confirmed indoor device presence (15-16 devices) alongside empty visual feeds and persistent dog_run camera failures during perimeter audio spikes strongly indicates an external environmental or animal source near the property boundary, effectively ruling out internal family activity or a security breach.",
         "acted_on_at": null
-      },
-      {
-        "id": 7218,
-        "timestamp": "2026-06-16T08:06:01+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in front door at 12:57AM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3596,14 +3596,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-16T10:32:20+00:00",
-        "dog_run": "2026-06-16T10:15:27+00:00",
+        "dog_run": "2026-06-16T10:36:12+00:00",
         "entryway": "2026-06-16T09:58:41+00:00",
         "front_door": "2026-06-16T10:01:07+00:00",
         "front_yard": "2026-06-16T10:30:38+00:00",
         "living_room": "2026-06-16T10:24:07+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T10:32:25.026155+00:00"
+      "last_updated": "2026-06-16T10:38:29.490621+00:00"
     }
   },
   "pge": {
