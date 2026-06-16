@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 18:40:26",
+  "generated_at": "2026-06-15 18:45:33",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1244,6 +1244,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149276,
+        "timestamp": "2026-06-16T01:43:01+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149275,
+        "timestamp": "2026-06-16T01:42:58+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149274,
+        "timestamp": "2026-06-16T01:42:54+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149273,
+        "timestamp": "2026-06-16T01:42:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is experiencing intermittent technical errors, displaying a 'no frames received' message. When the feed is active, the driveway contains a dark green pickup truck, and a white SUV is parked on the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"white SUV\", \"entity_state\": \"parked on street\", \"confidence\": 0.95}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": \"intermittent loss of video\", \"confidence\": 0.99}]"
+      },
       {
         "id": 149272,
         "timestamp": "2026-06-16T01:39:25+00:00",
@@ -3399,53 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149076,
-        "timestamp": "2026-06-15T23:49:47+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149075,
-        "timestamp": "2026-06-15T23:49:39+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "unclassified audio at entryway",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149074,
-        "timestamp": "2026-06-15T23:49:05+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 149073,
-        "timestamp": "2026-06-15T23:48:40+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7177,
+        "timestamp": "2026-06-16T01:42:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is experiencing a recurring technical error where no video frames are being received.",
+        "acted_on_at": null
+      },
       {
         "id": 7176,
         "timestamp": "2026-06-16T00:55:20+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "The simultaneous failure of the front yard and dog run cameras, unclassified audio, and wind/weather noise strongly indicates a localized network or power disruption that is compromising monitoring coverage and agitating the dogs, meaning the flagged distress audio may be real but is currently unverified due to sensor blind spots.",
         "acted_on_at": null
-      },
-      {
-        "id": 7167,
-        "timestamp": "2026-06-15T22:09:12+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is non-functional, preventing any visual monitoring of the dogs in the side yard.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3537,7 +3537,7 @@
         "dog_run",
         "entryway",
         "front_door",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3546,11 +3546,11 @@
         "dog_run": "2026-06-16T01:26:39+00:00",
         "entryway": "2026-06-16T01:36:03+00:00",
         "front_door": "2026-06-16T01:37:30+00:00",
-        "front_yard": "2026-06-16T00:38:04+00:00",
+        "front_yard": "2026-06-16T01:42:48+00:00",
         "living_room": "2026-06-16T01:10:35+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T01:40:11.51046+00:00"
+      "last_updated": "2026-06-16T01:43:13.031351+00:00"
     }
   },
   "pge": {
