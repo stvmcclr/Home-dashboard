@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 04:45:24",
+  "generated_at": "2026-06-16 04:50:32",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149951,
+        "timestamp": "2026-06-16T11:47:16+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149950,
+        "timestamp": "2026-06-16T11:46:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149949,
+        "timestamp": "2026-06-16T11:45:30+00:00",
+        "source": "doorbell",
+        "source_type": "vision",
+        "location": "front_door",
+        "summary": "The front porch is dark and empty during the early morning hours. Although audio from the front yard indicates a dog barking and a toddler crying, no movement or activity is visible on the front door camera.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 149948,
         "timestamp": "2026-06-16T11:44:39+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149751,
-        "timestamp": "2026-06-16T06:59:51+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard is empty and quiet during the late night hours. Roxanne's black SUV is parked in the driveway, and other vehicles are parked along the street.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 149750,
-        "timestamp": "2026-06-16T06:58:44+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149749,
-        "timestamp": "2026-06-16T06:56:22+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and no movement is detected. The camera view remains static across all frames during this late-night observation.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7231,
+        "timestamp": "2026-06-16T11:45:31+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[doorbell] Audio of a crying toddler and barking dog is detected in the yard, though the front porch camera shows no movement.",
+        "acted_on_at": null
+      },
       {
         "id": 7230,
         "timestamp": "2026-06-16T11:15:21+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "The simultaneous cluster of unclassified outdoor audio (01:51\u201302:08) and persistent dog_run camera failure, combined with earlier flags of dogs barking and a toddler crying, strongly indicates the dogs are restless or vocalizing near the perimeter. With all 16 devices home and indoor cameras confirming everyone is asleep, this is likely normal nocturnal pet behavior, but the camera failure should be monitored to ensure it isn't masking a real issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 7221,
-        "timestamp": "2026-06-16T08:08:39+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not receiving video frames, indicating a connection or hardware issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3599,12 +3599,12 @@
         "backyard": "2026-06-16T11:34:57+00:00",
         "dog_run": "2026-06-16T11:38:10+00:00",
         "entryway": "2026-06-16T11:29:40+00:00",
-        "front_door": "2026-06-16T11:24:45+00:00",
+        "front_door": "2026-06-16T11:45:30+00:00",
         "front_yard": "2026-06-16T11:34:24+00:00",
         "living_room": "2026-06-16T11:09:39+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T11:45:26.001099+00:00"
+      "last_updated": "2026-06-16T11:48:28.16078+00:00"
     }
   },
   "pge": {
