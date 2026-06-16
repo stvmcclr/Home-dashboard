@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15 23:58:21",
-  "as_of": "2026-06-15",
+  "generated_at": "2026-06-16 00:03:30",
+  "as_of": "2026-06-16",
   "projects": [
     {
       "id": 1,
@@ -948,7 +948,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 13.5 \u00d7 29.5 \u00d7 1 inch (Merv 11 or 13 recommended). Two HVAC systems \u2014 this is downstairs unit.",
-      "days_until_due": -52,
+      "days_until_due": -53,
       "is_overdue": 1
     },
     {
@@ -961,7 +961,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 16 \u00d7 24 \u00d7 1 inch. Upstairs HVAC unit.",
-      "days_until_due": -52,
+      "days_until_due": -53,
       "is_overdue": 1
     },
     {
@@ -974,7 +974,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "LG washer/dryer combo. Installed 2019. Expected lifespan ~10-13 yrs. Annual cleaning/maintenance check.",
-      "days_until_due": 200,
+      "days_until_due": 199,
       "is_overdue": 0
     },
     {
@@ -987,7 +987,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador refrigerator. New 2025. Check condenser coils annually. Warranty: typically 2yr full, 5yr sealed system.",
-      "days_until_due": 259,
+      "days_until_due": 258,
       "is_overdue": 0
     },
     {
@@ -1000,7 +1000,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Wolf range. New 2025. Annual burner and igniter check. Wolf warranty: 2yr parts & labor.",
-      "days_until_due": 259,
+      "days_until_due": 258,
       "is_overdue": 0
     },
     {
@@ -1013,7 +1013,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador dishwasher. New 2025. Clean filter every 6 months. Warranty: typically 2yr.",
-      "days_until_due": 259,
+      "days_until_due": 258,
       "is_overdue": 0
     }
   ],
@@ -1272,6 +1272,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149754,
+        "timestamp": "2026-06-16T07:02:06+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149753,
+        "timestamp": "2026-06-16T07:01:28+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night. The white gate remains closed, blocking the path to the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
+      {
+        "id": 149752,
+        "timestamp": "2026-06-16T07:00:22+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149751,
+        "timestamp": "2026-06-16T06:59:51+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is empty and quiet during the late night hours. Roxanne's black SUV is parked in the driveway, and other vehicles are parked along the street.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"Roxanne's black SUV\", \"entity_state\": \"parked\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"unknown dark car\", \"entity_state\": \"parked\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 149750,
+        "timestamp": "2026-06-16T06:58:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149749,
+        "timestamp": "2026-06-16T06:56:22+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway is empty and no movement is detected. The camera view remains static across all frames during this late-night observation.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 149748,
         "timestamp": "2026-06-16T06:54:50+00:00",
@@ -3405,72 +3471,6 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 149554,
-        "timestamp": "2026-06-16T04:34:25+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "The dog run camera is experiencing a critical failure, displaying an error message that no frames are being received. Consequently, no activity or entities in the dog run area can be monitored.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 149553,
-        "timestamp": "2026-06-16T04:32:15+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149552,
-        "timestamp": "2026-06-16T04:30:35+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is non-functional and displaying an error message indicating that no frames have been received. This is a continuation of recent intermittent connectivity issues with this camera.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}, {\"entity_type\": \"object\", \"entity_name\": \"dark green pickup\", \"entity_state\": \"parked\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149551,
-        "timestamp": "2026-06-16T04:30:31+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149550,
-        "timestamp": "2026-06-16T04:27:39+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149549,
-        "timestamp": "2026-06-16T04:27:11+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3564,6 +3564,7 @@
       "active_rooms": [
         "backyard",
         "dog_run",
+        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3571,15 +3572,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-16T06:40:27+00:00",
+        "backyard": "2026-06-16T07:01:28+00:00",
         "dog_run": "2026-06-16T06:53:58+00:00",
-        "entryway": "2026-06-16T06:10:55+00:00",
+        "entryway": "2026-06-16T06:56:22+00:00",
         "front_door": "2026-06-16T06:54:31+00:00",
-        "front_yard": "2026-06-16T06:39:06+00:00",
+        "front_yard": "2026-06-16T06:59:51+00:00",
         "living_room": "2026-06-16T06:34:35+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T06:56:16.198445+00:00"
+      "last_updated": "2026-06-16T07:02:21.448695+00:00"
     }
   },
   "pge": {
