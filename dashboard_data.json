@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15 23:01:57",
+  "generated_at": "2026-06-15 23:07:05",
   "as_of": "2026-06-15",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149710,
+        "timestamp": "2026-06-16T06:03:57+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "wind or weather noise outdoors at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149709,
+        "timestamp": "2026-06-16T06:02:59+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149708,
+        "timestamp": "2026-06-16T06:01:32+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The side yard dog run is empty and quiet during the late night hours. No people or dogs are visible in the area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
       {
         "id": 149707,
         "timestamp": "2026-06-16T06:00:04+00:00",
@@ -3438,120 +3471,87 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149510,
-        "timestamp": "2026-06-16T04:05:04+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 149509,
-        "timestamp": "2026-06-16T04:04:36+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch is empty and quiet during the evening. Porch lights are illuminated, and a dark car is visible parked on the street in the background.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": \"parked\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"porch lights\", \"entity_state\": \"on\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149508,
-        "timestamp": "2026-06-16T04:04:33+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
       {
-        "id": 7198,
-        "timestamp": "2026-06-16T05:47:41+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] There is a notable discrepancy between the calm visual scene and a recent audio alert for someone calling for help.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7197,
-        "timestamp": "2026-06-16T05:46:07+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Audio detection of someone calling for help or yelling in the living room, which contradicts the calm visual scene.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7196,
-        "timestamp": "2026-06-16T05:40:38+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Posey is in the dog run late at night, which deviates from the usual empty state.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7195,
-        "timestamp": "2026-06-16T05:36:31+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is malfunctioning and not providing a live video feed.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7194,
-        "timestamp": "2026-06-16T05:29:32+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] The camera shows an empty room despite recent reports of urgent dog barking, and a system error message is visible on the stream.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7193,
-        "timestamp": "2026-06-16T05:25:17+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[entryway] Urgent dog barking at the front yard may indicate an intruder or something of concern outside.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7192,
-        "timestamp": "2026-06-16T05:01:34+00:00",
+        "id": 7208,
+        "timestamp": "2026-06-16T06:04:02+00:00",
         "insight_type": "correlation",
         "severity": "medium",
-        "summary": "The simultaneous spike in connected mobile devices (12 to 17 in 3 minutes) and unclassified audio bursts across the doorbell, entryway, living room, and backyard strongly indicates a group of guests has just arrived at the front door and is moving inside, which is notable given the late hour.",
+        "summary": "The simultaneous doorbell trigger, multi-zone unclassified audio spikes, restless dogs, and the appearance of an unknown grey SUV in the driveway strongly suggest a late-night visitor or delivery that may have just arrived or departed while the family was inside.",
         "acted_on_at": null
       },
       {
-        "id": 7191,
-        "timestamp": "2026-06-16T04:34:25+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The dog run camera is non-functional and displaying a critical error message.",
+        "id": 7200,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:06PM \u2014 unusual hour.",
         "acted_on_at": null
       },
       {
-        "id": 7190,
-        "timestamp": "2026-06-16T04:24:04+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The camera feed is displaying an error message: 'No frames have been received, check error logs', indicating a potential system failure.",
+        "id": 7201,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:08PM \u2014 unusual hour.",
         "acted_on_at": null
       },
       {
-        "id": 7189,
-        "timestamp": "2026-06-16T04:13:51+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The dog run camera is non-functional and is not providing any video feed.",
+        "id": 7202,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:28PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7203,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 10:35PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7204,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in dog run at 10:40PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7205,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:46PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7206,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:47PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7207,
+        "timestamp": "2026-06-16T06:01:48+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Harlee spotted in living room at 10:49PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7199,
+        "timestamp": "2026-06-16T06:01:43+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 12 observations vs typical 1 for weekday 23:00",
         "acted_on_at": null
       }
     ],
@@ -3572,14 +3572,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-16T05:59:31+00:00",
-        "dog_run": "2026-06-16T05:40:38+00:00",
+        "dog_run": "2026-06-16T06:01:32+00:00",
         "entryway": "2026-06-16T05:29:31+00:00",
         "front_door": "2026-06-16T05:50:23+00:00",
         "front_yard": "2026-06-16T05:57:35+00:00",
         "living_room": "2026-06-16T05:49:04+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T06:01:21.122232+00:00"
+      "last_updated": "2026-06-16T06:04:26.343471+00:00"
     }
   },
   "pge": {
