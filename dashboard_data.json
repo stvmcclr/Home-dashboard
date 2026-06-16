@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 02:32:05",
+  "generated_at": "2026-06-16 02:37:13",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 149851,
+        "timestamp": "2026-06-16T09:33:43+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 149850,
+        "timestamp": "2026-06-16T09:32:16+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty during the late night hours. The camera is experiencing connection issues, displaying visual artifacts and eventually showing a connection error message.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
       {
         "id": 149849,
         "timestamp": "2026-06-16T09:29:34+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 149651,
-        "timestamp": "2026-06-16T05:28:50+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Steve is in the kitchen area, leaning over the counter and focused on a task. Harlee is nearby in the living room area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Harlee\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 149650,
-        "timestamp": "2026-06-16T05:28:09+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7224,
+        "timestamp": "2026-06-16T09:32:16+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera is experiencing a connection error and is unable to provide consistent frames.",
+        "acted_on_at": null
+      },
       {
         "id": 7223,
         "timestamp": "2026-06-16T09:28:09+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is failing to receive frames, indicating a potential network or hardware issue that requires checking the error logs.",
         "acted_on_at": null
-      },
-      {
-        "id": 7214,
-        "timestamp": "2026-06-16T07:05:59+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The late-night impact sound followed by a dog_run camera failure and persistent multi-zone outdoor audio spikes suggests an external disturbance agitating the dogs, which may be triggering repeated sensor alerts and potentially overloading the local network; a quick check of the dog run and network status is recommended.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3571,14 +3571,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-16T09:29:24+00:00",
-        "dog_run": "2026-06-16T09:11:33+00:00",
+        "dog_run": "2026-06-16T09:32:16+00:00",
         "entryway": "2026-06-16T09:13:06+00:00",
         "front_door": "2026-06-16T09:19:16+00:00",
         "front_yard": "2026-06-16T09:28:09+00:00",
         "living_room": "2026-06-16T08:51:19+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-16T09:31:31.916088+00:00"
+      "last_updated": "2026-06-16T09:34:36.629236+00:00"
     }
   },
   "pge": {
