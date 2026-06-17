@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 02:37:38",
+  "generated_at": "2026-06-17 02:42:45",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1273,12 +1273,56 @@
   "intelligence": {
     "observations": [
       {
-        "id": 153000,
-        "timestamp": "2026-06-17T09:36:21+00:00",
-        "source": "front_yard",
+        "id": 153005,
+        "timestamp": "2026-06-17T09:39:48+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The 'dog_run' camera is experiencing a technical error and is not receiving any video frames. The background shows the empty side yard dog run at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 153004,
+        "timestamp": "2026-06-17T09:39:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 153003,
+        "timestamp": "2026-06-17T09:39:17+00:00",
+        "source": "backyard",
         "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 153002,
+        "timestamp": "2026-06-17T09:38:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 153001,
+        "timestamp": "2026-06-17T09:37:47+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
@@ -1291,6 +1335,17 @@
         "location": "front_door",
         "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
         "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 153000,
+        "timestamp": "2026-06-17T09:36:21+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
@@ -3416,64 +3471,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 152805,
-        "timestamp": "2026-06-17T07:38:23+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152804,
-        "timestamp": "2026-06-17T07:38:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152803,
-        "timestamp": "2026-06-17T07:37:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 152802,
-        "timestamp": "2026-06-17T07:37:42+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No movement or activity is detected in the foyer during this late-night period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 152801,
-        "timestamp": "2026-06-17T07:37:20+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7381,
+        "timestamp": "2026-06-17T09:39:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The 'dog_run' camera is not receiving any frames, indicating a potential connection or hardware issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7380,
         "timestamp": "2026-06-17T09:21:24+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera 'front_yard' is not receiving frames, indicating a potential technical issue or network problem.",
         "acted_on_at": null
-      },
-      {
-        "id": 7371,
-        "timestamp": "2026-06-17T06:51:29+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Unclassified audio is being detected at the front door and backyard, which is concerning following recent reports of someone calling for help in the living room.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3563,7 +3563,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard"
       ],
@@ -3571,14 +3570,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-17T09:30:04+00:00",
-        "dog_run": "2026-06-17T09:19:18+00:00",
+        "dog_run": "2026-06-17T09:39:48+00:00",
         "entryway": "2026-06-17T09:09:44+00:00",
         "front_door": "2026-06-17T09:20:30+00:00",
         "front_yard": "2026-06-17T09:26:15+00:00",
         "living_room": "2026-06-17T08:57:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T09:37:04.711565+00:00"
+      "last_updated": "2026-06-17T09:40:06.210667+00:00"
     }
   },
   "pge": {
