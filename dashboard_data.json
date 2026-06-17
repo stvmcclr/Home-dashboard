@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 21:09:48",
+  "generated_at": "2026-06-16 21:14:56",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1244,6 +1244,83 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 152299,
+        "timestamp": "2026-06-17T04:11:48+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard camera is non-functional, displaying an error message stating that no frames have been received. This is a continuation of the camera being offline as noted in recent history.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 152298,
+        "timestamp": "2026-06-17T04:11:17+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway appears empty with only Posey the dog resting on the sofa, but highly distressing audio is being detected, including a child crying and calls for help. The visual scene shows no people, creating a significant discrepancy with the alarming audio reports.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"crying in distress\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 152297,
+        "timestamp": "2026-06-17T04:11:01+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152296,
+        "timestamp": "2026-06-17T04:10:30+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "silence or quiet ambient background noise at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152295,
+        "timestamp": "2026-06-17T04:10:07+00:00",
+        "source": "entryway",
+        "source_type": "audio",
+        "location": "entryway",
+        "summary": "someone calling for help or yelling for assistance at entryway (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152294,
+        "timestamp": "2026-06-17T04:10:03+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152293,
+        "timestamp": "2026-06-17T04:09:51+00:00",
+        "source": "entryway",
+        "source_type": "vision",
+        "location": "entryway",
+        "summary": "The entryway appears empty with only Posey the dog resting on the sofa, but highly distressing audio is being detected. Audio reports a child crying in the entryway, screams of pain in the backyard, and calls for help in the living room.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"unknown child\", \"entity_state\": \"crying in distress\", \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"unknown person\", \"entity_state\": \"screaming in pain\", \"confidence\": 0.8}]"
+      },
       {
         "id": 152292,
         "timestamp": "2026-06-17T04:08:51+00:00",
@@ -3366,86 +3443,33 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 152099,
-        "timestamp": "2026-06-17T02:19:42+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152098,
-        "timestamp": "2026-06-17T02:19:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 152097,
-        "timestamp": "2026-06-17T02:16:47+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152096,
-        "timestamp": "2026-06-17T02:16:18+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152095,
-        "timestamp": "2026-06-17T02:16:00+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or animals are visible in the scene.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
-      },
-      {
-        "id": 152094,
-        "timestamp": "2026-06-17T02:14:46+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152093,
-        "timestamp": "2026-06-17T02:13:45+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "routine audio at backyard \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7335,
+        "timestamp": "2026-06-17T04:11:48+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front yard camera is non-functional and has been offline for a significant period.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7334,
+        "timestamp": "2026-06-17T04:11:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] Highly distressing audio (child crying, calls for help) is being detected in the entryway, though no people are visible on camera.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7333,
+        "timestamp": "2026-06-17T04:09:51+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[entryway] CRITICAL: Audio indicates multiple people in extreme distress (crying, screaming in pain, calls for help) throughout the house, which contradicts the empty visual in the entryway.",
+        "acted_on_at": null
+      },
       {
         "id": 7332,
         "timestamp": "2026-06-17T04:07:12+00:00",
@@ -3501,30 +3525,6 @@
         "severity": "medium",
         "summary": "The 9 active devices confirm the family is home, explaining the empty camera feeds, but the simultaneous failure of the front yard and dog run cameras leaves the driveway and dog area unmonitored just as intermittent unclassified audio is detected at the doorbell and backyard, indicating a temporary perimeter blind spot rather than an absence of occupants.",
         "acted_on_at": null
-      },
-      {
-        "id": 7325,
-        "timestamp": "2026-06-17T02:48:28+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is non-functional and displaying a recurring error message.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7324,
-        "timestamp": "2026-06-17T02:27:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is not transmitting video, which prevents monitoring of the driveway and street.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7323,
-        "timestamp": "2026-06-17T02:06:16+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera stream is down, showing a 'No frames have been received' error message.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3547,13 +3547,13 @@
       "last_motion": {
         "backyard": "2026-06-17T03:54:28+00:00",
         "dog_run": "2026-06-17T03:54:02+00:00",
-        "entryway": "2026-06-17T03:59:48+00:00",
+        "entryway": "2026-06-17T04:11:17+00:00",
         "front_door": "2026-06-17T03:55:50+00:00",
-        "front_yard": "2026-06-17T03:50:27+00:00",
+        "front_yard": "2026-06-17T04:11:48+00:00",
         "living_room": "2026-06-17T04:07:12+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T04:09:12.366607+00:00"
+      "last_updated": "2026-06-17T04:12:15.356521+00:00"
     }
   },
   "pge": {
