@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 00:24:26",
+  "generated_at": "2026-06-17 00:29:33",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 152781,
+        "timestamp": "2026-06-17T07:26:21+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is empty of visible people, with a pink blanket draped over the couch. The kitchen area in the background remains brightly lit, while the rest of the room is dim.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"pink blanket\", \"entity_state\": null, \"confidence\": 0.99}]"
+      },
+      {
+        "id": 152780,
+        "timestamp": "2026-06-17T07:26:12+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152779,
+        "timestamp": "2026-06-17T07:24:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 152778,
+        "timestamp": "2026-06-17T07:24:41+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152777,
+        "timestamp": "2026-06-17T07:24:05+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 152776,
         "timestamp": "2026-06-17T07:23:10+00:00",
@@ -3416,61 +3471,6 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 152581,
-        "timestamp": "2026-06-17T05:54:01+00:00",
-        "source": "living_room",
-        "source_type": "vision",
-        "location": "living_room",
-        "summary": "Roxanne is relaxing on the couch in the living room, focused on her mobile phone. Posey is resting on the floor nearby in the quiet, late-night atmosphere.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"relaxing\", \"confidence\": 0.95}, {\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": \"resting\", \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"mobile phone\", \"entity_state\": \"in use\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 152580,
-        "timestamp": "2026-06-17T05:53:48+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152579,
-        "timestamp": "2026-06-17T05:53:37+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152578,
-        "timestamp": "2026-06-17T05:53:29+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152577,
-        "timestamp": "2026-06-17T05:52:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
@@ -3558,14 +3558,14 @@
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
-        "Steve"
+        "Roxanne"
       ],
       "active_rooms": [
         "backyard",
         "dog_run",
         "front_door",
-        "front_yard"
+        "front_yard",
+        "living_room"
       ],
       "lights_on": [],
       "music_playing": [],
@@ -3575,10 +3575,10 @@
         "entryway": "2026-06-17T06:52:21+00:00",
         "front_door": "2026-06-17T07:12:07+00:00",
         "front_yard": "2026-06-17T07:00:19+00:00",
-        "living_room": "2026-06-17T06:40:15+00:00",
+        "living_room": "2026-06-17T07:26:21+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T07:23:34.7608+00:00"
+      "last_updated": "2026-06-17T07:26:36.742505+00:00"
     }
   },
   "pge": {
