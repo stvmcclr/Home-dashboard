@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16 21:55:55",
+  "generated_at": "2026-06-16 22:01:04",
   "as_of": "2026-06-16",
   "projects": [
     {
@@ -1244,6 +1244,116 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 152448,
+        "timestamp": "2026-06-17T05:01:01+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog_run camera is experiencing a technical failure, displaying error messages and green screen artifacts. This prevents any visibility into the side yard, making it impossible to monitor the dogs, Posey and Harlee.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dog_run camera\", \"entity_state\": \"malfunctioning\", \"confidence\": 1.0}]"
+      },
+      {
+        "id": 152447,
+        "timestamp": "2026-06-17T05:00:23+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard and side passage are empty and quiet at night, with the white gate remaining closed. No activity or movement is visible in this area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.99}]"
+      },
+      {
+        "id": 152446,
+        "timestamp": "2026-06-17T05:00:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "a doorbell chime or door knock at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152445,
+        "timestamp": "2026-06-17T04:59:29+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "glass breaking or shattering at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152444,
+        "timestamp": "2026-06-17T04:59:26+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "someone screaming in pain or fear at front_yard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152443,
+        "timestamp": "2026-06-17T04:59:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 152442,
+        "timestamp": "2026-06-17T04:58:16+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room appears empty and undisturbed, but audio sensors have recorded a loud thud or crash in this area. This coincides with reports of screaming in the backyard, suggesting a potential emergency or incident.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"living room\", \"entity_state\": \"empty\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 152441,
+        "timestamp": "2026-06-17T04:58:00+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 152440,
+        "timestamp": "2026-06-17T04:57:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152439,
+        "timestamp": "2026-06-17T04:55:16+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 152438,
         "timestamp": "2026-06-17T04:54:49+00:00",
@@ -3333,119 +3443,25 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 152248,
-        "timestamp": "2026-06-17T03:59:59+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152247,
-        "timestamp": "2026-06-17T03:59:48+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "Two people, likely Roxanne and a child, are walking through the entryway. Their appearance follows a loud thud heard on the audio.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.8}, {\"entity_type\": \"person\", \"entity_name\": \"Penelope\", \"entity_state\": null, \"confidence\": 0.6}]"
-      },
-      {
-        "id": 152246,
-        "timestamp": "2026-06-17T03:59:39+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a loud thud, crash, or impact sound at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152245,
-        "timestamp": "2026-06-17T03:59:36+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a doorbell chime or door knock at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152244,
-        "timestamp": "2026-06-17T03:59:29+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152243,
-        "timestamp": "2026-06-17T03:59:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 152242,
-        "timestamp": "2026-06-17T03:59:04+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "a loud thud, crash, or impact sound at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152241,
-        "timestamp": "2026-06-17T03:58:59+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "calm family conversation indoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152240,
-        "timestamp": "2026-06-17T03:58:59+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "a loud thud, crash, or impact sound at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152239,
-        "timestamp": "2026-06-17T03:58:57+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "a child crying or yelling in distress at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7351,
+        "timestamp": "2026-06-17T05:01:02+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The dog_run camera is still not transmitting video, preventing monitoring of the dogs in the side yard.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7350,
+        "timestamp": "2026-06-17T04:58:17+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Loud thud/crash in living room and screaming in backyard detected via audio sensors.",
+        "acted_on_at": null
+      },
       {
         "id": 7349,
         "timestamp": "2026-06-17T04:54:49+00:00",
@@ -3509,28 +3525,11 @@
         "severity": "high",
         "summary": "[backyard] The camera experienced a brief interruption/failure during the sequence.",
         "acted_on_at": null
-      },
-      {
-        "id": 7341,
-        "timestamp": "2026-06-17T04:38:10+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] A loud crash was heard in the living room and a child is crying at the front door.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7340,
-        "timestamp": "2026-06-17T04:32:58+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is offline, and audio indicates a potential emergency with someone calling for help at the entryway.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Penelope",
         "Roxanne",
         "Steve"
       ],
@@ -3545,15 +3544,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-17T04:38:51+00:00",
-        "dog_run": "2026-06-17T04:40:08+00:00",
+        "backyard": "2026-06-17T05:00:23+00:00",
+        "dog_run": "2026-06-17T05:01:01+00:00",
         "entryway": "2026-06-17T04:45:35+00:00",
         "front_door": "2026-06-17T04:41:44+00:00",
         "front_yard": "2026-06-17T04:54:49+00:00",
-        "living_room": "2026-06-17T04:54:09+00:00",
+        "living_room": "2026-06-17T04:58:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T04:55:00.298273+00:00"
+      "last_updated": "2026-06-17T05:01:03.858852+00:00"
     }
   },
   "pge": {
