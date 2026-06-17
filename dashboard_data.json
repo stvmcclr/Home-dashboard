@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 14:30:07",
+  "generated_at": "2026-06-17 14:35:15",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1384,6 +1384,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 154808,
+        "timestamp": "2026-06-17T21:32:35+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154807,
+        "timestamp": "2026-06-17T21:31:44+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154806,
+        "timestamp": "2026-06-17T21:30:55+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154805,
+        "timestamp": "2026-06-17T21:30:23+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front_yard camera is experiencing a persistent stream interruption, displaying an error message that no frames have been received. This issue has been ongoing for approximately 20 minutes.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 154804,
+        "timestamp": "2026-06-17T21:30:14+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 154803,
         "timestamp": "2026-06-17T21:29:13+00:00",
@@ -3528,64 +3583,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 154608,
-        "timestamp": "2026-06-17T19:57:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154607,
-        "timestamp": "2026-06-17T19:56:58+00:00",
-        "source": "doorbell",
-        "source_type": "vision",
-        "location": "front_door",
-        "summary": "The front porch and stone patio area are empty and quiet under the bright midday sun. A small red toy and some cleaning supplies are left on the patio.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"red toy\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"object\", \"entity_name\": \"cleaning supplies\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 154606,
-        "timestamp": "2026-06-17T19:56:24+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "wind or weather noise outdoors at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154605,
-        "timestamp": "2026-06-17T19:56:24+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154604,
-        "timestamp": "2026-06-17T19:56:17+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway remains empty and quiet, with no people or animals passing through the foyer. The scene is static, showing no change in the environment over the recorded period.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7440,
+        "timestamp": "2026-06-17T21:30:24+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The front_yard camera is not providing a video feed due to a stream interruption.",
+        "acted_on_at": null
+      },
       {
         "id": 7439,
         "timestamp": "2026-06-17T21:10:00+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera stream experienced a temporary loss of signal.",
         "acted_on_at": null
-      },
-      {
-        "id": 7430,
-        "timestamp": "2026-06-17T19:43:28+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The convergence of an unknown white truck in the driveway, persistent unclassified audio and doorbell activations, and 10 devices indicating everyone is home despite zero camera sightings strongly suggests either an unmonitored area is occupied or an unknown visitor is lingering outside. This warrants immediate verification to rule out unauthorized presence or confirm a legitimate delivery.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3686,11 +3686,11 @@
         "dog_run": "2026-06-17T20:36:50+00:00",
         "entryway": "2026-06-17T21:28:12+00:00",
         "front_door": "2026-06-17T20:40:09+00:00",
-        "front_yard": "2026-06-17T21:09:59+00:00",
+        "front_yard": "2026-06-17T21:30:23+00:00",
         "living_room": "2026-06-17T21:17:09+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T21:29:53.753159+00:00"
+      "last_updated": "2026-06-17T21:32:55.630067+00:00"
     }
   },
   "pge": {
