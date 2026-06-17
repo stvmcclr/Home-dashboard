@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 00:09:06",
+  "generated_at": "2026-06-17 00:14:13",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 152761,
+        "timestamp": "2026-06-17T07:10:56+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The dog run is empty and quiet during the late night. No activity or presence of dogs or people is observed in the side yard.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 152760,
+        "timestamp": "2026-06-17T07:10:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152759,
+        "timestamp": "2026-06-17T07:10:22+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "routine audio at front_door \u2014 silence or quiet ambient background noise",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152758,
+        "timestamp": "2026-06-17T07:10:00+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 152757,
+        "timestamp": "2026-06-17T07:09:03+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 152756,
         "timestamp": "2026-06-17T07:08:24+00:00",
@@ -3416,64 +3471,25 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sitting on couch using phone\", \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"mobile phone\", \"entity_state\": \"in use\", \"confidence\": 0.9}]"
-      },
-      {
-        "id": 152561,
-        "timestamp": "2026-06-17T05:46:22+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152560,
-        "timestamp": "2026-06-17T05:45:51+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "unclassified audio at living_room",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152559,
-        "timestamp": "2026-06-17T05:45:14+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152558,
-        "timestamp": "2026-06-17T05:44:38+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152557,
-        "timestamp": "2026-06-17T05:44:16+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "television or music playing in the background at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7373,
+        "timestamp": "2026-06-17T07:09:02+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Unusually high activity at living_room this hour: 5 observations vs typical 1 for weekday 00:00",
+        "acted_on_at": null
+      },
+      {
+        "id": 7374,
+        "timestamp": "2026-06-17T07:09:02+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Posey spotted in living room at 11:11PM \u2014 unusual hour.",
+        "acted_on_at": null
+      },
       {
         "id": 7372,
         "timestamp": "2026-06-17T07:00:19+00:00",
@@ -3537,22 +3553,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 10:07PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 7360,
-        "timestamp": "2026-06-17T06:06:39+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "The dogs spotted in front yard at 10:15PM \u2014 unusual hour.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7365,
-        "timestamp": "2026-06-17T06:06:39+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Dogs barking at front door at 10:28PM \u2014 unusual hour.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3566,21 +3566,20 @@
         "dog_run",
         "entryway",
         "front_door",
-        "front_yard",
-        "living_room"
+        "front_yard"
       ],
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-17T07:05:35+00:00",
-        "dog_run": "2026-06-17T06:49:10+00:00",
+        "dog_run": "2026-06-17T07:10:56+00:00",
         "entryway": "2026-06-17T06:52:21+00:00",
         "front_door": "2026-06-17T06:51:29+00:00",
         "front_yard": "2026-06-17T07:00:19+00:00",
         "living_room": "2026-06-17T06:40:15+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T07:08:25.765531+00:00"
+      "last_updated": "2026-06-17T07:11:28.158487+00:00"
     }
   },
   "pge": {
