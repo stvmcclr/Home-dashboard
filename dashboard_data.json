@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 02:52:59",
+  "generated_at": "2026-06-17 02:58:06",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 153030,
+        "timestamp": "2026-06-17T09:54:59+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 153029,
+        "timestamp": "2026-06-17T09:54:24+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 153028,
+        "timestamp": "2026-06-17T09:53:28+00:00",
+        "source": "backyard",
+        "source_type": "vision",
+        "location": "backyard",
+        "summary": "The backyard camera is currently not transmitting any visual data, displaying an error message indicating that no frames have been received. Consequently, no activity or entities can be observed in the side passage or backyard area.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 153027,
+        "timestamp": "2026-06-17T09:52:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 153026,
+        "timestamp": "2026-06-17T09:52:23+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 153025,
         "timestamp": "2026-06-17T09:52:01+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 152830,
-        "timestamp": "2026-06-17T07:52:26+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "routine audio at front_door \u2014 wind or weather noise outdoors",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152829,
-        "timestamp": "2026-06-17T07:52:21+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152828,
-        "timestamp": "2026-06-17T07:51:13+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152827,
-        "timestamp": "2026-06-17T07:50:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 152826,
-        "timestamp": "2026-06-17T07:50:25+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7382,
+        "timestamp": "2026-06-17T09:53:28+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[backyard] The backyard camera is experiencing a technical failure and is not providing any footage.",
+        "acted_on_at": null
+      },
       {
         "id": 7381,
         "timestamp": "2026-06-17T09:39:48+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "Posey spotted in living room at 11:11PM \u2014 unusual hour.",
         "acted_on_at": null
-      },
-      {
-        "id": 7372,
-        "timestamp": "2026-06-17T07:00:19+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The camera 'front_yard' is not receiving frames, indicating a potential technical issue or network problem.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,15 +3570,15 @@
       "lights_on": [],
       "music_playing": [],
       "last_motion": {
-        "backyard": "2026-06-17T09:30:04+00:00",
+        "backyard": "2026-06-17T09:53:28+00:00",
         "dog_run": "2026-06-17T09:39:48+00:00",
-        "entryway": "2026-06-17T09:09:44+00:00",
+        "entryway": "2026-06-17T09:55:14+00:00",
         "front_door": "2026-06-17T09:40:51+00:00",
         "front_yard": "2026-06-17T09:46:45+00:00",
         "living_room": "2026-06-17T09:43:33+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T09:52:12.515846+00:00"
+      "last_updated": "2026-06-17T09:55:14.771839+00:00"
     }
   },
   "pge": {
