@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 11:10:06",
+  "generated_at": "2026-06-17 11:15:14",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1356,6 +1356,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 154367,
+        "timestamp": "2026-06-17T18:11:56+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154366,
+        "timestamp": "2026-06-17T18:11:38+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "The living room is currently empty and appears calm. However, unclassified audio is being detected at the front door, front yard, and backyard, following a recent concerning audio event of someone calling for help.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"couch\", \"entity_state\": null, \"confidence\": 0.99}, {\"entity_type\": \"object\", \"entity_name\": \"Giants blanket\", \"entity_state\": null, \"confidence\": 0.99}]"
+      },
+      {
+        "id": 154365,
+        "timestamp": "2026-06-17T18:11:27+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154364,
+        "timestamp": "2026-06-17T18:11:19+00:00",
+        "source": "front_yard",
+        "source_type": "audio",
+        "location": "front_yard",
+        "summary": "unclassified audio at front_yard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154363,
+        "timestamp": "2026-06-17T18:10:25+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 154362,
+        "timestamp": "2026-06-17T18:09:57+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 154361,
         "timestamp": "2026-06-17T18:09:21+00:00",
@@ -3489,75 +3555,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 154167,
-        "timestamp": "2026-06-17T17:02:57+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154166,
-        "timestamp": "2026-06-17T17:02:22+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking briefly once or twice at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154165,
-        "timestamp": "2026-06-17T17:02:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154164,
-        "timestamp": "2026-06-17T17:01:38+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "unclassified audio at dog_run",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154163,
-        "timestamp": "2026-06-17T17:01:01+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 154162,
-        "timestamp": "2026-06-17T17:00:35+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7427,
+        "timestamp": "2026-06-17T18:11:38+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[living_room] Unclassified audio is occurring at multiple outdoor locations following a recent report of someone calling for help.",
+        "acted_on_at": null
+      },
       {
         "id": 7426,
         "timestamp": "2026-06-17T18:02:59+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "high",
         "summary": "[doorbell] Urgent dog barking and sounds of someone calling for help are heard from the backyard/dog run area.",
         "acted_on_at": null
-      },
-      {
-        "id": 7417,
-        "timestamp": "2026-06-17T16:40:23+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] Urgent barking detected in the backyard/dog run.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3659,10 +3659,10 @@
         "entryway": "2026-06-17T17:36:01+00:00",
         "front_door": "2026-06-17T17:31:21+00:00",
         "front_yard": "2026-06-17T17:57:59+00:00",
-        "living_room": "2026-06-17T18:02:59+00:00",
+        "living_room": "2026-06-17T18:11:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-17T18:09:49.251271+00:00"
+      "last_updated": "2026-06-17T18:12:50.782239+00:00"
     }
   },
   "pge": {
