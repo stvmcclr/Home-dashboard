@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 18:05:24",
+  "generated_at": "2026-06-17 18:10:31",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1215,6 +1215,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 155340,
+        "timestamp": "2026-06-18T01:07:19+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 155339,
+        "timestamp": "2026-06-18T01:06:15+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 155338,
         "timestamp": "2026-06-18T01:02:27+00:00",
@@ -3392,31 +3414,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"gate closed\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"object\", \"entity_name\": \"trampoline\", \"entity_state\": null, \"confidence\": 0.99}]"
-      },
-      {
-        "id": 155140,
-        "timestamp": "2026-06-17T23:45:50+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "calm family conversation indoors at front_door (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155139,
-        "timestamp": "2026-06-17T23:45:37+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "wind or weather noise outdoors at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7460,
+        "timestamp": "2026-06-18T01:05:54+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The combination of a down front yard camera, repeated doorbell rings, urgent dog barking, and flagged child distress audio strongly suggests a potential security or medical emergency at the front entrance that the system cannot visually verify. This blind spot prevents immediate assessment of a potentially urgent situation requiring the household's attention.",
+        "acted_on_at": null
+      },
       {
         "id": 7459,
         "timestamp": "2026-06-18T01:02:29+00:00",
@@ -3488,20 +3496,11 @@
         "severity": "high",
         "summary": "[backyard] Audio indicates a scream of pain or fear, but no person is visible in the backyard.",
         "acted_on_at": null
-      },
-      {
-        "id": 7450,
-        "timestamp": "2026-06-17T23:24:43+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is experiencing a stream interruption, consistent with recent reports of intermittent connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne",
         "Steve"
       ],
       "active_rooms": [
@@ -3521,7 +3520,7 @@
         "living_room": "2026-06-18T00:20:16+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-18T01:02:42.643365+00:00"
+      "last_updated": "2026-06-18T01:08:48.442112+00:00"
     }
   },
   "pge": {
