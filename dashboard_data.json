@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 19:06:54",
+  "generated_at": "2026-06-17 19:12:01",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1244,6 +1244,72 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 155510,
+        "timestamp": "2026-06-18T02:09:04+00:00",
+        "source": "doorbell",
+        "source_type": "audio",
+        "location": "front_door",
+        "summary": "unclassified audio at front_door",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 155509,
+        "timestamp": "2026-06-18T02:08:02+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 155508,
+        "timestamp": "2026-06-18T02:07:47+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 155507,
+        "timestamp": "2026-06-18T02:07:42+00:00",
+        "source": "living_room",
+        "source_type": "audio",
+        "location": "living_room",
+        "summary": "unclassified audio at living_room",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 155506,
+        "timestamp": "2026-06-18T02:06:55+00:00",
+        "source": "living_room",
+        "source_type": "vision",
+        "location": "living_room",
+        "summary": "Roxanne is seen moving through the kitchen area, and Steve subsequently enters the space. The household is engaged in calm, routine activity with family conversation audible.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"in kitchen\", \"confidence\": 0.9}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"in kitchen\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 155505,
+        "timestamp": "2026-06-18T02:06:51+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "unclassified audio at dog_run",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 155504,
         "timestamp": "2026-06-18T02:06:08+00:00",
@@ -3377,75 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 155310,
-        "timestamp": "2026-06-18T00:49:18+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155309,
-        "timestamp": "2026-06-18T00:49:02+00:00",
-        "source": "entryway",
-        "source_type": "audio",
-        "location": "entryway",
-        "summary": "television or music playing in the background at entryway (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155308,
-        "timestamp": "2026-06-18T00:47:54+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155307,
-        "timestamp": "2026-06-18T00:47:53+00:00",
-        "source": "dog_run",
-        "source_type": "vision",
-        "location": "dog_run",
-        "summary": "Posey is in the side yard dog run, moving slowly through the grass. No people are present in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"animal\", \"entity_name\": \"Posey\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 155306,
-        "timestamp": "2026-06-18T00:47:48+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155305,
-        "timestamp": "2026-06-18T00:47:27+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7464,
+        "timestamp": "2026-06-18T02:09:13+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The persistent front yard camera failure has created a critical blind spot that coincides with multiple audio flags for distress and yelling at the entryway and backyard; while visual feeds show the family safely indoors, this pattern strongly suggests either an unverified security incident or a system misclassification that requires immediate camera troubleshooting and audio verification.",
+        "acted_on_at": null
+      },
       {
         "id": 7463,
         "timestamp": "2026-06-18T02:01:41+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is down, preventing visual verification of audio distress (child crying/yelling) heard from the dog run and front door.",
         "acted_on_at": null
-      },
-      {
-        "id": 7454,
-        "timestamp": "2026-06-18T00:02:27+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The simultaneous occurrence of an unidentified person moving toward the backyard, distress audio, dogs barking at the entrance, and multiple camera failures strongly suggests a security or medical emergency coincided with Steve's absence. While Steve has returned and presence data is normal, the unresolved distress signals and disabled cameras mean the situation's status is unknown and requires immediate verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3550,10 +3550,10 @@
         "entryway": "2026-06-18T01:25:30+00:00",
         "front_door": "2026-06-18T01:45:18+00:00",
         "front_yard": "2026-06-18T02:01:41+00:00",
-        "living_room": "2026-06-18T02:04:20+00:00",
+        "living_room": "2026-06-18T02:06:55+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-18T02:06:30.227271+00:00"
+      "last_updated": "2026-06-18T02:09:34.927313+00:00"
     }
   },
   "pge": {
