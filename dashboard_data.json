@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 23:28:16",
+  "generated_at": "2026-06-17 23:33:24",
   "as_of": "2026-06-17",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 156028,
+        "timestamp": "2026-06-18T06:30:04+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 156027,
+        "timestamp": "2026-06-18T06:28:34+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 156026,
+        "timestamp": "2026-06-18T06:28:30+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The camera is experiencing a technical error, displaying a message that no frames have been received for most of the sequence. When the feed is active, the dog run appears empty and quiet at night.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 1.0}]"
+      },
       {
         "id": 156025,
         "timestamp": "2026-06-18T06:27:03+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 155828,
-        "timestamp": "2026-06-18T04:30:31+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 155827,
-        "timestamp": "2026-06-18T04:29:55+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 155826,
-        "timestamp": "2026-06-18T04:29:20+00:00",
-        "source": "entryway",
-        "source_type": "vision",
-        "location": "entryway",
-        "summary": "The entryway is empty and quiet. No people or pets are visible in the foyer, though a television can be seen glowing in the adjacent room.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7500,
+        "timestamp": "2026-06-18T06:28:30+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera is reporting a technical error: 'No frames have been received, check error logs'.",
+        "acted_on_at": null
+      },
       {
         "id": 7499,
         "timestamp": "2026-06-18T06:20:16+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "high",
         "summary": "[dog_run] A camera error was detected in the stream, indicating a potential connection issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 7490,
-        "timestamp": "2026-06-18T05:17:57+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The repeated 'unclassified audio' in the backyard (22:04\u201322:13) directly correlates with wind sensors triggering in the living room, indicating the sound is likely weather-related rather than an intruder or animal. This pattern, alongside the simultaneous degradation of multiple camera feeds, suggests a localized network or power fluctuation possibly tied to the weather event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3536,7 +3536,6 @@
       "active_rooms": [
         "backyard",
         "dog_run",
-        "entryway",
         "front_door",
         "front_yard",
         "living_room"
@@ -3545,14 +3544,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-18T06:11:01+00:00",
-        "dog_run": "2026-06-18T06:07:53+00:00",
+        "dog_run": "2026-06-18T06:28:30+00:00",
         "entryway": "2026-06-18T06:00:23+00:00",
         "front_door": "2026-06-18T06:25:04+00:00",
         "front_yard": "2026-06-18T06:20:02+00:00",
         "living_room": "2026-06-18T06:07:17+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-18T06:27:28.932687+00:00"
+      "last_updated": "2026-06-18T06:30:31.259526+00:00"
     }
   },
   "pge": {
