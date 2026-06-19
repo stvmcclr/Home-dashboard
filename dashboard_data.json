@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 09:48:26",
+  "generated_at": "2026-06-19 09:53:33",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161374,
+        "timestamp": "2026-06-19T16:50:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161373,
         "timestamp": "2026-06-19T16:40:17+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 161174,
-        "timestamp": "2026-06-19T10:44:15+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7678,
+        "timestamp": "2026-06-19T16:49:14+00:00",
+        "insight_type": "correlation",
+        "severity": "high",
+        "summary": "The stable high presence count confirms the family is still home, but when cross-referenced with the active smoke/CO alarm flag and empty camera feeds, it reveals a critical safety blind spot: you cannot verify if this is a false alarm or a real emergency while everyone remains inside.",
+        "acted_on_at": null
+      },
       {
         "id": 7677,
         "timestamp": "2026-06-19T15:47:46+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera stream is down, and an unknown vehicle was recently seen in the driveway.",
         "acted_on_at": null
-      },
-      {
-        "id": 7668,
-        "timestamp": "2026-06-19T10:39:10+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The combination of a dark vehicle parked in the driveway for hours, persistent unclassified outdoor audio, and a fresh doorbell chime at 03:34\u2014while 18 devices confirm the entire household is inside sleeping\u2014strongly indicates an unauthorized visitor or loiterer actively lingering on the property. This warrants immediate review of recordings and potential security alert.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T16:45:45.204979+00:00"
+      "last_updated": "2026-06-19T16:51:47.9012+00:00"
     }
   },
   "pge": {
