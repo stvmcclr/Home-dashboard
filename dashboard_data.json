@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 07:45:20",
+  "generated_at": "2026-06-19 07:50:26",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161353,
+        "timestamp": "2026-06-19T14:49:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161352,
         "timestamp": "2026-06-19T14:28:29+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 161153,
-        "timestamp": "2026-06-19T10:27:55+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7676,
+        "timestamp": "2026-06-19T14:45:54+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The recurring failures of the front yard and dog run cameras align precisely with the unclassified outdoor audio spikes, indicating a shared network or power node issue rather than independent faults. With presence data confirming all household members are home, Steve should check the outdoor camera switch to restore perimeter visibility, as the system is currently blind to the driveway during active outdoor signals.",
+        "acted_on_at": null
+      },
       {
         "id": 7675,
         "timestamp": "2026-06-19T13:43:17+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "high",
         "summary": "[front_yard] The camera stream experienced a technical error where no frames were received, suggesting a potential issue with the camera or network.",
         "acted_on_at": null
-      },
-      {
-        "id": 7666,
-        "timestamp": "2026-06-19T10:25:37+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[living_room] The living room camera is reporting a frame reception error: 'No frames have been received, check error logs'.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T14:44:14.332052+00:00"
+      "last_updated": "2026-06-19T14:50:20.581701+00:00"
     }
   },
   "pge": {
