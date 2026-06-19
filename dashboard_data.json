@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 01:26:32",
+  "generated_at": "2026-06-19 01:31:40",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161010,
+        "timestamp": "2026-06-19T08:29:18+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 161009,
+        "timestamp": "2026-06-19T08:28:45+00:00",
+        "source": "dog_run",
+        "source_type": "audio",
+        "location": "dog_run",
+        "summary": "routine audio at dog_run \u2014 wind or weather noise outdoors",
+        "confidence": 0.2,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161008,
+        "timestamp": "2026-06-19T08:28:38+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161007,
+        "timestamp": "2026-06-19T08:27:57+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The front yard is quiet at night with a dark vehicle parked in the driveway. However, the camera is experiencing significant technical issues, as most frames show an error message indicating no frames have been received.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark car\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera error\", \"entity_state\": null, \"confidence\": 0.9}]"
+      },
+      {
+        "id": 161006,
+        "timestamp": "2026-06-19T08:27:08+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 161005,
         "timestamp": "2026-06-19T08:25:54+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.8,
         "model_version": "narrator-v5",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": null, \"confidence\": 0.95}, {\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": null, \"confidence\": 0.95}]"
-      },
-      {
-        "id": 160810,
-        "timestamp": "2026-06-19T06:35:50+00:00",
-        "source": "living_room",
-        "source_type": "audio",
-        "location": "living_room",
-        "summary": "calm family conversation indoors at living_room (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160809,
-        "timestamp": "2026-06-19T06:35:43+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160808,
-        "timestamp": "2026-06-19T06:35:10+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking briefly once or twice at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160807,
-        "timestamp": "2026-06-19T06:35:01+00:00",
-        "source": "dog_run",
-        "source_type": "audio",
-        "location": "dog_run",
-        "summary": "television or music playing in the background at dog_run (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160806,
-        "timestamp": "2026-06-19T06:34:52+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking urgently or repeatedly at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7657,
+        "timestamp": "2026-06-19T08:27:57+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is reporting 'No frames have been received', indicating a potential connectivity or hardware issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7656,
         "timestamp": "2026-06-19T08:25:54+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is experiencing an outage, showing an error message.",
         "acted_on_at": null
-      },
-      {
-        "id": 7647,
-        "timestamp": "2026-06-19T06:57:08+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Dogs are barking urgently in the backyard, but the dog run is empty.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3576,11 +3576,11 @@
         "dog_run": "2026-06-19T08:19:33+00:00",
         "entryway": "2026-06-19T08:25:54+00:00",
         "front_door": "2026-06-19T08:18:16+00:00",
-        "front_yard": "2026-06-19T08:07:17+00:00",
+        "front_yard": "2026-06-19T08:27:57+00:00",
         "living_room": "2026-06-19T08:08:29+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T08:26:22.618332+00:00"
+      "last_updated": "2026-06-19T08:29:24.717072+00:00"
     }
   },
   "pge": {
