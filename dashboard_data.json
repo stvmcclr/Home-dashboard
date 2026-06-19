@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 12:58:11",
+  "generated_at": "2026-06-19 13:03:18",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1384,6 +1384,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161418,
+        "timestamp": "2026-06-19T20:00:03+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 161417,
+        "timestamp": "2026-06-19T19:58:03+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161416,
         "timestamp": "2026-06-19T19:42:59+00:00",
@@ -3561,31 +3583,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 161218,
-        "timestamp": "2026-06-19T11:21:27+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 161217,
-        "timestamp": "2026-06-19T11:19:06+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7680,
+        "timestamp": "2026-06-19T19:56:35+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady decline in connected mobile devices (15 to 12) combined with the Friday afternoon timing strongly suggests the family is actively packing up and disconnecting as they prepare to leave for a weekend outing. This cross-signal pattern explains the lack of camera activity, as movement is now confined to indoor packing rather than active monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 7679,
         "timestamp": "2026-06-19T18:54:54+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "high",
         "summary": "[front_yard] The front yard camera is non-functional, and an unidentified dark vehicle was seen in the driveway just before the failure.",
         "acted_on_at": null
-      },
-      {
-        "id": 7670,
-        "timestamp": "2026-06-19T11:07:12+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] The 'dog_run' camera is not sending any video frames; check error logs for a potential hardware or network issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T19:56:30.712849+00:00"
+      "last_updated": "2026-06-19T20:02:33.58361+00:00"
     }
   },
   "pge": {
