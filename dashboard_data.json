@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 03:03:49",
+  "generated_at": "2026-06-19 03:08:56",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1272,6 +1272,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161119,
+        "timestamp": "2026-06-19T10:05:59+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161118,
+        "timestamp": "2026-06-19T10:05:30+00:00",
+        "source": "dog_run",
+        "source_type": "vision",
+        "location": "dog_run",
+        "summary": "The camera stream is experiencing intermittent connectivity issues, displaying error messages for most of the sequence. When a frame is visible, the side yard dog run appears empty during the early morning hours.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[]"
+      },
+      {
+        "id": 161117,
+        "timestamp": "2026-06-19T10:04:28+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161116,
+        "timestamp": "2026-06-19T10:02:57+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161115,
+        "timestamp": "2026-06-19T10:01:26+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 161114,
         "timestamp": "2026-06-19T10:01:02+00:00",
@@ -3416,64 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 160919,
-        "timestamp": "2026-06-19T07:26:36+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160918,
-        "timestamp": "2026-06-19T07:25:28+00:00",
-        "source": "doorbell",
-        "source_type": "audio",
-        "location": "front_door",
-        "summary": "unclassified audio at front_door",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160917,
-        "timestamp": "2026-06-19T07:25:06+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160916,
-        "timestamp": "2026-06-19T07:24:35+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera feed has recovered from a recent outage and is now displaying the driveway and street at night. No people or unusual activity are visible in the area.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"dark car in driveway\", \"entity_state\": null, \"confidence\": 0.9}, {\"entity_type\": \"state\", \"entity_name\": \"camera feed restored\", \"entity_state\": null, \"confidence\": 0.9}]"
-      },
-      {
-        "id": 160915,
-        "timestamp": "2026-06-19T07:23:42+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "unclassified audio at front_yard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7664,
+        "timestamp": "2026-06-19T10:05:30+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[dog_run] The camera stream is intermittently failing to provide video.",
+        "acted_on_at": null
+      },
       {
         "id": 7663,
         "timestamp": "2026-06-19T09:37:55+00:00",
@@ -3545,21 +3553,12 @@
         "severity": "high",
         "summary": "[dog_run] The camera stream initially failed to provide images, showing error messages instead.",
         "acted_on_at": null
-      },
-      {
-        "id": 7654,
-        "timestamp": "2026-06-19T07:57:40+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[doorbell] Urgent dog barking detected in the backyard, though the front porch area appears empty.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [],
       "active_rooms": [
-        "backyard",
         "dog_run",
         "entryway",
         "front_door",
@@ -3569,14 +3568,14 @@
       "music_playing": [],
       "last_motion": {
         "backyard": "2026-06-19T09:32:02+00:00",
-        "dog_run": "2026-06-19T09:44:43+00:00",
+        "dog_run": "2026-06-19T10:05:30+00:00",
         "entryway": "2026-06-19T09:56:56+00:00",
         "front_door": "2026-06-19T10:01:02+00:00",
         "front_yard": "2026-06-19T09:30:14+00:00",
         "living_room": "2026-06-19T09:39:56+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T10:01:05.390374+00:00"
+      "last_updated": "2026-06-19T10:07:09.25646+00:00"
     }
   },
   "pge": {
