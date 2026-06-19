@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 02:27:59",
+  "generated_at": "2026-06-19 02:33:06",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161082,
+        "timestamp": "2026-06-19T09:30:14+00:00",
+        "source": "front_yard",
+        "source_type": "vision",
+        "location": "front_yard",
+        "summary": "The camera is intermittently failing to provide footage, displaying error messages instead of the scene. The available frame shows the front yard and driveway at night with an unidentified dark vehicle parked in the driveway.",
+        "confidence": 0.8,
+        "model_version": "narrator-v5",
+        "entities": "[{\"entity_type\": \"object\", \"entity_name\": \"unidentified dark vehicle\", \"entity_state\": \"parked in driveway\", \"confidence\": 0.9}]"
+      },
+      {
+        "id": 161081,
+        "timestamp": "2026-06-19T09:29:24+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 161080,
+        "timestamp": "2026-06-19T09:27:53+00:00",
+        "source": "backyard",
+        "source_type": "audio",
+        "location": "backyard",
+        "summary": "unclassified audio at backyard",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
       {
         "id": 161079,
         "timestamp": "2026-06-19T09:26:23+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 160882,
-        "timestamp": "2026-06-19T07:01:30+00:00",
-        "source": "front_yard",
-        "source_type": "vision",
-        "location": "front_yard",
-        "summary": "The front yard camera is experiencing an outage, displaying an error message that no video frames are being received. The feed has transitioned from a view of the driveway and street to a black error screen.",
-        "confidence": 0.8,
-        "model_version": "narrator-v5",
-        "entities": "[{\"entity_type\": \"state\", \"entity_name\": \"camera outage\", \"entity_state\": null, \"confidence\": 1.0}]"
-      },
-      {
-        "id": 160881,
-        "timestamp": "2026-06-19T07:01:16+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "dogs barking urgently or repeatedly at backyard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 160880,
-        "timestamp": "2026-06-19T07:00:53+00:00",
-        "source": "front_yard",
-        "source_type": "audio",
-        "location": "front_yard",
-        "summary": "dogs barking urgently or repeatedly at front_yard (Qwen unavailable)",
-        "confidence": 0.4,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7662,
+        "timestamp": "2026-06-19T09:30:14+00:00",
+        "insight_type": "camera_event",
+        "severity": "high",
+        "summary": "[front_yard] The camera is intermittently failing to provide frames, and an unidentified dark vehicle is parked in the driveway.",
+        "acted_on_at": null
+      },
       {
         "id": 7661,
         "timestamp": "2026-06-19T09:09:25+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "high",
         "summary": "[entryway] Dogs are barking urgently at the backyard.",
         "acted_on_at": null
-      },
-      {
-        "id": 7652,
-        "timestamp": "2026-06-19T07:38:26+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[dog_run] Audio indicates urgent barking in the backyard, despite the side yard being empty.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3572,11 +3572,11 @@
         "dog_run": "2026-06-19T09:01:21+00:00",
         "entryway": "2026-06-19T09:11:28+00:00",
         "front_door": "2026-06-19T09:19:49+00:00",
-        "front_yard": "2026-06-19T09:09:25+00:00",
+        "front_yard": "2026-06-19T09:30:14+00:00",
         "living_room": "2026-06-19T08:54:31+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T09:27:24.771763+00:00"
+      "last_updated": "2026-06-19T09:30:27.290613+00:00"
     }
   },
   "pge": {
