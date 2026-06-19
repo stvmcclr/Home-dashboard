@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 13:59:38",
+  "generated_at": "2026-06-19 14:04:46",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161428,
+        "timestamp": "2026-06-19T20:58:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161427,
         "timestamp": "2026-06-19T20:40:12+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.2,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 161228,
-        "timestamp": "2026-06-19T11:28:32+00:00",
-        "source": "backyard",
-        "source_type": "audio",
-        "location": "backyard",
-        "summary": "unclassified audio at backyard",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
       }
     ],
     "insights": [
+      {
+        "id": 7681,
+        "timestamp": "2026-06-19T20:58:21+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The combination of Friday afternoon timing, zero camera activity, and a fluctuating presence count of 12-15 devices confirms the house is empty, with the presence metric tracking background IoT devices rather than people. This validates transitioning the home to away-mode for security and energy savings.",
+        "acted_on_at": null
+      },
       {
         "id": 7680,
         "timestamp": "2026-06-19T19:56:35+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "medium",
         "summary": "Simultaneous feed failures across multiple cameras (front yard, dog run, living room) coinciding with bursts of unclassified outdoor audio and a stable 17-device presence count strongly indicate a localized WiFi or network infrastructure issue rather than isolated hardware failures. This leaves the home temporarily blind to visual feeds despite everyone being safely inside.",
         "acted_on_at": null
-      },
-      {
-        "id": 7671,
-        "timestamp": "2026-06-19T11:37:18+00:00",
-        "insight_type": "camera_event",
-        "severity": "high",
-        "summary": "[front_yard] The front yard camera is non-functional, and an unidentified dark vehicle was seen in the driveway just before the failure.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-19T20:57:04.263697+00:00"
+      "last_updated": "2026-06-19T21:03:06.580228+00:00"
     }
   },
   "pge": {
