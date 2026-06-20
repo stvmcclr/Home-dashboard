@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20 12:31:12",
+  "generated_at": "2026-06-20 12:36:19",
   "as_of": "2026-06-20",
   "projects": [
     {
@@ -1468,6 +1468,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161552,
+        "timestamp": "2026-06-20T19:32:34+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161551,
         "timestamp": "2026-06-20T19:19:31+00:00",
@@ -3656,20 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161352,
-        "timestamp": "2026-06-19T14:28:29+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7693,
+        "timestamp": "2026-06-20T19:31:40+00:00",
+        "insight_type": "absence",
+        "severity": "high",
+        "summary": "No camera observations recorded today despite cameras typically being active. Check Frigate is running: `docker ps | grep frigate`",
+        "acted_on_at": null
+      },
       {
         "id": 7692,
         "timestamp": "2026-06-20T17:29:50+00:00",
@@ -3741,14 +3749,6 @@
         "severity": "low",
         "summary": "The sustained presence of 12-14 devices alongside zero camera activity for four hours on a Friday afternoon strongly suggests the family has enabled privacy mode or covered the lenses, a common weekend routine that should be verified to ensure security monitoring isn't inadvertently disabled.",
         "acted_on_at": null
-      },
-      {
-        "id": 7683,
-        "timestamp": "2026-06-19T21:59:25+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent zero camera activity over four hours, despite active cameras and a fluctuating presence count of 12-15 devices, strongly indicates a camera system failure or network partition rather than an empty house. This matters because it leaves the home unmonitored during a typically active Friday afternoon with children and high-energy dogs.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-20T19:30:21.556231+00:00"
+      "last_updated": "2026-06-20T19:33:23.671502+00:00"
     }
   },
   "pge": {
