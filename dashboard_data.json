@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 17:04:01",
+  "generated_at": "2026-06-19 17:09:08",
   "as_of": "2026-06-19",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161444,
+        "timestamp": "2026-06-20T00:04:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161443,
         "timestamp": "2026-06-20T00:00:58+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
-      },
-      {
-        "id": 161244,
-        "timestamp": "2026-06-19T11:40:19+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7685,
+        "timestamp": "2026-06-20T00:06:34+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The spike to 17 connected devices at 17:00, combined with sustained zero camera activity despite high presence, indicates guests have likely just arrived for a Friday gathering and are congregating in a camera-blind zone. This resolves the earlier anomaly flags as normal social activity rather than a system fault or security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 7684,
         "timestamp": "2026-06-19T23:03:23+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The recurring failures of the front yard and dog run cameras align precisely with the unclassified outdoor audio spikes, indicating a shared network or power node issue rather than independent faults. With presence data confirming all household members are home, Steve should check the outdoor camera switch to restore perimeter visibility, as the system is currently blind to the driveway during active outdoor signals.",
         "acted_on_at": null
-      },
-      {
-        "id": 7675,
-        "timestamp": "2026-06-19T13:43:17+00:00",
-        "insight_type": "correlation",
-        "severity": "high",
-        "summary": "The synchronized activation of the doorbell, multi-zone outdoor audio spikes, and a smoke/CO alarm beep at the front door, combined with an unidentified dark vehicle parked in the driveway and repeated camera stream failures, strongly suggests an active external presence or incident at the property perimeter that may be interfering with systems or warrants immediate verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-20T00:01:39.533502+00:00"
+      "last_updated": "2026-06-20T00:07:43.170327+00:00"
     }
   },
   "pge": {
