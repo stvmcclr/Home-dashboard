@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 13:37:20",
+  "generated_at": "2026-06-22 13:42:28",
   "as_of": "2026-06-22",
   "projects": [
     {
@@ -1356,6 +1356,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161852,
+        "timestamp": "2026-06-22T20:39:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 161851,
+        "timestamp": "2026-06-22T20:38:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 161850,
+        "timestamp": "2026-06-22T20:36:43+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161849,
         "timestamp": "2026-06-22T20:16:39+00:00",
@@ -3522,42 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161652,
-        "timestamp": "2026-06-21T11:07:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161651,
-        "timestamp": "2026-06-21T10:37:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161650,
-        "timestamp": "2026-06-21T10:07:26+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7710,
+        "timestamp": "2026-06-22T20:40:33+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The combination of a persistently high mobile device count (16\u201319) with zero motion/camera activity and flagged morning absence strongly suggests the house is unoccupied, indicating the connections are likely residual or \"ghost\" devices rather than active presence. This warrants a quick verification to rule out a presence detection glitch or confirm the home is secure.",
+        "acted_on_at": null
+      },
       {
         "id": 7709,
         "timestamp": "2026-06-22T19:38:57+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "low",
         "summary": "The sustained 11-14 connected devices over two hours with zero camera activity indicates a settled gathering is likely occupying camera-blind zones, meaning network bandwidth should be prioritized and physical security monitoring is currently limited to presence data only.",
         "acted_on_at": null
-      },
-      {
-        "id": 7700,
-        "timestamp": "2026-06-21T23:10:19+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The 12-14 connected mobile devices consistently exceed the household's 4 members, indicating a gathering of guests. The recent drop to 11 by 16:07 suggests visitors are departing, though camera verification is unavailable.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-22T20:34:53.570423+00:00"
+      "last_updated": "2026-06-22T20:40:56.578392+00:00"
     }
   },
   "pge": {
