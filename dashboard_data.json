@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 10:32:35",
+  "generated_at": "2026-06-22 10:37:42",
   "as_of": "2026-06-22",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161819,
+        "timestamp": "2026-06-22T17:36:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161818,
         "timestamp": "2026-06-22T17:22:58+00:00",
@@ -3516,20 +3527,25 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161619,
-        "timestamp": "2026-06-21T04:05:35+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7707,
+        "timestamp": "2026-06-22T17:35:16+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The stable Wi-Fi device count (16\u201319) combined with zero camera and motion activity indicates the household is in a prolonged inactive state rather than suffering a network outage. This pattern, alongside the missing morning routine, suggests a likely early departure or skipped schedule, warranting a quick confirmation that everyone is on track for Monday.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7706,
+        "timestamp": "2026-06-22T17:33:21+00:00",
+        "insight_type": "absence",
+        "severity": "medium",
+        "summary": "Unusual absence: no morning activity detected today (weekday). Typical weekday morning has ~39 observations. Family may be away or routine is disrupted.",
+        "acted_on_at": null
+      },
       {
         "id": 7705,
         "timestamp": "2026-06-22T15:31:27+00:00",
@@ -3593,22 +3609,6 @@
         "severity": "low",
         "summary": "High-activity pattern: backyard averaging 55 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 7697,
-        "timestamp": "2026-06-21T05:44:34+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: backyard averaging 56 camera observations/day over the last 7 days.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7696,
-        "timestamp": "2026-06-21T04:44:33+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The highly stable presence of 12-14 mobile devices over the last 2.5 hours, paired with zero camera or activity triggers, strongly suggests a quiet gathering or a fixed network baseline rather than a dynamic event. This is likely normal for a Saturday evening, but worth verifying if you weren't expecting visitors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-22T17:30:02.797514+00:00"
+      "last_updated": "2026-06-22T17:36:06.274594+00:00"
     }
   },
   "pge": {
