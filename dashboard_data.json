@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 15:55:43",
+  "generated_at": "2026-06-22 16:00:50",
   "as_of": "2026-06-22",
   "projects": [
     {
@@ -1384,6 +1384,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161871,
+        "timestamp": "2026-06-22T22:58:29+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 2.61h.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-aac84a33",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 161870,
+        "timestamp": "2026-06-22T22:55:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161869,
         "timestamp": "2026-06-22T22:47:13+00:00",
@@ -3561,31 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161671,
-        "timestamp": "2026-06-21T15:39:44+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161670,
-        "timestamp": "2026-06-21T15:29:42+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7713,
+        "timestamp": "2026-06-22T22:58:29+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 2.61h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 7712,
         "timestamp": "2026-06-22T22:43:47+00:00",
@@ -3657,19 +3665,13 @@
         "severity": "low",
         "summary": "Pattern: late-night camera activity (after 10pm) on 4 of the last 7 days in locations: backyard, dog_run, entryway.",
         "acted_on_at": null
-      },
-      {
-        "id": 7703,
-        "timestamp": "2026-06-22T04:16:39+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent presence of 12-15 devices alongside four hours of zero camera motion and Roxanne\u2019s extended rest period indicates the entire household has likely gathered in a single, camera-blind area for a prolonged, low-movement activity like a movie or game night, with the dogs resting nearby.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3682,7 +3684,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-22T22:54:11.624637+00:00"
+      "last_updated": "2026-06-22T23:00:15.587659+00:00"
     }
   },
   "pge": {
