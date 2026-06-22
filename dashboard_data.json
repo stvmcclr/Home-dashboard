@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21 18:13:32",
+  "generated_at": "2026-06-21 18:18:39",
   "as_of": "2026-06-21",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161714,
+        "timestamp": "2026-06-22T01:12:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161713,
         "timestamp": "2026-06-22T00:41:55+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161514,
-        "timestamp": "2026-06-20T14:23:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7701,
+        "timestamp": "2026-06-22T01:12:20+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 11-14 connected devices over two hours with zero camera activity indicates a settled gathering is likely occupying camera-blind zones, meaning network bandwidth should be prioritized and physical security monitoring is currently limited to presence data only.",
+        "acted_on_at": null
+      },
       {
         "id": 7700,
         "timestamp": "2026-06-21T23:10:19+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The temporary dip to 12 connected devices at 09:42 likely corresponds to household members stepping outside, which aligns with the flagged pattern of the dogs being unusually active in the backyard. This confirms a normal Saturday morning routine rather than a network or security issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 7691,
-        "timestamp": "2026-06-20T17:28:09+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Pattern: dogs have been unusually active in the backyard on 6 of the last 7 days (avg 6 observations/day). This may indicate fence activity, a neighborhood animal, or family routine changes.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-22T01:11:42.607435+00:00"
+      "last_updated": "2026-06-22T01:17:46.492847+00:00"
     }
   },
   "pge": {
