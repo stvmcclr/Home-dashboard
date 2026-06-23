@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 19:46:18",
+  "generated_at": "2026-06-22 19:51:26",
   "as_of": "2026-06-22",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161914,
+        "timestamp": "2026-06-23T02:48:10+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161913,
         "timestamp": "2026-06-23T02:40:08+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161714,
-        "timestamp": "2026-06-22T01:12:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7717,
+        "timestamp": "2026-06-23T02:50:10+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady climb in connected devices (14\u219219) alongside zero motion/camera activity into the evening strongly suggests background IoT network activity or sensor drift rather than actual occupancy, warranting a quick check to rule out offline motion detectors or false presence readings.",
+        "acted_on_at": null
+      },
       {
         "id": 7716,
         "timestamp": "2026-06-23T01:48:08+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The consistent presence of 15\u201319 Wi-Fi devices alongside zero motion/camera activity on a weekday morning confirms the household is at home but inactive, likely due to a day off or remote work, indicating a benign quiet day rather than a security or health issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 7707,
-        "timestamp": "2026-06-22T17:35:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stable Wi-Fi device count (16\u201319) combined with zero camera and motion activity indicates the household is in a prolonged inactive state rather than suffering a network outage. This pattern, alongside the missing morning routine, suggests a likely early departure or skipped schedule, warranting a quick confirmation that everyone is on track for Monday.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-23T02:44:21.444582+00:00"
+      "last_updated": "2026-06-23T02:50:24.057+00:00"
     }
   },
   "pge": {
