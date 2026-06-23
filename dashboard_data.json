@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 12:16:06",
+  "generated_at": "2026-06-23 12:21:13",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162001,
+        "timestamp": "2026-06-23T19:19:04+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162000,
         "timestamp": "2026-06-23T18:51:57+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161801,
-        "timestamp": "2026-06-22T15:18:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7725,
+        "timestamp": "2026-06-23T19:20:16+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 12\u201314 device count with zero camera motion for over three hours, combined with Roxanne\u2019s severe sleep deprivation, suggests the household is in a prolonged low-activity state\u2014likely adults resting, guests or kids in non-camera zones, or IoT devices inflating the count. A quick network diagnostic and wellness check on Roxanne is recommended.",
+        "acted_on_at": null
+      },
       {
         "id": 7724,
         "timestamp": "2026-06-23T18:18:44+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The consistent 14\u201317 connected devices paired with zero motion/camera on a Monday afternoon, combined with Roxanne\u2019s documented 2.6-hour sleep deficit, indicates the household is home but resting or working quietly rather than being away. This clarifies the repeated flags as a normal quiet day at home, not a security or connectivity anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 7715,
-        "timestamp": "2026-06-23T00:46:29+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent high device count (15\u201317) paired with zero motion/camera activity for four hours, combined with Roxanne\u2019s severe sleep deprivation, suggests the household is in a prolonged low-energy rest state rather than being away. However, given the Australian Shepherds\u2019 high activity levels, this also warrants a quick sensor verification to rule out a motion detection outage.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-23T19:14:33.790238+00:00"
+      "last_updated": "2026-06-23T19:20:37.300446+00:00"
     }
   },
   "pge": {
