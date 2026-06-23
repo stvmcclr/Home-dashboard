@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 07:59:10",
+  "generated_at": "2026-06-23 08:04:18",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161977,
+        "timestamp": "2026-06-23T14:59:28+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 2.89h. HR 86bpm. HRV 2670ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-60c29399",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 161976,
         "timestamp": "2026-06-23T14:51:01+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161777,
-        "timestamp": "2026-06-22T11:06:26+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7720,
+        "timestamp": "2026-06-23T14:59:28+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 2.89h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 7719,
         "timestamp": "2026-06-23T06:58:12+00:00",
@@ -3629,19 +3637,13 @@
         "severity": "low",
         "summary": "The stable 17\u201319 device count paired with zero motion/camera activity for four hours on a weekday afternoon indicates the household is likely stationary in a single area (e.g., home office or media room) or the count is inflated by background IoT devices rather than actual people. This matters because it confirms a quiet, focused day at home rather than an unaccounted absence, though verifying the device breakdown would rule out network misclassification.",
         "acted_on_at": null
-      },
-      {
-        "id": 7710,
-        "timestamp": "2026-06-22T20:40:33+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of a persistently high mobile device count (16\u201319) with zero motion/camera activity and flagged morning absence strongly suggests the house is unoccupied, indicating the connections are likely residual or \"ghost\" devices rather than active presence. This warrants a quick verification to rule out a presence detection glitch or confirm the home is secure.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3654,7 +3656,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-23T14:57:11.336246+00:00"
+      "last_updated": "2026-06-23T15:03:14.231818+00:00"
     }
   },
   "pge": {
