@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 10:17:54",
+  "generated_at": "2026-06-23 10:23:02",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 161990,
+        "timestamp": "2026-06-23T17:21:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 161989,
         "timestamp": "2026-06-23T16:51:30+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161790,
-        "timestamp": "2026-06-22T14:11:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7723,
+        "timestamp": "2026-06-23T17:17:08+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Roxanne\u2019s severe sleep deprivation (2.89h) combined with the morning device count stabilizing at 12\u201314 (instead of dropping to a typical empty-house baseline) and zero camera activity strongly suggests she stayed home today. This matters because she is likely fatigued, so the home should prioritize comfort, safety, and low-stress routines.",
+        "acted_on_at": null
+      },
       {
         "id": 7722,
         "timestamp": "2026-06-23T16:15:13+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "medium",
         "summary": "The persistent 15\u201319 device count paired with zero motion/camera activity on a weekday afternoon strongly indicates a false positive in presence detection, likely from IoT devices or static network connections being miscounted as mobile phones. This matters because occupancy-based automations (security, climate, or alerts) may be incorrectly triggered or suppressed.",
         "acted_on_at": null
-      },
-      {
-        "id": 7713,
-        "timestamp": "2026-06-22T22:58:29+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Roxanne slept only 2.61h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-23T17:16:27.301814+00:00"
+      "last_updated": "2026-06-23T17:22:30.887799+00:00"
     }
   },
   "pge": {
