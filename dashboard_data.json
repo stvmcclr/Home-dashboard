@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 21:54:32",
+  "generated_at": "2026-06-22 21:59:40",
   "as_of": "2026-06-22",
   "projects": [
     {
@@ -3475,6 +3475,14 @@
     ],
     "insights": [
       {
+        "id": 7718,
+        "timestamp": "2026-06-23T04:57:10+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 15\u201319 connected devices paired with zero motion or camera activity over four hours indicates a false-positive presence pattern, likely caused by smart devices left on or connected while the household is asleep or stationary. This suggests presence detection should be cross-referenced with motion/activity to avoid triggering unnecessary automations.",
+        "acted_on_at": null
+      },
+      {
         "id": 7717,
         "timestamp": "2026-06-23T02:50:10+00:00",
         "insight_type": "correlation",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The stable high Wi-Fi count (15\u201318) alongside zero motion/camera activity for four hours confirms the house is unoccupied rather than occupied but quiet, indicating the family is at school/work and the network is sustained by always-on IoT infrastructure. This validates enabling 'away' security profiles and suppressing occupancy alerts to prevent false triggers.",
         "acted_on_at": null
-      },
-      {
-        "id": 7708,
-        "timestamp": "2026-06-22T18:36:41+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent presence of 15\u201319 Wi-Fi devices alongside zero motion/camera activity on a weekday morning confirms the household is at home but inactive, likely due to a day off or remote work, indicating a benign quiet day rather than a security or health issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-23T04:54:30.96601+00:00"
+      "last_updated": "2026-06-23T04:57:33.230535+00:00"
     }
   },
   "pge": {
