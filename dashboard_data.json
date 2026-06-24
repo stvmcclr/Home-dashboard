@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 17:33:51",
+  "generated_at": "2026-06-23 17:38:58",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162055,
+        "timestamp": "2026-06-24T00:35:20+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162054,
         "timestamp": "2026-06-24T00:28:18+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161855,
-        "timestamp": "2026-06-22T20:46:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7730,
+        "timestamp": "2026-06-24T00:34:18+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 16\u201320 device count far exceeds the household size, indicating a large gathering or guests, while the complete lack of camera motion suggests they are congregated in an unmonitored area or engaged in a stationary activity. This warrants a quick check to confirm the gathering is expected and that all occupied zones are adequately monitored.",
+        "acted_on_at": null
+      },
       {
         "id": 7729,
         "timestamp": "2026-06-23T23:32:14+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "low",
         "summary": "The stable count of 19\u201320 devices overnight with zero camera activity indicates the network is likely counting IoT/smart home hubs as mobile devices, and the household remains dormant; combined with Roxanne\u2019s severe sleep deprivation, this confirms a quiet pre-morning state with no active movement or security concerns.",
         "acted_on_at": null
-      },
-      {
-        "id": 7720,
-        "timestamp": "2026-06-23T14:59:28+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Roxanne slept only 2.89h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-24T00:32:33.546239+00:00"
+      "last_updated": "2026-06-24T00:38:37.809394+00:00"
     }
   },
   "pge": {
