@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 23:38:13",
+  "generated_at": "2026-06-23 23:43:20",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162113,
+        "timestamp": "2026-06-24T06:40:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162112,
         "timestamp": "2026-06-24T06:26:41+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161913,
-        "timestamp": "2026-06-23T02:40:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7736,
+        "timestamp": "2026-06-24T06:40:16+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_door averaging 36 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 7735,
         "timestamp": "2026-06-24T05:40:15+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The persistent 13\u201314 device count with zero camera motion for over four hours on a weekday afternoon strongly indicates either a camera system failure or the entire household gathered in a single, camera-blind area, likely resting due to Roxanne\u2019s reported illness. This discrepancy warrants immediate verification to rule out equipment failure or a medical situation.",
         "acted_on_at": null
-      },
-      {
-        "id": 7726,
-        "timestamp": "2026-06-23T20:26:31+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 13\u201314 device count with zero camera motion for hours, paired with Roxanne\u2019s severe sleep deprivation, strongly suggests the family is at home but inactive, likely resting or working in blind spots. Given it\u2019s a Tuesday afternoon, this atypical pattern warrants a quick wellness check on Roxanne and confirmation of the children\u2019s status.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-24T06:36:02.892298+00:00"
+      "last_updated": "2026-06-24T06:42:08.879076+00:00"
     }
   },
   "pge": {
