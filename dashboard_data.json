@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 21:40:13",
+  "generated_at": "2026-06-23 21:45:21",
   "as_of": "2026-06-23",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162103,
+        "timestamp": "2026-06-24T04:38:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162102,
         "timestamp": "2026-06-24T04:24:11+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 161903,
-        "timestamp": "2026-06-23T01:46:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7734,
+        "timestamp": "2026-06-24T04:39:15+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 17\u201319 connected devices paired with zero camera motion on a weekday evening strongly indicates a stationary indoor gathering where attendees are confined to rooms rather than moving through common areas. This explains the high Wi-Fi load without triggering motion alerts, but Steve should verify if this matches his expectations.",
+        "acted_on_at": null
+      },
       {
         "id": 7733,
         "timestamp": "2026-06-24T03:37:59+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The persistent 12\u201314 device count with zero camera motion for over three hours, combined with Roxanne\u2019s severe sleep deprivation, suggests the household is in a prolonged low-activity state\u2014likely adults resting, guests or kids in non-camera zones, or IoT devices inflating the count. A quick network diagnostic and wellness check on Roxanne is recommended.",
         "acted_on_at": null
-      },
-      {
-        "id": 7724,
-        "timestamp": "2026-06-23T18:18:44+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The rapid drop in connected devices followed by a stable count of 12\u201314, combined with zero camera motion, confirms the household has departed for the day, aligning with a typical Tuesday school/work schedule.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-24T04:38:01.246368+00:00"
+      "last_updated": "2026-06-24T04:44:04.48414+00:00"
     }
   },
   "pge": {
