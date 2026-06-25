@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24 22:12:18",
+  "generated_at": "2026-06-24 22:17:26",
   "as_of": "2026-06-24",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162277,
+        "timestamp": "2026-06-25T05:11:09+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162276,
         "timestamp": "2026-06-25T05:00:06+00:00",
@@ -3432,20 +3443,33 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162077,
-        "timestamp": "2026-06-24T02:00:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7747,
+        "timestamp": "2026-06-25T05:12:55+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: backyard averaging 32 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7748,
+        "timestamp": "2026-06-25T05:12:55+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: entryway averaging 20 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7749,
+        "timestamp": "2026-06-25T05:12:55+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: front_yard averaging 27 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 7746,
         "timestamp": "2026-06-25T03:10:09+00:00",
@@ -3501,30 +3525,6 @@
         "severity": "low",
         "summary": "High-activity pattern: front_yard averaging 35 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 7739,
-        "timestamp": "2026-06-24T15:57:14+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The gradual drop in connected mobile devices from ~21 to ~11 between 07:49 and 08:29 indicates a staggered morning departure for school and work, consistent with the household's typical Wednesday routine. This occupancy shift is normal and requires no action.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7738,
-        "timestamp": "2026-06-24T07:43:16+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained count of 17\u201318 connected devices paired with zero camera motion during late-night hours strongly indicates that Wi-Fi presence detection is registering IoT and network equipment rather than actual people, explaining the discrepancy with the four-person household and suggesting presence alerts should be tuned to filter non-mobile MAC addresses.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7737,
-        "timestamp": "2026-06-24T06:42:07+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of ~18 connected mobile devices and zero camera motion late on a Tuesday night strongly indicates a large, stationary group of guests or a house party rather than normal family activity. Steve should verify the gathering is authorized and monitor for noise or safety concerns.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-25T05:09:37.68037+00:00"
+      "last_updated": "2026-06-25T05:15:41.274011+00:00"
     }
   },
   "pge": {
