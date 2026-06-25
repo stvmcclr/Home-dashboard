@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24 19:07:41",
+  "generated_at": "2026-06-24 19:12:50",
   "as_of": "2026-06-24",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162251,
+        "timestamp": "2026-06-25T02:10:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162250,
         "timestamp": "2026-06-25T02:03:20+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162051,
-        "timestamp": "2026-06-24T00:23:17+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7745,
+        "timestamp": "2026-06-25T02:10:08+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained presence of 16-20 devices paired with zero camera activity for over three hours strongly suggests the household is gathered in a single, camera-blind zone (likely a home theater or basement) or the network is overcounting IoT devices. This clarifies why high network activity isn't triggering motion alerts and indicates a normal evening gathering rather than a system anomaly.",
+        "acted_on_at": null
+      },
       {
         "id": 7744,
         "timestamp": "2026-06-25T01:09:07+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "low",
         "summary": "High-activity pattern: front_door averaging 36 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 7735,
-        "timestamp": "2026-06-24T05:40:15+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 17\u201319 mobile devices on a weekday evening vastly exceeds the four-person household and, combined with zero camera motion, strongly suggests a quiet gathering or overnight guests in a camera-blind area. Confirm with Steve and Roxanne to rule out unauthorized network access or forgotten visitors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-25T02:04:46.709047+00:00"
+      "last_updated": "2026-06-25T02:10:50.488144+00:00"
     }
   },
   "pge": {
