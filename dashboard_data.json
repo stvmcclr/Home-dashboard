@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25 23:56:36",
-  "as_of": "2026-06-25",
+  "generated_at": "2026-06-26 00:01:45",
+  "as_of": "2026-06-26",
   "projects": [
     {
       "id": 1,
@@ -948,7 +948,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 13.5 \u00d7 29.5 \u00d7 1 inch (Merv 11 or 13 recommended). Two HVAC systems \u2014 this is downstairs unit.",
-      "days_until_due": -62,
+      "days_until_due": -63,
       "is_overdue": 1
     },
     {
@@ -961,7 +961,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 16 \u00d7 24 \u00d7 1 inch. Upstairs HVAC unit.",
-      "days_until_due": -62,
+      "days_until_due": -63,
       "is_overdue": 1
     },
     {
@@ -974,7 +974,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "LG washer/dryer combo. Installed 2019. Expected lifespan ~10-13 yrs. Annual cleaning/maintenance check.",
-      "days_until_due": 190,
+      "days_until_due": 189,
       "is_overdue": 0
     },
     {
@@ -987,7 +987,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador refrigerator. New 2025. Check condenser coils annually. Warranty: typically 2yr full, 5yr sealed system.",
-      "days_until_due": 249,
+      "days_until_due": 248,
       "is_overdue": 0
     },
     {
@@ -1000,7 +1000,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Wolf range. New 2025. Annual burner and igniter check. Wolf warranty: 2yr parts & labor.",
-      "days_until_due": 249,
+      "days_until_due": 248,
       "is_overdue": 0
     },
     {
@@ -1013,7 +1013,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador dishwasher. New 2025. Clean filter every 6 months. Warranty: typically 2yr.",
-      "days_until_due": 249,
+      "days_until_due": 248,
       "is_overdue": 0
     }
   ],
@@ -1244,6 +1244,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162470,
+        "timestamp": "2026-06-26T06:56:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 162469,
+        "timestamp": "2026-06-26T06:55:19+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162468,
         "timestamp": "2026-06-26T06:53:18+00:00",
@@ -3421,31 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162270,
-        "timestamp": "2026-06-25T04:21:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162269,
-        "timestamp": "2026-06-25T04:03:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7769,
+        "timestamp": "2026-06-26T06:57:20+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Roxanne\u2019s sleep tracker reports a 10.66-hour session ending at 23:32, which is highly unusual for a Thursday evening and likely indicates a tracking artifact, a prolonged nap, or early fatigue/illness worth monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 7768,
         "timestamp": "2026-06-26T04:50:15+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 11\u201314 connected devices during typical daytime hours, paired with zero camera activity, strongly indicates the camera system may be offline, malfunctioning, or intentionally disabled while the home remains active. This creates an unmonitored blind spot during a period when the family and pets are likely present.",
         "acted_on_at": null
-      },
-      {
-        "id": 7759,
-        "timestamp": "2026-06-25T22:39:42+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: living_room averaging 32 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3544,7 +3544,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-26T06:54:07.361077+00:00"
+      "last_updated": "2026-06-26T07:00:10.095178+00:00"
     }
   },
   "pge": {
