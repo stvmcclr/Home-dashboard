@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 16:26:36",
+  "generated_at": "2026-06-26 16:31:43",
   "as_of": "2026-06-26",
   "projects": [
     {
@@ -1496,6 +1496,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162624,
+        "timestamp": "2026-06-26T23:28:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162623,
         "timestamp": "2026-06-26T23:22:14+00:00",
@@ -3684,20 +3695,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162424,
-        "timestamp": "2026-06-26T01:41:06+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7779,
+        "timestamp": "2026-06-26T23:30:16+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 17\u201319 device count with zero camera motion over four hours strongly suggests a network misconfiguration or phantom device tracking rather than actual occupancy, as real human presence would typically trigger at least occasional camera activity or device movement. This matters because unreliable presence data can cause automations to malfunction and mask the true state of the home.",
+        "acted_on_at": null
+      },
       {
         "id": 7778,
         "timestamp": "2026-06-26T22:29:15+00:00",
@@ -3769,14 +3777,6 @@
         "severity": "low",
         "summary": "The sustained presence of 17\u201319 mobile devices, combined with Roxanne\u2019s sleep tracker ending at 23:32 and zero camera activity, confirms the household is asleep and undisturbed, with the device count dip at 00:36 aligning with her waking.",
         "acted_on_at": null
-      },
-      {
-        "id": 7769,
-        "timestamp": "2026-06-26T06:57:20+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Roxanne\u2019s sleep tracker reports a 10.66-hour session ending at 23:32, which is highly unusual for a Thursday evening and likely indicates a tracking artifact, a prolonged nap, or early fatigue/illness worth monitoring.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3794,7 +3794,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-26T23:24:42.22681+00:00"
+      "last_updated": "2026-06-26T23:30:45.102689+00:00"
     }
   },
   "pge": {
