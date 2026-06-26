@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25 18:43:20",
+  "generated_at": "2026-06-25 18:48:30",
   "as_of": "2026-06-25",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162425,
+        "timestamp": "2026-06-26T01:43:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162424,
         "timestamp": "2026-06-26T01:41:06+00:00",
@@ -3403,20 +3414,25 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162225,
-        "timestamp": "2026-06-24T23:50:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7766,
+        "timestamp": "2026-06-26T01:45:55+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The rapid decline in connected devices (19 to 13 in 13 minutes) combined with zero camera motion indicates the household is actively leaving the Wi-Fi range or powering down devices, suggesting a likely evening departure or transition to a quiet, unmonitored routine.",
+        "acted_on_at": null
+      },
+      {
+        "id": 7765,
+        "timestamp": "2026-06-26T01:44:09+00:00",
+        "insight_type": "trend",
+        "severity": "low",
+        "summary": "High-activity pattern: living_room averaging 26 camera observations/day over the last 7 days.",
+        "acted_on_at": null
+      },
       {
         "id": 7764,
         "timestamp": "2026-06-26T00:44:08+00:00",
@@ -3480,22 +3496,6 @@
         "severity": "low",
         "summary": "High-activity pattern: living_room averaging 34 camera observations/day over the last 7 days.",
         "acted_on_at": null
-      },
-      {
-        "id": 7756,
-        "timestamp": "2026-06-25T20:38:07+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent high device count combined with zero camera motion during active daytime hours strongly suggests either a camera motion detection failure or a presence tracking anomaly; a quick system diagnostic is recommended.",
-        "acted_on_at": null
-      },
-      {
-        "id": 7755,
-        "timestamp": "2026-06-25T19:36:47+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of consistently high device presence (12-14) with zero camera motion over a 4-hour midday window is highly atypical for a family with children and active dogs, strongly suggesting either a camera system outage/misconfiguration or an unusually static household state. This matters because it could mask security events or indicate a network issue that requires verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-26T01:42:13.199844+00:00"
+      "last_updated": "2026-06-26T01:48:16.98122+00:00"
     }
   },
   "pge": {
