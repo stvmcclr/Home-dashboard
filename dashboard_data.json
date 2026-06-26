@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25 17:41:40",
+  "generated_at": "2026-06-25 17:46:48",
   "as_of": "2026-06-25",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162400,
+        "timestamp": "2026-06-26T00:43:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162399,
         "timestamp": "2026-06-26T00:36:49+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162200,
-        "timestamp": "2026-06-24T19:52:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7764,
+        "timestamp": "2026-06-26T00:44:08+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 14\u201317 devices combined with zero camera motion for four hours strongly suggests either a camera system connectivity failure or the household congregated in a blind spot; a quick system check is recommended to rule out hardware issues.",
+        "acted_on_at": null
+      },
       {
         "id": 7763,
         "timestamp": "2026-06-25T23:42:09+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "medium",
         "summary": "The combination of consistently high device presence (12-14) with zero camera motion over a 4-hour midday window is highly atypical for a family with children and active dogs, strongly suggesting either a camera system outage/misconfiguration or an unusually static household state. This matters because it could mask security events or indicate a network issue that requires verification.",
         "acted_on_at": null
-      },
-      {
-        "id": 7754,
-        "timestamp": "2026-06-25T19:35:23+00:00",
-        "insight_type": "trend",
-        "severity": "low",
-        "summary": "High-activity pattern: front_yard averaging 22 camera observations/day over the last 7 days.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-26T00:41:36.90392+00:00"
+      "last_updated": "2026-06-26T00:44:42.85553+00:00"
     }
   },
   "pge": {
