@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27 12:56:14",
+  "generated_at": "2026-06-27 13:01:21",
   "as_of": "2026-06-27",
   "projects": [
     {
@@ -3727,6 +3727,14 @@
     ],
     "insights": [
       {
+        "id": 7789,
+        "timestamp": "2026-06-27T19:59:58+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The presence count of 12-17 devices significantly exceeds the household's typical 6-8, and combined with zero camera motion over four hours, strongly indicates the presence sensor is detecting external Wi-Fi signals (e.g., neighbors or passersby) rather than actual occupancy.",
+        "acted_on_at": null
+      },
+      {
         "id": 7788,
         "timestamp": "2026-06-27T18:58:08+00:00",
         "insight_type": "correlation",
@@ -3797,14 +3805,6 @@
         "severity": "medium",
         "summary": "The sustained high device count (peaking at 21) with zero camera motion indicates no physical occupancy is driving the network load, strongly pointing to an IoT surge, guest network activation, or a rogue device. Steve should verify his router\u2019s connected device list to rule out unauthorized access or a misconfigured smart hub.",
         "acted_on_at": null
-      },
-      {
-        "id": 7779,
-        "timestamp": "2026-06-26T23:30:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 17\u201319 device count with zero camera motion over four hours strongly suggests a network misconfiguration or phantom device tracking rather than actual occupancy, as real human presence would typically trigger at least occasional camera activity or device movement. This matters because unreliable presence data can cause automations to malfunction and mask the true state of the home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3822,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-27T19:54:07.637525+00:00"
+      "last_updated": "2026-06-27T20:00:10.623628+00:00"
     }
   },
   "pge": {
