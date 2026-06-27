@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 22:40:45",
+  "generated_at": "2026-06-26 22:45:53",
   "as_of": "2026-06-26",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162673,
+        "timestamp": "2026-06-27T05:41:40+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 162672,
+        "timestamp": "2026-06-27T05:40:39+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162671,
         "timestamp": "2026-06-27T05:39:39+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162473,
-        "timestamp": "2026-06-26T08:06:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162472,
-        "timestamp": "2026-06-26T07:36:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7785,
+        "timestamp": "2026-06-27T05:40:13+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 12\u201313 device count with zero camera motion indicates the household is settled indoors with numerous persistently connected IoT devices, and the recent spike to 17\u201318 devices likely reflects normal evening device activation or a guest network connecting. This pattern is consistent with a typical Friday night at home and poses no security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 7784,
         "timestamp": "2026-06-27T04:38:47+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The sustained high device count (15-19) combined with zero camera motion on a Friday afternoon indicates the household is likely present but the camera system may be offline, in sleep mode, or experiencing a network reporting failure. Verifying camera status is recommended to ensure security and pet monitoring are functioning.",
         "acted_on_at": null
-      },
-      {
-        "id": 7775,
-        "timestamp": "2026-06-26T19:24:47+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "A sustained 14\u201317 device count combined with zero camera motion suggests either a camera system fault or stationary devices (e.g., left in vehicles or on a patio) rather than active household movement, warranting a quick system status check.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-27T05:40:06.952073+00:00"
+      "last_updated": "2026-06-27T05:43:08.741369+00:00"
     }
   },
   "pge": {
