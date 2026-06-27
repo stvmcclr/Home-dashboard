@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 21:39:16",
+  "generated_at": "2026-06-26 21:44:25",
   "as_of": "2026-06-26",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162663,
+        "timestamp": "2026-06-27T04:41:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162662,
         "timestamp": "2026-06-27T04:26:23+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162463,
-        "timestamp": "2026-06-26T06:07:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7784,
+        "timestamp": "2026-06-27T04:38:47+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 12\u201314 device count paired with zero camera motion for four hours strongly suggests either unexpected guests are occupying a camera-blind area or the presence system is miscounting IoT devices, warranting a quick verification to rule out unmonitored occupancy or a sensor calibration issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7783,
         "timestamp": "2026-06-27T03:37:38+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "A sustained 14\u201317 device count combined with zero camera motion suggests either a camera system fault or stationary devices (e.g., left in vehicles or on a patio) rather than active household movement, warranting a quick system status check.",
         "acted_on_at": null
-      },
-      {
-        "id": 7774,
-        "timestamp": "2026-06-26T17:18:22+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The combination of 14\u201318 connected mobile devices and zero camera activity on a Friday morning suggests a stationary gathering of guests or family members, explaining the lack of motion alerts and confirming the home is occupied but quiet.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-27T04:36:34.036268+00:00"
+      "last_updated": "2026-06-27T04:42:36.658276+00:00"
     }
   },
   "pge": {
