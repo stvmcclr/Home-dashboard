@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 20:37:47",
+  "generated_at": "2026-06-26 20:42:54",
   "as_of": "2026-06-26",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162659,
+        "timestamp": "2026-06-27T03:41:12+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162658,
         "timestamp": "2026-06-27T03:29:10+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162459,
-        "timestamp": "2026-06-26T05:34:00+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7783,
+        "timestamp": "2026-06-27T03:37:38+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 12\u201314 device count with zero camera motion over four hours indicates the presence system is likely tracking idle IoT gadgets or devices left charging rather than active occupants, which matters for accurate occupancy tracking and suggests the presence algorithm may need calibration.",
+        "acted_on_at": null
+      },
       {
         "id": 7782,
         "timestamp": "2026-06-27T02:36:31+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The combination of 14\u201318 connected mobile devices and zero camera activity on a Friday morning suggests a stationary gathering of guests or family members, explaining the lack of motion alerts and confirming the home is occupied but quiet.",
         "acted_on_at": null
-      },
-      {
-        "id": 7773,
-        "timestamp": "2026-06-26T16:16:43+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected devices from 19 to 15-16 between 08:16 and 09:13, combined with zero camera activity, confirms the household is departing for the day. The high baseline device count suggests a crowded home, likely with guests, making this a normal Friday morning departure pattern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-27T03:36:00.839581+00:00"
+      "last_updated": "2026-06-27T03:42:04.083206+00:00"
     }
   },
   "pge": {
