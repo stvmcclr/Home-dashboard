@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 18:34:42",
+  "generated_at": "2026-06-26 18:39:50",
   "as_of": "2026-06-26",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162646,
+        "timestamp": "2026-06-27T01:34:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162645,
         "timestamp": "2026-06-27T01:28:42+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162446,
-        "timestamp": "2026-06-26T04:35:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7781,
+        "timestamp": "2026-06-27T01:34:45+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 13\u201319 device count with zero camera motion over four hours definitively confirms a network presence detection anomaly (likely Wi-Fi scanning artifacts or IoT noise) rather than actual occupancy, indicating the presence system requires calibration to prevent false occupancy reports.",
+        "acted_on_at": null
+      },
       {
         "id": 7780,
         "timestamp": "2026-06-27T00:33:36+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The connected device count steadily declined from ~20 to 17-18 between 07:28 and 07:51, confirming the family is departing for the day. This gradual drop aligns with a typical Friday morning school/work routine, likely reflecting the children leaving first.",
         "acted_on_at": null
-      },
-      {
-        "id": 7771,
-        "timestamp": "2026-06-26T09:02:59+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent 17\u201319 device count alongside zero camera activity and the late hour confirms a normal overnight state; the high count is a known UniFi artifact counting IoT devices as mobile, indicating no unusual occupancy or security events.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-27T01:31:53.953086+00:00"
+      "last_updated": "2026-06-27T01:37:57.059845+00:00"
     }
   },
   "pge": {
