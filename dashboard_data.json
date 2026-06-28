@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27 23:16:09",
+  "generated_at": "2026-06-27 23:21:17",
   "as_of": "2026-06-27",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162862,
+        "timestamp": "2026-06-28T06:17:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162861,
         "timestamp": "2026-06-28T05:47:24+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162662,
-        "timestamp": "2026-06-27T04:26:23+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7797,
+        "timestamp": "2026-06-28T06:17:41+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 16-19 mobile devices combined with zero camera motion over four hours on a Saturday night strongly suggests a large group of guests is gathered in non-camera zones or low-light areas, which is atypical for a household with active children and dogs. This warrants a quick check to ensure cameras are functioning and guests are safely settled.",
+        "acted_on_at": null
+      },
       {
         "id": 7796,
         "timestamp": "2026-06-28T05:16:28+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained spike of 13-17 active mobile devices at Saturday noon, combined with zero camera motion events, strongly suggests an indoor social gathering (likely guests or the kids hosting friends) rather than a network anomaly. This explains the high device count without triggering motion alerts, but worth a quick verification to ensure it's expected.",
         "acted_on_at": null
-      },
-      {
-        "id": 7787,
-        "timestamp": "2026-06-27T17:56:56+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence count shows 14-19 active mobile devices, which is unusually high for just four household members and two dogs, and the steady decline from 19 to 14 over 25 minutes suggests a group may be leaving or devices are disconnecting. This warrants a quick check to confirm whether it reflects guests, a family outing, or an IoT tracking anomaly.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-28T06:14:55.155495+00:00"
+      "last_updated": "2026-06-28T06:20:59.252854+00:00"
     }
   },
   "pge": {
