@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 07:33:06",
+  "generated_at": "2026-06-28 07:38:12",
   "as_of": "2026-06-28",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 162910,
+        "timestamp": "2026-06-28T14:34:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 162909,
         "timestamp": "2026-06-28T14:19:26+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162710,
-        "timestamp": "2026-06-27T09:54:43+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7800,
+        "timestamp": "2026-06-28T14:32:53+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Network presence consistently shows 17-19 connected mobile devices from 05:40 to 07:19, which is notably higher than expected for your household. Combined with zero camera activity, this may indicate guests or a family gathering, though it could also reflect typical high device usage.",
+        "acted_on_at": null
+      },
       {
         "id": 7799,
         "timestamp": "2026-06-28T10:26:36+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "low",
         "summary": "The sustained presence of 12-16 connected devices alongside zero camera motion throughout a Saturday afternoon strongly suggests the household is gathered in a camera-blind zone (e.g., basement or garage) for a stationary activity, or reflects a surge of stationary IoT devices. This highlights a potential blind-spot coverage gap worth verifying.",
         "acted_on_at": null
-      },
-      {
-        "id": 7790,
-        "timestamp": "2026-06-27T21:02:27+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained presence of 12-17 devices combined with zero camera motion during a Saturday midday strongly indicates a planned guest gathering in a camera-blind zone rather than a transient event. This confirms a social state shift that explains the high device count and contextualizes the quiet environment.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-28T14:31:30.44455+00:00"
+      "last_updated": "2026-06-28T14:37:34.201092+00:00"
     }
   },
   "pge": {
