@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 20:47:46",
+  "generated_at": "2026-06-28 20:52:54",
   "as_of": "2026-06-28",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163003,
+        "timestamp": "2026-06-29T03:48:48+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163002,
         "timestamp": "2026-06-29T03:43:46+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162803,
-        "timestamp": "2026-06-27T20:15:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7804,
+        "timestamp": "2026-06-29T03:47:01+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained mobile device count of 18\u201322 over the past four hours confirms the earlier surge was a large group of guests who are still present for a Sunday evening gathering, rather than a temporary spike or network anomaly.",
+        "acted_on_at": null
+      },
       {
         "id": 7803,
         "timestamp": "2026-06-29T02:45:45+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained high device count (18-20) paired with zero camera activity strongly suggests guests or sleepovers are settled indoors, which explains the lack of motion triggers and aligns with a typical Saturday evening gathering rather than a system fault.",
         "acted_on_at": null
-      },
-      {
-        "id": 7794,
-        "timestamp": "2026-06-28T03:11:38+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Mobile device count surged from 13 to 19 over the last hour while cameras remain completely inactive, indicating guests have likely arrived and are settling in off-camera areas or bedrooms. This aligns with a typical Saturday evening gathering, but confirming camera functionality and guest status is recommended.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-29T03:45:06.850368+00:00"
+      "last_updated": "2026-06-29T03:51:13.919205+00:00"
     }
   },
   "pge": {
