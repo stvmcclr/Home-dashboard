@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 12:07:53",
+  "generated_at": "2026-06-29 12:13:02",
   "as_of": "2026-06-29",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163138,
+        "timestamp": "2026-06-29T19:07:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163137,
         "timestamp": "2026-06-29T19:04:24+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 162938,
-        "timestamp": "2026-06-28T18:20:25+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7809,
+        "timestamp": "2026-06-29T19:11:18+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Stable presence of 12-14 devices with zero camera activity on a Monday mid-morning confirms the household is home together today, likely due to a day off or remote schedule, so standard weekday absence automations should be suppressed.",
+        "acted_on_at": null
+      },
       {
         "id": 7808,
         "timestamp": "2026-06-29T16:06:59+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "low",
         "summary": "Network presence consistently shows 17-19 connected mobile devices from 05:40 to 07:19, which is notably higher than expected for your household. Combined with zero camera activity, this may indicate guests or a family gathering, though it could also reflect typical high device usage.",
         "acted_on_at": null
-      },
-      {
-        "id": 7799,
-        "timestamp": "2026-06-28T10:26:36+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Stable presence count (17-20 devices) combined with zero camera/audio activity confirms the entire household remains asleep and undisturbed, indicating Roxanne\u2019s short sleep hasn\u2019t triggered any nighttime movement or distress.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-29T19:06:13.920591+00:00"
+      "last_updated": "2026-06-29T19:12:16.710568+00:00"
     }
   },
   "pge": {
