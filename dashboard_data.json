@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 07:42:29",
+  "generated_at": "2026-06-30 07:47:38",
   "as_of": "2026-06-30",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163335,
+        "timestamp": "2026-06-30T14:45:07+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163334,
         "timestamp": "2026-06-30T14:33:04+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163135,
-        "timestamp": "2026-06-29T18:56:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7817,
+        "timestamp": "2026-06-30T14:42:23+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The rapid device count oscillation (10\u201313) with zero camera motion indicates Wi-Fi roaming or network handoffs rather than physical presence changes, which is normal for early morning device synchronization and aligns with a typical Tuesday wake-up routine.",
+        "acted_on_at": null
+      },
       {
         "id": 7816,
         "timestamp": "2026-06-30T13:40:21+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "The combination of consistently high device presence (17-20) and zero camera activity on a Monday morning strongly suggests the house is empty, with family devices still lingering on the Wi-Fi network. This is worth noting to confirm everyone is safely out or to check if any devices were left behind.",
         "acted_on_at": null
-      },
-      {
-        "id": 7807,
-        "timestamp": "2026-06-29T08:59:18+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 16\u201321 device count combined with zero camera motion at nearly 2 AM on a Monday strongly indicates an unreported sleepover or large group of guests, as the device count far exceeds the four-person household baseline.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-30T14:41:36.772026+00:00"
+      "last_updated": "2026-06-30T14:47:40.660744+00:00"
     }
   },
   "pge": {
