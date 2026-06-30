@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 13:52:26",
+  "generated_at": "2026-06-30 13:57:34",
   "as_of": "2026-06-30",
   "projects": [
     {
@@ -1412,6 +1412,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163368,
+        "timestamp": "2026-06-30T20:56:34+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 163367,
+        "timestamp": "2026-06-30T20:55:33+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "9 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 163366,
+        "timestamp": "2026-06-30T20:51:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163365,
         "timestamp": "2026-06-30T20:45:30+00:00",
@@ -3578,42 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163168,
-        "timestamp": "2026-06-29T22:48:19+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163167,
-        "timestamp": "2026-06-29T22:47:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163166,
-        "timestamp": "2026-06-29T22:46:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7820,
+        "timestamp": "2026-06-30T20:54:52+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady increase in connected devices (9 to 11) while cameras remain completely inactive suggests a quiet arrival or a new device connecting in a camera-blind area, likely indicating an unlogged guest or a family member returning home without triggering motion alerts.",
+        "acted_on_at": null
+      },
       {
         "id": 7819,
         "timestamp": "2026-06-30T19:50:33+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The sustained 12-13 device count paired with zero camera motion suggests most devices are stationary (chargers, tablets, wearables) rather than active people, while Roxanne\u2019s 13.5-hour sleep log at 7 PM likely indicates a tracking anomaly or an unusually long rest period worth verifying.",
         "acted_on_at": null
-      },
-      {
-        "id": 7810,
-        "timestamp": "2026-06-30T01:18:03+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 12-13 mobile devices (significantly above the household's expected ~4-6) during Monday evening suggests unexpected guests or a gathering, despite no camera activity being recorded. This warrants a quick verification to ensure it's a planned visit.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-30T20:51:11.819855+00:00"
+      "last_updated": "2026-06-30T20:57:18.505199+00:00"
     }
   },
   "pge": {
