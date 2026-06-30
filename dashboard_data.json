@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 21:27:13",
+  "generated_at": "2026-06-29 21:32:22",
   "as_of": "2026-06-29",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163221,
+        "timestamp": "2026-06-30T04:28:41+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163220,
         "timestamp": "2026-06-30T04:15:38+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163021,
-        "timestamp": "2026-06-29T04:46:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7813,
+        "timestamp": "2026-06-30T04:27:28+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained presence of 12-14 mobile devices combined with zero camera motion and Roxanne\u2019s extended sleep strongly suggests a kids\u2019 sleepover or guest gathering, confirming the device count anomaly is due to normal household activity rather than a system error or security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 7812,
         "timestamp": "2026-06-30T03:26:14+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained mobile device count of 18\u201322 over the past four hours confirms the earlier surge was a large group of guests who are still present for a Sunday evening gathering, rather than a temporary spike or network anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 7803,
-        "timestamp": "2026-06-29T02:45:45+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained mobile device count of 16\u201320 over the past four hours confirms the earlier surge was a prolonged guest gathering rather than a transient spike, indicating approximately 10\u201314 extra visitors are still present in the home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-06-30T04:26:43.589887+00:00"
+      "last_updated": "2026-06-30T04:29:45.347911+00:00"
     }
   },
   "pge": {
