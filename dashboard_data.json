@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01 18:36:56",
+  "generated_at": "2026-07-01 18:42:04",
   "as_of": "2026-07-01",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163525,
+        "timestamp": "2026-07-02T01:39:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163524,
         "timestamp": "2026-07-02T01:09:15+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163325,
-        "timestamp": "2026-06-30T14:00:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7830,
+        "timestamp": "2026-07-02T01:39:16+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Mobile device count increased from 8 to 10 at 17:39, aligning with typical after-school arrival times and indicating a normal late afternoon household transition. Roxanne\u2019s sleep tracker also logged a 9.12-hour session at 16:08, which may be a tracking sync artifact or an unusually long rest worth monitoring if fatigue is observed.",
+        "acted_on_at": null
+      },
       {
         "id": 7829,
         "timestamp": "2026-07-02T00:37:16+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained 8-10 device count paired with zero camera motion over 90+ minutes indicates the household is occupied but engaged in a prolonged, low-movement activity (e.g., movie marathon or gaming), suggesting a likely camera blind spot in the main gathering area rather than a security concern.",
         "acted_on_at": null
-      },
-      {
-        "id": 7820,
-        "timestamp": "2026-06-30T20:54:52+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The steady increase in connected devices (9 to 11) while cameras remain completely inactive suggests a quiet arrival or a new device connecting in a camera-blind area, likely indicating an unlogged guest or a family member returning home without triggering motion alerts.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-02T01:35:14.920399+00:00"
+      "last_updated": "2026-07-02T01:41:18.824022+00:00"
     }
   },
   "pge": {
