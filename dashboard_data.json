@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 11:32:08",
+  "generated_at": "2026-07-03 11:37:15",
   "as_of": "2026-07-03",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163732,
+        "timestamp": "2026-07-03T18:32:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163731,
         "timestamp": "2026-07-03T18:26:50+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163532,
-        "timestamp": "2026-07-02T02:39:35+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7838,
+        "timestamp": "2026-07-03T18:34:02+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 7\u201310 device count paired with zero camera motion over four hours indicates the extra connections are stationary smart home gadgets and personal electronics rather than additional guests, confirming the low-severity network correlation and reflecting normal weekend device usage.",
+        "acted_on_at": null
+      },
       {
         "id": 7837,
         "timestamp": "2026-07-03T17:32:33+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The device count dropping to 7 around 15:26 and rising back to 8-9 by 16:00 aligns with the children returning from school; the complete lack of camera activity during this window suggests they are likely in bedrooms or study areas outside camera coverage, which is typical for this age group after school.",
         "acted_on_at": null
-      },
-      {
-        "id": 7828,
-        "timestamp": "2026-07-01T23:34:52+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Mobile device presence consistently shows 7-9 devices home on a Wednesday afternoon, exceeding the expected count for a typical school day. Combined with Roxanne\u2019s extended sleep report at 16:08, this suggests unexpected household occupancy (e.g., kids home early or guests), warranting a quick status check.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-03T18:32:08.292721+00:00"
+      "last_updated": "2026-07-03T18:35:09.930387+00:00"
     }
   },
   "pge": {
