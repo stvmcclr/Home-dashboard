@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04 14:09:50",
+  "generated_at": "2026-07-04 14:14:57",
   "as_of": "2026-07-04",
   "projects": [
     {
@@ -3783,6 +3783,14 @@
     ],
     "insights": [
       {
+        "id": 7849,
+        "timestamp": "2026-07-04T21:13:31+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent 7\u201311 device count paired with zero camera motion over four hours strongly indicates the network is tracking stationary IoT devices (laptops, consoles, smart displays) rather than active human presence, suggesting the household is in a prolonged sedentary state or has unregistered devices connected. This matters because it can mask real occupancy changes or trigger false automation, so verifying camera functionality and network device classification is recommended.",
+        "acted_on_at": null
+      },
+      {
         "id": 7848,
         "timestamp": "2026-07-04T20:12:00+00:00",
         "insight_type": "correlation",
@@ -3853,14 +3861,6 @@
         "severity": "low",
         "summary": "The sustained 7\u20139 device count with zero camera motion over four hours indicates devices are likely stationary (charging or left unattended) rather than actively in use, suggesting a presence sensor glitch or a minor security/privacy concern worth verifying.",
         "acted_on_at": null
-      },
-      {
-        "id": 7839,
-        "timestamp": "2026-07-03T19:35:06+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent 7\u20139 device count paired with zero camera motion over four hours on a Friday afternoon strongly indicates Wi-Fi presence detection is being skewed by background IoT device scanning rather than actual human activity, which may cause unnecessary automation triggers for an unoccupied or still home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3878,7 +3878,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-04T21:08:18.09115+00:00"
+      "last_updated": "2026-07-04T21:14:21.451857+00:00"
     }
   },
   "pge": {
