@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 20:45:17",
+  "generated_at": "2026-07-03 20:50:24",
   "as_of": "2026-07-03",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163770,
+        "timestamp": "2026-07-04T03:43:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163769,
         "timestamp": "2026-07-04T03:38:58+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163570,
-        "timestamp": "2026-07-02T08:18:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7845,
+        "timestamp": "2026-07-04T03:46:39+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 8-9 device presence combined with zero camera motion over four hours confirms the family is gathered in a single common area for a prolonged sedentary activity, explaining the lack of cross-room movement. This is a normal Friday evening pattern.",
+        "acted_on_at": null
+      },
       {
         "id": 7844,
         "timestamp": "2026-07-04T02:44:14+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained high presence count (8\u201311 devices) combined with zero camera activity on a Thursday afternoon strongly suggests the household is home all day with minimal movement, likely indicating a day off, remote work schedule, or family gathering rather than a typical weekday routine.",
         "acted_on_at": null
-      },
-      {
-        "id": 7835,
-        "timestamp": "2026-07-02T21:07:19+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence count jumping to 10 devices at 1:02 PM on a Thursday strongly correlates with typical school dismissal times, indicating Miller and Penelope have likely returned home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-04T03:43:26.88716+00:00"
+      "last_updated": "2026-07-04T03:49:35.63396+00:00"
     }
   },
   "pge": {
