@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 17:40:54",
+  "generated_at": "2026-07-03 17:46:03",
   "as_of": "2026-07-03",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163755,
+        "timestamp": "2026-07-04T00:44:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163754,
         "timestamp": "2026-07-04T00:20:11+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163555,
-        "timestamp": "2026-07-02T06:32:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7842,
+        "timestamp": "2026-07-04T00:41:14+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable 8-device presence combined with zero camera motion over the past four hours suggests the cameras may be misconfigured or pointed away from active zones, as a Friday afternoon with two kids and two energetic dogs typically generates movement that should trigger alerts.",
+        "acted_on_at": null
+      },
       {
         "id": 7841,
         "timestamp": "2026-07-03T21:37:59+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "low",
         "summary": "The presence count stabilized at 8 devices home by 10:07 AM, which is unusually high for a Thursday mid-morning with two school-age children. Combined with zero camera activity, this suggests the family is likely still home rather than having departed, indicating routine automations may need adjustment.",
         "acted_on_at": null
-      },
-      {
-        "id": 7832,
-        "timestamp": "2026-07-02T15:57:39+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected mobile devices (11 to 7) aligns with a typical Thursday morning departure, but the complete absence of camera activity during this window is unusual. This gap makes it impossible to confirm physical departure versus a camera outage or devices going offline, warranting a quick system check.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-04T00:38:35.331178+00:00"
+      "last_updated": "2026-07-04T00:44:38.802486+00:00"
     }
   },
   "pge": {
