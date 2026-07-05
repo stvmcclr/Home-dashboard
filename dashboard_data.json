@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04 20:28:53",
+  "generated_at": "2026-07-04 20:34:00",
   "as_of": "2026-07-04",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163877,
+        "timestamp": "2026-07-05T03:31:42+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163876,
         "timestamp": "2026-07-05T03:26:39+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163677,
-        "timestamp": "2026-07-03T04:38:42+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7852,
+        "timestamp": "2026-07-05T03:28:25+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Roxanne\u2019s sleep tracker logged two consecutive 12+ hour sessions less than three hours apart, which is physiologically impossible; combined with 8-10 devices consistently present, this confirms the tracker was misplaced or accidentally activated by someone else, invalidating her sleep data and suggesting the device be secured.",
+        "acted_on_at": null
+      },
       {
         "id": 7851,
         "timestamp": "2026-07-05T01:19:48+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The consistent 8-device presence paired with zero camera motion over four hours suggests the household is either engaged in a prolonged sedentary activity or the cameras may be offline/obstructed; a quick system check is recommended to rule out a hardware issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 7842,
-        "timestamp": "2026-07-04T00:41:14+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The stable 8-device presence combined with zero camera motion over the past four hours suggests the cameras may be misconfigured or pointed away from active zones, as a Friday afternoon with two kids and two energetic dogs typically generates movement that should trigger alerts.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3544,7 +3544,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-05T03:26:51.793292+00:00"
+      "last_updated": "2026-07-05T03:32:57.203029+00:00"
     }
   },
   "pge": {
