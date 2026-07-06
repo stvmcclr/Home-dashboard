@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 13:27:52",
+  "generated_at": "2026-07-06 13:32:59",
   "as_of": "2026-07-06",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164069,
+        "timestamp": "2026-07-06T20:28:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "8 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164068,
         "timestamp": "2026-07-06T20:06:16+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163869,
-        "timestamp": "2026-07-05T01:05:05+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7867,
+        "timestamp": "2026-07-06T20:31:56+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady decline in active mobile devices (10 down to 7) alongside zero camera motion for four hours indicates a worsening network or router issue causing devices to drop offline, rather than normal household movement, which is highly unusual for a Monday afternoon with the family expected home.",
+        "acted_on_at": null
+      },
       {
         "id": 7866,
         "timestamp": "2026-07-06T19:29:12+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The stable presence count (8-9 devices) paired with zero camera activity over a 4-hour Sunday morning window indicates the household is likely indoors and stationary, possibly resting or gathered in a camera-blind zone. This establishes a useful baseline for a relaxed day but warrants monitoring if activity suddenly resumes or drops.",
         "acted_on_at": null
-      },
-      {
-        "id": 7857,
-        "timestamp": "2026-07-05T16:48:09+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected devices (11 to 7) paired with zero camera motion confirms a gradual, quiet departure or indoor preparation for a Sunday outing. This aligns with typical weekend routines, but the lack of motion triggers suggests they are either moving slowly indoors or have already left without triggering exterior sensors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-06T20:26:23.314076+00:00"
+      "last_updated": "2026-07-06T20:32:27.199357+00:00"
     }
   },
   "pge": {
