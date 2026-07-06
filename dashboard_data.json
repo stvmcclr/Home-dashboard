@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 11:24:41",
+  "generated_at": "2026-07-06 11:29:48",
   "as_of": "2026-07-06",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 2529,
-        "timestamp": "2026-07-06T16:35:20+00:00",
-        "location": "Downstairs",
-        "temp_f": 71.7,
-        "humidity_pct": 53,
-        "mode": "COOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 56.3,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 2530,
-        "timestamp": "2026-07-06T16:35:20+00:00",
+        "id": 2532,
+        "timestamp": "2026-07-06T18:29:36+00:00",
         "location": "Upstairs",
-        "temp_f": 69.5,
+        "temp_f": 71.4,
         "humidity_pct": 54,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
         "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2531,
+        "timestamp": "2026-07-06T18:29:36+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 53,
+        "mode": "COOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 56.3,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1182,6 +1182,34 @@
         "timestamp": "2026-07-06T16:35:20+00:00",
         "location": "Upstairs",
         "temp_f": 69.5,
+        "humidity_pct": 54,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2531,
+        "timestamp": "2026-07-06T18:29:36+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 53,
+        "mode": "COOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 56.3,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 2532,
+        "timestamp": "2026-07-06T18:29:36+00:00",
+        "location": "Upstairs",
+        "temp_f": 71.4,
         "humidity_pct": 54,
         "mode": "COOL",
         "hvac_status": "OFF",
@@ -3559,6 +3587,14 @@
     ],
     "insights": [
       {
+        "id": 7865,
+        "timestamp": "2026-07-06T18:27:47+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 9-10 device count combined with zero camera motion for four hours on a Monday morning confirms the home is unoccupied, indicating the presence signal is a false positive from devices left behind or network caching. This matters because it validates the family is at work or school, allowing the system to suppress false occupancy alerts and adjust automations accordingly.",
+        "acted_on_at": null
+      },
+      {
         "id": 7864,
         "timestamp": "2026-07-06T17:26:06+00:00",
         "insight_type": "correlation",
@@ -3629,14 +3665,6 @@
         "severity": "low",
         "summary": "The gradual drop in connected devices (11 to 7) alongside zero camera activity indicates the family is in a typical Sunday morning wake-up phase, with devices moving into camera-blind areas or entering sleep mode rather than leaving the house. This confirms normal routine behavior and prevents false alarms about an early departure or network outage.",
         "acted_on_at": null
-      },
-      {
-        "id": 7855,
-        "timestamp": "2026-07-05T12:43:06+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The presence count spiking to 11 devices at 05:12 AM, combined with Roxanne\u2019s severely fragmented sleep and zero camera activity, indicates a quiet wake-up event confined to private areas that triggered device reconnections without motion detection. This cross-signal pattern suggests Roxanne is likely fatigued or managing an early household need, warranting proactive fatigue monitoring today.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-06T18:22:09.941886+00:00"
+      "last_updated": "2026-07-06T18:28:14.605489+00:00"
     }
   },
   "pge": {
