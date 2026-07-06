@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 16:33:37",
+  "generated_at": "2026-07-06 16:38:45",
   "as_of": "2026-07-06",
   "projects": [
     {
@@ -1468,6 +1468,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164078,
+        "timestamp": "2026-07-06T23:37:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "9 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164077,
         "timestamp": "2026-07-06T23:06:58+00:00",
@@ -3656,20 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163878,
-        "timestamp": "2026-07-05T03:42:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7869,
+        "timestamp": "2026-07-06T23:36:19+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady presence of 7-9 devices alongside zero camera motion for four hours on a Monday afternoon strongly indicates the house is unoccupied, as the family and active dogs are likely away despite their devices remaining connected.",
+        "acted_on_at": null
+      },
       {
         "id": 7868,
         "timestamp": "2026-07-06T22:34:33+00:00",
@@ -3741,14 +3749,6 @@
         "severity": "low",
         "summary": "The sustained 8-10 device count paired with zero camera motion over four hours strongly suggests the household is gathered in a single enclosed space or camera blind spot, likely for a prolonged stationary activity. The recent jump to 10 devices at 13:08 indicates a new device just connected, possibly a guest or a child's tablet.",
         "acted_on_at": null
-      },
-      {
-        "id": 7859,
-        "timestamp": "2026-07-05T19:56:53+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent 8-9 device count with zero camera motion over four hours indicates the presence sensor is likely counting stationary IoT devices or background connectivity rather than human movement, suggesting the household is at home but inactive; this may cause false automation triggers if presence thresholds aren't filtered for non-human devices.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-06T23:31:13.620696+00:00"
+      "last_updated": "2026-07-06T23:37:16.636888+00:00"
     }
   },
   "pge": {
