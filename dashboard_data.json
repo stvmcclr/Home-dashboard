@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05 19:07:39",
+  "generated_at": "2026-07-05 19:12:48",
   "as_of": "2026-07-05",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 163992,
+        "timestamp": "2026-07-06T02:11:04+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "7 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
+      },
       {
         "id": 163991,
         "timestamp": "2026-07-06T02:02:02+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163792,
-        "timestamp": "2026-07-04T08:52:13+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7861,
+        "timestamp": "2026-07-06T02:06:39+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "WiFi presence consistently reports 7\u20139 connected devices, significantly exceeding the 4 known household members, and oscillates frequently without stabilizing. Paired with zero camera activity, this pattern strongly suggests unregistered IoT devices, wearables, or transient guest connections rather than a security event, but may indicate a need to review your network's client list.",
+        "acted_on_at": null
+      },
       {
         "id": 7860,
         "timestamp": "2026-07-05T20:58:34+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "Roxanne\u2019s sleep tracker logged two consecutive 12+ hour sessions less than three hours apart, which is physiologically impossible; combined with 8-10 devices consistently present, this confirms the tracker was misplaced or accidentally activated by someone else, invalidating her sleep data and suggesting the device be secured.",
         "acted_on_at": null
-      },
-      {
-        "id": 7851,
-        "timestamp": "2026-07-05T01:19:48+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Roxanne\u2019s sleep tracker logged an unusually long 12.72-hour session at 17:12 while the household maintained a consistently high device count (9-10), indicating she likely slept through much of the day while the rest of the family remained active; a casual wellness check is recommended.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-06T02:06:19.116586+00:00"
+      "last_updated": "2026-07-06T02:12:22.881317+00:00"
     }
   },
   "pge": {
