@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 18:36:40",
+  "generated_at": "2026-07-06 18:41:48",
   "as_of": "2026-07-06",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164091,
+        "timestamp": "2026-07-07T01:37:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "9 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164090,
         "timestamp": "2026-07-07T01:31:30+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163891,
-        "timestamp": "2026-07-05T04:57:01+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7871,
+        "timestamp": "2026-07-07T01:39:07+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The consistent 8-9 device presence alongside zero camera motion for four hours strongly suggests the household is congregating in a single camera-blind zone or the presence sensors are reporting stale/cached data rather than active movement. A quick verification of camera coverage or sensor health is recommended.",
+        "acted_on_at": null
+      },
       {
         "id": 7870,
         "timestamp": "2026-07-07T00:38:03+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "Presence data shows ~9 devices still at home through 08:05, combined with zero camera motion events on a Monday morning, indicating the household is still at home and likely in the early stages of their routine. This is normal, but worth noting if anyone has early commitments.",
         "acted_on_at": null
-      },
-      {
-        "id": 7861,
-        "timestamp": "2026-07-06T02:06:39+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "WiFi presence consistently reports 7\u20139 connected devices, significantly exceeding the 4 known household members, and oscillates frequently without stabilizing. Paired with zero camera activity, this pattern strongly suggests unregistered IoT devices, wearables, or transient guest connections rather than a security event, but may indicate a need to review your network's client list.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-07T01:35:17.36826+00:00"
+      "last_updated": "2026-07-07T01:41:20.172614+00:00"
     }
   },
   "pge": {
