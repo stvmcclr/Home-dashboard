@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 19:38:14",
+  "generated_at": "2026-07-06 19:43:22",
   "as_of": "2026-07-06",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164094,
+        "timestamp": "2026-07-07T02:37:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164093,
         "timestamp": "2026-07-07T02:11:41+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 163894,
-        "timestamp": "2026-07-05T05:38:11+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7872,
+        "timestamp": "2026-07-07T02:40:29+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 8-10 device count alongside zero camera motion for four hours strongly suggests either phones are stationary (e.g., charging) or the family is gathered in a camera blind spot; a quick verification of camera status and a check-in is recommended to rule out a system issue.",
+        "acted_on_at": null
+      },
       {
         "id": 7871,
         "timestamp": "2026-07-07T01:39:07+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The combination of 9 devices consistently reported as home with zero camera motion on a Monday morning strongly indicates a sensor malfunction or stale data rather than the family remaining perfectly still, as this contradicts typical weekday routines.",
         "acted_on_at": null
-      },
-      {
-        "id": 7862,
-        "timestamp": "2026-07-06T15:19:27+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Presence data shows ~9 devices still at home through 08:05, combined with zero camera motion events on a Monday morning, indicating the household is still at home and likely in the early stages of their routine. This is normal, but worth noting if anyone has early commitments.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-07T02:35:50.637876+00:00"
+      "last_updated": "2026-07-07T02:41:53.509253+00:00"
     }
   },
   "pge": {
