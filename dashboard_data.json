@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 12:03:01",
+  "generated_at": "2026-07-07 12:08:10",
   "as_of": "2026-07-07",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164202,
+        "timestamp": "2026-07-07T19:00:35+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164201,
         "timestamp": "2026-07-07T18:55:34+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"7\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164002,
-        "timestamp": "2026-07-06T04:32:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7877,
+        "timestamp": "2026-07-07T19:03:16+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The Wi-Fi device count steadily climbed to 21 connected devices by noon with zero camera activity, strongly suggesting multiple people or IoT gadgets are in the home but out of camera view. This warrants a quick verification to confirm expected guests or rule out unauthorized presence.",
+        "acted_on_at": null
+      },
       {
         "id": 7876,
         "timestamp": "2026-07-07T18:00:41+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "medium",
         "summary": "The combination of 7-10 active devices at home on a Monday afternoon with zero camera motion for four hours strongly suggests the household is gathered in a non-camera zone or the cameras are blind; given two active dogs and two kids are home, this warrants a quick verification that the cameras are functioning and everyone is safe.",
         "acted_on_at": null
-      },
-      {
-        "id": 7867,
-        "timestamp": "2026-07-06T20:31:56+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The steady decline in active mobile devices (10 down to 7) alongside zero camera motion for four hours indicates a worsening network or router issue causing devices to drop offline, rather than normal household movement, which is highly unusual for a Monday afternoon with the family expected home.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-07T19:00:35.660584+00:00"
+      "last_updated": "2026-07-07T19:06:39.9806+00:00"
     }
   },
   "pge": {
