@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 13:04:34",
+  "generated_at": "2026-07-07 13:09:42",
   "as_of": "2026-07-07",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164223,
+        "timestamp": "2026-07-07T20:05:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164222,
         "timestamp": "2026-07-07T20:02:52+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164023,
-        "timestamp": "2026-07-06T08:08:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7878,
+        "timestamp": "2026-07-07T20:04:52+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady decline in connected Wi-Fi devices from 20 to 13 over 45 minutes, paired with zero camera motion, suggests a coordinated departure that likely bypassed camera zones or indicates a network connectivity issue rather than physical movement. Verifying camera functionality or cross-referencing with garage/side door sensors is recommended.",
+        "acted_on_at": null
+      },
       {
         "id": 7877,
         "timestamp": "2026-07-07T19:03:16+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "medium",
         "summary": "The steady presence of 7-9 devices alongside zero camera motion for four hours on a Monday afternoon strongly indicates the house is unoccupied, as the family and active dogs are likely away despite their devices remaining connected.",
         "acted_on_at": null
-      },
-      {
-        "id": 7868,
-        "timestamp": "2026-07-06T22:34:33+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of 7-10 active devices at home on a Monday afternoon with zero camera motion for four hours strongly suggests the household is gathered in a non-camera zone or the cameras are blind; given two active dogs and two kids are home, this warrants a quick verification that the cameras are functioning and everyone is safe.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3740,7 +3740,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-07T20:04:11.928959+00:00"
+      "last_updated": "2026-07-07T20:07:13.952394+00:00"
     }
   },
   "pge": {
