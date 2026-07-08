@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 13:40:37",
+  "generated_at": "2026-07-08 13:46:59",
   "as_of": "2026-07-08",
   "projects": [
     {
@@ -1496,6 +1496,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164410,
+        "timestamp": "2026-07-08T20:28:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164409,
+        "timestamp": "2026-07-08T20:25:49+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164408,
         "timestamp": "2026-07-08T20:01:10+00:00",
@@ -3673,31 +3695,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164210,
-        "timestamp": "2026-07-07T19:17:41+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164209,
-        "timestamp": "2026-07-07T19:16:41+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7887,
+        "timestamp": "2026-07-08T20:18:52+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The gradual decline in connected devices (19\u219213) alongside zero camera motion on a Wednesday afternoon strongly indicates the house is unoccupied, with the elevated count likely stemming from smart home hubs or background network artifacts rather than occupants. Steve should verify network status to rule out phantom connections.",
+        "acted_on_at": null
+      },
       {
         "id": 7886,
         "timestamp": "2026-07-08T19:02:49+00:00",
@@ -3769,14 +3777,6 @@
         "severity": "medium",
         "summary": "The steady decline in connected Wi-Fi devices from 20 to 13 over 45 minutes, paired with zero camera motion, suggests a coordinated departure that likely bypassed camera zones or indicates a network connectivity issue rather than physical movement. Verifying camera functionality or cross-referencing with garage/side door sensors is recommended.",
         "acted_on_at": null
-      },
-      {
-        "id": 7877,
-        "timestamp": "2026-07-07T19:03:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The Wi-Fi device count steadily climbed to 21 connected devices by noon with zero camera activity, strongly suggesting multiple people or IoT gadgets are in the home but out of camera view. This warrants a quick verification to confirm expected guests or rule out unauthorized presence.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3794,7 +3794,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-08T20:27:07.348251+00:00"
+      "last_updated": "2026-07-08T20:43:14.520858+00:00"
     }
   },
   "pge": {
