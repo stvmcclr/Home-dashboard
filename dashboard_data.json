@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 18:19:29",
+  "generated_at": "2026-07-07 18:25:13",
   "as_of": "2026-07-07",
   "projects": [
     {
@@ -1244,6 +1244,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164276,
+        "timestamp": "2026-07-08T01:17:40+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164275,
+        "timestamp": "2026-07-08T01:11:35+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164274,
+        "timestamp": "2026-07-08T01:07:22+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164273,
+        "timestamp": "2026-07-08T00:59:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164272,
+        "timestamp": "2026-07-08T00:58:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164271,
         "timestamp": "2026-07-08T00:45:01+00:00",
@@ -3388,64 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164076,
-        "timestamp": "2026-07-06T22:36:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164075,
-        "timestamp": "2026-07-06T22:06:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164074,
-        "timestamp": "2026-07-06T21:36:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164073,
-        "timestamp": "2026-07-06T21:34:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "8 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"8\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164072,
-        "timestamp": "2026-07-06T21:23:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "9 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"9\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7880,
+        "timestamp": "2026-07-08T01:21:37+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 11\u201315 device count combined with zero camera motion for four hours strongly indicates either a camera system outage, a presence-tracking anomaly, or that the home is actually empty, leaving it unmonitored during a typical weekday afternoon.",
+        "acted_on_at": null
+      },
       {
         "id": 7879,
         "timestamp": "2026-07-07T23:10:16+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The consistent 8-9 device presence alongside zero camera motion for four hours strongly suggests the household is congregating in a single camera-blind zone or the presence sensors are reporting stale/cached data rather than active movement. A quick verification of camera coverage or sensor health is recommended.",
         "acted_on_at": null
-      },
-      {
-        "id": 7870,
-        "timestamp": "2026-07-07T00:38:03+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The consistent presence of 8-9 devices combined with zero camera motion for four hours on a Monday afternoon strongly suggests the household is home but stationary, likely due to remote work, school, or a quiet day; the complete lack of movement from active dogs warrants a quick check to rule out camera obstruction or malfunction.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-08T00:59:03.360615+00:00"
+      "last_updated": "2026-07-08T01:23:12.446144+00:00"
     }
   },
   "pge": {
