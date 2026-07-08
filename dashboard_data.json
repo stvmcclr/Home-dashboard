@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 08:52:42",
+  "generated_at": "2026-07-08 08:57:50",
   "as_of": "2026-07-08",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164373,
+        "timestamp": "2026-07-08T15:54:04+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164372,
         "timestamp": "2026-07-08T15:44:02+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164173,
-        "timestamp": "2026-07-07T17:11:10+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7884,
+        "timestamp": "2026-07-08T15:54:37+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady increase in connected mobile devices from 16 to 20 between 08:25 and 08:44 suggests multiple new devices are joining the network, which is unusually high for the household and likely indicates unexpected guests. This warrants a quick check to confirm if visitors are expected or if there\u2019s a connectivity anomaly.",
+        "acted_on_at": null
+      },
       {
         "id": 7883,
         "timestamp": "2026-07-08T04:29:46+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The Wi-Fi presence count unexpectedly jumped from 9 to 10 devices at 09:08 AM on a Tuesday, a time when the children are typically at school. With zero camera activity to explain the extra connection, this likely indicates an unlogged visitor, delivery, or a device returning to the network that Steve should verify.",
         "acted_on_at": null
-      },
-      {
-        "id": 7874,
-        "timestamp": "2026-07-07T04:44:29+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent 8-10 device count alongside zero camera motion at 9:42 PM on a school night strongly indicates the household is settled for the evening, likely with everyone in bedrooms or a dimly lit common area, confirming the flagged pattern is benign network behavior rather than an anomaly.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-08T15:50:31.308173+00:00"
+      "last_updated": "2026-07-08T15:56:36.850362+00:00"
     }
   },
   "pge": {
