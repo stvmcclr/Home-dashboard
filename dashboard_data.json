@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09 11:52:48",
+  "generated_at": "2026-07-09 11:57:56",
   "as_of": "2026-07-09",
   "projects": [
     {
@@ -3615,6 +3615,14 @@
     ],
     "insights": [
       {
+        "id": 7897,
+        "timestamp": "2026-07-09T18:52:27+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained high device count (14-18) with zero camera motion indicates a large group of stationary guests or IoT devices clustered in a camera-blind area, and the sharp drop to 14 devices at 11:32 signals they are now departing. This clarifies the earlier 'ghost presence' alerts as a single gathering event rather than a system anomaly.",
+        "acted_on_at": null
+      },
+      {
         "id": 7896,
         "timestamp": "2026-07-09T17:50:44+00:00",
         "insight_type": "correlation",
@@ -3685,14 +3693,6 @@
         "severity": "medium",
         "summary": "The consistent presence of 13\u201316 mobile devices alongside zero camera motion on a weekday afternoon suggests unaccounted activity in non-camera zones or unexpected guests, as this significantly exceeds the household baseline and contradicts typical Wednesday school/work routines.",
         "acted_on_at": null
-      },
-      {
-        "id": 7887,
-        "timestamp": "2026-07-08T20:18:52+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The gradual decline in connected devices (19\u219213) alongside zero camera motion on a Wednesday afternoon strongly indicates the house is unoccupied, with the elevated count likely stemming from smart home hubs or background network artifacts rather than occupants. Steve should verify network status to rule out phantom connections.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-09T18:52:14.186569+00:00"
+      "last_updated": "2026-07-09T18:55:16.274551+00:00"
     }
   },
   "pge": {
