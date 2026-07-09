@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 18:26:40",
+  "generated_at": "2026-07-08 18:31:47",
   "as_of": "2026-07-08",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164462,
+        "timestamp": "2026-07-09T01:30:04+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164461,
         "timestamp": "2026-07-09T01:11:56+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164262,
-        "timestamp": "2026-07-08T00:04:44+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7890,
+        "timestamp": "2026-07-09T01:24:54+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady increase in connected mobile devices from 13 to 20 between 5:32 PM and 6:11 PM far exceeds the household's typical occupancy, strongly indicating a gradual arrival of guests or visitors. With zero camera motion, they are likely gathered in areas outside current camera coverage, suggesting a planned social gathering or playdate.",
+        "acted_on_at": null
+      },
       {
         "id": 7889,
         "timestamp": "2026-07-09T00:23:50+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "Roxanne slept only 2.33h last night. May be a rough morning \u2014 heads up.",
         "acted_on_at": null
-      },
-      {
-        "id": 7880,
-        "timestamp": "2026-07-08T01:21:37+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent 11\u201315 device count combined with zero camera motion for four hours strongly indicates either a camera system outage, a presence-tracking anomaly, or that the home is actually empty, leaving it unmonitored during a typical weekday afternoon.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-09T01:24:06.239836+00:00"
+      "last_updated": "2026-07-09T01:30:11.380009+00:00"
     }
   },
   "pge": {
