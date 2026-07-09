@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09 14:57:40",
+  "generated_at": "2026-07-09 15:02:48",
   "as_of": "2026-07-09",
   "projects": [
     {
@@ -1468,6 +1468,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164593,
+        "timestamp": "2026-07-09T21:57:10+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164592,
         "timestamp": "2026-07-09T21:48:08+00:00",
@@ -3656,20 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164393,
-        "timestamp": "2026-07-08T17:57:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7900,
+        "timestamp": "2026-07-09T21:57:18+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 14-17 device count combined with zero camera motion or environmental activity for four hours on a weekday afternoon strongly suggests a sensor or camera malfunction rather than normal household inactivity. A quick system diagnostic is recommended to verify sensor integrity.",
+        "acted_on_at": null
+      },
       {
         "id": 7899,
         "timestamp": "2026-07-09T20:56:05+00:00",
@@ -3741,14 +3749,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 15\u201320 mobile devices on a weekday evening, paired with zero camera activity, strongly indicates an unexpected gathering or guests are present, as this far exceeds the household\u2019s typical device count. This warrants a quick verification to confirm the event is expected and that all entry points remain secure.",
         "acted_on_at": null
-      },
-      {
-        "id": 7890,
-        "timestamp": "2026-07-09T01:24:54+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The steady increase in connected mobile devices from 13 to 20 between 5:32 PM and 6:11 PM far exceeds the household's typical occupancy, strongly indicating a gradual arrival of guests or visitors. With zero camera motion, they are likely gathered in areas outside current camera coverage, suggesting a planned social gathering or playdate.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-09T21:57:04.267613+00:00"
+      "last_updated": "2026-07-09T22:00:07.850962+00:00"
     }
   },
   "pge": {
