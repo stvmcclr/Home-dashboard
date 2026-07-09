@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 19:23:01",
+  "generated_at": "2026-07-08 19:28:07",
   "as_of": "2026-07-08",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164476,
+        "timestamp": "2026-07-09T02:23:17+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164475,
         "timestamp": "2026-07-09T02:20:16+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164276,
-        "timestamp": "2026-07-08T01:17:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7891,
+        "timestamp": "2026-07-09T02:26:03+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 15\u201320 mobile devices on a weekday evening, paired with zero camera activity, strongly indicates an unexpected gathering or guests are present, as this far exceeds the household\u2019s typical device count. This warrants a quick verification to confirm the event is expected and that all entry points remain secure.",
+        "acted_on_at": null
+      },
       {
         "id": 7890,
         "timestamp": "2026-07-09T01:24:54+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The stable 12\u201316 device count paired with zero camera motion over four hours, alongside Roxanne\u2019s sleep tracking, confirms a quiet, settled household evening with everyone distributed across rooms outside camera coverage. This is a normal post-dinner downtime pattern and requires no action.",
         "acted_on_at": null
-      },
-      {
-        "id": 7881,
-        "timestamp": "2026-07-08T02:21:27+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Roxanne slept only 2.33h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-09T02:21:36.79734+00:00"
+      "last_updated": "2026-07-09T02:27:39.564969+00:00"
     }
   },
   "pge": {
