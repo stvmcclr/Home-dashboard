@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09 17:05:59",
+  "generated_at": "2026-07-09 17:11:06",
   "as_of": "2026-07-09",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164606,
+        "timestamp": "2026-07-10T00:05:41+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164605,
         "timestamp": "2026-07-09T23:40:34+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164406,
-        "timestamp": "2026-07-08T19:58:10+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7902,
+        "timestamp": "2026-07-10T00:08:29+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 13-16 device count with zero camera motion indicates the household is likely congregated in a camera-blind zone or has motion sensitivity set too low, which masks routine activity and suggests a shift to a stationary gathering or a system configuration gap.",
+        "acted_on_at": null
+      },
       {
         "id": 7901,
         "timestamp": "2026-07-09T22:59:10+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "medium",
         "summary": "Roxanne slept only 4.24h last night. May be a rough morning \u2014 heads up.",
         "acted_on_at": null
-      },
-      {
-        "id": 7892,
-        "timestamp": "2026-07-09T07:37:07+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady rise in connected devices from 15 to 21 between 11:53 PM and 12:01 AM, paired with zero camera activity, suggests possible continued indoor activity (e.g., kids or guests) or a batch of IoT devices waking up; worth a quick check if unexpected.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T00:04:16.706485+00:00"
+      "last_updated": "2026-07-10T00:10:20.363869+00:00"
     }
   },
   "pge": {
