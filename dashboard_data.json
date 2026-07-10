@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 06:39:32",
+  "generated_at": "2026-07-10 06:44:39",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1356,6 +1356,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164721,
+        "timestamp": "2026-07-10T13:41:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164720,
+        "timestamp": "2026-07-10T13:40:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164719,
+        "timestamp": "2026-07-10T13:39:44+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164718,
         "timestamp": "2026-07-10T13:35:43+00:00",
@@ -3522,42 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164521,
-        "timestamp": "2026-07-09T09:20:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164520,
-        "timestamp": "2026-07-09T09:01:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164519,
-        "timestamp": "2026-07-09T08:59:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7908,
+        "timestamp": "2026-07-10T13:38:55+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The presence sensor reports 19-20 mobile devices home with rapid 19/20 fluctuations at 6 AM, which is unusually high for a four-person household and suggests either unexpected guests, a network polling glitch, or unknown devices on the Wi-Fi. Verification is recommended to rule out security or connectivity issues.",
+        "acted_on_at": null
+      },
       {
         "id": 7907,
         "timestamp": "2026-07-10T06:29:08+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "medium",
         "summary": "The combination of a sustained 13-17 device count with zero camera motion or environmental activity over four hours strongly suggests a network reporting anomaly or a stationary gathering, warranting verification to rule out unauthorized connections or IoT miscounting.",
         "acted_on_at": null
-      },
-      {
-        "id": 7898,
-        "timestamp": "2026-07-09T19:54:22+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained high presence count paired with zero camera motion across multiple time blocks confirms a prolonged stationary gathering rather than a sensor glitch, indicating a planned family visit, remote work day, or quiet afternoon event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T13:38:22.097219+00:00"
+      "last_updated": "2026-07-10T13:44:28.523392+00:00"
     }
   },
   "pge": {
