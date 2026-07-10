@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 15:55:49",
+  "generated_at": "2026-07-10 16:00:57",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1524,6 +1524,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164808,
+        "timestamp": "2026-07-10T22:59:03+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164807,
         "timestamp": "2026-07-10T22:51:01+00:00",
@@ -3712,20 +3723,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164608,
-        "timestamp": "2026-07-10T00:24:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7914,
+        "timestamp": "2026-07-10T22:56:43+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 17-21 connected devices paired with zero camera motion for four hours strongly indicates the presence sensors are detecting external devices or a network anomaly rather than actual household occupancy, especially given the high activity levels of the dogs and children. This occupancy mismatch warrants immediate verification to rule out unauthorized access or a persistent network glitch.",
+        "acted_on_at": null
+      },
       {
         "id": 7913,
         "timestamp": "2026-07-10T21:54:56+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "low",
         "summary": "The sustained 17-21 device count paired with zero camera motion over four hours indicates the household is congregated in a camera-blind area (likely a media room or basement) in a low-activity state, consistent with a typical Thursday evening wind-down.",
         "acted_on_at": null
-      },
-      {
-        "id": 7904,
-        "timestamp": "2026-07-10T02:17:32+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 15-21 device count paired with zero camera motion over four hours indicates the household is likely hosting guests or gathering in a camera-blind zone for a stationary activity like a movie night. This matters because it confirms a social gathering while highlighting a potential blind spot that should be verified to ensure cameras are functioning as expected.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3822,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T22:53:41.239027+00:00"
+      "last_updated": "2026-07-10T22:59:45.348964+00:00"
     }
   },
   "pge": {
