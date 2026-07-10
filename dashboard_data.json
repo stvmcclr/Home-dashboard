@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09 23:28:52",
+  "generated_at": "2026-07-09 23:34:01",
   "as_of": "2026-07-09",
   "projects": [
     {
@@ -3475,6 +3475,14 @@
     ],
     "insights": [
       {
+        "id": 7907,
+        "timestamp": "2026-07-10T06:29:08+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 18-20 device count with zero camera motion at 11:27 PM confirms the household is asleep in non-monitored rooms, but the unusually high count likely stems from Wi-Fi presence detection artifacts or background IoT polling rather than actual occupancy; no security concern, but worth verifying network settings if it persists.",
+        "acted_on_at": null
+      },
+      {
         "id": 7906,
         "timestamp": "2026-07-10T04:20:59+00:00",
         "insight_type": "correlation",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The sustained high presence count paired with zero camera motion across multiple time blocks confirms a prolonged stationary gathering rather than a sensor glitch, indicating a planned family visit, remote work day, or quiet afternoon event.",
         "acted_on_at": null
-      },
-      {
-        "id": 7897,
-        "timestamp": "2026-07-09T18:52:27+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained high device count (14-18) with zero camera motion indicates a large group of stationary guests or IoT devices clustered in a camera-blind area, and the sharp drop to 14 devices at 11:32 signals they are now departing. This clarifies the earlier 'ghost presence' alerts as a single gathering event rather than a system anomaly.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T06:28:21.622522+00:00"
+      "last_updated": "2026-07-10T06:31:23.329668+00:00"
     }
   },
   "pge": {
