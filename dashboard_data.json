@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 09:44:28",
+  "generated_at": "2026-07-10 09:49:36",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1384,6 +1384,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164760,
+        "timestamp": "2026-07-10T16:48:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164759,
+        "timestamp": "2026-07-10T16:47:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 164758,
+        "timestamp": "2026-07-10T16:43:29+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164757,
         "timestamp": "2026-07-10T16:40:29+00:00",
@@ -3550,42 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164560,
-        "timestamp": "2026-07-09T18:04:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164559,
-        "timestamp": "2026-07-09T17:40:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164558,
-        "timestamp": "2026-07-09T17:34:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7910,
+        "timestamp": "2026-07-10T16:44:55+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 19-21 device count with rapid toggling, combined with zero camera motion over four hours on a Friday morning, strongly indicates a false positive in the presence detection system (likely Wi-Fi/Bluetooth scanning artifacts) rather than actual occupancy, which could trigger unnecessary automations or mask real activity.",
+        "acted_on_at": null
+      },
       {
         "id": 7909,
         "timestamp": "2026-07-10T14:41:28+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "medium",
         "summary": "The sustained 13-16 device count paired with zero camera motion strongly indicates stationary presence (e.g., devices left charging, remote work/study sessions, or guests in an unmonitored room) rather than active household movement, explaining the lack of environmental triggers despite the high presence count.",
         "acted_on_at": null
-      },
-      {
-        "id": 7900,
-        "timestamp": "2026-07-09T21:57:18+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 14-17 device count combined with zero camera motion or environmental activity for four hours on a weekday afternoon strongly suggests a sensor or camera malfunction rather than normal household inactivity. A quick system diagnostic is recommended to verify sensor integrity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T16:43:12.562838+00:00"
+      "last_updated": "2026-07-10T16:49:21.696461+00:00"
     }
   },
   "pge": {
