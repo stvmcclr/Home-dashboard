@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 07:41:06",
+  "generated_at": "2026-07-10 07:46:14",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164739,
+        "timestamp": "2026-07-10T14:39:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164738,
         "timestamp": "2026-07-10T14:29:56+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164539,
-        "timestamp": "2026-07-09T14:07:05+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7909,
+        "timestamp": "2026-07-10T14:41:28+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent rapid toggle between 20 and 21 connected devices, combined with zero camera activity and the early Friday morning timeframe, strongly indicates a single indoor device is intermittently connecting and disconnecting rather than reflecting actual household occupancy. This confirms the previously flagged sensor drift and suggests it is likely triggering unnecessary automations or network polling.",
+        "acted_on_at": null
+      },
       {
         "id": 7908,
         "timestamp": "2026-07-10T13:38:55+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "medium",
         "summary": "The sustained 14-17 device count combined with zero camera motion or environmental activity for four hours on a weekday afternoon strongly suggests a sensor or camera malfunction rather than normal household inactivity. A quick system diagnostic is recommended to verify sensor integrity.",
         "acted_on_at": null
-      },
-      {
-        "id": 7899,
-        "timestamp": "2026-07-09T20:56:05+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of a sustained 13-17 device count with zero camera motion or environmental activity over four hours strongly suggests a network reporting anomaly or a stationary gathering, warranting verification to rule out unauthorized connections or IoT miscounting.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-10T14:39:01.465658+00:00"
+      "last_updated": "2026-07-10T14:45:04.899781+00:00"
     }
   },
   "pge": {
