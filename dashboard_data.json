@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 20:07:02",
+  "generated_at": "2026-07-10 20:12:10",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -3447,6 +3447,14 @@
     ],
     "insights": [
       {
+        "id": 7918,
+        "timestamp": "2026-07-11T03:06:03+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 17-21 device count with zero camera motion over 90+ minutes strongly indicates dormant IoT devices or network polling artifacts rather than active human presence, but warrants monitoring for unrecorded guests or a network misconfiguration.",
+        "acted_on_at": null
+      },
+      {
         "id": 7917,
         "timestamp": "2026-07-11T02:04:48+00:00",
         "insight_type": "correlation",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The persistent rapid toggle between 20 and 21 connected devices, combined with zero camera activity and the early Friday morning timeframe, strongly indicates a single indoor device is intermittently connecting and disconnecting rather than reflecting actual household occupancy. This confirms the previously flagged sensor drift and suggests it is likely triggering unnecessary automations or network polling.",
         "acted_on_at": null
-      },
-      {
-        "id": 7908,
-        "timestamp": "2026-07-10T13:38:55+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The presence sensor reports 19-20 mobile devices home with rapid 19/20 fluctuations at 6 AM, which is unusually high for a four-person household and suggests either unexpected guests, a network polling glitch, or unknown devices on the Wi-Fi. Verification is recommended to rule out security or connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-11T03:05:09.463011+00:00"
+      "last_updated": "2026-07-11T03:11:12.92891+00:00"
     }
   },
   "pge": {
