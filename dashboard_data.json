@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 22:04:58",
+  "generated_at": "2026-07-10 22:10:05",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164863,
+        "timestamp": "2026-07-11T05:07:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164862,
         "timestamp": "2026-07-11T04:56:27+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164663,
-        "timestamp": "2026-07-10T05:50:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7920,
+        "timestamp": "2026-07-11T05:08:39+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 18-22 device count paired with zero camera motion indicates a large group of stationary occupants or an IoT counting anomaly, as it far exceeds the household's typical device footprint. This suggests a possible gathering or sensor misreporting that warrants verification.",
+        "acted_on_at": null
+      },
       {
         "id": 7919,
         "timestamp": "2026-07-11T04:07:26+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The rapid surge to 21 connected devices alongside zero camera motion and no other activity signals strongly suggests a network scanning anomaly generating phantom connections rather than actual occupancy, especially given the complete lack of movement from the kids and dogs over four hours.",
         "acted_on_at": null
-      },
-      {
-        "id": 7910,
-        "timestamp": "2026-07-10T16:44:55+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent 19-21 device count with rapid toggling, combined with zero camera motion over four hours on a Friday morning, strongly indicates a false positive in the presence detection system (likely Wi-Fi/Bluetooth scanning artifacts) rather than actual occupancy, which could trigger unnecessary automations or mask real activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-11T05:03:15.438822+00:00"
+      "last_updated": "2026-07-11T05:09:18.483632+00:00"
     }
   },
   "pge": {
