@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11 04:13:48",
+  "generated_at": "2026-07-11 04:18:55",
   "as_of": "2026-07-11",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164896,
+        "timestamp": "2026-07-11T11:14:57+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164895,
         "timestamp": "2026-07-11T10:49:51+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164696,
-        "timestamp": "2026-07-10T12:18:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7922,
+        "timestamp": "2026-07-11T11:16:12+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The presence count consistently toggles between 21 and 22 devices throughout the night with zero camera or activity signals, indicating a likely network artifact or a single device cycling its connection rather than actual household movement. This warrants a quick network check to prevent false alerts or unnecessary battery drain.",
+        "acted_on_at": null
+      },
       {
         "id": 7921,
         "timestamp": "2026-07-11T07:12:40+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The sustained 17-21 connected devices paired with zero camera motion on a Friday afternoon strongly indicates the children are home from school (or guests are present) occupying camera-blind zones, confirming this is a normal routine pattern rather than a security event.",
         "acted_on_at": null
-      },
-      {
-        "id": 7912,
-        "timestamp": "2026-07-10T20:53:20+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "With only six household members, a spike to 20-21 connected devices alongside zero camera motion suggests a network reporting glitch, devices left behind after departure, or guests lingering in a camera blind spot. This discrepancy warrants verification to rule out connectivity errors or unattended visitors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-11T11:12:47.544343+00:00"
+      "last_updated": "2026-07-11T11:18:51.30594+00:00"
     }
   },
   "pge": {
