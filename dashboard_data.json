@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 21:08:34",
+  "generated_at": "2026-07-10 21:13:42",
   "as_of": "2026-07-10",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164851,
+        "timestamp": "2026-07-11T04:10:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164850,
         "timestamp": "2026-07-11T03:43:10+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164651,
-        "timestamp": "2026-07-10T04:57:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7919,
+        "timestamp": "2026-07-11T04:07:26+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 18-21 device count with zero camera motion from 19:12 to 20:43 on a Friday evening strongly indicates a large group of guests or extended family gathered in a camera-blind area, confirming a planned social event rather than a security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 7918,
         "timestamp": "2026-07-11T03:06:03+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The persistent 19-21 device count with rapid toggling, combined with zero camera motion over four hours on a Friday morning, strongly indicates a false positive in the presence detection system (likely Wi-Fi/Bluetooth scanning artifacts) rather than actual occupancy, which could trigger unnecessary automations or mask real activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 7909,
-        "timestamp": "2026-07-10T14:41:28+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent rapid toggle between 20 and 21 connected devices, combined with zero camera activity and the early Friday morning timeframe, strongly indicates a single indoor device is intermittently connecting and disconnecting rather than reflecting actual household occupancy. This confirms the previously flagged sensor drift and suggests it is likely triggering unnecessary automations or network polling.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-11T04:05:44.231016+00:00"
+      "last_updated": "2026-07-11T04:11:46.866389+00:00"
     }
   },
   "pge": {
