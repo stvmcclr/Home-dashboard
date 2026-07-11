@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11 00:13:00",
+  "generated_at": "2026-07-11 00:18:08",
   "as_of": "2026-07-11",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 164880,
+        "timestamp": "2026-07-11T07:14:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 164879,
         "timestamp": "2026-07-11T06:56:57+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 164680,
-        "timestamp": "2026-07-10T09:06:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7921,
+        "timestamp": "2026-07-11T07:12:40+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistence of 21-22 connected devices with zero camera motion from Friday evening through Saturday past midnight confirms a large group of guests is settled inside the home, likely resting in camera-blind zones, indicating a multi-night stay rather than a transient gathering.",
+        "acted_on_at": null
+      },
       {
         "id": 7920,
         "timestamp": "2026-07-11T05:08:39+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "With only six household members, a spike to 20-21 connected devices alongside zero camera motion suggests a network reporting glitch, devices left behind after departure, or guests lingering in a camera blind spot. This discrepancy warrants verification to rule out connectivity errors or unattended visitors.",
         "acted_on_at": null
-      },
-      {
-        "id": 7911,
-        "timestamp": "2026-07-10T19:52:01+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The rapid surge to 21 connected devices alongside zero camera motion and no other activity signals strongly suggests a network scanning anomaly generating phantom connections rather than actual occupancy, especially given the complete lack of movement from the kids and dogs over four hours.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3598,7 +3598,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-11T07:10:26.04892+00:00"
+      "last_updated": "2026-07-11T07:16:29.014653+00:00"
     }
   },
   "pge": {
