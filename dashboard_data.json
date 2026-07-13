@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13 07:18:13",
+  "generated_at": "2026-07-13 07:23:20",
   "as_of": "2026-07-13",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165233,
+        "timestamp": "2026-07-13T14:18:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 165232,
         "timestamp": "2026-07-13T14:06:56+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165033,
-        "timestamp": "2026-07-12T07:07:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7928,
+        "timestamp": "2026-07-13T14:17:51+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 18-19 mobile device count overnight with zero camera or audio activity strongly indicates a network presence-detection anomaly or unreported stationary devices, as this count is implausible for your household at this hour. Verifying your router's device list is recommended to rule out configuration errors or unauthorized network access.",
+        "acted_on_at": null
+      },
       {
         "id": 7927,
         "timestamp": "2026-07-13T13:16:44+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "low",
         "summary": "The sustained 18-21 device count with zero camera motion from 19:12 to 20:43 on a Friday evening strongly indicates a large group of guests or extended family gathered in a camera-blind area, confirming a planned social event rather than a security concern.",
         "acted_on_at": null
-      },
-      {
-        "id": 7918,
-        "timestamp": "2026-07-11T03:06:03+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 17-21 device count with zero camera motion over 90+ minutes strongly indicates dormant IoT devices or network polling artifacts rather than active human presence, but warrants monitoring for unrecorded guests or a network misconfiguration.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-13T14:16:38.971106+00:00"
+      "last_updated": "2026-07-13T14:22:42.012444+00:00"
     }
   },
   "pge": {
