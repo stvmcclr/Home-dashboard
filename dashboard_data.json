@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13 20:39:05",
+  "generated_at": "2026-07-13 20:44:13",
   "as_of": "2026-07-13",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165345,
+        "timestamp": "2026-07-14T03:40:15+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 165344,
         "timestamp": "2026-07-14T03:30:13+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165145,
-        "timestamp": "2026-07-13T00:59:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7937,
+        "timestamp": "2026-07-14T03:42:11+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained high device count (17-20) paired with zero camera motion across a 1.5-hour evening window strongly indicates a sensor fault (either the presence tracker is overcounting or the cameras are offline) rather than normal household activity, which compromises reliable security and occupancy monitoring.",
+        "acted_on_at": null
+      },
       {
         "id": 7936,
         "timestamp": "2026-07-14T02:40:48+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The persistent 18-19 mobile device count overnight with zero camera or audio activity strongly indicates a network presence-detection anomaly or unreported stationary devices, as this count is implausible for your household at this hour. Verifying your router's device list is recommended to rule out configuration errors or unauthorized network access.",
         "acted_on_at": null
-      },
-      {
-        "id": 7927,
-        "timestamp": "2026-07-13T13:16:44+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent 18-19 mobile device count overnight with zero camera or audio activity, now continuing at wake-up time, strongly indicates a network scanning artifact or a large group of overnight guests who haven't yet triggered motion sensors; verify the network device list or confirm guest status before automating morning routines.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-14T03:36:39.144954+00:00"
+      "last_updated": "2026-07-14T03:42:42.880413+00:00"
     }
   },
   "pge": {
