@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14 13:09:08",
+  "generated_at": "2026-07-14 13:14:16",
   "as_of": "2026-07-14",
   "projects": [
     {
@@ -1524,6 +1524,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165469,
+        "timestamp": "2026-07-14T20:11:18+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 165468,
         "timestamp": "2026-07-14T20:07:17+00:00",
@@ -3712,20 +3723,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165269,
-        "timestamp": "2026-07-13T18:25:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7943,
+        "timestamp": "2026-07-14T20:13:24+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 14-16 connected devices with zero camera motion for four hours on a weekday strongly indicates the home is unoccupied, but multiple electronics were left charging. This suggests the family may have forgotten devices behind, leaving valuables unsecured while the dogs are alone.",
+        "acted_on_at": null
+      },
       {
         "id": 7942,
         "timestamp": "2026-07-14T19:12:05+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "low",
         "summary": "The persistent 16-19 connected devices paired with zero camera motion throughout the Monday afternoon strongly suggests the home is likely unoccupied, with the high count driven by stationary IoT electronics rather than human presence. This aligns with typical school-day schedules and confirms the presence metric is being skewed by always-on devices, requiring no immediate action.",
         "acted_on_at": null
-      },
-      {
-        "id": 7933,
-        "timestamp": "2026-07-13T22:34:06+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent 18-20 connected devices combined with zero camera motion over four hours strongly indicates the house is currently unoccupied, with phones, tablets, and smart home hubs left connected to Wi-Fi. This aligns with a typical Monday afternoon schedule, confirming no one is actively moving through the monitored areas.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3822,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-14T20:07:22.731216+00:00"
+      "last_updated": "2026-07-14T20:13:26.329249+00:00"
     }
   },
   "pge": {
