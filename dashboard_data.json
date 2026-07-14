@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13 19:37:27",
+  "generated_at": "2026-07-13 19:42:34",
   "as_of": "2026-07-13",
   "projects": [
     {
@@ -3447,6 +3447,14 @@
     ],
     "insights": [
       {
+        "id": 7936,
+        "timestamp": "2026-07-14T02:40:48+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 16-20 device count combined with zero camera motion during typical after-school hours confirms the presence sensor is tracking background IoT devices rather than occupancy, and the lack of camera activity suggests motion detection may be disabled or the cameras are offline, warranting a quick system check.",
+        "acted_on_at": null
+      },
+      {
         "id": 7935,
         "timestamp": "2026-07-14T01:38:06+00:00",
         "insight_type": "correlation",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The persistent 18-19 mobile device count overnight with zero camera or audio activity, now continuing at wake-up time, strongly indicates a network scanning artifact or a large group of overnight guests who haven't yet triggered motion sensors; verify the network device list or confirm guest status before automating morning routines.",
         "acted_on_at": null
-      },
-      {
-        "id": 7926,
-        "timestamp": "2026-07-13T12:15:16+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The stable 18-19 device count overnight, combined with zero camera or audio activity, indicates a persistent background state (likely overnight guests or IoT devices misclassified as mobile) rather than an active event or security concern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-14T02:36:02.869688+00:00"
+      "last_updated": "2026-07-14T02:42:06.345479+00:00"
     }
   },
   "pge": {
