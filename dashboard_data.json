@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14 12:12:42",
+  "generated_at": "2026-07-14 12:17:51",
   "as_of": "2026-07-14",
   "projects": [
     {
@@ -1524,6 +1524,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165462,
+        "timestamp": "2026-07-14T19:14:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 165461,
         "timestamp": "2026-07-14T19:07:02+00:00",
@@ -3712,20 +3723,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165262,
-        "timestamp": "2026-07-13T17:57:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7942,
+        "timestamp": "2026-07-14T19:12:05+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 13-16 device count paired with zero camera motion on a weekday strongly indicates the family is home but stationary (e.g., WFH, school break, or relaxed day) rather than absent or experiencing a security event; this is a normal lifestyle pattern.",
+        "acted_on_at": null
+      },
       {
         "id": 7941,
         "timestamp": "2026-07-14T18:10:24+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "low",
         "summary": "The persistent 18-20 connected devices combined with zero camera motion over four hours strongly indicates the house is currently unoccupied, with phones, tablets, and smart home hubs left connected to Wi-Fi. This aligns with a typical Monday afternoon schedule, confirming no one is actively moving through the monitored areas.",
         "acted_on_at": null
-      },
-      {
-        "id": 7932,
-        "timestamp": "2026-07-13T21:29:15+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent 18-19 connected mobile devices paired with zero camera motion on a Monday afternoon strongly suggests a network presence detection glitch or an unoccupied home with lingering connections, which may cause occupancy-based automations to malfunction.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3822,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-14T19:09:48.402228+00:00"
+      "last_updated": "2026-07-14T19:15:50.991129+00:00"
     }
   },
   "pge": {
