@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15 00:21:13",
+  "generated_at": "2026-07-15 00:26:20",
   "as_of": "2026-07-15",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165598,
+        "timestamp": "2026-07-15T07:25:58+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 165597,
+        "timestamp": "2026-07-15T07:24:58+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 165596,
+        "timestamp": "2026-07-15T07:22:23+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 2.89h.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-d1f484a0",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
       {
         "id": 165595,
         "timestamp": "2026-07-15T07:19:57+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165398,
-        "timestamp": "2026-07-14T10:18:50+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165397,
-        "timestamp": "2026-07-14T10:08:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165396,
-        "timestamp": "2026-07-14T10:01:46+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7951,
+        "timestamp": "2026-07-15T07:22:23+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 2.89h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 7950,
         "timestamp": "2026-07-15T03:24:07+00:00",
@@ -3573,19 +3581,13 @@
         "severity": "low",
         "summary": "The sustained 13-16 device count paired with zero camera motion on a weekday strongly indicates the family is home but stationary (e.g., WFH, school break, or relaxed day) rather than absent or experiencing a security event; this is a normal lifestyle pattern.",
         "acted_on_at": null
-      },
-      {
-        "id": 7941,
-        "timestamp": "2026-07-14T18:10:24+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 13-16 devices combined with zero camera motion on a weekday morning strongly suggests the cameras are offline, malfunctioning, or have lost connectivity, as the household's children and active dogs would typically trigger activity. This creates a monitoring blind spot that should be verified.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3598,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-15T07:20:00.548306+00:00"
+      "last_updated": "2026-07-15T07:26:05.281574+00:00"
     }
   },
   "pge": {
