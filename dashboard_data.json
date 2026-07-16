@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15 19:56:28",
+  "generated_at": "2026-07-15 20:01:35",
   "as_of": "2026-07-15",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 165799,
+        "timestamp": "2026-07-16T02:56:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 165798,
         "timestamp": "2026-07-16T02:52:25+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165599,
-        "timestamp": "2026-07-15T07:27:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7955,
+        "timestamp": "2026-07-16T02:56:30+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The network consistently reports 14-16 connected mobile devices, which is significantly higher than expected for your household on a Wednesday evening. This suggests either unexpected guests are present or a network device-counting anomaly is occurring.",
+        "acted_on_at": null
+      },
       {
         "id": 7954,
         "timestamp": "2026-07-15T16:44:34+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The sustained connection of 13\u201316 mobile devices (nearly double the household size) alongside zero camera motion for four hours strongly suggests guests are present and the household is gathered in a camera-blind area, likely the living room or patio. This explains the high device count and lack of movement from the energetic dogs, but warrants a quick verification to ensure everything is normal.",
         "acted_on_at": null
-      },
-      {
-        "id": 7945,
-        "timestamp": "2026-07-14T22:16:18+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 13\u201316 connected devices alongside zero camera motion for four hours on a weekday afternoon strongly suggests either the household is in an unusually prolonged low-activity state or the cameras are offline while the network remains active. Given the high-energy dogs are also unaccounted for, this warrants a quick camera status check or presence verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-16T02:55:13.228111+00:00"
+      "last_updated": "2026-07-16T03:01:17.464089+00:00"
     }
   },
   "pge": {
