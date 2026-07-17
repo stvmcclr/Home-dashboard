@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17 03:49:48",
+  "generated_at": "2026-07-17 03:54:57",
   "as_of": "2026-07-17",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166018,
+        "timestamp": "2026-07-17T10:49:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166017,
         "timestamp": "2026-07-17T10:43:00+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165818,
-        "timestamp": "2026-07-16T04:06:43+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7963,
+        "timestamp": "2026-07-17T10:49:12+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Roxanne's Eight Sleep tracker reports 17.71 hours of sleep, which is physically impossible for a single night and likely indicates a sensor glitch or data sync error. Cross-referencing with stable presence data confirms no unusual activity, making this a low-priority device anomaly.",
+        "acted_on_at": null
+      },
       {
         "id": 7962,
         "timestamp": "2026-07-16T23:37:20+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "low",
         "summary": "The device count stabilizing at 11-14 this Wednesday morning aligns with the family departing for work and school, but the persistent count likely includes smart home hubs and IoT devices rather than people. This confirms the house is effectively empty and prevents false presence assumptions or unnecessary check-ins.",
         "acted_on_at": null
-      },
-      {
-        "id": 7953,
-        "timestamp": "2026-07-15T15:43:11+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The connected device count dropped sharply from 16 to 11 between 08:32 and 08:38, indicating the family is likely departing for the day. This aligns with typical Wednesday morning schedules and suggests automations like security arming or climate adjustments could be triggered.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3656,7 +3656,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-17T10:47:13.339649+00:00"
+      "last_updated": "2026-07-17T10:53:16.248163+00:00"
     }
   },
   "pge": {
