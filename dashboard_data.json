@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 13:46:13",
+  "generated_at": "2026-07-18 13:51:20",
   "as_of": "2026-07-18",
   "projects": [
     {
@@ -1636,6 +1636,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166213,
+        "timestamp": "2026-07-18T20:51:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166212,
         "timestamp": "2026-07-18T20:26:55+00:00",
@@ -3824,20 +3835,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166013,
-        "timestamp": "2026-07-17T09:48:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7976,
+        "timestamp": "2026-07-18T20:47:55+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 10-13 device count paired with zero camera or pet motion for four hours on a Saturday afternoon strongly suggests the household is gathered in a single enclosed space or engaged in a prolonged stationary activity, explaining the lack of motion triggers and indicating that occupancy-based automations should remain active rather than triggering vacancy alerts.",
+        "acted_on_at": null
+      },
       {
         "id": 7975,
         "timestamp": "2026-07-18T19:46:46+00:00",
@@ -3909,14 +3917,6 @@
         "severity": "medium",
         "summary": "Roxanne slept only 1.71h last night. May be a rough morning \u2014 heads up.",
         "acted_on_at": null
-      },
-      {
-        "id": 7966,
-        "timestamp": "2026-07-18T11:27:51+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence system is detecting 11-13 mobile devices between 2:24 AM and 4:24 AM, significantly exceeding the expected count for the four household members. The fluctuating numbers suggest devices are cycling between active and sleep states or moving between access points, which may indicate overnight guests, uncounted smart devices, or network artifacts worth verifying.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3934,7 +3934,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T20:45:16.65626+00:00"
+      "last_updated": "2026-07-18T20:51:20.145937+00:00"
     }
   },
   "pge": {
