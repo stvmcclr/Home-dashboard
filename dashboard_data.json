@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 14:47:48",
+  "generated_at": "2026-07-18 14:52:56",
   "as_of": "2026-07-18",
   "projects": [
     {
@@ -1664,6 +1664,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166220,
+        "timestamp": "2026-07-18T21:47:13+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166219,
+        "timestamp": "2026-07-18T21:46:13+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166218,
         "timestamp": "2026-07-18T21:32:10+00:00",
@@ -3841,31 +3863,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166020,
-        "timestamp": "2026-07-17T11:19:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166019,
-        "timestamp": "2026-07-17T11:00:04+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7977,
+        "timestamp": "2026-07-18T21:49:16+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 10-12 device count paired with zero camera and pet motion indicates the household is indoors but stationary, likely engaged in low-mobility weekend activities like watching a movie or resting. While typical for a Saturday, the prolonged inactivity from active Australian Shepherds may warrant a quick wellness check if it's uncharacteristic for them.",
+        "acted_on_at": null
+      },
       {
         "id": 7976,
         "timestamp": "2026-07-18T20:47:55+00:00",
@@ -3937,14 +3945,6 @@
         "severity": "medium",
         "summary": "Roxanne\u2019s severely fragmented sleep and elevated heart rate, combined with sustained high device presence and zero camera activity, indicate she is awake but stationary in bed. This matters because I will delay all morning automation and keep the environment quiet until she moves, preventing unnecessary disruption during a likely low-energy start.",
         "acted_on_at": null
-      },
-      {
-        "id": 7967,
-        "timestamp": "2026-07-18T11:55:44+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Roxanne slept only 1.71h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3962,7 +3962,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T21:45:50.396449+00:00"
+      "last_updated": "2026-07-18T21:51:54.372273+00:00"
     }
   },
   "pge": {
