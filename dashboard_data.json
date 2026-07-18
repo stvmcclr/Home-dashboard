@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17 19:13:20",
+  "generated_at": "2026-07-17 19:18:28",
   "as_of": "2026-07-17",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166109,
+        "timestamp": "2026-07-18T02:11:36+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166108,
         "timestamp": "2026-07-18T01:52:32+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165909,
-        "timestamp": "2026-07-16T15:46:30+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7965,
+        "timestamp": "2026-07-18T02:16:01+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The network consistently shows 10-12 connected devices, jumping to 12 at 19:11, which exceeds the typical count for the four household members and strongly suggests guests or friends are visiting this Friday evening. This normal social pattern is worth noting for occupancy context and system adjustments.",
+        "acted_on_at": null
+      },
       {
         "id": 7964,
         "timestamp": "2026-07-17T15:57:31+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The network consistently reports 15-19 connected devices, far exceeding the household's expected count, which combined with no camera activity at 9:57 PM strongly suggests an unlogged gathering, visitors, or a large number of active IoT devices. This warrants a quick check to ensure network stability and confirm who is on the premises.",
         "acted_on_at": null
-      },
-      {
-        "id": 7955,
-        "timestamp": "2026-07-16T02:56:30+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The network consistently reports 14-16 connected mobile devices, which is significantly higher than expected for your household on a Wednesday evening. This suggests either unexpected guests are present or a network device-counting anomaly is occurring.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T02:10:57.777633+00:00"
+      "last_updated": "2026-07-18T02:17:00.836475+00:00"
     }
   },
   "pge": {
