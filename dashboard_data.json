@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 10:41:40",
+  "generated_at": "2026-07-18 10:46:47",
   "as_of": "2026-07-18",
   "projects": [
     {
@@ -3755,6 +3755,14 @@
     ],
     "insights": [
       {
+        "id": 7973,
+        "timestamp": "2026-07-18T17:41:58+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The persistent 11-13 device count paired with zero camera motion or pet activity for four hours on a Saturday morning indicates the presence system is likely counting stationary IoT devices rather than actual people, or the house is unoccupied with devices left connected. This false presence signal may be causing unnecessary automation triggers and should be treated as an unoccupied state until motion confirms occupancy.",
+        "acted_on_at": null
+      },
+      {
         "id": 7972,
         "timestamp": "2026-07-18T16:39:15+00:00",
         "insight_type": "correlation",
@@ -3825,14 +3833,6 @@
         "severity": "low",
         "summary": "The rapid oscillation between 12 and 13 connected devices over the last two hours, with the total count remaining consistently high, indicates active device movement and packing typical of a morning routine, suggesting the family is still preparing to depart rather than having already left for school or work.",
         "acted_on_at": null
-      },
-      {
-        "id": 7963,
-        "timestamp": "2026-07-17T10:49:12+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Roxanne's Eight Sleep tracker reports 17.71 hours of sleep, which is physically impossible for a single night and likely indicates a sensor glitch or data sync error. Cross-referencing with stable presence data confirms no unusual activity, making this a low-priority device anomaly.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3850,7 +3850,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T17:40:30.62236+00:00"
+      "last_updated": "2026-07-18T17:46:34.605043+00:00"
     }
   },
   "pge": {
