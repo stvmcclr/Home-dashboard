@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 04:53:18",
+  "generated_at": "2026-07-18 04:58:25",
   "as_of": "2026-07-18",
   "projects": [
     {
@@ -1412,6 +1412,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166165,
+        "timestamp": "2026-07-18T11:57:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166164,
+        "timestamp": "2026-07-18T11:55:44+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 1.71h. HR 80bpm. HRV 575ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-f622cd14",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 166163,
+        "timestamp": "2026-07-18T11:54:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166162,
         "timestamp": "2026-07-18T11:50:51+00:00",
@@ -3578,42 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165965,
-        "timestamp": "2026-07-17T00:44:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165964,
-        "timestamp": "2026-07-17T00:43:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165963,
-        "timestamp": "2026-07-17T00:36:35+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7967,
+        "timestamp": "2026-07-18T11:55:44+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 1.71h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 7966,
         "timestamp": "2026-07-18T11:27:51+00:00",
@@ -3685,19 +3693,13 @@
         "severity": "low",
         "summary": "The persistent 16-18 device count at 3 AM, combined with zero camera activity or other sensor triggers, strongly suggests network double-counting or IoT devices being misclassified as mobile phones rather than actual human presence. This is likely a benign reporting artifact, but worth monitoring to rule out unauthorized network connections.",
         "acted_on_at": null
-      },
-      {
-        "id": 7957,
-        "timestamp": "2026-07-16T09:07:14+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The network consistently reports 16-18 mobile devices present at 2 AM, which is unusually high for a four-person household and suggests either unexpected guests are staying over or the presence system is incorrectly tracking IoT devices. This warrants a quick check to ensure no unauthorized access or network misconfiguration.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3710,7 +3712,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T11:52:18.530879+00:00"
+      "last_updated": "2026-07-18T11:58:22.465394+00:00"
     }
   },
   "pge": {
