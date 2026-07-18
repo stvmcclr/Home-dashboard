@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 06:30:37",
+  "generated_at": "2026-07-18 06:35:44",
   "as_of": "2026-07-18",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166173,
+        "timestamp": "2026-07-18T13:35:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166172,
         "timestamp": "2026-07-18T13:25:14+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 165973,
-        "timestamp": "2026-07-17T02:02:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7969,
+        "timestamp": "2026-07-18T13:31:23+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 12-13 mobile devices during early morning hours, paired with Roxanne\u2019s severely fragmented sleep and elevated heart rate, indicates unusually high indoor activity or restlessness overnight. Since cameras show no movement, the disturbance likely originated from within the home, suggesting a potentially exhausting start to the day that warrants checking on Roxanne\u2019s well-being.",
+        "acted_on_at": null
+      },
       {
         "id": 7968,
         "timestamp": "2026-07-18T12:29:19+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The presence count consistently shows 17-20 devices home from 06:29 to 07:59 AM without any camera activity during typical morning prep hours, which may indicate overnight guests, IoT device tracking artifacts, or simply a need to verify connected devices against the household size.",
         "acted_on_at": null
-      },
-      {
-        "id": 7959,
-        "timestamp": "2026-07-16T11:09:35+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent 16-18 device count at 3 AM paired with zero camera, motion, or audio triggers indicates background network pinging or IoT devices rather than human occupancy, which helps prevent false occupancy or intrusion alerts.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3740,7 +3740,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-18T13:29:14.509411+00:00"
+      "last_updated": "2026-07-18T13:35:17.911821+00:00"
     }
   },
   "pge": {
