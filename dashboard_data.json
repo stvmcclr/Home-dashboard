@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19 02:05:01",
+  "generated_at": "2026-07-19 02:10:09",
   "as_of": "2026-07-19",
   "projects": [
     {
@@ -1328,6 +1328,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166296,
+        "timestamp": "2026-07-19T09:08:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166295,
+        "timestamp": "2026-07-19T09:07:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "11 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166294,
         "timestamp": "2026-07-19T08:59:52+00:00",
@@ -3505,31 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166096,
-        "timestamp": "2026-07-17T23:09:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166095,
-        "timestamp": "2026-07-17T23:01:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "10 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7980,
+        "timestamp": "2026-07-19T09:08:10+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The repeated oscillation between 12 and 13 connected devices from 00:21 to 01:59, with no corresponding camera or activity signals, indicates a single device or network interface is experiencing intermittent connectivity flaps during the night. This likely points to a device failing to enter deep sleep or a minor network instability, which could cause unnecessary battery drain or future connectivity issues.",
+        "acted_on_at": null
+      },
       {
         "id": 7979,
         "timestamp": "2026-07-19T03:58:08+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "The persistently high device count (11-13) paired with zero camera motion confirms the household is in a prolonged rest state rather than simply leaving electronics on. This matters because Roxanne\u2019s severe sleep deprivation suggests she is still recovering, so Steve should anticipate a quiet morning and consider handling household tasks discreetly or postponing non-urgent requests.",
         "acted_on_at": null
-      },
-      {
-        "id": 7970,
-        "timestamp": "2026-07-18T14:36:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stable high device count combined with zero camera motion suggests electronics are likely left in standby or charging mode overnight, creating ambient light or noise that may be disrupting Roxanne\u2019s sleep cycles rather than indicating active household movement. Verify guest status and consider automating power-down routines for non-essential smart devices to improve rest.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-19T09:04:02.781094+00:00"
+      "last_updated": "2026-07-19T09:10:06.899999+00:00"
     }
   },
   "pge": {
