@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19 08:14:07",
+  "generated_at": "2026-07-19 08:19:14",
   "as_of": "2026-07-19",
   "projects": [
     {
@@ -3671,6 +3671,14 @@
     ],
     "insights": [
       {
+        "id": 7982,
+        "timestamp": "2026-07-19T15:16:27+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent oscillation between 11\u201313 devices combined with zero camera activity during typical sleep hours (4\u20136 AM) strongly indicates presence-tracking drift (likely Bluetooth/WiFi polling artifacts) rather than actual household movement, suggesting the system may be overcounting and could trigger false automations if left unmonitored.",
+        "acted_on_at": null
+      },
+      {
         "id": 7981,
         "timestamp": "2026-07-19T12:12:12+00:00",
         "insight_type": "correlation",
@@ -3741,14 +3749,6 @@
         "severity": "medium",
         "summary": "The persistent 11-13 device count paired with zero camera motion or pet activity for four hours on a Saturday morning indicates the presence system is likely counting stationary IoT devices rather than actual people, or the house is unoccupied with devices left connected. This false presence signal may be causing unnecessary automation triggers and should be treated as an unoccupied state until motion confirms occupancy.",
         "acted_on_at": null
-      },
-      {
-        "id": 7972,
-        "timestamp": "2026-07-18T16:39:15+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent connection of 11-12 devices combined with zero camera motion or pet activity for four hours on a Saturday morning strongly suggests the presence sensors are stale or the household is unoccupied, which could cause automated routines to misfire or leave the home unsecured.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-19T15:13:30.390145+00:00"
+      "last_updated": "2026-07-19T15:16:32.487235+00:00"
     }
   },
   "pge": {
