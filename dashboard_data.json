@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19 19:30:46",
+  "generated_at": "2026-07-19 19:35:53",
   "as_of": "2026-07-19",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166403,
+        "timestamp": "2026-07-20T02:34:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166402,
+        "timestamp": "2026-07-20T02:33:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166401,
+        "timestamp": "2026-07-20T02:30:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166400,
         "timestamp": "2026-07-20T02:28:04+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166203,
-        "timestamp": "2026-07-18T19:15:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166202,
-        "timestamp": "2026-07-18T19:09:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166201,
-        "timestamp": "2026-07-18T19:08:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7984,
+        "timestamp": "2026-07-20T02:29:06+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "Sustained high device presence (18-20) over the last hour contrasts with zero camera motion logs, suggesting cameras may be offline, motion detection is disabled, or presence data is skewed by a network anomaly. Verifying camera status is recommended to ensure monitoring integrity.",
+        "acted_on_at": null
+      },
       {
         "id": 7983,
         "timestamp": "2026-07-20T00:26:22+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The stable 11-13 device count paired with zero camera and pet motion indicates the household is likely hosting a large group gathered in a single camera-blind area for a stationary activity, rather than a network anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 7974,
-        "timestamp": "2026-07-18T18:43:25+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent connection of 11-13 mobile devices combined with zero camera motion or pet activity for four hours strongly indicates a sedentary, contained gathering (like a movie or gaming session) rather than normal daily activity. This matters because it explains the lack of motion alerts while confirming the house is occupied, though prolonged stillness from active dogs warrants a quick wellness check if it continues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-20T02:29:04.930639+00:00"
+      "last_updated": "2026-07-20T02:35:08.324859+00:00"
     }
   },
   "pge": {
