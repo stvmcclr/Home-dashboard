@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19 17:27:41",
+  "generated_at": "2026-07-19 17:32:49",
   "as_of": "2026-07-19",
   "projects": [
     {
@@ -1215,6 +1215,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166376,
+        "timestamp": "2026-07-20T00:29:36+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166375,
+        "timestamp": "2026-07-20T00:26:35+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166374,
         "timestamp": "2026-07-20T00:18:33+00:00",
@@ -3392,31 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166176,
-        "timestamp": "2026-07-18T14:01:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "11 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"11\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166175,
-        "timestamp": "2026-07-18T13:55:21+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7983,
+        "timestamp": "2026-07-20T00:26:22+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The connected device count surged from 12 to 20 between 16:24 and 16:29, indicating a rapid arrival of guests for a Sunday gathering. This sustained high presence count suggests the home is now hosting a social event, which may warrant proactive adjustments to climate, lighting, or security settings.",
+        "acted_on_at": null
+      },
       {
         "id": 7982,
         "timestamp": "2026-07-19T15:16:27+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "medium",
         "summary": "The persistent connection of 11-13 mobile devices combined with zero camera motion or pet activity for four hours strongly indicates a sedentary, contained gathering (like a movie or gaming session) rather than normal daily activity. This matters because it explains the lack of motion alerts while confirming the house is occupied, though prolonged stillness from active dogs warrants a quick wellness check if it continues.",
         "acted_on_at": null
-      },
-      {
-        "id": 7973,
-        "timestamp": "2026-07-18T17:41:58+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent 11-13 device count paired with zero camera motion or pet activity for four hours on a Saturday morning indicates the presence system is likely counting stationary IoT devices rather than actual people, or the house is unoccupied with devices left connected. This false presence signal may be causing unnecessary automation triggers and should be treated as an unoccupied state until motion confirms occupancy.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-20T00:24:55.128831+00:00"
+      "last_updated": "2026-07-20T00:30:58.114602+00:00"
     }
   },
   "pge": {
