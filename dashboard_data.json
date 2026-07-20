@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20 08:51:02",
+  "generated_at": "2026-07-20 08:56:12",
   "as_of": "2026-07-20",
   "projects": [
     {
@@ -3587,6 +3587,14 @@
     ],
     "insights": [
       {
+        "id": 7991,
+        "timestamp": "2026-07-20T15:53:01+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The presence count dropping from ~20 to 17 at 08:36, combined with the Monday morning timeframe and lack of camera activity, indicates the family is likely departing for school and work. This confirms a routine state change useful for triggering departure automations.",
+        "acted_on_at": null
+      },
+      {
         "id": 7990,
         "timestamp": "2026-07-20T08:44:43+00:00",
         "insight_type": "correlation",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The persistent oscillation between 11\u201313 devices combined with zero camera activity during typical sleep hours (4\u20136 AM) strongly indicates presence-tracking drift (likely Bluetooth/WiFi polling artifacts) rather than actual household movement, suggesting the system may be overcounting and could trigger false automations if left unmonitored.",
         "acted_on_at": null
-      },
-      {
-        "id": 7981,
-        "timestamp": "2026-07-19T12:12:12+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent oscillation between 11 and 12 active mobile devices at 5 AM on a Sunday, combined with zero camera motion, strongly suggests a network glitch or a single device stuck in a reconnection loop rather than normal household activity. This warrants a quick network restart or checking for a rogue device to prevent battery drain or connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-20T15:48:52.631739+00:00"
+      "last_updated": "2026-07-20T15:54:59.662019+00:00"
     }
   },
   "pge": {
