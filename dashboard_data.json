@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20 01:45:04",
+  "generated_at": "2026-07-20 01:50:12",
   "as_of": "2026-07-20",
   "projects": [
     {
@@ -3503,6 +3503,14 @@
     ],
     "insights": [
       {
+        "id": 7990,
+        "timestamp": "2026-07-20T08:44:43+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The consistent 18\u201319 device count paired with zero camera motion and late-night timing strongly indicates stationary smart home devices (routers, hubs, or tablets) are being miscounted as mobile phones, rather than actual occupancy or guests. This suggests a network tracking configuration issue rather than a security or presence event.",
+        "acted_on_at": null
+      },
+      {
         "id": 7989,
         "timestamp": "2026-07-20T07:42:50+00:00",
         "insight_type": "correlation",
@@ -3573,14 +3581,6 @@
         "severity": "low",
         "summary": "The persistent oscillation between 11 and 12 active mobile devices at 5 AM on a Sunday, combined with zero camera motion, strongly suggests a network glitch or a single device stuck in a reconnection loop rather than normal household activity. This warrants a quick network restart or checking for a rogue device to prevent battery drain or connectivity issues.",
         "acted_on_at": null
-      },
-      {
-        "id": 7980,
-        "timestamp": "2026-07-19T09:08:10+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The repeated oscillation between 12 and 13 connected devices from 00:21 to 01:59, with no corresponding camera or activity signals, indicates a single device or network interface is experiencing intermittent connectivity flaps during the night. This likely points to a device failing to enter deep sleep or a minor network instability, which could cause unnecessary battery drain or future connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-20T08:44:42.78221+00:00"
+      "last_updated": "2026-07-20T08:47:45.007726+00:00"
     }
   },
   "pge": {
