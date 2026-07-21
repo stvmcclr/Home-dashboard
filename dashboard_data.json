@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21 10:41:26",
+  "generated_at": "2026-07-21 10:46:35",
   "as_of": "2026-07-21",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166693,
+        "timestamp": "2026-07-21T17:43:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166692,
         "timestamp": "2026-07-21T17:28:25+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166493,
-        "timestamp": "2026-07-20T18:23:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8000,
+        "timestamp": "2026-07-21T17:40:46+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sharp device drop at 08:30 followed by a stable 11-13 count and zero camera motion confirms the children have left for school, leaving the adults home quietly indoors. This coherent pattern aligns with a normal Tuesday morning routine.",
+        "acted_on_at": null
+      },
       {
         "id": 7999,
         "timestamp": "2026-07-21T16:38:34+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The presence count dropping from ~20 to 17 at 08:36, combined with the Monday morning timeframe and lack of camera activity, indicates the family is likely departing for school and work. This confirms a routine state change useful for triggering departure automations.",
         "acted_on_at": null
-      },
-      {
-        "id": 7990,
-        "timestamp": "2026-07-20T08:44:43+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent 18\u201319 device count paired with zero camera motion and late-night timing strongly indicates stationary smart home devices (routers, hubs, or tablets) are being miscounted as mobile phones, rather than actual occupancy or guests. This suggests a network tracking configuration issue rather than a security or presence event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-21T17:39:17.675186+00:00"
+      "last_updated": "2026-07-21T17:45:20.909468+00:00"
     }
   },
   "pge": {
