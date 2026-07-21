@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21 08:38:06",
+  "generated_at": "2026-07-21 08:43:14",
   "as_of": "2026-07-21",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166675,
+        "timestamp": "2026-07-21T15:35:58+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "10 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"10\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166674,
         "timestamp": "2026-07-21T15:34:58+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166475,
-        "timestamp": "2026-07-20T15:07:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 7998,
+        "timestamp": "2026-07-21T15:36:36+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sharp drop in connected mobile devices from 17 to 11 between 08:28 and 08:34 aligns with the typical Tuesday morning school departure window, indicating Miller and Penelope have likely left the house.",
+        "acted_on_at": null
+      },
       {
         "id": 7997,
         "timestamp": "2026-07-21T08:25:30+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "medium",
         "summary": "The sustained 18\u201319 device count with zero camera motion past midnight, combined with Roxanne\u2019s confirmed sleep cycle, strongly suggests either a large group of guests who have settled down quietly or a persistent IoT device pairing anomaly; the home is currently inactive but occupied beyond the core family.",
         "acted_on_at": null
-      },
-      {
-        "id": 7988,
-        "timestamp": "2026-07-20T06:41:17+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained detection of 17\u201320 mobile devices late at night, significantly exceeding the household size of six, paired with zero camera motion, strongly indicates either an unannounced gathering with guests staying in rooms or a persistent presence detection anomaly. Verifying this will confirm whether the home is secure or if sensor calibration is needed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-21T15:35:11.502614+00:00"
+      "last_updated": "2026-07-21T15:41:14.737381+00:00"
     }
   },
   "pge": {
