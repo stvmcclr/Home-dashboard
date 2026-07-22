@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21 17:47:29",
+  "generated_at": "2026-07-21 17:52:38",
   "as_of": "2026-07-21",
   "projects": [
     {
@@ -1215,6 +1215,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166753,
+        "timestamp": "2026-07-22T00:49:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166752,
+        "timestamp": "2026-07-22T00:48:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166751,
+        "timestamp": "2026-07-22T00:47:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166750,
+        "timestamp": "2026-07-22T00:46:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166749,
         "timestamp": "2026-07-22T00:45:08+00:00",
@@ -3370,53 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166553,
-        "timestamp": "2026-07-20T22:49:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166552,
-        "timestamp": "2026-07-20T22:48:58+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166551,
-        "timestamp": "2026-07-20T22:38:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166550,
-        "timestamp": "2026-07-20T22:34:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8001,
+        "timestamp": "2026-07-22T00:51:04+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The connected device count jumped from 11 to 16 between 17:34 and 17:35, strongly suggesting multiple guests or additional family members have arrived. This aligns with the late afternoon timeframe and is worth a quick confirmation to ensure it's expected.",
+        "acted_on_at": null
+      },
       {
         "id": 8000,
         "timestamp": "2026-07-21T17:40:46+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "low",
         "summary": "The stable presence count (17-19) combined with zero camera activity on a Monday morning strongly suggests the family is home all day (WFH, sick, or holiday) rather than following a typical school/work departure pattern. This indicates a normal, quiet household routine with no security concerns.",
         "acted_on_at": null
-      },
-      {
-        "id": 7991,
-        "timestamp": "2026-07-20T15:53:01+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence count dropping from ~20 to 17 at 08:36, combined with the Monday morning timeframe and lack of camera activity, indicates the family is likely departing for school and work. This confirms a routine state change useful for triggering departure automations.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-22T00:46:04.06498+00:00"
+      "last_updated": "2026-07-22T00:52:07.172738+00:00"
     }
   },
   "pge": {
