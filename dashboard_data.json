@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23 15:05:42",
+  "generated_at": "2026-07-23 15:10:50",
   "as_of": "2026-07-23",
   "projects": [
     {
@@ -1552,6 +1552,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167080,
+        "timestamp": "2026-07-23T22:08:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167079,
         "timestamp": "2026-07-23T21:55:49+00:00",
@@ -3740,20 +3751,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166880,
-        "timestamp": "2026-07-22T17:42:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8016,
+        "timestamp": "2026-07-23T22:06:54+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The combination of a sustained 13-14 device count with zero camera or audio activity on a weekday afternoon indicates UniFi presence detection is likely counting stationary IoT devices (routers, smart TVs, consoles) as mobile devices rather than actual people, explaining the absence of expected human activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8015,
         "timestamp": "2026-07-23T20:59:51+00:00",
@@ -3825,14 +3833,6 @@
         "severity": "low",
         "summary": "The sustained high mobile device count (16\u201319) at 11:35 PM, paired with Roxanne\u2019s short sleep, indicates the household is likely still awake or active late into the night. This late activity is probably contributing to her fatigue and suggests a need for a quiet wind-down routine to protect morning schedules.",
         "acted_on_at": null
-      },
-      {
-        "id": 8006,
-        "timestamp": "2026-07-23T06:30:32+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Roxanne slept only 3.84h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3850,7 +3850,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-23T22:04:28.208585+00:00"
+      "last_updated": "2026-07-23T22:10:31.735329+00:00"
     }
   },
   "pge": {
