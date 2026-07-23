@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23 01:40:17",
+  "generated_at": "2026-07-23 01:45:24",
   "as_of": "2026-07-23",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166989,
+        "timestamp": "2026-07-23T08:39:43+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 166988,
         "timestamp": "2026-07-23T08:37:43+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166789,
-        "timestamp": "2026-07-22T03:01:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8009,
+        "timestamp": "2026-07-23T08:42:30+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained high device count (18\u201319) combined with zero camera activity and Roxanne\u2019s short sleep suggests the household is likely still awake in a low-activity state (e.g., family/kids with devices or guests) rather than asleep, which may be contributing to Roxanne\u2019s fragmented rest.",
+        "acted_on_at": null
+      },
       {
         "id": 8008,
         "timestamp": "2026-07-23T07:40:41+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "low",
         "summary": "The sharp device drop at 08:30 followed by a stable 11-13 count and zero camera motion confirms the children have left for school, leaving the adults home quietly indoors. This coherent pattern aligns with a normal Tuesday morning routine.",
         "acted_on_at": null
-      },
-      {
-        "id": 7999,
-        "timestamp": "2026-07-21T16:38:34+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The stable presence count of 10-14 devices over the last hour, paired with zero camera activity, confirms the household is comfortably indoors and settled. This pattern aligns with typical multi-device family usage and indicates a normal, relaxed Tuesday morning routine.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3598,7 +3598,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-23T08:39:14.25018+00:00"
+      "last_updated": "2026-07-23T08:45:17.550847+00:00"
     }
   },
   "pge": {
