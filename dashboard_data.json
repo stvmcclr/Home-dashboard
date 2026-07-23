@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23 08:51:14",
+  "generated_at": "2026-07-23 08:56:22",
   "as_of": "2026-07-23",
   "projects": [
     {
@@ -1412,6 +1412,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167039,
+        "timestamp": "2026-07-23T15:54:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "12 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167038,
         "timestamp": "2026-07-23T15:46:23+00:00",
@@ -3600,20 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166839,
-        "timestamp": "2026-07-22T12:43:02+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8011,
+        "timestamp": "2026-07-23T15:52:03+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The steady decline in connected mobile devices from 20 to 12 over the last hour, paired with zero camera activity, confirms a routine Thursday morning departure for work and school. This pattern suggests no security incidents or unexpected gatherings, just a normal family dispersal.",
+        "acted_on_at": null
+      },
       {
         "id": 8010,
         "timestamp": "2026-07-23T09:44:19+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The sustained high device count (14\u201317 connected devices) over the last two hours, following an earlier jump from 11 to 16, strongly indicates an ongoing indoor gathering or multiple family members using personal devices in the evening. This confirms the home is actively occupied beyond the baseline and aligns with normal evening household activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 8001,
-        "timestamp": "2026-07-22T00:51:04+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The connected device count jumped from 11 to 16 between 17:34 and 17:35, strongly suggesting multiple guests or additional family members have arrived. This aligns with the late afternoon timeframe and is worth a quick confirmation to ensure it's expected.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-23T15:49:14.403937+00:00"
+      "last_updated": "2026-07-23T15:55:17.637729+00:00"
     }
   },
   "pge": {
