@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22 23:27:09",
+  "generated_at": "2026-07-22 23:32:15",
   "as_of": "2026-07-22",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 166979,
+        "timestamp": "2026-07-23T06:31:12+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 166978,
+        "timestamp": "2026-07-23T06:30:32+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 3.84h.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-a6010368",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
       {
         "id": 166977,
         "timestamp": "2026-07-23T06:22:10+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166779,
-        "timestamp": "2026-07-22T01:53:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166778,
-        "timestamp": "2026-07-22T01:49:23+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8006,
+        "timestamp": "2026-07-23T06:30:32+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 3.84h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 8005,
         "timestamp": "2026-07-23T04:34:52+00:00",
@@ -3545,19 +3553,13 @@
         "severity": "low",
         "summary": "Roxanne's Eight Sleep report shows an impossible 25.14h duration and an unusually high HRV (1344ms), indicating a sensor sync or calibration glitch rather than a real physiological event; a quick device check is recommended.",
         "acted_on_at": null
-      },
-      {
-        "id": 7996,
-        "timestamp": "2026-07-21T03:18:13+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained connection of 13\u201315 mobile devices on a Monday evening, paired with zero camera activity, strongly suggests a large unverified gathering (e.g., kids' sleepover or guests) where cameras are disabled, in blind spots, or motion detection is inactive. Verifying camera status and guest presence is recommended to rule out security gaps or network anomalies.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3570,7 +3572,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-23T06:25:58.532259+00:00"
+      "last_updated": "2026-07-23T06:32:01.803002+00:00"
     }
   },
   "pge": {
