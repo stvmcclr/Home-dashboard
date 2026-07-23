@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23 12:57:30",
+  "generated_at": "2026-07-23 13:02:37",
   "as_of": "2026-07-23",
   "projects": [
     {
@@ -1496,6 +1496,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167066,
+        "timestamp": "2026-07-23T19:58:22+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167065,
         "timestamp": "2026-07-23T19:55:20+00:00",
@@ -3684,20 +3695,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 166866,
-        "timestamp": "2026-07-22T15:54:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8014,
+        "timestamp": "2026-07-23T19:58:06+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 12\u201314 device count paired with zero camera motion or audio activity strongly indicates background IoT network pings rather than human presence, confirming the home is likely empty as expected for a Thursday midday. This matters because it clarifies the network data as a tracking artifact, preventing false occupancy or guest alerts.",
+        "acted_on_at": null
+      },
       {
         "id": 8013,
         "timestamp": "2026-07-23T18:56:16+00:00",
@@ -3769,14 +3777,6 @@
         "severity": "low",
         "summary": "The sustained high mobile device count (16-19) over the last hour confirms the earlier surge was a group of guests who are still present. Since no camera motion was triggered, the visitors are likely in camera-blind zones or relaxing, so Steve should verify guest network isolation and monitor for unusual load.",
         "acted_on_at": null
-      },
-      {
-        "id": 8004,
-        "timestamp": "2026-07-23T02:29:10+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "A rapid increase in connected devices from 13 to 18 between 19:09 and 19:25 strongly indicates a group of guests has just arrived, explaining the sudden network activity spike. This suggests an evening social gathering is underway.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3794,7 +3794,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-23T19:57:23.890775+00:00"
+      "last_updated": "2026-07-23T20:00:25.435471+00:00"
     }
   },
   "pge": {
