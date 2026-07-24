@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24 11:36:20",
+  "generated_at": "2026-07-24 11:41:27",
   "as_of": "2026-07-24",
   "projects": [
     {
@@ -1440,6 +1440,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167291,
+        "timestamp": "2026-07-24T18:37:48+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167290,
+        "timestamp": "2026-07-24T18:35:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167289,
+        "timestamp": "2026-07-24T18:34:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167288,
         "timestamp": "2026-07-24T18:30:46+00:00",
@@ -3606,42 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167091,
-        "timestamp": "2026-07-23T23:26:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167090,
-        "timestamp": "2026-07-23T23:13:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167089,
-        "timestamp": "2026-07-23T22:56:05+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "12 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"12\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8021,
+        "timestamp": "2026-07-24T18:37:22+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The mobile device count consistently shows 13-17 devices home, roughly double the expected household total, suggesting unreported guests or friends are present. Combined with zero camera activity, this indicates stationary visitors rather than normal movement, so you may want to verify if guests are expected or check for a network artifact.",
+        "acted_on_at": null
+      },
       {
         "id": 8020,
         "timestamp": "2026-07-24T04:17:15+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "medium",
         "summary": "The sustained 12-15 device count paired with zero camera activity on a Thursday morning strongly suggests the house is empty or cameras are offline, with the connected devices likely being background IoT/network hardware rather than active occupants. Confirming camera functionality and verifying the family's school/work departure is advised.",
         "acted_on_at": null
-      },
-      {
-        "id": 8011,
-        "timestamp": "2026-07-23T15:52:03+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected mobile devices from 20 to 12 over the last hour, paired with zero camera activity, confirms a routine Thursday morning departure for work and school. This pattern suggests no security incidents or unexpected gatherings, just a normal family dispersal.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-24T18:33:45.88062+00:00"
+      "last_updated": "2026-07-24T18:39:48.615553+00:00"
     }
   },
   "pge": {
