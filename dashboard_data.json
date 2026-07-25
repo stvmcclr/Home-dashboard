@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25 01:00:37",
+  "generated_at": "2026-07-25 01:05:45",
   "as_of": "2026-07-25",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167447,
+        "timestamp": "2026-07-25T08:03:57+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167446,
+        "timestamp": "2026-07-25T08:02:39+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 3.21h. HR 67bpm. HRV 143ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-03304c4b",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 167445,
         "timestamp": "2026-07-25T07:55:54+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167247,
-        "timestamp": "2026-07-24T16:37:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167246,
-        "timestamp": "2026-07-24T16:30:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8032,
+        "timestamp": "2026-07-25T08:02:39+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Steve slept only 3.21h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 8031,
         "timestamp": "2026-07-25T06:54:19+00:00",
@@ -3573,19 +3581,13 @@
         "severity": "low",
         "summary": "The steadily increasing device count (12 to 17) combined with zero camera or motion activity suggests untracked guests or network artifacts are present without triggering standard sensors; verify to rule out misconfigured tracking or unauthorized access.",
         "acted_on_at": null
-      },
-      {
-        "id": 8022,
-        "timestamp": "2026-07-24T20:40:36+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistently high device count (12-15) combined with zero camera activity and no other sensor triggers over the observed period strongly suggests the presence data is inflated by stationary IoT devices or network equipment rather than active household occupancy, indicating a false positive in presence detection.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Steve"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3598,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-25T07:59:01.26803+00:00"
+      "last_updated": "2026-07-25T08:05:04.464623+00:00"
     }
   },
   "pge": {
