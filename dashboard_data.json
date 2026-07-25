@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24 19:48:08",
+  "generated_at": "2026-07-24 19:53:15",
   "as_of": "2026-07-24",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167400,
+        "timestamp": "2026-07-25T02:52:42+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167399,
         "timestamp": "2026-07-25T02:44:40+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167200,
-        "timestamp": "2026-07-24T09:56:41+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8027,
+        "timestamp": "2026-07-25T02:48:38+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 13-16 connected devices paired with zero motion or camera activity strongly suggests the household is gathered in a single room for a Friday evening activity, or that devices are left unattended; this aligns with normal weekend routines but warrants a quick wellness check if the pattern persists past typical wind-down times.",
+        "acted_on_at": null
+      },
       {
         "id": 8026,
         "timestamp": "2026-07-25T01:47:22+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The stable 15\u201318 device count paired with zero camera/audio activity on a Thursday afternoon indicates a quiet, occupied home state, likely with the children home from school and adults working or resting indoors. The 17:08 presence spike to 18 devices aligns with a typical after-school/evening transition, confirming normal household activity rather than an anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 8017,
-        "timestamp": "2026-07-23T23:09:52+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Sustained 12\u201314 device count with zero camera/audio activity on a Thursday afternoon suggests the household is either in a prolonged quiet state (e.g., gaming or studying in a contained area) or devices are lingering on Wi-Fi after departure; a quick check is warranted to rule out unresponsiveness.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-25T02:47:05.524493+00:00"
+      "last_updated": "2026-07-25T02:53:09.852825+00:00"
     }
   },
   "pge": {
