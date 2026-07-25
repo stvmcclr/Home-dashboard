@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24 17:45:13",
+  "generated_at": "2026-07-24 17:50:20",
   "as_of": "2026-07-24",
   "projects": [
     {
@@ -1215,6 +1215,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167376,
+        "timestamp": "2026-07-25T00:44:12+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167375,
         "timestamp": "2026-07-25T00:39:11+00:00",
@@ -3403,20 +3414,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167176,
-        "timestamp": "2026-07-24T05:34:39+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8025,
+        "timestamp": "2026-07-25T00:46:06+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained device count of 14-19 paired with zero camera or motion activity strongly indicates a stationary indoor gathering of guests or parked vehicles with connected phones, rather than the expected household alone. This cross-signal pattern suggests a likely social visit that may require hosting attention or a quick verification to rule out unauthorized access.",
+        "acted_on_at": null
+      },
       {
         "id": 8024,
         "timestamp": "2026-07-24T22:43:38+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "low",
         "summary": "The combination of a sustained 13-14 device count with zero camera or audio activity on a weekday afternoon indicates UniFi presence detection is likely counting stationary IoT devices (routers, smart TVs, consoles) as mobile devices rather than actual people, explaining the absence of expected human activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 8015,
-        "timestamp": "2026-07-23T20:59:51+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 12\u201314 device count paired with zero camera or audio activity on a Thursday afternoon strongly indicates the house is unoccupied, with the high count likely caused by stationary smart home/IoT devices being misclassified as mobile phones. This confirms the family is away as expected, but highlights a tracking quirk that could trigger false occupancy alerts later.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-25T00:42:59.534013+00:00"
+      "last_updated": "2026-07-25T00:49:02.040367+00:00"
     }
   },
   "pge": {
