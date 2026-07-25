@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24 18:46:40",
+  "generated_at": "2026-07-24 18:51:48",
   "as_of": "2026-07-24",
   "projects": [
     {
@@ -3447,6 +3447,14 @@
     ],
     "insights": [
       {
+        "id": 8026,
+        "timestamp": "2026-07-25T01:47:22+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 14-19 mobile devices with zero corresponding camera, motion, or environmental activity strongly indicates a network tracking artifact (likely MAC randomization or guest network noise) rather than actual occupancy, which could lead to false automation triggers if unaddressed.",
+        "acted_on_at": null
+      },
+      {
         "id": 8025,
         "timestamp": "2026-07-25T00:46:06+00:00",
         "insight_type": "correlation",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "Sustained 12\u201314 device count with zero camera/audio activity on a Thursday afternoon suggests the household is either in a prolonged quiet state (e.g., gaming or studying in a contained area) or devices are lingering on Wi-Fi after departure; a quick check is warranted to rule out unresponsiveness.",
         "acted_on_at": null
-      },
-      {
-        "id": 8016,
-        "timestamp": "2026-07-23T22:06:54+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The combination of a sustained 13-14 device count with zero camera or audio activity on a weekday afternoon indicates UniFi presence detection is likely counting stationary IoT devices (routers, smart TVs, consoles) as mobile devices rather than actual people, explaining the absence of expected human activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-25T01:46:32.280807+00:00"
+      "last_updated": "2026-07-25T01:49:33.967514+00:00"
     }
   },
   "pge": {
