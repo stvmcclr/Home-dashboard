@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 01:04:44",
+  "generated_at": "2026-07-26 01:09:51",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1300,6 +1300,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167586,
+        "timestamp": "2026-07-26T08:06:46+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167585,
+        "timestamp": "2026-07-26T08:05:46+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167584,
+        "timestamp": "2026-07-26T08:03:40+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 3.92h. HR 78bpm. HRV 2973ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-ce5f59ec",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 167583,
         "timestamp": "2026-07-26T07:55:43+00:00",
@@ -3466,42 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167386,
-        "timestamp": "2026-07-25T01:32:23+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167385,
-        "timestamp": "2026-07-25T01:13:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167384,
-        "timestamp": "2026-07-25T01:12:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8037,
+        "timestamp": "2026-07-26T08:03:41+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Roxanne slept only 3.92h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 8036,
         "timestamp": "2026-07-26T07:35:38+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "medium",
         "summary": "The sustained count of 14-16 connected devices significantly exceeds the household's typical footprint, and combined with zero motion or camera activity over the past hour, strongly suggests either unmonitored guests occupying the home or a network/IoT device falsely reporting presence. A quick verification is recommended to rule out unauthorized access or a stuck smart device.",
         "acted_on_at": null
-      },
-      {
-        "id": 8027,
-        "timestamp": "2026-07-25T02:48:38+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 13-16 connected devices paired with zero motion or camera activity strongly suggests the household is gathered in a single room for a Friday evening activity, or that devices are left unattended; this aligns with normal weekend routines but warrants a quick wellness check if the pattern persists past typical wind-down times.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T08:02:20.70841+00:00"
+      "last_updated": "2026-07-26T08:08:23.806591+00:00"
     }
   },
   "pge": {
