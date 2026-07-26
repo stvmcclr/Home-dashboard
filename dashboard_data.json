@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 08:45:18",
+  "generated_at": "2026-07-26 08:50:25",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167622,
+        "timestamp": "2026-07-26T15:47:35+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167621,
         "timestamp": "2026-07-26T15:41:34+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167422,
-        "timestamp": "2026-07-25T05:17:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8043,
+        "timestamp": "2026-07-26T15:48:00+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 17\u201319 devices alongside zero camera motion for four hours on a weekend morning strongly indicates a camera system fault or configuration issue rather than the household being asleep. This matters because it leaves the home blind to security, pet activity, and daily routines, requiring immediate verification of camera feeds and motion detection settings.",
+        "acted_on_at": null
+      },
       {
         "id": 8042,
         "timestamp": "2026-07-26T14:46:26+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The sustained presence count of 14-20 devices on a Saturday evening, paired with zero camera activity, strongly suggests a social gathering or playdate is underway, though the lack of visual verification leaves the exact guest count unconfirmed. The stabilization around 15 devices aligns with the previously flagged gradual departure trend, indicating the event is winding down.",
         "acted_on_at": null
-      },
-      {
-        "id": 8033,
-        "timestamp": "2026-07-26T00:21:40+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected mobile devices from 21 to 15 over 72 minutes indicates a gradual departure, strongly suggesting the household or guests are leaving for the afternoon. This pattern is worth noting to proactively adjust security and climate settings before the home becomes unattended.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T15:45:15.328567+00:00"
+      "last_updated": "2026-07-26T15:48:16.854434+00:00"
     }
   },
   "pge": {
