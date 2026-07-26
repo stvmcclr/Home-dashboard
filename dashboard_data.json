@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 13:52:35",
+  "generated_at": "2026-07-26 13:57:43",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1580,6 +1580,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167675,
+        "timestamp": "2026-07-26T20:53:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167674,
         "timestamp": "2026-07-26T20:50:46+00:00",
@@ -3768,20 +3779,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167475,
-        "timestamp": "2026-07-25T14:33:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8046,
+        "timestamp": "2026-07-26T20:56:32+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 15\u201320 connected devices paired with zero camera motion over four hours confirms the entire household is away from home, likely out together for a Sunday outing. This validates an empty-home state, enabling automated energy/security optimizations and alerting if pets were unexpectedly left behind.",
+        "acted_on_at": null
+      },
       {
         "id": 8045,
         "timestamp": "2026-07-26T19:54:08+00:00",
@@ -3853,14 +3861,6 @@
         "severity": "medium",
         "summary": "Roxanne slept only 3.92h last night. May be a rough morning \u2014 heads up.",
         "acted_on_at": null
-      },
-      {
-        "id": 8036,
-        "timestamp": "2026-07-26T07:35:38+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady increase in connected mobile devices from 12 to 19 over the last 90 minutes, combined with zero camera activity, strongly indicates a late-night gathering of guests arriving indoors. This is notable given the late hour and typical family schedule.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3878,7 +3878,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T20:50:52.740965+00:00"
+      "last_updated": "2026-07-26T20:56:55.7543+00:00"
     }
   },
   "pge": {
