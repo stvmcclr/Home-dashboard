@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 03:38:16",
+  "generated_at": "2026-07-26 03:43:22",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167602,
+        "timestamp": "2026-07-26T10:40:22+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167601,
         "timestamp": "2026-07-26T10:10:15+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167402,
-        "timestamp": "2026-07-25T03:03:44+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8040,
+        "timestamp": "2026-07-26T10:41:25+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable 17\u201319 device count aligns with the expected baseline for a 4-person smart home, and combined with zero camera activity at 3:38 AM, confirms the late-night connectivity is normal background noise rather than an unusual event; the adults\u2019 short sleep likely reflects typical family/pet-related fragmentation, suggesting a gentle morning wellness check is warranted.",
+        "acted_on_at": null
+      },
       {
         "id": 8039,
         "timestamp": "2026-07-26T09:38:06+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "The sustained connection of 17\u201320 mobile devices with zero motion or camera activity at nearly midnight strongly indicates overnight guests or a gathering, as the count far exceeds your household's typical footprint. Everyone appears settled and resting, but you may want to confirm if you're expecting visitors or if extra devices were left connected.",
         "acted_on_at": null
-      },
-      {
-        "id": 8030,
-        "timestamp": "2026-07-25T05:53:14+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained count of 14-20 connected devices with zero motion or camera activity at 10:51 PM strongly suggests either unmonitored guests in a camera-blind zone or a network artifact (e.g., a stuck IoT device). Steve should verify if he has overnight visitors or check for a malfunctioning smart device.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3628,7 +3628,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T10:36:39.881147+00:00"
+      "last_updated": "2026-07-26T10:42:44.20899+00:00"
     }
   },
   "pge": {
