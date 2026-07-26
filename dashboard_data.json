@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 07:43:55",
+  "generated_at": "2026-07-26 07:49:02",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1412,6 +1412,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167619,
+        "timestamp": "2026-07-26T14:43:20+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167618,
+        "timestamp": "2026-07-26T14:42:20+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167617,
         "timestamp": "2026-07-26T14:41:20+00:00",
@@ -3589,31 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167419,
-        "timestamp": "2026-07-25T05:08:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167418,
-        "timestamp": "2026-07-25T05:05:13+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8042,
+        "timestamp": "2026-07-26T14:46:26+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The consistent presence of 17\u201319 devices combined with zero camera motion over a 4-hour weekend morning window strongly suggests the camera system is offline, motion detection is disabled, or experiencing a glitch, as it is highly unusual for two active dogs and two pre-teens to remain completely still this long.",
+        "acted_on_at": null
+      },
       {
         "id": 8041,
         "timestamp": "2026-07-26T11:42:59+00:00",
@@ -3685,14 +3693,6 @@
         "severity": "low",
         "summary": "The steady decline in connected mobile devices from 21 to 15 over 72 minutes indicates a gradual departure, strongly suggesting the household or guests are leaving for the afternoon. This pattern is worth noting to proactively adjust security and climate settings before the home becomes unattended.",
         "acted_on_at": null
-      },
-      {
-        "id": 8032,
-        "timestamp": "2026-07-25T08:02:39+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Steve slept only 3.21h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T14:41:44.379602+00:00"
+      "last_updated": "2026-07-26T14:47:47.070995+00:00"
     }
   },
   "pge": {
