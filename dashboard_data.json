@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 02:01:04",
+  "generated_at": "2026-07-26 02:06:10",
   "as_of": "2026-07-26",
   "projects": [
     {
@@ -1300,6 +1300,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167594,
+        "timestamp": "2026-07-26T09:04:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167593,
+        "timestamp": "2026-07-26T09:03:42+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 2.98h. HR 74bpm. HRV 74ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-24a57224",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 167592,
         "timestamp": "2026-07-26T08:39:54+00:00",
@@ -3477,31 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167394,
-        "timestamp": "2026-07-25T02:28:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167393,
-        "timestamp": "2026-07-25T02:25:35+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8038,
+        "timestamp": "2026-07-26T09:03:42+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Steve slept only 2.98h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 8037,
         "timestamp": "2026-07-26T08:03:41+00:00",
@@ -3573,20 +3581,13 @@
         "severity": "medium",
         "summary": "The sustained presence of 14-16 mobile devices paired with zero camera or motion activity strongly indicates a network presence detection glitch or unauthorized access rather than actual occupants, warranting a connectivity and security check.",
         "acted_on_at": null
-      },
-      {
-        "id": 8028,
-        "timestamp": "2026-07-25T03:49:50+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained count of 14-16 connected devices significantly exceeds the household's typical footprint, and combined with zero motion or camera activity over the past hour, strongly suggests either unmonitored guests occupying the home or a network/IoT device falsely reporting presence. A quick verification is recommended to rule out unauthorized access or a stuck smart device.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
       "who_is_home": [
-        "Roxanne"
+        "Roxanne",
+        "Steve"
       ],
       "active_rooms": [],
       "lights_on": [],
@@ -3600,7 +3601,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-26T08:59:51.128298+00:00"
+      "last_updated": "2026-07-26T09:05:53.952829+00:00"
     }
   },
   "pge": {
