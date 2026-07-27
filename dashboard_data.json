@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27 00:32:53",
+  "generated_at": "2026-07-27 00:38:01",
   "as_of": "2026-07-27",
   "projects": [
     {
@@ -1272,6 +1272,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167737,
+        "timestamp": "2026-07-27T07:34:43+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 11.76h. HR 66bpm. HRV 142ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-de40df49",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"sleeping\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 167736,
+        "timestamp": "2026-07-27T07:34:42+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 3.71h. HR 61bpm. HRV 151ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-5f494a12",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 167735,
         "timestamp": "2026-07-27T07:17:14+00:00",
@@ -3449,31 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167537,
-        "timestamp": "2026-07-26T00:10:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167536,
-        "timestamp": "2026-07-26T00:07:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8055,
+        "timestamp": "2026-07-27T07:34:42+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Steve slept only 3.71h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
       {
         "id": 8054,
         "timestamp": "2026-07-27T07:21:45+00:00",
@@ -3545,19 +3553,14 @@
         "severity": "low",
         "summary": "The sustained 15\u201320 connected devices paired with zero camera motion over four hours confirms the entire household is away from home, likely out together for a Sunday outing. This validates an empty-home state, enabling automated energy/security optimizations and alerting if pets were unexpectedly left behind.",
         "acted_on_at": null
-      },
-      {
-        "id": 8045,
-        "timestamp": "2026-07-26T19:54:08+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 15\u201319 connected devices paired with zero camera motion on a quiet Sunday strongly indicates the household is stationary indoors (likely napping or gaming) or experiencing routine background IoT device churn, rather than an empty home or security event. This confirms the existing flag and suggests no immediate action is needed.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne",
+        "Steve"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3570,7 +3573,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-27T07:32:18.549129+00:00"
+      "last_updated": "2026-07-27T07:35:20.035386+00:00"
     }
   },
   "pge": {
