@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27 14:48:34",
+  "generated_at": "2026-07-27 14:53:42",
   "as_of": "2026-07-27",
   "projects": [
     {
@@ -1468,6 +1468,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167801,
+        "timestamp": "2026-07-27T21:48:45+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167800,
         "timestamp": "2026-07-27T21:26:40+00:00",
@@ -3656,20 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167601,
-        "timestamp": "2026-07-26T10:10:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8061,
+        "timestamp": "2026-07-27T21:46:56+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The combination of a sustained high device count (15\u201319) with rapid fluctuations and zero camera activity during a weekday afternoon strongly suggests the devices are stationary (likely in a parked car or garage) or a network scanning artifact, rather than active household movement.",
+        "acted_on_at": null
+      },
       {
         "id": 8060,
         "timestamp": "2026-07-27T20:45:14+00:00",
@@ -3741,14 +3749,6 @@
         "severity": "medium",
         "summary": "The sustained 18\u201320 connected devices indicates a gathering, but the complete absence of camera motion and dog activity over four hours suggests guests are either in a camera-blind zone, the cameras are disabled, or it\u2019s a very quiet movie/game night. This warrants a quick check to ensure cameras are functioning and the household is comfortable.",
         "acted_on_at": null
-      },
-      {
-        "id": 8051,
-        "timestamp": "2026-07-27T03:14:40+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 15\u201320 connected devices paired with zero camera motion and no dog activity over a four-hour Sunday evening strongly suggests the house may be unoccupied or the Wi-Fi presence detection is malfunctioning, as active children and dogs would typically generate movement. This discrepancy warrants verification to rule out a forgotten departure or network glitch before assuming normal evening routines.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-27T21:45:45.590687+00:00"
+      "last_updated": "2026-07-27T21:51:53.377128+00:00"
     }
   },
   "pge": {
