@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28 06:21:42",
+  "generated_at": "2026-07-28 06:26:50",
   "as_of": "2026-07-28",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167902,
+        "timestamp": "2026-07-28T13:23:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167901,
         "timestamp": "2026-07-28T12:52:55+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167702,
-        "timestamp": "2026-07-26T23:25:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8067,
+        "timestamp": "2026-07-28T13:21:31+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The jump to 22 devices at 03:56 AM, combined with zero camera motion and stable presence throughout the early morning hours, confirms routine overnight network behavior rather than physical activity or an intrusion. The home remains secure and undisturbed.",
+        "acted_on_at": null
+      },
       {
         "id": 8066,
         "timestamp": "2026-07-28T11:18:11+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The late-night jump to 21 connected devices, paired with zero camera motion and no dog activity, confirms the spike is localized to stationary IoT or background syncs rather than household movement. Combined with Steve\u2019s 3.7h sleep versus Roxanne\u2019s 11.7h, this points to an isolated personal sleep disruption rather than a shared household event, ruling out security concerns but underscoring Steve\u2019s elevated fatigue risk for the morning.",
         "acted_on_at": null
-      },
-      {
-        "id": 8057,
-        "timestamp": "2026-07-27T10:28:43+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained high mobile device count at 3 AM, paired with zero camera/dog activity and Steve\u2019s short sleep, indicates stationary devices rather than active presence, with Steve likely awake using his phone while the rest of the household remains asleep.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-28T13:18:52.555852+00:00"
+      "last_updated": "2026-07-28T13:24:55.052909+00:00"
     }
   },
   "pge": {
