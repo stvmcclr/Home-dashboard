@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27 19:51:16",
+  "generated_at": "2026-07-27 19:56:23",
   "as_of": "2026-07-27",
   "projects": [
     {
@@ -1244,6 +1244,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167844,
+        "timestamp": "2026-07-28T02:52:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167843,
+        "timestamp": "2026-07-28T02:50:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 167842,
+        "timestamp": "2026-07-28T02:49:16+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167841,
         "timestamp": "2026-07-28T02:48:16+00:00",
@@ -3410,42 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167644,
-        "timestamp": "2026-07-26T18:12:10+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167643,
-        "timestamp": "2026-07-26T18:08:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167642,
-        "timestamp": "2026-07-26T18:06:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8063,
+        "timestamp": "2026-07-28T02:54:43+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The rapid presence count spike to 21 and drop to 18 within nine minutes (19:43\u201319:52) occurred with zero camera activity, suggesting either an unmonitored arrival (e.g., via garage or internal door) or temporary Wi-Fi presence detection instability.",
+        "acted_on_at": null
+      },
       {
         "id": 8062,
         "timestamp": "2026-07-28T01:53:10+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The sustained 18\u201320 connected devices combined with zero camera motion and no dog activity over four hours strongly suggests a quiet, stationary gathering or a network glitch miscounting IoT devices as mobile; this matters because it confirms the household is likely settled but warrants a quick verification to rule out a connectivity anomaly or unaccounted guests.",
         "acted_on_at": null
-      },
-      {
-        "id": 8053,
-        "timestamp": "2026-07-27T05:17:43+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 18\u201320 connected devices alongside zero camera motion and no dog activity for four hours strongly indicates a stationary, low-light gathering (likely a movie or gaming night) or Wi-Fi presence overcounting background IoT devices. This is likely benign but warrants a quick check to confirm cameras are active and the household is settled.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-28T02:49:09.005284+00:00"
+      "last_updated": "2026-07-28T02:55:15.004218+00:00"
     }
   },
   "pge": {
