@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27 18:49:31",
+  "generated_at": "2026-07-27 18:54:39",
   "as_of": "2026-07-27",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 167819,
+        "timestamp": "2026-07-28T01:49:42+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 167818,
         "timestamp": "2026-07-28T01:41:40+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167619,
-        "timestamp": "2026-07-26T14:43:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8062,
+        "timestamp": "2026-07-28T01:53:10+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The steady increase in connected devices (15 to 19) between 17:21 and 18:49 aligns with typical evening arrivals, but the complete lack of camera observations during this influx suggests the cameras may be offline or misconfigured, leaving the home unmonitored during peak activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8061,
         "timestamp": "2026-07-27T21:46:56+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The sustained 18\u201320 connected devices alongside zero camera motion and no dog activity for four hours strongly indicates a stationary, low-light gathering (likely a movie or gaming night) or Wi-Fi presence overcounting background IoT devices. This is likely benign but warrants a quick check to confirm cameras are active and the household is settled.",
         "acted_on_at": null
-      },
-      {
-        "id": 8052,
-        "timestamp": "2026-07-27T04:16:09+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 18\u201320 connected devices indicates a gathering, but the complete absence of camera motion and dog activity over four hours suggests guests are either in a camera-blind zone, the cameras are disabled, or it\u2019s a very quiet movie/game night. This warrants a quick check to ensure cameras are functioning and the household is comfortable.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-28T01:47:58.831205+00:00"
+      "last_updated": "2026-07-28T01:54:01.842922+00:00"
     }
   },
   "pge": {
