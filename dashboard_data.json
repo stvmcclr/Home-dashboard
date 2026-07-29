@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29 05:59:42",
+  "generated_at": "2026-07-29 06:04:50",
   "as_of": "2026-07-29",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168040,
+        "timestamp": "2026-07-29T12:58:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168039,
         "timestamp": "2026-07-29T12:28:39+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167840,
-        "timestamp": "2026-07-28T02:47:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8086,
+        "timestamp": "2026-07-29T13:01:38+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The device count jump to 24 at 05:21 AM, combined with zero camera activity and Steve\u2019s 2.39h sleep record, confirms he has been awake in bed using personal devices for nearly 40 minutes while the rest of the household remains asleep. This coherent pattern indicates a quiet pre-dawn state rather than an early departure, but his prolonged wakefulness suggests he may need a gentle morning routine prompt later.",
+        "acted_on_at": null
+      },
       {
         "id": 8085,
         "timestamp": "2026-07-29T10:58:01+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "medium",
         "summary": "The sustained high device count (15\u201318) combined with zero camera motion for four hours strongly indicates the family is either gathered in a single area outside camera coverage (e.g., backyard or garage) or the cameras are offline, as active children and dogs would normally trigger movement across multiple zones during Tuesday evening hours.",
         "acted_on_at": null
-      },
-      {
-        "id": 8076,
-        "timestamp": "2026-07-29T01:41:39+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The complete absence of camera motion over a four-hour window, paired with a sudden spike in connected devices (15 to 18) around 18:10, strongly indicates a camera system outage or network presence caching issue rather than normal family activity, leaving the home unmonitored during a high-traffic period.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-29T12:58:14.596449+00:00"
+      "last_updated": "2026-07-29T13:04:18.98546+00:00"
     }
   },
   "pge": {
