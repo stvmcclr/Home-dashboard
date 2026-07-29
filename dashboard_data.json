@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28 21:46:14",
+  "generated_at": "2026-07-28 21:51:21",
   "as_of": "2026-07-28",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168008,
+        "timestamp": "2026-07-29T04:46:47+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168007,
         "timestamp": "2026-07-29T04:26:41+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167808,
-        "timestamp": "2026-07-28T00:19:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8079,
+        "timestamp": "2026-07-29T04:47:21+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 20\u201322 connected devices with zero camera motion on a Tuesday evening strongly suggests a large gathering or sleepover where everyone is stationary in a camera-blind area, or the cameras are offline; given the dogs' typical activity, a quick verification of camera status and guest safety is recommended.",
+        "acted_on_at": null
+      },
       {
         "id": 8078,
         "timestamp": "2026-07-29T03:44:13+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The sustained 17\u201319 device count with zero camera triggers indicates presence detection is likely counting static IoT devices rather than human activity, or that the cameras are offline. Confirming camera health and adjusting presence thresholds will prevent false occupancy alerts and ensure security coverage remains intact.",
         "acted_on_at": null
-      },
-      {
-        "id": 8069,
-        "timestamp": "2026-07-28T18:27:22+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Consistently high mobile device presence (17-18) paired with zero camera activity over a two-hour window on a Tuesday morning indicates the household is indoors but largely stationary, suggesting a work-from-home or remote learning routine rather than an absence or security event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-29T04:45:03.503415+00:00"
+      "last_updated": "2026-07-29T04:51:06.437521+00:00"
     }
   },
   "pge": {
