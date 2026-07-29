@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28 22:47:46",
+  "generated_at": "2026-07-28 22:52:54",
   "as_of": "2026-07-28",
   "projects": [
     {
@@ -1272,6 +1272,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168017,
+        "timestamp": "2026-07-29T05:50:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 168016,
+        "timestamp": "2026-07-29T05:49:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 168015,
+        "timestamp": "2026-07-29T05:46:01+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168014,
         "timestamp": "2026-07-29T05:33:57+00:00",
@@ -3438,42 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167817,
-        "timestamp": "2026-07-28T01:40:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167816,
-        "timestamp": "2026-07-28T01:28:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167815,
-        "timestamp": "2026-07-28T01:22:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8080,
+        "timestamp": "2026-07-29T05:48:47+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 20\u201324 connected devices with zero camera motion over four hours indicates the household is likely gathered in a camera-blind area (e.g., basement or den) rather than being away or asleep; this is likely a normal evening routine, but worth noting for future sensor coverage adjustments.",
+        "acted_on_at": null
+      },
       {
         "id": 8079,
         "timestamp": "2026-07-29T04:47:21+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "medium",
         "summary": "The sustained 17\u201319 device count combined with zero camera activity throughout the Tuesday afternoon strongly indicates the house is empty or nearly empty, with the high count likely driven by stationary smart home hubs, IoT sensors, or devices left in vehicles rather than actual residents. This matters to prevent false automation triggers (like climate or lighting adjustments) and confirms presence detection needs calibration to distinguish human occupancy from network noise.",
         "acted_on_at": null
-      },
-      {
-        "id": 8070,
-        "timestamp": "2026-07-28T19:28:43+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 17\u201319 device count with zero camera triggers indicates presence detection is likely counting static IoT devices rather than human activity, or that the cameras are offline. Confirming camera health and adjusting presence thresholds will prevent false occupancy alerts and ensure security coverage remains intact.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-29T05:45:30.032875+00:00"
+      "last_updated": "2026-07-29T05:51:32.767298+00:00"
     }
   },
   "pge": {
