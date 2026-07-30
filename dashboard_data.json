@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29 18:33:25",
+  "generated_at": "2026-07-29 18:38:32",
   "as_of": "2026-07-29",
   "projects": [
     {
@@ -1244,6 +1244,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168133,
+        "timestamp": "2026-07-30T01:34:49+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 168132,
+        "timestamp": "2026-07-30T01:31:48+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168131,
         "timestamp": "2026-07-30T01:27:47+00:00",
@@ -3421,31 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167933,
-        "timestamp": "2026-07-28T18:24:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 167932,
-        "timestamp": "2026-07-28T17:54:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "18 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8092,
+        "timestamp": "2026-07-30T01:34:32+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (22\u201325) paired with zero camera motion or activity over the observed period points to either a network reporting glitch, many IoT devices connected, or residents confined to camera-blind zones. This recurring pattern aligns with earlier flagged jumps and warrants monitoring for connectivity instability or unreported guests.",
+        "acted_on_at": null
+      },
       {
         "id": 8091,
         "timestamp": "2026-07-30T00:29:31+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "Stable device presence and zero camera motion confirm the household remained stationary overnight, isolating Steve\u2019s severe sleep deficit and low HRV as an internal physiological stressor rather than an environmental one; anticipate significant morning fatigue and consider delaying high-focus tasks or adjusting his wake-up routine.",
         "acted_on_at": null
-      },
-      {
-        "id": 8082,
-        "timestamp": "2026-07-29T07:52:26+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stark contrast between Steve\u2019s 2.39h and Roxanne\u2019s 11.26h sleep, combined with sustained high device presence and zero camera motion, strongly indicates Steve is likely awake in bed right now while the rest of the household sleeps. This suggests acute personal insomnia or discomfort rather than a household event, warranting a quiet environmental check to support his return to sleep.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-30T01:31:39.305119+00:00"
+      "last_updated": "2026-07-30T01:37:42.098487+00:00"
     }
   },
   "pge": {
