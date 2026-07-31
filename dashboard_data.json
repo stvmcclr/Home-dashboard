@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31 07:38:11",
+  "generated_at": "2026-07-31 07:43:18",
   "as_of": "2026-07-31",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168293,
+        "timestamp": "2026-07-31T14:40:43+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168292,
         "timestamp": "2026-07-31T14:10:36+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168093,
-        "timestamp": "2026-07-29T21:59:57+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8109,
+        "timestamp": "2026-07-31T14:40:18+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The connected device count increased from 21 to 22 at 05:52 AM without any corresponding camera or activity signals, indicating a device just connected or woke up. While likely routine for a Friday morning, it warrants a quick network check to ensure no unexpected devices are active.",
+        "acted_on_at": null
+      },
       {
         "id": 8108,
         "timestamp": "2026-07-31T10:35:22+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "medium",
         "summary": "Sustained network presence of 20-22 devices combined with zero camera activity over four hours strongly suggests the camera system is offline, disabled, or malfunctioning rather than the house being empty, as the device count aligns with a full household. This matters because it leaves the home unmonitored during typical evening activity hours.",
         "acted_on_at": null
-      },
-      {
-        "id": 8099,
-        "timestamp": "2026-07-30T23:13:29+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 21-23 device network count paired with zero camera activity over 90 minutes indicates the presence metric is likely inflated by stationary IoT devices rather than actual people, suggesting the household is in a camera-blind zone or low-activity state. This matters because automations relying on presence data may be triggering incorrectly or masking real occupancy changes.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-07-31T14:36:02.979131+00:00"
+      "last_updated": "2026-07-31T14:42:05.618744+00:00"
     }
   },
   "pge": {
