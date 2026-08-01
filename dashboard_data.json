@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01 02:10:26",
+  "generated_at": "2026-08-01 02:15:33",
   "as_of": "2026-08-01",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168372,
+        "timestamp": "2026-08-01T09:11:15+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 2.09h. HR 66bpm. HRV 70ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-fb28fae6",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 168371,
         "timestamp": "2026-08-01T08:45:01+00:00",
@@ -3488,20 +3499,25 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168172,
-        "timestamp": "2026-07-30T11:04:07+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8125,
+        "timestamp": "2026-08-01T09:11:15+00:00",
+        "insight_type": "deviation",
+        "severity": "medium",
+        "summary": "Steve slept only 2.09h last night. May be a rough morning \u2014 heads up.",
+        "acted_on_at": null
+      },
+      {
+        "id": 8124,
+        "timestamp": "2026-08-01T09:10:30+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The device count stabilizing at 21-22 after midnight, paired with zero camera motion, confirms the household is fully settled and asleep; the absence of new connections or fluctuations rules out late-night activity or unauthorized access.",
+        "acted_on_at": null
+      },
       {
         "id": 8123,
         "timestamp": "2026-08-01T08:07:52+00:00",
@@ -3565,27 +3581,13 @@
         "severity": "medium",
         "summary": "The sustained ~20 device count paired with zero camera motion on a Friday evening strongly indicates the home is unoccupied or the cameras are offline, rather than a normal gathering, warranting a quick security and system check.",
         "acted_on_at": null
-      },
-      {
-        "id": 8115,
-        "timestamp": "2026-07-31T23:52:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 19-20 mobile devices significantly exceeds the household's 6 members, strongly indicating a large gathering of guests, while zero camera activity suggests they are stationary in unmonitored areas or motion alerts are disabled. Steve should verify if this is an expected event or a network anomaly, as the lack of visual confirmation leaves the home's interior status unverified.",
-        "acted_on_at": null
-      },
-      {
-        "id": 8114,
-        "timestamp": "2026-07-31T22:50:09+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 19-22 device count indicates a large gathering or network anomaly, but the complete lack of camera motion suggests either everyone is stationary indoors or the cameras are offline; Steve should verify camera functionality and confirm if a gathering is planned.",
-        "acted_on_at": null
       }
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Steve"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3598,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-01T09:09:44.881892+00:00"
+      "last_updated": "2026-08-01T09:12:46.775647+00:00"
     }
   },
   "pge": {
