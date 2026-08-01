@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01 03:11:51",
+  "generated_at": "2026-08-01 03:16:58",
   "as_of": "2026-08-01",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168375,
+        "timestamp": "2026-08-01T10:15:22+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168374,
         "timestamp": "2026-08-01T09:45:15+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168175,
-        "timestamp": "2026-07-30T12:04:21+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "27 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8126,
+        "timestamp": "2026-08-01T10:12:38+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable device count and zero camera motion confirm the household remains asleep, while Steve\u2019s normal resting heart rate and strong HRV despite only 2.09h of sleep indicate his body is still recovering well; this suggests a relaxed morning is sufficient rather than concern over acute sleep deprivation.",
+        "acted_on_at": null
+      },
       {
         "id": 8125,
         "timestamp": "2026-08-01T09:11:15+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "The sustained 19-20 device count paired with zero camera motion on a Friday evening strongly indicates a large group of guests is gathered inside, likely occupying camera-blind areas or remaining still. This explains the unusual network load and confirms the home is actively occupied despite no motion alerts.",
         "acted_on_at": null
-      },
-      {
-        "id": 8116,
-        "timestamp": "2026-08-01T00:53:31+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained ~20 device count paired with zero camera motion on a Friday evening strongly indicates the home is unoccupied or the cameras are offline, rather than a normal gathering, warranting a quick security and system check.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3628,7 +3628,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-01T10:10:13.7057+00:00"
+      "last_updated": "2026-08-01T10:16:16.856158+00:00"
     }
   },
   "pge": {
