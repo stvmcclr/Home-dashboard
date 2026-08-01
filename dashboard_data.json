@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01 04:13:17",
+  "generated_at": "2026-08-01 04:18:24",
   "as_of": "2026-08-01",
   "projects": [
     {
@@ -1356,6 +1356,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168377,
+        "timestamp": "2026-08-01T11:15:36+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168376,
         "timestamp": "2026-08-01T10:45:29+00:00",
@@ -3544,20 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168177,
-        "timestamp": "2026-07-30T12:31:27+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "27 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8127,
+        "timestamp": "2026-08-01T11:14:43+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable device count (21-22), zero camera motion, and Steve\u2019s continuous sleep tracking confirm the entire household is in a deep, uninterrupted sleep cycle. Steve\u2019s short sleep duration is offset by his stable HR/HRV and lack of wake indicators, suggesting he is resting effectively rather than experiencing fragmented sleep, so no immediate action is required.",
+        "acted_on_at": null
+      },
       {
         "id": 8126,
         "timestamp": "2026-08-01T10:12:38+00:00",
@@ -3629,14 +3637,6 @@
         "severity": "medium",
         "summary": "The sustained connection of 19-20 mobile devices far exceeds the household's capacity, and combined with zero camera motion over the last 3.5 hours, strongly suggests unauthorized Wi-Fi access or a network reporting anomaly rather than normal occupancy. Steve should verify his Wi-Fi network status and check for unknown devices to rule out unauthorized access.",
         "acted_on_at": null
-      },
-      {
-        "id": 8117,
-        "timestamp": "2026-08-01T01:55:30+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 19-20 device count paired with zero camera motion on a Friday evening strongly indicates a large group of guests is gathered inside, likely occupying camera-blind areas or remaining still. This explains the unusual network load and confirms the home is actively occupied despite no motion alerts.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-01T11:10:42.777236+00:00"
+      "last_updated": "2026-08-01T11:16:45.749669+00:00"
     }
   },
   "pge": {
