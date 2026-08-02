@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02 01:47:35",
+  "generated_at": "2026-08-02 01:52:42",
   "as_of": "2026-08-02",
   "projects": [
     {
@@ -1300,6 +1300,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168514,
+        "timestamp": "2026-08-02T08:50:56+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168513,
         "timestamp": "2026-08-02T08:26:50+00:00",
@@ -3488,20 +3499,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168314,
-        "timestamp": "2026-07-31T18:17:34+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8135,
+        "timestamp": "2026-08-02T08:49:38+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent 1-device fluctuation in mobile presence over two hours, paired with Steve\u2019s severely truncated sleep, indicates he is awake and moving between Wi-Fi zones rather than resting. This ongoing restlessness suggests his sleep disruption is active and may warrant a gentle check-in or environmental adjustment.",
+        "acted_on_at": null
+      },
       {
         "id": 8134,
         "timestamp": "2026-08-02T08:12:49+00:00",
@@ -3573,14 +3581,6 @@
         "severity": "low",
         "summary": "The stable device count and zero camera motion confirm the household remains asleep, while Steve\u2019s normal resting heart rate and strong HRV despite only 2.09h of sleep indicate his body is still recovering well; this suggests a relaxed morning is sufficient rather than concern over acute sleep deprivation.",
         "acted_on_at": null
-      },
-      {
-        "id": 8125,
-        "timestamp": "2026-08-01T09:11:15+00:00",
-        "insight_type": "deviation",
-        "severity": "medium",
-        "summary": "Steve slept only 2.09h last night. May be a rough morning \u2014 heads up.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3600,7 +3600,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-02T08:46:09.047383+00:00"
+      "last_updated": "2026-08-02T08:52:12.40814+00:00"
     }
   },
   "pge": {
