@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03 09:31:22",
+  "generated_at": "2026-08-03 09:36:29",
   "as_of": "2026-08-03",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168677,
+        "timestamp": "2026-08-03T16:30:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168676,
         "timestamp": "2026-08-03T16:28:27+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168477,
-        "timestamp": "2026-08-02T02:55:22+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8141,
+        "timestamp": "2026-08-03T16:36:16+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent count of 20-21 'mobile' devices alongside zero camera, lighting, or water activity on a Monday morning strongly suggests UniFi is miscounting IoT/smart home devices as mobile, or guests are present but inactive; this sensor artifact may be skewing occupancy-based automations.",
+        "acted_on_at": null
+      },
       {
         "id": 8140,
         "timestamp": "2026-08-03T15:34:43+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The sustained presence of 16\u201320 devices alongside zero camera motion over four hours strongly indicates the household is stationary in a camera-blind area rather than away, but warrants a quick camera health check given the typical activity levels of two kids and two high-energy dogs.",
         "acted_on_at": null
-      },
-      {
-        "id": 8131,
-        "timestamp": "2026-08-01T20:29:46+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady drop in connected devices (22 to 16) paired with zero camera motion over four hours strongly suggests the entire household is currently away from home, likely on a Saturday outing. The recent stabilization in device count indicates they are stationary nearby rather than in transit, confirming the house is safely empty for security and automation purposes.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-03T16:30:12.629729+00:00"
+      "last_updated": "2026-08-03T16:36:17.237809+00:00"
     }
   },
   "pge": {
