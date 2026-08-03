@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03 05:25:21",
+  "generated_at": "2026-08-03 05:30:28",
   "as_of": "2026-08-03",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168657,
+        "timestamp": "2026-08-03T12:27:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168656,
         "timestamp": "2026-08-03T11:57:21+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168457,
-        "timestamp": "2026-08-02T00:48:52+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8138,
+        "timestamp": "2026-08-03T12:27:03+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "A new mobile device connected to the network at 03:47 AM and remained active for over an hour without any corresponding camera, audio, or lighting activity, suggesting a device that was previously offline or a quiet presence (possibly a child) rather than active household movement. Worth a quick morning check to rule out forgotten devices or late-night activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8137,
         "timestamp": "2026-08-03T04:15:58+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "The gradual drop in connected devices from 22 to 19 over three hours, paired with zero camera motion, suggests devices are likely powering down or drifting out of Wi-Fi range rather than people leaving the house. This warrants a quick check to ensure cameras are active and not stuck in night mode or offline.",
         "acted_on_at": null
-      },
-      {
-        "id": 8128,
-        "timestamp": "2026-08-01T16:22:34+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence count increase to 22 at 06:41 aligns with the children waking up, while the drop to 21 at 09:04 suggests a departure; the absence of corresponding camera activity indicates they likely left via an unmonitored entry or simply disconnected from Wi-Fi, which is consistent with a normal Saturday morning routine.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-03T12:24:44.292891+00:00"
+      "last_updated": "2026-08-03T12:27:46.268873+00:00"
     }
   },
   "pge": {
