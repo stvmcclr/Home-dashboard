@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03 23:01:56",
+  "generated_at": "2026-08-03 23:07:04",
   "as_of": "2026-08-03",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168770,
+        "timestamp": "2026-08-04T06:01:38+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168769,
         "timestamp": "2026-08-04T05:31:31+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168570,
-        "timestamp": "2026-08-02T22:12:08+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8148,
+        "timestamp": "2026-08-04T06:02:02+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The number of connected devices unexpectedly jumped from 14 to 16 at 22:30, suggesting new arrivals or devices connecting late on a Monday night. This warrants attention as it breaks the stable pattern and lacks corresponding camera activity to verify the event.",
+        "acted_on_at": null
+      },
       {
         "id": 8147,
         "timestamp": "2026-08-04T02:55:34+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The stable presence count (20-22 devices) combined with zero camera or light activity confirms the household is asleep and the network is simply tracking background devices, with the 03:47 spike aligning with the already-flagged low-severity event.",
         "acted_on_at": null
-      },
-      {
-        "id": 8138,
-        "timestamp": "2026-08-03T12:27:03+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "A new mobile device connected to the network at 03:47 AM and remained active for over an hour without any corresponding camera, audio, or lighting activity, suggesting a device that was previously offline or a quiet presence (possibly a child) rather than active household movement. Worth a quick morning check to rule out forgotten devices or late-night activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-04T06:01:28.172328+00:00"
+      "last_updated": "2026-08-04T06:04:29.865932+00:00"
     }
   },
   "pge": {
