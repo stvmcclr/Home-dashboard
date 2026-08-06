@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05 20:10:42",
+  "generated_at": "2026-08-05 20:15:51",
   "as_of": "2026-08-05",
   "projects": [
     {
@@ -1244,6 +1244,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 168916,
+        "timestamp": "2026-08-06T03:13:27+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 168915,
+        "timestamp": "2026-08-06T03:11:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 168914,
         "timestamp": "2026-08-06T03:06:25+00:00",
@@ -3421,31 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168716,
-        "timestamp": "2026-08-03T18:58:03+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168715,
-        "timestamp": "2026-08-03T18:57:03+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8162,
+        "timestamp": "2026-08-06T03:11:45+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The consistent 14-15 device count paired with zero camera motion for four hours during typical active hours strongly suggests a camera system failure or presence sensor glitch, creating a critical blind spot for household monitoring and security.",
+        "acted_on_at": null
+      },
       {
         "id": 8161,
         "timestamp": "2026-08-06T02:10:15+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The steady decline in connected devices from 16 to 14 over the past hour, paired with zero camera activity, suggests a gradual departure from the home. This likely indicates a family member has left for work or school, though door or garage sensors would confirm.",
         "acted_on_at": null
-      },
-      {
-        "id": 8152,
-        "timestamp": "2026-08-04T16:16:35+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The transient drop to 15 devices at 08:38 followed by an immediate return to 16, combined with the stable 16-device count since 07:12, points to a routine morning transition (likely a family member heading to the garage or car for school drop-off) rather than a connectivity glitch or security concern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-06T03:08:24.620575+00:00"
+      "last_updated": "2026-08-06T03:14:30.491928+00:00"
     }
   },
   "pge": {
