@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07 03:54:14",
+  "generated_at": "2026-08-07 03:59:21",
   "as_of": "2026-08-07",
   "projects": [
     {
@@ -1440,6 +1440,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169156,
+        "timestamp": "2026-08-07T10:53:54+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169155,
         "timestamp": "2026-08-07T10:50:53+00:00",
@@ -3628,20 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168956,
-        "timestamp": "2026-08-06T17:31:50+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8167,
+        "timestamp": "2026-08-07T10:54:25+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The consistent 13\u201315 device count with frequent oscillations at 3:52 AM, paired with zero camera activity, strongly indicates background IoT device polling rather than human presence. The oscillations align with typical network sleep/wake cycles, confirming this is benign household electronics activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8166,
         "timestamp": "2026-08-07T07:47:17+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The connected device count increased from 15 to 16 at 09:29, indicating a new device joined the network. Combined with zero camera activity, this suggests a possible visitor, delivery, or returning family member that wasn't captured on video.",
         "acted_on_at": null
-      },
-      {
-        "id": 8157,
-        "timestamp": "2026-08-05T15:50:07+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistent presence of 15 mobile devices from 05:09 through 08:40 AM confirms the entire household is still at home, indicating a later-than-usual Wednesday morning departure for school and work.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-07T10:52:46.057739+00:00"
+      "last_updated": "2026-08-07T10:58:49.172363+00:00"
     }
   },
   "pge": {
