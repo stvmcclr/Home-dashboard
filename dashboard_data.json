@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06 21:39:42",
+  "generated_at": "2026-08-06 21:44:49",
   "as_of": "2026-08-06",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169083,
+        "timestamp": "2026-08-07T04:39:27+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169082,
         "timestamp": "2026-08-07T04:30:25+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168883,
-        "timestamp": "2026-08-05T18:11:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8165,
+        "timestamp": "2026-08-07T04:43:16+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The rapid oscillation between 13 and 14 connected devices over the past 75 minutes, paired with zero camera activity at night, indicates Wi-Fi roaming instability or IoT devices cycling connection states rather than actual household movement. This pattern suggests a network health issue that could cause false presence alerts, warranting a router or access point check.",
+        "acted_on_at": null
+      },
       {
         "id": 8164,
         "timestamp": "2026-08-06T06:15:47+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The steady rise in connected devices from 14 to 17 between 15:44 and 17:06 aligns with typical after-school arrival times, indicating the children have returned and are settling indoors. This stationary indoor occupancy explains the lack of camera motion triggers, but the complete absence of camera logs alongside high presence confirms the home is occupied while highlighting a potential camera health or privacy mode issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 8155,
-        "timestamp": "2026-08-04T23:29:29+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "Despite a stable presence of 14-16 connected devices and a recent spike to 16, the cameras have logged zero activity in the last 4 hours, suggesting a potential camera system outage, network issue, or privacy mode that is disabling motion detection while the house is actively occupied.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-07T04:37:19.832296+00:00"
+      "last_updated": "2026-08-07T04:43:23.375781+00:00"
     }
   },
   "pge": {
