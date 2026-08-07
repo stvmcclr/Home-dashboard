@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07 16:13:45",
+  "generated_at": "2026-08-07 16:18:52",
   "as_of": "2026-08-07",
   "projects": [
     {
@@ -1832,6 +1832,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169205,
+        "timestamp": "2026-08-07T23:15:50+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169204,
         "timestamp": "2026-08-07T22:53:45+00:00",
@@ -4020,20 +4031,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169005,
-        "timestamp": "2026-08-06T22:00:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8170,
+        "timestamp": "2026-08-07T23:15:45+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable presence count of 12 devices since 13:31, combined with zero camera activity, confirms a quiet, undisturbed afternoon with no unusual movement or visitors, consistent with normal Friday routines.",
+        "acted_on_at": null
+      },
       {
         "id": 8169,
         "timestamp": "2026-08-07T21:12:55+00:00",
@@ -4105,14 +4113,6 @@
         "severity": "medium",
         "summary": "The persistent 14-16 device count alongside zero camera motion or activity for four hours indicates the security cameras are likely offline, in privacy mode, or have motion detection disabled, which could mask security events or indicate a system fault.",
         "acted_on_at": null
-      },
-      {
-        "id": 8160,
-        "timestamp": "2026-08-05T22:59:29+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "Consistently high device count (14-16) over the last 4 hours with zero camera or activity triggers suggests either a highly connected household or potential phantom/ghost devices on the network; worth monitoring for stability.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4130,7 +4130,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-07T23:11:26.766732+00:00"
+      "last_updated": "2026-08-07T23:17:29.341853+00:00"
     }
   },
   "pge": {
