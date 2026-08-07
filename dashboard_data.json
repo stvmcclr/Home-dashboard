@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07 00:44:24",
+  "generated_at": "2026-08-07 00:49:31",
   "as_of": "2026-08-07",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169116,
+        "timestamp": "2026-08-07T07:45:11+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169115,
         "timestamp": "2026-08-07T07:40:10+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 168916,
-        "timestamp": "2026-08-06T03:13:27+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8166,
+        "timestamp": "2026-08-07T07:47:17+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (14\u201316) with frequent oscillations, combined with zero camera activity at this late Friday hour, strongly indicates Miller and Penelope are awake in their rooms actively using multiple personal devices, while the adults are likely asleep. This cross-signal pattern confirms a normal weekend wind-down rather than a network fault, though the constant polling may be draining device batteries.",
+        "acted_on_at": null
+      },
       {
         "id": 8165,
         "timestamp": "2026-08-07T04:43:16+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "The consistent presence of 15 mobile devices from 05:09 through 08:40 AM confirms the entire household is still at home, indicating a later-than-usual Wednesday morning departure for school and work.",
         "acted_on_at": null
-      },
-      {
-        "id": 8156,
-        "timestamp": "2026-08-05T00:36:05+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady rise in connected devices from 14 to 17 between 15:44 and 17:06 aligns with typical after-school arrival times, indicating the children have returned and are settling indoors. This stationary indoor occupancy explains the lack of camera motion triggers, but the complete absence of camera logs alongside high presence confirms the home is occupied while highlighting a potential camera health or privacy mode issue.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-07T07:42:02.829962+00:00"
+      "last_updated": "2026-08-07T07:48:07.661085+00:00"
     }
   },
   "pge": {
