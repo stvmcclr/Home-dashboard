@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08 03:25:42",
+  "generated_at": "2026-08-08 03:30:50",
   "as_of": "2026-08-08",
   "projects": [
     {
@@ -1524,6 +1524,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169237,
+        "timestamp": "2026-08-08T10:26:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "14 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169236,
         "timestamp": "2026-08-08T10:21:26+00:00",
@@ -3712,20 +3723,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169037,
-        "timestamp": "2026-08-07T00:44:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "14 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8173,
+        "timestamp": "2026-08-08T10:28:55+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "At 3:21 AM, the connected mobile device count suddenly increased from 13 to 14 without any corresponding camera activity, suggesting a new device has entered the home's network range. This could indicate a late-night guest, a family member returning, or a device reconnecting after sleep mode, and warrants monitoring for unusual activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8172,
         "timestamp": "2026-08-08T01:19:09+00:00",
@@ -3797,14 +3805,6 @@
         "severity": "low",
         "summary": "The stable 14-16 device count confirms full occupancy, while the prolonged zero camera motion strongly suggests the family is gathered in a single area or the cameras are in low-sensitivity mode; this is a benign evening pattern but worth verifying camera configuration if it persists.",
         "acted_on_at": null
-      },
-      {
-        "id": 8163,
-        "timestamp": "2026-08-06T05:14:00+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 14-16 device count confirms occupancy, but the complete lack of camera motion during typical evening hours strongly indicates a camera blind spot, system failure, or disabled feeds, leaving the home effectively blind to activity and potential safety or security events.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3822,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-08T10:23:30.742753+00:00"
+      "last_updated": "2026-08-08T10:29:33.855442+00:00"
     }
   },
   "pge": {
