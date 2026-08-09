@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08 17:57:40",
+  "generated_at": "2026-08-08 18:02:47",
   "as_of": "2026-08-08",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169282,
+        "timestamp": "2026-08-09T00:59:51+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169281,
         "timestamp": "2026-08-09T00:41:46+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169082,
-        "timestamp": "2026-08-07T04:30:25+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "13 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8178,
+        "timestamp": "2026-08-09T00:55:30+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "A sudden surge to 22 connected devices at 16:58, followed by a gradual decline, strongly indicates a large group of guests has arrived, which is highly unusual for the household size. Since no camera activity was recorded during this arrival window, verify that visitors are accounted for and that entry points remain secure.",
+        "acted_on_at": null
+      },
       {
         "id": 8177,
         "timestamp": "2026-08-08T23:54:14+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "low",
         "summary": "The connected device count has steadily declined from 14 to 12 over the last three hours, with a brief reconnect at 13:26, suggesting someone is gradually leaving the house or devices are being powered down and moved out of Wi-Fi range. Given the Friday afternoon timing, this likely indicates the family is packing up for a weekend outing or activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 8168,
-        "timestamp": "2026-08-07T15:59:20+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The stable presence of 13-14 mobile devices from 05:14 to 08:52 confirms the entire household is still at home, which is later than the typical Friday morning departure window and may indicate a late start or remote work day.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-09T00:55:13.982433+00:00"
+      "last_updated": "2026-08-09T01:01:17.205359+00:00"
     }
   },
   "pge": {
