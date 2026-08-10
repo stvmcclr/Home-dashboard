@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10 14:09:58",
+  "generated_at": "2026-08-10 14:15:07",
   "as_of": "2026-08-10",
   "projects": [
     {
@@ -1692,6 +1692,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169586,
+        "timestamp": "2026-08-10T21:10:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "20 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169585,
         "timestamp": "2026-08-10T20:59:28+00:00",
@@ -3880,20 +3891,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169386,
-        "timestamp": "2026-08-09T19:24:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8191,
+        "timestamp": "2026-08-10T21:08:56+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 20+ device count with rapid connection fluctuations and zero indoor camera activity on a weekday afternoon strongly suggests multiple vehicles with active Wi-Fi hotspots parked on the property rather than people inside. This explains the network load without triggering motion sensors and warrants a quick network security check.",
+        "acted_on_at": null
+      },
       {
         "id": 8190,
         "timestamp": "2026-08-10T20:00:21+00:00",
@@ -3965,14 +3973,6 @@
         "severity": "low",
         "summary": "At 01:29 AM, the connected mobile device count increased from 22 to 23 with no corresponding camera or audio activity, suggesting a single device (likely a phone or tablet) woke up or reconnected while the rest of the household remained asleep.",
         "acted_on_at": null
-      },
-      {
-        "id": 8181,
-        "timestamp": "2026-08-09T03:59:48+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 19\u201322 connected devices paired with zero camera motion alerts strongly indicates a settled indoor social gathering (likely guests) rather than an empty or unoccupied home, confirming normal Saturday evening activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3990,7 +3990,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-10T21:07:12.589007+00:00"
+      "last_updated": "2026-08-10T21:13:15.986051+00:00"
     }
   },
   "pge": {
