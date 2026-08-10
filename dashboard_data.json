@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10 16:13:08",
+  "generated_at": "2026-08-10 16:18:16",
   "as_of": "2026-08-10",
   "projects": [
     {
@@ -1776,6 +1776,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169595,
+        "timestamp": "2026-08-10T23:16:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169594,
         "timestamp": "2026-08-10T23:11:01+00:00",
@@ -3964,20 +3975,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169395,
-        "timestamp": "2026-08-09T20:07:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8193,
+        "timestamp": "2026-08-10T23:12:40+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 19-23 device count paired with zero camera activity on a Monday afternoon confirms the household is unoccupied, while the rapid device count fluctuations indicate recent departure or transit, warranting a quick security verification before they return.",
+        "acted_on_at": null
+      },
       {
         "id": 8192,
         "timestamp": "2026-08-10T22:10:04+00:00",
@@ -4049,14 +4057,6 @@
         "severity": "low",
         "summary": "Connected mobile devices gradually declined from 22 to 18 over two hours while cameras recorded no motion, suggesting the household may be packing up or leaving with devices going offline or moving out of range. This is likely normal weekend behavior, but worth noting to confirm departure status.",
         "acted_on_at": null
-      },
-      {
-        "id": 8183,
-        "timestamp": "2026-08-09T10:12:20+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The device count increased to 23 at 01:29 AM and has remained completely stable for over an hour with zero camera, light, or water activity, indicating a single device was brought indoors and left stationary\u2014likely a guest or late-arriving household member who went directly to a bedroom without triggering other sensors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4074,7 +4074,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-10T23:11:16.444273+00:00"
+      "last_updated": "2026-08-10T23:17:19.484502+00:00"
     }
   },
   "pge": {
