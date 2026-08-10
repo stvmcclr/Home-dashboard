@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10 00:23:18",
+  "generated_at": "2026-08-10 00:28:25",
   "as_of": "2026-08-10",
   "projects": [
     {
@@ -1328,6 +1328,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169488,
+        "timestamp": "2026-08-10T07:24:25+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 10.43h. HR 60bpm. HRV 195ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-f7840d7e",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 169487,
+        "timestamp": "2026-08-10T07:24:24+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 10.14h. HR 60bpm. HRV 172ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-f0fb228e",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 169486,
         "timestamp": "2026-08-10T07:07:08+00:00",
@@ -3505,28 +3527,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169288,
-        "timestamp": "2026-08-09T01:17:55+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169287,
-        "timestamp": "2026-08-09T01:09:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3613,7 +3613,10 @@
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne",
+        "Steve"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3626,7 +3629,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-10T07:20:47.602816+00:00"
+      "last_updated": "2026-08-10T07:26:50.315537+00:00"
     }
   },
   "pge": {
