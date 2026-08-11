@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-10 23:54:57",
-  "as_of": "2026-08-10",
+  "generated_at": "2026-08-11 00:00:05",
+  "as_of": "2026-08-11",
   "projects": [
     {
       "id": 1,
@@ -948,7 +948,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 13.5 \u00d7 29.5 \u00d7 1 inch (Merv 11 or 13 recommended). Two HVAC systems \u2014 this is downstairs unit.",
-      "days_until_due": -108,
+      "days_until_due": -109,
       "is_overdue": 1
     },
     {
@@ -961,7 +961,7 @@
       "inventory_count": 0,
       "inventory_unit": "filters",
       "notes": "Filter size: 16 \u00d7 24 \u00d7 1 inch. Upstairs HVAC unit.",
-      "days_until_due": -108,
+      "days_until_due": -109,
       "is_overdue": 1
     },
     {
@@ -974,7 +974,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "LG washer/dryer combo. Installed 2019. Expected lifespan ~10-13 yrs. Annual cleaning/maintenance check.",
-      "days_until_due": 144,
+      "days_until_due": 143,
       "is_overdue": 0
     },
     {
@@ -987,7 +987,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador refrigerator. New 2025. Check condenser coils annually. Warranty: typically 2yr full, 5yr sealed system.",
-      "days_until_due": 203,
+      "days_until_due": 202,
       "is_overdue": 0
     },
     {
@@ -1000,7 +1000,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Wolf range. New 2025. Annual burner and igniter check. Wolf warranty: 2yr parts & labor.",
-      "days_until_due": 203,
+      "days_until_due": 202,
       "is_overdue": 0
     },
     {
@@ -1013,7 +1013,7 @@
       "inventory_count": null,
       "inventory_unit": null,
       "notes": "Thermador dishwasher. New 2025. Clean filter every 6 months. Warranty: typically 2yr.",
-      "days_until_due": 203,
+      "days_until_due": 202,
       "is_overdue": 0
     }
   ],
@@ -1356,6 +1356,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169631,
+        "timestamp": "2026-08-11T06:55:45+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 9.36h. HR 52bpm. HRV 228ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-524828ce",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 169632,
+        "timestamp": "2026-08-11T06:55:45+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 9.64h. HR 60bpm. HRV 174ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-6edf3acc",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 169630,
         "timestamp": "2026-08-11T06:42:49+00:00",
@@ -3533,28 +3555,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169432,
-        "timestamp": "2026-08-09T23:35:15+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169431,
-        "timestamp": "2026-08-09T23:26:12+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3641,7 +3641,10 @@
     ],
     "state": {
       "id": "current",
-      "who_is_home": [],
+      "who_is_home": [
+        "Roxanne",
+        "Steve"
+      ],
       "active_rooms": [],
       "lights_on": [],
       "music_playing": [],
@@ -3654,7 +3657,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-11T06:54:30.087651+00:00"
+      "last_updated": "2026-08-11T06:57:31.863049+00:00"
     }
   },
   "pge": {
