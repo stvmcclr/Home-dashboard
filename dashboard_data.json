@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11 12:45:28",
+  "generated_at": "2026-08-11 12:50:36",
   "as_of": "2026-08-11",
   "projects": [
     {
@@ -1720,6 +1720,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169688,
+        "timestamp": "2026-08-11T19:46:58+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169687,
         "timestamp": "2026-08-11T19:16:51+00:00",
@@ -3908,20 +3919,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169488,
-        "timestamp": "2026-08-10T07:24:25+00:00",
-        "source": "eight_sleep:roxanne",
-        "source_type": "sleep",
-        "location": "main_bedroom",
-        "summary": "Roxanne slept 10.43h. HR 60bpm. HRV 195ms.",
-        "confidence": 0.95,
-        "model_version": "eight-sleep-f7840d7e",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 8205,
+        "timestamp": "2026-08-11T19:43:51+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent high device count (17\u201319) with zero camera motion on a Tuesday morning indicates a low-activity state, likely meaning the children's devices were left behind after school drop-off or the family is working from home with minimal movement. Verifying if Miller and Penelope's devices are still connected would confirm whether they are at school or home.",
+        "acted_on_at": null
+      },
       {
         "id": 8204,
         "timestamp": "2026-08-11T18:42:31+00:00",
@@ -3993,14 +4001,6 @@
         "severity": "medium",
         "summary": "The sustained 16-19 device count with zero camera motion since late afternoon strongly indicates connected devices are parked outside (likely in vehicles) rather than inside the home, suggesting the family may still be arriving or devices are stationary in the driveway/garage.",
         "acted_on_at": null
-      },
-      {
-        "id": 8195,
-        "timestamp": "2026-08-11T01:16:16+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained high device count paired with zero camera activity past typical Monday return hours confirms the house remains unoccupied, and the absence of any recent device count increase or motion suggests the family is still out or delayed.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4018,7 +4018,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-11T19:43:41.374522+00:00"
+      "last_updated": "2026-08-11T19:49:45.62523+00:00"
     }
   },
   "pge": {
