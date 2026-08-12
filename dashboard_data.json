@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12 07:14:04",
+  "generated_at": "2026-08-12 07:19:12",
   "as_of": "2026-08-12",
   "projects": [
     {
@@ -1496,6 +1496,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169786,
+        "timestamp": "2026-08-12T14:17:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169785,
         "timestamp": "2026-08-12T13:51:19+00:00",
@@ -3684,20 +3695,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169586,
-        "timestamp": "2026-08-10T21:10:32+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8219,
+        "timestamp": "2026-08-12T14:15:04+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The presence count has remained exactly 23 devices for over 3 hours with zero camera activity or signal changes, suggesting the occupancy tracker may be stuck on stale data. This matters because inaccurate presence data will cause lighting, climate, and security automations to behave incorrectly.",
+        "acted_on_at": null
+      },
       {
         "id": 8218,
         "timestamp": "2026-08-12T09:10:16+00:00",
@@ -3769,14 +3777,6 @@
         "severity": "medium",
         "summary": "The sustained high device count (16-22) paired with zero camera motion on a weekday afternoon confirms the home is unoccupied, with family devices left connected to the network rather than indicating a gathering or camera malfunction.",
         "acted_on_at": null
-      },
-      {
-        "id": 8209,
-        "timestamp": "2026-08-11T23:51:20+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The steady increase in connected devices (16 to 22) paired with zero camera motion over four hours strongly indicates a gathering in a camera-blind zone (e.g., backyard or garage) or a camera network outage; verify camera status and monitor for unrecorded activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3794,7 +3794,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-12T14:12:06.518068+00:00"
+      "last_updated": "2026-08-12T14:18:09.662936+00:00"
     }
   },
   "pge": {
