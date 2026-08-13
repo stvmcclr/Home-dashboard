@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 08:54:47",
+  "generated_at": "2026-08-13 08:59:54",
   "as_of": "2026-08-13",
   "projects": [
     {
@@ -1552,6 +1552,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169957,
+        "timestamp": "2026-08-13T15:57:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "16 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169956,
         "timestamp": "2026-08-13T15:42:33+00:00",
@@ -3740,20 +3751,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169757,
-        "timestamp": "2026-08-12T05:26:19+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8232,
+        "timestamp": "2026-08-13T15:55:29+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The steady decline in connected mobile devices (from ~24 to 16) combined with zero camera activity strongly indicates the family has already departed for school and work. This aligns with typical Thursday morning routines, confirming the house is likely empty and operating normally.",
+        "acted_on_at": null
+      },
       {
         "id": 8231,
         "timestamp": "2026-08-13T10:49:25+00:00",
@@ -3825,14 +3833,6 @@
         "severity": "low",
         "summary": "The stabilization at 16 devices aligns with the home's baseline smart home infrastructure, and combined with zero camera motion for four hours, definitively confirms the household is unoccupied. This coherent 'away' state matches a normal weekday departure, but verify that away-mode security and energy settings are active.",
         "acted_on_at": null
-      },
-      {
-        "id": 8222,
-        "timestamp": "2026-08-12T18:21:46+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stabilization at 16 connected devices combined with four hours of zero camera motion strongly suggests the house is effectively empty, with the device count likely reflecting stationary smart home infrastructure rather than active occupants. This matters because presence-dependent automations may be misfiring, and the complete lack of camera activity warrants a quick system health check to ensure feeds are actually recording.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3850,7 +3850,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-13T15:53:24.184648+00:00"
+      "last_updated": "2026-08-13T15:59:27.784409+00:00"
     }
   },
   "pge": {
