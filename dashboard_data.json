@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 00:41:57",
+  "generated_at": "2026-08-13 00:47:06",
   "as_of": "2026-08-13",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169893,
+        "timestamp": "2026-08-13T07:40:36+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169892,
         "timestamp": "2026-08-13T07:39:36+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169693,
-        "timestamp": "2026-08-11T20:50:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8230,
+        "timestamp": "2026-08-13T07:45:12+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 23-24 connected devices at 12:42 AM, paired with zero camera motion and the adults' extended sleep cycle, confirms a settled sleepover with guests stationary in common or guest areas. This warrants proactive management of guest room climate/lighting and perimeter security for the atypical occupancy.",
+        "acted_on_at": null
+      },
       {
         "id": 8229,
         "timestamp": "2026-08-13T06:42:39+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "medium",
         "summary": "The steady drop in connected devices from 24 to 19 between 08:22 and 08:28 strongly suggests a departure, but the complete absence of camera motion or activity signals contradicts a normal morning routine, indicating either a network glitch causing false drops or a quiet exit that warrants verification.",
         "acted_on_at": null
-      },
-      {
-        "id": 8220,
-        "timestamp": "2026-08-12T15:16:00+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistently high presence count (23-24 devices) combined with zero camera motion during early morning hours strongly indicates a stuck IoT device or network reporting glitch rather than actual occupancy, which could trigger false automations or mask real presence changes.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3629,7 +3629,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-13T07:39:55.033191+00:00"
+      "last_updated": "2026-08-13T07:46:00.184055+00:00"
     }
   },
   "pge": {
