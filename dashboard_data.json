@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12 17:35:52",
+  "generated_at": "2026-08-12 17:41:00",
   "as_of": "2026-08-12",
   "projects": [
     {
@@ -1215,6 +1215,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169831,
+        "timestamp": "2026-08-13T00:38:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 169830,
+        "timestamp": "2026-08-13T00:36:53+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169829,
         "timestamp": "2026-08-13T00:29:50+00:00",
@@ -3392,31 +3414,17 @@
         "confidence": 0.95,
         "model_version": "eight-sleep-524828ce",
         "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 169632,
-        "timestamp": "2026-08-11T06:55:45+00:00",
-        "source": "eight_sleep:roxanne",
-        "source_type": "sleep",
-        "location": "main_bedroom",
-        "summary": "Roxanne slept 9.64h. HR 60bpm. HRV 174ms.",
-        "confidence": 0.95,
-        "model_version": "eight-sleep-6edf3acc",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
-      },
-      {
-        "id": 169630,
-        "timestamp": "2026-08-11T06:42:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8225,
+        "timestamp": "2026-08-13T00:33:41+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "Network presence jumped from 16 to 22 devices in just five minutes (17:23\u201317:28), strongly indicating multiple family members or guests arriving home simultaneously. This rapid influx suggests the household is transitioning to full occupancy, which may warrant confirming visitor status or triggering evening routines.",
+        "acted_on_at": null
+      },
       {
         "id": 8224,
         "timestamp": "2026-08-12T20:24:39+00:00",
@@ -3488,14 +3496,6 @@
         "severity": "medium",
         "summary": "The sustained 22-24 connected devices paired with zero camera motion on a weekday night strongly indicates a large group of guests is present but stationary, likely gathered in a common area for a movie night or party. This explains the elevated device count without typical household movement, confirming a social gathering rather than a security or system anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 8215,
-        "timestamp": "2026-08-12T05:59:40+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 22-24 connected devices far exceeds the household's typical baseline, and combined with zero camera motion on a weekday evening, strongly indicates a small gathering or sleepover is taking place in a camera-blind area. This explains the anomaly but warrants a quick check to ensure it aligns with household plans.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3513,7 +3513,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-13T00:32:55.813409+00:00"
+      "last_updated": "2026-08-13T00:38:58.448925+00:00"
     }
   },
   "pge": {
