@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 03:46:26",
+  "generated_at": "2026-08-13 03:51:33",
   "as_of": "2026-08-13",
   "projects": [
     {
@@ -3615,6 +3615,14 @@
     ],
     "insights": [
       {
+        "id": 8231,
+        "timestamp": "2026-08-13T10:49:25+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent 23-24 device count throughout the night, combined with zero camera motion at 3:47 AM, strongly suggests UniFi presence detection is miscounting IoT/smart home devices as mobile phones rather than indicating unrecorded late-night activity; verifying network device classification is recommended.",
+        "acted_on_at": null
+      },
+      {
         "id": 8230,
         "timestamp": "2026-08-13T07:45:12+00:00",
         "insight_type": "correlation",
@@ -3685,14 +3693,6 @@
         "severity": "medium",
         "summary": "The stabilization at 16 connected devices combined with four hours of zero camera motion strongly suggests the house is effectively empty, with the device count likely reflecting stationary smart home infrastructure rather than active occupants. This matters because presence-dependent automations may be misfiring, and the complete lack of camera activity warrants a quick system health check to ensure feeds are actually recording.",
         "acted_on_at": null
-      },
-      {
-        "id": 8221,
-        "timestamp": "2026-08-12T16:17:27+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The steady drop in connected devices from 24 to 19 between 08:22 and 08:28 strongly suggests a departure, but the complete absence of camera motion or activity signals contradicts a normal morning routine, indicating either a network glitch causing false drops or a quiet exit that warrants verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3710,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-13T10:44:41.744286+00:00"
+      "last_updated": "2026-08-13T10:50:45.122044+00:00"
     }
   },
   "pge": {
