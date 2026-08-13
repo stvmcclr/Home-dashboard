@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12 21:37:22",
+  "generated_at": "2026-08-12 21:42:29",
   "as_of": "2026-08-12",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 169880,
+        "timestamp": "2026-08-13T04:40:51+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 169879,
         "timestamp": "2026-08-13T04:30:48+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169680,
-        "timestamp": "2026-08-11T17:49:30+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "17 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8227,
+        "timestamp": "2026-08-13T04:38:22+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The high device count combined with zero camera activity suggests guests are likely stationary indoors or IoT devices are skewing the count; verify the gathering is expected and check camera motion settings.",
+        "acted_on_at": null
+      },
       {
         "id": 8226,
         "timestamp": "2026-08-13T01:34:57+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The stable 22-24 device count combined with zero camera motion and confirmed deep sleep for both adults indicates the household is fully asleep and undisturbed; the elevated count is likely background IoT devices or charging electronics rather than active presence, confirming a normal nighttime state with no immediate security concerns.",
         "acted_on_at": null
-      },
-      {
-        "id": 8217,
-        "timestamp": "2026-08-12T08:08:53+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of confirmed adult sleep data, zero camera motion, and a sustained 22-24 device count at 1 AM indicates the household is fully asleep, but the unusually high network load points to smart home devices or IoT gadgets failing to enter sleep mode rather than human activity or a security breach.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-13T04:35:14.900902+00:00"
+      "last_updated": "2026-08-13T04:41:20.145413+00:00"
     }
   },
   "pge": {
