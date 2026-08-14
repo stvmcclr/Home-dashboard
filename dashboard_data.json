@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 11:46:47",
+  "generated_at": "2026-08-14 11:51:55",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -3867,6 +3867,14 @@
     ],
     "insights": [
       {
+        "id": 8249,
+        "timestamp": "2026-08-14T18:48:27+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The combination of a sustained ~21-23 mobile device count with zero camera activity over a 4-hour Friday morning strongly indicates the presence sensor is misclassifying IoT/smart home devices as mobile phones rather than tracking actual occupancy. This matters because it can corrupt occupancy analytics and trigger incorrect home automations.",
+        "acted_on_at": null
+      },
+      {
         "id": 8248,
         "timestamp": "2026-08-14T16:43:55+00:00",
         "insight_type": "correlation",
@@ -3937,14 +3945,6 @@
         "severity": "medium",
         "summary": "The sustained 20-22 device count paired with zero camera motion on a weekday evening strongly indicates a network presence detection anomaly (likely Wi-Fi scanning artifacts or gateway glitch) rather than actual occupancy, which could cause incorrect automations or mask real absence events.",
         "acted_on_at": null
-      },
-      {
-        "id": 8239,
-        "timestamp": "2026-08-14T01:19:27+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 20-22 device count paired with zero camera motion on a weekday afternoon strongly suggests unmonitored guests or a network registration anomaly, warranting a quick verification to ensure no unauthorized access or to confirm expected visitors.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3962,7 +3962,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-14T18:44:08.571561+00:00"
+      "last_updated": "2026-08-14T18:50:11.753497+00:00"
     }
   },
   "pge": {
