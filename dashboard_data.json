@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 08:41:54",
+  "generated_at": "2026-08-14 08:47:02",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -1580,6 +1580,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170096,
+        "timestamp": "2026-08-14T15:45:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "28 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"28\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170095,
         "timestamp": "2026-08-14T15:39:24+00:00",
@@ -3768,20 +3779,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169896,
-        "timestamp": "2026-08-13T08:12:44+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "24 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8247,
+        "timestamp": "2026-08-14T15:41:54+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The network's connected mobile device count jumped from 25 to 27 in the last two minutes, suggesting unexpected guests or a delivery may have just arrived, especially given the Friday morning timeframe and lack of corresponding camera activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8246,
         "timestamp": "2026-08-14T09:35:02+00:00",
@@ -3853,14 +3861,6 @@
         "severity": "medium",
         "summary": "The sustained 15\u201320 device count paired with zero camera motion over a four-hour weekday afternoon strongly indicates stationary connected devices (likely parked cars with Wi-Fi or phones left in a camera-blind zone) rather than active occupants, suggesting a low-activity gathering or parked vehicles rather than an empty house or security concern.",
         "acted_on_at": null
-      },
-      {
-        "id": 8237,
-        "timestamp": "2026-08-13T23:16:38+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The device count spike to 20 around 15:50, followed by a drop to 18 with zero camera motion, indicates a temporary after-school gathering or device influx that has since settled; this cross-signal pattern confirms the home is in a low-activity state despite the high device count.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3878,7 +3878,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-14T15:39:25.244461+00:00"
+      "last_updated": "2026-08-14T15:45:28.520631+00:00"
     }
   },
   "pge": {
