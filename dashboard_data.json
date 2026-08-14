@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 02:32:22",
+  "generated_at": "2026-08-14 02:37:29",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170074,
+        "timestamp": "2026-08-14T09:31:57+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "26 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170073,
         "timestamp": "2026-08-14T09:24:55+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169874,
-        "timestamp": "2026-08-13T03:57:41+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8246,
+        "timestamp": "2026-08-14T09:35:02+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The steady rise in connected devices (22\u219226) alongside zero camera motion and confirmed sleep metrics indicates a normal late-night settling pattern, with the 02:24 device addition likely being a routine phone check or IoT reconnect rather than an intrusion.",
+        "acted_on_at": null
+      },
       {
         "id": 8245,
         "timestamp": "2026-08-14T07:27:46+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The device count spike to 20 around 15:50, followed by a drop to 18 with zero camera motion, indicates a temporary after-school gathering or device influx that has since settled; this cross-signal pattern confirms the home is in a low-activity state despite the high device count.",
         "acted_on_at": null
-      },
-      {
-        "id": 8236,
-        "timestamp": "2026-08-13T22:13:39+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The persistent 15-18 device count paired with zero camera activity on a weekday afternoon strongly suggests the presence system is overcounting stationary IoT devices, or the cameras are offline. This warrants a quick diagnostic to ensure accurate occupancy tracking and security monitoring.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-14T09:30:10.575573+00:00"
+      "last_updated": "2026-08-14T09:36:13.496189+00:00"
     }
   },
   "pge": {
