@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 23:27:51",
+  "generated_at": "2026-08-13 23:32:59",
   "as_of": "2026-08-13",
   "projects": [
     {
@@ -1328,6 +1328,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170065,
+        "timestamp": "2026-08-14T06:31:14+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170064,
         "timestamp": "2026-08-14T06:05:07+00:00",
@@ -3516,20 +3527,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 169865,
-        "timestamp": "2026-08-13T03:15:30+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8244,
+        "timestamp": "2026-08-14T06:26:32+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 20\u201325 device count paired with zero camera motion at 11:25 PM strongly suggests either the cameras are offline or all occupants (including Miller\u2019s guests) have settled down for the night with motion detection disabled. This matters because it creates a monitoring blind spot that could mask late-night activity or security events.",
+        "acted_on_at": null
+      },
       {
         "id": 8243,
         "timestamp": "2026-08-14T05:25:01+00:00",
@@ -3601,14 +3609,6 @@
         "severity": "low",
         "summary": "The consistent 16-18 device count paired with zero camera activity on a weekday afternoon indicates the home is unoccupied, with connected devices being stationary (routers, charging hubs, etc.) rather than active household members. This confirms a typical school/work schedule and helps prevent false presence alerts.",
         "acted_on_at": null
-      },
-      {
-        "id": 8234,
-        "timestamp": "2026-08-13T19:07:30+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stable presence of 16-18 mobile devices combined with zero camera activity on a weekday mid-morning strongly indicates the camera system may be offline or malfunctioning, as active children and dogs would typically trigger motion alerts. Verify camera connectivity to ensure security monitoring remains active.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3626,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-14T06:25:30.403589+00:00"
+      "last_updated": "2026-08-14T06:31:33.204353+00:00"
     }
   },
   "pge": {
