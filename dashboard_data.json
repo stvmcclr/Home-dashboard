@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 20:04:25",
+  "generated_at": "2026-08-14 20:09:33",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -1272,6 +1272,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170209,
+        "timestamp": "2026-08-15T03:06:09+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170208,
         "timestamp": "2026-08-15T02:56:06+00:00",
@@ -3460,20 +3471,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170009,
-        "timestamp": "2026-08-14T01:04:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8255,
+        "timestamp": "2026-08-15T03:07:35+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained presence of 22-25 mobile devices combined with zero camera motion over the observed period strongly indicates a large indoor gathering where guests are settled, aligning with typical Friday evening social activity rather than a security concern.",
+        "acted_on_at": null
+      },
       {
         "id": 8254,
         "timestamp": "2026-08-15T01:59:35+00:00",
@@ -3545,14 +3553,6 @@
         "severity": "low",
         "summary": "The steady rise in connected devices (22\u219226) alongside zero camera motion and confirmed sleep metrics indicates a normal late-night settling pattern, with the 02:24 device addition likely being a routine phone check or IoT reconnect rather than an intrusion.",
         "acted_on_at": null
-      },
-      {
-        "id": 8245,
-        "timestamp": "2026-08-14T07:27:46+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 20\u201325 device count combined with zero camera motion and late-night timing indicates the family is settled in bedrooms or private rooms outside camera view, with the high count likely inflated by smart home IoT devices or personal electronics charging. This forms a coherent late-night routine pattern rather than a security concern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3570,7 +3570,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-15T03:03:31.45511+00:00"
+      "last_updated": "2026-08-15T03:09:34.137482+00:00"
     }
   },
   "pge": {
