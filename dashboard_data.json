@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15 12:39:20",
+  "generated_at": "2026-08-15 12:44:27",
   "as_of": "2026-08-15",
   "projects": [
     {
@@ -2393,6 +2393,17 @@
   "intelligence": {
     "observations": [
       {
+        "id": 170272,
+        "timestamp": "2026-08-15T19:40:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
+      {
         "id": 170271,
         "timestamp": "2026-08-15T19:30:04+00:00",
         "source": "unifi:presence",
@@ -4580,20 +4591,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170072,
-        "timestamp": "2026-08-14T09:01:49+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8263,
+        "timestamp": "2026-08-15T19:37:33+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The rebound to ~24 connected devices at 12:12 PM, combined with zero camera activity throughout the entire period, strongly indicates a camera system outage or misconfiguration rather than normal household movement, as a family with children and active dogs would typically trigger motion sensors. This leaves the home unmonitored despite apparent occupancy and warrants immediate verification.",
+        "acted_on_at": null
+      },
       {
         "id": 8262,
         "timestamp": "2026-08-15T18:29:35+00:00",
@@ -4665,14 +4673,6 @@
         "severity": "medium",
         "summary": "The combination of 20-25 connected devices with zero camera motion over four hours suggests the gathering is either in a camera-blind zone or attendees are largely stationary, which risks home automations incorrectly triggering away modes or leaving security gaps. Steve should verify the party's location to adjust automation zones or temporarily disable motion-dependent routines.",
         "acted_on_at": null
-      },
-      {
-        "id": 8253,
-        "timestamp": "2026-08-15T00:58:08+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 22-25 mobile devices paired with zero camera motion over four hours strongly indicates a large, stationary gathering occurring in a camera-blind zone or outdoors, which may warrant attention to security, noise, or energy management.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4690,7 +4690,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-15T19:36:22.17204+00:00"
+      "last_updated": "2026-08-15T19:42:24.559701+00:00"
     }
   },
   "pge": {
