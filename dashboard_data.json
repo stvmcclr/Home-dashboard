@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 22:07:27",
+  "generated_at": "2026-08-14 22:12:37",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -1384,6 +1384,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170216,
+        "timestamp": "2026-08-15T05:06:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170215,
         "timestamp": "2026-08-15T04:36:31+00:00",
@@ -3572,20 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170016,
-        "timestamp": "2026-08-14T01:25:58+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8257,
+        "timestamp": "2026-08-15T05:10:19+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 22\u201325 device count with zero camera motion indicates a stable group gathered in a camera-blind zone, likely keeping the space quiet to avoid detection. This matters because home automation may be incorrectly treating the house as empty, potentially disabling security monitoring or leaving climate/lighting systems in an inefficient state.",
+        "acted_on_at": null
+      },
       {
         "id": 8256,
         "timestamp": "2026-08-15T04:09:11+00:00",
@@ -3657,14 +3665,6 @@
         "severity": "low",
         "summary": "The sustained high and rapidly fluctuating device count (21\u201326) paired with zero camera activity indicates network polling artifacts or stationary IoT devices rather than active human presence. A routine network health check is recommended to prevent false presence triggers and optimize Wi-Fi performance.",
         "acted_on_at": null
-      },
-      {
-        "id": 8247,
-        "timestamp": "2026-08-14T15:41:54+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The network's connected mobile device count jumped from 25 to 27 in the last two minutes, suggesting unexpected guests or a delivery may have just arrived, especially given the Friday morning timeframe and lack of corresponding camera activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-15T05:04:34.477614+00:00"
+      "last_updated": "2026-08-15T05:10:37.493912+00:00"
     }
   },
   "pge": {
