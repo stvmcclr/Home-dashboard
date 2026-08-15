@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15 15:38:48",
+  "generated_at": "2026-08-15 15:43:56",
   "as_of": "2026-08-15",
   "projects": [
     {
@@ -2645,6 +2645,17 @@
   "intelligence": {
     "observations": [
       {
+        "id": 170308,
+        "timestamp": "2026-08-15T22:40:50+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
         "id": 170307,
         "timestamp": "2026-08-15T22:10:43+00:00",
         "source": "unifi:presence",
@@ -4832,20 +4843,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170108,
-        "timestamp": "2026-08-14T16:19:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8264,
+        "timestamp": "2026-08-15T22:40:56+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 20-22 device count paired with zero camera motion since noon indicates a likely stationary gathering (e.g., Miller and Penelope hosting friends) or UniFi presence detection overcounting IoT devices. Verifying this helps distinguish between a social event and a system artifact for accurate automation and security context.",
+        "acted_on_at": null
+      },
       {
         "id": 8263,
         "timestamp": "2026-08-15T19:37:33+00:00",
@@ -4917,14 +4925,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 22-25 mobile devices combined with zero camera motion over the observed period strongly indicates a large indoor gathering where guests are settled, aligning with typical Friday evening social activity rather than a security concern.",
         "acted_on_at": null
-      },
-      {
-        "id": 8254,
-        "timestamp": "2026-08-15T01:59:35+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The combination of 20-25 connected devices with zero camera motion over four hours suggests the gathering is either in a camera-blind zone or attendees are largely stationary, which risks home automations incorrectly triggering away modes or leaving security gaps. Steve should verify the party's location to adjust automation zones or temporarily disable motion-dependent routines.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4942,7 +4942,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-15T22:38:08.36638+00:00"
+      "last_updated": "2026-08-15T22:41:10.841665+00:00"
     }
   },
   "pge": {
