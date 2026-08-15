@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 23:09:06",
+  "generated_at": "2026-08-14 23:14:14",
   "as_of": "2026-08-14",
   "projects": [
     {
@@ -1440,6 +1440,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170220,
+        "timestamp": "2026-08-15T06:10:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 170219,
+        "timestamp": "2026-08-15T06:09:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170218,
         "timestamp": "2026-08-15T06:06:51+00:00",
@@ -3617,31 +3639,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170020,
-        "timestamp": "2026-08-14T01:47:04+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170019,
-        "timestamp": "2026-08-14T01:29:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8258,
+        "timestamp": "2026-08-15T06:12:08+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained 22\u201325 device count with zero camera motion late on a Friday strongly suggests a large, sedentary guest gathering (e.g., movie or game night) rather than normal circulation; the pattern indicates everyone is settled in a common area, with the count dropping to 24 at 23:09 likely marking the start of the group dispersing to bedrooms.",
+        "acted_on_at": null
+      },
       {
         "id": 8257,
         "timestamp": "2026-08-15T05:10:19+00:00",
@@ -3713,14 +3721,6 @@
         "severity": "low",
         "summary": "The combination of a sustained ~21-23 mobile device count with zero camera activity over a 4-hour Friday morning strongly indicates the presence sensor is misclassifying IoT/smart home devices as mobile phones rather than tracking actual occupancy. This matters because it can corrupt occupancy analytics and trigger incorrect home automations.",
         "acted_on_at": null
-      },
-      {
-        "id": 8248,
-        "timestamp": "2026-08-14T16:43:55+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained high and rapidly fluctuating device count (21\u201326) paired with zero camera activity indicates network polling artifacts or stationary IoT devices rather than active human presence. A routine network health check is recommended to prevent false presence triggers and optimize Wi-Fi performance.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3738,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-15T06:08:12.636196+00:00"
+      "last_updated": "2026-08-15T06:14:15.402918+00:00"
     }
   },
   "pge": {
