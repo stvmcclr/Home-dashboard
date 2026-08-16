@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15 18:43:29",
+  "generated_at": "2026-08-15 18:48:36",
   "as_of": "2026-08-15",
   "projects": [
     {
@@ -1244,6 +1244,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170330,
+        "timestamp": "2026-08-16T01:43:34+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170329,
         "timestamp": "2026-08-16T01:41:34+00:00",
@@ -3432,20 +3443,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170130,
-        "timestamp": "2026-08-14T19:04:14+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "23 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8265,
+        "timestamp": "2026-08-16T01:44:08+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (22\u201325) paired with zero camera motion and Saturday evening timing strongly indicates a stationary indoor gathering (e.g., family guests or kids' friends) rather than normal household movement. This cross-signal pattern confirms a quiet, localized event and rules out system anomalies or unmonitored activity.",
+        "acted_on_at": null
+      },
       {
         "id": 8264,
         "timestamp": "2026-08-15T22:40:56+00:00",
@@ -3517,14 +3525,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 22\u201325 connected devices paired with zero camera motion for four hours strongly suggests a social gathering where everyone is clustered in a single area outside the camera's view. This pattern warrants a quick verification to ensure cameras are functioning normally and to confirm the gathering is safe and on track.",
         "acted_on_at": null
-      },
-      {
-        "id": 8255,
-        "timestamp": "2026-08-15T03:07:35+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 22-25 mobile devices combined with zero camera motion over the observed period strongly indicates a large indoor gathering where guests are settled, aligning with typical Friday evening social activity rather than a security concern.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3542,7 +3542,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-16T01:42:58.054101+00:00"
+      "last_updated": "2026-08-16T01:46:02.309721+00:00"
     }
   },
   "pge": {
