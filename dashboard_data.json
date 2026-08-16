@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16 14:23:24",
+  "generated_at": "2026-08-16 14:28:37",
   "as_of": "2026-08-16",
   "projects": [
     {
@@ -4679,6 +4679,14 @@
     ],
     "insights": [
       {
+        "id": 8276,
+        "timestamp": "2026-08-16T21:25:46+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The stabilization at 17 connected devices alongside zero camera motion over several hours indicates a \"phantom occupancy\" state where network presence persists without physical activity, suggesting the home is effectively quiet and unmonitored; automations should treat this as a low-activity period to avoid false triggers.",
+        "acted_on_at": null
+      },
+      {
         "id": 8275,
         "timestamp": "2026-08-16T20:24:15+00:00",
         "insight_type": "correlation",
@@ -4749,14 +4757,6 @@
         "severity": "medium",
         "summary": "With only four household members and two dogs, a sustained count of 20\u201324 mobile devices alongside zero camera motion or secondary activity strongly suggests either an unmonitored gathering in a camera-blind zone or a network glitch with unattended devices. A quick check is warranted to confirm no unexpected guests are present or that device connections are normal.",
         "acted_on_at": null
-      },
-      {
-        "id": 8266,
-        "timestamp": "2026-08-16T02:46:05+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained count of 21\u201325 mobile devices paired with zero camera motion suggests either an unexpected gathering of guests in camera-blind spots or a Wi-Fi presence detection anomaly counting smart home IoT devices rather than people. Verify camera functionality and confirm if guests are expected to rule out a sensor issue or security gap.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4774,7 +4774,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-16T21:20:50.671011+00:00"
+      "last_updated": "2026-08-16T21:26:53.704762+00:00"
     }
   },
   "pge": {
