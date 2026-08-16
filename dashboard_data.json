@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16 12:20:09",
+  "generated_at": "2026-08-16 12:25:17",
   "as_of": "2026-08-16",
   "projects": [
     {
@@ -2309,6 +2309,17 @@
   "intelligence": {
     "observations": [
       {
+        "id": 170423,
+        "timestamp": "2026-08-16T19:21:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
+      {
         "id": 170422,
         "timestamp": "2026-08-16T19:16:51+00:00",
         "source": "unifi:presence",
@@ -4496,20 +4507,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170223,
-        "timestamp": "2026-08-15T06:36:58+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8274,
+        "timestamp": "2026-08-16T19:21:55+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 18-24 device count on a Sunday noon with zero camera motion strongly suggests a guest gathering or family visit, but the lack of visual activity indicates everyone is likely clustered in a camera-blind zone or resting quietly. The recent dip to 18 devices may signal some guests moving outside or departing.",
+        "acted_on_at": null
+      },
       {
         "id": 8273,
         "timestamp": "2026-08-16T18:19:39+00:00",
@@ -4581,14 +4589,6 @@
         "severity": "low",
         "summary": "The sustained high device count (22\u201325) paired with zero camera motion and Saturday evening timing strongly indicates a stationary indoor gathering (e.g., family guests or kids' friends) rather than normal household movement. This cross-signal pattern confirms a quiet, localized event and rules out system anomalies or unmonitored activity.",
         "acted_on_at": null
-      },
-      {
-        "id": 8264,
-        "timestamp": "2026-08-15T22:40:56+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained 20-22 device count paired with zero camera motion since noon indicates a likely stationary gathering (e.g., Miller and Penelope hosting friends) or UniFi presence detection overcounting IoT devices. Verifying this helps distinguish between a social event and a system artifact for accurate automation and security context.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4606,7 +4606,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-16T19:19:46.614963+00:00"
+      "last_updated": "2026-08-16T19:22:48.395464+00:00"
     }
   },
   "pge": {
