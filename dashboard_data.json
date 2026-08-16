@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16 11:18:20",
+  "generated_at": "2026-08-16 11:23:29",
   "as_of": "2026-08-16",
   "projects": [
     {
@@ -4455,6 +4455,14 @@
     ],
     "insights": [
       {
+        "id": 8273,
+        "timestamp": "2026-08-16T18:19:39+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained high device count (19-24) combined with zero camera motion or alerts suggests either guests are gathered indoors in camera-blind zones, or the security cameras are offline or have motion detection disabled. A quick check is recommended to ensure the cameras are functioning as expected.",
+        "acted_on_at": null
+      },
+      {
         "id": 8272,
         "timestamp": "2026-08-16T15:09:59+00:00",
         "insight_type": "correlation",
@@ -4525,14 +4533,6 @@
         "severity": "low",
         "summary": "The sustained 20-22 device count paired with zero camera motion since noon indicates a likely stationary gathering (e.g., Miller and Penelope hosting friends) or UniFi presence detection overcounting IoT devices. Verifying this helps distinguish between a social event and a system artifact for accurate automation and security context.",
         "acted_on_at": null
-      },
-      {
-        "id": 8263,
-        "timestamp": "2026-08-15T19:37:33+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The rebound to ~24 connected devices at 12:12 PM, combined with zero camera activity throughout the entire period, strongly indicates a camera system outage or misconfiguration rather than normal household movement, as a family with children and active dogs would typically trigger motion sensors. This leaves the home unmonitored despite apparent occupancy and warrants immediate verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4550,7 +4550,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-16T18:15:55.558491+00:00"
+      "last_updated": "2026-08-16T18:21:59.986883+00:00"
     }
   },
   "pge": {
