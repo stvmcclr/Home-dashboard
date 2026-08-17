@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17 00:50:02",
+  "generated_at": "2026-08-17 00:55:09",
   "as_of": "2026-08-17",
   "projects": [
     {
@@ -1468,6 +1468,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170479,
+        "timestamp": "2026-08-17T07:48:52+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170478,
         "timestamp": "2026-08-17T07:32:52+00:00",
@@ -3656,20 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170279,
-        "timestamp": "2026-08-15T20:29:18+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "24 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8285,
+        "timestamp": "2026-08-17T07:48:50+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The stable 21-22 device count, zero camera motion, no dog activity, and confirmed sleep data for the adults collectively confirm the household is fully settled and asleep; the high device count is benign and attributable to idle electronics. The unusually long sleep duration logged at 00:32 suggests the adults may have gone to bed significantly earlier than usual, which is normal but worth a brief check-in if it deviates from their typical schedule.",
+        "acted_on_at": null
+      },
       {
         "id": 8284,
         "timestamp": "2026-08-17T05:44:17+00:00",
@@ -3741,14 +3749,6 @@
         "severity": "medium",
         "summary": "The stabilization at 17 connected devices alongside zero camera motion over several hours indicates a \"phantom occupancy\" state where network presence persists without physical activity, suggesting the home is effectively quiet and unmonitored; automations should treat this as a low-activity period to avoid false triggers.",
         "acted_on_at": null
-      },
-      {
-        "id": 8275,
-        "timestamp": "2026-08-16T20:24:15+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The steady decline in connected devices from ~24 to 17 between 12:05 and 13:16, combined with zero camera motion, confirms a casual Sunday gathering that is naturally winding down. The remaining 17-18 devices still exceed the household baseline, indicating guests are present but likely resting in non-camera zones rather than an active event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3769,7 +3769,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-17T07:47:33.945539+00:00"
+      "last_updated": "2026-08-17T07:53:37.166359+00:00"
     }
   },
   "pge": {
