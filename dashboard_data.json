@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17 05:52:43",
+  "generated_at": "2026-08-17 05:57:51",
   "as_of": "2026-08-17",
   "projects": [
     {
@@ -3895,6 +3895,14 @@
     ],
     "insights": [
       {
+        "id": 8286,
+        "timestamp": "2026-08-17T12:54:44+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The presence count strictly alternates between 22 and 23 devices over the last two hours, indicating a single device is intermittently dropping and reconnecting to the network, likely due to sleep mode toggling or minor Wi-Fi instability. This is normal for early morning but suggests a device may not be sleeping properly, which could drain battery or cause unnecessary network chatter.",
+        "acted_on_at": null
+      },
+      {
         "id": 8285,
         "timestamp": "2026-08-17T07:48:50+00:00",
         "insight_type": "correlation",
@@ -3965,14 +3973,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 17+ devices alongside zero camera motion for over three hours on a Sunday afternoon strongly suggests the household and guests are gathered in a single, camera-blind area (likely watching a movie or napping), but it also warrants a quick check to ensure the cameras haven't malfunctioned or been disabled.",
         "acted_on_at": null
-      },
-      {
-        "id": 8276,
-        "timestamp": "2026-08-16T21:25:46+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The stabilization at 17 connected devices alongside zero camera motion over several hours indicates a \"phantom occupancy\" state where network presence persists without physical activity, suggesting the home is effectively quiet and unmonitored; automations should treat this as a low-activity period to avoid false triggers.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3990,7 +3990,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-17T12:50:09.229221+00:00"
+      "last_updated": "2026-08-17T12:56:11.892366+00:00"
     }
   },
   "pge": {
