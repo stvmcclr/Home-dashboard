@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18 15:54:04",
+  "generated_at": "2026-08-18 16:19:09",
   "as_of": "2026-08-18",
   "projects": [
     {
@@ -1022,22 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4154,
-        "timestamp": "2026-08-18T15:53:53+00:00",
-        "location": "Upstairs",
-        "temp_f": 68.9,
-        "humidity_pct": 56,
-        "mode": "COOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 78.2,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4153,
-        "timestamp": "2026-08-18T15:53:53+00:00",
+        "id": 4155,
+        "timestamp": "2026-08-18T16:19:00+00:00",
         "location": "Downstairs",
         "temp_f": 72.7,
         "humidity_pct": 54,
@@ -1045,6 +1031,20 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 66.8,
         "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4156,
+        "timestamp": "2026-08-18T16:19:00+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.9,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1722,6 +1722,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4155,
+        "timestamp": "2026-08-18T16:19:00+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.7,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 66.8,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4156,
+        "timestamp": "2026-08-18T16:19:00+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.9,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1888,6 +1916,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170694,
+        "timestamp": "2026-08-18T15:56:51+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "15 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170693,
         "timestamp": "2026-08-18T15:26:41+00:00",
@@ -4076,20 +4115,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170494,
-        "timestamp": "2026-08-17T10:27:29+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8298,
+        "timestamp": "2026-08-18T15:56:48+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The drop from 19 to 15 connected mobile devices between 08:10 and 08:14 strongly indicates the family is departing for school and work. This cross-signal pattern confirms a normal Tuesday morning departure routine and suggests no one is unexpectedly left behind.",
+        "acted_on_at": null
+      },
       {
         "id": 8297,
         "timestamp": "2026-08-18T10:40:23+00:00",
@@ -4161,14 +4197,6 @@
         "severity": "low",
         "summary": "The sustained count of 15-20 connected devices combined with zero camera motion for four hours on a weekday afternoon suggests either an unusually sedentary household or that the presence sensor is overcounting IoT/network devices rather than people. This pattern warrants a quick check of camera functionality and a status update for the family.",
         "acted_on_at": null
-      },
-      {
-        "id": 8288,
-        "timestamp": "2026-08-17T18:10:33+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained presence of ~20 devices combined with zero camera motion over four hours suggests the family is likely staying indoors in non-camera zones, but it also warrants verifying that the cameras are online and properly configured to avoid a potential security blind spot.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4186,7 +4214,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-18T15:53:21.584283+00:00"
+      "last_updated": "2026-08-18T16:17:38.093691+00:00"
     }
   },
   "pge": {
