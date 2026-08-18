@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18 20:12:20",
+  "generated_at": "2026-08-18 20:38:50",
   "as_of": "2026-08-18",
   "projects": [
     {
@@ -1022,22 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4172,
-        "timestamp": "2026-08-18T20:12:11+00:00",
-        "location": "Upstairs",
-        "temp_f": 72.5,
-        "humidity_pct": 56,
-        "mode": "COOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 78.2,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4171,
-        "timestamp": "2026-08-18T20:12:11+00:00",
+        "id": 4173,
+        "timestamp": "2026-08-18T20:38:46+00:00",
         "location": "Downstairs",
         "temp_f": 72.6,
         "humidity_pct": 55,
@@ -1045,6 +1031,20 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 62.2,
         "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4174,
+        "timestamp": "2026-08-18T20:38:46+00:00",
+        "location": "Upstairs",
+        "temp_f": 72.5,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1974,6 +1974,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4173,
+        "timestamp": "2026-08-18T20:38:46+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 55,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4174,
+        "timestamp": "2026-08-18T20:38:46+00:00",
+        "location": "Upstairs",
+        "temp_f": 72.5,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -2140,6 +2168,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170712,
+        "timestamp": "2026-08-18T20:27:55+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "13 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"13\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170711,
         "timestamp": "2026-08-18T19:57:48+00:00",
@@ -4328,20 +4367,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170512,
-        "timestamp": "2026-08-17T11:49:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "23 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8302,
+        "timestamp": "2026-08-18T20:12:43+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained high device count paired with zero camera motion and audio signals indicates the network is likely counting idle IoT devices rather than active occupants. This makes presence data unreliable for automations and warrants a quick network check to rule out phantom connections or connectivity issues.",
+        "acted_on_at": null
+      },
       {
         "id": 8301,
         "timestamp": "2026-08-18T19:10:49+00:00",
@@ -4413,14 +4449,6 @@
         "severity": "low",
         "summary": "The consistent 14-16 device count paired with zero camera motion for four hours indicates the household is gathered in a single, quiet indoor space rather than moving about, suggesting a relaxed family evening or focused work session. This confirms everyone is safely home and settled, so no action is required.",
         "acted_on_at": null
-      },
-      {
-        "id": 8292,
-        "timestamp": "2026-08-18T00:23:35+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "A sustained 15-18 device presence count with zero camera motion for four hours strongly suggests all occupants are gathered in a single area outside camera coverage (e.g., backyard or patio) or indicates presence tracking drift, rather than normal dispersed activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4438,7 +4466,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-18T20:10:50.131679+00:00"
+      "last_updated": "2026-08-18T20:38:10.766098+00:00"
     }
   },
   "pge": {
