@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19 06:02:15",
+  "generated_at": "2026-08-19 07:02:33",
   "as_of": "2026-08-19",
   "projects": [
     {
@@ -1022,11 +1022,11 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4208,
-        "timestamp": "2026-08-19T06:02:08+00:00",
+        "id": 4210,
+        "timestamp": "2026-08-19T07:02:24+00:00",
         "location": "Upstairs",
-        "temp_f": 69.4,
-        "humidity_pct": 49,
+        "temp_f": 69.9,
+        "humidity_pct": 51,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1036,10 +1036,10 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4207,
-        "timestamp": "2026-08-19T06:02:08+00:00",
+        "id": 4209,
+        "timestamp": "2026-08-19T07:02:24+00:00",
         "location": "Downstairs",
-        "temp_f": 75.1,
+        "temp_f": 74.4,
         "humidity_pct": 49,
         "mode": "HEAT",
         "hvac_status": "OFF",
@@ -1274,6 +1274,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4209,
+        "timestamp": "2026-08-19T07:02:24+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.4,
+        "humidity_pct": 49,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4210,
+        "timestamp": "2026-08-19T07:02:24+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.9,
+        "humidity_pct": 51,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1440,6 +1468,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170795,
+        "timestamp": "2026-08-19T07:00:31+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 170794,
+        "timestamp": "2026-08-19T06:30:23+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170793,
         "timestamp": "2026-08-19T06:00:15+00:00",
@@ -3617,31 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"14\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170595,
-        "timestamp": "2026-08-17T23:22:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170594,
-        "timestamp": "2026-08-17T23:15:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "15 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8312,
+        "timestamp": "2026-08-19T06:35:01+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent oscillation between 18-21 devices alongside zero camera/audio activity for four hours at 11:28 PM indicates a network keep-alive artifact from sleeping IoT devices rather than active occupancy, confirming the household is settled for the night.",
+        "acted_on_at": null
+      },
       {
         "id": 8311,
         "timestamp": "2026-08-19T05:28:28+00:00",
@@ -3713,14 +3749,6 @@
         "severity": "medium",
         "summary": "The sustained connection of 13\u201316 devices alongside zero camera or audio activity for four hours on a Tuesday afternoon strongly suggests the household is effectively empty or isolated, which is atypical for a family with school-age children and active dogs. A quick presence check is recommended to rule out a network glitch or ensure everyone is accounted for.",
         "acted_on_at": null
-      },
-      {
-        "id": 8302,
-        "timestamp": "2026-08-18T20:12:43+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained high device count paired with zero camera motion and audio signals indicates the network is likely counting idle IoT devices rather than active occupants. This makes presence data unreliable for automations and warrants a quick network check to rule out phantom connections or connectivity issues.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-19T06:01:08.548797+00:00"
+      "last_updated": "2026-08-19T07:01:45.992261+00:00"
     }
   },
   "pge": {
