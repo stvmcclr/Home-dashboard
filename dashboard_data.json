@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19 07:51:25",
+  "generated_at": "2026-08-19 08:23:52",
   "as_of": "2026-08-19",
   "projects": [
     {
@@ -1022,8 +1022,22 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4211,
-        "timestamp": "2026-08-19T07:51:19+00:00",
+        "id": 4214,
+        "timestamp": "2026-08-19T08:23:44+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.7,
+        "humidity_pct": 50,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4213,
+        "timestamp": "2026-08-19T08:23:44+00:00",
         "location": "Downstairs",
         "temp_f": 74.4,
         "humidity_pct": 49,
@@ -1031,20 +1045,6 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 55.2,
         "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4212,
-        "timestamp": "2026-08-19T07:51:19+00:00",
-        "location": "Upstairs",
-        "temp_f": 69.4,
-        "humidity_pct": 49,
-        "mode": "COOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1330,6 +1330,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4213,
+        "timestamp": "2026-08-19T08:23:44+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.4,
+        "humidity_pct": 49,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4214,
+        "timestamp": "2026-08-19T08:23:44+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.7,
+        "humidity_pct": 50,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1496,6 +1524,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170801,
+        "timestamp": "2026-08-19T08:00:46+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "19 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170799,
         "timestamp": "2026-08-19T07:35:01+00:00",
@@ -3684,17 +3723,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"15\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170601,
-        "timestamp": "2026-08-18T00:14:50+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3794,7 +3822,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-19T07:50:10.920511+00:00"
+      "last_updated": "2026-08-19T08:23:29.280029+00:00"
     }
   },
   "pge": {
