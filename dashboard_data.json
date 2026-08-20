@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20 08:53:15",
+  "generated_at": "2026-08-20 09:23:48",
   "as_of": "2026-08-20",
   "projects": [
     {
@@ -1022,13 +1022,13 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4296,
-        "timestamp": "2026-08-20T08:53:05+00:00",
+        "id": 4298,
+        "timestamp": "2026-08-20T09:23:40+00:00",
         "location": "Upstairs",
-        "temp_f": 69.9,
+        "temp_f": 70.4,
         "humidity_pct": 50,
         "mode": "COOL",
-        "hvac_status": "OFF",
+        "hvac_status": "COOLING",
         "heat_setpoint_f": null,
         "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
@@ -1036,8 +1036,8 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4295,
-        "timestamp": "2026-08-20T08:53:05+00:00",
+        "id": 4297,
+        "timestamp": "2026-08-20T09:23:40+00:00",
         "location": "Downstairs",
         "temp_f": 74.4,
         "humidity_pct": 49,
@@ -1358,6 +1358,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4297,
+        "timestamp": "2026-08-20T09:23:40+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.4,
+        "humidity_pct": 49,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4298,
+        "timestamp": "2026-08-20T09:23:40+00:00",
+        "location": "Upstairs",
+        "temp_f": 70.4,
+        "humidity_pct": 50,
+        "mode": "COOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1524,6 +1552,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 170975,
+        "timestamp": "2026-08-20T09:06:59+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
       {
         "id": 170974,
         "timestamp": "2026-08-20T08:43:54+00:00",
@@ -3712,17 +3751,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 170775,
-        "timestamp": "2026-08-19T02:53:29+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "16 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"16\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3822,7 +3850,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-20T08:52:08.472261+00:00"
+      "last_updated": "2026-08-20T09:22:26.347957+00:00"
     }
   },
   "pge": {
