@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 08:00:26",
+  "generated_at": "2026-08-22 08:44:49",
   "as_of": "2026-08-22",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4457,
-        "timestamp": "2026-08-22T08:00:23+00:00",
+        "id": 4459,
+        "timestamp": "2026-08-22T08:44:40+00:00",
         "location": "Downstairs",
         "temp_f": 72.6,
         "humidity_pct": 51,
@@ -1036,15 +1036,15 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4458,
-        "timestamp": "2026-08-22T08:00:23+00:00",
+        "id": 4460,
+        "timestamp": "2026-08-22T08:44:40+00:00",
         "location": "Upstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 51,
+        "temp_f": 69.8,
+        "humidity_pct": 52,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
-        "cool_setpoint_f": 69.8,
+        "cool_setpoint_f": 70.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1358,6 +1358,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4459,
+        "timestamp": "2026-08-22T08:44:40+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4460,
+        "timestamp": "2026-08-22T08:44:40+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.8,
+        "humidity_pct": 52,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 70.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1524,6 +1552,50 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171333,
+        "timestamp": "2026-08-22T08:23:34+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171332,
+        "timestamp": "2026-08-22T08:18:33+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "25 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171330,
+        "timestamp": "2026-08-22T08:08:25+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 9.82h. HR 59bpm. HRV 207ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-da49ace6",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 171331,
+        "timestamp": "2026-08-22T08:08:25+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 10.82h. HR 64bpm. HRV 130ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-10742ae3",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
       {
         "id": 171329,
         "timestamp": "2026-08-22T07:48:26+00:00",
@@ -3679,50 +3751,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171133,
-        "timestamp": "2026-08-21T08:18:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "23 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171132,
-        "timestamp": "2026-08-21T08:17:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171131,
-        "timestamp": "2026-08-21T08:15:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "23 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171130,
-        "timestamp": "2026-08-21T08:14:37+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3822,7 +3850,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-22T07:57:57.321433+00:00"
+      "last_updated": "2026-08-22T08:43:21.590104+00:00"
     }
   },
   "pge": {
