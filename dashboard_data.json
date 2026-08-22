@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 07:06:56",
+  "generated_at": "2026-08-22 07:43:04",
   "as_of": "2026-08-22",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4453,
-        "timestamp": "2026-08-22T07:06:47+00:00",
+        "id": 4455,
+        "timestamp": "2026-08-22T07:43:00+00:00",
         "location": "Downstairs",
         "temp_f": 72.6,
         "humidity_pct": 53,
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4454,
-        "timestamp": "2026-08-22T07:06:47+00:00",
+        "id": 4456,
+        "timestamp": "2026-08-22T07:43:00+00:00",
         "location": "Upstairs",
-        "temp_f": 69.5,
-        "humidity_pct": 50,
+        "temp_f": 69.3,
+        "humidity_pct": 49,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1302,6 +1302,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4455,
+        "timestamp": "2026-08-22T07:43:00+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.6,
+        "humidity_pct": 53,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4456,
+        "timestamp": "2026-08-22T07:43:00+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.3,
+        "humidity_pct": 49,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1468,6 +1496,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171328,
+        "timestamp": "2026-08-22T07:18:18+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171327,
         "timestamp": "2026-08-22T07:05:15+00:00",
@@ -3656,20 +3695,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171128,
-        "timestamp": "2026-08-21T08:11:36+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8337,
+        "timestamp": "2026-08-22T07:39:16+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained presence of 21-24 mobile devices combined with zero camera, lighting, or activity signals overnight strongly indicates devices are stationary and charging rather than active use or unauthorized presence.",
+        "acted_on_at": null
+      },
       {
         "id": 8336,
         "timestamp": "2026-08-22T06:37:50+00:00",
@@ -3741,14 +3777,6 @@
         "severity": "medium",
         "summary": "The sustained 16\u201320 device count paired with zero camera motion strongly suggests a large, quiet gathering or guests occupying a camera-blind zone. Given the Thursday evening timing, this is likely a planned social event, but Steve should verify the guest locations align with the blind spots to ensure nothing is overlooked.",
         "acted_on_at": null
-      },
-      {
-        "id": 8327,
-        "timestamp": "2026-08-21T03:54:36+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 16\u201322 devices paired with zero camera motion strongly suggests a large gathering is taking place in a camera-blind area or that the cameras are offline, creating a monitoring gap during what appears to be a significant evening event.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3766,7 +3794,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-22T07:06:31.210455+00:00"
+      "last_updated": "2026-08-22T07:42:49.094776+00:00"
     }
   },
   "pge": {
