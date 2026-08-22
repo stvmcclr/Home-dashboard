@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 05:17:33",
+  "generated_at": "2026-08-22 05:50:10",
   "as_of": "2026-08-22",
   "projects": [
     {
@@ -1022,8 +1022,22 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4447,
-        "timestamp": "2026-08-22T05:17:25+00:00",
+        "id": 4450,
+        "timestamp": "2026-08-22T05:50:02+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.3,
+        "humidity_pct": 49,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4449,
+        "timestamp": "2026-08-22T05:50:02+00:00",
         "location": "Downstairs",
         "temp_f": 72.4,
         "humidity_pct": 54,
@@ -1031,20 +1045,6 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 55.2,
         "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4448,
-        "timestamp": "2026-08-22T05:17:25+00:00",
-        "location": "Upstairs",
-        "temp_f": 71.1,
-        "humidity_pct": 49,
-        "mode": "COOL",
-        "hvac_status": "COOLING",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1218,6 +1218,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4449,
+        "timestamp": "2026-08-22T05:50:02+00:00",
+        "location": "Downstairs",
+        "temp_f": 72.4,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4450,
+        "timestamp": "2026-08-22T05:50:02+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.3,
+        "humidity_pct": 49,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1384,6 +1412,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171316,
+        "timestamp": "2026-08-22T05:41:55+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171315,
+        "timestamp": "2026-08-22T05:17:48+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171314,
         "timestamp": "2026-08-22T04:47:41+00:00",
@@ -3561,31 +3611,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171116,
-        "timestamp": "2026-08-21T05:11:50+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171115,
-        "timestamp": "2026-08-21T04:58:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8335,
+        "timestamp": "2026-08-22T05:36:42+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 18-22 device count combined with zero camera, lighting, or activity signals over a Friday evening strongly suggests a network artifact (e.g., IoT devices miscounted or phantom connections) rather than an active gathering. Verifying the connected device list is recommended to rule out configuration errors or unauthorized access.",
+        "acted_on_at": null
+      },
       {
         "id": 8334,
         "timestamp": "2026-08-22T04:32:17+00:00",
@@ -3657,14 +3693,6 @@
         "severity": "medium",
         "summary": "The sustained high device count (16\u201322) steadily dropping to 16, paired with zero camera motion, strongly suggests a large group is gathered in a camera-blind area (like the garage or backyard) or a network reporting anomaly; the steady decline indicates the gathering is likely winding down or devices are disconnecting.",
         "acted_on_at": null
-      },
-      {
-        "id": 8325,
-        "timestamp": "2026-08-21T01:51:52+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 15\u201317 device count combined with zero camera motion confirms a large, stationary gathering (likely a movie night, gaming session, or study group) rather than routine family activity. This cross-signal pattern explains the lack of motion triggers and indicates the home is hosting a settled event, which aligns with typical Thursday evening routines but warrants confirmation if unexpected.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3682,7 +3710,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-22T05:17:26.049873+00:00"
+      "last_updated": "2026-08-22T05:47:49.007097+00:00"
     }
   },
   "pge": {
