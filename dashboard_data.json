@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 12:28:42",
+  "generated_at": "2026-08-23 13:10:03",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4583,
-        "timestamp": "2026-08-23T12:28:37+00:00",
-        "location": "Downstairs",
-        "temp_f": 74.4,
-        "humidity_pct": 50,
-        "mode": "HEAT",
+        "id": 4586,
+        "timestamp": "2026-08-23T13:09:55+00:00",
+        "location": "Upstairs",
+        "temp_f": 70.6,
+        "humidity_pct": 52,
+        "mode": "COOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 63.9,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 70.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 4584,
-        "timestamp": "2026-08-23T12:28:37+00:00",
-        "location": "Upstairs",
-        "temp_f": 70.6,
-        "humidity_pct": 51,
-        "mode": "COOL",
+        "id": 4585,
+        "timestamp": "2026-08-23T13:09:55+00:00",
+        "location": "Downstairs",
+        "temp_f": 73.4,
+        "humidity_pct": 50,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 70.7,
+        "heat_setpoint_f": 66.5,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1638,6 +1638,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4585,
+        "timestamp": "2026-08-23T13:09:55+00:00",
+        "location": "Downstairs",
+        "temp_f": 73.4,
+        "humidity_pct": 50,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 66.5,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4586,
+        "timestamp": "2026-08-23T13:09:55+00:00",
+        "location": "Upstairs",
+        "temp_f": 70.6,
+        "humidity_pct": 52,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 70.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1804,6 +1832,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171532,
+        "timestamp": "2026-08-23T12:55:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "27 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171531,
+        "timestamp": "2026-08-23T12:28:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "27 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171530,
         "timestamp": "2026-08-23T12:25:24+00:00",
@@ -3981,31 +4031,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171332,
-        "timestamp": "2026-08-22T08:18:33+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171330,
-        "timestamp": "2026-08-22T08:08:25+00:00",
-        "source": "eight_sleep:steve",
-        "source_type": "sleep",
-        "location": "main_bedroom",
-        "summary": "Steve slept 9.82h. HR 59bpm. HRV 207ms.",
-        "confidence": 0.95,
-        "model_version": "eight-sleep-da49ace6",
-        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
       }
     ],
     "insights": [
+      {
+        "id": 8347,
+        "timestamp": "2026-08-23T12:29:44+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The consistent presence of 25-28 mobile devices combined with zero camera activity confirms the entire household remains asleep indoors, with no signs of early morning activity or security breaches.",
+        "acted_on_at": null
+      },
       {
         "id": 8346,
         "timestamp": "2026-08-23T06:19:10+00:00",
@@ -4077,14 +4113,6 @@
         "severity": "low",
         "summary": "The consistently high presence count (23-25 devices) paired with zero camera activity indicates a quiet, stationary Saturday indoors, likely involving guests or smart home devices being counted as mobile. This is normal for a weekend but worth verifying if the device count seems unexpectedly high.",
         "acted_on_at": null
-      },
-      {
-        "id": 8337,
-        "timestamp": "2026-08-22T07:39:16+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained presence of 21-24 mobile devices combined with zero camera, lighting, or activity signals overnight strongly indicates devices are stationary and charging rather than active use or unauthorized presence.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4102,7 +4130,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T12:28:16.364929+00:00"
+      "last_updated": "2026-08-23T13:07:38.007709+00:00"
     }
   },
   "pge": {
