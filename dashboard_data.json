@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 21:42:11",
+  "generated_at": "2026-08-23 21:56:42",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,10 +1022,10 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4630,
-        "timestamp": "2026-08-23T21:42:06+00:00",
+        "id": 4632,
+        "timestamp": "2026-08-23T21:56:32+00:00",
         "location": "Upstairs",
-        "temp_f": 73.4,
+        "temp_f": 73.6,
         "humidity_pct": 55,
         "mode": "COOL",
         "hvac_status": "OFF",
@@ -1036,8 +1036,8 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4629,
-        "timestamp": "2026-08-23T21:42:06+00:00",
+        "id": 4631,
+        "timestamp": "2026-08-23T21:56:32+00:00",
         "location": "Downstairs",
         "temp_f": 75.7,
         "humidity_pct": 54,
@@ -2274,6 +2274,34 @@
         "timestamp": "2026-08-23T21:42:06+00:00",
         "location": "Upstairs",
         "temp_f": 73.4,
+        "humidity_pct": 55,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 73.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4631,
+        "timestamp": "2026-08-23T21:56:32+00:00",
+        "location": "Downstairs",
+        "temp_f": 75.7,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.0,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4632,
+        "timestamp": "2026-08-23T21:56:32+00:00",
+        "location": "Upstairs",
+        "temp_f": 73.6,
         "humidity_pct": 55,
         "mode": "COOL",
         "hvac_status": "OFF",
@@ -4651,6 +4679,14 @@
     ],
     "insights": [
       {
+        "id": 8350,
+        "timestamp": "2026-08-23T21:48:12+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (21\u201328) paired with zero camera motion and a gradual downward trend suggests either guests are slowly departing from non-camera zones or a network scanning anomaly is resolving. This matters because it indicates an unmonitored gathering or external interference that should be verified to ensure household security and network accuracy.",
+        "acted_on_at": null
+      },
+      {
         "id": 8349,
         "timestamp": "2026-08-23T20:46:50+00:00",
         "insight_type": "correlation",
@@ -4721,14 +4757,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 24\u201327 devices paired with zero camera motion over four hours strongly suggests either the security cameras are offline or the presence system is miscounting IoT devices, leaving the home unmonitored despite appearing occupied.",
         "acted_on_at": null
-      },
-      {
-        "id": 8340,
-        "timestamp": "2026-08-22T21:58:15+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained high device count (21\u201326) paired with zero camera activity on a Saturday afternoon indicates an indoor gathering or IoT devices being counted as mobile users, which is consistent with typical weekend household activity.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4746,7 +4774,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T21:39:19.825845+00:00"
+      "last_updated": "2026-08-23T21:54:29.131733+00:00"
     }
   },
   "pge": {
