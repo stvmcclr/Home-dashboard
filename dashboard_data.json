@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 22:38:10",
+  "generated_at": "2026-08-23 22:56:24",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,8 +1022,22 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4635,
-        "timestamp": "2026-08-23T22:38:07+00:00",
+        "id": 4638,
+        "timestamp": "2026-08-23T22:56:14+00:00",
+        "location": "Upstairs",
+        "temp_f": 73.6,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 73.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4637,
+        "timestamp": "2026-08-23T22:56:14+00:00",
         "location": "Downstairs",
         "temp_f": 76.7,
         "humidity_pct": 54,
@@ -1031,20 +1045,6 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 64.0,
         "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4636,
-        "timestamp": "2026-08-23T22:38:07+00:00",
-        "location": "Upstairs",
-        "temp_f": 73.6,
-        "humidity_pct": 55,
-        "mode": "COOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 73.7,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -2359,6 +2359,34 @@
         "location": "Upstairs",
         "temp_f": 73.6,
         "humidity_pct": 55,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 73.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4637,
+        "timestamp": "2026-08-23T22:56:14+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.7,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.0,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4638,
+        "timestamp": "2026-08-23T22:56:14+00:00",
+        "location": "Upstairs",
+        "temp_f": 73.6,
+        "humidity_pct": 56,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -4735,6 +4763,14 @@
     ],
     "insights": [
       {
+        "id": 8351,
+        "timestamp": "2026-08-23T22:49:23+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (20\u201325) paired with zero camera motion and a steady decline over two hours strongly indicates a group of guests or extended family visiting, likely situated in a camera-blind area, who are now gradually departing.",
+        "acted_on_at": null
+      },
+      {
         "id": 8350,
         "timestamp": "2026-08-23T21:48:12+00:00",
         "insight_type": "correlation",
@@ -4805,14 +4841,6 @@
         "severity": "medium",
         "summary": "The sustained presence of 20\u201325 devices with zero camera motion on a Saturday evening strongly suggests either a quiet gathering where guests are avoiding camera view (e.g., garage, backyard, or cameras disabled for privacy) or that the count is inflated by stationary IoT devices rather than active people. This matters because it may indicate a false presence alert or a privacy-conscious event that warrants a quick status check.",
         "acted_on_at": null
-      },
-      {
-        "id": 8341,
-        "timestamp": "2026-08-23T01:10:37+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 24\u201327 devices paired with zero camera motion over four hours strongly suggests either the security cameras are offline or the presence system is miscounting IoT devices, leaving the home unmonitored despite appearing occupied.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4830,7 +4858,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T22:36:53.140025+00:00"
+      "last_updated": "2026-08-23T22:55:02.931388+00:00"
     }
   },
   "pge": {
