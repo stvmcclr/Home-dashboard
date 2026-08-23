@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 19:42:07",
+  "generated_at": "2026-08-23 19:54:41",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4618,
-        "timestamp": "2026-08-23T19:41:57+00:00",
+        "id": 4620,
+        "timestamp": "2026-08-23T19:54:34+00:00",
         "location": "Upstairs",
         "temp_f": 73.6,
         "humidity_pct": 56,
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4617,
-        "timestamp": "2026-08-23T19:41:57+00:00",
+        "id": 4619,
+        "timestamp": "2026-08-23T19:54:34+00:00",
         "location": "Downstairs",
         "temp_f": 75.7,
-        "humidity_pct": 56,
+        "humidity_pct": 54,
         "mode": "HEAT",
         "hvac_status": "OFF",
         "heat_setpoint_f": 64.0,
@@ -2104,6 +2104,34 @@
       {
         "id": 4618,
         "timestamp": "2026-08-23T19:41:57+00:00",
+        "location": "Upstairs",
+        "temp_f": 73.6,
+        "humidity_pct": 56,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 73.7,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4619,
+        "timestamp": "2026-08-23T19:54:34+00:00",
+        "location": "Downstairs",
+        "temp_f": 75.7,
+        "humidity_pct": 54,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.0,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4620,
+        "timestamp": "2026-08-23T19:54:34+00:00",
         "location": "Upstairs",
         "temp_f": 73.6,
         "humidity_pct": 56,
@@ -4483,6 +4511,14 @@
     ],
     "insights": [
       {
+        "id": 8348,
+        "timestamp": "2026-08-23T19:44:17+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The presence tracker consistently reports 22\u201326 active devices, which is unusually high for a four-person household, yet cameras show no activity; this likely indicates either unconfirmed guests or IoT device tracking artifacts, with a recent drop to 22 devices suggesting some may have left.",
+        "acted_on_at": null
+      },
+      {
         "id": 8347,
         "timestamp": "2026-08-23T12:29:44+00:00",
         "insight_type": "correlation",
@@ -4553,14 +4589,6 @@
         "severity": "low",
         "summary": "The consistently high presence count (23\u201326) paired with zero camera activity confirms the presence system is counting IoT network traffic rather than human occupancy, indicating a normal, quiet weekend morning rather than a gathering or anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 8338,
-        "timestamp": "2026-08-22T17:52:20+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The consistently high presence count (23-25 devices) paired with zero camera activity indicates a quiet, stationary Saturday indoors, likely involving guests or smart home devices being counted as mobile. This is normal for a weekend but worth verifying if the device count seems unexpectedly high.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4578,7 +4606,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T19:41:17.695493+00:00"
+      "last_updated": "2026-08-23T19:53:23.809145+00:00"
     }
   },
   "pge": {
