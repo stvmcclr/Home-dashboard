@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 04:07:46",
+  "generated_at": "2026-08-23 04:49:30",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,11 +1022,11 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4550,
-        "timestamp": "2026-08-23T04:07:43+00:00",
+        "id": 4552,
+        "timestamp": "2026-08-23T04:49:26+00:00",
         "location": "Upstairs",
-        "temp_f": 71.5,
-        "humidity_pct": 50,
+        "temp_f": 71.8,
+        "humidity_pct": 49,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1036,8 +1036,8 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4549,
-        "timestamp": "2026-08-23T04:07:43+00:00",
+        "id": 4551,
+        "timestamp": "2026-08-23T04:49:26+00:00",
         "location": "Downstairs",
         "temp_f": 76.5,
         "humidity_pct": 48,
@@ -1155,6 +1155,34 @@
         "location": "Upstairs",
         "temp_f": 71.5,
         "humidity_pct": 50,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 71.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4551,
+        "timestamp": "2026-08-23T04:49:26+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.5,
+        "humidity_pct": 48,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 60.4,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4552,
+        "timestamp": "2026-08-23T04:49:26+00:00",
+        "location": "Upstairs",
+        "temp_f": 71.8,
+        "humidity_pct": 49,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1328,6 +1356,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171479,
+        "timestamp": "2026-08-23T04:27:27+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171478,
+        "timestamp": "2026-08-23T04:23:26+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171477,
+        "timestamp": "2026-08-23T04:21:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171476,
         "timestamp": "2026-08-23T03:53:18+00:00",
@@ -3494,42 +3555,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171279,
-        "timestamp": "2026-08-22T01:09:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171278,
-        "timestamp": "2026-08-22T01:08:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "19 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"19\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171277,
-        "timestamp": "2026-08-22T00:59:43+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8344,
+        "timestamp": "2026-08-23T04:14:44+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained connection of 20\u201325 mobile devices paired with zero camera motion over several hours strongly indicates a large gathering or party where guests are occupying non-camera areas, or multiple devices are left stationary in unmonitored rooms, warranting a quick check to confirm if the family is hosting or if there's a network anomaly.",
+        "acted_on_at": null
+      },
       {
         "id": 8343,
         "timestamp": "2026-08-23T03:13:32+00:00",
@@ -3601,14 +3637,6 @@
         "severity": "medium",
         "summary": "The sustained 18-22 device count combined with zero camera, lighting, or activity signals over a Friday evening strongly suggests a network artifact (e.g., IoT devices miscounted or phantom connections) rather than an active gathering. Verifying the connected device list is recommended to rule out configuration errors or unauthorized access.",
         "acted_on_at": null
-      },
-      {
-        "id": 8334,
-        "timestamp": "2026-08-22T04:32:17+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained count of 18-22 mobile devices far exceeds the household size, yet zero camera or activity signals were triggered, suggesting a UniFi tracking anomaly or misclassified IoT devices rather than actual occupancy.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3626,7 +3654,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T04:05:49.127342+00:00"
+      "last_updated": "2026-08-23T04:48:13.094741+00:00"
     }
   },
   "pge": {
