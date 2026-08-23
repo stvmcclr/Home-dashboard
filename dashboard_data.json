@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23 23:35:01",
+  "generated_at": "2026-08-23 23:55:24",
   "as_of": "2026-08-23",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4642,
-        "timestamp": "2026-08-23T23:34:52+00:00",
+        "id": 4644,
+        "timestamp": "2026-08-23T23:55:14+00:00",
         "location": "Upstairs",
         "temp_f": 74.7,
         "humidity_pct": 54,
@@ -1036,8 +1036,8 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4641,
-        "timestamp": "2026-08-23T23:34:52+00:00",
+        "id": 4643,
+        "timestamp": "2026-08-23T23:55:14+00:00",
         "location": "Downstairs",
         "temp_f": 77.6,
         "humidity_pct": 53,
@@ -2450,6 +2450,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4643,
+        "timestamp": "2026-08-23T23:55:14+00:00",
+        "location": "Downstairs",
+        "temp_f": 77.6,
+        "humidity_pct": 53,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 64.0,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4644,
+        "timestamp": "2026-08-23T23:55:14+00:00",
+        "location": "Upstairs",
+        "temp_f": 74.7,
+        "humidity_pct": 54,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 77.1,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -2616,6 +2644,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171606,
+        "timestamp": "2026-08-23T23:38:09+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171605,
         "timestamp": "2026-08-23T23:28:07+00:00",
@@ -4804,20 +4843,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171406,
-        "timestamp": "2026-08-22T20:26:27+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8352,
+        "timestamp": "2026-08-23T23:51:38+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high device count (20\u201324) combined with zero camera motion indicates a stationary gathering or network-connected devices in a camera-blind zone (likely the backyard or garage), resolving the apparent contradiction of high connectivity with no monitored activity. This confirms a quiet Sunday gathering is in progress and requires no action.",
+        "acted_on_at": null
+      },
       {
         "id": 8351,
         "timestamp": "2026-08-23T22:49:23+00:00",
@@ -4889,14 +4925,6 @@
         "severity": "medium",
         "summary": "The sustained 20\u201325 device count paired with zero camera motion strongly suggests the presence data is tracking stationary IoT devices, parked vehicles, or neighbor Wi-Fi bleed rather than active human occupancy, which may be causing home automations to run on false occupancy assumptions.",
         "acted_on_at": null
-      },
-      {
-        "id": 8342,
-        "timestamp": "2026-08-23T02:12:22+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained presence of 20\u201325 devices with zero camera motion on a Saturday evening strongly suggests either a quiet gathering where guests are avoiding camera view (e.g., garage, backyard, or cameras disabled for privacy) or that the count is inflated by stationary IoT devices rather than active people. This matters because it may indicate a false presence alert or a privacy-conscious event that warrants a quick status check.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4914,7 +4942,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-23T23:34:25.75322+00:00"
+      "last_updated": "2026-08-23T23:52:35.698076+00:00"
     }
   },
   "pge": {
