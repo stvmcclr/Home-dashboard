@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24 16:55:19",
+  "generated_at": "2026-08-24 17:22:07",
   "as_of": "2026-08-24",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4686,
-        "timestamp": "2026-08-24T16:55:09+00:00",
+        "id": 4688,
+        "timestamp": "2026-08-24T17:21:57+00:00",
         "location": "Upstairs",
         "temp_f": 68.9,
         "humidity_pct": 57,
@@ -1036,14 +1036,14 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4685,
-        "timestamp": "2026-08-24T16:55:09+00:00",
+        "id": 4687,
+        "timestamp": "2026-08-24T17:21:57+00:00",
         "location": "Downstairs",
         "temp_f": 74.5,
         "humidity_pct": 56,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
+        "heat_setpoint_f": 62.2,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
@@ -1638,6 +1638,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4687,
+        "timestamp": "2026-08-24T17:21:57+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.5,
+        "humidity_pct": 56,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4688,
+        "timestamp": "2026-08-24T17:21:57+00:00",
+        "location": "Upstairs",
+        "temp_f": 68.9,
+        "humidity_pct": 57,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1804,6 +1832,39 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171746,
+        "timestamp": "2026-08-24T17:17:27+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171745,
+        "timestamp": "2026-08-24T17:02:23+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171744,
+        "timestamp": "2026-08-24T16:54:21+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171743,
         "timestamp": "2026-08-24T16:48:19+00:00",
@@ -3970,42 +4031,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171546,
-        "timestamp": "2026-08-23T16:28:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171545,
-        "timestamp": "2026-08-23T16:26:24+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "27 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171544,
-        "timestamp": "2026-08-23T16:23:23+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "27 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"27\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8358,
+        "timestamp": "2026-08-24T17:18:33+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The persistent count of 22-25 connected devices on a Monday morning, combined with no camera or activity signals, strongly suggests the system is counting smart home/IoT devices rather than people. This could skew occupancy-based automations, so consider verifying actual presence or filtering non-mobile gadgets from your network.",
+        "acted_on_at": null
+      },
       {
         "id": 8357,
         "timestamp": "2026-08-24T06:04:06+00:00",
@@ -4077,14 +4113,6 @@
         "severity": "low",
         "summary": "The sustained high device count (peaking at 28) combined with zero camera motion on a Sunday afternoon strongly suggests a large group of guests or children gathered indoors, likely a playdate or family visit, rather than a network anomaly.",
         "acted_on_at": null
-      },
-      {
-        "id": 8348,
-        "timestamp": "2026-08-23T19:44:17+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The presence tracker consistently reports 22\u201326 active devices, which is unusually high for a four-person household, yet cameras show no activity; this likely indicates either unconfirmed guests or IoT device tracking artifacts, with a recent drop to 22 devices suggesting some may have left.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4102,7 +4130,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-24T16:53:25.176526+00:00"
+      "last_updated": "2026-08-24T17:20:41.496244+00:00"
     }
   },
   "pge": {
