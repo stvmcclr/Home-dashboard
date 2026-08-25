@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 18:54:41",
+  "generated_at": "2026-08-25 19:22:58",
   "as_of": "2026-08-25",
   "projects": [
     {
@@ -1022,11 +1022,11 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4766,
-        "timestamp": "2026-08-25T18:54:37+00:00",
+        "id": 4768,
+        "timestamp": "2026-08-25T19:22:51+00:00",
         "location": "Upstairs",
-        "temp_f": 71.7,
-        "humidity_pct": 56,
+        "temp_f": 72.5,
+        "humidity_pct": 57,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4765,
-        "timestamp": "2026-08-25T18:54:37+00:00",
+        "id": 4767,
+        "timestamp": "2026-08-25T19:22:51+00:00",
         "location": "Downstairs",
         "temp_f": 73.5,
-        "humidity_pct": 54,
+        "humidity_pct": 56,
         "mode": "HEAT",
         "hvac_status": "OFF",
         "heat_setpoint_f": 62.2,
@@ -1778,6 +1778,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4767,
+        "timestamp": "2026-08-25T19:22:51+00:00",
+        "location": "Downstairs",
+        "temp_f": 73.5,
+        "humidity_pct": 56,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4768,
+        "timestamp": "2026-08-25T19:22:51+00:00",
+        "location": "Upstairs",
+        "temp_f": 72.5,
+        "humidity_pct": 57,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1944,6 +1972,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171947,
+        "timestamp": "2026-08-25T19:08:40+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "18 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"18\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171946,
         "timestamp": "2026-08-25T18:38:30+00:00",
@@ -4132,20 +4171,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171747,
-        "timestamp": "2026-08-24T17:21:28+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8366,
+        "timestamp": "2026-08-25T19:06:39+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The sustained high mobile device count (16-19) over the past three hours confirms a large gathering or extended guests are currently at the home, which is notable for a Tuesday afternoon. Verifying this aligns with your schedule and helps anticipate increased activity around the dogs.",
+        "acted_on_at": null
+      },
       {
         "id": 8365,
         "timestamp": "2026-08-25T15:56:00+00:00",
@@ -4217,14 +4253,6 @@
         "severity": "low",
         "summary": "The persistent 25\u201327 device count alongside zero camera motion at 11 PM confirms a network anomaly (likely ghost connections or IoT device cycling) rather than actual occupancy, which could mask real activity or indicate a connectivity issue.",
         "acted_on_at": null
-      },
-      {
-        "id": 8356,
-        "timestamp": "2026-08-24T04:59:31+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained count of 21-27 connected devices far exceeds your household's capacity, strongly indicating guests are present, but the complete lack of camera motion over four hours suggests either the gathering is in a camera-blind zone, the cameras are offline, or the network is picking up devices outside the home. This matters because it reveals a potential monitoring gap or network quirk that warrants a quick verification.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4242,7 +4270,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-25T18:52:58.734737+00:00"
+      "last_updated": "2026-08-25T19:20:22.265832+00:00"
     }
   },
   "pge": {
