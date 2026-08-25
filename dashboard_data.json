@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 20:52:36",
+  "generated_at": "2026-08-25 21:17:44",
   "as_of": "2026-08-25",
   "projects": [
     {
@@ -1022,22 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4773,
-        "timestamp": "2026-08-25T20:52:26+00:00",
-        "location": "Downstairs",
-        "temp_f": 73.5,
-        "humidity_pct": 56,
-        "mode": "HEAT",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4774,
-        "timestamp": "2026-08-25T20:52:26+00:00",
+        "id": 4776,
+        "timestamp": "2026-08-25T21:17:39+00:00",
         "location": "Upstairs",
         "temp_f": 73.6,
         "humidity_pct": 57,
@@ -1045,6 +1031,20 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
         "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4775,
+        "timestamp": "2026-08-25T21:17:39+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.8,
+        "humidity_pct": 56,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1890,6 +1890,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4775,
+        "timestamp": "2026-08-25T21:17:39+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.8,
+        "humidity_pct": 56,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4776,
+        "timestamp": "2026-08-25T21:17:39+00:00",
+        "location": "Upstairs",
+        "temp_f": 73.6,
+        "humidity_pct": 57,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -2056,6 +2084,17 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171960,
+        "timestamp": "2026-08-25T21:09:08+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "17 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"17\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171959,
         "timestamp": "2026-08-25T20:39:01+00:00",
@@ -4244,20 +4283,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171760,
-        "timestamp": "2026-08-24T18:35:45+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8368,
+        "timestamp": "2026-08-25T21:09:53+00:00",
+        "insight_type": "correlation",
+        "severity": "medium",
+        "summary": "The sustained 17-18 connected devices with zero camera motion on a weekday afternoon indicates a large, stationary group likely gathered in a camera-blind zone, which is atypical for this household and warrants verification to rule out unauthorized access or unplanned gatherings.",
+        "acted_on_at": null
+      },
       {
         "id": 8367,
         "timestamp": "2026-08-25T20:08:31+00:00",
@@ -4329,14 +4365,6 @@
         "severity": "low",
         "summary": "The persistent count of 22-25 connected devices on a Monday afternoon, combined with zero camera activity and a recent dip to 19 devices, strongly suggests a network glitch or phantom IoT connections rather than actual occupancy. This mismatch indicates the devices are likely not people, as typical morning departure patterns would normally trigger camera motion.",
         "acted_on_at": null
-      },
-      {
-        "id": 8358,
-        "timestamp": "2026-08-24T17:18:33+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The persistent count of 22-25 connected devices on a Monday morning, combined with no camera or activity signals, strongly suggests the system is counting smart home/IoT devices rather than people. This could skew occupancy-based automations, so consider verifying actual presence or filtering non-mobile gadgets from your network.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -4354,7 +4382,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-25T20:51:14.930233+00:00"
+      "last_updated": "2026-08-25T21:15:29.582426+00:00"
     }
   },
   "pge": {
