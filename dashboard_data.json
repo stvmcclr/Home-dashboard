@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 04:33:33",
+  "generated_at": "2026-08-25 05:15:58",
   "as_of": "2026-08-25",
   "projects": [
     {
@@ -1022,28 +1022,28 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4724,
-        "timestamp": "2026-08-25T04:33:24+00:00",
+        "id": 4726,
+        "timestamp": "2026-08-25T05:15:50+00:00",
         "location": "Upstairs",
-        "temp_f": 71.6,
-        "humidity_pct": 52,
+        "temp_f": 71.2,
+        "humidity_pct": 49,
         "mode": "COOL",
-        "hvac_status": "OFF",
+        "hvac_status": "COOLING",
         "heat_setpoint_f": null,
-        "cool_setpoint_f": 71.9,
+        "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 4723,
-        "timestamp": "2026-08-25T04:33:24+00:00",
+        "id": 4725,
+        "timestamp": "2026-08-25T05:15:50+00:00",
         "location": "Downstairs",
-        "temp_f": 76.5,
+        "temp_f": 76.3,
         "humidity_pct": 50,
         "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 66.8,
+        "heat_setpoint_f": 55.2,
         "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
@@ -1187,6 +1187,34 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
         "cool_setpoint_f": 71.9,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4725,
+        "timestamp": "2026-08-25T05:15:50+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.3,
+        "humidity_pct": 50,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4726,
+        "timestamp": "2026-08-25T05:15:50+00:00",
+        "location": "Upstairs",
+        "temp_f": 71.2,
+        "humidity_pct": 49,
+        "mode": "COOL",
+        "hvac_status": "COOLING",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1356,6 +1384,28 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171864,
+        "timestamp": "2026-08-25T05:05:13+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171863,
+        "timestamp": "2026-08-25T04:35:06+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "21 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171862,
         "timestamp": "2026-08-25T04:13:01+00:00",
@@ -3533,31 +3583,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171664,
-        "timestamp": "2026-08-24T05:55:40+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171663,
-        "timestamp": "2026-08-24T05:48:38+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8364,
+        "timestamp": "2026-08-25T04:42:00+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The combination of 21\u201324 connected devices and zero camera motion over four hours suggests either a large stationary gathering (like a sleepover or guests) or a Wi-Fi presence tracking anomaly, so a quick verification is recommended to rule out false location reporting.",
+        "acted_on_at": null
+      },
       {
         "id": 8363,
         "timestamp": "2026-08-25T03:40:26+00:00",
@@ -3629,14 +3665,6 @@
         "severity": "low",
         "summary": "The sustained 21\u201323 device count paired with zero camera motion over four hours strongly suggests the household is gathered in a camera-blind area for a prolonged activity, but warrants a quick check to ensure the cameras haven't malfunctioned or lost power.",
         "acted_on_at": null
-      },
-      {
-        "id": 8354,
-        "timestamp": "2026-08-24T01:54:23+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "The sustained count of 20+ connected devices paired with zero camera motion over four hours strongly indicates a sedentary gathering in a camera-blind zone (e.g., movie night, gaming, or guests) or a network reporting artifact; if no guests are expected, a quick network check is recommended.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-25T04:33:02.155568+00:00"
+      "last_updated": "2026-08-25T05:15:25.053853+00:00"
     }
   },
   "pge": {
