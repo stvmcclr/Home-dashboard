@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 10:00:58",
+  "generated_at": "2026-08-25 10:46:47",
   "as_of": "2026-08-25",
   "projects": [
     {
@@ -1022,8 +1022,22 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4739,
-        "timestamp": "2026-08-25T10:00:53+00:00",
+        "id": 4742,
+        "timestamp": "2026-08-25T10:46:43+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 51,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4741,
+        "timestamp": "2026-08-25T10:46:43+00:00",
         "location": "Downstairs",
         "temp_f": 74.5,
         "humidity_pct": 49,
@@ -1031,20 +1045,6 @@
         "hvac_status": "OFF",
         "heat_setpoint_f": 55.2,
         "cool_setpoint_f": null,
-        "eco_mode": "OFF",
-        "fan_mode": "OFF",
-        "connectivity": "ONLINE"
-      },
-      {
-        "id": 4740,
-        "timestamp": "2026-08-25T10:00:53+00:00",
-        "location": "Upstairs",
-        "temp_f": 69.7,
-        "humidity_pct": 51,
-        "mode": "COOL",
-        "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 69.8,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1414,6 +1414,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4741,
+        "timestamp": "2026-08-25T10:46:43+00:00",
+        "location": "Downstairs",
+        "temp_f": 74.5,
+        "humidity_pct": 49,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4742,
+        "timestamp": "2026-08-25T10:46:43+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.5,
+        "humidity_pct": 51,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1580,6 +1608,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 171891,
+        "timestamp": "2026-08-25T10:42:34+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171890,
+        "timestamp": "2026-08-25T10:37:33+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171889,
+        "timestamp": "2026-08-25T10:36:32+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171888,
+        "timestamp": "2026-08-25T10:06:25+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 171887,
+        "timestamp": "2026-08-25T10:01:24+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 171886,
         "timestamp": "2026-08-25T09:36:18+00:00",
@@ -3724,61 +3807,6 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171691,
-        "timestamp": "2026-08-24T10:58:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171690,
-        "timestamp": "2026-08-24T10:57:53+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171689,
-        "timestamp": "2026-08-24T10:46:50+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171688,
-        "timestamp": "2026-08-24T10:37:48+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "25 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"25\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171687,
-        "timestamp": "2026-08-24T10:32:47+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "26 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"26\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
@@ -3878,7 +3906,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-25T09:59:57.990135+00:00"
+      "last_updated": "2026-08-25T10:45:21.388608+00:00"
     }
   },
   "pge": {
