@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 06:38:10",
+  "generated_at": "2026-08-26 07:30:05",
   "as_of": "2026-08-26",
   "projects": [
     {
@@ -1022,8 +1022,8 @@
   "thermostat": {
     "latest": [
       {
-        "id": 4801,
-        "timestamp": "2026-08-26T06:38:03+00:00",
+        "id": 4803,
+        "timestamp": "2026-08-26T07:29:59+00:00",
         "location": "Downstairs",
         "temp_f": 75.4,
         "humidity_pct": 49,
@@ -1036,11 +1036,11 @@
         "connectivity": "ONLINE"
       },
       {
-        "id": 4802,
-        "timestamp": "2026-08-26T06:38:03+00:00",
+        "id": 4804,
+        "timestamp": "2026-08-26T07:29:59+00:00",
         "location": "Upstairs",
-        "temp_f": 69.8,
-        "humidity_pct": 48,
+        "temp_f": 69.6,
+        "humidity_pct": 49,
         "mode": "COOL",
         "hvac_status": "OFF",
         "heat_setpoint_f": null,
@@ -1274,6 +1274,34 @@
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
+      },
+      {
+        "id": 4803,
+        "timestamp": "2026-08-26T07:29:59+00:00",
+        "location": "Downstairs",
+        "temp_f": 75.4,
+        "humidity_pct": 49,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 55.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 4804,
+        "timestamp": "2026-08-26T07:29:59+00:00",
+        "location": "Upstairs",
+        "temp_f": 69.6,
+        "humidity_pct": 49,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 69.8,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
       }
     ]
   },
@@ -1440,6 +1468,61 @@
   },
   "intelligence": {
     "observations": [
+      {
+        "id": 172026,
+        "timestamp": "2026-08-26T07:12:37+00:00",
+        "source": "eight_sleep:roxanne",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Roxanne slept 9.84h. HR 65bpm. HRV 113ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-9ba8f1e0",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Roxanne\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 172025,
+        "timestamp": "2026-08-26T07:12:36+00:00",
+        "source": "eight_sleep:steve",
+        "source_type": "sleep",
+        "location": "main_bedroom",
+        "summary": "Steve slept 9.46h. HR 55bpm. HRV 149ms.",
+        "confidence": 0.95,
+        "model_version": "eight-sleep-d5023050",
+        "entities": "[{\"entity_type\": \"person\", \"entity_name\": \"Steve\", \"entity_state\": \"awake\", \"confidence\": 0.95}]"
+      },
+      {
+        "id": 172024,
+        "timestamp": "2026-08-26T07:11:37+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 172023,
+        "timestamp": "2026-08-26T06:41:30+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "23 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 172022,
+        "timestamp": "2026-08-26T06:36:28+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "24 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"24\", \"confidence\": 0.8}]"
+      },
       {
         "id": 172021,
         "timestamp": "2026-08-26T06:11:22+00:00",
@@ -3584,64 +3667,17 @@
         "confidence": 0.8,
         "model_version": "unifi-presence-v2",
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171826,
-        "timestamp": "2026-08-25T01:19:20+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "23 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"23\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171825,
-        "timestamp": "2026-08-25T01:18:19+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "22 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171824,
-        "timestamp": "2026-08-25T01:04:16+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171823,
-        "timestamp": "2026-08-25T00:34:09+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 171822,
-        "timestamp": "2026-08-25T00:04:01+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
       }
     ],
     "insights": [
+      {
+        "id": 8378,
+        "timestamp": "2026-08-26T07:24:43+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The simultaneous ~9.5-hour sleep completion for both adults, paired with a stable high device count and zero camera motion, confirms the household is securely resting; the elevated device count is consistent with background IoT and charging phones rather than unauthorized presence.",
+        "acted_on_at": null
+      },
       {
         "id": 8377,
         "timestamp": "2026-08-26T06:22:49+00:00",
@@ -3713,14 +3749,6 @@
         "severity": "medium",
         "summary": "The sustained 17-18 connected devices with zero camera motion on a weekday afternoon strongly indicates the group is gathered outdoors or in a camera-blind area rather than inside the home. This suggests the dogs may be unsupervised outside with guests, warranting a quick check on gate status and outdoor safety.",
         "acted_on_at": null
-      },
-      {
-        "id": 8368,
-        "timestamp": "2026-08-25T21:09:53+00:00",
-        "insight_type": "correlation",
-        "severity": "medium",
-        "summary": "The sustained 17-18 connected devices with zero camera motion on a weekday afternoon indicates a large, stationary group likely gathered in a camera-blind zone, which is atypical for this household and warrants verification to rule out unauthorized access or unplanned gatherings.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3738,7 +3766,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-08-26T06:36:08.432544+00:00"
+      "last_updated": "2026-08-26T07:27:36.941764+00:00"
     }
   },
   "pge": {
