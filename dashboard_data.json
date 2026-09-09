@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 17:25:36",
+  "generated_at": "2026-09-09 19:54:28",
   "as_of": "2026-09-09",
   "projects": [
     {
@@ -1022,29 +1022,29 @@
   "thermostat": {
     "latest": [
       {
-        "id": 5004,
-        "timestamp": "2026-09-09T17:25:29+00:00",
-        "location": "Upstairs",
-        "temp_f": 69.6,
-        "humidity_pct": 52,
-        "mode": "COOL",
+        "id": 5005,
+        "timestamp": "2026-09-09T19:54:25+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.7,
+        "humidity_pct": 51,
+        "mode": "HEAT",
         "hvac_status": "OFF",
-        "heat_setpoint_f": null,
-        "cool_setpoint_f": 78.2,
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
       },
       {
-        "id": 5003,
-        "timestamp": "2026-09-09T17:25:29+00:00",
-        "location": "Downstairs",
-        "temp_f": 75.6,
-        "humidity_pct": 49,
-        "mode": "HEAT",
+        "id": 5006,
+        "timestamp": "2026-09-09T19:54:25+00:00",
+        "location": "Upstairs",
+        "temp_f": 74.6,
+        "humidity_pct": 52,
+        "mode": "COOL",
         "hvac_status": "OFF",
-        "heat_setpoint_f": 62.2,
-        "cool_setpoint_f": null,
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
         "eco_mode": "OFF",
         "fan_mode": "OFF",
         "connectivity": "ONLINE"
@@ -1182,6 +1182,34 @@
         "timestamp": "2026-09-09T17:25:29+00:00",
         "location": "Upstairs",
         "temp_f": 69.6,
+        "humidity_pct": 52,
+        "mode": "COOL",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": null,
+        "cool_setpoint_f": 78.2,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 5005,
+        "timestamp": "2026-09-09T19:54:25+00:00",
+        "location": "Downstairs",
+        "temp_f": 76.7,
+        "humidity_pct": 51,
+        "mode": "HEAT",
+        "hvac_status": "OFF",
+        "heat_setpoint_f": 62.2,
+        "cool_setpoint_f": null,
+        "eco_mode": "OFF",
+        "fan_mode": "OFF",
+        "connectivity": "ONLINE"
+      },
+      {
+        "id": 5006,
+        "timestamp": "2026-09-09T19:54:25+00:00",
+        "location": "Upstairs",
+        "temp_f": 74.6,
         "humidity_pct": 52,
         "mode": "COOL",
         "hvac_status": "OFF",
@@ -1357,107 +1385,85 @@
   "intelligence": {
     "observations": [
       {
-        "id": 187256,
-        "timestamp": "2026-09-09T17:24:44+00:00",
+        "id": 187743,
+        "timestamp": "2026-09-09T19:54:16+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187255,
-        "timestamp": "2026-09-09T17:24:44+00:00",
+        "id": 187741,
+        "timestamp": "2026-09-09T19:54:05+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187254,
-        "timestamp": "2026-09-09T17:24:11+00:00",
+        "id": 187742,
+        "timestamp": "2026-09-09T19:54:05+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 187740,
+        "timestamp": "2026-09-09T19:53:54+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187253,
-        "timestamp": "2026-09-09T17:24:11+00:00",
+        "id": 187739,
+        "timestamp": "2026-09-09T19:53:43+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187252,
-        "timestamp": "2026-09-09T17:23:38+00:00",
+        "id": 187738,
+        "timestamp": "2026-09-09T19:53:32+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187251,
-        "timestamp": "2026-09-09T17:23:28+00:00",
+        "id": 187737,
+        "timestamp": "2026-09-09T19:53:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "routine audio at whole_home \u2014 television or music playing in the background",
-        "confidence": 0.2,
+        "summary": "unclassified audio",
+        "confidence": 0.4,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187250,
-        "timestamp": "2026-09-09T17:23:28+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187249,
-        "timestamp": "2026-09-09T17:23:28+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187248,
-        "timestamp": "2026-09-09T17:22:55+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187247,
-        "timestamp": "2026-09-09T17:22:55+00:00",
+        "id": 187736,
+        "timestamp": "2026-09-09T19:53:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1467,19 +1473,140 @@
         "entities": "[]"
       },
       {
-        "id": 187246,
-        "timestamp": "2026-09-09T17:22:22+00:00",
+        "id": 187735,
+        "timestamp": "2026-09-09T19:52:45+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
+        "summary": "impact/movement sound",
+        "confidence": 0.6,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187245,
-        "timestamp": "2026-09-09T17:22:19+00:00",
+        "id": 187734,
+        "timestamp": "2026-09-09T19:52:35+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187733,
+        "timestamp": "2026-09-09T19:52:24+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187732,
+        "timestamp": "2026-09-09T19:52:14+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187731,
+        "timestamp": "2026-09-09T19:52:03+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187730,
+        "timestamp": "2026-09-09T19:51:52+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187729,
+        "timestamp": "2026-09-09T19:51:41+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187728,
+        "timestamp": "2026-09-09T19:51:41+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187727,
+        "timestamp": "2026-09-09T19:51:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "impact/movement sound",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187726,
+        "timestamp": "2026-09-09T19:50:47+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187725,
+        "timestamp": "2026-09-09T19:50:26+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "TV/media audio",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187723,
+        "timestamp": "2026-09-09T19:49:15+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187724,
+        "timestamp": "2026-09-09T19:49:15+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1489,19 +1616,107 @@
         "entities": "[]"
       },
       {
-        "id": 187244,
-        "timestamp": "2026-09-09T17:22:19+00:00",
+        "id": 187722,
+        "timestamp": "2026-09-09T19:48:42+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
+        "summary": "impact/movement sound",
+        "confidence": 0.6,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187243,
-        "timestamp": "2026-09-09T17:22:19+00:00",
+        "id": 187721,
+        "timestamp": "2026-09-09T19:48:42+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187720,
+        "timestamp": "2026-09-09T19:48:09+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "impact/movement sound",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187719,
+        "timestamp": "2026-09-09T19:47:32+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187718,
+        "timestamp": "2026-09-09T19:46:59+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187717,
+        "timestamp": "2026-09-09T19:46:49+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "TV/media audio",
+        "confidence": 0.55,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187716,
+        "timestamp": "2026-09-09T19:46:38+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio",
+        "confidence": 0.4,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187715,
+        "timestamp": "2026-09-09T19:46:38+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187714,
+        "timestamp": "2026-09-09T19:46:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187713,
+        "timestamp": "2026-09-09T19:45:28+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1511,8 +1726,8 @@
         "entities": "[]"
       },
       {
-        "id": 187241,
-        "timestamp": "2026-09-09T17:21:46+00:00",
+        "id": 187711,
+        "timestamp": "2026-09-09T19:44:55+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1522,8 +1737,8 @@
         "entities": "[]"
       },
       {
-        "id": 187242,
-        "timestamp": "2026-09-09T17:21:46+00:00",
+        "id": 187712,
+        "timestamp": "2026-09-09T19:44:55+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1533,8 +1748,8 @@
         "entities": "[]"
       },
       {
-        "id": 187240,
-        "timestamp": "2026-09-09T17:20:45+00:00",
+        "id": 187710,
+        "timestamp": "2026-09-09T19:44:22+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1544,74 +1759,30 @@
         "entities": "[]"
       },
       {
-        "id": 187239,
-        "timestamp": "2026-09-09T17:20:35+00:00",
+        "id": 187709,
+        "timestamp": "2026-09-09T19:44:22+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187238,
-        "timestamp": "2026-09-09T17:20:24+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187237,
-        "timestamp": "2026-09-09T17:20:13+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "outdoor ambient sounds",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187236,
-        "timestamp": "2026-09-09T17:20:03+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187235,
-        "timestamp": "2026-09-09T17:19:52+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 10 seconds. at whole_home (The sounds include wind blowing, generic impact sounds like those made by someone sneezing, a clock ticking, and possibly some additional environmental noise.)",
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187234,
-        "timestamp": "2026-09-09T17:19:42+00:00",
+        "id": 187708,
+        "timestamp": "2026-09-09T19:43:48+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
+        "summary": "dog barking",
+        "confidence": 0.72,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187233,
-        "timestamp": "2026-09-09T17:19:42+00:00",
+        "id": 187707,
+        "timestamp": "2026-09-09T19:43:48+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1621,19 +1792,8 @@
         "entities": "[]"
       },
       {
-        "id": 187231,
-        "timestamp": "2026-09-09T17:19:09+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187232,
-        "timestamp": "2026-09-09T17:19:09+00:00",
+        "id": 187706,
+        "timestamp": "2026-09-09T19:43:09+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -1643,503 +1803,19 @@
         "entities": "[]"
       },
       {
-        "id": 187230,
-        "timestamp": "2026-09-09T17:18:36+00:00",
+        "id": 187705,
+        "timestamp": "2026-09-09T19:43:09+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187229,
-        "timestamp": "2026-09-09T17:18:26+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187228,
-        "timestamp": "2026-09-09T17:18:15+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 10 seconds. at whole_home (The sounds include wind blowing, generic impact sounds like those made by someone sneezing, a clock ticking, and possibly some additional environmental noise.)",
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187227,
-        "timestamp": "2026-09-09T17:18:05+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187226,
-        "timestamp": "2026-09-09T17:17:55+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187225,
-        "timestamp": "2026-09-09T17:17:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187224,
-        "timestamp": "2026-09-09T17:17:34+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187223,
-        "timestamp": "2026-09-09T17:17:34+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187222,
-        "timestamp": "2026-09-09T17:17:01+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187221,
-        "timestamp": "2026-09-09T17:16:51+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187220,
-        "timestamp": "2026-09-09T17:16:40+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187219,
-        "timestamp": "2026-09-09T17:16:40+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187218,
-        "timestamp": "2026-09-09T17:16:07+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187217,
-        "timestamp": "2026-09-09T17:15:57+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187216,
-        "timestamp": "2026-09-09T17:15:47+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187215,
-        "timestamp": "2026-09-09T17:15:37+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187214,
-        "timestamp": "2026-09-09T17:15:27+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187213,
-        "timestamp": "2026-09-09T17:15:17+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187210,
-        "timestamp": "2026-09-09T17:15:09+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187212,
-        "timestamp": "2026-09-09T17:15:09+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187211,
-        "timestamp": "2026-09-09T17:15:09+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187209,
-        "timestamp": "2026-09-09T17:14:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187208,
-        "timestamp": "2026-09-09T17:14:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187207,
-        "timestamp": "2026-09-09T17:14:02+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187206,
-        "timestamp": "2026-09-09T17:14:02+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187205,
-        "timestamp": "2026-09-09T17:13:25+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187204,
-        "timestamp": "2026-09-09T17:13:25+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187203,
-        "timestamp": "2026-09-09T17:12:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187202,
-        "timestamp": "2026-09-09T17:12:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187201,
-        "timestamp": "2026-09-09T17:11:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187200,
-        "timestamp": "2026-09-09T17:11:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187199,
-        "timestamp": "2026-09-09T17:11:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "unclassified audio at whole_home",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187198,
-        "timestamp": "2026-09-09T17:10:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187197,
-        "timestamp": "2026-09-09T17:10:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187196,
-        "timestamp": "2026-09-09T17:10:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187195,
-        "timestamp": "2026-09-09T17:10:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "unclassified audio at whole_home",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187194,
-        "timestamp": "2026-09-09T17:09:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187193,
-        "timestamp": "2026-09-09T17:09:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "outdoor ambient sounds",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187192,
-        "timestamp": "2026-09-09T17:09:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "unclassified audio at whole_home",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187191,
-        "timestamp": "2026-09-09T17:08:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187189,
-        "timestamp": "2026-09-09T17:08:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187190,
-        "timestamp": "2026-09-09T17:08:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187188,
-        "timestamp": "2026-09-09T17:08:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187187,
-        "timestamp": "2026-09-09T17:08:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187186,
-        "timestamp": "2026-09-09T17:08:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "unclassified audio at whole_home",
-        "confidence": 0.3,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187185,
-        "timestamp": "2026-09-09T17:08:05+00:00",
+        "id": 187704,
+        "timestamp": "2026-09-09T19:43:03+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -2149,8 +1825,8 @@
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       },
       {
-        "id": 187184,
-        "timestamp": "2026-09-09T17:07:34+00:00",
+        "id": 187703,
+        "timestamp": "2026-09-09T19:42:30+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2160,19 +1836,426 @@
         "entities": "[]"
       },
       {
-        "id": 187183,
-        "timestamp": "2026-09-09T17:07:34+00:00",
+        "id": 187702,
+        "timestamp": "2026-09-09T19:42:30+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "music playing",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
         "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187182,
-        "timestamp": "2026-09-09T17:07:34+00:00",
+        "id": 187700,
+        "timestamp": "2026-09-09T19:41:57+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187701,
+        "timestamp": "2026-09-09T19:41:57+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187699,
+        "timestamp": "2026-09-09T19:41:25+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187698,
+        "timestamp": "2026-09-09T19:41:24+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over a period of approximately 10 seconds. at whole_home (It includes sounds such as generic impacts, background noise, domestic animals (pets), mechanisms, respiratory sounds like breathing, surface contact noises, and a brief tone resembling a doorbell.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187697,
+        "timestamp": "2026-09-09T19:40:54+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187696,
+        "timestamp": "2026-09-09T19:40:54+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187695,
+        "timestamp": "2026-09-09T19:40:21+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187694,
+        "timestamp": "2026-09-09T19:40:21+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187693,
+        "timestamp": "2026-09-09T19:39:48+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187692,
+        "timestamp": "2026-09-09T19:39:48+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187691,
+        "timestamp": "2026-09-09T19:39:15+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187690,
+        "timestamp": "2026-09-09T19:39:15+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187689,
+        "timestamp": "2026-09-09T19:39:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 187688,
+        "timestamp": "2026-09-09T19:38:42+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187687,
+        "timestamp": "2026-09-09T19:38:42+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187686,
+        "timestamp": "2026-09-09T19:38:09+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187685,
+        "timestamp": "2026-09-09T19:38:09+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187684,
+        "timestamp": "2026-09-09T19:38:02+00:00",
+        "source": "unifi:presence",
+        "source_type": "presence",
+        "location": "home",
+        "summary": "22 mobile devices home.",
+        "confidence": 0.8,
+        "model_version": "unifi-presence-v2",
+        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"22\", \"confidence\": 0.8}]"
+      },
+      {
+        "id": 187683,
+        "timestamp": "2026-09-09T19:37:36+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187682,
+        "timestamp": "2026-09-09T19:37:36+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187681,
+        "timestamp": "2026-09-09T19:37:03+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187680,
+        "timestamp": "2026-09-09T19:37:03+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187679,
+        "timestamp": "2026-09-09T19:36:30+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187678,
+        "timestamp": "2026-09-09T19:36:30+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187676,
+        "timestamp": "2026-09-09T19:35:57+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187677,
+        "timestamp": "2026-09-09T19:35:57+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187675,
+        "timestamp": "2026-09-09T19:35:24+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187674,
+        "timestamp": "2026-09-09T19:35:24+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187673,
+        "timestamp": "2026-09-09T19:34:51+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187672,
+        "timestamp": "2026-09-09T19:34:51+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187671,
+        "timestamp": "2026-09-09T19:34:18+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187670,
+        "timestamp": "2026-09-09T19:33:43+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187669,
+        "timestamp": "2026-09-09T19:33:43+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187668,
+        "timestamp": "2026-09-09T19:33:43+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187667,
+        "timestamp": "2026-09-09T19:33:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187666,
+        "timestamp": "2026-09-09T19:33:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187665,
+        "timestamp": "2026-09-09T19:32:09+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187664,
+        "timestamp": "2026-09-09T19:32:09+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2182,8 +2265,8 @@
         "entities": "[]"
       },
       {
-        "id": 187181,
-        "timestamp": "2026-09-09T17:06:34+00:00",
+        "id": 187663,
+        "timestamp": "2026-09-09T19:31:09+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2193,19 +2276,8 @@
         "entities": "[]"
       },
       {
-        "id": 187180,
-        "timestamp": "2026-09-09T17:06:34+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187179,
-        "timestamp": "2026-09-09T17:06:34+00:00",
+        "id": 187662,
+        "timestamp": "2026-09-09T19:31:09+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2215,8 +2287,19 @@
         "entities": "[]"
       },
       {
-        "id": 187178,
-        "timestamp": "2026-09-09T17:05:34+00:00",
+        "id": 187661,
+        "timestamp": "2026-09-09T19:30:08+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187660,
+        "timestamp": "2026-09-09T19:29:08+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2226,8 +2309,30 @@
         "entities": "[]"
       },
       {
-        "id": 187177,
-        "timestamp": "2026-09-09T17:05:33+00:00",
+        "id": 187659,
+        "timestamp": "2026-09-09T19:29:08+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187658,
+        "timestamp": "2026-09-09T19:29:08+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187657,
+        "timestamp": "2026-09-09T19:28:08+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2237,19 +2342,8 @@
         "entities": "[]"
       },
       {
-        "id": 187176,
-        "timestamp": "2026-09-09T17:05:33+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187175,
-        "timestamp": "2026-09-09T17:05:33+00:00",
+        "id": 187656,
+        "timestamp": "2026-09-09T19:28:08+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2259,8 +2353,393 @@
         "entities": "[]"
       },
       {
-        "id": 187174,
-        "timestamp": "2026-09-09T17:05:04+00:00",
+        "id": 187655,
+        "timestamp": "2026-09-09T19:27:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187654,
+        "timestamp": "2026-09-09T19:27:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187653,
+        "timestamp": "2026-09-09T19:26:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187652,
+        "timestamp": "2026-09-09T19:26:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187651,
+        "timestamp": "2026-09-09T19:25:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187650,
+        "timestamp": "2026-09-09T19:25:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187649,
+        "timestamp": "2026-09-09T19:24:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187648,
+        "timestamp": "2026-09-09T19:24:07+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187647,
+        "timestamp": "2026-09-09T19:23:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187644,
+        "timestamp": "2026-09-09T19:22:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187646,
+        "timestamp": "2026-09-09T19:22:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187645,
+        "timestamp": "2026-09-09T19:22:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187643,
+        "timestamp": "2026-09-09T19:21:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187642,
+        "timestamp": "2026-09-09T19:21:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187641,
+        "timestamp": "2026-09-09T19:20:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187640,
+        "timestamp": "2026-09-09T19:20:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187639,
+        "timestamp": "2026-09-09T19:19:06+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187638,
+        "timestamp": "2026-09-09T19:19:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187637,
+        "timestamp": "2026-09-09T19:18:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187636,
+        "timestamp": "2026-09-09T19:18:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187635,
+        "timestamp": "2026-09-09T19:18:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187634,
+        "timestamp": "2026-09-09T19:17:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187633,
+        "timestamp": "2026-09-09T19:17:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187632,
+        "timestamp": "2026-09-09T19:17:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187631,
+        "timestamp": "2026-09-09T19:16:04+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187630,
+        "timestamp": "2026-09-09T19:15:04+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187629,
+        "timestamp": "2026-09-09T19:15:04+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187628,
+        "timestamp": "2026-09-09T19:14:03+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187627,
+        "timestamp": "2026-09-09T19:13:02+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187626,
+        "timestamp": "2026-09-09T19:13:02+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187625,
+        "timestamp": "2026-09-09T19:12:00+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187624,
+        "timestamp": "2026-09-09T19:11:59+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187623,
+        "timestamp": "2026-09-09T19:10:57+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187622,
+        "timestamp": "2026-09-09T19:09:55+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "impact/movement sound",
+        "confidence": 0.6,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187621,
+        "timestamp": "2026-09-09T19:09:54+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187620,
+        "timestamp": "2026-09-09T19:08:54+00:00",
         "source": "unifi:presence",
         "source_type": "presence",
         "location": "home",
@@ -2270,8 +2749,8 @@
         "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
       },
       {
-        "id": 187173,
-        "timestamp": "2026-09-09T17:04:33+00:00",
+        "id": 187619,
+        "timestamp": "2026-09-09T19:08:52+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2281,30 +2760,8 @@
         "entities": "[]"
       },
       {
-        "id": 187172,
-        "timestamp": "2026-09-09T17:04:23+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187171,
-        "timestamp": "2026-09-09T17:04:18+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187170,
-        "timestamp": "2026-09-09T17:04:18+00:00",
+        "id": 187617,
+        "timestamp": "2026-09-09T19:08:52+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2314,19 +2771,8 @@
         "entities": "[]"
       },
       {
-        "id": 187169,
-        "timestamp": "2026-09-09T17:04:04+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 187168,
-        "timestamp": "2026-09-09T17:03:17+00:00",
+        "id": 187618,
+        "timestamp": "2026-09-09T19:08:52+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2336,30 +2782,8 @@
         "entities": "[]"
       },
       {
-        "id": 187167,
-        "timestamp": "2026-09-09T17:03:17+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187166,
-        "timestamp": "2026-09-09T17:03:17+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187165,
-        "timestamp": "2026-09-09T17:03:17+00:00",
+        "id": 187616,
+        "timestamp": "2026-09-09T19:07:50+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2369,8 +2793,8 @@
         "entities": "[]"
       },
       {
-        "id": 187164,
-        "timestamp": "2026-09-09T17:02:16+00:00",
+        "id": 187614,
+        "timestamp": "2026-09-09T19:06:49+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2380,184 +2804,8 @@
         "entities": "[]"
       },
       {
-        "id": 187163,
-        "timestamp": "2026-09-09T17:02:06+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187162,
-        "timestamp": "2026-09-09T17:01:56+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187161,
-        "timestamp": "2026-09-09T17:01:46+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187160,
-        "timestamp": "2026-09-09T17:01:36+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187159,
-        "timestamp": "2026-09-09T17:01:25+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187158,
-        "timestamp": "2026-09-09T17:01:15+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187157,
-        "timestamp": "2026-09-09T17:01:05+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187156,
-        "timestamp": "2026-09-09T17:00:55+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187155,
-        "timestamp": "2026-09-09T17:00:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "routine audio at whole_home \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187154,
-        "timestamp": "2026-09-09T17:00:45+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187153,
-        "timestamp": "2026-09-09T17:00:34+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "routine audio at whole_home \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187152,
-        "timestamp": "2026-09-09T17:00:34+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187151,
-        "timestamp": "2026-09-09T17:00:29+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187150,
-        "timestamp": "2026-09-09T17:00:29+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187149,
-        "timestamp": "2026-09-09T17:00:29+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187148,
-        "timestamp": "2026-09-09T17:00:29+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187147,
-        "timestamp": "2026-09-09T17:00:28+00:00",
+        "id": 187613,
+        "timestamp": "2026-09-09T19:06:49+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2567,8 +2815,8 @@
         "entities": "[]"
       },
       {
-        "id": 187146,
-        "timestamp": "2026-09-09T16:59:27+00:00",
+        "id": 187615,
+        "timestamp": "2026-09-09T19:06:49+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2578,8 +2826,19 @@
         "entities": "[]"
       },
       {
-        "id": 187145,
-        "timestamp": "2026-09-09T16:59:27+00:00",
+        "id": 187612,
+        "timestamp": "2026-09-09T19:05:47+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187611,
+        "timestamp": "2026-09-09T19:05:47+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2589,8 +2848,8 @@
         "entities": "[]"
       },
       {
-        "id": 187144,
-        "timestamp": "2026-09-09T16:58:26+00:00",
+        "id": 187610,
+        "timestamp": "2026-09-09T19:04:47+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2600,30 +2859,19 @@
         "entities": "[]"
       },
       {
-        "id": 187143,
-        "timestamp": "2026-09-09T16:58:16+00:00",
+        "id": 187609,
+        "timestamp": "2026-09-09T19:04:46+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187142,
-        "timestamp": "2026-09-09T16:58:06+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "outdoor ambient sounds",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187141,
-        "timestamp": "2026-09-09T16:57:56+00:00",
+        "id": 187608,
+        "timestamp": "2026-09-09T19:03:46+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2633,30 +2881,19 @@
         "entities": "[]"
       },
       {
-        "id": 187140,
-        "timestamp": "2026-09-09T16:57:46+00:00",
+        "id": 187607,
+        "timestamp": "2026-09-09T19:03:46+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.55,
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187139,
-        "timestamp": "2026-09-09T16:57:35+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187138,
-        "timestamp": "2026-09-09T16:57:25+00:00",
+        "id": 187606,
+        "timestamp": "2026-09-09T19:02:45+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2666,41 +2903,74 @@
         "entities": "[]"
       },
       {
-        "id": 187137,
-        "timestamp": "2026-09-09T16:57:15+00:00",
+        "id": 187605,
+        "timestamp": "2026-09-09T19:02:45+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187136,
-        "timestamp": "2026-09-09T16:57:04+00:00",
+        "id": 187604,
+        "timestamp": "2026-09-09T19:01:45+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
+        "summary": "dog barking",
+        "confidence": 0.72,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187135,
-        "timestamp": "2026-09-09T16:56:54+00:00",
+        "id": 187603,
+        "timestamp": "2026-09-09T19:01:45+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "outdoor ambient sounds",
-        "confidence": 0.55,
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187133,
-        "timestamp": "2026-09-09T16:56:49+00:00",
+        "id": 187602,
+        "timestamp": "2026-09-09T19:00:44+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187601,
+        "timestamp": "2026-09-09T19:00:44+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "unclassified audio at whole_home",
+        "confidence": 0.3,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187600,
+        "timestamp": "2026-09-09T18:59:43+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "dog barking",
+        "confidence": 0.72,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187599,
+        "timestamp": "2026-09-09T18:59:43+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2710,74 +2980,8 @@
         "entities": "[]"
       },
       {
-        "id": 187134,
-        "timestamp": "2026-09-09T16:56:49+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "outdoor ambient sounds",
-        "confidence": 0.55,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187132,
-        "timestamp": "2026-09-09T16:56:09+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187131,
-        "timestamp": "2026-09-09T16:55:59+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "routine audio at whole_home \u2014 television or music playing in the background",
-        "confidence": 0.2,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187130,
-        "timestamp": "2026-09-09T16:55:59+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187129,
-        "timestamp": "2026-09-09T16:55:48+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "music playing",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187128,
-        "timestamp": "2026-09-09T16:55:38+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187127,
-        "timestamp": "2026-09-09T16:55:38+00:00",
+        "id": 187597,
+        "timestamp": "2026-09-09T18:59:10+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2787,8 +2991,8 @@
         "entities": "[]"
       },
       {
-        "id": 187126,
-        "timestamp": "2026-09-09T16:55:05+00:00",
+        "id": 187598,
+        "timestamp": "2026-09-09T18:59:10+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2798,8 +3002,8 @@
         "entities": "[]"
       },
       {
-        "id": 187125,
-        "timestamp": "2026-09-09T16:55:05+00:00",
+        "id": 187595,
+        "timestamp": "2026-09-09T18:58:34+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2809,19 +3013,8 @@
         "entities": "[]"
       },
       {
-        "id": 187123,
-        "timestamp": "2026-09-09T16:54:32+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187124,
-        "timestamp": "2026-09-09T16:54:32+00:00",
+        "id": 187596,
+        "timestamp": "2026-09-09T18:58:34+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2831,8 +3024,8 @@
         "entities": "[]"
       },
       {
-        "id": 187122,
-        "timestamp": "2026-09-09T16:53:59+00:00",
+        "id": 187594,
+        "timestamp": "2026-09-09T18:57:55+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2842,8 +3035,8 @@
         "entities": "[]"
       },
       {
-        "id": 187121,
-        "timestamp": "2026-09-09T16:53:59+00:00",
+        "id": 187593,
+        "timestamp": "2026-09-09T18:57:55+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2853,8 +3046,8 @@
         "entities": "[]"
       },
       {
-        "id": 187120,
-        "timestamp": "2026-09-09T16:53:26+00:00",
+        "id": 187592,
+        "timestamp": "2026-09-09T18:57:17+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2864,8 +3057,8 @@
         "entities": "[]"
       },
       {
-        "id": 187119,
-        "timestamp": "2026-09-09T16:53:25+00:00",
+        "id": 187591,
+        "timestamp": "2026-09-09T18:57:17+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2875,8 +3068,8 @@
         "entities": "[]"
       },
       {
-        "id": 187118,
-        "timestamp": "2026-09-09T16:52:52+00:00",
+        "id": 187590,
+        "timestamp": "2026-09-09T18:56:44+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2886,8 +3079,8 @@
         "entities": "[]"
       },
       {
-        "id": 187117,
-        "timestamp": "2026-09-09T16:52:52+00:00",
+        "id": 187589,
+        "timestamp": "2026-09-09T18:56:44+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2897,8 +3090,8 @@
         "entities": "[]"
       },
       {
-        "id": 187116,
-        "timestamp": "2026-09-09T16:52:19+00:00",
+        "id": 187588,
+        "timestamp": "2026-09-09T18:56:11+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2908,19 +3101,8 @@
         "entities": "[]"
       },
       {
-        "id": 187115,
-        "timestamp": "2026-09-09T16:52:12+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187114,
-        "timestamp": "2026-09-09T16:52:12+00:00",
+        "id": 187587,
+        "timestamp": "2026-09-09T18:56:11+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2930,30 +3112,8 @@
         "entities": "[]"
       },
       {
-        "id": 187113,
-        "timestamp": "2026-09-09T16:51:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 187111,
-        "timestamp": "2026-09-09T16:51:38+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187112,
-        "timestamp": "2026-09-09T16:51:38+00:00",
+        "id": 187586,
+        "timestamp": "2026-09-09T18:55:38+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2963,19 +3123,8 @@
         "entities": "[]"
       },
       {
-        "id": 187110,
-        "timestamp": "2026-09-09T16:51:02+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187109,
-        "timestamp": "2026-09-09T16:51:02+00:00",
+        "id": 187585,
+        "timestamp": "2026-09-09T18:55:38+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -2985,19 +3134,8 @@
         "entities": "[]"
       },
       {
-        "id": 187108,
-        "timestamp": "2026-09-09T16:50:59+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "20 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"20\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 187107,
-        "timestamp": "2026-09-09T16:50:23+00:00",
+        "id": 187584,
+        "timestamp": "2026-09-09T18:55:05+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3007,19 +3145,8 @@
         "entities": "[]"
       },
       {
-        "id": 187106,
-        "timestamp": "2026-09-09T16:50:17+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187105,
-        "timestamp": "2026-09-09T16:50:17+00:00",
+        "id": 187583,
+        "timestamp": "2026-09-09T18:55:05+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3029,8 +3156,8 @@
         "entities": "[]"
       },
       {
-        "id": 187104,
-        "timestamp": "2026-09-09T16:49:38+00:00",
+        "id": 187582,
+        "timestamp": "2026-09-09T18:54:32+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3040,19 +3167,8 @@
         "entities": "[]"
       },
       {
-        "id": 187103,
-        "timestamp": "2026-09-09T16:49:27+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "TV/media audio",
-        "confidence": 0.62,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187102,
-        "timestamp": "2026-09-09T16:49:27+00:00",
+        "id": 187581,
+        "timestamp": "2026-09-09T18:54:32+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3062,8 +3178,8 @@
         "entities": "[]"
       },
       {
-        "id": 187101,
-        "timestamp": "2026-09-09T16:48:54+00:00",
+        "id": 187580,
+        "timestamp": "2026-09-09T18:53:59+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3073,8 +3189,8 @@
         "entities": "[]"
       },
       {
-        "id": 187100,
-        "timestamp": "2026-09-09T16:48:54+00:00",
+        "id": 187579,
+        "timestamp": "2026-09-09T18:53:59+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3084,19 +3200,8 @@
         "entities": "[]"
       },
       {
-        "id": 187098,
-        "timestamp": "2026-09-09T16:48:21+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187099,
-        "timestamp": "2026-09-09T16:48:21+00:00",
+        "id": 187578,
+        "timestamp": "2026-09-09T18:53:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3106,19 +3211,8 @@
         "entities": "[]"
       },
       {
-        "id": 187097,
-        "timestamp": "2026-09-09T16:47:48+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187096,
-        "timestamp": "2026-09-09T16:47:11+00:00",
+        "id": 187577,
+        "timestamp": "2026-09-09T18:53:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3128,8 +3222,8 @@
         "entities": "[]"
       },
       {
-        "id": 187095,
-        "timestamp": "2026-09-09T16:46:38+00:00",
+        "id": 187576,
+        "timestamp": "2026-09-09T18:52:53+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3139,19 +3233,19 @@
         "entities": "[]"
       },
       {
-        "id": 187094,
-        "timestamp": "2026-09-09T16:46:08+00:00",
+        "id": 187575,
+        "timestamp": "2026-09-09T18:52:53+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
-        "summary": "routine audio at whole_home \u2014 silence or quiet ambient background noise",
-        "confidence": 0.2,
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
         "model_version": "audio-processor-v3",
         "entities": "[]"
       },
       {
-        "id": 187093,
-        "timestamp": "2026-09-09T16:46:08+00:00",
+        "id": 187574,
+        "timestamp": "2026-09-09T18:52:13+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3161,8 +3255,8 @@
         "entities": "[]"
       },
       {
-        "id": 187092,
-        "timestamp": "2026-09-09T16:46:08+00:00",
+        "id": 187573,
+        "timestamp": "2026-09-09T18:52:12+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3172,8 +3266,8 @@
         "entities": "[]"
       },
       {
-        "id": 187091,
-        "timestamp": "2026-09-09T16:45:35+00:00",
+        "id": 187572,
+        "timestamp": "2026-09-09T18:51:40+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3183,8 +3277,8 @@
         "entities": "[]"
       },
       {
-        "id": 187090,
-        "timestamp": "2026-09-09T16:45:35+00:00",
+        "id": 187571,
+        "timestamp": "2026-09-09T18:51:39+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3194,19 +3288,8 @@
         "entities": "[]"
       },
       {
-        "id": 187088,
-        "timestamp": "2026-09-09T16:45:02+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187089,
-        "timestamp": "2026-09-09T16:45:02+00:00",
+        "id": 187570,
+        "timestamp": "2026-09-09T18:51:03+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3216,8 +3299,19 @@
         "entities": "[]"
       },
       {
-        "id": 187087,
-        "timestamp": "2026-09-09T16:44:29+00:00",
+        "id": 187569,
+        "timestamp": "2026-09-09T18:51:03+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187568,
+        "timestamp": "2026-09-09T18:50:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3227,30 +3321,8 @@
         "entities": "[]"
       },
       {
-        "id": 187086,
-        "timestamp": "2026-09-09T16:44:19+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187085,
-        "timestamp": "2026-09-09T16:44:10+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "speech detected",
-        "confidence": 0.8,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187084,
-        "timestamp": "2026-09-09T16:44:10+00:00",
+        "id": 187567,
+        "timestamp": "2026-09-09T18:50:25+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3260,8 +3332,19 @@
         "entities": "[]"
       },
       {
-        "id": 187083,
-        "timestamp": "2026-09-09T16:43:37+00:00",
+        "id": 187565,
+        "timestamp": "2026-09-09T18:49:51+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187566,
+        "timestamp": "2026-09-09T18:49:51+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3271,19 +3354,8 @@
         "entities": "[]"
       },
       {
-        "id": 187082,
-        "timestamp": "2026-09-09T16:43:37+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187081,
-        "timestamp": "2026-09-09T16:43:04+00:00",
+        "id": 187564,
+        "timestamp": "2026-09-09T18:49:18+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3293,8 +3365,8 @@
         "entities": "[]"
       },
       {
-        "id": 187080,
-        "timestamp": "2026-09-09T16:43:04+00:00",
+        "id": 187563,
+        "timestamp": "2026-09-09T18:49:18+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3304,19 +3376,8 @@
         "entities": "[]"
       },
       {
-        "id": 187078,
-        "timestamp": "2026-09-09T16:42:26+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187079,
-        "timestamp": "2026-09-09T16:42:26+00:00",
+        "id": 187562,
+        "timestamp": "2026-09-09T18:48:44+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3326,8 +3387,19 @@
         "entities": "[]"
       },
       {
-        "id": 187077,
-        "timestamp": "2026-09-09T16:41:47+00:00",
+        "id": 187561,
+        "timestamp": "2026-09-09T18:48:44+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187560,
+        "timestamp": "2026-09-09T18:48:11+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3337,8 +3409,8 @@
         "entities": "[]"
       },
       {
-        "id": 187076,
-        "timestamp": "2026-09-09T16:41:47+00:00",
+        "id": 187559,
+        "timestamp": "2026-09-09T18:48:11+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3348,8 +3420,8 @@
         "entities": "[]"
       },
       {
-        "id": 187075,
-        "timestamp": "2026-09-09T16:41:10+00:00",
+        "id": 187558,
+        "timestamp": "2026-09-09T18:47:38+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3359,8 +3431,8 @@
         "entities": "[]"
       },
       {
-        "id": 187074,
-        "timestamp": "2026-09-09T16:41:10+00:00",
+        "id": 187557,
+        "timestamp": "2026-09-09T18:47:38+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3370,8 +3442,19 @@
         "entities": "[]"
       },
       {
-        "id": 187073,
-        "timestamp": "2026-09-09T16:40:37+00:00",
+        "id": 187555,
+        "timestamp": "2026-09-09T18:47:05+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187556,
+        "timestamp": "2026-09-09T18:47:05+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3381,19 +3464,8 @@
         "entities": "[]"
       },
       {
-        "id": 187072,
-        "timestamp": "2026-09-09T16:40:36+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187071,
-        "timestamp": "2026-09-09T16:40:03+00:00",
+        "id": 187554,
+        "timestamp": "2026-09-09T18:46:32+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3403,8 +3475,8 @@
         "entities": "[]"
       },
       {
-        "id": 187070,
-        "timestamp": "2026-09-09T16:40:03+00:00",
+        "id": 187553,
+        "timestamp": "2026-09-09T18:46:32+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3414,19 +3486,8 @@
         "entities": "[]"
       },
       {
-        "id": 187068,
-        "timestamp": "2026-09-09T16:39:30+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187069,
-        "timestamp": "2026-09-09T16:39:30+00:00",
+        "id": 187552,
+        "timestamp": "2026-09-09T18:45:59+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3436,8 +3497,19 @@
         "entities": "[]"
       },
       {
-        "id": 187067,
-        "timestamp": "2026-09-09T16:38:57+00:00",
+        "id": 187551,
+        "timestamp": "2026-09-09T18:45:59+00:00",
+        "source": "audio:pi",
+        "source_type": "audio",
+        "location": "whole_home",
+        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
+        "confidence": 0.7,
+        "model_version": "audio-processor-v3",
+        "entities": "[]"
+      },
+      {
+        "id": 187550,
+        "timestamp": "2026-09-09T18:45:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3447,8 +3519,8 @@
         "entities": "[]"
       },
       {
-        "id": 187066,
-        "timestamp": "2026-09-09T16:38:57+00:00",
+        "id": 187549,
+        "timestamp": "2026-09-09T18:45:26+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3458,8 +3530,8 @@
         "entities": "[]"
       },
       {
-        "id": 187065,
-        "timestamp": "2026-09-09T16:38:24+00:00",
+        "id": 187548,
+        "timestamp": "2026-09-09T18:44:53+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3469,8 +3541,8 @@
         "entities": "[]"
       },
       {
-        "id": 187064,
-        "timestamp": "2026-09-09T16:38:24+00:00",
+        "id": 187547,
+        "timestamp": "2026-09-09T18:44:53+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3480,19 +3552,8 @@
         "entities": "[]"
       },
       {
-        "id": 187063,
-        "timestamp": "2026-09-09T16:37:56+00:00",
-        "source": "unifi:presence",
-        "source_type": "presence",
-        "location": "home",
-        "summary": "21 mobile devices home.",
-        "confidence": 0.8,
-        "model_version": "unifi-presence-v2",
-        "entities": "[{\"entity_type\": \"count\", \"entity_name\": \"mobile_devices\", \"entity_state\": \"21\", \"confidence\": 0.8}]"
-      },
-      {
-        "id": 187062,
-        "timestamp": "2026-09-09T16:37:51+00:00",
+        "id": 187546,
+        "timestamp": "2026-09-09T18:44:20+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3502,8 +3563,8 @@
         "entities": "[]"
       },
       {
-        "id": 187061,
-        "timestamp": "2026-09-09T16:37:51+00:00",
+        "id": 187545,
+        "timestamp": "2026-09-09T18:44:20+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3513,41 +3574,8 @@
         "entities": "[]"
       },
       {
-        "id": 187060,
-        "timestamp": "2026-09-09T16:37:18+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "dog barking",
-        "confidence": 0.72,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187059,
-        "timestamp": "2026-09-09T16:37:18+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187057,
-        "timestamp": "2026-09-09T16:36:44+00:00",
-        "source": "audio:pi",
-        "source_type": "audio",
-        "location": "whole_home",
-        "summary": "The clip contains sounds from various locations in a household over the course of approximately 12 seconds. at whole_home (The sounds include wind blowing throughout, intermittent speech by a male, generic impact sounds at several intervals, and a sneeze sound near the end.)",
-        "confidence": 0.7,
-        "model_version": "audio-processor-v3",
-        "entities": "[]"
-      },
-      {
-        "id": 187058,
-        "timestamp": "2026-09-09T16:36:44+00:00",
+        "id": 187544,
+        "timestamp": "2026-09-09T18:43:46+00:00",
         "source": "audio:pi",
         "source_type": "audio",
         "location": "whole_home",
@@ -3558,6 +3586,14 @@
       }
     ],
     "insights": [
+      {
+        "id": 8574,
+        "timestamp": "2026-09-09T19:07:54+00:00",
+        "insight_type": "correlation",
+        "severity": "low",
+        "summary": "The highly regular, alternating barking and audio clips every minute over six minutes, paired with zero camera activity, indicates the dogs are fixated on a specific, stationary outdoor stimulus rather than random activity. This pattern suggests a recurring event like a regular delivery or neighbor, warranting a quick check to rule out any sustained outdoor disturbance.",
+        "acted_on_at": null
+      },
       {
         "id": 8573,
         "timestamp": "2026-09-09T17:00:06+00:00",
@@ -3629,14 +3665,6 @@
         "severity": "low",
         "summary": "Unusually quiet at whole_home this hour: 0 observations vs typical 14 for weekday 03:00",
         "acted_on_at": null
-      },
-      {
-        "id": 8564,
-        "timestamp": "2026-09-09T09:47:39+00:00",
-        "insight_type": "correlation",
-        "severity": "low",
-        "summary": "A recurring pattern of unclassified audio bursts across multiple microphones has emerged roughly every hour during deep sleep hours, strongly suggesting a mechanical or environmental cycle (e.g., HVAC, water heater, or smart device) rather than household activity. This rhythmic pattern warrants monitoring to rule out equipment malfunction or unusual noise.",
-        "acted_on_at": null
       }
     ],
     "state": {
@@ -3654,7 +3682,7 @@
         "living_room": "2026-06-19T11:56:38+00:00",
         "side_yard": "2026-05-15T22:07:10+00:00"
       },
-      "last_updated": "2026-09-09T17:25:17.374298+00:00"
+      "last_updated": "2026-09-09T19:54:21.875327+00:00"
     }
   },
   "pge": {
